@@ -1,6 +1,25 @@
 # Training Sessions
 
-育成对局数据，每局一个JSON文件。
+育成对局数据，按剧本分目录存储，每局一个JSON文件。
+
+## 目录结构
+
+```
+training_sessions/
+├── URA/           # URAファイナルズ
+├── Aoharu/        # 青春杯（アオハル杯）
+├── Climax/        # 巅峰杯（クライマックス）
+├── GrandDrive/    # 偶像杯（グランドライブ）
+├── GrandMasters/  # 女神杯（グランドマスターズ）
+├── LArc/          # 凯旋门杯（プロジェクトL'Arc）
+├── UAF/           # UAF运动会
+├── Harvest/       # 种田杯（大豊食祭）
+├── Mecha/         # 赛博杯（メカウマ娘）
+├── Legends/       # 传奇杯（The Twinkle Legends）
+├── DesertIsland/  # 无人岛杯
+├── HotSpring/     # 温泉杯（ゆこま温泉郷）
+└── Dreams/        # 育马者杯（Beyond Dreams）
+```
 
 ## 文件命名
 
@@ -30,13 +49,11 @@
           "name": "speed", "is_enable": true,
           "gains": {"Speed":12, "Stamina":0, "Power":2, "Guts":0, "Wisdom":0, "SkillPt":5, "HP":-20},
           "failure_rate": 3, "shining": 1, "heads": 3
-        },
-        ...
+        }
       ],
       "action_taken": "Speed",
       "ai_recommend": {"best": "Speed", "score": 7200}
-    },
-    ...
+    }
   ],
   "final_stats": {
     "speed": 800, "stamina": 600, "power": 500,
@@ -63,3 +80,5 @@
 - **State**: stats + trainings → 输入特征向量
 - **Policy**: action_taken → 监督学习标签
 - **Value**: final_stats.total → 回报信号
+
+不同剧本的属性上限和训练偏好不同，分目录存储确保训练数据不混淆。
