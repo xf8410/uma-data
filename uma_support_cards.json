@@ -1,0 +1,326 @@
+{
+  "_meta": {
+    "description": "赛马娘支援卡数据 (cardId > 30239, UmaAi cardDB未收录的新卡)",
+    "last_updated": "2026-06-28",
+    "source": "gametora.com, wikiwiki.jp, gamewith.jp"
+  },
+  "30242": {
+    "cardId": 30242,
+    "title": "世界を変える眼差し",
+    "chara": "アーモンドアイ",
+    "type": "Speed",
+    "rarity": 3,
+    "release_date": "2025-02-24",
+    "obtain": "恒常ガチャ",
+    "unique_bonus": {
+      "name": "世界を変える眼差し",
+      "condition": "絆ゲージが80以上",
+      "effect": "パワーボーナス(1)とスキルPtボーナス(1)"
+    },
+    "support_effects": {
+      "friendship_bonus": [25, 27, 30, 32, 35],
+      "motivation_effect": [0, 0, 0, 0, 0],
+      "training_effect": [0, 0, 0, 10, 20],
+      "speed_bonus": [1, 1, 1, 1, 1],
+      "initial_bond": [25, 26, 27, 28, 30],
+      "initial_power": [0, 0, 0, 0, 0],
+      "race_bonus": [10, 11, 12, 13, 15],
+      "fan_bonus": [20, 22, 25, 27, 30],
+      "hint_lv": [2, 2, 2, 2, 3],
+      "hint_rate": [40, 42, 45, 47, 50],
+      "specialty_rate": [75, 86, 97, 108, 120],
+      "skill_pt_bonus": [0, 1, 1, 1, 1],
+      "initial_skill_pt": [30, 33, 36, 40, 40]
+    },
+    "hint_skills": ["探求心", "コーナー巧者○", "直線巧者", "ウマ好み", "尻尾上がり", "飛躍の予感", "さらなる高みへ", "躍動", "垂れウマ回避", "憧れを越えて"],
+    "event_skills": ["品行方正", "シンギュラリティ", "才気煥発", "ハヤテ一文字", "弧線のプロフェッサー"],
+    "stat_up": {"speed": 6, "power": 2},
+    "events": [
+      {
+        "name": "アーモンドアイは逸らさない",
+        "choices": [
+          {"text": "勉強でも、適度な休憩は大事にな", "bond": 5, "stamina": 30},
+          {"text": "俺も負けずに勉強しないとな", "bond": 5, "skill_pt": 40}
+        ]
+      },
+      {
+        "name": "アーモンドアイは見逃さない",
+        "choices": [
+          {"text": "そのメンタル、見習いたいな", "bond": 5, "skill": "品行方正Lv1"},
+          {"text": "隙のなさが君の速さの秘訣なのかな", "bond": 5, "speed": 20}
+        ]
+      }
+    ],
+    "chain_events": [
+      {
+        "name": "勝利を愛して",
+        "stages": [
+          {
+            "name": "勝利を愛して",
+            "order": 1,
+            "auto": true,
+            "effect": {"bond": 10, "motivation": 1, "stamina": 10, "speed": 15}
+          },
+          {
+            "name": "アイは貪欲",
+            "order": 2,
+            "choices": [
+              {"text": "手巻き寿司パーティー", "bond": 5, "stamina": 10, "speed": 20, "power": 20},
+              {"text": "いろいろマグロ料理祭り", "bond": 5, "motivation": 1, "speed": 30, "skill_pt": 15}
+            ]
+          },
+          {
+            "name": "果てしなきアーモンドアイ",
+            "order": 3,
+            "choices": [
+              {
+                "text": "シンボリルドルフらの反応を見る",
+                "outcomes": {
+                  "大成功": {"bond": 5, "stamina": 10, "speed": 25, "power": 10, "skills": ["シンギュラリティLv2", "才気煥発Lv2"]},
+                  "成功": {"bond": 5, "stamina": 5, "speed": 10, "skills": ["シンギュラリティLv1", "才気煥発Lv1"]}
+                }
+              },
+              {
+                "text": "周囲の反応を見る",
+                "outcomes": {
+                  "大成功": {"bond": 5, "stamina": 10, "speed": 20, "skill_pt": 15, "skills": ["ハヤテ一文字Lv2", "弧線のプロフェッサーLv2"]},
+                  "成功": {"bond": 5, "stamina": 10, "speed": 5, "skills": ["ハヤテ一文字Lv1", "弧線のプロフェッサーLv1"]}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "30275": {
+    "cardId": 30275,
+    "title": "天才的ユートピア",
+    "chara": "トウカイテイオー",
+    "type": "Speed",
+    "rarity": 3,
+    "release_date": "2025-10-30",
+    "obtain": "恒常ガチャ",
+    "unique_bonus": {
+      "name": "天才的ユートピア",
+      "condition": "絆ゲージが80以上",
+      "effect": "スキルPtボーナス(2)"
+    },
+    "support_effects": {
+      "friendship_bonus": [25, 27, 30, 32, 35],
+      "motivation_effect": [60, 70, 80, 90, 100],
+      "training_effect": [10, 11, 12, 13, 15],
+      "initial_bond": [25, 27, 30, 32, 35],
+      "initial_power": [5, 10, 25, 25, 25],
+      "race_bonus": [5, 6, 7, 8, 10],
+      "fan_bonus": [10, 11, 12, 13, 15],
+      "hint_lv": [1, 1, 1, 2, 4],
+      "hint_rate": [5, 5, 5, 50, 100],
+      "specialty_rate": [60, 70, 80, 90, 100],
+      "initial_skill_pt": [30, 37, 45, 52, 60]
+    },
+    "hint_skills": ["先行直線○", "先行コーナー○", "真っ向勝負", "攻めの姿勢", "さらなる高みへ", "逸る足取り", "己を信じて", "目覚めの時", "意地っ張り", "憧れを越えて", "光明", "勇気の一歩"],
+    "event_skills": ["比類なき", "迸る気迫", "正々堂々", "夢の舞台へ", "先行直線○", "躍動"],
+    "stat_up": {"speed": 6, "power": 2},
+    "events": [
+      {
+        "name": "ボクのやり方",
+        "choices": [
+          {"text": "自分に合う方法が1番！", "motivation": 1, "skill_pt": 15, "bond": 5},
+          {"text": "我慢した後に走ったらもっと気持ちいいよ", "guts": 15, "bond": 5}
+        ]
+      },
+      {
+        "name": "ボクの武器",
+        "choices": [
+          {"text": "全部できるとかっこいいぞ！", "motivation": 1, "guts": 10, "bond": 5},
+          {"text": "今も十分すごい武器を持ってるぞ", "skill": "先行直線◯Lv1", "bond": 5}
+        ]
+      }
+    ],
+    "chain_events": [
+      {
+        "name": "手のかかる子ほどなんとやら",
+        "stages": [
+          {
+            "name": "手のかかる子ほどなんとやら",
+            "order": 1,
+            "auto": true,
+            "effect": {"stamina": 10, "motivation": 1, "speed": 15, "bond": 5}
+          },
+          {
+            "name": "孝行はしたい時分に",
+            "order": 2,
+            "choices": [
+              {"text": "感謝のお手紙を書いてみては？", "speed": 25, "power": 10, "bond": 5, "skill": "比類なきLv1"},
+              {"text": "何もいらない！", "stamina": 15, "skill_pt": 20, "bond": 5, "skill": "躍動Lv1"}
+            ]
+          },
+          {
+            "name": "まったり孝行日和",
+            "order": 3,
+            "choices": [
+              {"text": "じいやさんは喜んでた？", "stamina": 15, "speed": 20, "bond": 5, "skills": ["正々堂々Lv1", "迸る気迫Lv2"]},
+              {"text": "君自身は楽しめたかな", "stamina": 5, "speed": 15, "stamina_up": 15, "bond": 5, "skills": ["夢の舞台へLv1", "迸る気迫Lv2"]}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "30282": {
+    "cardId": 30282,
+    "title": "心覚えし、京の華",
+    "chara": "エアグルーヴ",
+    "type": "Speed",
+    "rarity": 3,
+    "release_date": "2025-12-25",
+    "obtain": "恒常ガチャ",
+    "unique_bonus": {
+      "name": "心覚えし、京の華",
+      "condition": "絆ゲージが80以上",
+      "effect": "トレーニング効果アップ(5)とパワーボーナス(1)"
+    },
+    "support_effects": {
+      "friendship_bonus": [25, 27, 30, 32, 35],
+      "motivation_effect": [20, 23, 26, 30, 30],
+      "training_effect": [6, 7, 8, 10, 20],
+      "initial_bond": [25, 26, 27, 28, 30],
+      "initial_power": [5, 10, 25, 25, 25],
+      "race_bonus": [5, 6, 7, 8, 10],
+      "fan_bonus": [10, 11, 12, 13, 15],
+      "hint_lv": [2, 2, 3, 3, 4],
+      "hint_rate": [60, 70, 80, 90, 100],
+      "specialty_rate": [75, 86, 97, 108, 120],
+      "skill_pt_bonus": [1, 1, 1, 1, 2]
+    },
+    "hint_skills": ["左回り○", "自信家", "中距離直線○", "中距離コーナー○", "ありったけ", "闘争心", "食らいつき", "光差す方へ", "躍動", "労を惜しまず", "華麗な足取り", "淀みなし", "会心の一歩"],
+    "event_skills": ["臨機応変", "夢への挑戦", "己を信じて", "下準備", "千鍛万錬", "王手", "錦上添花"],
+    "stat_up": {"speed": 6, "power": 2},
+    "events": [
+      {
+        "name": "峻厳にして優渥",
+        "choices": [
+          {"text": "いつも厳しく接しているのか？", "skill": "臨機応変Lv1", "bond": 5},
+          {"text": "よく相手を観察しているんだな", "stamina": 10, "wisdom": 10}
+        ]
+      },
+      {
+        "name": "俊敏にして剛腕",
+        "choices": [
+          {"text": "一人でこれを運ぶにはパワーがいるな", "power": 15, "bond": 5},
+          {"text": "この量をさばくなら、相当急がないと……", "speed": 10, "stamina": 5, "bond": 5}
+        ]
+      }
+    ],
+    "chain_events": [
+      {
+        "name": "心を飾るは",
+        "stages": [
+          {
+            "name": "心を飾るは",
+            "order": 1,
+            "choices": [
+              {"text": "先生として信頼されてるんだな", "bond": 5, "stamina": 10, "motivation": 1, "speed": 20},
+              {"text": "影響を受ける後輩がたくさんいそう", "bond": 10, "speed": 15, "skill_pt": 15}
+            ]
+          },
+          {
+            "name": "そのアイシャドウは繋がって",
+            "order": 2,
+            "choices": [
+              {"text": "きっと後輩も君の姿に憧れる", "bond": 5, "stamina": 15, "motivation": 1, "speed": 10, "skill": "夢への挑戦Lv2"},
+              {"text": "そのメイクだからこそ素敵な写真になるな", "bond": 5, "speed": 20, "skill_pt": 10, "skill": "己を信じてLv2"},
+              {"text": "改めて、母親に感謝を使えてみよう！", "bond": 5, "speed": 10, "power": 10, "skill_pt": 10, "skill": "下準備Lv2"}
+            ]
+          },
+          {
+            "name": "そのメイクは誰がために",
+            "order": 3,
+            "choices": [
+              {"text": "彼女のこと、気にかけてるんだな", "bond": 5, "speed": 25, "skill_pt": 10, "skills": ["王手Lv2", "千鍛万錬Lv1"]},
+              {"text": "君も交流会に相応しい立派な姿だったぞ", "bond": 5, "stamina": 10, "motivation": 1, "speed": 20, "skills": ["千鍛万錬Lv2", "錦上添花Lv1"]}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "30292": {
+    "cardId": 30292,
+    "title": "響け、二人の凱歌",
+    "chara": "マルシュロレーヌ",
+    "type": "Speed",
+    "rarity": 3,
+    "release_date": "2026-03-11",
+    "obtain": "恒常ガチャ",
+    "unique_bonus": {
+      "name": "響け、二人の凱歌",
+      "condition": "絆ゲージが80以上",
+      "effect": "友情ボーナス(10)とパワーボーナス(1)"
+    },
+    "support_effects": {
+      "friendship_bonus": [25, 25, 25, 25, 25],
+      "motivation_effect": [40, 42, 45, 47, 50],
+      "training_effect": [10, 12, 15, 17, 20],
+      "initial_bond": [35, 35, 35, 35, 35],
+      "initial_speed": [5, 10, 25, 25, 25],
+      "initial_power": [25, 26, 27, 28, 30],
+      "race_bonus": [1, 1, 1, 5, 10],
+      "fan_bonus": [1, 1, 1, 10, 15],
+      "hint_lv": [2, 2, 3, 3, 4],
+      "hint_rate": [60, 70, 80, 90, 100],
+      "specialty_rate": [50, 57, 65, 72, 80],
+      "skill_pt_bonus": [1, 1, 1, 1, 1]
+    },
+    "hint_skills": ["伏兵○", "踏み込み上手", "レコメンド", "明るい兆し", "砂浴び○", "ダート直線○", "ダートコーナー○", "裏腹なキモチ", "砂蹴り", "精進", "好戦的", "バイタリティ", "前列狙い"],
+    "event_skills": ["優雅な砂浴び", "点滴穿石", "轟く足音", "心惹かれて"],
+    "stat_up": {"speed": 6, "power": 2},
+    "events": [
+      {
+        "name": "隠れている心",
+        "choices": [
+          {"text": "生き生きしていて、すごい！", "bond": 5, "stamina": 5, "power": 5, "guts": 5},
+          {"text": "やり方、教えてほしいな！", "bond": 5, "skill_pt": 15}
+        ]
+      },
+      {
+        "name": "溢れている愛",
+        "choices": [
+          {"text": "感謝を手紙にする……とか？", "bond": 5, "stamina": 10, "stamina_up": 5, "power": 5},
+          {"text": "マルシュロレーヌの絵を描いてみるとか？", "bond": 5, "skill": "轟く足音Lv1"}
+        ]
+      }
+    ],
+    "chain_events": [
+      {
+        "name": "集まる関心→募る不安→重なる愛",
+        "stages": [
+          {
+            "name": "集まる『関心』",
+            "order": 1,
+            "choices": [
+              {"text": "マルシュロレーヌがいれば大丈夫じゃ？", "bond": 5, "speed": 15, "skill_pt": 10},
+              {"text": "頼れる部分は頼ってしまうのは？", "bond": 5, "stamina": 15, "motivation": 1}
+            ]
+          },
+          {
+            "name": "募る『不安』",
+            "order": 2,
+            "choices": [
+              {"text": "評価を気にせず考えてみるのは？", "bond": 5, "speed": 30},
+              {"text": "バズった絵は、どんな気持ちで描いたの？", "bond": 5, "skill_pt": 15, "skill": "心惹かれてLv1"},
+              {"text": "気分転換をしてみては？", "bond": 5, "stamina": 10, "speed": 10, "power": 10}
+            ]
+          },
+          {
+            "name": "重なる『愛』",
+            "order": 3,
+            "auto": true,
+            "effect": {"bond": 5, "stamina": 5, "motivation": 1, "speed": 15, "skills": ["優雅な砂浴びLv1", "点滴穿石Lv1"]}
+          }
+        ]
+      }
+    ]
+  }
+}
