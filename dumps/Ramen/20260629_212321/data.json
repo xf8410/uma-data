@@ -1,0 +1,1 @@
+{"ok":true,"chara":{"speed":2043,"stamina":1179,"power":1308,"guts":627,"wiz":605,"vital":65,"max_vital":108,"motivation":5,"skill_point":4584,"scenario_id":14,"fan_count":109097,"chara_effect_ids":[],"scenario_progress":0},"month":8,"half":1,"playing_state":1,"is_playing":true,"scenario_obj":"0x74ce9ae4a0","via":"WorkDataManager->get_SingleMode->get_Character->getters"}
