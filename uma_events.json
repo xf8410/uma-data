@@ -1,0 +1,153 @@
+{
+  "schema_version": "uma_events_v1",
+  "updated": "2026-07-01",
+  "support_cards": [
+    {
+      "card_id": 30304,
+      "card_name_jp": "【その執念は怒濤が如く】メイショウドトウ",
+      "card_name_cn": "【那执念如怒涛】名将怒涛",
+      "rarity": "SSR",
+      "type": "スタミナ",
+      "type_cn": "耐力",
+      "source": "卡池",
+      "pickup_period": "2026/06/29-2026/07/21",
+      "bond_bonus": {
+        "bond_threshold": 80,
+        "stamina_bonus": 1,
+        "guts_bonus": 1
+      },
+      "gold_skills": [
+        {"name_jp": "弧線のプロフェッサー", "name_cn": "弧线专家", "hint_lv": 2, "condition": "通用", "effect": "コーナー速度up", "skill_type": "速度", "value": 0.35, "duration": 2.4, "pt_cost": 180},
+        {"name_jp": "パスファインダー", "name_cn": "开路者", "hint_lv": 1, "condition": "中距離/長距離", "effect": "中盤速度up", "skill_type": "速度", "value": 0.35, "duration": 2.4, "pt_cost": 180},
+        {"name_jp": "曙光", "name_cn": "曙光", "hint_lv": 2, "condition": "中距離/長距離", "effect": "終盤前方前出し", "skill_type": "即时速度", "value": 0.35, "duration": 3, "pt_cost": 180},
+        {"name_jp": "悠々自適", "name_cn": "悠然自适", "hint_lv": 2, "condition": "中距離/長距離", "effect": "中盤持久力回復+前出し", "skill_type": "耐力恢复+即时速度", "value": "0.055+0.15", "duration": 2.4, "pt_cost": 190}
+      ],
+      "event_skills": [
+        {"name_jp": "先行コーナー○", "name_cn": "先行弯道○", "rarity": "普通", "pt_cost": 130, "condition": "先行"}
+      ],
+      "training_hint_skills": [
+        {"name_jp": "奮い立つ心", "name_cn": "振奋之心", "pt_cost": 180, "condition": "中距離/長距離"},
+        {"name_jp": "息抜き上手", "name_cn": "善于休息", "pt_cost": 190, "condition": "中距離/長距離", "upgrades_to": "悠々自適"},
+        {"name_jp": "ウマ好み", "name_cn": "喜欢马娘", "pt_cost": 160, "condition": "通用"},
+        {"name_jp": "スリップストリーム", "name_cn": "尾流", "pt_cost": 160, "condition": "通用"},
+        {"name_jp": "コーナー巧者○", "name_cn": "弯道巧者○", "pt_cost": 180, "condition": "通用", "upgrades_to": "弧線のプロフェッサー"},
+        {"name_jp": "下り坂巧者", "name_cn": "下坡巧者", "pt_cost": 170, "condition": "通用"},
+        {"name_jp": "イグニッション", "name_cn": "点火", "pt_cost": 160, "condition": "中距離"},
+        {"name_jp": "光明", "name_cn": "光明", "pt_cost": 180, "condition": "中距離/長距離", "upgrades_to": "曙光"},
+        {"name_jp": "活路を拓く！", "name_cn": "找到出路！", "pt_cost": 180, "condition": "中距離/長距離", "upgrades_to": "パスファインダー"},
+        {"name_jp": "影打", "name_cn": "热场好戏", "pt_cost": 160, "condition": "長距離"},
+        {"name_jp": "コーナー回復○", "name_cn": "弯道回复○", "pt_cost": 170, "condition": "通用"}
+      ],
+      "continuous_events": [
+        {
+          "event_id": "meishou_dotou_ce1",
+          "name_jp": "何度転んでしまっても",
+          "name_cn": "不管摔倒多少次",
+          "stage": 1,
+          "has_choice": false,
+          "effects": [
+            {"choice": null, "effects": "体力+10, やる気up, スタミナ+15, 絆+5"}
+          ]
+        },
+        {
+          "event_id": "meishou_dotou_ce2",
+          "name_jp": "美味しい楽しいファンサービス",
+          "name_cn": "美味快乐的粉丝服务",
+          "stage": 2,
+          "has_choice": true,
+          "choices": [
+            {
+              "text_jp": "すっかり人気者だな",
+              "text_cn": "完全成了名人呢",
+              "effects": "スタミナ+20, 根性+10, Pt+5, ウマ好み ヒントLv+1, 絆+5"
+            },
+            {
+              "text_jp": "BBQも、いっぱい食べられた？",
+              "text_cn": "BBQ也吃了很多吧？",
+              "effects": "スタミナ+20, Pt+30, 絆+5"
+            }
+          ]
+        },
+        {
+          "event_id": "meishou_dotou_ce3",
+          "name_jp": "霸王と共に歩む道",
+          "name_cn": "与霸王同行之路",
+          "stage": 3,
+          "has_choice": true,
+          "is_4gold_3pick2": true,
+          "description": "4金3选2核心イベント：パスファインダー保底 + 三选一",
+          "choices": [
+            {
+              "choice_id": "ce3_choice1",
+              "text_jp": "俺からも礼を言うよ、ドトウ",
+              "text_cn": "我也要谢谢你哦怒涛",
+              "gold_skills_granted": ["弧線のプロフェッサー", "パスファインダー"],
+              "effects": "やる気up, スタミナ+20, 根性+5, Pt+5, 弧線のプロフェッサー ヒントLv+2, パスファインダー ヒントLv+1, 絆+5"
+            },
+            {
+              "choice_id": "ce3_choice2",
+              "text_jp": "もうはぐれないよう、気をつけようか",
+              "text_cn": "别再走散了小心点吧",
+              "gold_skills_granted": ["パスファインダー", "曙光"],
+              "effects": "やる気up, スタミナ+20, Pt+10, パスファインダー ヒントLv+1, 曙光 ヒントLv+2, 絆+5"
+            },
+            {
+              "choice_id": "ce3_choice3",
+              "text_jp": "何かいいことがあったのか？",
+              "text_cn": "发生了什么好事吗",
+              "gold_skills_granted": ["パスファインダー", "悠々自適"],
+              "effects": "やる気up, スピード+5, スタミナ+20, Pt+5, パスファインダー ヒントLv+1, 悠々自適 ヒントLv+2, 絆+5"
+            }
+          ],
+          "mutual_exclusion": {
+            "guaranteed": "パスファインダー",
+            "exclusive_one_of": ["弧線のプロフェッサー", "曙光", "悠々自適"],
+            "constraint": "3选择肢互斥只能获1金+保底パスファインダー共2金"
+          }
+        }
+      ],
+      "normal_events": [
+        {
+          "event_id": "meishou_dotou_ne1",
+          "name_jp": "私……改革ですっ",
+          "name_cn": "我……是改革",
+          "has_choice": true,
+          "choices": [
+            {
+              "text_jp": "まずは揺るぎない自信を見習おう",
+              "text_cn": "先学习那份坚定的自信吧",
+              "effects": "体力+10, やる気+1, 絆+5"
+            },
+            {
+              "text_jp": "まずはあのバイタリティを見習おう",
+              "text_cn": "先学习那份活力吧",
+              "effects": "根性+15, 絆+5"
+            }
+          ]
+        },
+        {
+          "event_id": "meishou_dotou_ne2",
+          "name_jp": "にんじん……買ってくださいっ",
+          "name_cn": "请买胡萝卜",
+          "has_choice": true,
+          "choices": [
+            {
+              "text_jp": "トレセン学園に掛け合ってみよう",
+              "text_cn": "去跟特雷森学园交涉看看吧",
+              "effects": "体力+10, 賢さ+5, 絆+5"
+            },
+            {
+              "text_jp": "人の多いところで呼び込みをしよう",
+              "text_cn": "去人多的地方拉客吧",
+              "effects": "先行コーナー○ ヒントLv+1, 絆+5"
+            }
+          ]
+        }
+      ],
+      "data_sources": [
+        {"name": "gamewith", "url": "https://gamewith.jp/uma-musume/article/show/565542", "fetched": "2026-07-01"},
+        {"name": "biliwiki", "url": "https://wiki.biligame.com/umamusume/【その執念は怒濤が如く】メイショウドトウ", "fetched": "2026-07-01"}
+      ]
+    }
+  ]
+}
