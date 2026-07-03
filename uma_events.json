@@ -1,7 +1,7 @@
 {
   "schema_version": "uma_events_v2",
-  "updated": "2026-07-02",
-  "total_events": 15587,
+  "updated": "2026-07-04",
+  "total_events": 766,
   "total_support_cards": 609,
   "total_characters": 155,
   "support_cards": [
@@ -580642,6 +580642,1816 @@
                   "option_text": "系统事件",
                   "success_effect": "固定效果",
                   "failed_effect": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "ラーメン杯": {
+      "scenario": "グランドマスターズ -麺-",
+      "scenario_id": 14,
+      "event_count": 52,
+      "events": [
+        {
+          "event_id": 400014300,
+          "event_name": "チェックポイント1",
+          "type": "check_point",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "成功",
+                  "success_effect": "スタミナ+15、根性+3、スキルPt+30、体力+15、やる気+10",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      15,
+                      0,
+                      3,
+                      0,
+                      30,
+                      0,
+                      15,
+                      0,
+                      10
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            },
+            {
+              "choice_index": 1,
+              "options": [
+                {
+                  "option_text": "大成功",
+                  "success_effect": "スタミナ+15、根性+5、スキルPt+30、体力+30、やる気+10",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      15,
+                      0,
+                      5,
+                      0,
+                      30,
+                      0,
+                      30,
+                      0,
+                      10
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ],
+          "turn": 24,
+          "success_pt": 1500,
+          "great_success_pt": 0
+        },
+        {
+          "event_id": 400014301,
+          "event_name": "チェックポイント2",
+          "type": "check_point",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "成功",
+                  "success_effect": "スタミナ+15、根性+35、スキルPt+50、体力+70",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      15,
+                      0,
+                      35,
+                      0,
+                      50,
+                      0,
+                      70,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            },
+            {
+              "choice_index": 1,
+              "options": [
+                {
+                  "option_text": "大成功",
+                  "success_effect": "スタミナ+15、根性+40、スキルPt+50、体力+115",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      15,
+                      0,
+                      40,
+                      0,
+                      50,
+                      0,
+                      115,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ],
+          "turn": 48,
+          "success_pt": 3000,
+          "great_success_pt": 0
+        },
+        {
+          "event_id": 400014302,
+          "event_name": "チェックポイント3",
+          "type": "check_point",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "成功",
+                  "success_effect": "スタミナ+15、根性+60、スキルPt+100、体力+155",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      15,
+                      0,
+                      60,
+                      0,
+                      100,
+                      0,
+                      155,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            },
+            {
+              "choice_index": 1,
+              "options": [
+                {
+                  "option_text": "大成功",
+                  "success_effect": "スタミナ+15、根性+70、スキルPt+100、体力+205",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      15,
+                      0,
+                      70,
+                      0,
+                      100,
+                      0,
+                      205,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ],
+          "turn": 72,
+          "success_pt": 3500,
+          "great_success_pt": 5000
+        },
+        {
+          "event_id": 400014303,
+          "event_name": "チェックポイント4",
+          "type": "check_point",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014304,
+          "event_name": "チェックポイント5",
+          "type": "check_point",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014305,
+          "event_name": "チェックポイント6",
+          "type": "check_point",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014306,
+          "event_name": "チェックポイント7",
+          "type": "check_point",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014307,
+          "event_name": "チェックポイント8",
+          "type": "check_point",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014308,
+          "event_name": "チェックポイント9",
+          "type": "check_point",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014309,
+          "event_name": "チェックポイント10",
+          "type": "check_point",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014310,
+          "event_name": "チェックポイント11",
+          "type": "check_point",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014311,
+          "event_name": "チェックポイント12",
+          "type": "check_point",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014312,
+          "event_name": "チェックポイント13",
+          "type": "check_point",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014313,
+          "event_name": "チェックポイント14",
+          "type": "check_point",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014314,
+          "event_name": "チェックポイント15",
+          "type": "check_point",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014315,
+          "event_name": "チェックポイント16",
+          "type": "check_point",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014316,
+          "event_name": "チェックポイント17",
+          "type": "check_point",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014317,
+          "event_name": "チェックポイント18",
+          "type": "check_point",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014318,
+          "event_name": "チェックポイント19",
+          "type": "check_point",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014319,
+          "event_name": "チェックポイント20",
+          "type": "check_point",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014000,
+          "event_name": "",
+          "type": "fixed",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014001,
+          "event_name": "",
+          "type": "fixed",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014002,
+          "event_name": "",
+          "type": "fixed",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014003,
+          "event_name": "",
+          "type": "fixed",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014004,
+          "event_name": "",
+          "type": "fixed",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014005,
+          "event_name": "",
+          "type": "fixed",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014006,
+          "event_name": "",
+          "type": "fixed",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014007,
+          "event_name": "",
+          "type": "fixed",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014008,
+          "event_name": "",
+          "type": "fixed",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014009,
+          "event_name": "",
+          "type": "fixed",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014010,
+          "event_name": "",
+          "type": "fixed",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014011,
+          "event_name": "",
+          "type": "fixed",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014012,
+          "event_name": "",
+          "type": "fixed",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014013,
+          "event_name": "",
+          "type": "fixed",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014014,
+          "event_name": "",
+          "type": "fixed",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014015,
+          "event_name": "",
+          "type": "fixed",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014016,
+          "event_name": "",
+          "type": "fixed",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014017,
+          "event_name": "",
+          "type": "fixed",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014018,
+          "event_name": "",
+          "type": "fixed",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014019,
+          "event_name": "",
+          "type": "fixed",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014020,
+          "event_name": "",
+          "type": "fixed",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014021,
+          "event_name": "",
+          "type": "fixed",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014022,
+          "event_name": "",
+          "type": "fixed",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014023,
+          "event_name": "",
+          "type": "fixed",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014100,
+          "event_name": "",
+          "type": "special",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014101,
+          "event_name": "",
+          "type": "special",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014102,
+          "event_name": "",
+          "type": "special",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014103,
+          "event_name": "",
+          "type": "special",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014104,
+          "event_name": "",
+          "type": "special",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014105,
+          "event_name": "",
+          "type": "special",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014106,
+          "event_name": "",
+          "type": "special",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "event_id": 400014107,
+          "event_name": "",
+          "type": "special",
+          "choices": [
+            {
+              "choice_index": 0,
+              "options": [
+                {
+                  "option_text": "",
+                  "success_effect": "",
+                  "failed_effect": "",
+                  "success_values": {
+                    "values": [
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0,
+                      0
+                    ],
+                    "skills": [],
+                    "buff": null
+                  }
                 }
               ]
             }
