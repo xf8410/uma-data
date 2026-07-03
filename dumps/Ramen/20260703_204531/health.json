@@ -1,0 +1,1 @@
+{"status":"ok","version":"3.22.26","endpoints":["/summary","/data","/scenario","/debug/rameninfo","/debug/laststep","/event/recommend","/inherit/compat","/log/turn","/debug/params","/debug/breeders","/debug/cmdinfo","/debug/crashlog","/debug/upload","/debug/dumpclass","/debug/ramenfields","/carddb","/skilldata","/hall","/saddles","/saddles-dl","/log","/status","/health"]}
