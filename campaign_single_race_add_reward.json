@@ -1,0 +1,3039 @@
+{
+  "table": "campaign_single_race_add_reward",
+  "row_count": 336,
+  "columns": [
+    "id",
+    "race_additional_reward_id",
+    "item_category",
+    "item_id",
+    "reward_type",
+    "reward_value",
+    "reward_rate"
+  ],
+  "rows": [
+    {
+      "id": 1,
+      "race_additional_reward_id": 1,
+      "item_category": 102,
+      "item_id": 104001,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 2,
+      "race_additional_reward_id": 1,
+      "item_category": 102,
+      "item_id": 104001,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 3,
+      "race_additional_reward_id": 1,
+      "item_category": 102,
+      "item_id": 104001,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 4,
+      "race_additional_reward_id": 2,
+      "item_category": 102,
+      "item_id": 100401,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 5,
+      "race_additional_reward_id": 2,
+      "item_category": 102,
+      "item_id": 100401,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 6,
+      "race_additional_reward_id": 2,
+      "item_category": 102,
+      "item_id": 100401,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 7,
+      "race_additional_reward_id": 3,
+      "item_category": 102,
+      "item_id": 100302,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 8,
+      "race_additional_reward_id": 3,
+      "item_category": 102,
+      "item_id": 100302,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 9,
+      "race_additional_reward_id": 3,
+      "item_category": 102,
+      "item_id": 100302,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 10,
+      "race_additional_reward_id": 4,
+      "item_category": 102,
+      "item_id": 105001,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 11,
+      "race_additional_reward_id": 4,
+      "item_category": 102,
+      "item_id": 105001,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 12,
+      "race_additional_reward_id": 4,
+      "item_category": 102,
+      "item_id": 105001,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 13,
+      "race_additional_reward_id": 5,
+      "item_category": 102,
+      "item_id": 101901,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 14,
+      "race_additional_reward_id": 5,
+      "item_category": 102,
+      "item_id": 101901,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 15,
+      "race_additional_reward_id": 5,
+      "item_category": 102,
+      "item_id": 101901,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 16,
+      "race_additional_reward_id": 6,
+      "item_category": 102,
+      "item_id": 103801,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 17,
+      "race_additional_reward_id": 6,
+      "item_category": 102,
+      "item_id": 103801,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 18,
+      "race_additional_reward_id": 6,
+      "item_category": 102,
+      "item_id": 103801,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 19,
+      "race_additional_reward_id": 7,
+      "item_category": 102,
+      "item_id": 101302,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 20,
+      "race_additional_reward_id": 7,
+      "item_category": 102,
+      "item_id": 101302,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 21,
+      "race_additional_reward_id": 7,
+      "item_category": 102,
+      "item_id": 101302,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 22,
+      "race_additional_reward_id": 8,
+      "item_category": 102,
+      "item_id": 100901,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 23,
+      "race_additional_reward_id": 8,
+      "item_category": 102,
+      "item_id": 100901,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 24,
+      "race_additional_reward_id": 8,
+      "item_category": 102,
+      "item_id": 100901,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 25,
+      "race_additional_reward_id": 9,
+      "item_category": 102,
+      "item_id": 102001,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 26,
+      "race_additional_reward_id": 9,
+      "item_category": 102,
+      "item_id": 102001,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 27,
+      "race_additional_reward_id": 9,
+      "item_category": 102,
+      "item_id": 102001,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 28,
+      "race_additional_reward_id": 10,
+      "item_category": 102,
+      "item_id": 102501,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 29,
+      "race_additional_reward_id": 10,
+      "item_category": 102,
+      "item_id": 102501,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 30,
+      "race_additional_reward_id": 10,
+      "item_category": 102,
+      "item_id": 102501,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 31,
+      "race_additional_reward_id": 11,
+      "item_category": 102,
+      "item_id": 101401,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 32,
+      "race_additional_reward_id": 11,
+      "item_category": 102,
+      "item_id": 101401,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 33,
+      "race_additional_reward_id": 11,
+      "item_category": 102,
+      "item_id": 101401,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 34,
+      "race_additional_reward_id": 12,
+      "item_category": 102,
+      "item_id": 100801,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 35,
+      "race_additional_reward_id": 12,
+      "item_category": 102,
+      "item_id": 100801,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 36,
+      "race_additional_reward_id": 12,
+      "item_category": 102,
+      "item_id": 100801,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 37,
+      "race_additional_reward_id": 13,
+      "item_category": 102,
+      "item_id": 103901,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 38,
+      "race_additional_reward_id": 13,
+      "item_category": 102,
+      "item_id": 103901,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 39,
+      "race_additional_reward_id": 13,
+      "item_category": 102,
+      "item_id": 103901,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 40,
+      "race_additional_reward_id": 14,
+      "item_category": 102,
+      "item_id": 101601,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 41,
+      "race_additional_reward_id": 14,
+      "item_category": 102,
+      "item_id": 101601,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 42,
+      "race_additional_reward_id": 14,
+      "item_category": 102,
+      "item_id": 101601,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 43,
+      "race_additional_reward_id": 15,
+      "item_category": 102,
+      "item_id": 101001,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 44,
+      "race_additional_reward_id": 15,
+      "item_category": 102,
+      "item_id": 101001,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 45,
+      "race_additional_reward_id": 15,
+      "item_category": 102,
+      "item_id": 101001,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 46,
+      "race_additional_reward_id": 16,
+      "item_category": 102,
+      "item_id": 102301,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 47,
+      "race_additional_reward_id": 16,
+      "item_category": 102,
+      "item_id": 102301,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 48,
+      "race_additional_reward_id": 16,
+      "item_category": 102,
+      "item_id": 102301,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 49,
+      "race_additional_reward_id": 17,
+      "item_category": 102,
+      "item_id": 104601,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 50,
+      "race_additional_reward_id": 17,
+      "item_category": 102,
+      "item_id": 104601,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 51,
+      "race_additional_reward_id": 17,
+      "item_category": 102,
+      "item_id": 104601,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 52,
+      "race_additional_reward_id": 18,
+      "item_category": 102,
+      "item_id": 100501,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 53,
+      "race_additional_reward_id": 18,
+      "item_category": 102,
+      "item_id": 100501,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 54,
+      "race_additional_reward_id": 18,
+      "item_category": 102,
+      "item_id": 100501,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 55,
+      "race_additional_reward_id": 19,
+      "item_category": 102,
+      "item_id": 102801,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 56,
+      "race_additional_reward_id": 19,
+      "item_category": 102,
+      "item_id": 102801,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 57,
+      "race_additional_reward_id": 19,
+      "item_category": 102,
+      "item_id": 102801,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 58,
+      "race_additional_reward_id": 20,
+      "item_category": 102,
+      "item_id": 109801,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 59,
+      "race_additional_reward_id": 20,
+      "item_category": 102,
+      "item_id": 109801,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 60,
+      "race_additional_reward_id": 20,
+      "item_category": 102,
+      "item_id": 109801,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 61,
+      "race_additional_reward_id": 21,
+      "item_category": 102,
+      "item_id": 105901,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 62,
+      "race_additional_reward_id": 21,
+      "item_category": 102,
+      "item_id": 105901,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 63,
+      "race_additional_reward_id": 21,
+      "item_category": 102,
+      "item_id": 105901,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 64,
+      "race_additional_reward_id": 22,
+      "item_category": 102,
+      "item_id": 106701,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 65,
+      "race_additional_reward_id": 22,
+      "item_category": 102,
+      "item_id": 106701,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 66,
+      "race_additional_reward_id": 22,
+      "item_category": 102,
+      "item_id": 106701,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 67,
+      "race_additional_reward_id": 23,
+      "item_category": 102,
+      "item_id": 102101,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 68,
+      "race_additional_reward_id": 23,
+      "item_category": 102,
+      "item_id": 102101,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 69,
+      "race_additional_reward_id": 23,
+      "item_category": 102,
+      "item_id": 102101,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 70,
+      "race_additional_reward_id": 24,
+      "item_category": 102,
+      "item_id": 104602,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 71,
+      "race_additional_reward_id": 24,
+      "item_category": 102,
+      "item_id": 104602,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 72,
+      "race_additional_reward_id": 24,
+      "item_category": 102,
+      "item_id": 104602,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 73,
+      "race_additional_reward_id": 25,
+      "item_category": 102,
+      "item_id": 105202,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 74,
+      "race_additional_reward_id": 25,
+      "item_category": 102,
+      "item_id": 105202,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 75,
+      "race_additional_reward_id": 25,
+      "item_category": 102,
+      "item_id": 105202,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 76,
+      "race_additional_reward_id": 26,
+      "item_category": 102,
+      "item_id": 106102,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 77,
+      "race_additional_reward_id": 26,
+      "item_category": 102,
+      "item_id": 106102,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 78,
+      "race_additional_reward_id": 26,
+      "item_category": 102,
+      "item_id": 106102,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 79,
+      "race_additional_reward_id": 27,
+      "item_category": 102,
+      "item_id": 101201,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 80,
+      "race_additional_reward_id": 27,
+      "item_category": 102,
+      "item_id": 101201,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 81,
+      "race_additional_reward_id": 27,
+      "item_category": 102,
+      "item_id": 101201,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 82,
+      "race_additional_reward_id": 28,
+      "item_category": 102,
+      "item_id": 100601,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 83,
+      "race_additional_reward_id": 28,
+      "item_category": 102,
+      "item_id": 100601,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 84,
+      "race_additional_reward_id": 28,
+      "item_category": 102,
+      "item_id": 100601,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 85,
+      "race_additional_reward_id": 29,
+      "item_category": 102,
+      "item_id": 101501,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 86,
+      "race_additional_reward_id": 29,
+      "item_category": 102,
+      "item_id": 101501,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 87,
+      "race_additional_reward_id": 29,
+      "item_category": 102,
+      "item_id": 101501,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 88,
+      "race_additional_reward_id": 30,
+      "item_category": 102,
+      "item_id": 100502,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 89,
+      "race_additional_reward_id": 30,
+      "item_category": 102,
+      "item_id": 100502,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 90,
+      "race_additional_reward_id": 30,
+      "item_category": 102,
+      "item_id": 100502,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 91,
+      "race_additional_reward_id": 40,
+      "item_category": 102,
+      "item_id": 104001,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 92,
+      "race_additional_reward_id": 40,
+      "item_category": 102,
+      "item_id": 104001,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 93,
+      "race_additional_reward_id": 40,
+      "item_category": 102,
+      "item_id": 104001,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 94,
+      "race_additional_reward_id": 41,
+      "item_category": 102,
+      "item_id": 101902,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 95,
+      "race_additional_reward_id": 41,
+      "item_category": 102,
+      "item_id": 101902,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 96,
+      "race_additional_reward_id": 41,
+      "item_category": 102,
+      "item_id": 101902,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 97,
+      "race_additional_reward_id": 42,
+      "item_category": 102,
+      "item_id": 100401,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 98,
+      "race_additional_reward_id": 42,
+      "item_category": 102,
+      "item_id": 100401,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 99,
+      "race_additional_reward_id": 42,
+      "item_category": 102,
+      "item_id": 100401,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 100,
+      "race_additional_reward_id": 43,
+      "item_category": 102,
+      "item_id": 100302,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 101,
+      "race_additional_reward_id": 43,
+      "item_category": 102,
+      "item_id": 100302,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 102,
+      "race_additional_reward_id": 43,
+      "item_category": 102,
+      "item_id": 100302,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 103,
+      "race_additional_reward_id": 44,
+      "item_category": 102,
+      "item_id": 105001,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 104,
+      "race_additional_reward_id": 44,
+      "item_category": 102,
+      "item_id": 105001,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 105,
+      "race_additional_reward_id": 44,
+      "item_category": 102,
+      "item_id": 105001,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 106,
+      "race_additional_reward_id": 45,
+      "item_category": 102,
+      "item_id": 103401,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 107,
+      "race_additional_reward_id": 45,
+      "item_category": 102,
+      "item_id": 103401,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 108,
+      "race_additional_reward_id": 45,
+      "item_category": 102,
+      "item_id": 103401,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 109,
+      "race_additional_reward_id": 46,
+      "item_category": 102,
+      "item_id": 102102,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 110,
+      "race_additional_reward_id": 46,
+      "item_category": 102,
+      "item_id": 102102,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 111,
+      "race_additional_reward_id": 46,
+      "item_category": 102,
+      "item_id": 102102,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 112,
+      "race_additional_reward_id": 47,
+      "item_category": 102,
+      "item_id": 104201,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 113,
+      "race_additional_reward_id": 47,
+      "item_category": 102,
+      "item_id": 104201,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 114,
+      "race_additional_reward_id": 47,
+      "item_category": 102,
+      "item_id": 104201,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 115,
+      "race_additional_reward_id": 48,
+      "item_category": 102,
+      "item_id": 107401,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 116,
+      "race_additional_reward_id": 48,
+      "item_category": 102,
+      "item_id": 107401,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 117,
+      "race_additional_reward_id": 48,
+      "item_category": 102,
+      "item_id": 107401,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 118,
+      "race_additional_reward_id": 49,
+      "item_category": 102,
+      "item_id": 103702,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 119,
+      "race_additional_reward_id": 49,
+      "item_category": 102,
+      "item_id": 103702,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 120,
+      "race_additional_reward_id": 49,
+      "item_category": 102,
+      "item_id": 103702,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 121,
+      "race_additional_reward_id": 50,
+      "item_category": 102,
+      "item_id": 104801,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 122,
+      "race_additional_reward_id": 50,
+      "item_category": 102,
+      "item_id": 104801,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 123,
+      "race_additional_reward_id": 50,
+      "item_category": 102,
+      "item_id": 104801,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 124,
+      "race_additional_reward_id": 51,
+      "item_category": 102,
+      "item_id": 109901,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 125,
+      "race_additional_reward_id": 51,
+      "item_category": 102,
+      "item_id": 109901,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 126,
+      "race_additional_reward_id": 51,
+      "item_category": 102,
+      "item_id": 109901,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 127,
+      "race_additional_reward_id": 52,
+      "item_category": 102,
+      "item_id": 101901,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 128,
+      "race_additional_reward_id": 52,
+      "item_category": 102,
+      "item_id": 101901,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 129,
+      "race_additional_reward_id": 52,
+      "item_category": 102,
+      "item_id": 101901,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 130,
+      "race_additional_reward_id": 53,
+      "item_category": 102,
+      "item_id": 103801,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 131,
+      "race_additional_reward_id": 53,
+      "item_category": 102,
+      "item_id": 103801,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 132,
+      "race_additional_reward_id": 53,
+      "item_category": 102,
+      "item_id": 103801,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 133,
+      "race_additional_reward_id": 54,
+      "item_category": 102,
+      "item_id": 101302,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 134,
+      "race_additional_reward_id": 54,
+      "item_category": 102,
+      "item_id": 101302,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 135,
+      "race_additional_reward_id": 54,
+      "item_category": 102,
+      "item_id": 101302,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 136,
+      "race_additional_reward_id": 55,
+      "item_category": 102,
+      "item_id": 100901,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 137,
+      "race_additional_reward_id": 55,
+      "item_category": 102,
+      "item_id": 100901,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 138,
+      "race_additional_reward_id": 55,
+      "item_category": 102,
+      "item_id": 100901,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 139,
+      "race_additional_reward_id": 56,
+      "item_category": 102,
+      "item_id": 102001,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 140,
+      "race_additional_reward_id": 56,
+      "item_category": 102,
+      "item_id": 102001,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 141,
+      "race_additional_reward_id": 56,
+      "item_category": 102,
+      "item_id": 102001,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 142,
+      "race_additional_reward_id": 57,
+      "item_category": 102,
+      "item_id": 102501,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 143,
+      "race_additional_reward_id": 57,
+      "item_category": 102,
+      "item_id": 102501,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 144,
+      "race_additional_reward_id": 57,
+      "item_category": 102,
+      "item_id": 102501,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 145,
+      "race_additional_reward_id": 58,
+      "item_category": 102,
+      "item_id": 110001,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 146,
+      "race_additional_reward_id": 58,
+      "item_category": 102,
+      "item_id": 110001,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 147,
+      "race_additional_reward_id": 58,
+      "item_category": 102,
+      "item_id": 110001,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 148,
+      "race_additional_reward_id": 59,
+      "item_category": 102,
+      "item_id": 101401,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 149,
+      "race_additional_reward_id": 59,
+      "item_category": 102,
+      "item_id": 101401,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 150,
+      "race_additional_reward_id": 59,
+      "item_category": 102,
+      "item_id": 101401,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 151,
+      "race_additional_reward_id": 60,
+      "item_category": 102,
+      "item_id": 100801,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 152,
+      "race_additional_reward_id": 60,
+      "item_category": 102,
+      "item_id": 100801,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 153,
+      "race_additional_reward_id": 60,
+      "item_category": 102,
+      "item_id": 100801,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 154,
+      "race_additional_reward_id": 61,
+      "item_category": 102,
+      "item_id": 103901,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 155,
+      "race_additional_reward_id": 61,
+      "item_category": 102,
+      "item_id": 103901,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 156,
+      "race_additional_reward_id": 61,
+      "item_category": 102,
+      "item_id": 103901,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 157,
+      "race_additional_reward_id": 62,
+      "item_category": 102,
+      "item_id": 101601,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 158,
+      "race_additional_reward_id": 62,
+      "item_category": 102,
+      "item_id": 101601,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 159,
+      "race_additional_reward_id": 62,
+      "item_category": 102,
+      "item_id": 101601,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 160,
+      "race_additional_reward_id": 63,
+      "item_category": 102,
+      "item_id": 101001,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 161,
+      "race_additional_reward_id": 63,
+      "item_category": 102,
+      "item_id": 101001,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 162,
+      "race_additional_reward_id": 63,
+      "item_category": 102,
+      "item_id": 101001,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 163,
+      "race_additional_reward_id": 64,
+      "item_category": 102,
+      "item_id": 102301,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 164,
+      "race_additional_reward_id": 64,
+      "item_category": 102,
+      "item_id": 102301,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 165,
+      "race_additional_reward_id": 64,
+      "item_category": 102,
+      "item_id": 102301,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 166,
+      "race_additional_reward_id": 65,
+      "item_category": 102,
+      "item_id": 104601,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 167,
+      "race_additional_reward_id": 65,
+      "item_category": 102,
+      "item_id": 104601,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 168,
+      "race_additional_reward_id": 65,
+      "item_category": 102,
+      "item_id": 104601,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 169,
+      "race_additional_reward_id": 66,
+      "item_category": 102,
+      "item_id": 100501,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 170,
+      "race_additional_reward_id": 66,
+      "item_category": 102,
+      "item_id": 100501,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 171,
+      "race_additional_reward_id": 66,
+      "item_category": 102,
+      "item_id": 100501,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 172,
+      "race_additional_reward_id": 67,
+      "item_category": 102,
+      "item_id": 105901,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 173,
+      "race_additional_reward_id": 67,
+      "item_category": 102,
+      "item_id": 105901,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 174,
+      "race_additional_reward_id": 67,
+      "item_category": 102,
+      "item_id": 105901,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 175,
+      "race_additional_reward_id": 68,
+      "item_category": 102,
+      "item_id": 106701,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 176,
+      "race_additional_reward_id": 68,
+      "item_category": 102,
+      "item_id": 106701,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 177,
+      "race_additional_reward_id": 68,
+      "item_category": 102,
+      "item_id": 106701,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 178,
+      "race_additional_reward_id": 69,
+      "item_category": 102,
+      "item_id": 102101,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 179,
+      "race_additional_reward_id": 69,
+      "item_category": 102,
+      "item_id": 102101,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 180,
+      "race_additional_reward_id": 69,
+      "item_category": 102,
+      "item_id": 102101,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 181,
+      "race_additional_reward_id": 70,
+      "item_category": 102,
+      "item_id": 104602,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 182,
+      "race_additional_reward_id": 70,
+      "item_category": 102,
+      "item_id": 104602,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 183,
+      "race_additional_reward_id": 70,
+      "item_category": 102,
+      "item_id": 104602,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 184,
+      "race_additional_reward_id": 71,
+      "item_category": 102,
+      "item_id": 105202,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 185,
+      "race_additional_reward_id": 71,
+      "item_category": 102,
+      "item_id": 105202,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 186,
+      "race_additional_reward_id": 71,
+      "item_category": 102,
+      "item_id": 105202,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 187,
+      "race_additional_reward_id": 72,
+      "item_category": 102,
+      "item_id": 106102,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 188,
+      "race_additional_reward_id": 72,
+      "item_category": 102,
+      "item_id": 106102,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 189,
+      "race_additional_reward_id": 72,
+      "item_category": 102,
+      "item_id": 106102,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 190,
+      "race_additional_reward_id": 73,
+      "item_category": 102,
+      "item_id": 101201,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 191,
+      "race_additional_reward_id": 73,
+      "item_category": 102,
+      "item_id": 101201,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 192,
+      "race_additional_reward_id": 73,
+      "item_category": 102,
+      "item_id": 101201,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 193,
+      "race_additional_reward_id": 74,
+      "item_category": 102,
+      "item_id": 100601,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 194,
+      "race_additional_reward_id": 74,
+      "item_category": 102,
+      "item_id": 100601,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 195,
+      "race_additional_reward_id": 74,
+      "item_category": 102,
+      "item_id": 100601,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 196,
+      "race_additional_reward_id": 75,
+      "item_category": 102,
+      "item_id": 101501,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 197,
+      "race_additional_reward_id": 75,
+      "item_category": 102,
+      "item_id": 101501,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 198,
+      "race_additional_reward_id": 75,
+      "item_category": 102,
+      "item_id": 101501,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 199,
+      "race_additional_reward_id": 76,
+      "item_category": 102,
+      "item_id": 100502,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 200,
+      "race_additional_reward_id": 76,
+      "item_category": 102,
+      "item_id": 100502,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 201,
+      "race_additional_reward_id": 76,
+      "item_category": 102,
+      "item_id": 100502,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 202,
+      "race_additional_reward_id": 77,
+      "item_category": 102,
+      "item_id": 104001,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 203,
+      "race_additional_reward_id": 77,
+      "item_category": 102,
+      "item_id": 104001,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 204,
+      "race_additional_reward_id": 77,
+      "item_category": 102,
+      "item_id": 104001,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 205,
+      "race_additional_reward_id": 78,
+      "item_category": 102,
+      "item_id": 101902,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 206,
+      "race_additional_reward_id": 78,
+      "item_category": 102,
+      "item_id": 101902,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 207,
+      "race_additional_reward_id": 78,
+      "item_category": 102,
+      "item_id": 101902,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 208,
+      "race_additional_reward_id": 79,
+      "item_category": 102,
+      "item_id": 100401,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 209,
+      "race_additional_reward_id": 79,
+      "item_category": 102,
+      "item_id": 100401,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 210,
+      "race_additional_reward_id": 79,
+      "item_category": 102,
+      "item_id": 100401,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 211,
+      "race_additional_reward_id": 80,
+      "item_category": 102,
+      "item_id": 100302,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 212,
+      "race_additional_reward_id": 80,
+      "item_category": 102,
+      "item_id": 100302,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 213,
+      "race_additional_reward_id": 80,
+      "item_category": 102,
+      "item_id": 100302,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 214,
+      "race_additional_reward_id": 81,
+      "item_category": 102,
+      "item_id": 105001,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 215,
+      "race_additional_reward_id": 81,
+      "item_category": 102,
+      "item_id": 105001,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 216,
+      "race_additional_reward_id": 81,
+      "item_category": 102,
+      "item_id": 105001,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 217,
+      "race_additional_reward_id": 82,
+      "item_category": 102,
+      "item_id": 103401,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 218,
+      "race_additional_reward_id": 82,
+      "item_category": 102,
+      "item_id": 103401,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 219,
+      "race_additional_reward_id": 82,
+      "item_category": 102,
+      "item_id": 103401,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 220,
+      "race_additional_reward_id": 83,
+      "item_category": 102,
+      "item_id": 107601,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 221,
+      "race_additional_reward_id": 83,
+      "item_category": 102,
+      "item_id": 107601,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 222,
+      "race_additional_reward_id": 83,
+      "item_category": 102,
+      "item_id": 107601,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 223,
+      "race_additional_reward_id": 84,
+      "item_category": 102,
+      "item_id": 105102,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 224,
+      "race_additional_reward_id": 84,
+      "item_category": 102,
+      "item_id": 105102,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 225,
+      "race_additional_reward_id": 84,
+      "item_category": 102,
+      "item_id": 105102,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 226,
+      "race_additional_reward_id": 85,
+      "item_category": 102,
+      "item_id": 101402,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 227,
+      "race_additional_reward_id": 85,
+      "item_category": 102,
+      "item_id": 101402,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 228,
+      "race_additional_reward_id": 85,
+      "item_category": 102,
+      "item_id": 101402,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 229,
+      "race_additional_reward_id": 86,
+      "item_category": 102,
+      "item_id": 100802,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 230,
+      "race_additional_reward_id": 86,
+      "item_category": 102,
+      "item_id": 100802,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 231,
+      "race_additional_reward_id": 86,
+      "item_category": 102,
+      "item_id": 100802,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 232,
+      "race_additional_reward_id": 87,
+      "item_category": 102,
+      "item_id": 101001,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 233,
+      "race_additional_reward_id": 87,
+      "item_category": 102,
+      "item_id": 101001,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 234,
+      "race_additional_reward_id": 87,
+      "item_category": 102,
+      "item_id": 101001,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 235,
+      "race_additional_reward_id": 88,
+      "item_category": 102,
+      "item_id": 102301,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 236,
+      "race_additional_reward_id": 88,
+      "item_category": 102,
+      "item_id": 102301,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 237,
+      "race_additional_reward_id": 88,
+      "item_category": 102,
+      "item_id": 102301,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 238,
+      "race_additional_reward_id": 89,
+      "item_category": 102,
+      "item_id": 104601,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 239,
+      "race_additional_reward_id": 89,
+      "item_category": 102,
+      "item_id": 104601,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 240,
+      "race_additional_reward_id": 89,
+      "item_category": 102,
+      "item_id": 104601,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 241,
+      "race_additional_reward_id": 90,
+      "item_category": 102,
+      "item_id": 108701,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 242,
+      "race_additional_reward_id": 90,
+      "item_category": 102,
+      "item_id": 108701,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 243,
+      "race_additional_reward_id": 90,
+      "item_category": 102,
+      "item_id": 108701,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 244,
+      "race_additional_reward_id": 91,
+      "item_category": 102,
+      "item_id": 108301,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 245,
+      "race_additional_reward_id": 91,
+      "item_category": 102,
+      "item_id": 108301,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 246,
+      "race_additional_reward_id": 91,
+      "item_category": 102,
+      "item_id": 108301,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 247,
+      "race_additional_reward_id": 92,
+      "item_category": 102,
+      "item_id": 109101,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 248,
+      "race_additional_reward_id": 92,
+      "item_category": 102,
+      "item_id": 109101,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 249,
+      "race_additional_reward_id": 92,
+      "item_category": 102,
+      "item_id": 109101,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 250,
+      "race_additional_reward_id": 93,
+      "item_category": 102,
+      "item_id": 107701,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 251,
+      "race_additional_reward_id": 93,
+      "item_category": 102,
+      "item_id": 107701,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 252,
+      "race_additional_reward_id": 93,
+      "item_category": 102,
+      "item_id": 107701,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 253,
+      "race_additional_reward_id": 94,
+      "item_category": 102,
+      "item_id": 105701,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 254,
+      "race_additional_reward_id": 94,
+      "item_category": 102,
+      "item_id": 105701,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 255,
+      "race_additional_reward_id": 94,
+      "item_category": 102,
+      "item_id": 105701,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 256,
+      "race_additional_reward_id": 95,
+      "item_category": 102,
+      "item_id": 102202,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 257,
+      "race_additional_reward_id": 95,
+      "item_category": 102,
+      "item_id": 102202,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 258,
+      "race_additional_reward_id": 95,
+      "item_category": 102,
+      "item_id": 102202,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 259,
+      "race_additional_reward_id": 96,
+      "item_category": 102,
+      "item_id": 106501,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 260,
+      "race_additional_reward_id": 96,
+      "item_category": 102,
+      "item_id": 106501,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 261,
+      "race_additional_reward_id": 96,
+      "item_category": 102,
+      "item_id": 106501,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 262,
+      "race_additional_reward_id": 97,
+      "item_category": 102,
+      "item_id": 108901,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 263,
+      "race_additional_reward_id": 97,
+      "item_category": 102,
+      "item_id": 108901,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 264,
+      "race_additional_reward_id": 97,
+      "item_category": 102,
+      "item_id": 108901,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 265,
+      "race_additional_reward_id": 98,
+      "item_category": 102,
+      "item_id": 108001,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 266,
+      "race_additional_reward_id": 98,
+      "item_category": 102,
+      "item_id": 108001,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 267,
+      "race_additional_reward_id": 98,
+      "item_category": 102,
+      "item_id": 108001,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 268,
+      "race_additional_reward_id": 99,
+      "item_category": 102,
+      "item_id": 105902,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 269,
+      "race_additional_reward_id": 99,
+      "item_category": 102,
+      "item_id": 105902,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 270,
+      "race_additional_reward_id": 99,
+      "item_category": 102,
+      "item_id": 105902,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 271,
+      "race_additional_reward_id": 100,
+      "item_category": 102,
+      "item_id": 111901,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 272,
+      "race_additional_reward_id": 100,
+      "item_category": 102,
+      "item_id": 111901,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 273,
+      "race_additional_reward_id": 100,
+      "item_category": 102,
+      "item_id": 111901,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 274,
+      "race_additional_reward_id": 101,
+      "item_category": 102,
+      "item_id": 101602,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 275,
+      "race_additional_reward_id": 101,
+      "item_category": 102,
+      "item_id": 101602,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 276,
+      "race_additional_reward_id": 101,
+      "item_category": 102,
+      "item_id": 101602,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 277,
+      "race_additional_reward_id": 102,
+      "item_category": 102,
+      "item_id": 103301,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 278,
+      "race_additional_reward_id": 102,
+      "item_category": 102,
+      "item_id": 103301,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 279,
+      "race_additional_reward_id": 102,
+      "item_category": 102,
+      "item_id": 103301,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 280,
+      "race_additional_reward_id": 103,
+      "item_category": 102,
+      "item_id": 103402,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 281,
+      "race_additional_reward_id": 103,
+      "item_category": 102,
+      "item_id": 103402,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 282,
+      "race_additional_reward_id": 103,
+      "item_category": 102,
+      "item_id": 103402,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 283,
+      "race_additional_reward_id": 104,
+      "item_category": 102,
+      "item_id": 108401,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 284,
+      "race_additional_reward_id": 104,
+      "item_category": 102,
+      "item_id": 108401,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 285,
+      "race_additional_reward_id": 104,
+      "item_category": 102,
+      "item_id": 108401,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 286,
+      "race_additional_reward_id": 105,
+      "item_category": 102,
+      "item_id": 107402,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 287,
+      "race_additional_reward_id": 105,
+      "item_category": 102,
+      "item_id": 107402,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 288,
+      "race_additional_reward_id": 105,
+      "item_category": 102,
+      "item_id": 107402,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 289,
+      "race_additional_reward_id": 106,
+      "item_category": 102,
+      "item_id": 104802,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 290,
+      "race_additional_reward_id": 106,
+      "item_category": 102,
+      "item_id": 104802,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 291,
+      "race_additional_reward_id": 106,
+      "item_category": 102,
+      "item_id": 104802,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 292,
+      "race_additional_reward_id": 107,
+      "item_category": 102,
+      "item_id": 104301,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 293,
+      "race_additional_reward_id": 107,
+      "item_category": 102,
+      "item_id": 104301,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 294,
+      "race_additional_reward_id": 107,
+      "item_category": 102,
+      "item_id": 104301,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 295,
+      "race_additional_reward_id": 108,
+      "item_category": 102,
+      "item_id": 105302,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 296,
+      "race_additional_reward_id": 108,
+      "item_category": 102,
+      "item_id": 105302,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 297,
+      "race_additional_reward_id": 108,
+      "item_category": 102,
+      "item_id": 105302,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 298,
+      "race_additional_reward_id": 109,
+      "item_category": 102,
+      "item_id": 110501,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 299,
+      "race_additional_reward_id": 109,
+      "item_category": 102,
+      "item_id": 110501,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 300,
+      "race_additional_reward_id": 109,
+      "item_category": 102,
+      "item_id": 110501,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 301,
+      "race_additional_reward_id": 110,
+      "item_category": 102,
+      "item_id": 109902,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 302,
+      "race_additional_reward_id": 110,
+      "item_category": 102,
+      "item_id": 109902,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 303,
+      "race_additional_reward_id": 110,
+      "item_category": 102,
+      "item_id": 109902,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 304,
+      "race_additional_reward_id": 111,
+      "item_category": 102,
+      "item_id": 108601,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 305,
+      "race_additional_reward_id": 111,
+      "item_category": 102,
+      "item_id": 108601,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 306,
+      "race_additional_reward_id": 111,
+      "item_category": 102,
+      "item_id": 108601,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 307,
+      "race_additional_reward_id": 112,
+      "item_category": 102,
+      "item_id": 102602,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 308,
+      "race_additional_reward_id": 112,
+      "item_category": 102,
+      "item_id": 102602,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 309,
+      "race_additional_reward_id": 112,
+      "item_category": 102,
+      "item_id": 102602,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 310,
+      "race_additional_reward_id": 113,
+      "item_category": 102,
+      "item_id": 102303,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 311,
+      "race_additional_reward_id": 113,
+      "item_category": 102,
+      "item_id": 102303,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 312,
+      "race_additional_reward_id": 113,
+      "item_category": 102,
+      "item_id": 102303,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 313,
+      "race_additional_reward_id": 114,
+      "item_category": 102,
+      "item_id": 110901,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 314,
+      "race_additional_reward_id": 114,
+      "item_category": 102,
+      "item_id": 110901,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 315,
+      "race_additional_reward_id": 114,
+      "item_category": 102,
+      "item_id": 110901,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 316,
+      "race_additional_reward_id": 115,
+      "item_category": 102,
+      "item_id": 111001,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 317,
+      "race_additional_reward_id": 115,
+      "item_category": 102,
+      "item_id": 111001,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 318,
+      "race_additional_reward_id": 115,
+      "item_category": 102,
+      "item_id": 111001,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 319,
+      "race_additional_reward_id": 116,
+      "item_category": 102,
+      "item_id": 110801,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 320,
+      "race_additional_reward_id": 116,
+      "item_category": 102,
+      "item_id": 110801,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 321,
+      "race_additional_reward_id": 116,
+      "item_category": 102,
+      "item_id": 110801,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 322,
+      "race_additional_reward_id": 117,
+      "item_category": 102,
+      "item_id": 108502,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 323,
+      "race_additional_reward_id": 117,
+      "item_category": 102,
+      "item_id": 108502,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 324,
+      "race_additional_reward_id": 117,
+      "item_category": 102,
+      "item_id": 108502,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 325,
+      "race_additional_reward_id": 118,
+      "item_category": 102,
+      "item_id": 108801,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 326,
+      "race_additional_reward_id": 118,
+      "item_category": 102,
+      "item_id": 108801,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 327,
+      "race_additional_reward_id": 118,
+      "item_category": 102,
+      "item_id": 108801,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 328,
+      "race_additional_reward_id": 119,
+      "item_category": 102,
+      "item_id": 109802,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 329,
+      "race_additional_reward_id": 119,
+      "item_category": 102,
+      "item_id": 109802,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 330,
+      "race_additional_reward_id": 119,
+      "item_category": 102,
+      "item_id": 109802,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 331,
+      "race_additional_reward_id": 120,
+      "item_category": 102,
+      "item_id": 104603,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 332,
+      "race_additional_reward_id": 120,
+      "item_category": 102,
+      "item_id": 104603,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 333,
+      "race_additional_reward_id": 120,
+      "item_category": 102,
+      "item_id": 104603,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    },
+    {
+      "id": 334,
+      "race_additional_reward_id": 121,
+      "item_category": 102,
+      "item_id": 103703,
+      "reward_type": 1,
+      "reward_value": 5,
+      "reward_rate": 10000
+    },
+    {
+      "id": 335,
+      "race_additional_reward_id": 121,
+      "item_category": 102,
+      "item_id": 103703,
+      "reward_type": 2,
+      "reward_value": 1,
+      "reward_rate": 5000
+    },
+    {
+      "id": 336,
+      "race_additional_reward_id": 121,
+      "item_category": 102,
+      "item_id": 103703,
+      "reward_type": 2,
+      "reward_value": 2,
+      "reward_rate": 5000
+    }
+  ]
+}

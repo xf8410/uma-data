@@ -1,0 +1,3180 @@
+{
+  "table": "audience_impostor_lottery",
+  "row_count": 528,
+  "columns": [
+    "group_id",
+    "pattern",
+    "asset_id",
+    "odds"
+  ],
+  "rows": [
+    {
+      "group_id": 100,
+      "pattern": 1,
+      "asset_id": 111000001,
+      "odds": 100
+    },
+    {
+      "group_id": 100,
+      "pattern": 1,
+      "asset_id": 111000002,
+      "odds": 100
+    },
+    {
+      "group_id": 100,
+      "pattern": 1,
+      "asset_id": 111000003,
+      "odds": 100
+    },
+    {
+      "group_id": 100,
+      "pattern": 1,
+      "asset_id": 111000004,
+      "odds": 100
+    },
+    {
+      "group_id": 100,
+      "pattern": 1,
+      "asset_id": 111000005,
+      "odds": 100
+    },
+    {
+      "group_id": 100,
+      "pattern": 1,
+      "asset_id": 111000006,
+      "odds": 100
+    },
+    {
+      "group_id": 100,
+      "pattern": 1,
+      "asset_id": 111000007,
+      "odds": 100
+    },
+    {
+      "group_id": 100,
+      "pattern": 1,
+      "asset_id": 111000008,
+      "odds": 100
+    },
+    {
+      "group_id": 100,
+      "pattern": 1,
+      "asset_id": 111000009,
+      "odds": 100
+    },
+    {
+      "group_id": 100,
+      "pattern": 1,
+      "asset_id": 111000010,
+      "odds": 100
+    },
+    {
+      "group_id": 100,
+      "pattern": 1,
+      "asset_id": 111000011,
+      "odds": 100
+    },
+    {
+      "group_id": 100,
+      "pattern": 2,
+      "asset_id": 121000001,
+      "odds": 100
+    },
+    {
+      "group_id": 100,
+      "pattern": 2,
+      "asset_id": 121000002,
+      "odds": 100
+    },
+    {
+      "group_id": 100,
+      "pattern": 2,
+      "asset_id": 121000003,
+      "odds": 100
+    },
+    {
+      "group_id": 100,
+      "pattern": 2,
+      "asset_id": 121000004,
+      "odds": 100
+    },
+    {
+      "group_id": 100,
+      "pattern": 2,
+      "asset_id": 121000005,
+      "odds": 100
+    },
+    {
+      "group_id": 100,
+      "pattern": 2,
+      "asset_id": 121000006,
+      "odds": 100
+    },
+    {
+      "group_id": 100,
+      "pattern": 2,
+      "asset_id": 121000007,
+      "odds": 100
+    },
+    {
+      "group_id": 100,
+      "pattern": 2,
+      "asset_id": 121000008,
+      "odds": 100
+    },
+    {
+      "group_id": 100,
+      "pattern": 2,
+      "asset_id": 121000009,
+      "odds": 100
+    },
+    {
+      "group_id": 100,
+      "pattern": 2,
+      "asset_id": 121000010,
+      "odds": 100
+    },
+    {
+      "group_id": 100,
+      "pattern": 2,
+      "asset_id": 121000011,
+      "odds": 100
+    },
+    {
+      "group_id": 110,
+      "pattern": 1,
+      "asset_id": 111000001,
+      "odds": 100
+    },
+    {
+      "group_id": 110,
+      "pattern": 1,
+      "asset_id": 112000002,
+      "odds": 100
+    },
+    {
+      "group_id": 110,
+      "pattern": 1,
+      "asset_id": 111000003,
+      "odds": 100
+    },
+    {
+      "group_id": 110,
+      "pattern": 1,
+      "asset_id": 112000004,
+      "odds": 100
+    },
+    {
+      "group_id": 110,
+      "pattern": 1,
+      "asset_id": 111000005,
+      "odds": 100
+    },
+    {
+      "group_id": 110,
+      "pattern": 1,
+      "asset_id": 112000006,
+      "odds": 100
+    },
+    {
+      "group_id": 110,
+      "pattern": 1,
+      "asset_id": 111000007,
+      "odds": 100
+    },
+    {
+      "group_id": 110,
+      "pattern": 1,
+      "asset_id": 112000008,
+      "odds": 100
+    },
+    {
+      "group_id": 110,
+      "pattern": 1,
+      "asset_id": 111000009,
+      "odds": 100
+    },
+    {
+      "group_id": 110,
+      "pattern": 1,
+      "asset_id": 112000010,
+      "odds": 100
+    },
+    {
+      "group_id": 110,
+      "pattern": 1,
+      "asset_id": 111000011,
+      "odds": 100
+    },
+    {
+      "group_id": 110,
+      "pattern": 2,
+      "asset_id": 122000001,
+      "odds": 100
+    },
+    {
+      "group_id": 110,
+      "pattern": 2,
+      "asset_id": 121000002,
+      "odds": 100
+    },
+    {
+      "group_id": 110,
+      "pattern": 2,
+      "asset_id": 122000003,
+      "odds": 100
+    },
+    {
+      "group_id": 110,
+      "pattern": 2,
+      "asset_id": 121000004,
+      "odds": 100
+    },
+    {
+      "group_id": 110,
+      "pattern": 2,
+      "asset_id": 122000005,
+      "odds": 100
+    },
+    {
+      "group_id": 110,
+      "pattern": 2,
+      "asset_id": 121000006,
+      "odds": 100
+    },
+    {
+      "group_id": 110,
+      "pattern": 2,
+      "asset_id": 122000007,
+      "odds": 100
+    },
+    {
+      "group_id": 110,
+      "pattern": 2,
+      "asset_id": 121000008,
+      "odds": 100
+    },
+    {
+      "group_id": 110,
+      "pattern": 2,
+      "asset_id": 122000009,
+      "odds": 100
+    },
+    {
+      "group_id": 110,
+      "pattern": 2,
+      "asset_id": 121000010,
+      "odds": 100
+    },
+    {
+      "group_id": 110,
+      "pattern": 2,
+      "asset_id": 122000011,
+      "odds": 100
+    },
+    {
+      "group_id": 120,
+      "pattern": 1,
+      "asset_id": 112000001,
+      "odds": 100
+    },
+    {
+      "group_id": 120,
+      "pattern": 1,
+      "asset_id": 112000002,
+      "odds": 100
+    },
+    {
+      "group_id": 120,
+      "pattern": 1,
+      "asset_id": 112000003,
+      "odds": 100
+    },
+    {
+      "group_id": 120,
+      "pattern": 1,
+      "asset_id": 112000004,
+      "odds": 100
+    },
+    {
+      "group_id": 120,
+      "pattern": 1,
+      "asset_id": 112000005,
+      "odds": 100
+    },
+    {
+      "group_id": 120,
+      "pattern": 1,
+      "asset_id": 112000006,
+      "odds": 100
+    },
+    {
+      "group_id": 120,
+      "pattern": 1,
+      "asset_id": 112000007,
+      "odds": 100
+    },
+    {
+      "group_id": 120,
+      "pattern": 1,
+      "asset_id": 112000008,
+      "odds": 100
+    },
+    {
+      "group_id": 120,
+      "pattern": 1,
+      "asset_id": 112000009,
+      "odds": 100
+    },
+    {
+      "group_id": 120,
+      "pattern": 1,
+      "asset_id": 112000010,
+      "odds": 100
+    },
+    {
+      "group_id": 120,
+      "pattern": 1,
+      "asset_id": 112000011,
+      "odds": 100
+    },
+    {
+      "group_id": 120,
+      "pattern": 2,
+      "asset_id": 122000001,
+      "odds": 100
+    },
+    {
+      "group_id": 120,
+      "pattern": 2,
+      "asset_id": 122000002,
+      "odds": 100
+    },
+    {
+      "group_id": 120,
+      "pattern": 2,
+      "asset_id": 122000003,
+      "odds": 100
+    },
+    {
+      "group_id": 120,
+      "pattern": 2,
+      "asset_id": 122000004,
+      "odds": 100
+    },
+    {
+      "group_id": 120,
+      "pattern": 2,
+      "asset_id": 122000005,
+      "odds": 100
+    },
+    {
+      "group_id": 120,
+      "pattern": 2,
+      "asset_id": 122000006,
+      "odds": 100
+    },
+    {
+      "group_id": 120,
+      "pattern": 2,
+      "asset_id": 122000007,
+      "odds": 100
+    },
+    {
+      "group_id": 120,
+      "pattern": 2,
+      "asset_id": 122000008,
+      "odds": 100
+    },
+    {
+      "group_id": 120,
+      "pattern": 2,
+      "asset_id": 122000009,
+      "odds": 100
+    },
+    {
+      "group_id": 120,
+      "pattern": 2,
+      "asset_id": 122000010,
+      "odds": 100
+    },
+    {
+      "group_id": 120,
+      "pattern": 2,
+      "asset_id": 122000011,
+      "odds": 100
+    },
+    {
+      "group_id": 200,
+      "pattern": 1,
+      "asset_id": 111000001,
+      "odds": 100
+    },
+    {
+      "group_id": 200,
+      "pattern": 1,
+      "asset_id": 111000010,
+      "odds": 100
+    },
+    {
+      "group_id": 200,
+      "pattern": 1,
+      "asset_id": 111000009,
+      "odds": 100
+    },
+    {
+      "group_id": 200,
+      "pattern": 1,
+      "asset_id": 111000007,
+      "odds": 100
+    },
+    {
+      "group_id": 200,
+      "pattern": 2,
+      "asset_id": 121000002,
+      "odds": 100
+    },
+    {
+      "group_id": 200,
+      "pattern": 2,
+      "asset_id": 121000011,
+      "odds": 100
+    },
+    {
+      "group_id": 200,
+      "pattern": 2,
+      "asset_id": 121000006,
+      "odds": 100
+    },
+    {
+      "group_id": 200,
+      "pattern": 2,
+      "asset_id": 121000007,
+      "odds": 100
+    },
+    {
+      "group_id": 200,
+      "pattern": 3,
+      "asset_id": 113000001,
+      "odds": 100
+    },
+    {
+      "group_id": 200,
+      "pattern": 3,
+      "asset_id": 113000002,
+      "odds": 100
+    },
+    {
+      "group_id": 200,
+      "pattern": 3,
+      "asset_id": 113000003,
+      "odds": 100
+    },
+    {
+      "group_id": 200,
+      "pattern": 3,
+      "asset_id": 113000004,
+      "odds": 100
+    },
+    {
+      "group_id": 200,
+      "pattern": 3,
+      "asset_id": 114000001,
+      "odds": 100
+    },
+    {
+      "group_id": 200,
+      "pattern": 3,
+      "asset_id": 114000002,
+      "odds": 100
+    },
+    {
+      "group_id": 200,
+      "pattern": 3,
+      "asset_id": 114000003,
+      "odds": 100
+    },
+    {
+      "group_id": 200,
+      "pattern": 4,
+      "asset_id": 123000001,
+      "odds": 100
+    },
+    {
+      "group_id": 200,
+      "pattern": 4,
+      "asset_id": 123000002,
+      "odds": 100
+    },
+    {
+      "group_id": 200,
+      "pattern": 4,
+      "asset_id": 123000003,
+      "odds": 100
+    },
+    {
+      "group_id": 200,
+      "pattern": 4,
+      "asset_id": 123000004,
+      "odds": 100
+    },
+    {
+      "group_id": 200,
+      "pattern": 4,
+      "asset_id": 124000001,
+      "odds": 100
+    },
+    {
+      "group_id": 200,
+      "pattern": 4,
+      "asset_id": 124000002,
+      "odds": 100
+    },
+    {
+      "group_id": 200,
+      "pattern": 4,
+      "asset_id": 124000003,
+      "odds": 100
+    },
+    {
+      "group_id": 210,
+      "pattern": 1,
+      "asset_id": 111000001,
+      "odds": 100
+    },
+    {
+      "group_id": 210,
+      "pattern": 1,
+      "asset_id": 112000010,
+      "odds": 100
+    },
+    {
+      "group_id": 210,
+      "pattern": 1,
+      "asset_id": 111000009,
+      "odds": 100
+    },
+    {
+      "group_id": 210,
+      "pattern": 1,
+      "asset_id": 112000007,
+      "odds": 100
+    },
+    {
+      "group_id": 210,
+      "pattern": 2,
+      "asset_id": 122000002,
+      "odds": 100
+    },
+    {
+      "group_id": 210,
+      "pattern": 2,
+      "asset_id": 121000011,
+      "odds": 100
+    },
+    {
+      "group_id": 210,
+      "pattern": 2,
+      "asset_id": 122000006,
+      "odds": 100
+    },
+    {
+      "group_id": 210,
+      "pattern": 2,
+      "asset_id": 121000007,
+      "odds": 100
+    },
+    {
+      "group_id": 210,
+      "pattern": 3,
+      "asset_id": 113000001,
+      "odds": 100
+    },
+    {
+      "group_id": 210,
+      "pattern": 3,
+      "asset_id": 113200002,
+      "odds": 100
+    },
+    {
+      "group_id": 210,
+      "pattern": 3,
+      "asset_id": 113000003,
+      "odds": 100
+    },
+    {
+      "group_id": 210,
+      "pattern": 3,
+      "asset_id": 113200004,
+      "odds": 100
+    },
+    {
+      "group_id": 210,
+      "pattern": 3,
+      "asset_id": 114000001,
+      "odds": 100
+    },
+    {
+      "group_id": 210,
+      "pattern": 3,
+      "asset_id": 114000002,
+      "odds": 100
+    },
+    {
+      "group_id": 210,
+      "pattern": 3,
+      "asset_id": 114000003,
+      "odds": 100
+    },
+    {
+      "group_id": 210,
+      "pattern": 4,
+      "asset_id": 123200001,
+      "odds": 100
+    },
+    {
+      "group_id": 210,
+      "pattern": 4,
+      "asset_id": 123200002,
+      "odds": 100
+    },
+    {
+      "group_id": 210,
+      "pattern": 4,
+      "asset_id": 123200003,
+      "odds": 100
+    },
+    {
+      "group_id": 210,
+      "pattern": 4,
+      "asset_id": 123200004,
+      "odds": 100
+    },
+    {
+      "group_id": 210,
+      "pattern": 4,
+      "asset_id": 124000001,
+      "odds": 100
+    },
+    {
+      "group_id": 210,
+      "pattern": 4,
+      "asset_id": 124000002,
+      "odds": 100
+    },
+    {
+      "group_id": 210,
+      "pattern": 4,
+      "asset_id": 124000003,
+      "odds": 100
+    },
+    {
+      "group_id": 220,
+      "pattern": 1,
+      "asset_id": 112000001,
+      "odds": 100
+    },
+    {
+      "group_id": 220,
+      "pattern": 1,
+      "asset_id": 112000010,
+      "odds": 100
+    },
+    {
+      "group_id": 220,
+      "pattern": 1,
+      "asset_id": 112000009,
+      "odds": 100
+    },
+    {
+      "group_id": 220,
+      "pattern": 1,
+      "asset_id": 112000007,
+      "odds": 100
+    },
+    {
+      "group_id": 220,
+      "pattern": 2,
+      "asset_id": 122000002,
+      "odds": 100
+    },
+    {
+      "group_id": 220,
+      "pattern": 2,
+      "asset_id": 122000011,
+      "odds": 100
+    },
+    {
+      "group_id": 220,
+      "pattern": 2,
+      "asset_id": 122000006,
+      "odds": 100
+    },
+    {
+      "group_id": 220,
+      "pattern": 2,
+      "asset_id": 122000007,
+      "odds": 100
+    },
+    {
+      "group_id": 220,
+      "pattern": 3,
+      "asset_id": 113200001,
+      "odds": 100
+    },
+    {
+      "group_id": 220,
+      "pattern": 3,
+      "asset_id": 113200002,
+      "odds": 100
+    },
+    {
+      "group_id": 220,
+      "pattern": 3,
+      "asset_id": 113200003,
+      "odds": 100
+    },
+    {
+      "group_id": 220,
+      "pattern": 3,
+      "asset_id": 113200004,
+      "odds": 100
+    },
+    {
+      "group_id": 220,
+      "pattern": 3,
+      "asset_id": 114000001,
+      "odds": 100
+    },
+    {
+      "group_id": 220,
+      "pattern": 3,
+      "asset_id": 114000002,
+      "odds": 100
+    },
+    {
+      "group_id": 220,
+      "pattern": 3,
+      "asset_id": 114000003,
+      "odds": 100
+    },
+    {
+      "group_id": 220,
+      "pattern": 4,
+      "asset_id": 123200001,
+      "odds": 100
+    },
+    {
+      "group_id": 220,
+      "pattern": 4,
+      "asset_id": 123200002,
+      "odds": 100
+    },
+    {
+      "group_id": 220,
+      "pattern": 4,
+      "asset_id": 123200003,
+      "odds": 100
+    },
+    {
+      "group_id": 220,
+      "pattern": 4,
+      "asset_id": 123200004,
+      "odds": 100
+    },
+    {
+      "group_id": 220,
+      "pattern": 4,
+      "asset_id": 124000001,
+      "odds": 100
+    },
+    {
+      "group_id": 220,
+      "pattern": 4,
+      "asset_id": 124000002,
+      "odds": 100
+    },
+    {
+      "group_id": 220,
+      "pattern": 4,
+      "asset_id": 124000003,
+      "odds": 100
+    },
+    {
+      "group_id": 300,
+      "pattern": 1,
+      "asset_id": 111000012,
+      "odds": 100
+    },
+    {
+      "group_id": 300,
+      "pattern": 1,
+      "asset_id": 111000013,
+      "odds": 100
+    },
+    {
+      "group_id": 300,
+      "pattern": 1,
+      "asset_id": 111000014,
+      "odds": 100
+    },
+    {
+      "group_id": 300,
+      "pattern": 1,
+      "asset_id": 111000015,
+      "odds": 100
+    },
+    {
+      "group_id": 300,
+      "pattern": 1,
+      "asset_id": 111000016,
+      "odds": 100
+    },
+    {
+      "group_id": 300,
+      "pattern": 1,
+      "asset_id": 111000017,
+      "odds": 100
+    },
+    {
+      "group_id": 300,
+      "pattern": 1,
+      "asset_id": 111000018,
+      "odds": 100
+    },
+    {
+      "group_id": 300,
+      "pattern": 1,
+      "asset_id": 111000019,
+      "odds": 100
+    },
+    {
+      "group_id": 300,
+      "pattern": 1,
+      "asset_id": 111000020,
+      "odds": 100
+    },
+    {
+      "group_id": 300,
+      "pattern": 1,
+      "asset_id": 111000021,
+      "odds": 100
+    },
+    {
+      "group_id": 300,
+      "pattern": 1,
+      "asset_id": 111000022,
+      "odds": 100
+    },
+    {
+      "group_id": 300,
+      "pattern": 2,
+      "asset_id": 121000012,
+      "odds": 100
+    },
+    {
+      "group_id": 300,
+      "pattern": 2,
+      "asset_id": 121000013,
+      "odds": 100
+    },
+    {
+      "group_id": 300,
+      "pattern": 2,
+      "asset_id": 121000014,
+      "odds": 100
+    },
+    {
+      "group_id": 300,
+      "pattern": 2,
+      "asset_id": 121000015,
+      "odds": 100
+    },
+    {
+      "group_id": 300,
+      "pattern": 2,
+      "asset_id": 121000016,
+      "odds": 100
+    },
+    {
+      "group_id": 300,
+      "pattern": 2,
+      "asset_id": 121000017,
+      "odds": 100
+    },
+    {
+      "group_id": 300,
+      "pattern": 2,
+      "asset_id": 121000018,
+      "odds": 100
+    },
+    {
+      "group_id": 300,
+      "pattern": 2,
+      "asset_id": 121000019,
+      "odds": 100
+    },
+    {
+      "group_id": 300,
+      "pattern": 2,
+      "asset_id": 121000020,
+      "odds": 100
+    },
+    {
+      "group_id": 300,
+      "pattern": 2,
+      "asset_id": 121000021,
+      "odds": 100
+    },
+    {
+      "group_id": 300,
+      "pattern": 2,
+      "asset_id": 121000022,
+      "odds": 100
+    },
+    {
+      "group_id": 310,
+      "pattern": 1,
+      "asset_id": 111000012,
+      "odds": 100
+    },
+    {
+      "group_id": 310,
+      "pattern": 1,
+      "asset_id": 112000013,
+      "odds": 100
+    },
+    {
+      "group_id": 310,
+      "pattern": 1,
+      "asset_id": 111000014,
+      "odds": 100
+    },
+    {
+      "group_id": 310,
+      "pattern": 1,
+      "asset_id": 112000015,
+      "odds": 100
+    },
+    {
+      "group_id": 310,
+      "pattern": 1,
+      "asset_id": 111000016,
+      "odds": 100
+    },
+    {
+      "group_id": 310,
+      "pattern": 1,
+      "asset_id": 112000017,
+      "odds": 100
+    },
+    {
+      "group_id": 310,
+      "pattern": 1,
+      "asset_id": 111000018,
+      "odds": 100
+    },
+    {
+      "group_id": 310,
+      "pattern": 1,
+      "asset_id": 112000019,
+      "odds": 100
+    },
+    {
+      "group_id": 310,
+      "pattern": 1,
+      "asset_id": 111000020,
+      "odds": 100
+    },
+    {
+      "group_id": 310,
+      "pattern": 1,
+      "asset_id": 112000021,
+      "odds": 100
+    },
+    {
+      "group_id": 310,
+      "pattern": 1,
+      "asset_id": 111000022,
+      "odds": 100
+    },
+    {
+      "group_id": 310,
+      "pattern": 2,
+      "asset_id": 122000012,
+      "odds": 100
+    },
+    {
+      "group_id": 310,
+      "pattern": 2,
+      "asset_id": 121000013,
+      "odds": 100
+    },
+    {
+      "group_id": 310,
+      "pattern": 2,
+      "asset_id": 122000014,
+      "odds": 100
+    },
+    {
+      "group_id": 310,
+      "pattern": 2,
+      "asset_id": 121000015,
+      "odds": 100
+    },
+    {
+      "group_id": 310,
+      "pattern": 2,
+      "asset_id": 122000016,
+      "odds": 100
+    },
+    {
+      "group_id": 310,
+      "pattern": 2,
+      "asset_id": 121000017,
+      "odds": 100
+    },
+    {
+      "group_id": 310,
+      "pattern": 2,
+      "asset_id": 122000018,
+      "odds": 100
+    },
+    {
+      "group_id": 310,
+      "pattern": 2,
+      "asset_id": 121000019,
+      "odds": 100
+    },
+    {
+      "group_id": 310,
+      "pattern": 2,
+      "asset_id": 122000010,
+      "odds": 100
+    },
+    {
+      "group_id": 310,
+      "pattern": 2,
+      "asset_id": 121000021,
+      "odds": 100
+    },
+    {
+      "group_id": 310,
+      "pattern": 2,
+      "asset_id": 122000022,
+      "odds": 100
+    },
+    {
+      "group_id": 320,
+      "pattern": 1,
+      "asset_id": 112000012,
+      "odds": 100
+    },
+    {
+      "group_id": 320,
+      "pattern": 1,
+      "asset_id": 112000013,
+      "odds": 100
+    },
+    {
+      "group_id": 320,
+      "pattern": 1,
+      "asset_id": 112000014,
+      "odds": 100
+    },
+    {
+      "group_id": 320,
+      "pattern": 1,
+      "asset_id": 112000015,
+      "odds": 100
+    },
+    {
+      "group_id": 320,
+      "pattern": 1,
+      "asset_id": 112000016,
+      "odds": 100
+    },
+    {
+      "group_id": 320,
+      "pattern": 1,
+      "asset_id": 112000017,
+      "odds": 100
+    },
+    {
+      "group_id": 320,
+      "pattern": 1,
+      "asset_id": 112000018,
+      "odds": 100
+    },
+    {
+      "group_id": 320,
+      "pattern": 1,
+      "asset_id": 112000019,
+      "odds": 100
+    },
+    {
+      "group_id": 320,
+      "pattern": 1,
+      "asset_id": 112000020,
+      "odds": 100
+    },
+    {
+      "group_id": 320,
+      "pattern": 1,
+      "asset_id": 112000021,
+      "odds": 100
+    },
+    {
+      "group_id": 320,
+      "pattern": 1,
+      "asset_id": 112000022,
+      "odds": 100
+    },
+    {
+      "group_id": 320,
+      "pattern": 2,
+      "asset_id": 122000012,
+      "odds": 100
+    },
+    {
+      "group_id": 320,
+      "pattern": 2,
+      "asset_id": 122000013,
+      "odds": 100
+    },
+    {
+      "group_id": 320,
+      "pattern": 2,
+      "asset_id": 122000014,
+      "odds": 100
+    },
+    {
+      "group_id": 320,
+      "pattern": 2,
+      "asset_id": 122000015,
+      "odds": 100
+    },
+    {
+      "group_id": 320,
+      "pattern": 2,
+      "asset_id": 122000016,
+      "odds": 100
+    },
+    {
+      "group_id": 320,
+      "pattern": 2,
+      "asset_id": 122000017,
+      "odds": 100
+    },
+    {
+      "group_id": 320,
+      "pattern": 2,
+      "asset_id": 122000018,
+      "odds": 100
+    },
+    {
+      "group_id": 320,
+      "pattern": 2,
+      "asset_id": 122000019,
+      "odds": 100
+    },
+    {
+      "group_id": 320,
+      "pattern": 2,
+      "asset_id": 122000020,
+      "odds": 100
+    },
+    {
+      "group_id": 320,
+      "pattern": 2,
+      "asset_id": 122000021,
+      "odds": 100
+    },
+    {
+      "group_id": 320,
+      "pattern": 2,
+      "asset_id": 122000022,
+      "odds": 100
+    },
+    {
+      "group_id": 400,
+      "pattern": 1,
+      "asset_id": 111000012,
+      "odds": 100
+    },
+    {
+      "group_id": 400,
+      "pattern": 1,
+      "asset_id": 111000021,
+      "odds": 100
+    },
+    {
+      "group_id": 400,
+      "pattern": 1,
+      "asset_id": 111000020,
+      "odds": 100
+    },
+    {
+      "group_id": 400,
+      "pattern": 1,
+      "asset_id": 111000018,
+      "odds": 100
+    },
+    {
+      "group_id": 400,
+      "pattern": 2,
+      "asset_id": 121000013,
+      "odds": 100
+    },
+    {
+      "group_id": 400,
+      "pattern": 2,
+      "asset_id": 121000022,
+      "odds": 100
+    },
+    {
+      "group_id": 400,
+      "pattern": 2,
+      "asset_id": 121000017,
+      "odds": 100
+    },
+    {
+      "group_id": 400,
+      "pattern": 2,
+      "asset_id": 121000018,
+      "odds": 100
+    },
+    {
+      "group_id": 400,
+      "pattern": 3,
+      "asset_id": 113000005,
+      "odds": 100
+    },
+    {
+      "group_id": 400,
+      "pattern": 3,
+      "asset_id": 113000006,
+      "odds": 100
+    },
+    {
+      "group_id": 400,
+      "pattern": 3,
+      "asset_id": 113000007,
+      "odds": 100
+    },
+    {
+      "group_id": 400,
+      "pattern": 3,
+      "asset_id": 113000008,
+      "odds": 100
+    },
+    {
+      "group_id": 400,
+      "pattern": 3,
+      "asset_id": 114000004,
+      "odds": 100
+    },
+    {
+      "group_id": 400,
+      "pattern": 3,
+      "asset_id": 114000005,
+      "odds": 100
+    },
+    {
+      "group_id": 400,
+      "pattern": 3,
+      "asset_id": 114000006,
+      "odds": 100
+    },
+    {
+      "group_id": 400,
+      "pattern": 4,
+      "asset_id": 123000005,
+      "odds": 100
+    },
+    {
+      "group_id": 400,
+      "pattern": 4,
+      "asset_id": 123000006,
+      "odds": 100
+    },
+    {
+      "group_id": 400,
+      "pattern": 4,
+      "asset_id": 123000007,
+      "odds": 100
+    },
+    {
+      "group_id": 400,
+      "pattern": 4,
+      "asset_id": 123000008,
+      "odds": 100
+    },
+    {
+      "group_id": 400,
+      "pattern": 4,
+      "asset_id": 124000004,
+      "odds": 100
+    },
+    {
+      "group_id": 400,
+      "pattern": 4,
+      "asset_id": 124000005,
+      "odds": 100
+    },
+    {
+      "group_id": 400,
+      "pattern": 4,
+      "asset_id": 124000006,
+      "odds": 100
+    },
+    {
+      "group_id": 410,
+      "pattern": 1,
+      "asset_id": 111000012,
+      "odds": 100
+    },
+    {
+      "group_id": 410,
+      "pattern": 1,
+      "asset_id": 112000021,
+      "odds": 100
+    },
+    {
+      "group_id": 410,
+      "pattern": 1,
+      "asset_id": 111000020,
+      "odds": 100
+    },
+    {
+      "group_id": 410,
+      "pattern": 1,
+      "asset_id": 112000018,
+      "odds": 100
+    },
+    {
+      "group_id": 410,
+      "pattern": 2,
+      "asset_id": 122000013,
+      "odds": 100
+    },
+    {
+      "group_id": 410,
+      "pattern": 2,
+      "asset_id": 121000021,
+      "odds": 100
+    },
+    {
+      "group_id": 410,
+      "pattern": 2,
+      "asset_id": 122000017,
+      "odds": 100
+    },
+    {
+      "group_id": 410,
+      "pattern": 2,
+      "asset_id": 121000018,
+      "odds": 100
+    },
+    {
+      "group_id": 410,
+      "pattern": 3,
+      "asset_id": 113000005,
+      "odds": 100
+    },
+    {
+      "group_id": 410,
+      "pattern": 3,
+      "asset_id": 113200006,
+      "odds": 100
+    },
+    {
+      "group_id": 410,
+      "pattern": 3,
+      "asset_id": 113000007,
+      "odds": 100
+    },
+    {
+      "group_id": 410,
+      "pattern": 3,
+      "asset_id": 113200008,
+      "odds": 100
+    },
+    {
+      "group_id": 410,
+      "pattern": 3,
+      "asset_id": 114000004,
+      "odds": 100
+    },
+    {
+      "group_id": 410,
+      "pattern": 3,
+      "asset_id": 114000005,
+      "odds": 100
+    },
+    {
+      "group_id": 410,
+      "pattern": 3,
+      "asset_id": 114000006,
+      "odds": 100
+    },
+    {
+      "group_id": 410,
+      "pattern": 4,
+      "asset_id": 123200005,
+      "odds": 100
+    },
+    {
+      "group_id": 410,
+      "pattern": 4,
+      "asset_id": 123200006,
+      "odds": 100
+    },
+    {
+      "group_id": 410,
+      "pattern": 4,
+      "asset_id": 123200007,
+      "odds": 100
+    },
+    {
+      "group_id": 410,
+      "pattern": 4,
+      "asset_id": 123200008,
+      "odds": 100
+    },
+    {
+      "group_id": 410,
+      "pattern": 4,
+      "asset_id": 124000004,
+      "odds": 100
+    },
+    {
+      "group_id": 410,
+      "pattern": 4,
+      "asset_id": 124000005,
+      "odds": 100
+    },
+    {
+      "group_id": 410,
+      "pattern": 4,
+      "asset_id": 124000006,
+      "odds": 100
+    },
+    {
+      "group_id": 420,
+      "pattern": 1,
+      "asset_id": 112000012,
+      "odds": 100
+    },
+    {
+      "group_id": 420,
+      "pattern": 1,
+      "asset_id": 112000021,
+      "odds": 100
+    },
+    {
+      "group_id": 420,
+      "pattern": 1,
+      "asset_id": 112000020,
+      "odds": 100
+    },
+    {
+      "group_id": 420,
+      "pattern": 1,
+      "asset_id": 112000018,
+      "odds": 100
+    },
+    {
+      "group_id": 420,
+      "pattern": 2,
+      "asset_id": 122000013,
+      "odds": 100
+    },
+    {
+      "group_id": 420,
+      "pattern": 2,
+      "asset_id": 122000021,
+      "odds": 100
+    },
+    {
+      "group_id": 420,
+      "pattern": 2,
+      "asset_id": 122000017,
+      "odds": 100
+    },
+    {
+      "group_id": 420,
+      "pattern": 2,
+      "asset_id": 122000018,
+      "odds": 100
+    },
+    {
+      "group_id": 420,
+      "pattern": 3,
+      "asset_id": 113200005,
+      "odds": 100
+    },
+    {
+      "group_id": 420,
+      "pattern": 3,
+      "asset_id": 113200006,
+      "odds": 100
+    },
+    {
+      "group_id": 420,
+      "pattern": 3,
+      "asset_id": 113200007,
+      "odds": 100
+    },
+    {
+      "group_id": 420,
+      "pattern": 3,
+      "asset_id": 113200008,
+      "odds": 100
+    },
+    {
+      "group_id": 420,
+      "pattern": 3,
+      "asset_id": 114000004,
+      "odds": 100
+    },
+    {
+      "group_id": 420,
+      "pattern": 3,
+      "asset_id": 114000005,
+      "odds": 100
+    },
+    {
+      "group_id": 420,
+      "pattern": 3,
+      "asset_id": 114000006,
+      "odds": 100
+    },
+    {
+      "group_id": 420,
+      "pattern": 4,
+      "asset_id": 123200005,
+      "odds": 100
+    },
+    {
+      "group_id": 420,
+      "pattern": 4,
+      "asset_id": 123200006,
+      "odds": 100
+    },
+    {
+      "group_id": 420,
+      "pattern": 4,
+      "asset_id": 123200007,
+      "odds": 100
+    },
+    {
+      "group_id": 420,
+      "pattern": 4,
+      "asset_id": 123200008,
+      "odds": 100
+    },
+    {
+      "group_id": 420,
+      "pattern": 4,
+      "asset_id": 124000004,
+      "odds": 100
+    },
+    {
+      "group_id": 420,
+      "pattern": 4,
+      "asset_id": 124000005,
+      "odds": 100
+    },
+    {
+      "group_id": 420,
+      "pattern": 4,
+      "asset_id": 124000006,
+      "odds": 100
+    },
+    {
+      "group_id": 500,
+      "pattern": 1,
+      "asset_id": 111000023,
+      "odds": 95
+    },
+    {
+      "group_id": 500,
+      "pattern": 1,
+      "asset_id": 111000013,
+      "odds": 100
+    },
+    {
+      "group_id": 500,
+      "pattern": 1,
+      "asset_id": 111000014,
+      "odds": 100
+    },
+    {
+      "group_id": 500,
+      "pattern": 1,
+      "asset_id": 111000015,
+      "odds": 190
+    },
+    {
+      "group_id": 500,
+      "pattern": 1,
+      "asset_id": 111000016,
+      "odds": 100
+    },
+    {
+      "group_id": 500,
+      "pattern": 1,
+      "asset_id": 111000017,
+      "odds": 100
+    },
+    {
+      "group_id": 500,
+      "pattern": 1,
+      "asset_id": 111000018,
+      "odds": 100
+    },
+    {
+      "group_id": 500,
+      "pattern": 1,
+      "asset_id": 111000024,
+      "odds": 95
+    },
+    {
+      "group_id": 500,
+      "pattern": 1,
+      "asset_id": 111000020,
+      "odds": 190
+    },
+    {
+      "group_id": 500,
+      "pattern": 1,
+      "asset_id": 111000021,
+      "odds": 100
+    },
+    {
+      "group_id": 500,
+      "pattern": 1,
+      "asset_id": 111000022,
+      "odds": 100
+    },
+    {
+      "group_id": 500,
+      "pattern": 2,
+      "asset_id": 121000023,
+      "odds": 95
+    },
+    {
+      "group_id": 500,
+      "pattern": 2,
+      "asset_id": 121000013,
+      "odds": 100
+    },
+    {
+      "group_id": 500,
+      "pattern": 2,
+      "asset_id": 121000014,
+      "odds": 190
+    },
+    {
+      "group_id": 500,
+      "pattern": 2,
+      "asset_id": 121000015,
+      "odds": 100
+    },
+    {
+      "group_id": 500,
+      "pattern": 2,
+      "asset_id": 121000016,
+      "odds": 100
+    },
+    {
+      "group_id": 500,
+      "pattern": 2,
+      "asset_id": 121000017,
+      "odds": 190
+    },
+    {
+      "group_id": 500,
+      "pattern": 2,
+      "asset_id": 121000018,
+      "odds": 100
+    },
+    {
+      "group_id": 500,
+      "pattern": 2,
+      "asset_id": 121000024,
+      "odds": 95
+    },
+    {
+      "group_id": 500,
+      "pattern": 2,
+      "asset_id": 121000020,
+      "odds": 100
+    },
+    {
+      "group_id": 500,
+      "pattern": 2,
+      "asset_id": 121000021,
+      "odds": 100
+    },
+    {
+      "group_id": 500,
+      "pattern": 2,
+      "asset_id": 121000022,
+      "odds": 100
+    },
+    {
+      "group_id": 510,
+      "pattern": 1,
+      "asset_id": 111000023,
+      "odds": 95
+    },
+    {
+      "group_id": 510,
+      "pattern": 1,
+      "asset_id": 112000013,
+      "odds": 100
+    },
+    {
+      "group_id": 510,
+      "pattern": 1,
+      "asset_id": 111000014,
+      "odds": 100
+    },
+    {
+      "group_id": 510,
+      "pattern": 1,
+      "asset_id": 112000015,
+      "odds": 190
+    },
+    {
+      "group_id": 510,
+      "pattern": 1,
+      "asset_id": 111000016,
+      "odds": 100
+    },
+    {
+      "group_id": 510,
+      "pattern": 1,
+      "asset_id": 112000017,
+      "odds": 100
+    },
+    {
+      "group_id": 510,
+      "pattern": 1,
+      "asset_id": 111000018,
+      "odds": 100
+    },
+    {
+      "group_id": 510,
+      "pattern": 1,
+      "asset_id": 112000024,
+      "odds": 95
+    },
+    {
+      "group_id": 510,
+      "pattern": 1,
+      "asset_id": 111000020,
+      "odds": 190
+    },
+    {
+      "group_id": 510,
+      "pattern": 1,
+      "asset_id": 112000021,
+      "odds": 100
+    },
+    {
+      "group_id": 510,
+      "pattern": 1,
+      "asset_id": 111000022,
+      "odds": 100
+    },
+    {
+      "group_id": 510,
+      "pattern": 2,
+      "asset_id": 122000023,
+      "odds": 95
+    },
+    {
+      "group_id": 510,
+      "pattern": 2,
+      "asset_id": 121000013,
+      "odds": 100
+    },
+    {
+      "group_id": 510,
+      "pattern": 2,
+      "asset_id": 122000014,
+      "odds": 190
+    },
+    {
+      "group_id": 510,
+      "pattern": 2,
+      "asset_id": 121000015,
+      "odds": 100
+    },
+    {
+      "group_id": 510,
+      "pattern": 2,
+      "asset_id": 122000016,
+      "odds": 100
+    },
+    {
+      "group_id": 510,
+      "pattern": 2,
+      "asset_id": 121000017,
+      "odds": 190
+    },
+    {
+      "group_id": 510,
+      "pattern": 2,
+      "asset_id": 122000018,
+      "odds": 100
+    },
+    {
+      "group_id": 510,
+      "pattern": 2,
+      "asset_id": 121000024,
+      "odds": 95
+    },
+    {
+      "group_id": 510,
+      "pattern": 2,
+      "asset_id": 122000010,
+      "odds": 100
+    },
+    {
+      "group_id": 510,
+      "pattern": 2,
+      "asset_id": 121000021,
+      "odds": 100
+    },
+    {
+      "group_id": 510,
+      "pattern": 2,
+      "asset_id": 122000022,
+      "odds": 100
+    },
+    {
+      "group_id": 520,
+      "pattern": 1,
+      "asset_id": 112000023,
+      "odds": 95
+    },
+    {
+      "group_id": 520,
+      "pattern": 1,
+      "asset_id": 112000013,
+      "odds": 100
+    },
+    {
+      "group_id": 520,
+      "pattern": 1,
+      "asset_id": 112000014,
+      "odds": 100
+    },
+    {
+      "group_id": 520,
+      "pattern": 1,
+      "asset_id": 112000015,
+      "odds": 190
+    },
+    {
+      "group_id": 520,
+      "pattern": 1,
+      "asset_id": 112000016,
+      "odds": 100
+    },
+    {
+      "group_id": 520,
+      "pattern": 1,
+      "asset_id": 112000017,
+      "odds": 100
+    },
+    {
+      "group_id": 520,
+      "pattern": 1,
+      "asset_id": 112000018,
+      "odds": 100
+    },
+    {
+      "group_id": 520,
+      "pattern": 1,
+      "asset_id": 112000024,
+      "odds": 95
+    },
+    {
+      "group_id": 520,
+      "pattern": 1,
+      "asset_id": 112000020,
+      "odds": 190
+    },
+    {
+      "group_id": 520,
+      "pattern": 1,
+      "asset_id": 112000021,
+      "odds": 100
+    },
+    {
+      "group_id": 520,
+      "pattern": 1,
+      "asset_id": 112000022,
+      "odds": 100
+    },
+    {
+      "group_id": 520,
+      "pattern": 2,
+      "asset_id": 122000023,
+      "odds": 95
+    },
+    {
+      "group_id": 520,
+      "pattern": 2,
+      "asset_id": 122000013,
+      "odds": 100
+    },
+    {
+      "group_id": 520,
+      "pattern": 2,
+      "asset_id": 122000014,
+      "odds": 190
+    },
+    {
+      "group_id": 520,
+      "pattern": 2,
+      "asset_id": 122000015,
+      "odds": 100
+    },
+    {
+      "group_id": 520,
+      "pattern": 2,
+      "asset_id": 122000016,
+      "odds": 100
+    },
+    {
+      "group_id": 520,
+      "pattern": 2,
+      "asset_id": 122000017,
+      "odds": 190
+    },
+    {
+      "group_id": 520,
+      "pattern": 2,
+      "asset_id": 122000018,
+      "odds": 100
+    },
+    {
+      "group_id": 520,
+      "pattern": 2,
+      "asset_id": 122000024,
+      "odds": 95
+    },
+    {
+      "group_id": 520,
+      "pattern": 2,
+      "asset_id": 122000020,
+      "odds": 100
+    },
+    {
+      "group_id": 520,
+      "pattern": 2,
+      "asset_id": 122000021,
+      "odds": 100
+    },
+    {
+      "group_id": 520,
+      "pattern": 2,
+      "asset_id": 122000022,
+      "odds": 100
+    },
+    {
+      "group_id": 600,
+      "pattern": 1,
+      "asset_id": 111000023,
+      "odds": 100
+    },
+    {
+      "group_id": 600,
+      "pattern": 1,
+      "asset_id": 111000021,
+      "odds": 185
+    },
+    {
+      "group_id": 600,
+      "pattern": 1,
+      "asset_id": 111000020,
+      "odds": 200
+    },
+    {
+      "group_id": 600,
+      "pattern": 1,
+      "asset_id": 111000018,
+      "odds": 185
+    },
+    {
+      "group_id": 600,
+      "pattern": 2,
+      "asset_id": 121000023,
+      "odds": 100
+    },
+    {
+      "group_id": 600,
+      "pattern": 2,
+      "asset_id": 121000022,
+      "odds": 185
+    },
+    {
+      "group_id": 600,
+      "pattern": 2,
+      "asset_id": 121000017,
+      "odds": 200
+    },
+    {
+      "group_id": 600,
+      "pattern": 2,
+      "asset_id": 121000018,
+      "odds": 185
+    },
+    {
+      "group_id": 600,
+      "pattern": 3,
+      "asset_id": 113000009,
+      "odds": 165
+    },
+    {
+      "group_id": 600,
+      "pattern": 3,
+      "asset_id": 113000006,
+      "odds": 325
+    },
+    {
+      "group_id": 600,
+      "pattern": 3,
+      "asset_id": 113000007,
+      "odds": 400
+    },
+    {
+      "group_id": 600,
+      "pattern": 3,
+      "asset_id": 113000008,
+      "odds": 400
+    },
+    {
+      "group_id": 600,
+      "pattern": 3,
+      "asset_id": 114000004,
+      "odds": 325
+    },
+    {
+      "group_id": 600,
+      "pattern": 3,
+      "asset_id": 114000005,
+      "odds": 400
+    },
+    {
+      "group_id": 600,
+      "pattern": 3,
+      "asset_id": 114000008,
+      "odds": 165
+    },
+    {
+      "group_id": 600,
+      "pattern": 4,
+      "asset_id": 123000009,
+      "odds": 165
+    },
+    {
+      "group_id": 600,
+      "pattern": 4,
+      "asset_id": 123000006,
+      "odds": 325
+    },
+    {
+      "group_id": 600,
+      "pattern": 4,
+      "asset_id": 123000007,
+      "odds": 400
+    },
+    {
+      "group_id": 600,
+      "pattern": 4,
+      "asset_id": 123000008,
+      "odds": 400
+    },
+    {
+      "group_id": 600,
+      "pattern": 4,
+      "asset_id": 124000007,
+      "odds": 165
+    },
+    {
+      "group_id": 600,
+      "pattern": 4,
+      "asset_id": 124000005,
+      "odds": 400
+    },
+    {
+      "group_id": 600,
+      "pattern": 4,
+      "asset_id": 124000006,
+      "odds": 325
+    },
+    {
+      "group_id": 610,
+      "pattern": 1,
+      "asset_id": 111000023,
+      "odds": 100
+    },
+    {
+      "group_id": 610,
+      "pattern": 1,
+      "asset_id": 112000021,
+      "odds": 185
+    },
+    {
+      "group_id": 610,
+      "pattern": 1,
+      "asset_id": 111000020,
+      "odds": 200
+    },
+    {
+      "group_id": 610,
+      "pattern": 1,
+      "asset_id": 112000018,
+      "odds": 185
+    },
+    {
+      "group_id": 610,
+      "pattern": 2,
+      "asset_id": 122000023,
+      "odds": 100
+    },
+    {
+      "group_id": 610,
+      "pattern": 2,
+      "asset_id": 121000021,
+      "odds": 185
+    },
+    {
+      "group_id": 610,
+      "pattern": 2,
+      "asset_id": 122000017,
+      "odds": 200
+    },
+    {
+      "group_id": 610,
+      "pattern": 2,
+      "asset_id": 121000018,
+      "odds": 185
+    },
+    {
+      "group_id": 610,
+      "pattern": 3,
+      "asset_id": 113000009,
+      "odds": 165
+    },
+    {
+      "group_id": 610,
+      "pattern": 3,
+      "asset_id": 113200006,
+      "odds": 325
+    },
+    {
+      "group_id": 610,
+      "pattern": 3,
+      "asset_id": 113000007,
+      "odds": 400
+    },
+    {
+      "group_id": 610,
+      "pattern": 3,
+      "asset_id": 113200008,
+      "odds": 400
+    },
+    {
+      "group_id": 610,
+      "pattern": 3,
+      "asset_id": 114000004,
+      "odds": 325
+    },
+    {
+      "group_id": 610,
+      "pattern": 3,
+      "asset_id": 114000005,
+      "odds": 400
+    },
+    {
+      "group_id": 610,
+      "pattern": 3,
+      "asset_id": 114000008,
+      "odds": 165
+    },
+    {
+      "group_id": 610,
+      "pattern": 4,
+      "asset_id": 123200009,
+      "odds": 165
+    },
+    {
+      "group_id": 610,
+      "pattern": 4,
+      "asset_id": 123200006,
+      "odds": 325
+    },
+    {
+      "group_id": 610,
+      "pattern": 4,
+      "asset_id": 123200007,
+      "odds": 400
+    },
+    {
+      "group_id": 610,
+      "pattern": 4,
+      "asset_id": 123200008,
+      "odds": 400
+    },
+    {
+      "group_id": 610,
+      "pattern": 4,
+      "asset_id": 124000007,
+      "odds": 165
+    },
+    {
+      "group_id": 610,
+      "pattern": 4,
+      "asset_id": 124000005,
+      "odds": 400
+    },
+    {
+      "group_id": 610,
+      "pattern": 4,
+      "asset_id": 124000006,
+      "odds": 325
+    },
+    {
+      "group_id": 620,
+      "pattern": 1,
+      "asset_id": 112000023,
+      "odds": 100
+    },
+    {
+      "group_id": 620,
+      "pattern": 1,
+      "asset_id": 112000021,
+      "odds": 185
+    },
+    {
+      "group_id": 620,
+      "pattern": 1,
+      "asset_id": 112000020,
+      "odds": 200
+    },
+    {
+      "group_id": 620,
+      "pattern": 1,
+      "asset_id": 112000018,
+      "odds": 185
+    },
+    {
+      "group_id": 620,
+      "pattern": 2,
+      "asset_id": 122000023,
+      "odds": 100
+    },
+    {
+      "group_id": 620,
+      "pattern": 2,
+      "asset_id": 122000021,
+      "odds": 185
+    },
+    {
+      "group_id": 620,
+      "pattern": 2,
+      "asset_id": 122000017,
+      "odds": 200
+    },
+    {
+      "group_id": 620,
+      "pattern": 2,
+      "asset_id": 122000018,
+      "odds": 185
+    },
+    {
+      "group_id": 620,
+      "pattern": 3,
+      "asset_id": 113200009,
+      "odds": 165
+    },
+    {
+      "group_id": 620,
+      "pattern": 3,
+      "asset_id": 113200006,
+      "odds": 325
+    },
+    {
+      "group_id": 620,
+      "pattern": 3,
+      "asset_id": 113200007,
+      "odds": 400
+    },
+    {
+      "group_id": 620,
+      "pattern": 3,
+      "asset_id": 113200008,
+      "odds": 400
+    },
+    {
+      "group_id": 620,
+      "pattern": 3,
+      "asset_id": 114000004,
+      "odds": 325
+    },
+    {
+      "group_id": 620,
+      "pattern": 3,
+      "asset_id": 114000005,
+      "odds": 400
+    },
+    {
+      "group_id": 620,
+      "pattern": 3,
+      "asset_id": 114000008,
+      "odds": 165
+    },
+    {
+      "group_id": 620,
+      "pattern": 4,
+      "asset_id": 123200009,
+      "odds": 165
+    },
+    {
+      "group_id": 620,
+      "pattern": 4,
+      "asset_id": 123200006,
+      "odds": 325
+    },
+    {
+      "group_id": 620,
+      "pattern": 4,
+      "asset_id": 123200007,
+      "odds": 400
+    },
+    {
+      "group_id": 620,
+      "pattern": 4,
+      "asset_id": 123200008,
+      "odds": 400
+    },
+    {
+      "group_id": 620,
+      "pattern": 4,
+      "asset_id": 124000007,
+      "odds": 165
+    },
+    {
+      "group_id": 620,
+      "pattern": 4,
+      "asset_id": 124000005,
+      "odds": 400
+    },
+    {
+      "group_id": 620,
+      "pattern": 4,
+      "asset_id": 124000006,
+      "odds": 325
+    },
+    {
+      "group_id": 700,
+      "pattern": 1,
+      "asset_id": 111900001,
+      "odds": 100
+    },
+    {
+      "group_id": 700,
+      "pattern": 1,
+      "asset_id": 111900002,
+      "odds": 100
+    },
+    {
+      "group_id": 700,
+      "pattern": 1,
+      "asset_id": 111900003,
+      "odds": 100
+    },
+    {
+      "group_id": 700,
+      "pattern": 1,
+      "asset_id": 111900004,
+      "odds": 100
+    },
+    {
+      "group_id": 700,
+      "pattern": 1,
+      "asset_id": 111900005,
+      "odds": 100
+    },
+    {
+      "group_id": 700,
+      "pattern": 1,
+      "asset_id": 111900006,
+      "odds": 100
+    },
+    {
+      "group_id": 700,
+      "pattern": 1,
+      "asset_id": 111900007,
+      "odds": 100
+    },
+    {
+      "group_id": 700,
+      "pattern": 1,
+      "asset_id": 111900008,
+      "odds": 100
+    },
+    {
+      "group_id": 700,
+      "pattern": 1,
+      "asset_id": 111900009,
+      "odds": 100
+    },
+    {
+      "group_id": 700,
+      "pattern": 1,
+      "asset_id": 111900010,
+      "odds": 100
+    },
+    {
+      "group_id": 700,
+      "pattern": 1,
+      "asset_id": 111900011,
+      "odds": 100
+    },
+    {
+      "group_id": 700,
+      "pattern": 2,
+      "asset_id": 121900001,
+      "odds": 100
+    },
+    {
+      "group_id": 700,
+      "pattern": 2,
+      "asset_id": 121900002,
+      "odds": 100
+    },
+    {
+      "group_id": 700,
+      "pattern": 2,
+      "asset_id": 121900003,
+      "odds": 100
+    },
+    {
+      "group_id": 700,
+      "pattern": 2,
+      "asset_id": 121900004,
+      "odds": 100
+    },
+    {
+      "group_id": 700,
+      "pattern": 2,
+      "asset_id": 121900005,
+      "odds": 100
+    },
+    {
+      "group_id": 700,
+      "pattern": 2,
+      "asset_id": 121900006,
+      "odds": 100
+    },
+    {
+      "group_id": 700,
+      "pattern": 2,
+      "asset_id": 121900007,
+      "odds": 100
+    },
+    {
+      "group_id": 700,
+      "pattern": 2,
+      "asset_id": 121900008,
+      "odds": 100
+    },
+    {
+      "group_id": 700,
+      "pattern": 2,
+      "asset_id": 121900009,
+      "odds": 100
+    },
+    {
+      "group_id": 700,
+      "pattern": 2,
+      "asset_id": 121900010,
+      "odds": 100
+    },
+    {
+      "group_id": 700,
+      "pattern": 2,
+      "asset_id": 121900011,
+      "odds": 100
+    },
+    {
+      "group_id": 710,
+      "pattern": 1,
+      "asset_id": 111900001,
+      "odds": 100
+    },
+    {
+      "group_id": 710,
+      "pattern": 1,
+      "asset_id": 112900002,
+      "odds": 100
+    },
+    {
+      "group_id": 710,
+      "pattern": 1,
+      "asset_id": 111900003,
+      "odds": 100
+    },
+    {
+      "group_id": 710,
+      "pattern": 1,
+      "asset_id": 112900004,
+      "odds": 100
+    },
+    {
+      "group_id": 710,
+      "pattern": 1,
+      "asset_id": 111900005,
+      "odds": 100
+    },
+    {
+      "group_id": 710,
+      "pattern": 1,
+      "asset_id": 112900006,
+      "odds": 100
+    },
+    {
+      "group_id": 710,
+      "pattern": 1,
+      "asset_id": 111900007,
+      "odds": 100
+    },
+    {
+      "group_id": 710,
+      "pattern": 1,
+      "asset_id": 112900008,
+      "odds": 100
+    },
+    {
+      "group_id": 710,
+      "pattern": 1,
+      "asset_id": 111900009,
+      "odds": 100
+    },
+    {
+      "group_id": 710,
+      "pattern": 1,
+      "asset_id": 112900010,
+      "odds": 100
+    },
+    {
+      "group_id": 710,
+      "pattern": 1,
+      "asset_id": 111900011,
+      "odds": 100
+    },
+    {
+      "group_id": 710,
+      "pattern": 2,
+      "asset_id": 122900001,
+      "odds": 100
+    },
+    {
+      "group_id": 710,
+      "pattern": 2,
+      "asset_id": 121900002,
+      "odds": 100
+    },
+    {
+      "group_id": 710,
+      "pattern": 2,
+      "asset_id": 122900003,
+      "odds": 100
+    },
+    {
+      "group_id": 710,
+      "pattern": 2,
+      "asset_id": 121900004,
+      "odds": 100
+    },
+    {
+      "group_id": 710,
+      "pattern": 2,
+      "asset_id": 122900005,
+      "odds": 100
+    },
+    {
+      "group_id": 710,
+      "pattern": 2,
+      "asset_id": 121900006,
+      "odds": 100
+    },
+    {
+      "group_id": 710,
+      "pattern": 2,
+      "asset_id": 122900007,
+      "odds": 100
+    },
+    {
+      "group_id": 710,
+      "pattern": 2,
+      "asset_id": 121900008,
+      "odds": 100
+    },
+    {
+      "group_id": 710,
+      "pattern": 2,
+      "asset_id": 122900009,
+      "odds": 100
+    },
+    {
+      "group_id": 710,
+      "pattern": 2,
+      "asset_id": 121900010,
+      "odds": 100
+    },
+    {
+      "group_id": 710,
+      "pattern": 2,
+      "asset_id": 122900011,
+      "odds": 100
+    },
+    {
+      "group_id": 720,
+      "pattern": 1,
+      "asset_id": 112900001,
+      "odds": 100
+    },
+    {
+      "group_id": 720,
+      "pattern": 1,
+      "asset_id": 112900002,
+      "odds": 100
+    },
+    {
+      "group_id": 720,
+      "pattern": 1,
+      "asset_id": 112900003,
+      "odds": 100
+    },
+    {
+      "group_id": 720,
+      "pattern": 1,
+      "asset_id": 112900004,
+      "odds": 100
+    },
+    {
+      "group_id": 720,
+      "pattern": 1,
+      "asset_id": 112900005,
+      "odds": 100
+    },
+    {
+      "group_id": 720,
+      "pattern": 1,
+      "asset_id": 112900006,
+      "odds": 100
+    },
+    {
+      "group_id": 720,
+      "pattern": 1,
+      "asset_id": 112900007,
+      "odds": 100
+    },
+    {
+      "group_id": 720,
+      "pattern": 1,
+      "asset_id": 112900008,
+      "odds": 100
+    },
+    {
+      "group_id": 720,
+      "pattern": 1,
+      "asset_id": 112900009,
+      "odds": 100
+    },
+    {
+      "group_id": 720,
+      "pattern": 1,
+      "asset_id": 112900010,
+      "odds": 100
+    },
+    {
+      "group_id": 720,
+      "pattern": 1,
+      "asset_id": 112900011,
+      "odds": 100
+    },
+    {
+      "group_id": 720,
+      "pattern": 2,
+      "asset_id": 122900001,
+      "odds": 100
+    },
+    {
+      "group_id": 720,
+      "pattern": 2,
+      "asset_id": 122900002,
+      "odds": 100
+    },
+    {
+      "group_id": 720,
+      "pattern": 2,
+      "asset_id": 122900003,
+      "odds": 100
+    },
+    {
+      "group_id": 720,
+      "pattern": 2,
+      "asset_id": 122900004,
+      "odds": 100
+    },
+    {
+      "group_id": 720,
+      "pattern": 2,
+      "asset_id": 122900005,
+      "odds": 100
+    },
+    {
+      "group_id": 720,
+      "pattern": 2,
+      "asset_id": 122900006,
+      "odds": 100
+    },
+    {
+      "group_id": 720,
+      "pattern": 2,
+      "asset_id": 122900007,
+      "odds": 100
+    },
+    {
+      "group_id": 720,
+      "pattern": 2,
+      "asset_id": 122900008,
+      "odds": 100
+    },
+    {
+      "group_id": 720,
+      "pattern": 2,
+      "asset_id": 122900009,
+      "odds": 100
+    },
+    {
+      "group_id": 720,
+      "pattern": 2,
+      "asset_id": 122900010,
+      "odds": 100
+    },
+    {
+      "group_id": 720,
+      "pattern": 2,
+      "asset_id": 122900011,
+      "odds": 100
+    },
+    {
+      "group_id": 800,
+      "pattern": 1,
+      "asset_id": 111900001,
+      "odds": 100
+    },
+    {
+      "group_id": 800,
+      "pattern": 1,
+      "asset_id": 111900010,
+      "odds": 100
+    },
+    {
+      "group_id": 800,
+      "pattern": 1,
+      "asset_id": 111900009,
+      "odds": 100
+    },
+    {
+      "group_id": 800,
+      "pattern": 1,
+      "asset_id": 111900007,
+      "odds": 100
+    },
+    {
+      "group_id": 800,
+      "pattern": 2,
+      "asset_id": 121900002,
+      "odds": 100
+    },
+    {
+      "group_id": 800,
+      "pattern": 2,
+      "asset_id": 121900011,
+      "odds": 100
+    },
+    {
+      "group_id": 800,
+      "pattern": 2,
+      "asset_id": 121900006,
+      "odds": 100
+    },
+    {
+      "group_id": 800,
+      "pattern": 2,
+      "asset_id": 121900007,
+      "odds": 100
+    },
+    {
+      "group_id": 800,
+      "pattern": 3,
+      "asset_id": 113900001,
+      "odds": 100
+    },
+    {
+      "group_id": 800,
+      "pattern": 3,
+      "asset_id": 113900002,
+      "odds": 100
+    },
+    {
+      "group_id": 800,
+      "pattern": 3,
+      "asset_id": 113900003,
+      "odds": 100
+    },
+    {
+      "group_id": 800,
+      "pattern": 3,
+      "asset_id": 113900004,
+      "odds": 100
+    },
+    {
+      "group_id": 800,
+      "pattern": 3,
+      "asset_id": 114900001,
+      "odds": 100
+    },
+    {
+      "group_id": 800,
+      "pattern": 3,
+      "asset_id": 114900002,
+      "odds": 100
+    },
+    {
+      "group_id": 800,
+      "pattern": 3,
+      "asset_id": 114900003,
+      "odds": 100
+    },
+    {
+      "group_id": 800,
+      "pattern": 4,
+      "asset_id": 123900001,
+      "odds": 100
+    },
+    {
+      "group_id": 800,
+      "pattern": 4,
+      "asset_id": 123900002,
+      "odds": 100
+    },
+    {
+      "group_id": 800,
+      "pattern": 4,
+      "asset_id": 123900003,
+      "odds": 100
+    },
+    {
+      "group_id": 800,
+      "pattern": 4,
+      "asset_id": 123900004,
+      "odds": 100
+    },
+    {
+      "group_id": 800,
+      "pattern": 4,
+      "asset_id": 124900001,
+      "odds": 100
+    },
+    {
+      "group_id": 800,
+      "pattern": 4,
+      "asset_id": 124900002,
+      "odds": 100
+    },
+    {
+      "group_id": 800,
+      "pattern": 4,
+      "asset_id": 124900003,
+      "odds": 100
+    },
+    {
+      "group_id": 810,
+      "pattern": 1,
+      "asset_id": 111900001,
+      "odds": 100
+    },
+    {
+      "group_id": 810,
+      "pattern": 1,
+      "asset_id": 112900010,
+      "odds": 100
+    },
+    {
+      "group_id": 810,
+      "pattern": 1,
+      "asset_id": 111900009,
+      "odds": 100
+    },
+    {
+      "group_id": 810,
+      "pattern": 1,
+      "asset_id": 112900007,
+      "odds": 100
+    },
+    {
+      "group_id": 810,
+      "pattern": 2,
+      "asset_id": 122900002,
+      "odds": 100
+    },
+    {
+      "group_id": 810,
+      "pattern": 2,
+      "asset_id": 121900011,
+      "odds": 100
+    },
+    {
+      "group_id": 810,
+      "pattern": 2,
+      "asset_id": 122900006,
+      "odds": 100
+    },
+    {
+      "group_id": 810,
+      "pattern": 2,
+      "asset_id": 121900007,
+      "odds": 100
+    },
+    {
+      "group_id": 810,
+      "pattern": 3,
+      "asset_id": 113900001,
+      "odds": 100
+    },
+    {
+      "group_id": 810,
+      "pattern": 3,
+      "asset_id": 113290002,
+      "odds": 100
+    },
+    {
+      "group_id": 810,
+      "pattern": 3,
+      "asset_id": 113900003,
+      "odds": 100
+    },
+    {
+      "group_id": 810,
+      "pattern": 3,
+      "asset_id": 113290004,
+      "odds": 100
+    },
+    {
+      "group_id": 810,
+      "pattern": 3,
+      "asset_id": 114900001,
+      "odds": 100
+    },
+    {
+      "group_id": 810,
+      "pattern": 3,
+      "asset_id": 114900002,
+      "odds": 100
+    },
+    {
+      "group_id": 810,
+      "pattern": 3,
+      "asset_id": 114900003,
+      "odds": 100
+    },
+    {
+      "group_id": 810,
+      "pattern": 4,
+      "asset_id": 123290001,
+      "odds": 100
+    },
+    {
+      "group_id": 810,
+      "pattern": 4,
+      "asset_id": 123290002,
+      "odds": 100
+    },
+    {
+      "group_id": 810,
+      "pattern": 4,
+      "asset_id": 123290003,
+      "odds": 100
+    },
+    {
+      "group_id": 810,
+      "pattern": 4,
+      "asset_id": 123290004,
+      "odds": 100
+    },
+    {
+      "group_id": 810,
+      "pattern": 4,
+      "asset_id": 124900001,
+      "odds": 100
+    },
+    {
+      "group_id": 810,
+      "pattern": 4,
+      "asset_id": 124900002,
+      "odds": 100
+    },
+    {
+      "group_id": 810,
+      "pattern": 4,
+      "asset_id": 124900003,
+      "odds": 100
+    },
+    {
+      "group_id": 820,
+      "pattern": 1,
+      "asset_id": 112900001,
+      "odds": 100
+    },
+    {
+      "group_id": 820,
+      "pattern": 1,
+      "asset_id": 112900010,
+      "odds": 100
+    },
+    {
+      "group_id": 820,
+      "pattern": 1,
+      "asset_id": 112900009,
+      "odds": 100
+    },
+    {
+      "group_id": 820,
+      "pattern": 1,
+      "asset_id": 112900007,
+      "odds": 100
+    },
+    {
+      "group_id": 820,
+      "pattern": 2,
+      "asset_id": 122900002,
+      "odds": 100
+    },
+    {
+      "group_id": 820,
+      "pattern": 2,
+      "asset_id": 122900011,
+      "odds": 100
+    },
+    {
+      "group_id": 820,
+      "pattern": 2,
+      "asset_id": 122900006,
+      "odds": 100
+    },
+    {
+      "group_id": 820,
+      "pattern": 2,
+      "asset_id": 122900007,
+      "odds": 100
+    },
+    {
+      "group_id": 820,
+      "pattern": 3,
+      "asset_id": 113290001,
+      "odds": 100
+    },
+    {
+      "group_id": 820,
+      "pattern": 3,
+      "asset_id": 113290002,
+      "odds": 100
+    },
+    {
+      "group_id": 820,
+      "pattern": 3,
+      "asset_id": 113290003,
+      "odds": 100
+    },
+    {
+      "group_id": 820,
+      "pattern": 3,
+      "asset_id": 113290004,
+      "odds": 100
+    },
+    {
+      "group_id": 820,
+      "pattern": 3,
+      "asset_id": 114900001,
+      "odds": 100
+    },
+    {
+      "group_id": 820,
+      "pattern": 3,
+      "asset_id": 114900002,
+      "odds": 100
+    },
+    {
+      "group_id": 820,
+      "pattern": 3,
+      "asset_id": 114900003,
+      "odds": 100
+    },
+    {
+      "group_id": 820,
+      "pattern": 4,
+      "asset_id": 123290001,
+      "odds": 100
+    },
+    {
+      "group_id": 820,
+      "pattern": 4,
+      "asset_id": 123290002,
+      "odds": 100
+    },
+    {
+      "group_id": 820,
+      "pattern": 4,
+      "asset_id": 123290003,
+      "odds": 100
+    },
+    {
+      "group_id": 820,
+      "pattern": 4,
+      "asset_id": 123290004,
+      "odds": 100
+    },
+    {
+      "group_id": 820,
+      "pattern": 4,
+      "asset_id": 124900001,
+      "odds": 100
+    },
+    {
+      "group_id": 820,
+      "pattern": 4,
+      "asset_id": 124900002,
+      "odds": 100
+    },
+    {
+      "group_id": 820,
+      "pattern": 4,
+      "asset_id": 124900003,
+      "odds": 100
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "table": "audio_story_effect",
+  "row_count": 18,
+  "columns": [
+    "id",
+    "effect_name",
+    "cue_name",
+    "cue_sheet",
+    "loop_set"
+  ],
+  "rows": [
+    {
+      "id": 1,
+      "effect_name": "pfb_eff_storyevent_01_001",
+      "cue_name": "snd_sfx_story_El_pikapika",
+      "cue_sheet": "snd_sfx_story_El_pikapika",
+      "loop_set": 0
+    },
+    {
+      "id": 2,
+      "effect_name": "pfb_eff_storyevent_01_002",
+      "cue_name": "snd_sfx_story_Arrow",
+      "cue_sheet": "snd_sfx_story_Arrow",
+      "loop_set": 0
+    },
+    {
+      "id": 3,
+      "effect_name": "pfb_eff_storyevent_01_003",
+      "cue_name": "",
+      "cue_sheet": "",
+      "loop_set": 0
+    },
+    {
+      "id": 4,
+      "effect_name": "pfb_eff_storyevent_01_004",
+      "cue_name": "",
+      "cue_sheet": "",
+      "loop_set": 0
+    },
+    {
+      "id": 5,
+      "effect_name": "pfb_eff_storyevent_01_005",
+      "cue_name": "",
+      "cue_sheet": "",
+      "loop_set": 0
+    },
+    {
+      "id": 6,
+      "effect_name": "pfb_eff_storyevent_01_006",
+      "cue_name": "",
+      "cue_sheet": "",
+      "loop_set": 0
+    },
+    {
+      "id": 7,
+      "effect_name": "pfb_eff_storyevent_01_007",
+      "cue_name": "",
+      "cue_sheet": "",
+      "loop_set": 0
+    },
+    {
+      "id": 8,
+      "effect_name": "pfb_eff_storyevent_01_008",
+      "cue_name": "",
+      "cue_sheet": "",
+      "loop_set": 0
+    },
+    {
+      "id": 9,
+      "effect_name": "pfb_eff_storyevent_01_009",
+      "cue_name": "",
+      "cue_sheet": "",
+      "loop_set": 0
+    },
+    {
+      "id": 10,
+      "effect_name": "pfb_eff_storyevent_01_010",
+      "cue_name": "",
+      "cue_sheet": "",
+      "loop_set": 0
+    },
+    {
+      "id": 11,
+      "effect_name": "pfb_eff_storyevent_01_011",
+      "cue_name": "",
+      "cue_sheet": "",
+      "loop_set": 0
+    },
+    {
+      "id": 12,
+      "effect_name": "pfb_eff_storyevent_01_012",
+      "cue_name": "snd_sfx_story_Charge_Attack",
+      "cue_sheet": "snd_sfx_story_Charge_Attack",
+      "loop_set": 0
+    },
+    {
+      "id": 13,
+      "effect_name": "pfb_eff_storyevent_07_001",
+      "cue_name": "snd_sfx_story_Game_Window_Open",
+      "cue_sheet": "snd_sfx_story_Game_Window_Open",
+      "loop_set": 0
+    },
+    {
+      "id": 14,
+      "effect_name": "pfb_eff_storyevent_07_002",
+      "cue_name": "snd_sfx_story_Mission_Start",
+      "cue_sheet": "snd_sfx_story_Mission_Start",
+      "loop_set": 0
+    },
+    {
+      "id": 15,
+      "effect_name": "pfb_eff_storyevent_07_003",
+      "cue_name": "",
+      "cue_sheet": "",
+      "loop_set": 0
+    },
+    {
+      "id": 16,
+      "effect_name": "pfb_eff_storyevent_00_001",
+      "cue_name": "snd_sfx_story_Rain_Effect",
+      "cue_sheet": "snd_sfx_story_Rain_Effect",
+      "loop_set": 1
+    },
+    {
+      "id": 17,
+      "effect_name": "pfb_eff_storyevent_00_002",
+      "cue_name": "snd_sfx_story_Rain_Effect",
+      "cue_sheet": "snd_sfx_story_Rain_Effect",
+      "loop_set": 1
+    },
+    {
+      "id": 18,
+      "effect_name": "pfb_eff_storyevent_00_003",
+      "cue_name": "snd_sfx_story_Rain_Effect",
+      "cue_sheet": "snd_sfx_story_Rain_Effect",
+      "loop_set": 1
+    }
+  ]
+}

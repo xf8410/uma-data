@@ -1,0 +1,16 @@
+{
+  "table": "campaign_target_scenario",
+  "row_count": 1,
+  "columns": [
+    "id",
+    "target_id",
+    "single_mode_scenario_group_id"
+  ],
+  "rows": [
+    {
+      "id": 1,
+      "target_id": 10001,
+      "single_mode_scenario_group_id": 801
+    }
+  ]
+}

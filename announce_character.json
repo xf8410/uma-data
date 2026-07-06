@@ -1,0 +1,901 @@
+{
+  "table": "announce_character",
+  "row_count": 178,
+  "columns": [
+    "id",
+    "movie_id",
+    "can_end_second"
+  ],
+  "rows": [
+    {
+      "id": 101,
+      "movie_id": 30004,
+      "can_end_second": 6000
+    },
+    {
+      "id": 102,
+      "movie_id": 30006,
+      "can_end_second": 6000
+    },
+    {
+      "id": 103,
+      "movie_id": 30008,
+      "can_end_second": 6000
+    },
+    {
+      "id": 104,
+      "movie_id": 30010,
+      "can_end_second": 11800
+    },
+    {
+      "id": 105,
+      "movie_id": 30012,
+      "can_end_second": 6000
+    },
+    {
+      "id": 106,
+      "movie_id": 30014,
+      "can_end_second": 6000
+    },
+    {
+      "id": 107,
+      "movie_id": 30016,
+      "can_end_second": 6000
+    },
+    {
+      "id": 108,
+      "movie_id": 30018,
+      "can_end_second": 6000
+    },
+    {
+      "id": 109,
+      "movie_id": 30020,
+      "can_end_second": 17400
+    },
+    {
+      "id": 110,
+      "movie_id": 30022,
+      "can_end_second": 8400
+    },
+    {
+      "id": 111,
+      "movie_id": 30024,
+      "can_end_second": 6000
+    },
+    {
+      "id": 112,
+      "movie_id": 30026,
+      "can_end_second": 16433
+    },
+    {
+      "id": 113,
+      "movie_id": 30028,
+      "can_end_second": 6000
+    },
+    {
+      "id": 114,
+      "movie_id": 30030,
+      "can_end_second": 7800
+    },
+    {
+      "id": 115,
+      "movie_id": 30032,
+      "can_end_second": 18000
+    },
+    {
+      "id": 116,
+      "movie_id": 30034,
+      "can_end_second": 9200
+    },
+    {
+      "id": 117,
+      "movie_id": 30036,
+      "can_end_second": 7400
+    },
+    {
+      "id": 118,
+      "movie_id": 30038,
+      "can_end_second": 7100
+    },
+    {
+      "id": 119,
+      "movie_id": 30040,
+      "can_end_second": 8300
+    },
+    {
+      "id": 120,
+      "movie_id": 30042,
+      "can_end_second": 6000
+    },
+    {
+      "id": 121,
+      "movie_id": 30044,
+      "can_end_second": 18900
+    },
+    {
+      "id": 122,
+      "movie_id": 30046,
+      "can_end_second": 8600
+    },
+    {
+      "id": 123,
+      "movie_id": 30048,
+      "can_end_second": 8633
+    },
+    {
+      "id": 124,
+      "movie_id": 30050,
+      "can_end_second": 21600
+    },
+    {
+      "id": 125,
+      "movie_id": 30052,
+      "can_end_second": 9000
+    },
+    {
+      "id": 126,
+      "movie_id": 30054,
+      "can_end_second": 9500
+    },
+    {
+      "id": 127,
+      "movie_id": 30056,
+      "can_end_second": 21400
+    },
+    {
+      "id": 128,
+      "movie_id": 30058,
+      "can_end_second": 9700
+    },
+    {
+      "id": 129,
+      "movie_id": 30060,
+      "can_end_second": 9700
+    },
+    {
+      "id": 130,
+      "movie_id": 30062,
+      "can_end_second": 18500
+    },
+    {
+      "id": 131,
+      "movie_id": 30066,
+      "can_end_second": 9800
+    },
+    {
+      "id": 132,
+      "movie_id": 30068,
+      "can_end_second": 22200
+    },
+    {
+      "id": 133,
+      "movie_id": 30070,
+      "can_end_second": 10000
+    },
+    {
+      "id": 134,
+      "movie_id": 30072,
+      "can_end_second": 9400
+    },
+    {
+      "id": 135,
+      "movie_id": 30074,
+      "can_end_second": 11500
+    },
+    {
+      "id": 136,
+      "movie_id": 30076,
+      "can_end_second": 11000
+    },
+    {
+      "id": 137,
+      "movie_id": 30078,
+      "can_end_second": 8700
+    },
+    {
+      "id": 138,
+      "movie_id": 30080,
+      "can_end_second": 20000
+    },
+    {
+      "id": 139,
+      "movie_id": 30082,
+      "can_end_second": 7400
+    },
+    {
+      "id": 140,
+      "movie_id": 30084,
+      "can_end_second": 7700
+    },
+    {
+      "id": 141,
+      "movie_id": 30086,
+      "can_end_second": 21000
+    },
+    {
+      "id": 142,
+      "movie_id": 30088,
+      "can_end_second": 13500
+    },
+    {
+      "id": 143,
+      "movie_id": 30090,
+      "can_end_second": 10500
+    },
+    {
+      "id": 144,
+      "movie_id": 30092,
+      "can_end_second": 23400
+    },
+    {
+      "id": 145,
+      "movie_id": 30094,
+      "can_end_second": 10500
+    },
+    {
+      "id": 146,
+      "movie_id": 30096,
+      "can_end_second": 10000
+    },
+    {
+      "id": 147,
+      "movie_id": 30098,
+      "can_end_second": 19000
+    },
+    {
+      "id": 148,
+      "movie_id": 30100,
+      "can_end_second": 9500
+    },
+    {
+      "id": 149,
+      "movie_id": 30104,
+      "can_end_second": 21000
+    },
+    {
+      "id": 150,
+      "movie_id": 30106,
+      "can_end_second": 10000
+    },
+    {
+      "id": 151,
+      "movie_id": 30108,
+      "can_end_second": 12000
+    },
+    {
+      "id": 152,
+      "movie_id": 30110,
+      "can_end_second": 11000
+    },
+    {
+      "id": 153,
+      "movie_id": 30112,
+      "can_end_second": 26500
+    },
+    {
+      "id": 154,
+      "movie_id": 30114,
+      "can_end_second": 12500
+    },
+    {
+      "id": 155,
+      "movie_id": 30116,
+      "can_end_second": 9900
+    },
+    {
+      "id": 156,
+      "movie_id": 30118,
+      "can_end_second": 17800
+    },
+    {
+      "id": 157,
+      "movie_id": 30120,
+      "can_end_second": 13500
+    },
+    {
+      "id": 158,
+      "movie_id": 30122,
+      "can_end_second": 11500
+    },
+    {
+      "id": 159,
+      "movie_id": 30124,
+      "can_end_second": 21000
+    },
+    {
+      "id": 160,
+      "movie_id": 30126,
+      "can_end_second": 12500
+    },
+    {
+      "id": 161,
+      "movie_id": 30128,
+      "can_end_second": 14500
+    },
+    {
+      "id": 162,
+      "movie_id": 30132,
+      "can_end_second": 21000
+    },
+    {
+      "id": 163,
+      "movie_id": 30134,
+      "can_end_second": 9800
+    },
+    {
+      "id": 164,
+      "movie_id": 30136,
+      "can_end_second": 8600
+    },
+    {
+      "id": 165,
+      "movie_id": 30138,
+      "can_end_second": 26100
+    },
+    {
+      "id": 166,
+      "movie_id": 30140,
+      "can_end_second": 12230
+    },
+    {
+      "id": 167,
+      "movie_id": 30142,
+      "can_end_second": 11660
+    },
+    {
+      "id": 168,
+      "movie_id": 30146,
+      "can_end_second": 23500
+    },
+    {
+      "id": 169,
+      "movie_id": 30148,
+      "can_end_second": 12000
+    },
+    {
+      "id": 170,
+      "movie_id": 30150,
+      "can_end_second": 14600
+    },
+    {
+      "id": 171,
+      "movie_id": 30152,
+      "can_end_second": 9000
+    },
+    {
+      "id": 172,
+      "movie_id": 30154,
+      "can_end_second": 8800
+    },
+    {
+      "id": 173,
+      "movie_id": 30156,
+      "can_end_second": 23000
+    },
+    {
+      "id": 174,
+      "movie_id": 30158,
+      "can_end_second": 11600
+    },
+    {
+      "id": 175,
+      "movie_id": 30160,
+      "can_end_second": 12500
+    },
+    {
+      "id": 176,
+      "movie_id": 30162,
+      "can_end_second": 23500
+    },
+    {
+      "id": 177,
+      "movie_id": 30166,
+      "can_end_second": 11500
+    },
+    {
+      "id": 178,
+      "movie_id": 30168,
+      "can_end_second": 9300
+    },
+    {
+      "id": 179,
+      "movie_id": 30170,
+      "can_end_second": 21700
+    },
+    {
+      "id": 180,
+      "movie_id": 30174,
+      "can_end_second": 13000
+    },
+    {
+      "id": 181,
+      "movie_id": 30176,
+      "can_end_second": 26000
+    },
+    {
+      "id": 182,
+      "movie_id": 30178,
+      "can_end_second": 11400
+    },
+    {
+      "id": 183,
+      "movie_id": 30180,
+      "can_end_second": 11400
+    },
+    {
+      "id": 184,
+      "movie_id": 30182,
+      "can_end_second": 23800
+    },
+    {
+      "id": 185,
+      "movie_id": 30186,
+      "can_end_second": 10600
+    },
+    {
+      "id": 186,
+      "movie_id": 30188,
+      "can_end_second": 11500
+    },
+    {
+      "id": 187,
+      "movie_id": 30190,
+      "can_end_second": 11000
+    },
+    {
+      "id": 188,
+      "movie_id": 30192,
+      "can_end_second": 12400
+    },
+    {
+      "id": 189,
+      "movie_id": 30194,
+      "can_end_second": 22800
+    },
+    {
+      "id": 190,
+      "movie_id": 30198,
+      "can_end_second": 11200
+    },
+    {
+      "id": 191,
+      "movie_id": 30200,
+      "can_end_second": 22600
+    },
+    {
+      "id": 192,
+      "movie_id": 30204,
+      "can_end_second": 12400
+    },
+    {
+      "id": 193,
+      "movie_id": 30206,
+      "can_end_second": 27500
+    },
+    {
+      "id": 194,
+      "movie_id": 30208,
+      "can_end_second": 12000
+    },
+    {
+      "id": 195,
+      "movie_id": 30210,
+      "can_end_second": 10600
+    },
+    {
+      "id": 196,
+      "movie_id": 30212,
+      "can_end_second": 11200
+    },
+    {
+      "id": 197,
+      "movie_id": 30214,
+      "can_end_second": 10800
+    },
+    {
+      "id": 198,
+      "movie_id": 30216,
+      "can_end_second": 14500
+    },
+    {
+      "id": 199,
+      "movie_id": 30218,
+      "can_end_second": 21400
+    },
+    {
+      "id": 200,
+      "movie_id": 30220,
+      "can_end_second": 5400
+    },
+    {
+      "id": 201,
+      "movie_id": 30222,
+      "can_end_second": 17000
+    },
+    {
+      "id": 202,
+      "movie_id": 30226,
+      "can_end_second": 13000
+    },
+    {
+      "id": 203,
+      "movie_id": 30224,
+      "can_end_second": 14500
+    },
+    {
+      "id": 204,
+      "movie_id": 30228,
+      "can_end_second": 24000
+    },
+    {
+      "id": 205,
+      "movie_id": 30232,
+      "can_end_second": 12400
+    },
+    {
+      "id": 206,
+      "movie_id": 30234,
+      "can_end_second": 13400
+    },
+    {
+      "id": 207,
+      "movie_id": 30236,
+      "can_end_second": 24000
+    },
+    {
+      "id": 208,
+      "movie_id": 30242,
+      "can_end_second": 9600
+    },
+    {
+      "id": 209,
+      "movie_id": 30244,
+      "can_end_second": 12400
+    },
+    {
+      "id": 210,
+      "movie_id": 30246,
+      "can_end_second": 24500
+    },
+    {
+      "id": 211,
+      "movie_id": 30250,
+      "can_end_second": 12500
+    },
+    {
+      "id": 212,
+      "movie_id": 30252,
+      "can_end_second": 9600
+    },
+    {
+      "id": 213,
+      "movie_id": 30256,
+      "can_end_second": 9400
+    },
+    {
+      "id": 214,
+      "movie_id": 30258,
+      "can_end_second": 11400
+    },
+    {
+      "id": 215,
+      "movie_id": 30260,
+      "can_end_second": 27400
+    },
+    {
+      "id": 216,
+      "movie_id": 30268,
+      "can_end_second": 14000
+    },
+    {
+      "id": 217,
+      "movie_id": 30270,
+      "can_end_second": 25500
+    },
+    {
+      "id": 218,
+      "movie_id": 30274,
+      "can_end_second": 13000
+    },
+    {
+      "id": 219,
+      "movie_id": 30276,
+      "can_end_second": 13000
+    },
+    {
+      "id": 220,
+      "movie_id": 30278,
+      "can_end_second": 27000
+    },
+    {
+      "id": 221,
+      "movie_id": 30282,
+      "can_end_second": 12400
+    },
+    {
+      "id": 222,
+      "movie_id": 30284,
+      "can_end_second": 14000
+    },
+    {
+      "id": 223,
+      "movie_id": 30288,
+      "can_end_second": 13000
+    },
+    {
+      "id": 224,
+      "movie_id": 30290,
+      "can_end_second": 14300
+    },
+    {
+      "id": 225,
+      "movie_id": 30292,
+      "can_end_second": 24500
+    },
+    {
+      "id": 226,
+      "movie_id": 30296,
+      "can_end_second": 14000
+    },
+    {
+      "id": 227,
+      "movie_id": 30298,
+      "can_end_second": 13400
+    },
+    {
+      "id": 228,
+      "movie_id": 30300,
+      "can_end_second": 22600
+    },
+    {
+      "id": 229,
+      "movie_id": 30304,
+      "can_end_second": 10400
+    },
+    {
+      "id": 230,
+      "movie_id": 30306,
+      "can_end_second": 11400
+    },
+    {
+      "id": 231,
+      "movie_id": 30308,
+      "can_end_second": 24600
+    },
+    {
+      "id": 232,
+      "movie_id": 30312,
+      "can_end_second": 4400
+    },
+    {
+      "id": 233,
+      "movie_id": 30314,
+      "can_end_second": 12600
+    },
+    {
+      "id": 234,
+      "movie_id": 30318,
+      "can_end_second": 12400
+    },
+    {
+      "id": 235,
+      "movie_id": 30320,
+      "can_end_second": 12400
+    },
+    {
+      "id": 236,
+      "movie_id": 30322,
+      "can_end_second": 24400
+    },
+    {
+      "id": 237,
+      "movie_id": 30326,
+      "can_end_second": 12500
+    },
+    {
+      "id": 238,
+      "movie_id": 30328,
+      "can_end_second": 12400
+    },
+    {
+      "id": 239,
+      "movie_id": 30330,
+      "can_end_second": 22600
+    },
+    {
+      "id": 240,
+      "movie_id": 30336,
+      "can_end_second": 10400
+    },
+    {
+      "id": 241,
+      "movie_id": 30340,
+      "can_end_second": 10600
+    },
+    {
+      "id": 242,
+      "movie_id": 30342,
+      "can_end_second": 22400
+    },
+    {
+      "id": 243,
+      "movie_id": 30346,
+      "can_end_second": 12400
+    },
+    {
+      "id": 244,
+      "movie_id": 30348,
+      "can_end_second": 10600
+    },
+    {
+      "id": 245,
+      "movie_id": 30352,
+      "can_end_second": 11400
+    },
+    {
+      "id": 246,
+      "movie_id": 30354,
+      "can_end_second": 11000
+    },
+    {
+      "id": 247,
+      "movie_id": 30356,
+      "can_end_second": 21400
+    },
+    {
+      "id": 248,
+      "movie_id": 30360,
+      "can_end_second": 11400
+    },
+    {
+      "id": 249,
+      "movie_id": 30362,
+      "can_end_second": 10600
+    },
+    {
+      "id": 250,
+      "movie_id": 30364,
+      "can_end_second": 21400
+    },
+    {
+      "id": 251,
+      "movie_id": 30368,
+      "can_end_second": 10400
+    },
+    {
+      "id": 252,
+      "movie_id": 30370,
+      "can_end_second": 12400
+    },
+    {
+      "id": 253,
+      "movie_id": 30372,
+      "can_end_second": 22000
+    },
+    {
+      "id": 254,
+      "movie_id": 30380,
+      "can_end_second": 10400
+    },
+    {
+      "id": 255,
+      "movie_id": 30376,
+      "can_end_second": 13000
+    },
+    {
+      "id": 256,
+      "movie_id": 30382,
+      "can_end_second": 11400
+    },
+    {
+      "id": 257,
+      "movie_id": 30386,
+      "can_end_second": 10676
+    },
+    {
+      "id": 258,
+      "movie_id": 30388,
+      "can_end_second": 14000
+    },
+    {
+      "id": 259,
+      "movie_id": 30390,
+      "can_end_second": 26500
+    },
+    {
+      "id": 260,
+      "movie_id": 30394,
+      "can_end_second": 11400
+    },
+    {
+      "id": 261,
+      "movie_id": 30396,
+      "can_end_second": 12400
+    },
+    {
+      "id": 262,
+      "movie_id": 30398,
+      "can_end_second": 23000
+    },
+    {
+      "id": 263,
+      "movie_id": 30406,
+      "can_end_second": 10600
+    },
+    {
+      "id": 264,
+      "movie_id": 30408,
+      "can_end_second": 13600
+    },
+    {
+      "id": 265,
+      "movie_id": 30410,
+      "can_end_second": 23600
+    },
+    {
+      "id": 266,
+      "movie_id": 30414,
+      "can_end_second": 2500
+    },
+    {
+      "id": 267,
+      "movie_id": 30416,
+      "can_end_second": 11500
+    },
+    {
+      "id": 268,
+      "movie_id": 30420,
+      "can_end_second": 12500
+    },
+    {
+      "id": 269,
+      "movie_id": 30422,
+      "can_end_second": 10600
+    },
+    {
+      "id": 270,
+      "movie_id": 30424,
+      "can_end_second": 24400
+    },
+    {
+      "id": 271,
+      "movie_id": 30428,
+      "can_end_second": 15000
+    },
+    {
+      "id": 272,
+      "movie_id": 30430,
+      "can_end_second": 12500
+    },
+    {
+      "id": 273,
+      "movie_id": 30432,
+      "can_end_second": 23600
+    },
+    {
+      "id": 274,
+      "movie_id": 30438,
+      "can_end_second": 12500
+    },
+    {
+      "id": 275,
+      "movie_id": 30440,
+      "can_end_second": 11600
+    },
+    {
+      "id": 276,
+      "movie_id": 30442,
+      "can_end_second": 23600
+    },
+    {
+      "id": 277,
+      "movie_id": 30446,
+      "can_end_second": 9400
+    },
+    {
+      "id": 278,
+      "movie_id": 30448,
+      "can_end_second": 13000
+    }
+  ]
+}

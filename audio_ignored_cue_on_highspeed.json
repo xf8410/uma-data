@@ -1,0 +1,46 @@
+{
+  "table": "audio_ignored_cue_on_highspeed",
+  "row_count": 7,
+  "columns": [
+    "id",
+    "cue_name",
+    "cue_sheet"
+  ],
+  "rows": [
+    {
+      "id": 1,
+      "cue_name": "snd_sfx_story_rijicho_cat_01",
+      "cue_sheet": "snd_sfx_story_rijicho_cat_01"
+    },
+    {
+      "id": 2,
+      "cue_name": "snd_sfx_story_rijicho_cat_02",
+      "cue_sheet": "snd_sfx_story_rijicho_cat_02"
+    },
+    {
+      "id": 3,
+      "cue_name": "snd_sfx_story_rijicho_cat_03",
+      "cue_sheet": "snd_sfx_story_rijicho_cat_03"
+    },
+    {
+      "id": 4,
+      "cue_name": "snd_sfx_story_rijicho_cat_04",
+      "cue_sheet": "snd_sfx_story_rijicho_cat_04"
+    },
+    {
+      "id": 5,
+      "cue_name": "snd_sfx_story_rijicho_cat_05",
+      "cue_sheet": "snd_sfx_story_rijicho_cat_05"
+    },
+    {
+      "id": 6,
+      "cue_name": "snd_sfx_story_rijicho_cat_06",
+      "cue_sheet": "snd_sfx_story_rijicho_cat_06"
+    },
+    {
+      "id": 7,
+      "cue_name": "snd_sfx_story_rijicho_cat_07",
+      "cue_sheet": "snd_sfx_story_rijicho_cat_07"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "table": "campaign_story_data",
+  "row_count": 16,
+  "columns": [
+    "id",
+    "campaign_id",
+    "condition_type",
+    "condition_value",
+    "story_id"
+  ],
+  "rows": [
+    {
+      "id": 1,
+      "campaign_id": 251,
+      "condition_type": 1,
+      "condition_value": 0,
+      "story_id": 120251001
+    },
+    {
+      "id": 2,
+      "campaign_id": 251,
+      "condition_type": 2,
+      "condition_value": 1,
+      "story_id": 120251002
+    },
+    {
+      "id": 3,
+      "campaign_id": 251,
+      "condition_type": 2,
+      "condition_value": 2,
+      "story_id": 120251003
+    },
+    {
+      "id": 4,
+      "campaign_id": 251,
+      "condition_type": 2,
+      "condition_value": 3,
+      "story_id": 120251004
+    },
+    {
+      "id": 5,
+      "campaign_id": 516,
+      "condition_type": 1,
+      "condition_value": 0,
+      "story_id": 120251001
+    },
+    {
+      "id": 6,
+      "campaign_id": 516,
+      "condition_type": 2,
+      "condition_value": 1,
+      "story_id": 120251002
+    },
+    {
+      "id": 7,
+      "campaign_id": 516,
+      "condition_type": 2,
+      "condition_value": 2,
+      "story_id": 120251003
+    },
+    {
+      "id": 8,
+      "campaign_id": 516,
+      "condition_type": 2,
+      "condition_value": 3,
+      "story_id": 120251004
+    },
+    {
+      "id": 9,
+      "campaign_id": 783,
+      "condition_type": 1,
+      "condition_value": 0,
+      "story_id": 120251001
+    },
+    {
+      "id": 10,
+      "campaign_id": 783,
+      "condition_type": 2,
+      "condition_value": 1,
+      "story_id": 120251002
+    },
+    {
+      "id": 11,
+      "campaign_id": 783,
+      "condition_type": 2,
+      "condition_value": 2,
+      "story_id": 120251003
+    },
+    {
+      "id": 12,
+      "campaign_id": 783,
+      "condition_type": 2,
+      "condition_value": 3,
+      "story_id": 120251004
+    },
+    {
+      "id": 13,
+      "campaign_id": 983,
+      "condition_type": 1,
+      "condition_value": 0,
+      "story_id": 120251001
+    },
+    {
+      "id": 14,
+      "campaign_id": 983,
+      "condition_type": 2,
+      "condition_value": 1,
+      "story_id": 120251002
+    },
+    {
+      "id": 15,
+      "campaign_id": 983,
+      "condition_type": 2,
+      "condition_value": 2,
+      "story_id": 120251003
+    },
+    {
+      "id": 16,
+      "campaign_id": 983,
+      "condition_type": 2,
+      "condition_value": 3,
+      "story_id": 120251004
+    }
+  ]
+}

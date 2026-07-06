@@ -1,0 +1,138 @@
+{
+  "table": "card_talent_level_upgrade_money",
+  "row_count": 21,
+  "columns": [
+    "id",
+    "talent_level",
+    "upgrade_talent_level",
+    "money_num"
+  ],
+  "rows": [
+    {
+      "id": 1,
+      "talent_level": 1,
+      "upgrade_talent_level": 2,
+      "money_num": 20000
+    },
+    {
+      "id": 2,
+      "talent_level": 1,
+      "upgrade_talent_level": 3,
+      "money_num": 120000
+    },
+    {
+      "id": 3,
+      "talent_level": 1,
+      "upgrade_talent_level": 4,
+      "money_num": 270000
+    },
+    {
+      "id": 4,
+      "talent_level": 1,
+      "upgrade_talent_level": 5,
+      "money_num": 470000
+    },
+    {
+      "id": 5,
+      "talent_level": 2,
+      "upgrade_talent_level": 3,
+      "money_num": 100000
+    },
+    {
+      "id": 6,
+      "talent_level": 2,
+      "upgrade_talent_level": 4,
+      "money_num": 250000
+    },
+    {
+      "id": 7,
+      "talent_level": 2,
+      "upgrade_talent_level": 5,
+      "money_num": 450000
+    },
+    {
+      "id": 8,
+      "talent_level": 3,
+      "upgrade_talent_level": 4,
+      "money_num": 150000
+    },
+    {
+      "id": 9,
+      "talent_level": 3,
+      "upgrade_talent_level": 5,
+      "money_num": 350000
+    },
+    {
+      "id": 10,
+      "talent_level": 4,
+      "upgrade_talent_level": 5,
+      "money_num": 200000
+    },
+    {
+      "id": 11,
+      "talent_level": 1,
+      "upgrade_talent_level": 6,
+      "money_num": 970000
+    },
+    {
+      "id": 12,
+      "talent_level": 1,
+      "upgrade_talent_level": 7,
+      "money_num": 1970000
+    },
+    {
+      "id": 13,
+      "talent_level": 2,
+      "upgrade_talent_level": 6,
+      "money_num": 950000
+    },
+    {
+      "id": 14,
+      "talent_level": 2,
+      "upgrade_talent_level": 7,
+      "money_num": 1950000
+    },
+    {
+      "id": 15,
+      "talent_level": 3,
+      "upgrade_talent_level": 6,
+      "money_num": 850000
+    },
+    {
+      "id": 16,
+      "talent_level": 3,
+      "upgrade_talent_level": 7,
+      "money_num": 1850000
+    },
+    {
+      "id": 17,
+      "talent_level": 4,
+      "upgrade_talent_level": 6,
+      "money_num": 700000
+    },
+    {
+      "id": 18,
+      "talent_level": 4,
+      "upgrade_talent_level": 7,
+      "money_num": 1700000
+    },
+    {
+      "id": 19,
+      "talent_level": 5,
+      "upgrade_talent_level": 6,
+      "money_num": 500000
+    },
+    {
+      "id": 20,
+      "talent_level": 5,
+      "upgrade_talent_level": 7,
+      "money_num": 1500000
+    },
+    {
+      "id": 21,
+      "talent_level": 6,
+      "upgrade_talent_level": 7,
+      "money_num": 1000000
+    }
+  ]
+}
