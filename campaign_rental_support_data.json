@@ -1,18 +1,1 @@
-{
-  "table": "campaign_rental_support_data",
-  "row_count": 1,
-  "columns": [
-    "id",
-    "rental_limit",
-    "start_date",
-    "end_date"
-  ],
-  "rows": [
-    {
-      "id": 1,
-      "rental_limit": 3,
-      "start_date": 1709521200,
-      "end_date": 1711915199
-    }
-  ]
-}
+{"table":"campaign_rental_support_data","row_count":1,"columns":["id","rental_limit","start_date","end_date"],"rows":[{"id":1,"rental_limit":3,"start_date":1709521200,"end_date":1711915199}]}

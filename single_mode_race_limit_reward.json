@@ -1,0 +1,1 @@
+{"table":"single_mode_race_limit_reward","row_count":1,"columns":["id","item_category","item_id","reward_num","reward_limit","start_date","end_date"],"rows":[{"id":1,"item_category":161,"item_id":134,"reward_num":10,"reward_limit":10,"start_date":1724468400,"end_date":2524618800}]}

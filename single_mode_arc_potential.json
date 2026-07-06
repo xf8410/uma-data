@@ -1,0 +1,1 @@
+{"table":"single_mode_arc_potential","row_count":10,"columns":["id","row","queue"],"rows":[{"id":1,"row":2,"queue":1},{"id":2,"row":1,"queue":1},{"id":3,"row":3,"queue":1},{"id":4,"row":2,"queue":2},{"id":5,"row":1,"queue":2},{"id":6,"row":2,"queue":3},{"id":7,"row":3,"queue":2},{"id":8,"row":3,"queue":3},{"id":9,"row":4,"queue":1},{"id":10,"row":4,"queue":2}]}

@@ -1,0 +1,1 @@
+{"table":"single_mode_training_plate","row_count":4,"columns":["id","scenario_id","value_min","value_max"],"rows":[{"id":1,"scenario_id":0,"value_min":1,"value_max":5},{"id":2,"scenario_id":0,"value_min":6,"value_max":19},{"id":3,"scenario_id":0,"value_min":20,"value_max":100},{"id":4,"scenario_id":0,"value_min":101,"value_max":999}]}

@@ -1,0 +1,1 @@
+{"table":"single_mode_analyze_ticket","row_count":7,"columns":["id","grade","cost_ticket"],"rows":[{"id":1,"grade":100,"cost_ticket":1},{"id":2,"grade":200,"cost_ticket":1},{"id":3,"grade":300,"cost_ticket":1},{"id":4,"grade":400,"cost_ticket":1},{"id":5,"grade":700,"cost_ticket":1},{"id":6,"grade":800,"cost_ticket":1},{"id":7,"grade":900,"cost_ticket":1}]}

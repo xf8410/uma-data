@@ -1,0 +1,1 @@
+{"table":"campaign_walking_friend","row_count":6,"columns":["id","friend_list_id","chara_id"],"rows":[{"id":1,"friend_list_id":1,"chara_id":1040},{"id":2,"friend_list_id":1,"chara_id":1064},{"id":3,"friend_list_id":2,"chara_id":1048},{"id":4,"friend_list_id":2,"chara_id":1065},{"id":5,"friend_list_id":3,"chara_id":1040},{"id":6,"friend_list_id":3,"chara_id":1048}]}

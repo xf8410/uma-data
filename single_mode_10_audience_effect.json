@@ -1,0 +1,1 @@
+{"table":"single_mode_10_audience_effect","row_count":3,"columns":["id","min_turn","max_turn","audience_effect"],"rows":[{"id":1,"min_turn":1,"max_turn":24,"audience_effect":2},{"id":2,"min_turn":25,"max_turn":48,"audience_effect":1},{"id":3,"min_turn":49,"max_turn":72,"audience_effect":0}]}

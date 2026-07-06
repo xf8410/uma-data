@@ -1,16 +1,1 @@
-{
-  "table": "chara_dress_color_set_default",
-  "row_count": 1,
-  "columns": [
-    "id",
-    "chara_id",
-    "color_set_id"
-  ],
-  "rows": [
-    {
-      "id": 1,
-      "chara_id": 1001,
-      "color_set_id": 0
-    }
-  ]
-}
+{"table":"chara_dress_color_set_default","row_count":1,"columns":["id","chara_id","color_set_id"],"rows":[{"id":1,"chara_id":1001,"color_set_id":0}]}

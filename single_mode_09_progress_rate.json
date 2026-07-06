@@ -1,0 +1,1 @@
+{"table":"single_mode_09_progress_rate","row_count":3,"columns":["id","progress_min","progress_max","result_type"],"rows":[{"id":1,"progress_min":0,"progress_max":69,"result_type":1},{"id":2,"progress_min":70,"progress_max":99,"result_type":2},{"id":3,"progress_min":100,"progress_max":999,"result_type":3}]}

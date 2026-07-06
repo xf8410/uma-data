@@ -1,0 +1,1 @@
+{"table":"jobs_point_limit","row_count":1,"columns":["id","jobs_story_event_point_limit","jobs_story_event_roulette_coin_limit","jobs_training_challenge_coin_limit"],"rows":[{"id":1,"jobs_story_event_point_limit":600000,"jobs_story_event_roulette_coin_limit":400,"jobs_training_challenge_coin_limit":30000}]}
