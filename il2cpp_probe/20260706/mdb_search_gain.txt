@@ -1,0 +1,191 @@
+{
+  "ok": true,
+  "keyword": "gain",
+  "matched_tables": 4,
+  "matched_columns": 33,
+  "tables": [
+    {
+      "table": "single_mode_11_gain_training_pt",
+      "rows": 40
+    },
+    {
+      "table": "single_mode_14_finals_gain_skill",
+      "rows": 3
+    },
+    {
+      "table": "single_mode_14_special_gain_turn",
+      "rows": 11
+    },
+    {
+      "table": "single_mode_hint_gain",
+      "rows": 4919
+    }
+  ],
+  "columns": [
+    {
+      "table": "collect_raid_master",
+      "column": "gain_collect_item_rate",
+      "type": "INTEGER"
+    },
+    {
+      "table": "collect_raid_master",
+      "column": "gain_collect_item_min",
+      "type": "INTEGER"
+    },
+    {
+      "table": "single_mode_10_9047_reward",
+      "column": "gain_type",
+      "type": "INTEGER"
+    },
+    {
+      "table": "single_mode_10_9047_reward",
+      "column": "gain_value",
+      "type": "INTEGER"
+    },
+    {
+      "table": "single_mode_11_gain_training_pt",
+      "column": "gain_shima_training_pt",
+      "type": "INTEGER"
+    },
+    {
+      "table": "single_mode_14_check_point_pt",
+      "column": "gain_pt",
+      "type": "INTEGER"
+    },
+    {
+      "table": "single_mode_cook_dish",
+      "column": "gain_coin",
+      "type": "INTEGER"
+    },
+    {
+      "table": "single_mode_cook_dish",
+      "column": "gain_power",
+      "type": "INTEGER"
+    },
+    {
+      "table": "single_mode_hint_gain",
+      "column": "hint_gain_type",
+      "type": "INTEGER"
+    },
+    {
+      "table": "single_mode_live_master_bonus",
+      "column": "master_bonus_gain_type_1",
+      "type": "INTEGER"
+    },
+    {
+      "table": "single_mode_live_master_bonus",
+      "column": "master_bonus_gain_value_1_1",
+      "type": "INTEGER"
+    },
+    {
+      "table": "single_mode_live_master_bonus",
+      "column": "master_bonus_gain_value_1_2",
+      "type": "INTEGER"
+    },
+    {
+      "table": "single_mode_live_master_bonus",
+      "column": "master_bonus_gain_value_1_3",
+      "type": "INTEGER"
+    },
+    {
+      "table": "single_mode_live_master_bonus",
+      "column": "master_bonus_gain_value_1_4",
+      "type": "INTEGER"
+    },
+    {
+      "table": "single_mode_live_master_bonus",
+      "column": "master_bonus_gain_type_2",
+      "type": "INTEGER"
+    },
+    {
+      "table": "single_mode_live_master_bonus",
+      "column": "master_bonus_gain_value_2_1",
+      "type": "INTEGER"
+    },
+    {
+      "table": "single_mode_live_master_bonus",
+      "column": "master_bonus_gain_value_2_2",
+      "type": "INTEGER"
+    },
+    {
+      "table": "single_mode_live_master_bonus",
+      "column": "master_bonus_gain_value_2_3",
+      "type": "INTEGER"
+    },
+    {
+      "table": "single_mode_live_master_bonus",
+      "column": "master_bonus_gain_value_2_4",
+      "type": "INTEGER"
+    },
+    {
+      "table": "single_mode_live_master_bonus",
+      "column": "master_bonus_gain_type_3",
+      "type": "INTEGER"
+    },
+    {
+      "table": "single_mode_live_master_bonus",
+      "column": "master_bonus_gain_value_3_1",
+      "type": "INTEGER"
+    },
+    {
+      "table": "single_mode_live_master_bonus",
+      "column": "master_bonus_gain_value_3_2",
+      "type": "INTEGER"
+    },
+    {
+      "table": "single_mode_live_master_bonus",
+      "column": "master_bonus_gain_value_3_3",
+      "type": "INTEGER"
+    },
+    {
+      "table": "single_mode_live_master_bonus",
+      "column": "master_bonus_gain_value_3_4",
+      "type": "INTEGER"
+    },
+    {
+      "table": "single_mode_race_restrict_turn",
+      "column": "gain_id",
+      "type": "INTEGER"
+    },
+    {
+      "table": "single_mode_story_condition_set",
+      "column": "gain_select_1",
+      "type": "INTEGER"
+    },
+    {
+      "table": "single_mode_story_condition_set",
+      "column": "gain_select_2",
+      "type": "INTEGER"
+    },
+    {
+      "table": "single_mode_story_condition_set",
+      "column": "gain_select_3",
+      "type": "INTEGER"
+    },
+    {
+      "table": "single_mode_story_root",
+      "column": "gain_select_1",
+      "type": "INTEGER"
+    },
+    {
+      "table": "single_mode_story_root",
+      "column": "gain_select_2",
+      "type": "INTEGER"
+    },
+    {
+      "table": "single_mode_story_root",
+      "column": "gain_select_3",
+      "type": "INTEGER"
+    },
+    {
+      "table": "single_mode_unique_chara",
+      "column": "gain_flag_id",
+      "type": "INTEGER"
+    },
+    {
+      "table": "single_mode_unique_chara",
+      "column": "gain_role_id",
+      "type": "INTEGER"
+    }
+  ]
+}
