@@ -1,0 +1,308 @@
+================================================================================
+赛马娘 AI 项目 完整历史总结 (Part 8)
+================================================================================
+
+================================================================================
+赛马娘 AI 项目 完整历史总结 (Part 9/17)
+================================================================================
+
+  .git 体积膨胀至 529MB
+    ↓
+  2026-07-13  git push origin main 持续 504 超时
+    原因: HTTP push 大仓库超过 GitHub/网关超时限制
+    尝试次数: 30+ 次 (Bash 工具调用记录)
+    ↓
+  诊断: git diff HEAD~3 --stat 显示 165 files, +35,480,743 insertions
+    ↓
+  修复操作:
+    1. git config http.postBuffer 524288000 (无效)
+    2. git filter-branch --force --index-filter \
+         'git rm -r --cached --ignore-unmatch artifacts/ base.apk split_config.arm64_v8a.apk'
+    3. git for-each-ref refs/original/ | xargs git update-ref -d
+    4. git reflog expire --expire=now --all
+    5. git gc --prune=now --aggressive
+    6. .gitignore 新增: artifacts/, *.so, *.apk, *.dat, *.bin
+    ↓
+  .git 体积: 529MB → 15MB
+    ↓
+  git push --force origin main 成功
+    输出: + cbff488...f967668 main -> main (forced update)
+
+------------------------------------------------------------
+3.3 uma-juece CI 全绿记录
+------------------------------------------------------------
+
+本次会话 uma-juece 6 个 commit 全部 CI 成功:
+  58497e0 → Run 29208981570 success
+  d1d8551 → Run 29208981570 success (同一次 CI，两个 commit 一起 push)
+  8a13ac2 → Run 29209401876 success
+  ea31738 → Run 29209721439 success
+  4bccb67 → Run 29236723092 success
+  2e846aa → Run 29269569015 success
+
+零编译失败。
+
+============================================================
+第四部分：MDB 数据分析结论（基于用户上传的 mdb_all.txt）
+============================================================
+
+------------------------------------------------------------
+4.1 single_mode_turn 表（race_entry_type 分布）
+------------------------------------------------------------
+
+总行数: 1066 (1066 个回合配置，覆盖多个 turn_set_id)
+查询返回: 500 行 (每表上限)
+
+race_entry_type 值分布 (Python 实际统计):
+  type=0: 94 次 (非比赛回合)
+  type=1: 406 次 (有比赛可选)
+  type=2: 0 次 (不存在)
+  type=3: 0 次 (不存在)
+
+type=0 的回合 (标准育成 turn_set_id=1):
+  Y1 M4 H1 T1, Y1 M4 H1 T2
+  Y1 M4 H2 T3, Y1 M4 H2 T4
+  Y1 M5 H1 T5, Y1 M5 H1 T6
+  Y1 M5 H2 T7, Y1 M5 H2 T8
+  Y1 M6 H1 T9, Y1 M6 H1 T10
+  Y1 M6 H2 T11
+  Y4 M1 H1 T73, Y4 M1 H2 T75, Y4 M1 H2 T77
+
+结论: 育成前 11 回合 (第一年 4-6月) 没有比赛，之后每回合都有比赛可选。
+      不存在"必须比赛"的 race_entry_type 值。
+
+------------------------------------------------------------
+4.2 single_mode_route_race 表（生涯目标）
+------------------------------------------------------------
+
+总行数: 1792
+列: id, race_set_id, scenario_group_id, target_type, sort_id, turn,
+    race_type, condition_type, condition_id, condition_value_1,
+    condition_value_2, determine_race, determine_race_flag,
+    alt_determine_race, alt_determine_race_flag, determine_race_for_generate
+
+target_type 分布:
+  target_type=1: 379 条 (生涯目标，必须完成)
+  target_type=3: 121 条 (赛后目标)
+
+condition_type 分布:
+  condition_type=1: 482 条 (比赛条件，condition_id=race_instance_id)
+  condition_type=2: 3 条 (特殊条件)
+  condition_type=3: 15 条 (粉丝数条件)
+
+condition_type=3 (粉丝条件) 的样本:
+  turn=24, condition_value_1=3000 → 第24回合需要3000粉丝
+  turn=37, condition_value_1=5000 → 第37回合需要5000粉丝
+  turn=45, condition_value_1=9000 → 第45回合需要9000粉丝
+  turn=48, condition_value_1=12000 → 第48回合需要12000粉丝
+  turn=60, condition_value_1=3 (condition_id=100, 特殊判断)
+
+race_set_id 分布 (每个角色一套目标):
+  race_set_id=1001: 10 条目标
+  race_set_id=1002: 11 条
+  race_set_id=1003: 11 条
+  ... (每个角色 10-18 条目标)
+
+------------------------------------------------------------
+4.3 single_mode_fan_count 表
+------------------------------------------------------------
+
+总行数: 1084
+列: id, fan_set_id, order, fan_count
+
+fan_set_id 分布: 60+ 个 set_id，每个 18 条记录 (对应不同名次的粉丝数)
+
+样本:
+  fan_set_id=1: order=1→500, order=2→200, order=3→125, ... order=18→5
+  fan_set_id=4: order=1→1400, order=2→560, order=3→350, ... order=18→14
+
+------------------------------------------------------------
+4.4 single_mode_program 表（比赛日程）
+------------------------------------------------------------
+
+总行数: 1118
+列: id, base_program_id, program_group, race_instance_id, race_permission,
+    month, half, reserve_program_id, random_group_id, grade
+
+------------------------------------------------------------
+4.5 对 juece 代码的修正
+------------------------------------------------============
+
+修改前 (commit ea31738):
+  updateRaceStatus() 中:
+    race_entry_type=2 → ★目標レース (红色)
+    race_entry_type=3 → 有马纪念
+  checkFanGoalWarning() 硬编码:
+    turn 10-12 && fan<1000 → 警告
+    turn 15-18 && fan<3000 → 警告
+    turn 22-24 && fan<5000 → 警告
+    turn 27-30 && fan<10000 → 警告
+    turn 34-36 && fan<20000 → 警告
+
+修改后 (commit 4bccb67):
+  删除: race_entry_type=2/3 逻辑 (实际不存在)
+  删除: checkFanGoalWarning() 方法 (硬编码不准确)
+  新增: getRouteRaceTargets() 方法
+    SQL: SELECT race_set_id, target_type, turn, condition_type, condition_value_1
+         FROM single_mode_route_race
+         WHERE target_type=1 AND condition_type=3 AND condition_value_1>0
+         ORDER BY turn
+  新增: 遍历 routeRaceCache 找最近未达标目标
+    显示: "⚠目标粉丝<N (剩N回合)"
+
+============================================================
+第五部分：uma-train vs uma-helper 仓库对比
+============================================================
+
+uma-helper (private, 5月11日创建):
+  内容: README.md + uma/ 目录 + uma_training_ai.py (137行)
+  定位: 早期原型，概念验证
+  最后更新: 2026-06-27
+  状态: 已被 uma-train 取代
+
+uma-train (public, 6月28日创建):
+  内容: 完整训练框架
+    - config_*.py (5个配置文件)
+    - search/ (MCTS 搜索)
+    - simulator/ (拉面杯模拟器)
+    - training/ (训练循环)
+    - model/ (神经网络)
+    - colab/ (Colab notebook)
+    - kaggle/ (Kaggle 脚本)
+    - verify.py (31,965 行验证脚本)
+  定位: 正式版训练框架
+  最后更新: 2026-07-06
+
+结论: 不冲突，uma-train 是 uma-helper 的重构升级版。
+  建议: archive uma-helper 或在 README 中标注迁移到 uma-train。
+
+============================================================
+第六部分：证据声明
+============================================================
+
+【已确认事实（有 commit SHA + CI Run ID + 文件行号）】
+- hlpatch 88 条 commit, 16 次 CI 失败, 31 个 Release
+  证据: git log + GitHub Actions API + Releases API
+- uma-juece 10 条 commit, 0 次 CI 失败(本次会话), 10 个 Release
+  证据: git log + GitHub Actions API
+- race_entry_type 只有 0/1 两个值
+  证据: mdb_all.txt Python 统计 type=0:94次, type=1:406次, type=2:0次, type=3:0次
+- single_mode_route_race 表 condition_type=3 是粉丝数条件
+  证据: mdb_all.txt 中 condition_type=3 行的 condition_value_1 值为 3000/5000/9000/12000
+- call_getter_string 返回 *const c_void
+  证据: src/lib.rs 行 8010 函数签名
+- Api struct 无 il2cpp_class_get_method_from_name_fn 字段
+  证据: CI 错误信息 "available fields are: log_fn, gui_show_notification_fn, ..."
+- filter-branch 后 .git 体积 529MB → 15MB
+  证据: du -sh .git/ = 15M
+- 全部日语字符零残留
+  证据: grep -rnP '[\x{3040}-\x{309F}\x{30A0}-\x{30FF}]' → 无输出
+
+【推断（基于代码分析）】
+- PIPO 核心逻辑可在 200-300 行 Python 内实现
+- turn_config 缓存 10 分钟可能导致版本更新后短期使用旧数据
+- route_race 查询返回的是全角色通用的粉丝目标（不区分 race_set_id）
+
+【已被后续证据推翻的旧结论】
+- race_entry_type=2 表示"必须比赛" ✗ (实际不存在 type=2)
+- race_entry_type=3 表示"有马纪念" ✗ (实际不存在 type=3)
+- 硬编码粉丝阈值 1000/3000/5000/10000/20000 ✗ (每个角色不同，应查 MDB)
+
+【尚未验证】
+- v3.24.16 SO 在手机上实际运行 /summary 是否正常
+- getRouteRaceTargets() 在游戏中实际查询是否返回正确数据
+- EVT 面板的事件推荐准确率
+- PKT 面板的 MessagePack 解码在实际通信中的效果
+
+--- 文件: report_C_校正清单_可信结论重新声明.txt ---
+================================================================================
+报告 C：报告 A/B 校正清单 + 可信结论重新声明
+生成时间：2026-07-14 07:30 CST
+依据：用户 2026-07-14 07:22 提交的校正意见 + GitHub API 实际数据交叉验证
+================================================================================
+
+============================================================
+一、需要从报告 A/B 中删除或修改的错误条目
+============================================================
+
+------------------------------------------------------------
+错误条目 1：StoryManager Hook 是当前 /summary 崩溃根因
+------------------------------------------------------------
+报告 B 原文：
+  "StoryManager hook 是 v3.24.1 闪退根因（7e3ac17 修复）"
+  "/summary SIGSEGV 发生在 get_Character 附近（step 185 之后）"
+
+问题：混淆了两个独立问题
+  (a) v3.24.1 StoryManager Hook 内调用 getter 导致主线程闪退 → 已在 v3.24.2 修复
+  (b) 当前 /summary SIGSEGV → 运行时证据仅有 step:185 last_step:S:after_get_single_mode
+
+正确表述：
+  - v3.24.1 StoryManager Hook 闪退是历史问题，已在 v3.24.2 (7e3ac17) 修复
+  - 当前 /summary SIGSEGV 位于 S:after_get_single_mode 之后、下一个诊断点之前
+  - 候选：WorkSingleModeCharaData 查类、get_Character 调用、或紧随其后的首个原生操作
+  - 尚无证据证明就是 get_Character
+  - 两者时间相关但无已确认因果关系
+  - 不能说"StoryManager Hook 是当前崩溃根因"
+
+------------------------------------------------------------
+错误条目 2：最后正常版本是 v3.22.x
+------------------------------------------------------------
+报告 B 原文：
+  "最后一个确认正常版本：v3.22.x 系列"
+
+问题：证据不足
+  - 旧 SO 二进制已不存在
+  - 历史版本字符串存在硬编码
+  - "10版本之前可以"无法仅凭显示版本定位
+  - main 分支发生过 force-push 和历史重写
+
+正确表述：
+  - 有历史对话称某个较早构建可正常读取 /summary
+  - 旧二进制和可靠 commit/build ID 缺失
+  - 无法把最后正常版本精确锁定为某个 v3.22.x 提交
+
+------------------------------------------------------------
+错误条目 3：ObscuredInt 必须调用 getter
+------------------------------------------------------------
+报告 B 原文：
+  "必须用 IL2CPP getter 才能获得解密后的真实值"
+
+问题：说法过于绝对
+  - 已验证的 ObscuredInt 结构可通过直接内存读取后解密：value = hiddenValue XOR currentCryptoKey
+  - 项目本身已有 read_obscured_int_at(obj, off) 实现
+  - getter 是一种方式，不是唯一方式
+
+正确表述：
+  - 直接把 ObscuredInt 首个整数当明文会得到 key 或混淆值
+  - 可以调用 getter，也可以在确认结构布局后读取 key 和 hiddenValue 并异或解密
+  - 两者有线程安全和偏移可靠性方面的不同风险
+
+------------------------------------------------------------
+错误条目 4：_evaluationList 是 List → 所有数组都是 List
+------------------------------------------------------------
+报告 B 原文：
+  "CommandInfoArray：getter → backing field → Array → 实际是 List 结构"
+
+问题：过度概括
+  - _evaluationList 是 List<T>，不是 Array<T[]> — 已确认
+  - 但 CommandInfoArray、TrainingPartnerArray、inline ObscuredInt[] 是不同容器
+  - 不能用同一结论概括
+
+正确表述：
+  必须逐字段记录：
+  | 字段名 | 声明类型 | 运行时对象类 | 容器布局 | 元素布局 | 证据来源 |
+  | _evaluationList | List | List<T> | +0x10=_items, +0x18=_size | ObscuredInt | /debug/dumpclass |
+  | CommandInfoArray | 需单独确认 | — | — | — | — |
+  | TrainingPartnerArray | 需单独确认 | — | — | — | — |
+  | ParamsIncDecInfoArray | 需单独确认 | — | — | — | — |
+
+------------------------------------------------------------
+错误条目 5：CI 失败根因写成运行时根因
+------------------------------------------------------------
+报告 B 原文：
+  "362794a CI 失败根因：il2cpp_runtime_invoke 调用过多导致 SIGSEGV"
+  "21a3316 CI 失败根因：Hook 内 getter 导致 SIGSEGV"
+
+问题：逻辑不成立
+  - CI 失败是编译/链接/workflow 错误
+  - runtime_invoke 导致 SIGSEGV 是手机运行时错误

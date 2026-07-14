@@ -1,0 +1,80 @@
+================================================================================
+赛马娘 AI 项目 完整历史总结 (Part 19)
+================================================================================
+
+Gallop|AchievementImpl
+Gallop|AchievementManager
+Gallop|AddMatchPointData
+Gallop|AddedGachaStockInfo
+Gallop|AdditionalLightVoid
+Gallop|AddonScenarioPaddockViewControllerBase
+Gallop|AdjustManager
+Gallop|AlarmAndReminderController
+Gallop|AnimationCurvePreset
+Gallop|AnimationEventSender
+Gallop|AnimationFrame
+Gallop|AnimationFrameCross
+Gallop|AnnounceCharacterWork
+Gallop|AnnounceDefine
+Gallop|AnnounceEventInfoListItem
+Gallop|AnnounceEventLogListItem
+Gallop|AnnounceEventLogUIAsset
+Gallop|AnnounceMoviePlayer
+Gallop|AnnounceStateUpdater
+Gallop|AnnounceSupportCardFlashPlayer
+Gallop|AnnounceSupportCardWork
+Gallop|AnnounceView
+Gallop|AnnounceViewController
+Gallop|AnnounceWork
+Gallop|AnnounceWorkBase
+Gallop|AoharuTeamInfoCharacterButton
+Gallop|AppAnnounce
+Gallop|ApplicationSettingSaveLoader
+Gallop|ArcEvaluationInfo
+Gallop|ArcPotential
+Gallop|ArcRivalPotential
+Gallop|ArcSelectionPeff
+Gallop|AroundHorse
+Gallop|ArrayExtensions
+Gallop|AssetBundleHelper
+Gallop|AssetHolder
+Gallop|AssetManager
+Gallop|AtlasSpritePath
+Gallop|AtlasUtil
+Gallop|AttachBoneExtensions
+Gallop|AttachmentTextureSwapSetting
+Gallop|AudienceBuildInfo
+Gallop|AudienceImpostors
+Gallop|AudienceImpostorsAsset
+Gallop|AudienceImpostorsAssetLoader
+Gallop|AudienceImpostorsRenderer
+...
+
+--- 文件: 6a51a2a6c2f546f92fab3f44_1783734950185_transfer dock_text_20260711091618.txt ---
+赛马娘（Uma Musume）游戏内部机制逆向工程分析报告
+完成日期: 2026-07-11
+数据基础: hlpatch 仓库 IL2CPP 方法转储 (29,761 类, 160,909 方法) + 插件源码 lib.rs v3.24.11 (16,742 行)
+游戏版本: v2.28.5 (日服), libil2cpp.so v3.24.3
+概述
+本报告基于 hlpatch 仓库的 IL2CPP 全量方法转储（dump_all_methods_ALL.json，19MB）和育成辅助插件源码（lib.rs，675KB），对赛马娘育成系统的内部机制进行系统性逆向工程分析。分析覆盖基础数据、羁绊系统、特殊支援卡逻辑、拉面杯剧本、比赛相关和马娘成长六大类共 35 个子项，每个子项均标注了类名、方法名、关键字段偏移和逻辑描述。
+由于 Cygames 加密了 IL2CPP metadata，静态 il2cppdumper 无法直接 dump，hlpatch 使用 Zygisk-Il2CppDumper 绕过加密并配合运行时反射端点获取字段偏移。本报告中的字段偏移均来自 lib.rs 中实测验证的值。
+数据来源
+表格
+数据源	底层提供方	覆盖维度	角色
+dump_all_methods_ALL.json	hlpatch IL2CPP 运行时反射	全部 29,761 个类的方法签名	类/方法名主数据源
+lib.rs	hlpatch 内存读取插件	运行时字段偏移、常量定义、业务逻辑	偏移量和逻辑交叉验证
+hlpatch README	hlpatch 文档	事件类层级、字段偏移	验证参考
+通用搜索引擎未用于本报告的数据获取，所有信息均来自 hlpatch 仓库的一手逆向工程数据。
+一、基础数据
+1.1 赛马娘角色 ID 映射（Character ID）
+赛马娘角色通过 CharacterData 和 CardData 两个类进行管理，角色 ID 映射涉及多层级关系。
+关键类与方法：
+表格
+类名	命名空间	关键方法
+CharacterData	(无)	get_CardId, get_CharaId, get_DressId, get_PersonalityId
+CardData	(无)	get_Name, get_Charaname, get_DefaultRarityData, GetTalentParamDic
+MasterCardData	Gallop	Get, GetWithCharaIdOrderByIdAsc
+WorkSingleModeCharaData	Gallop	get_CardId, get_CharaId, get_CardData, get_CardRarityData
+运行时读取：lib.rs 中通过 read_obscured_int_at(chara_obj, 36) 读取 _cardId（角色卡 ID），通过 read_obscured_int_at(chara_obj, 16) 读取 _charaId（角色 ID）。
+lib.rs
+角色名称查询：通过 text_data 表，category=6 对应角色名称。

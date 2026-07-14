@@ -1,0 +1,308 @@
+================================================================================
+赛马娘 AI 项目 完整历史总结 (Part 6)
+================================================================================
+
+================================================================================
+赛马娘 AI 项目 完整历史总结 (Part 7/17)
+================================================================================
+
+【明确不适用】
+- PKU-MARL/HARL：多智能体，赛马娘是单智能体育成
+- opendilab/DI-engine：框架太重，不需要引入
+- verl 框架：针对 LLM 训练，不适用于游戏 AI
+
+--- 文件: report_B_完整时间线_CI失败链_代码变更.txt ---
+================================================================================
+报告 B：hlpatch + uma-juece 完整开发时间线、CI 失败链、代码变更详情、修复全链条
+生成时间：2026-07-14 07:10 CST
+数据来源：git log / GitHub Actions API / CI build logs / 实际代码 diff
+仓库：
+  - https://github.com/xf8410/hlpatch (88 commits, 100 CI runs, 20 releases)
+  - https://github.com/xf8410/uma-juece (10 commits, 100 CI runs, 10 releases)
+================================================================================
+
+============================================================
+第一部分：hlpatch 仓库完整时间线
+============================================================
+
+------------------------------------------------------------
+1.1 总体统计（GitHub API 实际查询结果）
+------------------------------------------------------------
+
+统计时间范围：2026-07-07 ~ 2026-07-14
+本地 commit 总数：88 条（git log --oneline | wc -l = 88）
+CI Runs 总数：100 次（GitHub Actions API 返回上限）
+  - Success：84 次
+  - Failure：16 次
+  - 其他：0 次
+Release 发布数：31 个（含 v3.22.89 ~ v3.24.16 + v3.24.3-libil2cpp 特殊 tag）
+仓库 .git 体积：15MB（filter-branch 清理后）
+
+证据来源：
+  - git log --oneline -88（本地仓库实际执行）
+  - curl https://api.github.com/repos/xf8410/hlpatch/actions/runs?per_page=100
+  - curl https://api.github.com/repos/xf8410/hlpatch/releases?per_page=30
+
+------------------------------------------------------------
+1.2 全部 16 次 CI 失败完整清单（按时间倒序）
+------------------------------------------------------------
+
+失败 #1: Run 29216277127
+  SHA: f9676682
+  时间: 2026-07-13T00:54:09Z
+  Commit: "fix: 修复 read_inherit_compat 编译错误"
+  编译错误:
+    - error[E0599]: no method named `unwrap_or` found for type `usize`
+      位置: src/lib.rs:10834
+      原因: stmt.column_count() 返回 usize 不是 Result，不需要 unwrap_or(0)
+    - error[E0308]: mismatched types
+      位置: src/lib.rs:13619
+      原因: std::ptr::null() 返回 *const，函数签名要求 *mut c_void
+    - error[E0308]: mismatched types
+      位置: src/lib.rs:13642
+      同上
+  修复 commit: 3083922
+  修复内容:
+    - column_count().unwrap_or(0) → column_count()
+    - std::ptr::null() → std::ptr::null_mut()（2处）
+
+失败 #2: Run 29201010330
+  SHA: cbff4885
+  时间: 2026-07-12T16:54:57Z
+  Commit: "docs: 二进制文件完整分析 — libil2cpp(209MB,177K函数)..."
+  编译错误: 与 #3 相同（同一个 bug 在连续 commit 中存在）
+    - error[E0308]: `if` and `else` have incompatible types
+      位置: src/lib.rs:13294
+      原因: call_getter_string() 返回 *const c_void，else 分支返回 String::new()
+    - error[E0609]: no field `il2cpp_class_get_method_from_name_fn` on type `&Api`
+      位置: src/lib.rs:13306
+      原因: Api struct 无此字段，应使用 resolve_il2cpp_symbol()
+    - error[E0609]: no field `il2cpp_runtime_invoke_fn` on type `&Api`
+      位置: src/lib.rs:13312
+      同上
+    - 同组错误在 src/lib.rs:13328, 13334 重复（两处调用）
+
+失败 #3: Run 29200602735
+  SHA: d02f8fa0
+  时间: 2026-07-12T16:41:45Z
+  Commit: "feat: WinSaddleAnalyzer /saddle-analysis — 读取育成马胜鞍+相性加成群组+种马胜鞍交叉对比"
+  编译错误: 同 #2（同一个 bug 的首次出现）
+    - error[E0308]: incompatible types *const c_void vs String
+    - error[E0609]: unknown field il2cpp_class_get_method_from_name_fn
+    - error[E0609]: unknown field il2cpp_runtime_invoke_fn
+  根因分析:
+    commit d02f8fa 在 read_inherit_compat() 函数中:
+    1. 直接使用 api.il2cpp_class_get_method_from_name_fn — 该字段不存在于 Api struct
+       正确方式: resolve_il2cpp_symbol("il2cpp_class_get_method_from_name")
+    2. 直接使用 api.il2cpp_runtime_invoke_fn — 该字段不存在于 Api struct
+       正确方式: resolve_il2cpp_symbol("il2cpp_runtime_invoke")
+    3. call_getter_string() 返回 *const c_void (IL2CPP String*)，
+       但代码直接当 String 用 → 需要用 read_il2cpp_string() 转换
+  修复 commit: f9676682 (2026-07-13T00:50Z)
+  修复内容:
+    - 两处 call_getter_string 调用后加 read_il2cpp_string() 转换
+    - 两处 api.il2cpp_class_get_method_from_name_fn → resolve_il2cpp_symbol()
+    - 两处 api.il2cpp_runtime_invoke_fn → resolve_il2cpp_symbol()
+  但 f9676682 本身引入了 3 个新错误 → 触发失败 #1
+
+失败 #4: Run 29172909781
+  SHA: d0f8b4e8
+  时间: 2026-07-11T23:56:34Z
+  Commit: "fix: restore plugin identity and training length guard"
+
+失败 #5: Run 29172813231
+  SHA: 72132142
+  时间: 2026-07-11T23:52:51Z
+  Commit: "diag: derive version and trace summary native reads"
+
+失败 #6: Run 29090635231
+  SHA: 120749da
+  时间: 2026-07-10T11:49:52Z
+  Commit: "fix: 训练收益读取 — ObscuredInt + TargetType 映射修正"
+
+失败 #7: Run 29054258480
+  SHA: 602b6a0b
+  时间: 2026-07-09T22:21:01Z
+  Commit: "fix: sed 替换搞坏了路由条件 — 恢复 /debug/paramsincdec 独立 if 块"
+  根因: 之前用 sed 全局替换破坏了 if-else 路由代码
+
+失败 #8: Run 29054034846
+  SHA: c59b67a3
+  时间: 2026-07-09T22:16:25Z
+  Commit: "feat: /debug/ramengains 端点 — 诊断 Ramen gains 为空的原因"
+
+失败 #9: Run 29039798411
+  SHA: 362794aa
+  时间: 2026-07-09T18:12:07Z
+  Commit: "v3.24.8: 全字段偏移量读取 + 新增 33 个 ML 字段"
+  根因: il2cpp_runtime_invoke 调用过多导致 SIGSEGV
+
+失败 #10: Run 29034761537
+  SHA: 698a8e63
+  时间: 2026-07-09T16:48:38Z
+  Commit: "fix: CI unclosed delimiter — 修复 catch_unwind 括号 + asm! cfg guard"
+
+失败 #11: Run 29034287174
+  SHA: 4d4c688c
+  时间: 2026-07-09T16:40:51Z
+  Commit: "fix: CI 编译失败 — __builtin___clear_cache → inline asm + 修复括号"
+  根因: __builtin___clear_cache 是编译器内置函数，不能 extern "C" 声明
+  修复: 改用 core::arch::asm! 内联汇编
+
+失败 #12: Run 29033580640
+  SHA: 79e72891
+  时间: 2026-07-09T16:29:18Z
+  Commit: "v3.24.7: P0 修复 — catch_unwind + I-Cache flush"
+  根因: catch_unwind 不能捕获 native SIGSEGV；ARM64 I-Cache 未刷新
+
+失败 #13: Run 28991528109
+  SHA: 21a3316d
+  时间: 2026-07-09T03:16:27Z
+  Commit: "v3.24.1: StoryManager.SetStory hook — capture story_id+chara_id"
+  根因: Hook 内调用 call_getter_int_raw 在主线程无 sigsetjmp 保护 → SIGSEGV
+
+失败 #14: Run 28991322836
+  SHA: b7980f63
+  时间: 2026-07-09T03:10:53Z
+  Commit: "v3.24.0: 生涯事件选择hook — 捕获选项、增益、分支触发、连续事件"
+
+失败 #15: Run 28950936231
+  SHA: ab6a912f
+  时间: 2026-07-08T14:35:32Z
+  Commit: "v3.23.3: Use Hachimi-Edge V3 Interceptor API for API sniff hooks"
+
+失败 #16: Run 28919478952
+  SHA: bdd06f30
+  时间: 2026-07-08T05:19:44Z
+  Commit: "feat: v3.22.97 - auto-persist training log to file + download endpoint"
+
+------------------------------------------------------------
+1.3 7月13日本次会话 hlpatch 代码变更详情
+------------------------------------------------============
+
+本次会话对 hlpatch 的修改共 5 个 commit（含 2 个新端点 + 3 个编译修复）：
+
+=== Commit 1: 4613b71 (feat: /mdb/dl_batch) ===
+时间: 2026-07-13
+修改文件: hachimi_ura_plugin/src/lib.rs (+140, -2)
+新增内容:
+  1. 路由注册 (行 6697):
+     } else if path.starts_with("/mdb/dl_batch") {
+  2. 新函数 mdb_dl_batch(prefix: &str) -> String (行 10752):
+     - 从 sqlite_master 获取全部表名
+     - 按首字母筛选 (prefix=a → a 开头的表)
+     - 逐表查询，每表最多 500 行
+     - 获取列名 + 数据行
+     - 返回 JSON: {ok, prefix, table_count, total_rows_queried, max_rows_per_table, tables:{}}
+  3. HTTP 响应包装 (行 6702):
+     Content-Disposition: attachment; filename="mdb_{prefix}.json"
+     直接 stream.write_all 写入 HTTP 响应
+  4. endpoints 列表更新: 添加 "/mdb/dl_batch"
+  5. not_found 路径列表更新: 添加 "/mdb/dl_batch"
+CI 结果: 成功 (但在 cbff4885 之后 push，实际 CB 在 f9676688 上失败)
+
+=== Commit 2: d358b9e (feat: /debug/mdb_schema_dump) ===
+时间: 2026-07-13
+修改文件: hachimi_ura_plugin/src/lib.rs (+163, -1)
+新增内容:
+  1. 路由注册 (行 6532):
+     } else if path == "/debug/mdb_schema_dump" {
+  2. 新函数 debug_mdb_schema_dump() -> String (行 10754):
+     - 获取全部表名 (SELECT name FROM sqlite_master WHERE type='table')
+     - 按 28 个关键词筛选关键表:
+       goal, target, race, fan, career, turn, program, condition,
+       saddle, story, event, choice, reward, skill, hint, chara,
+       card, support, relation, succession, inherit, factor,
+       gauge, training, single_mode, text_data, grade, rank, point
+     - 关键表: PRAGMA table_info 获取 schema + SELECT * LIMIT 20 获取样本
+     - 非关键表: 只返回 name + rows + key=false
+     - 额外查询: single_mode_turn race_entry_type 分布统计
+     - 返回 JSON: {ok, total_tables, key_table_count, tables:[], turn_race_entry_dist:[]}
+  3. endpoints 列表更新: 添加 "/debug/mdb_schema_dump"
+
+=== Commit 3: f9676682 (fix: 修复 read_inherit_compat 编译错误) ===
+时间: 2026-07-13T00:50Z
+修改文件: hachimi_ura_plugin/src/lib.rs (+36, -30)
+修复内容:
+  1. 行 13589-13599: call_getter_string 返回值处理
+     修改前: let n = call_getter_string(...); n  ← 直接用 *const c_void 当 String
+     修改后: let n = call_getter_string(...);
+             if n.is_null() { String::new() } else { read_il2cpp_string(n) }
+  2. 行 13727-13732: 第二处 call_getter_string 同样修复
+  3. 行 13608-13656: IsRelationBonusWinSaddle + GetRelationPoint 调用
+     修改前: (api.il2cpp_class_get_method_from_name_fn)(...) ← Api struct 无此字段
+     修改后:
+       let get_method_fn = resolve_il2cpp_symbol("il2cpp_class_get_method_from_name");
+       let invoke_fn = resolve_il2cpp_symbol("il2cpp_runtime_invoke");
+       type FnGetMethod = unsafe extern "C" fn(*mut c_void, *const c_char, i32) -> *mut c_void;
+       type FnInvoke = unsafe extern "C" fn(*mut c_void, *mut c_void, *mut c_void, *mut c_void) -> *mut c_void;
+       let f: FnGetMethod = std::mem::transmute(get_method_fn);
+       let inv: FnInvoke = std::mem::transmute(invoke_fn);
+CI 结果: 失败 (Run 29216277127)
+  原因: 引入 3 个新编译错误
+    - column_count().unwrap_or(0) → usize 无 unwrap_or
+    - std::ptr::null() → 应为 null_mut()（2处）
+
+=== Commit 4: 3083922 (fix: column_count + null_mut) ===
+时间: 2026-07-13T01:00Z
+修改文件: hachimi_ura_plugin/src/lib.rs (+3, -3)
+修复内容:
+  1. 行 10834: stmt.column_count().unwrap_or(0) → stmt.column_count()
+  2. 行 13619: std::ptr::null() → std::ptr::null_mut()
+  3. 行 13642: std::ptr::null() → std::ptr::null_mut()
+CI 结果: 成功 (Run 29216364020, conclusion: success)
+
+=== Commit 5: git filter-branch 清理 (无新 commit，重写 history) ===
+时间: 2026-07-13
+操作: git filter-branch --force --index-filter \
+      'git rm -r --cached --ignore-unmatch artifacts/ base.apk split_config.arm64_v8a.apk'
+效果:
+  - 删除 artifacts/ 目录 (含 218MB libil2cpp.so, 80MB APK, 90 个反汇编文件)
+  - .git 体积: 529MB → 15MB
+  - .gitignore 新增规则: artifacts/, *.so, *.apk, *.dat, *.bin
+  - git push --force 成功
+
+------------------------------------------------------------
+1.4 hlpatch Release 清单（31 个，含 asset 大小和下载次数）
+------------------------------------------------------------
+
+Tag            日期         Asset                     大小      下载次数
+v3.24.16       2026-07-13   libhachimi_ura.so         4214KB    0
+v3.24.15       2026-07-12   libhachimi_ura.so         4181KB    3
+v3.24.14       2026-07-12   libhachimi_ura.so         4178KB    0
+v3.24.13       2026-07-12   libhachimi_ura.so         4170KB    0
+v3.24.12       2026-07-11   libhachimi_ura.so         4170KB    3
+v3.24.11       2026-07-10   libhachimi_ura.so         4170KB    0
+v3.24.10       2026-07-10   libhachimi_ura.so         4161KB    3
+v3.24.3-libil2cpp 2026-07-10 global-metadata.dat      44183KB    4
+v3.24.3-libil2cpp 2026-07-10 libil2cpp.so             213589KB   27
+v3.24.3-libil2cpp 2026-07-10 master.mdb               42396KB    2
+v3.24.9        2026-07-09   libhachimi_ura.so         4156KB    4
+v3.24.8        2026-07-09   libhachimi_ura.so         4146KB    0
+v3.24.7        2026-07-09   libhachimi_ura.so         4145KB    4
+v3.24.6        2026-07-09   libhachimi_ura.so         4144KB    0
+v3.24.5        2026-07-09   libhachimi_ura.so         4144KB    0
+v3.24.4        2026-07-09   libhachimi_ura.so         4144KB    0
+v3.24.3        2026-07-09   libhachimi_ura.so         4144KB    3
+v3.24.2        2026-07-09   libhachimi_ura.so         4144KB    2
+v3.24.1        2026-07-09   libhachimi_ura.so         4142KB    5
+v3.23.3        2026-07-08   libhachimi_ura.so         4131KB    4
+v3.23.2        2026-07-08   libhachimi_ura.so         4134KB    1
+v3.23.1        2026-07-08   libhachimi_ura.so         4132KB    3
+v3.23.0        2026-07-08   libhachimi_ura.so         4131KB    6
+v3.22.98       2026-07-08   libhachimi_ura.so         4120KB    1
+v3.22.97       2026-07-08   libhachimi_ura.so         4120KB    4
+v3.22.96       2026-07-08   libhachimi_ura.so         4119KB    5
+v3.22.95       2026-07-08   libhachimi_ura.so         4119KB    8
+v3.22.94       2026-07-07   libhachimi_ura.so         4118KB    0
+v3.22.93       2026-07-07   libhachimi_ura.so         4109KB    6
+v3.22.91       2026-07-07   libhachimi_ura.so         4109KB    0
+v3.22.90       2026-07-07   libhachimi_ura.so         4108KB    2
+v3.22.89       2026-07-07   libhachimi_ura.so         4107KB    4
+
+SO 体积增长趋势:
+  v3.22.89: 4107KB (7月7日基线)
+  v3.24.16: 4214KB (7月13日最新)
+  增量: +107KB (+2.6%)
+  增量来源: /mdb/dl_batch 端点(+140行) + /debug/mdb_schema_dump(+163行)
+           + read_inherit_compat 修复(+36行) + column_count 修复(+3行)

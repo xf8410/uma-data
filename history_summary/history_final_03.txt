@@ -1,0 +1,308 @@
+================================================================================
+赛马娘 AI 项目 完整历史总结 (Part 3)
+================================================================================
+
+================================================================================
+赛马娘 AI 项目 完整历史总结 (Part 4/17)
+================================================================================
+
+三、内存直读方案 — 根治il2cpp_runtime_invoke
+──────────────────────────────────
+
+【方案】v3.22.17
+- 用IL2CPP类元数据API（il2cpp_class_get_fields）动态查找字段偏移
+- 用 std::ptr::read_unaligned 直接读内存，完全绕过il2cpp_runtime_invoke
+...
+
+--- 文件: 6a4fc87a93b7cbbe2f10176c_1783613561836_transfer ---
+...
+
+--- 文件: dock_text_20260710001158.txt ---
+...
+
+--- 文件: 6a4fc87a93b7cbbe2f10176d_1783613561851_全部工作总结_20260710.txt ---
+============================================
+  全部工作总结
+  日期：2026年7月10日
+============================================
+
+📋 目录
+  一、数据上传架构讨论
+  二、心情验证（やる気系数搜索）
+  三、拉面杯事件数据收集
+  四、API嗅探功能迭代（v3.22.99 → v3.23.3）
+  五、G1相性规则确认
+  六、hlpatch插件版本迭代一览
+
+============================================
+一、数据上传架构讨论
+============================================
+
+【问题】数据验证/育成上传能否直接在SO插件（hlpatch）里加，是否与jueceapp冲突？
+
+【结论】
+- 技术上能加，不冲突：插件是数据生产者（端口18765），jueceapp是数据消费者
+- 但建议不放插件里：插件跑在游戏进程内，网络上传超时/重试会拖慢游戏主线程
+- 最终方案：jueceapp已有上传功能，无需在插件中重复实现
+- 插件架构：游戏进程 → 插件(18765) → 推送数据 → jueceapp(18766) → 验证 → 上传云端
+
+============================================
+二、心情验证（やる気系数搜索）
+============================================
+
+【目标】找到IL2CPP代码中硬编码的训练心情加成倍率
+  绝不调 Min=1 → 0.8
+  不调   Low=2 → 0.9
+  普通   Middle=3 → 1.0
+  好调   High=4 → 1.1
+  绝好调 Max=5 → 1.2
+
+【Phase 1】关键词搜索 — 全部失败
+  - Motivation / GainParameter / CalcTraining / TrainingGain / CalcGain / CalcParam
+  - 结论：方法名不以任何可猜测的关键词命名
+
+【Phase 2】反汇编追踪 — 死胡同
+  - ExecTraining是调度方法，63个BL调用，0个数学运算
+  - 子函数0x7336296890是数据提取函数，不做计算
+
+【Phase 3】暴力全扫 — 被放弃
+  - v3.22.87新增 dump_all_methods + disassemble_addr 端点
+  - S字母就有2525类/20308方法，数据量过大
+
+【Phase 4】浮点常量搜索 — 进行中
+  - 使用 /il2cpp/search_float 搜索0.6/0.8/0.9/1.1/1.2的f32编码
+  - 1.2 → 0 hits（可能由1.0+0.2计算得出）
+  - 所有命中地址均被排除为CriWare音频引擎数据
+  - 两个未验证地址read_mem均失败
+
+【当前卡点】浮点搜索+内存读取路线均未找到心情系数
+【下一步】整数搜索（60/80/90/100/110）+ 反编译0x6bd8068074
+
+============================================
+三、拉面杯事件数据收集
+============================================
+
+【剧本】トレセン軒（scenario 14），2026年6月29日上线
+【数据来源】Game8攻略站（B站wiki大量"后面施工"）
+
+【事件①】貴方と私とラーメンと（第三年9月前半固定）
+  Link角色5人 + 友人卡2人，各含金技能+白技能
+
+【事件②】URA前三选一究极拉面
+  3种拉面各含不同金技能
+
+【数据文件】scenario_ramen.json（已保存）
+
+============================================
+四、API嗅探功能迭代
+============================================
+
+【v3.22.99】初版API嗅探
+  - Hook Gallop.HttpHelper的CompressRequest和DecompressResponse
+  - 新增端点：/api/sniff/toggle、/api/sniff、/api/sniff/clear
+  - 局限：无法捕获URL和Headers（_Send泛型共享崩溃）
+
+【v3.23.0】补全URL+Headers
+  - 新增Hook _Send（取URL）和 SetHeader（取Headers）
+  - 问题：_Send泛型共享导致闪退
+
+【v3.23.3】改用Hachimi-Edge V3 Interceptor API ✅
+  - 核心变更：interceptor_hook + get_trampoline 替换手动inline hook
+  - 用WWWRequest.Post替代_Send+SetHeader获取URL+Headers
+  - 新增/api/sniff/diag诊断端点
+  - CI通过 ✅
+
+============================================
+五、G1相性规则确认
+============================================
+
+【核心公式】G1ボーナス = (A+B+C+D+E) × 3
+  A=亲1亲2共同G1、B=亲1祖父1、C=亲1祖父2、D=亲2祖父3、E=亲2祖父4
+
+【关键规则】
+  - 仅统计G1比赛，G2/G3和称号不计入
+...
+
+--- 文件: 6a4fe1ba8afe057011d0b740_1783620025549_transfer ---
+...
+
+--- 文件: dock_text_20260710015816.txt ---
+...
+
+--- 文件: 6a4fe1ba8e37857fdf9f04cc_1783620025528_transfer ---
+...
+
+--- 文件: dock_text_20260710020004.txt ---
+...
+
+--- 文件: 6a4fe2b25c469787833b2091_1783620273530_transfer ---
+...
+
+--- 文件: dock_text_20260710020355.txt ---
+...
+
+--- 文件: 6a4fe2b25c469787833b2093_1783620273578_transfer ---
+...
+
+--- 文件: dock_text_20260710020331.txt ---
+...
+
+--- 文件: 6a4fe2b28afe057011d0bafd_1783620273510_transfer ---
+...
+
+--- 文件: dock_text_20260710020404.txt ---
+...
+
+--- 文件: 6a4fe2b293b7cbbe2f107bf6_1783620273547_transfer ---
+...
+
+--- 文件: dock_text_20260710020346.txt ---
+...
+
+--- 文件: 6a4fe2b2c2f546f92fa545e5_1783620273473_transfer ---
+...
+
+--- 文件: dock_text_20260710020416.txt ---
+...
+
+--- 文件: 6a4fe2b2e575a90d968c0cf5_1783620273563_transfer ---
+...
+
+--- 文件: dock_text_20260710020339.txt ---
+...
+
+--- 文件: 6a50190b93b7cbbe2f10b313_1783634187413_transfer ---
+...
+
+--- 文件: dock_text_20260710055616.txt ---
+...
+
+--- 文件: 6a501a1f93b7cbbe2f10b4dc_1783634463170_transfer ---
+...
+
+--- 文件: dock_text_20260710060045.txt ---
+...
+
+--- 文件: 6a501cf18e37857fdf9f5071_1783635184544_transfer ---
+...
+
+--- 文件: dock_text_20260710061222.txt ---
+...
+
+--- 文件: 6a51a2a61ea6d921ccd3f6f0_1783734950213_transfer ---
+...
+
+--- 文件: dock_text_20260711092000.txt ---
+...
+
+--- 文件: 6a51a2a6c2f546f92fab3f44_1783734950185_transfer ---
+...
+
+--- 文件: dock_text_20260711091618.txt ---
+...
+
+--- 文件: 6a51a2a6c2f546f92fab3f45_1783734950148_transfer ---
+...
+
+--- 文件: dock_text_20260711092013.txt ---
+...
+
+--- 文件: 6a536175e575a90d9698c301_1783849333104_transfer ---
+...
+
+--- 文件: dock_text_20260712171535.txt ---
+...
+
+--- 文件: 6a54a387c78fec0fe9e6a99c_1783931780055_mdb_all.txt ---
+master.mdb 全量数据导出
+表数: 619  总行数: 82521  每表上限: 500
+======================================================================
+
+──────────────────────────────────────────────────────────────────────
+表: announce_character
+总行数: 179  已查询: 179  列: id, movie_id, can_end_second
+──────────────────────────────────────────────────────────────────────
+  [1] id=101, movie_id=30004, can_end_second=6000
+  [2] id=102, movie_id=30006, can_end_second=6000
+  [3] id=103, movie_id=30008, can_end_second=6000
+  [4] id=104, movie_id=30010, can_end_second=11800
+  [5] id=105, movie_id=30012, can_end_second=6000
+  [6] id=106, movie_id=30014, can_end_second=6000
+  [7] id=107, movie_id=30016, can_end_second=6000
+  [8] id=108, movie_id=30018, can_end_second=6000
+  [9] id=109, movie_id=30020, can_end_second=17400
+  [10] id=110, movie_id=30022, can_end_second=8400
+  [11] id=111, movie_id=30024, can_end_second=6000
+  [12] id=112, movie_id=30026, can_end_second=16433
+  [13] id=113, movie_id=30028, can_end_second=6000
+  [14] id=114, movie_id=30030, can_end_second=7800
+  [15] id=115, movie_id=30032, can_end_second=18000
+  [16] id=116, movie_id=30034, can_end_second=9200
+  [17] id=117, movie_id=30036, can_end_second=7400
+  [18] id=118, movie_id=30038, can_end_second=7100
+  [19] id=119, movie_id=30040, can_end_second=8300
+  [20] id=120, movie_id=30042, can_end_second=6000
+  [21] id=121, movie_id=30044, can_end_second=18900
+  [22] id=122, movie_id=30046, can_end_second=8600
+  [23] id=123, movie_id=30048, can_end_second=8633
+  [24] id=124, movie_id=30050, can_end_second=21600
+  [25] id=125, movie_id=30052, can_end_second=9000
+  [26] id=126, movie_id=30054, can_end_second=9500
+  [27] id=127, movie_id=30056, can_end_second=21400
+  [28] id=128, movie_id=30058, can_end_second=9700
+  [29] id=129, movie_id=30060, can_end_second=9700
+  [30] id=130, movie_id=30062, can_end_second=18500
+  [31] id=131, movie_id=30066, can_end_second=9800
+  [32] id=132, movie_id=30068, can_end_second=22200
+  [33] id=133, movie_id=30070, can_end_second=10000
+  [34] id=134, movie_id=30072, can_end_second=9400
+  [35] id=135, movie_id=30074, can_end_second=11500
+  [36] id=136, movie_id=30076, can_end_second=11000
+  [37] id=137, movie_id=30078, can_end_second=8700
+  [38] id=138, movie_id=30080, can_end_second=20000
+  [39] id=139, movie_id=30082, can_end_second=7400
+  [40] id=140, movie_id=30084, can_end_second=7700
+  [41] id=141, movie_id=30086, can_end_second=21000
+  [42] id=142, movie_id=30088, can_end_second=13500
+  [43] id=143, movie_id=30090, can_end_second=10500
+  [44] id=144, movie_id=30092, can_end_second=23400
+  [45] id=145, movie_id=30094, can_end_second=10500
+  [46] id=146, movie_id=30096, can_end_second=10000
+  [47] id=147, movie_id=30098, can_end_second=19000
+  [48] id=148, movie_id=30100, can_end_second=9500
+  [49] id=149, movie_id=30104, can_end_second=21000
+  [50] id=150, movie_id=30106, can_end_second=10000
+  [51] id=151, movie_id=30108, can_end_second=12000
+  [52] id=152, movie_id=30110, can_end_second=11000
+  [53] id=153, movie_id=30112, can_end_second=26500
+  [54] id=154, movie_id=30114, can_end_second=12500
+  [55] id=155, movie_id=30116, can_end_second=9900
+  [56] id=156, movie_id=30118, can_end_second=17800
+  [57] id=157, movie_id=30120, can_end_second=13500
+  [58] id=158, movie_id=30122, can_end_second=11500
+  [59] id=159, movie_id=30124, can_end_second=21000
+  [60] id=160, movie_id=30126, can_end_second=12500
+  [61] id=161, movie_id=30128, can_end_second=14500
+  [62] id=162, movie_id=30132, can_end_second=21000
+  [63] id=163, movie_id=30134, can_end_second=9800
+  [64] id=164, movie_id=30136, can_end_second=8600
+  [65] id=165, movie_id=30138, can_end_second=26100
+  [66] id=166, movie_id=30140, can_end_second=12230
+  [67] id=167, movie_id=30142, can_end_second=11660
+  [68] id=168, movie_id=30146, can_end_second=23500
+  [69] id=169, movie_id=30148, can_end_second=12000
+  [70] id=170, movie_id=30150, can_end_second=14600
+  [71] id=171, movie_id=30152, can_end_second=9000
+  [72] id=172, movie_id=30154, can_end_second=8800
+  [73] id=173, movie_id=30156, can_end_second=23000
+  [74] id=174, movie_id=30158, can_end_second=11600
+  [75] id=175, movie_id=30160, can_end_second=12500
+  [76] id=176, movie_id=30162, can_end_second=23500
+  [77] id=177, movie_id=30166, can_end_second=11500
+  [78] id=178, movie_id=30168, can_end_second=9300
+  [79] id=179, movie_id=30170, can_end_second=21700
+  [80] id=180, movie_id=30174, can_end_second=13000
+  [81] id=181, movie_id=30176, can_end_second=26000
+  [82] id=182, movie_id=30178, can_end_second=11400
+  [83] id=183, movie_id=30180, can_end_second=11400
+  [84] id=184, movie_id=30182, can_end_second=23800

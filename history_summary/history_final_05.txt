@@ -1,0 +1,308 @@
+================================================================================
+赛马娘 AI 项目 完整历史总结 (Part 5)
+================================================================================
+
+================================================================================
+赛马娘 AI 项目 完整历史总结 (Part 6/17)
+================================================================================
+
+
+1. 哪次把 il2cpp_runtime_invoke 改为直接内存读取？
+   - v3.24.5: EvaluationList 改用 read_field_value + 纯内存读取 (2899eff)
+   
+2. 为什么直接读取 ObscuredInt 会得到 key、444444 或错误值？
+   - ObscuredInt 在内存中存储的是异或混淆值，不是真实值
+   - 直接读内存 offset 得到的是混淆后的 key 而非解密后的值
+   - 必须用 IL2CPP getter 调用才能获得解密后的真实值
+   
+3. 曾先后尝试的方案：
+   - hardcoded offset → 跨版本不可靠
+   - 对象头 class → IL2CPP 内部布局变化
+   - metadata 动态 field offset → 需要正确解析 metadata
+   - cached class/field → 缓存失效问题
+   - pure invoke → SIGSEGV 风险
+   - pure memory → ObscuredInt 混淆问题
+   - 最终回退部分方案：混合使用 getter（安全字段）+ 内存偏移（已验证字段）
+...
+
+--- 文件: 6a556b7f1ea6d921cce14e12_1783982974594_transfer ---
+...
+
+--- 文件: dock_text_20260714062831.txt ---
+...
+
+--- 文件: 6a556b7f1ea6d921cce14e16_1783982974562_hlpatch_weekly_review_and_debug_questions_20260714.txt ---
+赛马娘 AI 助手一周开发复盘与故障追问清单
+时间范围：2026-07-07 ～ 2026-07-14
+涉及仓库：
+- https://github.com/xf8410/hlpatch
+- https://github.com/xf8410/uma-juece
+- https://github.com/xf8410/uma-data/tree/main/training_sessions
+
+请基于你实际操作过的代码和运行记录回答。不要只给概括或说“已经修复/已经推送”。每个关键结论必须尽量提供：
+- commit SHA
+- 修改文件和函数
+- GitHub Actions Run 链接
+- Release 标签及资产哈希
+- 手机运行时原始 JSON、laststep 或 logcat 证据
+
+请明确区分：
+1. 已由代码和运行时证据确认的事实；
+2. 根据代码作出的推断；
+3. 已被后续证据推翻的旧结论；
+4. 尚未验证的假设。
+
+CI 绿勾只能证明编译成功，不等于手机运行时已经修复。
+
+============================================================
+一、本周提交、推送、CI 和 Release 完整时间线
+============================================================
+
+1. 这一周分别修改了哪些仓库？
+2. 每个仓库新增了多少提交？请按时间列出：
+   - 日期和时间；
+   - commit SHA；
+   - commit 标题；
+   - 修改目的；
+   - 修改文件和函数；
+   - 是否直接推送 main；
+   - 是否通过分支或 PR 合并；
+   - 是否发生 force-push、rebase 或历史重写。
+3. 每次 push 对应哪一次 GitHub Actions？
+4. 每次 Actions 的结果是什么：success、failure、cancelled、skipped？
+5. 如果出现红叉，请逐次写清楚：
+   - 失败 Run 链接；
+   - 失败步骤；
+   - 原始编译/链接错误；
+   - 为什么第一次修复失败；
+   - 后来改了什么；
+   - 对应修复 commit；
+   - 最终成功 Run 链接。
+6. 哪些推送创建、更新或覆盖了 Release？
+7. 每个 Release 请列出：
+   - tag；
+   - 对应 commit；
+   - 发布时间；
+   - 附件名；
+   - 文件大小；
+   - SHA-256。
+8. 为什么部分版本号曾长期硬编码，导致源码版本、接口显示版本、Cargo.toml 和 Release 标签无法可靠对应？
+9. 本周 hlpatch Actions 数量很多。请区分实际代码 push、workflow_dispatch、rerun、失败重试和历史重写造成的记录，不要把所有 Run 都称为“推送次数”。
+
+目前公开 API 可见的参考信息：
+- 2026-07-07～07-14，hlpatch 约有 121 次 Actions Run；
+- 同期 uma-juece 约有 10 次 Actions Run；
+- uma-data 同期没有 Actions Run。
+这些数字不是直接等于 commit 数或 push 次数，需要你进一步准确分类。
+
+============================================================
+二、hlpatch /summary 崩溃完整复盘
+============================================================
+
+请按实际 commit 和二进制回答，不要使用曾经硬编码的版本字符串判断。
+
+1. /summary 最后一次确认可正常读取的实际 commit 是什么？
+2. 如果旧二进制还存在，请给 SHA-256；若不存在，请明确说明。
+3. 首次出现 SIGSEGV 的实际 commit 或变更范围是什么？
+4. 如何触发：
+   - 后台 push-loop 自动读 summary；
+   - App 5 秒无 push 后轮询；
+   - 浏览器手动访问；
+   - 游戏页面/状态切换；
+   - 拉面杯特定页面；
+   - 多请求并发；
+   - 其他 debug 端点同时运行。
+5. 崩溃是否只发生在非游戏主线程？
+6. 是否与 il2cpp_runtime_invoke 累积调用次数有关？
+7. 是否与 push-loop、App轮询和手动请求并发有关？
+8. READ_MUTEX 是否覆盖所有会进入 native read 的路径？哪些端点没有使用同一把锁？
+9. 3 秒 summary cache 如何工作？错误响应是否缓存？
+10. 60 秒 sigsegv cooldown 会不会被后台 push-loop 再次触发并重置？
+11. catch_unwind 为什么不能捕获 native SIGSEGV？sigsetjmp/siglongjmp 的保护范围是什么？
+12. 以下运行时证据分别对应哪一版代码：
+
+   {"error":"sigsegv_cooldown","retry_after":58}
+   {"step":709,"last_step":"S:wdm"}
+   {"crash":true,"signal":11,"step":710}
+
+13. 加入细诊断点后，又得到：
+
+   {"step":185,"last_step":"S:after_get_single_mode"}
+
+这说明已成功完成：
+- 找到 WorkDataManager；
+- 取得 singleton；
+...
+
+============================================================
+七、生成的报告文件
+============================================================
+
+--- 文件: report_A_PIRL_PIPO_评估.txt ---
+================================================================================
+报告 A：北大/北航/美团 PIRL+PIPO 论文分析 + 北大开源项目对赛马娘 AI 的价值评估
+生成时间：2026-07-14 07:00 CST
+数据来源：arxiv.org / github.com / web_search 实际访问
+================================================================================
+
+============================================================
+一、PIRL/PIPO 论文基本信息（已验证事实）
+============================================================
+
+论文标题：Policy Improvement Reinforcement Learning
+arXiv 编号：2604.00860v5
+提交历史：v1(2026-04-01) → v5(2026-07-07)
+论文链接：https://arxiv.org/abs/2604.00860
+HTML 全文：https://arxiv.org/html/2604.00860v5
+项目主页：https://jacckma.github.io/pirl
+代码仓库：https://github.com/JacckMa/pipo_verl
+
+作者团队（13人）：
+  Huaiyang Wang, Xiaojie Li, Xiaohan Wang, Zhixia Zhang, Xiaodong Lu,
+  Zixuan Huang, Jiajun Chai, Guojun Yin, Deqing Wang, Haoyi Zhou,
+  Yaodong Yang, Jianxin Li, Yikun Ban
+
+所属机构：
+  - 北航（Beihang University）— 数据科学与智能计算实验室
+  - 北大（Peking University）— 前沿计算研究中心，杨耀东团队
+  - 美团（Meituan）— 搜索推荐算法部
+
+证据来源：
+  1. arxiv.org/abs/2604.00860 页面直接访问（2026-07-14 06:55 CST）
+  2. Google Scholar 杨耀东主页确认作者身份
+     https://scholar.google.com/citations?user=6yL0xw8AAAAJ
+  3. 机器之心 2026-07-12 报道
+     https://www.myzander.com/article/6a5373c88e9f0974ba292f7d
+  4. GitHub 仓库 README 通过 page_reader 实际抓取确认
+     仓库描述："PIPO: Policy Improvement Policy Optimization"
+     基于代码库：verl v0.6.1
+
+============================================================
+二、PIRL 核心思想（从论文+代码 README 提取）
+============================================================
+
+PIRL（Policy Improvement Reinforcement Learning）解决的问题是：
+  RL 后训练中的"开环优化"——策略迭代过程中，无法判断前一轮更新是有效还是有害。
+
+PIRL 的方案是"前向探索 + 回溯验证"：
+  1. 让策略往前走（forward exploration）
+  2. 回头看哪些更新真正有提升（backward verification）
+  3. 保留好的更新、纠正坏的（selective retention）
+
+PIPO（Policy Improvement Policy Optimization）是 PIRL 框架的具体实现：
+  - 即插即用模块（plug-and-play）
+  - 可直接接入现有 RL 后训练算法（PPO/GRPO/GSPO/DAPO/SDPO）
+  - 核心机制：policy-improvement feedback + historical anchor
+  - 维护历史策略锚点，新策略与之对比，按 rho 反馈调节
+
+代码实现位置（从 README 确认）：
+  - verl/trainer/ppo/layback_utils.py — feedback 和 anchor 逻辑
+  - verl/trainer/ppo/core_algos.py — PIPO 调制目标函数
+  - verl/trainer/ppo/ray_trainer.py — 训练循环集成
+  - verl/trainer/config/algorithm.py — PIPO 配置
+
+实验场景（从 README 确认）：
+  - PPO 数学推理（MATH-style RL tasks）
+  - 代码 RL（TACO, LiveCodeBench v6, HumanEval, MBPP）
+  - 工具使用 RL（ToolRL/RLLA, BFCL, APIBank）
+
+============================================================
+三、北大/北航相关开源项目调研（web_search 实际搜索结果）
+============================================================
+
+1. PKU-MARL/HARL（北京大学多智能体强化学习实验室）
+   仓库：https://github.com/PKU-MARL/HARL
+   发表：JMLR Volume 25 (2024)
+   内容：异构智能体强化学习算法集合
+   与赛马娘关联度：低（多智能体场景，赛马娘是单智能体育成）
+
+2. opendilab/DI-engine（北大+上海AI实验室决策智能平台）
+   仓库：https://github.com/opendilab/di-engine
+   内容：通用强化学习引擎，支持 SMAC/星际争霸/1024等游戏环境
+   与赛马娘关联度：中（框架太重，但环境封装思路可参考）
+
+3. opendilab/DI-star（星际争霸2 AI）
+   仓库：https://github.com/opendilab/DI-star
+   内容：基于 MuZero 的星际争霸2 AI
+   与赛马娘关联度：低（完全不同类型游戏）
+
+4. Yaodong Yang 个人主页
+   https://yangyaodong.com/publications
+   研究方向：Q-Learning, MARL, RL 后训练
+   与赛马娘关联度：方法论参考
+
+============================================================
+四、PIRL/PIPO 对赛马娘 AI 项目的价值评估
+============================================================
+
+赛马娘项目现状（从 uma-train 仓库确认）：
+  - 训练框架：MCTS + 神经网络（PyTorch）
+  - 训练环境：Colab T4 GPU / Kaggle
+  - 数据管道：uma-data 仓库，训练样本格式 (s, π, z) 三元组
+  - 模拟器：RamenScenario 拉面杯模拟器
+  - 训练方式：自我对弈 → 策略迭代
+
+PIPO 可借鉴点：
+
+  1. 策略更新质量筛选（直接适用）
+     当前问题：每轮 MCTS 自对弈产出的数据训练出来的策略更新不一定有效
+     PIPO 方案：维护历史策略锚点，新策略对比评估
+     适配方式：
+       - 维护最近 K=3~5 轮的比赛模拟器评分滑动窗口
+       - 每轮训练后自动评估新网络 vs 历史基准
+       - 按 rho 反馈标记训练数据质量
+
+  2. 代码实现量评估
+     PIPO 核心逻辑约 200-300 行 Python（从 layback_utils.py + core_algos.py 提取）
+     不需要引入 verl 框架（太重，针对 LLM）
+     需要自行实现回合级（turn-level）的 PIPO 适配
+
+  3. 不适用的部分
+     - verl 框架的 LLM 训练管道（完全不同场景）
+     - 数学推理/代码 RL/工具使用的 reward 函数
+     - PPO 的 token-level 粒度（赛马娘是 turn-level）
+
+============================================================
+五、推荐行动
+============================================================
+
+1. 阅读论文：https://arxiv.org/pdf/2604.00860（v5 版本）
+2. 阅读代码：https://github.com/JacckMa/pipo_verl
+   重点文件：verl/trainer/ppo/layback_utils.py
+3. 在 uma-train 中实现简化版 PIPO：
+   - 在 training/ 目录下新增 pipo_adapter.py
+   - 维护 K=5 的策略评分滑动窗口
+   - 比赛模拟器评分作为 rho 反馈信号
+   - 预计实现量：200-300 行 Python
+4. 不引入 verl 依赖
+5. 北大 PKU-MARL/HARL 仓库不直接适用（多智能体 vs 单智能体）
+6. opendilab/DI-engine 不引入（框架太重）
+
+============================================================
+六、证据声明
+============================================================
+
+【已确认事实（有 URL + 访问时间）】
+- 论文 arXiv:2604.00860v5 存在，2026-07-07 更新
+  证据：https://arxiv.org/abs/2604.00860（2026-07-14 06:55 CST 访问）
+- 代码仓库 github.com/JacckMa/pipo_verl 存在
+  证据：page_reader 抓取 README 成功，内容包含 PIPO 描述
+- 作者杨耀东来自北大
+  证据：Google Scholar 主页 https://scholar.google.com/citations?user=6yL0xw8AAAAJ
+- 机器之心 2026-07-12 报道
+  证据：https://www.myzander.com/article/6a5373c88e9f0974ba292f7d
+- PKU-MARL 组织存在
+  证据：https://github.com/PKU-MARL（GitHub 组织页面）
+- opendilab 存在
+  证据：https://github.com/opendilab/DI-engine（仓库存在）
+
+【推断（基于代码分析，需运行时验证）】
+- PIPO 核心逻辑可在 200-300 行 Python 内实现
+- 需要 turn-level 适配（非 token-level）
+- 比赛模拟器评分可作为 rho 反馈信号
+
+【尚未验证】
+- PIPO 在游戏 AI（非 LLM）场景的实际效果
+- 赛马娘项目集成 PIPO 后的训练效率提升幅度
+- K=5 的滑动窗口是否为最优参数
+

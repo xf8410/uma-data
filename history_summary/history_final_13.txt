@@ -1,0 +1,64 @@
+================================================================================
+赛马娘 AI 项目 完整历史总结 (Part 13)
+================================================================================
+
+================================================================================
+赛马娘 AI 项目 完整历史总结 (Part 14/17)
+================================================================================
+
+│  ├─ symbols.rs                        ← 符号解析
+│  ├─ utils.rs                          ← 工具函数
+│  │
+│  └─ hook/                             ← IL2CPP Hook点（按Unity DLL分组）
+│     │
+│     ├─ umamusume/                     ← ★ 赛马娘游戏专属Hook（63个文件）
+│     │  ├─ ApplicationSettingSaveLoader.rs  ← 游戏设置读写
+│     │  ├─ AudioManager.rs                  ← 音频管理器
+│     │  ├─ ButtonCommon.rs                  ← 通用按钮
+│     │  ├─ CameraData.rs                    ← 摄像机数据
+│     │  ├─ CharacterNoteTopView.rs          ← 角色笔记页面
+│     │  ├─ DialogCommonBase.rs              ← 对话框基类
+│     │  ├─ DialogCommon/Data.rs             ← 对话框数据
+│     │  ├─ DialogManager.rs                 ← 对话框管理
+│     │  ├─ DialogMissionListItem.rs         ← 任务列表
+│     │  ├─ DialogObject.rs                  ← 对话框对象
+│     │  ├─ Director/LiveLoadSettings/       ← Live演出加载设置
+│     │  │  ├─ CharacterInfo.rs              ← 角色信息
+│     │  │  └─ RaceInfo.rs                  ← 比赛信息
+│     │  ├─ DownloadManager/                 ← 下载管理器
+│     │  │  ├─ BackgroundDownloadProgressUI.rs
+│     │  │  └─ DownloadProgressUIGame.rs
+│     │  ├─ FlashActionPlayer.rs             ← Flash动画播放器
+│     │  ├─ HomeViewController.rs            ← ★ 主页界面控制器
+│     │  ├─ HubViewControllerBase.rs         ← 主界面基类
+│     │  ├─ ImageCommon.rs                   ← 通用图片组件
+│     │  ├─ JukeboxBgmSelector.rs            ← 点唱机BGM选择
+│     │  ├─ JukeboxHomeTopUI.rs              ← 点唱机主页UI
+│     │  ├─ LiveTheaterInfo.rs               ← Live剧场信息
+│     │  ├─ LiveViewController.rs            ← ★ Live演出控制器
+...
+
+--- 文件: 6a4fc87a8afe057011d0874e_1783613561888_transfer dock_text_20260710000151.txt ---
+工作记录_20260709
+https://www.coze.cn/s/dDyeTDFzOHw/...
+
+--- 文件: 6a4fc87a8e37857fdf9ebe47_1783613561901_心情验证工作总结_20260710.txt ---
+============================================
+  心情验证工作总结
+  日期：2026年7月10日
+============================================
+
+一、背景与目标
+──────────────────────────────
+找到赛马娘IL2CPP代码中硬编码的训练心情加成倍率（やる気系数），
+确认每个心情等级对应的浮点系数：
+  绝不调 Min=1    → 0.8
+  不调   Low=2    → 0.9
+  普通   Middle=3 → 1.0
+  好调   High=4   → 1.1
+  绝好调 Max=5    → 1.2
+（Random=0 不参与训练）
+
+核心要求：不能猜测，必须从反编译代码中找到。
+
+二、已尝试的搜索路线

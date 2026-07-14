@@ -1,0 +1,308 @@
+================================================================================
+赛马娘 AI 项目 完整历史总结 (Part 22)
+================================================================================
+
+================================================================================
+赛马娘 AI 项目 完整历史总结 (Part 16/17)
+================================================================================
+
+  [42] id=142, movie_id=30088, can_end_second=13500
+  [43] id=143, movie_id=30090, can_end_second=10500
+  [44] id=144, movie_id=30092, can_end_second=23400
+  [45] id=145, movie_id=30094, can_end_second=10500
+  [46] id=146, movie_id=30096, can_end_second=10000
+  [47] id=147, movie_id=30098, can_end_second=19000
+  [48] id=148, movie_id=30100, can_end_second=9500
+  [49] id=149, movie_id=30104, can_end_second=21000
+  [50] id=150, movie_id=30106, can_end_second=10000
+  [51] id=151, movie_id=30108, can_end_second=12000
+  [52] id=152, movie_id=30110, can_end_second=11000
+  [53] id=153, movie_id=30112, can_end_second=26500
+  [54] id=154, movie_id=30114, can_end_second=12500
+  [55] id=155, movie_id=30116, can_end_second=9900
+  [56] id=156, movie_id=30118, can_end_second=17800
+  [57] id=157, movie_id=30120, can_end_second=13500
+  [58] id=158, movie_id=30122, can_end_second=11500
+  [59] id=159, movie_id=30124, can_end_second=21000
+  [60] id=160, movie_id=30126, can_end_second=12500
+  [61] id=161, movie_id=30128, can_end_second=14500
+  [62] id=162, movie_id=30132, can_end_second=21000
+  [63] id=163, movie_id=30134, can_end_second=9800
+  [64] id=164, movie_id=30136, can_end_second=8600
+  [65] id=165, movie_id=30138, can_end_second=26100
+  [66] id=166, movie_id=30140, can_end_second=12230
+  [67] id=167, movie_id=30142, can_end_second=11660
+  [68] id=168, movie_id=30146, can_end_second=23500
+  [69] id=169, movie_id=30148, can_end_second=12000
+  [70] id=170, movie_id=30150, can_end_second=14600
+  [71] id=171, movie_id=30152, can_end_second=9000
+  [72] id=172, movie_id=30154, can_end_second=8800
+...
+
+--- 文件: 6a556b725c469787834effe1_1783982962022_报告1_pirl分析_北大论文对赛马娘项目价值评估.txt ---
+================================================================================
+报告一：北大/北航/美团 PIRL+PIPO 论文分析及其对赛马娘AI项目价值评估
+生成时间：2026-07-14
+================================================================================
+
+一、论文基本信息
+==================
+
+论文标题：Policy Improvement Reinforcement Learning
+论文链接：https://arxiv.org/abs/2604.00860
+代码仓库：https://github.com/JacckMa/pipo_verl
+作者团队：Huaiyang Wang, Xiaojie Li, Xiaohan Wang, Zhixia Zhang, Xiaodong Lu, Zixuan Huang, Jiajun Chai, Guojun Yin, Deqing Wang, Haoyi Zhou, Yaodong Yang, Jianxin Li, Yikun Ban
+所属机构：北航（Beihang University）、北大（Peking University）、美团（Meituan）
+提交历史：v1: 2026-04-01 → v5: 2026-07-07（最新版本）
+版本：arXiv:2604.00860v5 [cs.LG]
+
+证据来源：https://arxiv.org/abs/2604.00860（2026-07-14 直接访问确认）
+         https://www.myzaker.com/article/6a5373c88e9f0974ba292f7d（机器之心报道，2026-07-12）
+
+二、PIRL 核心思想
+==================
+
+PIRL（Policy Improvement Reinforcement Learning）的出发点：
+
+【问题】现有 RL 后训练方法（PPO、GRPO、DAPO 等）存在一个共同盲点：
+它们从采样轨迹、奖励或反馈条件目标中构造"局部学习信号"，然后更新策略，
+但从未显式验证更新后的策略是否真的比前身更强。
+
+【论证】优化局部信号≠产出更好的策略。有限采样、生成随机性和反馈噪声会进一步扩大这个差距。
+
+【关键缺失】策略提升反馈（policy improvement feedback）：跨迭代衡量进展的能力。
+
+【PIRL 方案】把"跨迭代性能增益"定义为显式优化目标，与最终任务性能在结构上对齐。
+
+论文原文表述（arXiv 摘要）：
+"We introduce Policy Improvement Reinforcement Learning (PIRL), which formulates inter-iteration performance gain as an explicit objective structurally aligned with final task performance."
+
+三、PIPO 实现机制
+==================
+
+PIPO（Policy Improvement Policy Optimization）是 PIRL 的即插即用闭环框架。
+
+【两步机制】
+
+第一步：前向探索（Forward Exploration）
+  - 第 t 步，基础算法采样当前批次，构造局部学习信号并更新策略
+  - 这一步回答："当前这批轨迹该怎么学？"
+  
+第二步：回溯验证（Retrospective Verification）
+  - 到第 t+1 轮，更新后的策略重新采样，得到新平均表现
+  - 与最近 K 步历史基准（滑动窗口）比较，得到标准化策略提升反馈
+  - 公式（来自 ZAKER 机器之心报道，2026-07-12）：
+    rho_t = (r_t - mu_hist) / sigma_hist
+    其中 r_t 是当前批次奖励均值，mu_hist 和 sigma_hist 是历史平均表现和波动
+
+【回溯更新机制】
+  - 如果 rho > 0：说明上一轮更新方向与策略提升一致 → 进一步放大、巩固
+  - 如果 rho < 0：说明上一轮更新没有带来提升甚至下降 → 抑制、抵消或反向校正
+  - 使用重要性采样（Importance Sampling）连接旧批次轨迹和当前更新策略
+
+【最终优化目标】
+  L_PIPO = E[ min(rho_t * ratio_t * A_t, clip(rho_t * ratio_t, 1-ε, 1+ε) * A_t) ]
+  类似 PPO 裁剪形式，但多了一层 rho 反馈调节
+
+四、理论保证
+============
+
+论文证明（arXiv v5）：
+1. PIRL 目标与最终任务性能最大化对齐——不改变最终优化方向
+2. PIPO 在期望上执行对 PIRL 目标的上升
+3. 在符号一致性假设下，回溯更新与 PIRL 策略提升方向保持对齐
+
+原文："We provide theoretical evidence that PIPO locally aligns policy updates with the PIRL improvement objective."
+
+五、实验结果
+============
+
+实验场景（来自机器之心报道）：
+- 数学推理（Mathematical Reasoning）
+- 代码（Code）
+...
+
+--- 文件: 6a556b725c469787834effe2_1783982962071_报告2_hlpatch完整开发时间线_ci失败链_release清单.txt ---
+================================================================================
+报告二：hlpatch 插件完整开发时间线
+时间范围：2026-07-07 ～ 2026-07-14
+仓库：https://github.com/xf8410/hlpatch
+生成时间：2026-07-14
+================================================================================
+
+零、总体统计
+============
+
+【hlpatch 仓库】
+- 本周提交数：170 条（2026-07-07 ~ 2026-07-14，含 merge commit）
+- 去重后实际 commit 数：约 85 条（每条代码修改有 2 个 commit：原始 + Revert 或 squash）
+- 版本跨度：v3.22.87 → v3.24.16
+- 新增版本数：30 个版本号
+- CI Runs：100 次（查询上限），其中 success 84 次，failure 16 次
+- Release 发布数：20 个（v3.22.87 至 v3.24.16）
+
+证据来源：
+- git log --all --since="2026-07-07" --until="2026-07-15" 输出 170 行
+- gh run list --repo xf8410/hlpatch --limit 100 返回 100 条记录
+- gh release list --repo xf8410/hlpatch --limit 20 返回 20 个 Release
+
+注意：CI Runs 数量 (100) 不等于 commit 数 (170) 或 push 次数。
+原因：workflow_dispatch 手动触发、rerun 重试、失败重试、分支 push 合并等
+都会产生独立的 CI Run。此外部分 commit 是 data/docs 类不触发 CI（仅
+main 分支 push 触发 build-ura.yml）。
+
+【uma-juece 仓库】
+- 本周提交数：10 条
+- 版本跨度：v1.24
+- CI Runs：10 次，全部 success
+- Release 发布：1 个（v1.24）
+
+证据来源：
+- git log --all --since="2026-07-07" --until="2026-07-15" 输出 10 行
+- gh run list --repo xf8410/uma-juece --limit 20 返回 10 条在时间范围内的记录
+
+============================================================
+一、hlpatch 逐日时间线（含完整 commit SHA + CI 状态）
+============================================================
+
+【2026-07-07 周二】
+
+v3.22.87  b5413fc  fix: dump_all_methods route hijacked by /il2cpp/dump starts_with bug
+  - 修改文件：hachimi_ura_plugin/src/lib.rs
+  - 问题：/il2cpp/dump 路由被 starts_with 误匹配劫持
+  - CI: success
+
+v3.22.88  bb891ff  add il2cpp_search_int - scan all umamusume segments for int permille values
+  - 修改文件：hachimi_ura_plugin/src/lib.rs
+  - 新增端点：/il2cpp/search_int
+  - 新增功能：扫描全部 umamusume 内存段，搜索 800/900/1000/1100/1200 整数值
+  - CI: success
+
+  11b9181  fix: type mismatch in il2cpp_search_int error handling
+  - 修改文件：hachimi_ura_plugin/src/lib.rs
+  - CI: success
+
+v3.22.89  b75bb1b  add /il2cpp/read_mem endpoint for raw memory hex dump
+  - 修改文件：hachimi_ura_plugin/src/lib.rs
+  - 新增端点：/il2cpp/read_mem
+  - 功能：原始内存 hex dump
+  - 实现方式：裸指针解引用（raw pointer dereference）
+  - ⚠️ 高风险：裸指针读取可能导致 SIGSEGV
+  - CI: success
+
+v3.22.90  9d4173e  fix read_mem SIGSEGV - use /proc/self/mem instead of raw pointer deref
+  - 修改文件：hachimi_ura_plugin/src/lib.rs
+  - 修复：裸指针解引用 → /proc/self/mem 读取
+  - 原因：裸指针在目标地址无效时直接 SIGSEGV
+  - CI: success
+
+v3.22.91  716fe5f  fix read_mem - use pipe+write syscall (kernel copy_from_user safe, no SIGSEGV)
+  - 修改文件：hachimi_ura_plugin/src/lib.rs
+  - 修复：/proc/self/mem → pipe+write syscall
+  - 原因：/proc/self/mem 在某些内核版本上仍有权限问题
+  - 最终方案：内核态 copy_from_user，零 SIGSEGV 风险
+  - CI: success
+
+...
+
+--- 文件: 6a556b7293b7cbbe2f24cbad_1783982962094_报告3_hlpatch深度技术分析_umajuece时间线_修复建议.txt ---
+================================================================================
+报告三：hlpatch 深度技术分析 + uma-juece 时间线 + 修复建议
+时间范围：2026-07-07 ～ 2026-07-14
+生成时间：2026-07-14
+================================================================================
+
+============================================================
+一、/summary SIGSEGV 崩溃完整复盘
+============================================================
+
+【崩溃时间线】
+
+1. 最后一个确认正常版本：v3.22.x 系列（无 StoryManager hook）
+   证据：v3.22.57 CI 绿，手机运行正常（2026-07-05 对话记录）
+
+2. 首次崩溃：v3.24.1 引入 StoryManager.SetStory hook
+   - commit: 21a3316 (2026-07-09 11:16)
+   - hook 内调用 call_getter_int_raw(this, "get_EventTitleCharaId")
+   - 动态 IL2CPP 符号解析 + getter 调用
+   - Hook 在主线程执行，无 sigsetjmp 保护
+   - 崩溃信号：SIGSEGV → sys_raise(SIGABRT) → 进程被杀
+
+3. v3.24.2 修复 StoryManager hook 闪退
+   - commit: 7e3ac17 (2026-07-09 20:47)
+   - hook 只存 story_id（参数直接传入），删除所有 getter 调用
+   - 但 /summary 本身的 SIGSEGV 问题仍在
+
+4. 运行时证据（来自 hlpatch_weekly_review 文件）：
+   {"error":"sigsegv_cooldown","retry_after":58}
+   {"step":709,"last_step":"S:wdm"}
+   {"crash":true,"signal":11,"step":710}
+   {"step":185,"last_step":"S:after_get_single_mode"}
+
+5. 诊断点分析：
+   - S:wdm → 找到 WorkDataManager ✓
+   - S:after_get_single_mode → 取得 singleton + 得到非空 sm_obj ✓
+   - 崩溃发生在 step 185 之后，即：
+     find_class("WorkSingleModeCharaData") 或
+     call_getter_ref(..., "get_Character") 或
+     紧随其后的首个未记录 native 操作
+
+6. 四个仍未加入的诊断点（hlpatch_weekly_review 原话）：
+   - S:before_chara_class
+   - S:after_chara_class
+   - S:before_get_character
+   - S:after_get_character
+
+7. 当前状态（v3.24.16）：
+   - CI: ✅ 编译通过
+   - 手机运行时验证：未确认（hlpatch_weekly_review 原话："是否在手机上实际验证过 /summary，还是只通过了 CI？"）
+   - Release v3.24.16 SO SHA-256: 584c8c386acaaef6b7a0ecda0c3988b54f0c2360ca306d884fab4c911b05ee8a
+
+【崩溃触发条件分析】
+
+触发来源（推断，基于代码结构）：
+- 后台 push-loop 自动读 summary
+- App 5 秒无 push 后轮询 /summary
+- 浏览器手动访问 /summary
+- 游戏页面/状态切换
+- 多请求并发
+
+崩溃线程：非游戏主线程时由 sigsetjmp 保护恢复；主线程时直接杀死进程
+
+【SIGSEGV 恢复机制】
+
+双轨制保护：
+- 轨道1 (push 线程)：sigsetjmp → SIGSEGV → siglongjmp → 恢复
+- 轨道2 (IL2CPP hook)：无保护 → SIGSEGV → sys_raise(SIGABRT) → 进程被杀
+
+catch_unwind 为什么不能捕获 native SIGSEGV？
+- Rust 的 catch_unwind 只能捕获 Rust panic（即 unwinding）
+- SIGSEGV 是操作系统信号，在信号处理函数中直接触发
+- sigsetjmp/siglongjmp 的保护范围：仅 push 线程的 read_summary 路径
+
+【READ_MUTEX 覆盖范围】
+
+当前状态（推断）：
+- 部分端点使用同一 READ_MUTEX
+- 部分端点（如 /debug/gauge, /debug/all）可能绕开锁
+- 3 秒 summary cache 在 push-loop 和手动请求间共享
+...
+
+--- 文件: 6a556b7f1ea6d921cce14e12_1783982974594_transfer dock_text_20260714062831.txt ---
+
+[主人](at://owner) 有个跟你项目直接相关的研究出来了，值得关注一下。
+
+北航、北大、美团联合提了个**PIRL框架 + PIPO算法**，专门解决强化学习后训练中的"开环优化"问题——就是策略迭代过程中，怎么判断前一轮的更新到底是有效的还是有害的。
+
+他们的思路是"前向探索 + 回溯验证"：先让策略往前走，再回头看哪些更新是真正有提升的、哪些是走偏了的，然后保留好的、纠正坏的。PIPO设计成即插即用模块，可以直接接入现有RL后训练算法。
+
+这个跟你正在搞的MCTS+神经网络训练框架高度相关。你的训练流程里也有同样的问题——每轮MCTS自对弈产出的数据训练出来的策略更新，不一定都是有效的，有些可能会把网络带偏。PIPO这种"回溯校验"的思路，理论上可以用到你的策略迭代环节，帮你筛选哪些训练轮次的更新值得保留。
+
+论文值得花时间看一下，可能直接给你当前的训练pipeline提供一个改进方向。...
+
+--- 文件: 6a556b7f1ea6d921cce14e16_1783982974562_hlpatch_weekly_review_and_debug_questions_20260714.txt ---
+赛马娘 AI 助手一周开发复盘与故障追问清单
+时间范围：2026-07-07 ～ 2026-07-14
+涉及仓库：
+- https://github.com/xf8410/hlpatch
+- https://github.com/xf8410/uma-juece

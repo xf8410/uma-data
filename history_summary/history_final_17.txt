@@ -1,0 +1,68 @@
+================================================================================
+赛马娘 AI 项目 完整历史总结 (Part 17)
+================================================================================
+
+  绝不调 Min=1 → 0.8
+  不调   Low=2 → 0.9
+  普通   Middle=3 → 1.0
+  好调   High=4 → 1.1
+  绝好调 Max=5 → 1.2
+
+【Phase 1】关键词搜索 — 全部失败
+  - Motivation / GainParameter / CalcTraining / TrainingGain / CalcGain / CalcParam
+  - 结论：方法名不以任何可猜测的关键词命名
+
+【Phase 2】反汇编追踪 — 死胡同
+  - ExecTraining是调度方法，63个BL调用，0个数学运算
+  - 子函数0x7336296890是数据提取函数，不做计算
+
+【Phase 3】暴力全扫 — 被放弃
+  - v3.22.87新增 dump_all_methods + disassemble_addr 端点
+  - S字母就有2525类/20308方法，数据量过大
+
+【Phase 4】浮点常量搜索 — 进行中
+  - 使用 /il2cpp/search_float 搜索0.6/0.8/0.9/1.1/1.2的f32编码
+  - 1.2 → 0 hits（可能由1.0+0.2计算得出）
+  - 所有命中地址均被排除为CriWare音频引擎数据
+  - 两个未验证地址read_mem均失败
+
+【当前卡点】浮点搜索+内存读取路线均未找到心情系数
+【下一步】整数搜索（60/80/90/100/110）+ 反编译0x6bd8068074
+
+============================================
+三、拉面杯事件数据收集
+============================================
+
+【剧本】トレセン軒（scenario 14），2026年6月29日上线
+【数据来源】Game8攻略站（B站wiki大量"后面施工"）
+
+【事件①】貴方と私とラーメンと（第三年9月前半固定）
+  Link角色5人 + 友人卡2人，各含金技能+白技能
+
+【事件②】URA前三选一究极拉面
+  3种拉面各含不同金技能
+
+【数据文件】scenario_ramen.json（已保存）
+
+============================================
+四、API嗅探功能迭代
+============================================
+
+【v3.22.99】初版API嗅探
+  - Hook Gallop.HttpHelper的CompressRequest和DecompressResponse
+  - 新增端点：/api/sniff/toggle、/api/sniff、/api/sniff/clear
+  - 局限：无法捕获URL和Headers（_Send泛型共享崩溃）
+...
+
+--- 文件: 6a4fe1ba8afe057011d0b740_1783620025549_transfer dock_text_20260710015816.txt ---
+{"requested":"WorkSingleModeCharaData","found":"WorkSingleModeCharaData","fields":{"total":88,"fields":[{"name":"_id","offset":16,"class":"WorkSingleModeCharaData"},{"name":"_cardId","offset":36,"clas...[truncated]
+
+--- 文件: 6a4fe1ba8e37857fdf9f04cc_1783620025528_transfer dock_text_20260710020004.txt ---
+{"requested":"WorkSingleModeCharaData","found":"WorkSingleModeCharaData","fields":{"total":88,"fields":[{"name":"_id","offset":16,"class":"WorkSingleModeCharaData"},{"name":"_cardId","offset":36,"clas...[truncated]
+
+--- 文件: 6a4fe2b25c469787833b2091_1783620273530_transfer dock_text_20260710020355.txt ---
+{"requested":"WorkSingleModeData","found":"WorkSingleModeData","fields":{"total":44,"fields":[{"name":"_autoPlayDefaultPlanArray","offset":16,"class":"WorkSingleModeData"},{"name":"_autoPlayCustomPlan...[truncated]
+
+--- 文件: 6a4fe2b25c469787833b2093_1783620273578_transfer dock_text_20260710020331.txt ---
+{"requested":"WorkSingleModeScenarioRamenDataSet","found":"WorkSingleModeScenarioRamenDataSet","fields":{"total":24,"fields":[{"name":"<CommandInfoArray>k__BackingField","offset":16,"class":"WorkSingl...[truncated]
+

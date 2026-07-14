@@ -1,0 +1,80 @@
+================================================================================
+赛马娘 AI 项目 完整历史总结 (Part 20)
+================================================================================
+
+lib.rs
+1.2 支援卡 ID 映射（Support Card ID）
+支援卡数据通过 support_card_data 表管理，运行时通过 SingleModeEquipSupportCard 结构读取。
+关键类：
+表格
+类名	说明
+SupportCardData	支援卡元数据 (20 methods)
+MasterSupportCardData	支援卡 Master 表查询器
+SingleModeEquipSupportCardEntity	运行时装备实体 (6 methods)
+SupportCardData 关键方法：
+get_Name, get_Titlename, get_Charaname — 名称信息
+get_IsFriendSupportCard, get_IsGroupSupportCard, get_IsCharaSupportCard — 卡类型判断
+GetBestTraining — 最佳训练类型
+IsAvailable, CanUseScenario — 可用性检查
+GetCharaIdList — 关联角色 ID 列表
+数据库查询（lib.rs 第 11045 行）：
+sql
+1
+2
+3
+SELECT id, chara_id, rarity, command_id, effect_table_id, unique_effect_id, support_card_type, outing_max
+FROM support_card_data ORDER BY id
+
+运行时槽位结构（实测偏移）：
+SingleModeEquipSupportCard.position = offset 0x10 (16)
+SingleModeEquipSupportCard.supportCardId = offset 0x24 (36) — ObscuredInt
+SingleModeEquipSupportCard.limitBreakCount = offset 0x38 (56) — ObscuredInt
+SingleModeEquipSupportCard.exp = offset 0x4C (76)
+SingleModeEquipSupportCard.rentalType = offset 0x88 (136)
+1.3 换皮 ID（同名角色不同皮肤/卡面的 ID 关系）
+换皮通过 DressId 和 CardId 区分。同一角色（CharaId）可以有多个 CardId（不同卡面），每个 CardData 有独立的 DressId。
+关键字段：
+CharacterData.CharaId — 角色本体 ID（跨换皮不变）
+CharacterData.CardId — 卡 ID（每张卡唯一）
+CharacterData.DressId — 服装/皮肤 ID
+WorkSingleModeCharaData.get_ChangedModelDressId() — 育成中变更的服装
+数据库查询（lib.rs 第 9980 行）：
+sql
+1
+2
+3
+SELECT id, chara_id, rarity, command_id, unique_effect_id, support_card_type
+FROM support_card_data WHERE unique_effect_id > 0 ORDER BY id
+
+1.4 同名不同卡 ID（同一角色多张卡的 ID 关系）
+同一角色多张卡通过 chara_id 关联，不同卡具有不同的 card_id 和 rarity。
+CardData 关键方法：
+get_DefaultRarityData — 默认稀有度数据
+GetTalentParamDic — 天赋参数字典
+GetMaxTalentLevel — 最大天赋等级
+GetHavePieceNum, GetNeedForReleasePieceNum — 碎片系统
+SupportCardData 关联方法：
+GetCharaIdList — 该支援卡关联的所有角色 ID
+...
+
+--- 文件: 6a51a2a6c2f546f92fab3f45_1783734950148_transfer dock_text_20260711092013.txt ---
+赛马娘 global-metadata.dat 全量解析报告
+文件: global-metadata.dat (44MB, v31, 0xFAB11BAF)
+IL2CPP Version: 31
+解析方式: 纯 Python 二进制解析（无需 .so 文件）
+总览
+表格
+项目	数量
+类型定义 (TypeDef)	53,684
+方法定义 (MethodDef)	336,729
+字段定义 (FieldDef)	~3.1M
+字符串常量	343,463
+程序集图像	47
+程序集	62
+关键命名空间统计
+| Skill | 24902 |
+| Race | 415 |
+| SingleMode | 367 |
+| Training | 179 |
+| Animation | 69 |
+| Master | 54 |

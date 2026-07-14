@@ -1,0 +1,308 @@
+================================================================================
+赛马娘 AI 项目 完整历史总结 (Part 7)
+================================================================================
+
+================================================================================
+赛马娘 AI 项目 完整历史总结 (Part 8/17)
+================================================================================
+
+
+============================================================
+第二部分：uma-juece 仓库完整时间线
+============================================================
+
+------------------------------------------------------------
+2.1 总体统计
+------------------------------------------------------------
+
+本地 commit 总数：10 条（7月3日 ~ 7月13日）
+CI Runs 总数：100 次
+  - Success：77 次
+  - Failure：23 次（大部分在6月22日~7月3日早期搭建阶段）
+Release 发布数：10 个
+
+------------------------------------------------------------
+2.2 7月13日本次会话 uma-juece 代码变更详情（6 个 commit）
+------------------------------------------------------------
+
+=== Commit 1: 58497e0 (feat: 胜鞍分析面板) ===
+时间: 2026-07-13T05:10Z
+修改文件:
+  - app/src/main/java/com/umaai/assistant/service/FloatingWindowService.java (+168)
+  - app/src/main/res/layout/floating_window.xml (+36)
+新增内容:
+  1. floating_window.xml:
+     - btn_saddle 按钮 (紫色 #BB88FF, 8sp, text="鞍")
+     - saddle_panel LinearLayout (默认 gone)
+     - tv_saddle_content TextView (8sp, #CCAAFF)
+  2. FloatingWindowService.java:
+     - 字段声明: saddlePanel, tvSaddleContent, saddlePanelVisible
+     - findViewById 绑定
+     - btn_saddle onClickListener: toggle 可见性 + fetchSaddleAnalysis()
+     - fetchSaddleAnalysis(): new Thread → httpGet("18765/saddle-analysis")
+       → JSONObject 解析 → handler.post 更新 UI
+     - renderSaddleAnalysis(): 解析 win_saddles + parent_saddles + relation_groups
+       输出格式: 出走N 勝N G1勝鞍N / 相性ボーナス: N種 Npt / 亲马胜鞍一覧
+CI: Run 29208981570, success
+
+=== Commit 2: d1d8551 (feat: EventLogger 抓包面板) ===
+时间: 2026-07-13T05:20Z
+修改文件:
+  - app/src/main/java/com/umaai/assistant/service/FloatingWindowService.java (+216)
+  - app/src/main/java/com/umaai/assistant/service/MsgPackDecoder.java (新文件, +249)
+  - app/src/main/res/layout/floating_window.xml (+37)
+新增内容:
+  1. MsgPackDecoder.java (全新文件):
+     - 支持 nil/bool/int/uint/float/str/bin/array/map 全格式
+     - decode(byte[]) → Object
+     - formatValue(Object, indent) → String (紧凑单行)
+     - formatTree(Object, indent) → String (多行树形)
+     - 纯 Java 标准库，无第三方依赖
+  2. floating_window.xml:
+     - btn_sniff 按钮 (橙色 #FF8800, 8sp, text="PKT")
+     - sniff_panel LinearLayout (默认 gone)
+     - tv_sniff_content TextView (7sp monospace, #FFCC88)
+  3. FloatingWindowService.java:
+     - 字段: sniffPanel, tvSniffContent, sniffPanelVisible, sniffEnabled, sniffThread, sniffRunning
+     - toggleSniff(boolean): POST /api/sniff/toggle
+     - startSniffPolling(): 1.5s 间隔轮询 /api/sniff
+     - renderSniffData(): 显示最近5条请求 + 3条响应
+       → 每条 body 的 hex 做 MessagePack 解码
+     - tryDecodeMsgPack(): hex→bytes→MsgPackDecoder.decode()
+       自动检测 JSON 文本（以 { 开头）直接显示
+     - extractApiName(): 从 URL 提取最后一段路径
+     - onDestroy: stopSniffPolling() + toggleSniff(false)
+CI: Run 29208981570, success
+
+=== Commit 3: 8a13ac2 (feat: 事件推荐面板) ===
+时间: 2026-07-13T05:25Z
+修改文件:
+  - app/src/main/java/com/umaai/assistant/service/FloatingWindowService.java (+204)
+  - app/src/main/res/layout/floating_window.xml (+24)
+新增内容:
+  1. floating_window.xml:
+     - btn_evt 按钮 (绿色 #00FFAA, 8sp, text="EVT")
+     - evt_panel LinearLayout (默认 gone)
+     - tv_evt_content TextView (10sp bold, #00FFAA)
+  2. FloatingWindowService.java:
+     - 字段: evtPanel, tvEvtContent, evtPanelVisible, evtThread, evtRunning,
+       lastEvtChoiceCount, lastEvtStoryId
+     - startEvtPolling(): 500ms 间隔轮询 /api/event/choices
+       启动时先 POST /api/event/clear 清空旧数据
+     - processEvtData():
+       a. choiceCount=0 → 显示"监控中..."
+       b. selectedIdx>=0 → 显示"已选: 第N个" → 3秒后 auto-clear
+       c. 新事件 → 收集 gain_id → 查 MDB
+         SQL: SELECT display_id, effect_value0, effect_value1, effect_value2
+              FROM event_choice_reward_gain_param WHERE display_id IN (...)
+         评分: sum(effect_value) 最高 = 推荐
+         显示: "推荐选第X个 (N选)"
+     - onDestroy: stopEvtPolling()
+CI: Run 29209401876, success
+
+=== Commit 4: ea31738 (feat: 比赛目标状态栏 + 拉面杯 Gauge) ===
+时间: 2026-07-13T05:40Z
+修改文件:
+  - app/src/main/java/com/umaai/assistant/service/FloatingWindowService.java (+266, -34)
+  - app/src/main/res/layout/floating_window.xml (+27)
+新增内容:
+  1. floating_window.xml:
+     - tv_race_status TextView (8sp, 默认 gone) — 比赛目标状态栏
+     - tv_ramen_gauge TextView (8sp, #FFAA44, 默认 gone) — 拉面杯 Gauge 状态栏
+  2. FloatingWindowService.java:
+     - 字段: tvRaceStatus, tvRamenGauge, turnConfigCache, turnConfigCacheTime,
+       routeRaceCache, routeRaceCacheTime
+     - updateRaceStatus(): 比赛回合检测 + 粉丝目标警告
+       从 /log/turn 拉取 turn_config (缓存10分钟)
+       race_entry_type=1 → "○有比赛"
+       查 MDB route_race 的 condition_type=3 → 粉丝目标
+       显示: "粉丝2400 ⚠目标粉丝<3000 (剩3回合)"
+     - getTurnConfig(): 异步拉取 /log/turn, 缓存 turn_config 数组
+     - getRouteRaceTargets(): 异步查 MDB single_mode_route_race
+     - updateRamenInfo() 重构:
+       从 tvBuffDetail 迁移到 tvRamenGauge
+       新增: 热度等级进度条 (■■□□□ Lv2)
+       新增: 隐味数量、推荐类型、训练槽增益
+       FeelingInfo/地区 分离到 tvBuffDetail
+     - checkFanGoalWarning() — 硬编码阈值（后被 4bccb67 替换）
+CI: Run 29209721439, success
+
+=== Commit 5: 4bccb67 (fix: 修正比赛目标状态栏) ===
+时间: 2026-07-13T08:48Z
+修改文件:
+  - app/src/main/java/com/umaai/assistant/service/FloatingWindowService.java (+85, -76)
+修复内容:
+  1. 删除错误的 race_entry_type=2/3 逻辑
+     根据 MDB 实际数据: race_entry_type 只有 0(非比赛)/1(有比赛)
+     删除: isMandatoryRace 判断、★目標レース、有马纪念
+  2. 删除硬编码粉丝阈值 checkFanGoalWarning() 方法
+     删除: 1000/3000/5000/10000/20000 五个硬编码阈值
+  3. 新增 getRouteRaceTargets() 方法
+     SQL: SELECT race_set_id, target_type, turn, condition_type, condition_value_1
+          FROM single_mode_route_race
+          WHERE target_type=1 AND condition_type=3 AND condition_value_1>0
+          ORDER BY turn
+     缓存 10 分钟
+  4. updateRaceStatus() 重写
+     遍历 routeRaceCache 找最近的未达标粉丝目标
+     显示: "⚠目标粉丝<N (剩N回合)"
+CI: Run 29236723092, success
+
+=== Commit 6: 2e846aa (i18n: 全部日语改为中文) ===
+时间: 2026-07-13T17:13Z
+修改文件:
+  - app/src/main/java/com/umaai/assistant/service/FloatingWindowService.java (+21, -21)
+  - app/src/main/java/com/umaai/assistant/service/RemoteDataLoader.java (+1, -1)
+  - app/src/main/java/com/umaai/assistant/service/TrainingEvaluator.java (+9, -9)
+  - app/src/main/res/layout/activity_main.xml (+1, -1)
+替换清单 (42处):
+  FloatingWindowService.java:
+    ファン→粉丝 (1处)
+    レース有→有比赛 (1处)
+    目標ファン→目标粉丝 (1处)
+    あとXT→剩N回合 (1处)
+    AI解析エラー→AI解析错误 (1处)
+    試食会→试食会 (2处)
+    地域→地区 (2处)
+    隠し味→隐味 (2处)
+    盛→热 (1处, 热度等级)
+    隠味→隐味 (1处)
+    速度推→速推荐 (1处)
+    耐力推→耐推荐 (1处)
+    根性推→根推荐 (1处)
+    力推→力推荐 (1处)
+    智力推→智推荐 (1处)
+    ゲージ→槽 (1处)
+    良効→好效 (1处)
+    悪効→坏效 (1处)
+    地域→地区 (1处)
+    相性ボーナス→相性加成 (1处)
+    勝鞍なし→无G1胜鞍 (1处)
+    なし→无 (1处)
+    種→种 (2处)
+    MDB相性テーブル→MDB相性表 (1处)
+    ターン分をアップロード中→回合数据上传中 (1处)
+    アップロードするデータがありません→没有可上传的数据 (1处)
+    盛り上がり→热度 (1处, 注释)
+    青・緑・桃→青/绿/桃 (1处, 注释)
+  activity_main.xml:
+    データ収集: 待機中→数据采集: 待机中 (1处)
+  TrainingEvaluator.java:
+    クライマックス→巅峰杯 (1处)
+    アオハル→青春杯 (1处)
+    グランドライブ→光辉巡游 (1处)
+    グランドマスターズ→大师杯 (1处)
+    メカ→机体杯 (1处)
+    豊食祭→丰食祭 (1处)
+    無人島→无人岛 (1处)
+    温泉郷→温泉乡 (1处)
+    導き→引导 (1处)
+  RemoteDataLoader.java:
+    ヒント→技能Hint (1处)
+验证: grep -rnP '[\x{3040}-\x{309F}\x{30A0}-\x{30FF}]' → 零残留
+CI: Run 29269569015, success
+
+------------------------------------------------------------
+2.3 uma-juece Release 清单（10 个）
+------------------------------------------------------------
+
+Tag         日期         Asset                    大小
+v1.24       2026-07-09   uma-juece_v1.24.apk      5707KB
+v3.22.58    2026-07-05   uma-juece_v3.22.58.apk   5691KB
+v3.22.57    2026-07-05   uma-juece_v3.22.57.apk   5694KB
+v3.22.33    2026-07-04   uma-juece_v3.22.33.apk   5694KB
+v3.22.28    2026-07-03   uma-juece_v3.22.28.apk   5694KB
+v3.22.27    2026-07-03   uma-juece_v3.22.27.apk   5693KB
+v3.22.26    2026-07-03   uma-juece_v3.22.26.apk   5692KB
+v3.18.9     2026-06-30   app-debug.apk            5692KB
+v3.18.8     2026-06-30   uma-juece_v3.18.8.apk    5692KB
+v3.18.6     2026-06-30   uma-juece_v3.18.6.apk    5692KB
+
+APK 体积增长:
+  v3.18.6: 5692KB (6月30日基线)
+  v1.24:   5707KB (7月9日)
+  增量: +15KB
+  增量来源: MsgPackDecoder.java 新文件(249行) + 6个新面板的布局和逻辑代码
+
+============================================================
+第三部分：CI 失败→修复完整链条
+============================================================
+
+------------------------------------------------------------
+3.1 hlpatch CI 失败链 #1: WinSaddleAnalyzer 编译错误
+------------------------------------------------------------
+
+时间线:
+  2026-07-12T16:41:45Z  commit d02f8fa (WinSaddleAnalyzer 新功能)
+    ↓
+  2026-07-12T16:41:45Z  CI Run 29200602735 触发
+    ↓
+  CI 编译失败 (6 个 error)
+    error[E0308] ×2: *const c_void vs String 类型不匹配
+    error[E0609] ×4: Api struct 无 il2cpp_class_get_method_from_name_fn / il2cpp_runtime_invoke_fn
+    ↓
+  2026-07-12T16:54:57Z  commit cbff488 (docs binary analysis，未修复编译错误)
+    ↓
+  CI Run 29201010330 同样失败 (相同 6 个 error)
+    ↓
+  2026-07-13T00:50:00Z  commit f9676682 (修复编译错误)
+    修复方式:
+      1. call_getter_string 返回值用 read_il2cpp_string() 转换
+      2. api.xxx_fn → resolve_il2cpp_symbol("xxx")
+    ↓
+  2026-07-13T00:54:09Z  CI Run 29216277127 触发
+    ↓
+  CI 编译失败 (3 个新 error)
+    error[E0599]: column_count().unwrap_or(0) — usize 无 unwrap_or
+    error[E0308] ×2: std::ptr::null() 类型不匹配，应为 null_mut()
+    ↓
+  2026-07-13T01:00:00Z  commit 3083922 (修复新错误)
+    修复方式:
+      1. column_count().unwrap_or(0) → column_count()
+      2. std::ptr::null() → std::ptr::null_mut() (2处)
+    ↓
+  2026-07-13T01:05:00Z  CI Run 29216364020 触发
+    ↓
+  CI 编译成功 ✅ (conclusion: success)
+
+完整失败→修复链:
+  d02f8fa (引入 bug) → cbff488 (未修复) → f967668 (修复旧 bug，引入新 bug)
+  → 3083922 (修复新 bug) → CI 绿
+
+根因分析:
+  1. call_getter_string() 的返回类型是 *const c_void (IL2CPP String 指针)
+     但在 read_inherit_compat() 中被直接当作 String 使用
+     正确用法: read_il2cpp_string(call_getter_string(...))
+     证据: src/lib.rs 行 8010 函数签名 unsafe fn call_getter_string(...) -> *const c_void
+            src/lib.rs 行 146 read_il2cpp_string(s: *const c_void) -> String
+
+  2. Api struct 的可用字段 (从 CI 错误信息确认):
+     log_fn, gui_show_notification_fn, gui_register_menu_item_fn,
+     gui_register_menu_section_fn, hachimi_register_on_game_initialized_fn
+     ... and 20 others
+     不包含: il2cpp_class_get_method_from_name_fn, il2cpp_runtime_invoke_fn
+     正确方式: resolve_il2cpp_symbol("il2cpp_class_get_method_from_name")
+     证据: src/lib.rs 行 934, 942 已有正确用法
+
+  3. rusqlite Statement.column_count() 返回 usize
+     证据: https://docs.rs/rusqlite — column_count() → usize
+
+  4. il2cpp_runtime_invoke 的第三个参数是 *mut c_void (exc)
+     std::ptr::null() 返回 *const i32 → 类型不匹配
+     正确: std::ptr::null_mut() 返回 *mut c_void
+
+------------------------------------------------------------
+3.2 hlpatch 仓库体积问题 → push 超时链
+------------------------------------------------------------
+
+时间线:
+  2026-07-12  commit d02f8fa 提交时包含 artifacts/ 目录
+    内容:
+    - artifacts/libil2cpp.so (218MB)
+    - artifacts/apk_assets_bin_Data_globalgamemanagers (73MB)
+    - artifacts/apk_assets_bin_Data_globalgamemanagers.assets.split0-5 (各1MB)
+    - base.apk (112MB)
+    - split_config.arm64_v8a.apk (81MB)
+    - artifacts/metadata_types_full.txt (272,664 行)
+    - artifacts/parse_metadata.py, artifacts/so_float_constants.txt 等
+    ↓

@@ -1,0 +1,80 @@
+================================================================================
+赛马娘 AI 项目 完整历史总结 (Part 21)
+================================================================================
+
+| Event | 49 |
+| Effect | 42 |
+| Scenario | 40 |
+| Story | 30 |
+| UI | 22 |
+| Gallop | 8 |
+| Ramen | 8 |
+| Cook | 8 |
+| SupportCard | 7 |
+| Network | 1 |
+全部类型定义 (53,684个)
+完整列表见: all_types_parsed.txt
+Gallop 相关类型
+SingleMode 相关类型
+Ramen 相关类型
+Cook 相关类型
+Scenario 相关类型
+WorkSingleMode 相关类型
+剧本14（拉面杯）相关类型
+剧本13（青春杯/种田杯）相关类型
+SingleMode 核心类型（前50个）
+... 共 367 个 SingleMode 类型...
+
+--- 文件: 6a536175e575a90d9698c301_1783849333104_transfer dock_text_20260712171535.txt ---
+Agora_export_2026-07...
+
+--- 文件: 6a54a387c78fec0fe9e6a99c_1783931780055_mdb_all.txt ---
+master.mdb 全量数据导出
+表数: 619  总行数: 82521  每表上限: 500
+======================================================================
+
+──────────────────────────────────────────────────────────────────────
+表: announce_character
+总行数: 179  已查询: 179  列: id, movie_id, can_end_second
+──────────────────────────────────────────────────────────────────────
+  [1] id=101, movie_id=30004, can_end_second=6000
+  [2] id=102, movie_id=30006, can_end_second=6000
+  [3] id=103, movie_id=30008, can_end_second=6000
+  [4] id=104, movie_id=30010, can_end_second=11800
+  [5] id=105, movie_id=30012, can_end_second=6000
+  [6] id=106, movie_id=30014, can_end_second=6000
+  [7] id=107, movie_id=30016, can_end_second=6000
+  [8] id=108, movie_id=30018, can_end_second=6000
+  [9] id=109, movie_id=30020, can_end_second=17400
+  [10] id=110, movie_id=30022, can_end_second=8400
+  [11] id=111, movie_id=30024, can_end_second=6000
+  [12] id=112, movie_id=30026, can_end_second=16433
+  [13] id=113, movie_id=30028, can_end_second=6000
+  [14] id=114, movie_id=30030, can_end_second=7800
+  [15] id=115, movie_id=30032, can_end_second=18000
+  [16] id=116, movie_id=30034, can_end_second=9200
+  [17] id=117, movie_id=30036, can_end_second=7400
+  [18] id=118, movie_id=30038, can_end_second=7100
+  [19] id=119, movie_id=30040, can_end_second=8300
+  [20] id=120, movie_id=30042, can_end_second=6000
+  [21] id=121, movie_id=30044, can_end_second=18900
+  [22] id=122, movie_id=30046, can_end_second=8600
+  [23] id=123, movie_id=30048, can_end_second=8633
+  [24] id=124, movie_id=30050, can_end_second=21600
+  [25] id=125, movie_id=30052, can_end_second=9000
+  [26] id=126, movie_id=30054, can_end_second=9500
+  [27] id=127, movie_id=30056, can_end_second=21400
+  [28] id=128, movie_id=30058, can_end_second=9700
+  [29] id=129, movie_id=30060, can_end_second=9700
+  [30] id=130, movie_id=30062, can_end_second=18500
+  [31] id=131, movie_id=30066, can_end_second=9800
+  [32] id=132, movie_id=30068, can_end_second=22200
+  [33] id=133, movie_id=30070, can_end_second=10000
+  [34] id=134, movie_id=30072, can_end_second=9400
+  [35] id=135, movie_id=30074, can_end_second=11500
+  [36] id=136, movie_id=30076, can_end_second=11000
+  [37] id=137, movie_id=30078, can_end_second=8700
+  [38] id=138, movie_id=30080, can_end_second=20000
+  [39] id=139, movie_id=30082, can_end_second=7400
+  [40] id=140, movie_id=30084, can_end_second=7700
+  [41] id=141, movie_id=30086, can_end_second=21000

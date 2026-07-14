@@ -1,0 +1,308 @@
+================================================================================
+赛马娘 AI 项目 完整历史总结 (Part 12)
+================================================================================
+
+================================================================================
+赛马娘 AI 项目 完整历史总结 (Part 13/17)
+================================================================================
+
+--- 2026-07-13 07:56 用户说 ---
+ci有两个红叉，看看是不是咱们现在搞的代码有问题
+
+--- 回答 ---
+hlpatch CI 失败原因：
+1. d02f8fa (WinSaddleAnalyzer) 编译错误: call_getter_string 返回 *const c_void 不是 String
+2. api.il2cpp_class_get_method_from_name_fn 不存在
+3. 同 commit 把 218MB libil2cpp.so + 80MB APK 提交了，仓库 529MB → push 超时
+修复: filter-branch 清理 + .gitignore + 编译修复
+commit: 3083922 CI 绿
+
+--- 2026-07-13 10:19 用户提问 ---
+https://github.com/xf8410/uma-train
+https://github.com/xf8410/uma-helper
+发现了一个问题，为什么我仓库有两个训练模型，冲突吗?
+
+--- 回答 ---
+不冲突。uma-helper 是 5月的早期原型(单文件)，uma-train 是 6月的正式版(完整框架)。
+uma-helper 已被 uma-train 取代。
+
+--- 2026-07-13 16:39 用户上传 mdb_all.txt ---
+
+--- 回答 ---
+分析 MDB 数据发现：
+- race_entry_type 只有 0(非比赛)/1(有比赛)，没有 type=2/3
+- single_mode_route_race 表 condition_type=3 是粉丝数条件
+- condition_value_1 = 需要的粉丝数
+修正 juece: 删掉硬编码阈值，改查 MDB route_race
+commit: 4bccb67
+
+--- 2026-07-13 17:10 用户说 ---
+把jueceapp里面的日语都改成汉语
+
+--- 回答 ---
+42处替换: ファン→粉丝、レース有→有比赛、相性ボーナス→相性加成 等
+commit: 2e846aa
+
+--- 2026-07-14 06:49 用户上传 5 个报告文件 + 校正意见 ---
+
+--- 回答 ---
+生成报告 A(PIRL评估) + 报告 B(完整时间线+CI失败链) + 报告 C(校正清单)
+用户校正 12 项错误: CI≠运行时崩溃、不能说"崩在get_Character"、ObscuredInt不只getter等
+更新长期记忆 12 条教训
+
+--- 2026-07-14 07:22 用户校正报告 ---
+详细列出报告中需要纠正的 12 个问题
+
+--- 2026-07-14 07:42 用户说 ---
+根据报告修复jueceapp的收集对局异常问题
+
+--- 回答 ---
+DataCollector v2.0: 8 个修复
+1. parseSnapshot 防御 error JSON
+2. detectAction gains全0时用 command_id 兜底
+3. 上传改单线程串行队列
+4. 上传时冻结 session 快照
+5. startNewSession 防重复
+6. 恢复时持久化 turns/prevSnapshot/scenario
+7. 文件名 = session_id
+8. shining/heads 统一为 0
+commit: b01fc07
+
+--- 2026-07-14 08:05 用户提问 ---
+还有识别不到选择时的读取，只能读取选择前和选择后，还有既然拉面杯都dump完了，为什么jueceapp显示buff的时候还是有黄色问号，还有jueceapp显示人头是星星，应该改为准确的有多少人头 也要识别npc和伙伴的区别
+
+--- 回答 ---
+1. 动作识别: 加 detectActionByTrainingLevels() 优先用 training_levels 变化
+2. buff黄问号: resolveRamenEffectName() 把 试食会#1234 → 试食
+3. 人头: 区分支援卡(●)和NPC(△)，彩圈用★
+commit: 2911af2 → CI 红叉
+
+--- 2026-07-14 14:32 用户发来超大任务清单 ---
+12 项校正 + 18 项追加任务(A-R)，要求全部完成
+
+--- 执行过程 ---
+1. 修红叉: DataCollector:830 optString 类型不匹配 → commit 61fa4a7 CI绿
+2. 跨年turn: 优先用SO的turn字段，year+month+half计算 → commit c56ae61
+3. 不把Error写成动作 → commit c56ae61
+4. 不伪造全0回合 → commit c56ae61
+5. hlpatch workflow paths过滤 → commit 8e869d4
+6. Release不覆盖已有tag → commit 8e869d4
+7. /summary 崩溃诊断点: S:before_chara_class 等6个 → commit 4c89eb0
+8. year/turn字段: 从 _totalTurnNum offset 68 读 → commit 4c89eb0
+9. /action/latest端点: 只读缓存不调IL2CPP → commit 4c89eb0
+10. last_action in summary push → commit 4c89eb0
+11. SO真实CommandId: training_hook_handler 记录 sub_id → commit 4c89eb0
+12. 动作来源元数据: action_source/confidence/command_id → commit 3951f3f
+13. shining保留-1: 不再Math.max(0,...) → commit 3951f3f
+14. training_levels降级为弱辅助 → commit 3951f3f
+15. push+poll去重: synchronized + snapshot hash → commit 964e8a7
+16. is_appear兼容: 默认1 → commit 964e8a7
+17. 102/105映射审计: 无错误 → commit 964e8a7
+18. juece workflow paths过滤 → commit 5d6e3c6
+19. 数据质量验证器: validateSession() → commit 5d6e3c6
+20. session元数据: schema_version/mapping_version → commit 5d6e3c6
+21. Token安全警告 → commit 52e319f
+
+--- 2026-07-14 14:55 用户说 ---
+不要私自停下来，我说的所有任务全部做完 不要半道停下来
+
+--- 更新长期记忆: 绝对禁止半道停下来问 ---
+
+--- 继续执行 ---
+22. 伙伴partner_type+name: 照PC版小黑板personType映射 → commit 301abe7(hlpatch) + 37d5ce2(juece)
+23. hlpatch CI红叉: support_position是String不是Option → 修复 commit 3b407c1
+
+--- 2026-07-14 15:15 用户提供 PC 版小黑板仓库 ---
+https://github.com/EtherealAO
+找到 UmaAi 仓库 → UmaSimulator/Game/Person.h + GamePrint.cpp
+personType: 0=未加载, 1=友人卡, 2=支援卡, 3=NPC, 4=理事长, 5=记者
+
+--- 2026-07-14 15:37 用户纠正 ---
+咱们有数据啊，不要完全照着抄啊，有支援卡id的，还有不要用应该没问题这种不准确的描述
+
+--- 回答 ---
+发现 summary push 已有 support_cards 数组含 support_card_id。
+uma_support_cards.json 有 cardId→chara 映射。
+uma_names.json 有 NPC ID→nickname 映射。
+改 juece: ensureNameCaches() 从本地缓存加载名称。
+改 hlpatch: partners_json 加 partner_type+name 字段。
+显示: アーモンドアイ:82 ★アーモンドアイ:95 理事长:24
+commit: a5887e8 → CI红(fullJson参数缺失) → 修复 c6d189d CI绿
+
+--- 最终状态 ---
+hlpatch CI: 3b407c1 ✅绿
+uma-juece CI: c6d189d ✅绿
+
+============================================================
+九、CI 统计（截至 2026-07-14 16:33）
+============================================================
+
+--- hlpatch CI ---
+Total: 100, Success: 84, Failure: 16
+
+失败列表:
+  301abe76 2026-07-14T07:19 feat: partners 输出加 partner_type+name — 照 PC 版小黑板 p
+  f9676682 2026-07-13T00:54 fix: 修复 read_inherit_compat 编译错误
+
+1. call_getter_s
+  cbff4885 2026-07-12T16:54 docs: 二进制文件完整分析 — libil2cpp(209MB,177K函数)/metadata
+  d02f8fa0 2026-07-12T16:41 feat: WinSaddleAnalyzer /saddle-analysis — 读取育成马胜鞍
+  d0f8b4e8 2026-07-11T23:56 fix: restore plugin identity and training length g
+  72132142 2026-07-11T23:52 diag: derive version and trace summary native read
+  120749da 2026-07-10T11:49 fix: 训练收益读取 — ObscuredInt + TargetType 映射修正
+
+1. Pa
+  602b6a0b 2026-07-09T22:21 fix: sed 替换搞坏了路由条件 — 恢复 /debug/paramsincdec 独立 if 
+  c59b67a3 2026-07-09T22:16 feat: /debug/ramengains 端点 — 诊断 Ramen gains 为空的原因
+
+  362794aa 2026-07-09T18:12 v3.24.8: 全字段偏移量读取 + 新增 33 个 ML 字段
+
+重大改进：il2cpp_run
+  698a8e63 2026-07-09T16:48 fix: CI unclosed delimiter — 修复 catch_unwind 括号 + 
+  4d4c688c 2026-07-09T16:40 fix: CI 编译失败 — __builtin___clear_cache → inline as
+  79e72891 2026-07-09T16:29 v3.24.7: P0 修复 — catch_unwind + I-Cache flush
+
+1. 
+  21a3316d 2026-07-09T03:16 v3.24.1: StoryManager.SetStory hook — capture stor
+  b7980f63 2026-07-09T03:10 v3.24.0: 生涯事件选择hook — 捕获选项、增益、分支触发、连续事件
+
+- Hook St
+  ab6a912f 2026-07-08T14:35 v3.23.3: Use Hachimi-Edge V3 Interceptor API for A
+
+--- uma-juece CI ---
+Total: 100, Success: 85, Failure: 15
+
+失败列表:
+  a5887e83 2026-07-14T07:40 feat: 伙伴显示用真实支援卡名称 — 从 uma_support_cards.json 查角色名
+  2911af2f 2026-07-14T00:09 fix: 三个问题 — 动作识别/buff黄问号/人头星星
+
+1. 动作识别：新增 detectAc
+  b01fc07b 2026-07-13T23:43 fix: DataCollector v2.0 — 修复8个数据采集异常问题
+
+根据报告校正清单修复
+  cd9f5156 2026-07-03T13:11 CI: auto-publish releases on build success
+  eced7654 2026-06-27T19:55 v1.16: 13 scenarios with CN labels, per-scenario d
+  6cf0c4a0 2026-06-27T19:12 v1.15: auto-upload with built-in token, remove man
+  cba652f4 2026-06-27T19:11 v1.15: add data collection pipeline
+
+- DataCollect
+  c731258b 2026-06-27T11:16 feat: add close button + stop button + fallback po
+  a8069d3a 2026-06-27T04:11 fix: switch data source to GitHub raw (xf8410/uma-
+  f1aa37ea 2026-06-27T04:06 feat: add TrainingEvaluator - handwritten scoring 
+  f218179f 2026-06-27T02:51 fix: broken onDataReceived from HookPoller removal
+  4fdfd4e8 2026-06-27T02:48 v1.6: Support /summary push format from plugin v3.
+  d3be1e25 2026-06-23T16:53 添加浮窗图片显示
+
+- 添加Q版马娘角色图片作为浮窗显示(drawable/float_char.p
+  0a282d9b 2026-06-23T14:21 更新 FloatingWindowService.java
+  9235d57a 2026-06-23T14:18 更新 FloatingWindowService.java
+
+============================================================
+十、Release 清单
+============================================================
+
+--- hlpatch Releases ---
+v3.24.16     2026-07-13 libhachimi_ura.so                4217KB
+v3.24.15     2026-07-12 libhachimi_ura.so                4181KB
+v3.24.14     2026-07-12 libhachimi_ura.so                4178KB
+v3.24.13     2026-07-12 libhachimi_ura.so                4170KB
+v3.24.12     2026-07-11 libhachimi_ura.so                4170KB
+v3.24.11     2026-07-10 libhachimi_ura.so                4170KB
+v3.24.10     2026-07-10 libhachimi_ura.so                4161KB
+v3.24.3-libil2cpp 2026-07-10 global-metadata.dat             44183KB
+v3.24.3-libil2cpp 2026-07-10 libil2cpp.so                   213589KB
+v3.24.3-libil2cpp 2026-07-10 master.mdb                      42396KB
+v3.24.9      2026-07-09 libhachimi_ura.so                4156KB
+v3.24.8      2026-07-09 libhachimi_ura.so                4146KB
+v3.24.7      2026-07-09 libhachimi_ura.so                4145KB
+v3.24.6      2026-07-09 libhachimi_ura.so                4144KB
+v3.24.5      2026-07-09 libhachimi_ura.so                4144KB
+v3.24.4      2026-07-09 libhachimi_ura.so                4144KB
+v3.24.3      2026-07-09 libhachimi_ura.so                4144KB
+v3.24.2      2026-07-09 libhachimi_ura.so                4144KB
+v3.24.1      2026-07-09 libhachimi_ura.so                4142KB
+v3.23.3      2026-07-08 libhachimi_ura.so                4131KB
+v3.23.2      2026-07-08 libhachimi_ura.so                4134KB
+v3.23.1      2026-07-08 libhachimi_ura.so                4132KB
+v3.23.0      2026-07-08 libhachimi_ura.so                4131KB
+v3.22.98     2026-07-08 libhachimi_ura.so                4120KB
+v3.22.97     2026-07-08 libhachimi_ura.so                4120KB
+v3.22.96     2026-07-08 libhachimi_ura.so                4119KB
+v3.22.95     2026-07-08 libhachimi_ura.so                4119KB
+v3.22.94     2026-07-07 libhachimi_ura.so                4118KB
+v3.22.93     2026-07-07 libhachimi_ura.so                4109KB
+v3.22.91     2026-07-07 libhachimi_ura.so                4109KB
+v3.22.90     2026-07-07 libhachimi_ura.so                4108KB
+v3.22.89     2026-07-07 libhachimi_ura.so                4107KB
+
+--- uma-juece Releases ---
+v1.24        2026-07-09 uma-juece_v1.24.apk              5715KB
+v3.22.58     2026-07-05 uma-juece_v3.22.58.apk           5691KB
+v3.22.57     2026-07-05 uma-juece_v3.22.57.apk           5694KB
+v3.22.33     2026-07-04 uma-juece_v3.22.33.apk           5694KB
+v3.22.28     2026-07-03 uma-juece_v3.22.28.apk           5694KB
+v3.22.27     2026-07-03 uma-juece_v3.22.27.apk           5693KB
+v3.22.26     2026-07-03 uma-juece_v3.22.26.apk           5692KB
+v3.18.9      2026-06-30 app-debug.apk                    5692KB
+v3.18.8      2026-06-30 uma-juece_v3.18.8.apk            5692KB
+v3.18.6      2026-06-30 uma-juece_v3.18.6.apk            5692KB
+
+================================================================================
+END OF FILE
+================================================================================
+
+============================================================
+十一、长期记忆（完整内容）
+============================================================
+
+--- 文件: 6a3bc6cce7aaa24f9787ade3_1782302411636_winhttp_dll_分析报告.txt ---
+================================================================================
+                    Hachimi winhttp.dll 完整逆向分析报告
+================================================================================
+
+文件信息
+--------
+文件名: winhttp.dll
+格式: PE32+ executable (DLL) (GUI) x86-64, for MS Windows
+大小: 21 MB
+所属项目: Hachimi (https://github.com/Hachimi-Hachimi/Hachimi)
+版本: v0.26.3-c63a372-dirty
+开发者: LeadRDRK, kairusds and contributors
+许可证: GPL-3.0-only
+编译语言: Rust
+构建者账号: C:\Users\micro\
+
+================================================================================
+一、项目定位
+================================================================================
+
+Hachimi 是赛马娘(Umamusume)PC客户端的社区Mod注入器。winhttp.dll 是其核心组件，
+通过 Windows DLL 代理机制（替换系统 winhttp.dll）注入到游戏进程中，实现：
+
+1. IL2CPP 运行时 Hook（读取/修改游戏内存数据）
+2. 翻译系统（UI翻译 + 剧情自动翻译）
+3. 游戏内覆盖层 GUI（基于 egui 的配置编辑器）
+4. 资源替换与修改
+5. IPC 进程间通信（端口 4693）
+
+================================================================================
+二、源代码结构（从 strings 还原的 src/ 路径）
+================================================================================
+
+┌─ src/lib.rs                           ← DLL入口
+│
+├─ src/core/                            ← 核心模块
+│  ├─ captions.rs                       ← 字幕/语音文本显示
+│  ├─ ext.rs                            ← 扩展工具
+│  ├─ gui.rs                            ← GUI覆盖层主逻辑
+│  ├─ interceptor.rs                    ← IL2CPP方法拦截器（Hook核心）
+│  ├─ ipc.rs                            ← IPC进程间通信
+│  ├─ plugin_api.rs                     ← 插件API（供外部扩展）
+│  ├─ sugoi_client.rs                   ← Sugoi翻译服务器客户端
+│  ├─ template.rs                       ← 翻译模板引擎
+│  ├─ template_filters.rs               ← 模板过滤器
+│  ├─ tl_repo.rs                        ← 翻译仓库管理
+│  └─ updater.rs                        ← 自动更新器
+│
+├─ src/il2cpp/                          ← IL2CPP交互层
+│  ├─ sql.rs                            ← SQLite数据库查询

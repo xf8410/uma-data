@@ -1,0 +1,308 @@
+================================================================================
+赛马娘 AI 项目 完整历史总结 (Part 10)
+================================================================================
+
+================================================================================
+赛马娘 AI 项目 完整历史总结 (Part 11/17)
+================================================================================
+
+
+方案①  Carrotless 式 libmain.so 代理
+  - Root：不需要 | 改APK：需要 | 精度：高 | 复杂度：中 | 稳定性：高
+  - 评价：首选方案，已验证可行
+
+方案②  Frida Gadget 注入
+  - Root：不需要 | 改APK：需要 | 精度：高 | 复杂度：高 | 稳定性：中
+  - 评价：备选，脚本可热更新但可能被检测
+
+方案③  Shizuku + Frida
+  - Root：不需要 | 改APK：不需要 | 精度：高 | 复杂度：很高 | 稳定性：低
+  - 评价：门槛高，不适合普通用户
+
+方案④  VPN 网络拦截
+  - Root：不需要 | 改APK：不需要 | 精度：中 | 复杂度：中 | 稳定性：高
+  - 评价：只能拿到网络层数据，拿不到内存实时状态
+
+方案⑤  无障碍服务 + OCR
+  - Root：不需要 | 改APK：不需要 | 精度：低 | 复杂度：低 | 稳定性：中
+  - 评价：兜底方案，精度低延迟高
+
+方案⑥  Hachimi IPC（已有 root 时）
+  - Root：需要 | 改APK：不需要 | 精度：高 | 复杂度：低 | 稳定性：很高
+  - 评价：有 root 时直接用 Hachimi 的 4693 端口
+
+推荐路线：方案①（Carrotless libmain.so 代理）
+
+================================================================================
+四、用户实际尝试情况
+================================================================================
+
+用户表示：所有方式都试过了，全部失败。
+包括：Hook、注入、解包、dump、插件 so。
+
+进一步沟通后确认用户的实际状态：
+
+1. 使用的是 UmaPatcher Edge 给日服 APK 打 Hachimi Edge 补丁
+2. Hachimi 本身能跑（翻译、GUI 都有）
+3. 存在问题：
+   - 概率闪退（已知问题，官方文档有 "Crashing after launch" 条目）
+   - 自己的 so 插件通过 UmaPatcher 添加，patch 成功有提示
+   - 但进游戏后看不到插件效果（插件没有加载/没有运行）
+
+================================================================================
+五、问题诊断
+================================================================================
+
+【问题1：概率闪退】
+- 这是 Hachimi Edge 的已知问题，官方文档有专门条目
+- 官方方案：下载特定 config.json 放到 hachimi 文件夹
+- 路径：android/media/jp.co.cygames.umamusume/hachimi/
+- 其他缓解措施：关闭 GUI、关闭 FPS 解锁、降低虚拟分辨率
+
+【问题2：so 插件没加载（核心问题）】
+Android 插件加载流程：
+  UmaPatcher 添加 .so → Patch 打进 APK → 游戏启动 →
+  Hachimi 加载 → 调用 .so 的 hachimi_init() →
+  插件通过 vtable 获得 Hachimi API → 插件运行
+
+看不到插件效果的可能原因：
+  a) .so 没有 hachimi_init 导出符号 → Hachimi 找不到入口，静默跳过
+  b) API 版本不匹配 → vtable 版本和当前 Hachimi Edge 版本不一致
+  c) ABI 不匹配 → .so 是 armv7 但游戏跑 arm64（或反之）
+  d) .so 没有真正被打进 APK → UmaPatcher patch 时跳过了
+
+================================================================================
+六、排查步骤（建议用户执行）
+================================================================================
+
+第一步：确认 .so 真的进了 APK
+  adb shell pm path jp.co.cygames.umamusume
+  adb pull <路径> /tmp/game.apk
+  unzip -l /tmp/game.apk | grep your_plugin_name
+
+第二步：确认 .so 格式正确
+  readelf -h your_plugin.so | grep Machine     → 应为 AArch64
+  readelf -sW your_plugin.so | grep hachimi_init → 必须有全局导出符号
+
+第三步：查看 Hachimi 日志
+  路径：android/media/jp.co.cygames.umamusume/hachimi/
+  查看是否有插件加载相关信息
+
+================================================================================
+七、待用户确认的信息
+================================================================================
+
+1. .so 插件用什么写的？（Rust？C？还是拿的别人的？）
+2. Hachimi Edge 的版本号是多少？（UmaPatcher 里可看到）
+3. hachimi 文件夹下的内容列表
+
+================================================================================
+八、参考资源汇总
+================================================================================
+
+Carrotless（无 root 注入方案）
+  https://github.com/LeadRDRK/Carrotless
+  Release: https://github.com/LeadRDRK/Carrotless/releases/tag/v0.2.3
+
+Hachimi-Edge（维护版）
+  https://github.com/kairusds/Hachimi-Edge
+
+Hachimi-Edge（EtherealAO fork）
+  https://github.com/EtherealAO/Hachimi-Edge
+
+Hachimi 官方文档
+  https://hachimi.noccu.art/zh-cn/
+
+Hachimi Android 安装指南
+  https://hachimi.noccu.art/docs/hachimi/installing-android
+
+Hachimi 故障排查
+  https://hachimi.noccu.art/docs/hachimi/troubleshooting
+
+Hachimi 插件安装指南
+  https://hachimi.noccu.art/docs/plugins/installation
+
+Hachimi 插件开发指南
+  https://hachimi.noccu.art/docs/plugins/development
+
+frida-il2cpp-bridge（IL2CPP Hook 库）
+  https://github.com/vfsfitvnm/frida-il2cpp-bridge
+
+Shizuku（无 root ADB 权限）
+  https://github.com/RikkaApps/Shizuku
+
+================================================================================
+九、技能文件
+================================================================================
+
+本次对话中创建了 mobile-app-reverse 技能：
+  位置：skills/mobile-app-reverse/
+  结构：
+    SKILL.md                (395行) 主流程文档
+    references/android.md   (850行) Android 逆向详解
+    references/ios.md       (722行) iOS 逆向详解
+  覆盖：解包、Dump、Hook、Fork、反编译、重签名全流程
+
+================================================================================
+                              总结结束
+================================================================================
+
+--- 文件: 赛马娘无Root通信方案分析.md ---
+# 赛马娘 Android 无 Root 通信方案分析
+
+## 背景
+
+### 当前架构
+- **Hachimi / Hachimi-Edge**：赛马娘 Mod 注入器
+  - PC 端：winhttp.dll 代理注入，IPC 端口 4693（tiny_http）
+  - Android 端：Zygisk 注入（需要 root/Magisk/KernelSU）
+  - IL2CPP Hook：63 个赛马娘专属 Hook 点（SceneManager、RaceInfo、MasterDataUtil 等）
+- **uma-helper（你的项目）**：赛马娘辅助工具，悬浮窗 + 本地 HTTP 接收数据
+- **winhttp.dll 分析报告**：Hachimi 导出了完整 Plugin API + IPC + IL2CPP 通道
+
+### 核心矛盾
+Hachimi Android 版依赖 Zygisk → 需要 root → 很多用户没有 root
+你需要在**不 root**的前提下，建立「注入的游戏进程 ↔ 外部辅助 App」通信通道。
+
+---
+
+## 方案对比总览
+
+| 方案 | 需要 Root | 需要改 APK | 数据精度 | 复杂度 | 稳定性 |
+|------|----------|-----------|---------|--------|--------|
+| ① Carrotless 式 libmain.so 代理 | 否 | 是 | 高 | 中 | 高 |
+| ② Frida Gadget 注入 | 否 | 是 | 高 | 高 | 中 |
+| ③ Shizuku + Frida | 否 | 否 | 高 | 很高 | 低 |
+| ④ VPN 网络拦截 | 否 | 否 | 中 | 中 | 高 |
+| ⑤ 无障碍服务 + 截屏 OCR | 否 | 否 | 低 | 低 | 中 |
+| ⑥ Hachimi IPC（已有 root 时） | 是 | 否 | 高 | 低 | 很高 |
+
+---
+
+## 方案 ① Carrotless 式 libmain.so 代理【推荐】
+
+### 原理
+Carrotless（LeadRDRK 开发，Hachimi 同一作者）证明了**无 root 注入赛马娘**是可行的：
+
+```
+原始 APK:
+  lib/arm64-v8a/libmain.so  ← Unity JNI 入口
+
+修改后 APK:
+  lib/arm64-v8a/libmain.so      ← 你的代理库（先加载）
+  lib/arm64-v8a/libmain_orig.so ← 原始 Unity 入口（被重命名）
+```
+
+代理 `libmain.so` 的流程：
+1. `dlopen("libmain_orig.so")` → 加载原始 Unity 入口
+2. 转发所有 JNI 函数调用到原始库
+3. 在转发过程中注入 Hook（IL2CPP / Frida / 自定义）
+4. Hook 代码启动本地 HTTP Server → 外部 App 通信
+
+### 通信架构
+```
+┌─────────────────────────────────────────┐
+│       游戏进程 (jp.co.cygames.umamusume) │
+│                                         │
+│  libmain.so (代理)                      │
+│    ├─ dlopen(libmain_orig.so) → Unity   │
+│    ├─ IL2CPP Hook (Hachimi / 自定义)    │
+│    │   ├─ SceneManager → 当前场景       │
+│    │   ├─ RaceInfo → 比赛数据           │
+│    │   ├─ MasterSingleModeTurn → 育成   │
+│    │   └─ StoryTimelineTextClipData     │
+│    │                                     │
+│    └─ HTTP Server (localhost:4693)      │
+│        ├─ GET /state → 游戏状态 JSON    │
+│        ├─ GET /scene → 当前场景         │
+│        ├─ POST /action → 接收指令       │
+│        └─ WebSocket /ws → 实时推送      │
+│                                         │
+└───────────────────┬─────────────────────┘
+                    │ localhost HTTP
+┌───────────────────┴─────────────────────┐
+│     uma-helper (你的辅助 App)           │
+│                                         │
+│  ├─ HTTP Client → localhost:4693        │
+│  ├─ 悬浮窗显示                          │
+│  ├─ AI 决策引擎                         │
+│  └─ 自动操作 (无障碍服务)               │
+└─────────────────────────────────────────┘
+```
+
+### 实施步骤
+
+#### Step 1: APK 解包
+```bash
+apktool d jp.co.cygames.umamusume.apk -o umamusume_decoded
+```
+
+#### Step 2: 重命名原始 libmain.so
+```bash
+cd umamusume_decoded/lib
+for arch in arm64-v8a armeabi-v7a x86_64; do
+  if [ -f "$arch/libmain.so" ]; then
+    mv "$arch/libmain.so" "$arch/libmain_orig.so"
+  fi
+done
+```
+
+#### Step 3: 放入代理 libmain.so
+```bash
+# Carrotless 预编译库 或 自己编译的代理库
+cp proxy_libmain-arm64-v8a.so umamusume_decoded/lib/arm64-v8a/libmain.so
+cp proxy_libmain-armeabi-v7a.so umamusume_decoded/lib/armeabi-v7a/libmain.so
+```
+
+#### Step 4: 注入 Hook 代码 + IPC Server
+两种选择：
+
+**A. 直接用 Hachimi-Edge Android**
+Hachimi 本身支持 Android，它的 Zygisk 模块只是注入方式的区别。可以将 Hachimi 的核心逻辑改为通过 libmain.so 代理注入：
+- Hachimi 已有 IL2CPP Hook（63 个点）
+- Hachimi 已有 IPC（端口 4693，tiny_http）
+- 只需把注入方式从 Zygisk → libmain.so 代理
+
+**B. 自定义轻量 Hook + IPC**
+如果只需要数据通信，不需要翻译功能：
+```rust
+// 代理 libmain.so 的核心逻辑
+#[no_mangle]
+pub extern "C" fn JNI_OnLoad(vm: JavaVM, reserved: *mut c_void) -> jint {
+    // 1. 加载原始库
+    let orig = dlopen("libmain_orig.so", RTLD_NOW);
+    let orig_jni_onload = dlsym(orig, "JNI_OnLoad");
+    
+    // 2. 启动 IPC Server (后台线程)
+    std::thread::spawn(|| {
+        let server = tiny_http::Server::http("127.0.0.1:4693");
+        for request in server.incoming_requests() {
+            handle_request(request);  // 返回游戏状态 JSON
+        }
+    });
+    
+    // 3. 延迟 Hook IL2CPP（等 Unity 初始化完成）
+    std::thread::spawn(|| {
+        sleep(Duration::from_secs(5));  // 等待 il2cpp_init
+        hook_il2cpp_methods();          // Hook 目标方法
+    });
+    
+    // 4. 转发到原始 JNI_OnLoad
+    orig_jni_onload(vm, reserved)
+}
+```
+
+#### Step 5: 重打包 + 签名
+```bash
+apktool b umamusume_decoded -o umamusume_patched.apk
+zipalign -v 4 umamusume_patched.apk umamusume_aligned.apk
+apksigner sign --ks debug.keystore --ks-pass pass:android \
+    umamusume_aligned.apk -o umamusume_signed.apk
+```
+
+#### Step 6: uma-helper 连接 IPC
+```kotlin
+// 你的辅助 App 连接游戏内 IPC
+val client = OkHttpClient()
+val request = Request.Builder()
+    .url("http://127.0.0.1:4693/state")

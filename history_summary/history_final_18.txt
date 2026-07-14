@@ -1,0 +1,80 @@
+================================================================================
+赛马娘 AI 项目 完整历史总结 (Part 18)
+================================================================================
+
+================================================================================
+赛马娘 AI 项目 完整历史总结 (Part 15/17)
+================================================================================
+
+--- 文件: 6a4fe2b28afe057011d0bafd_1783620273510_transfer dock_text_20260710020404.txt ---
+{"requested":"ObscuredSingleModeRamenCommandInfo","found":"ObscuredSingleModeRamenCommandInfo","fields":{"total":3,"fields":[{"name":"<CommandType>k__BackingField","offset":16,"class":"ObscuredSingleM...[truncated]
+
+--- 文件: 6a4fe2b293b7cbbe2f107bf6_1783620273547_transfer dock_text_20260710020346.txt ---
+{"requested":"WorkSingleModeHomeInfoData","found":"WorkSingleModeHomeInfoData","fields":{"total":9,"fields":[{"name":"CommandInfoArray","offset":16,"class":"WorkSingleModeHomeInfoData"},{"name":"<Race...[truncated]
+
+--- 文件: 6a4fe2b2c2f546f92fa545e5_1783620273473_transfer dock_text_20260710020416.txt ---
+{"requested":"EquipSupportCard","found":"EquipSupportCard","fields":{"total":6,"fields":[{"name":"<Position>k__BackingField","offset":16,"class":"EquipSupportCard"},{"name":"<SupportCardId>k__BackingF...[truncated]
+
+--- 文件: 6a4fe2b2e575a90d968c0cf5_1783620273563_transfer dock_text_20260710020339.txt ---
+{"requested":"SingleModeCommandInfoData","found":"SingleModeCommandInfoData","fields":{"total":7,"fields":[{"name":"<CommandType>k__BackingField","offset":16,"class":"SingleModeCommandInfoData"},{"nam...[truncated]
+
+--- 文件: 6a50190b93b7cbbe2f10b313_1783634187413_transfer dock_text_20260710055616.txt ---
+{"version":"3.24.8","month":444444,"half":444444,"scenario":"Ramen","chara_id":105502,"stats":{"speed":124,"stamina":106,"power":167,"guts":159,"wiz":132,"vital":100,"max_vital":100,"motivation":"Norm...[truncated]
+
+--- 文件: 6a501a1f93b7cbbe2f10b4dc_1783634463170_transfer dock_text_20260710060045.txt ---
+{"summary":{"version":"3.24.8","month":444444,"half":444444,"scenario":"Ramen","chara_id":105502,"stats":{"speed":124,"stamina":106,"power":167,"guts":159,"wiz":132,"vital":100,"max_vital":100,"motiva...[truncated]
+d03c2e5173000000 a0d539a574000000
+70d539a574000000 40d539a574000000
+10d539a574000000 1cc806001cc80600
+0100000000000000 0000000000000000
+e0d439a574000000 4032b6ac74000000
+b0d439a574000000 60d639a574000000
+901bc65073000000 80d439a574000000
+1cc806001dc80600 0100000000000000
+0000000000000000 5021f6a574000000
+50d439a574000000 20d439a574000000
+8080fdad74000000 1cc806001cc80600
+0100000000000000 000000001cc80600
+30c9060001000000 0000000000000000
+6020f6a574000000 30c001dc6b000000
+d700000002000000 01000000d7000000
+"}}...
+
+--- 文件: 6a501cf18e37857fdf9f5071_1783635184544_transfer dock_text_20260710061222.txt ---
+{"version":"3.24.9","month":4,"half":2,"scenario":"Ramen","chara_id":105502,"stats":{"speed":132,"stamina":106,"power":167,"guts":159,"wiz":161,"vital":100,"max_vital":100,"motivation":"Normal","skill...[truncated]
+
+--- 文件: 6a51a2a61ea6d921ccd3f6f0_1783734950213_transfer dock_text_20260711092000.txt ---
+赛马娘 il2cpp 全量逆向 — 完整数据
+libil2cpp.so (209MB) + global-metadata.dat (44MB, v31, 388,752 strings)
+提取时间: 2026-07-11
+一、全部类名 (11,499个)
+Gallop|A2UAlphaReceiver
+Gallop|A2UHonorViewer
+Gallop|A2UShaderReplacer
+Gallop|AES256Crypt
+Gallop|AbstractJsonSaveDataContainer
+Gallop|AbstractMasterData
+Gallop|AbstractMasterDatabase
+Gallop|AbstractMiniEventButtonEntity
+Gallop|AbstractPartsItemExchangeTopItem
+Gallop|AbstractPartsSingleModeMainViewTrainingFooter
+Gallop|AbstractPartsSingleModeMainViewTrainingFooterViewModel
+Gallop|AbstractPartsSingleModeResultTrainingChallenge
+Gallop|AbstractSaveDataContainer
+Gallop|AbstractSingleModeMainScenarioController
+Gallop|AbstractSingleModeMainTrainingResultMassageService
+Gallop|AbstractSingleModeMainViewHeaderCommonModel
+Gallop|AbstractTargetSwitcher
+Gallop|AccountChainDisconnectRequest
+Gallop|AccountChainDisconnectResponse
+Gallop|AccountChainDisconnectTask
+Gallop|AccountDefine
+Gallop|AccountDeletionCancelRequest
+Gallop|AccountDeletionCancelResponse
+Gallop|AccountDeletionCancelTask
+Gallop|AccountDeletionRequestRequest
+Gallop|AccountDeletionRequestResponse
+Gallop|AccountDeletionRequestTask
+Gallop|AccountSteamChainDisconnectRequest
+Gallop|AccountSteamChainDisconnectResponse
+Gallop|AccountSteamChainDisconnectTask

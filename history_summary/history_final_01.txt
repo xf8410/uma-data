@@ -1,0 +1,308 @@
+================================================================================
+赛马娘 AI 项目 完整历史总结 (Part 1)
+================================================================================
+
+================================================================================
+赛马娘 AI 项目 完整历史总结 (Part 2/17)
+================================================================================
+
+
+- **Name:** 未知
+- **What to call them:** 用户 / 暂未确认
+- **Pronouns:** _(未知)_
+- **Timezone:** Asia/Shanghai
+- **Notes:** 纯安卓端用户，不用 PC，**不用 Termux**（Termux 兼容性差一直损坏，这就是项目存在的原因）。所有操作必须在游戏进程内（hlpatch SO）或 juece App 内完成。沟通风格极简，一句话给需求，不等客套。对隐私敏感——会追问信息来源。对 Rust 编译器规则理解很深，能精准定位 usize vs i32 类型不匹配等问题。后期开始用精确步骤清单下任务（12步/14步格式），期望严格执行不发挥。对日文马娘译名要求高——会纠正音译错误，要求按社区通用意译（如目白家七姐妹、富士奇迹、八重无敌等）。对"穷举搜索"期望高覆盖——10个结果不够，要35+组关键词×10条。
+
+## Context
+
+- 在开发赛马娘（ウマ娘 Pretty Derby）辅助工具 **uma-juece**（https://github.com/xf8410/uma-juece）
+- **已解决（2026-06-28）**：利用 Hachimi mod 已有的 Hook 接口实现通信，不需要自己注入
+- uma-juece 架构：纯 HTTP 客户端，从 localhost:18765 拉取 Hachimi URA Plugin 暴露的 JSON 数据，渲染到悬浮窗
+- 关键风险：游戏版本更新会导致 IL2CPP 偏移变化，Hachimi 需重新适配；资源加密（CAT/CATX）不受剧本更新影响
+- 关联项目：Hachimi（https://hachimi.noccu.art）、Hachimi-Edge（https://github.com/EtherealAO/Hachimi-Edge）
+- 当前版本：v3.24.16，gains/evaluation/kizuna 数据管道打通，正在采集训练数据准备 ML 模型。新增 WinSaddleAnalyzer(/saddle-analysis) 端点。
+
+---
+
+The more you know, the better you can help. But remember — you're learning about a person, not building a dossier. Respect the difference.
+
+--- 文件: TOOLS.md ---
+# TOOLS.md - Local Notes
+
+Skills define _how_ tools work. This file is for _your_ specifics — the stuff that's unique to your setup.
+
+## 铁律：纯安卓端
+
+**用户不用 PC、不用 Termux、不用 adb、不用任何游戏外的工具。** Termux 兼容性差一直损坏，这正是项目存在的原因。所有数据操作必须：
+- 在 hlpatch SO 里做（IL2CPP 内存读 + MDB SQL 查 + HTTP 端点暴露）
+- 在 juece App 里做（HTTP 拉取 + 浮窗渲染）
+
+绝对不要给用户脚本让用户跑——用户跑不了。要扒数据就加 SO 端点，要展示就加 juece 按钮。
+
+## What Goes Here
+
+Things like:
+
+- Camera names and locations
+- SSH hosts and aliases
+- Preferred voices for TTS
+- Speaker/room names
+- Device nicknames
+- Anything environment-specific
+
+## Examples
+
+```markdown
+### Cameras
+
+- living-room → Main area, 180° wide angle
+- front-door → Entrance, motion-triggered
+
+### SSH
+
+- home-server → 192.168.1.100, user: admin
+
+### TTS
+
+- Preferred voice: "Nova" (warm, slightly British)
+- Default speaker: Kitchen HomePod
+```
+
+## Why Separate?
+
+Skills are shared. Your setup is yours. Keeping them apart means you can update skills without losing your notes, and share skills without leaking your infrastructure.
+
+---
+
+Add whatever helps you do your job. This is your cheat sheet.
+
+## z-ai CLI 工具用法
+
+### 网页搜索
+```bash
+z-ai function -n web_search -a '{"query": "关键词", "num": 10}' -o /tmp/result.json
+```
+
+### 网页读取
+```bash
+z-ai function -n page_reader -a '{"url": "https://example.com"}' -o /tmp/result.json
+```
+
+### 解析网页内容
+GitHub 页面 HTML 噪音很大，直接提取 README：
+```python
+import re, html
+# 从 HTML 中提取 article.markdown-body
+readme = re.search(r'<article[^>]*class="markdown-body[^"]*"[^>]*>(.*?)</article>', text, re.DOTALL)
+readme = re.sub(r'<[^>]+>', ' ', readme.group(1))
+readme = html.unescape(readme)
+readme = re.sub(r'\s+', ' ', readme).strip()
+```
+
+### GitHub 源码抓取经验
+- **raw.githubusercontent.com** 比 GitHub API 更可靠：直接拿纯文本，不用剥 HTML
+- GitHub Trees API `recursive=1` 通过 page_reader 调用时常不生效（只返回顶层），需逐层钻取 subtree
+- page_reader 返回的 JSON 结构：`data.html` 内是 `<pre>` 包裹的纯文本，用 `re.sub(r'<[^>]+>', '', html)` 清洗即可
+- 但 `<` `>` 等字符会被 HTML 转义，Java 代码中的泛型 `List<String>` 会被吃掉，比较运算符也会丢失——分析逻辑时注意这一点
+
+## Rust 交叉编译经验（hlpatch URA Plugin）
+
+### CI 编译失败常见原因
+- `sed` 全局替换会搞坏 if-else 路由代码 — 只用 Edit 精确替换
+- `handle_http` 返回 `()` — 不能 `return String`，要用 if/else 表达式返回值
+- `__builtin___clear_cache` 是编译器内置函数，不能 `extern "C"` 声明 — 用 `core::arch::asm!`
+- `ura_log` 是 `unsafe fn` — 在 `catch_unwind` 的 `unwrap_or_else` 闭包里要加 `unsafe { }`
+- 常量类型 `usize` vs `i32` — 指针 `.add()` 要求 `usize`，改常量为 `i32` 会导致旧代码编译失败
+- 两种结构用不同常量名 — `PARAMS_INCDEC_*_OFF`(usize, plain) vs `PARAMS_INCDEC_DATA_*_OFF`(i32, ObscuredInt)
+
+### IL2CPP 内存布局经验
+- `List<T>` 和 `T[]` 内存结构不同：
+  - `List<T>` +0x10 = `_items`(T[] ptr), +0x18 = `_size`(Int32), +0x1c = `_version`
+  - `T[]` +0x18 = `max_length`(usize), +0x20 = first element
+- `ObscuredInt` inline 占 20 bytes: key(4) + hidden(4) + inited(4) + fake(4) + fakeActive(4)
+- `read_obscured_int_at(obj, off)` 读 key^hidden 解密
+- `read_ptr_at(obj, off)` 读指针
+- `read_int_at(obj, off)` 读 plain int32
+
+### GitHub Actions CI
+- 获取编译错误日志：`curl -sL -H "Authorization: token xxx" "https://api.github.com/repos/xxx/actions/jobs/JOB_ID/logs" | grep -i 'error'`
+- 版本号同步 5 处：Cargo.toml + lib.rs注释 + JSON模板 + GUI heading + 加载通知
+
+## Git LFS 文件下载（无 git-lfs 命令时）
+```python
+import urllib.request, json, hashlib
+# 1. 从 .gitattributes 找 LFS 规则
+# 2. 从 LFS pointer 文件读 oid 和 size
+# 3. 通过 LFS batch API 下载
+url = f'https://github.com/{repo}.git/info/lfs/objects/batch'
+req_data = json.dumps({'operation':'download','transfers':['basic'],
+    'objects':[{'oid':oid,'size':size}]}).encode()
+req = urllib.request.Request(url, data=req_data, headers={
+    'Content-Type':'application/vnd.git-lfs+json',
+    'Accept':'application/vnd.git-lfs+json'})
+resp = urllib.request.urlopen(req)
+dl_url = json.loads(resp.read())['objects'][0]['actions']['download']['href']
+urllib.request.urlretrieve(dl_url, fname)
+# 4. 验证 SHA256
+```
+- split APK 下载可能不完整（HTTP截断），必须验证 SHA256
+
+## APK/ZIP 解析经验
+- base.apk 可能缺少 EOCD（End of Central Directory），Python zipfile 和 unzip 都无法打开
+- 解决：手动解析 local file header（PK\x03\x04），逐个读取 entry
+- global-metadata.dat 被 Cygames 加密，不在 APK 中（需运行时 Zygisk-Il2CppDumper）
+- master.mdb 运行时从服务器下载，不在 APK 中
+- libil2cpp.so 中游戏类名被 metadata 加密，SO 字符串搜索只能找到 Unity 引擎层符号
+
+## IL2CPP Method Dump 格式
+```json
+{
+  "ok": true, "total_classes": 27695, "total_methods": 160909,
+  "classes": [
+    {"class":"ClassName","ns":"Gallop","is_enum":false,
+     "method_count":5,"methods":[
+       {"name":"get_Field","addr":"0x...","params":0,"return_type":"type_19","static":false}
+     ]}
+  ]
+}
+```
+- method 是 dict 不是字符串，提取名称用 `m['name'] if isinstance(m, dict) else str(m)`
+
+### 反汇编查询经验
+- index.json 的 functions 是 `[file_addr_str, size, il2cpp_addr_str]` 列表，177,385条
+- il2cpp 方法表地址(codegen)和实际代码入口地址可能差几字节(0x4~0x14)，找最近匹配
+- 查找流程: IL2CPP method dump 拿到 il2cpp_addr → 在 functions 列表里找第三列匹配(或最近) → 得到 file_addr+chunk_file → grep chunk_XXX.asm
+- chunk 的 start_vaddr 是文件虚拟地址起点，file_addr = start_vaddr + offset_in_chunk
+- IL2CPP List<T> 内存布局: +0x10 = _items(指针), +0x18 = _size(int32), +0x1c = _version
+- `bl #0xXXXXXXX` 是函数调用，`adrp+ldr` 对是加载全局变量/常量
+- 静态分析能看到客户端查表逻辑(GetRelationPoint 查 MDB 字典)，但看不到服务器端概率表
+
+### 网页内容提取经验
+- page_reader 返回 JSON: `data.html` 是原始 HTML
+- `<pre>` 标签内容用 `re.search(r'<pre[^>]*>(.*?)</pre>', text, re.DOTALL)` 提取后 `html.unescape`
+- Next.js 站点(sppennen wiki/U-tools)的正文内容混在大量 JS chunk 里，用 `re.sub(r'<[^>]+>', '\n', raw)` + 按关键词过滤有效行
+- raw.githubusercontent.com/master/ 比 /main/ 更可能成功(老项目用 master 分支)
+
+
+============================================================
+二、长期记忆（MEMORY.md）
+============================================================
+
+============================================================
+三、每日笔记搜索结果
+============================================================
+
+============================================================
+四、hlpatch 仓库完整 commit 历史
+============================================================
+
+3b407c1 2026-07-14 fix: support_position 是 String 不是 Option<i32> — 用 partner_id 代替
+301abe7 2026-07-14 feat: partners 输出加 partner_type+name — 照 PC 版小黑板 personType 映射
+4c89eb0 2026-07-14 feat: /summary 崩溃诊断点 + year/turn + /action/latest + last_action in push
+8e869d4 2026-07-14 ci: workflow paths 过滤 — 文档push不触发SO构建+Release不覆盖已有tag
+7fbf0ec 2026-07-14 docs: add weekly development review questions
+3083922 2026-07-13 fix: column_count 返回 usize 不需要 unwrap_or；null→null_mut 修复类型不匹配
+f967668 2026-07-13 fix: 修复 read_inherit_compat 编译错误
+d358b9e 2026-07-13 feat: /debug/mdb_schema_dump — 一键扒取全部表名+schema+关键表前20行样本
+4613b71 2026-07-13 feat: /mdb/dl_batch — 按首字母批量下载 MDB 表数据为 JSON 文件
+8b6428a 2026-07-13 docs: 二进制文件完整分析 — libil2cpp(209MB,177K函数)/metadata(44MB,40K类)/libnative(Tempest+SQLite+mbedTLS)/libunity/libcyspring/classes.dex 全覆盖
+3bccc61 2026-07-13 feat: WinSaddleAnalyzer /saddle-analysis — 读取育成马胜鞍+相性加成群组+种马胜鞍交叉对比
+c8a1895 2026-07-13 data: 因子数据交叉验证 — MDB已有效果值/相性阈值 vs 社区实测概率数据(发动率/获得率/保底)
+8c2c2b4 2026-07-13 data: 全社区网站穷举索引(215站/35组关键词) + 因子继承机制完整研究
+b87d3fe 2026-07-12 data: 因子继承机制完整研究 — 保底6★40%/12★100% + 基础继承率 + 白因子概率 + 10个关键网站
+0e637ea 2026-07-12 fix: current_ver 同步 PLUGIN_VERSION — 修复更新检查永远认为需要更新的问题
+0f664be 2026-07-12 fix: 全面校对中文译名 — 富士奇迹/菱曙/玛雅诺大炮/卡伦酱/八重无敌/北方樽前/杜拉门特等20+处修正
+5d50f27 2026-07-12 data: 全马娘pairwise相性计算 — 8515对2者间+366145组3者间 含群组明细/分布/最佳搭档
+3b2d545 2026-07-12 data: 相性分组逻辑完整清单 — 中文译名(目白家七姐妹等)不音译
+e4b4f95 2026-07-12 data: 相性分组逻辑完整清单 — 8/7/2/1pt全组+计算公式+修正说明
+1fb6f87 2026-07-12 docs: 相性精确计算公式 — 关系性群组标签求和(7pt适性/2pt设定/1pt现实) 社区实测验证
+38551ab 2026-07-12 fix: 修正相性说明 — type101-106不是支援卡属性分组是手动定义角色关系群组
+bafcc28 2026-07-12 docs: 更新仓库索引 — 61个文件/619张MDB表/179K函数/完整覆盖
+00ce92b 2026-07-12 data: 高相性组合排列txt — 8点28组(春乌拉拉万能)/7点10组/2点150组+种马策略
+eec6fe4 2026-07-12 data: 继承系统全量导出 — 相性(3037+7249成员)+种马(7450)+因子(2517)+效果(6508)+等级阈值
+f3d1084 2026-07-12 data: 技能全量(2099)+因子全量(2517)+因子效果(6508)+继承条件+相性+种马 完整导出
+801a037 2026-07-12 fix: 排除2张91xxxx占位条目 — 正常258张卡/最多3皮确认
+c876e48 2026-07-12 data: 马娘全数据 — 169角色/260换皮卡/805星级属性(★3-5) 完整导出
+3da1e38 2026-07-12 docs: 服务器请求拦截完整分析 — 三个Hook点已实现+SSL不需绕过+MessagePack待解码
+8161174 2026-07-12 docs: 反作弊+插件注入完整分析 — 241个IL2CPP API导出+_Cyan.dll+Play Integrity+注入路径
+0b32289 2026-07-12 docs: APK完整分析 — libnative.so(curl+sqlite+mbedTLS)+libcyspring(布料物理)+classes.dex(纯Android框架)
+6ab1582 2026-07-12 data: SO literal pool 精确浮点常量提取 — 316个唯一值(adrp+ldr追踪)
+6e4b47a 2026-07-12 data: MDB全量导出 — 619张表/524,170行 (分3文件 a-g/h-r/s-z)
+a9a129f 2026-07-12 data: 全剧本表(74张)+游戏模式表(80+张) — 6个剧本完整+champions+team+ultimate+collect+crane
+934eaef 2026-07-12 data: IL2CPP全类分类(27K类/160K方法)+MDB全表目录(619表)+动画/语音/因子/技能数据
+775e1e3 2026-07-12 data: 三文件最终扒光状态 — 支援卡全属性+19K事件+拉面杯完整
+8cc8121 2026-07-12 data: 支援卡全属性(541张)+事件全量(19K条)+拉面杯完整数据 导出
+d2b6333 2026-07-12 docs: 三个文件最终扒光状态 — 静态分析到达物理极限
+82f1e37 2026-07-12 data: MDB关键表完整导出 — 支援卡/训练/NPC/拉面杯/心情倍率 (14张表)
+a8490bc 2026-07-12 docs: 训练执行完整调用链 — 训练增益是服务器端计算！客户端纯存储显示
+365300e 2026-07-12 docs: 完整逆向分析总结 — 98MB代码全反汇编/179K函数/所有映射确认
+bacd7c9 2026-07-12 docs: IL2CPP关键类方法+地址索引 (16个核心类)
+f9f0468 2026-07-12 docs: SO完整反汇编报告 — 177K函数/浮点分析/训练函数/调用图
+9ad5342 2026-07-12 docs: SO完整反汇编索引 — 177K函数/142K浮点操作/291万调用边
+13cd0f2 2026-07-12 docs: 训练增益完整公式确认 — 心情×干劲×友情×训练加成×人头
+8d27860 2026-07-12 docs: SO深度反汇编分析 — 心情倍率不在任何游戏文件中以常量存在
+568735b 2026-07-12 docs: SO反汇编分析 — 比赛心情倍率确认+训练基础值+函数地址映射
+ed5d2c6 2026-07-12 docs: 全支援卡特殊固有效果清单 (type 30,102-122 共44张卡)
+cc4528b 2026-07-12 docs: 支援卡固有效果完整分析 — 三层效果体系 + 特殊条件固有
+bd88913 2026-07-12 docs: 心情/逛街/伙伴/彩圈完整机制分析 (metadata+UmaAi)
+a2013ad 2026-07-12 docs: 完整支援卡效果类型映射 (global-metadata.dat + UmaAi 交叉验证)
+c0e999b 2026-07-12 fix: card-type-aware shining logic for friend/group cards
+84c15d8 2026-07-12 fix: dynamic bond threshold + is_unique_active + is_shining split
+c5f96fa 2026-07-12 docs: add INVOKE inventory to read_summary_inner_impl
+35c189d 2026-07-12 fix: eliminate duplicate get_EquipSupportCardArray invoke causing SIGSEGV
+7ce945f 2026-07-12 diag: pinpoint WorkSingleMode acquisition crash
+0c06438 2026-07-12 docs: 逆向工程工作报告 - 问题排查/验证过程/成功结果/遗留问题
+4d8519f 2026-07-12 fix: close command length read before guard
+8678a19 2026-07-11 fix: restore plugin identity and training length guard
+4992f21 2026-07-11 diag: derive version and trace summary native reads
+eeaa110 2026-07-11 release: bump plugin version to 3.24.12
+6768394 2026-07-11 Merge pull request #1 from xf8410/fix/shining-support-command-id-v2
+312aa71 2026-07-11 fix: use support card command_id for shining specialty
+425b5f7 2026-07-11 feat: 赛马娘v2.28.5全量逆向分析报告 (20+文件)
+a259758 2026-07-10 添加赛马娘 v2.28.5 APK 文件
+7f17f9e 2026-07-10 fix: map support card types to shining training
+b97e279 2026-07-10 feat: 训练彩圈判定 — 支援卡 specialty 归一化 + bond≥80 + specialty 匹配
+93c78af 2026-07-10 fix: separate plain and obscured params offsets
+0f28276 2026-07-10 fix: 训练收益读取 — ObscuredInt + TargetType 映射修正
+1cd57c8 2026-07-10 fix: _evaluationList 是 List 不是 Array — 修正读取方式
+5dd4a38 2026-07-10 cleanup: 删除 .bak 文件，加入 .gitignore
+625dce8 2026-07-10 v3.24.11: 训练伙伴诊断 + 羁绊读取重构
+3e4afb4 2026-07-10 feat: /debug/training_partners 只读诊断端点
+41d0898 2026-07-10 v3.24.10: 修复 Ramen gains 全空 — 根因找到
+48f85ac 2026-07-10 fix: E0308 — handle_http 返回 ()，不能 return String，改用 if/else 表达式
+661e13f 2026-07-10 fix: sed 替换搞坏了路由条件 — 恢复 /debug/paramsincdec 独立 if 块
+49eae45 2026-07-10 feat: /debug/ramengains 端点 — 诊断 Ramen gains 为空的原因
+ded9113 2026-07-10 fix: GUI heading 版本号同步到 v3.24.9
+e5b5d5e 2026-07-10 v3.24.9: month/half getter 修复 + rng_seed ObscuredInt
+66757e6 2026-07-10 fix: month/half 恢复 getter (计算属性无偏移) + rng_seed 改 ObscuredInt
+e8b704c 2026-07-10 fix: E0425 — cmd_elem_class 和 pid_class 引用已删除
+999df05 2026-07-10 v3.24.8: 全字段偏移量读取 + 新增 33 个 ML 字段
+fb02aa1 2026-07-10 fix: E0133 — ura_log 在 catch_unwind 闭包外调用需要 unsafe 块
+ee864ea 2026-07-10 fix: CI unclosed delimiter — 修复 catch_unwind 括号 + asm! cfg guard
+902dbdd 2026-07-10 fix: CI 编译失败 — __builtin___clear_cache → inline asm + 修复括号
+3ee0227 2026-07-10 v3.24.7: P0 修复 — catch_unwind + I-Cache flush
+61ebf09 2026-07-10 v3.24.6: P0+P1 修复 — hook 线程安全 + 魔法数字消除
+2899eff 2026-07-10 v3.24.5: EvaluationList 改用 read_field_value + 纯内存读取
+f380c1e 2026-07-09 v3.24.4: 修复闪退 — 回退 CommandInfoArray getter 调用
+99e273a 2026-07-09 v3.24.3: fix Ramen gains + 支援卡羁绊 + 数据管道补全
+a7413ed 2026-07-09 fix: 回滚错误的偏移修改，确认根因是 CommandInfoArray 获取方式
+48e308f 2026-07-09 fix: Ramen gains 全0 根因修复 — ObscuredInt 偏移错误
+a0572c2 2026-07-09 fix: Ramen gains 全0 + 支援卡羁绊读取
+0a51d4c 2026-07-09 v3.24.2: fix StoryManager.SetStory hook crash
+
+============================================================
+五、uma-juece 仓库完整 commit 历史
+============================================================
+
+c6d189d 2026-07-14 fix: updateStatFromSummary 需要 fullJson 参数获取 support_cards
+a5887e8 2026-07-14 feat: 伙伴显示用真实支援卡名称 — 从 uma_support_cards.json 查角色名
+37d5ce2 2026-07-14 feat: 伙伴显示照 PC 版小黑板格式 — 名称+羁绊+彩圈+Hint
+52e319f 2026-07-14 security: Token安全警告注释 — 标记APK反编译风险和长期方案
+5d6e3c6 2026-07-14 feat: workflow paths过滤 + 数据质量验证器 + session元数据
+964e8a7 2026-07-14 fix: v2.3补丁 — push+poll去重/is_appear兼容/102-105审计
+3951f3f 2026-07-14 feat: v2.3 — SO真实CommandId优先/动作来源元数据/shining保留-1/training_levels降级
+c56ae61 2026-07-14 fix: v2.2 — 跨年turn计算/不把Error写成动作/不伪造全0回合/新育成检测
+61fa4a7 2026-07-14 fix: DataCollector:830 编译错误 — optString default 参数类型不匹配
+2911af2 2026-07-14 fix: 三个问题 — 动作识别/buff黄问号/人头星星
+b01fc07 2026-07-14 fix: DataCollector v2.0 — 修复8个数据采集异常问题
+2e846aa 2026-07-14 i18n: 全部日语改为中文

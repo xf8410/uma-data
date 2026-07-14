@@ -1,0 +1,308 @@
+================================================================================
+赛马娘 AI 项目 完整历史总结 (Part 2)
+================================================================================
+
+================================================================================
+赛马娘 AI 项目 完整历史总结 (Part 3/17)
+================================================================================
+
+4bccb67 2026-07-13 fix: 修正比赛目标状态栏 — 用 MDB route_race 替代硬编码阈值
+ea31738 2026-07-13 feat: 比赛目标状态栏 + 拉面杯试食会 Gauge
+8a13ac2 2026-07-13 feat: 事件推荐面板 — EVT按钮实时监控事件，查MDB评分推荐选第N个
+d1d8551 2026-07-13 feat: EventLogger 抓包面板 — PKT按钮 toggle sniff + MessagePack 实时解码
+58497e0 2026-07-13 feat: 胜鞍分析面板 — 点「鞍」按钮展开/收起，显示G1胜鞍相性ボーナス+亲马一致标记
+c8c74df 2026-07-09 fix: DataCollector 补全所有训练数据字段
+6ce8da2 2026-07-09 fix: DataCollector 存储 support_cards (含 kizuna 羁绊值)
+68a3bd0 2026-07-09 security: 移除硬编码 GitHub token，改用 BuildConfig 注入
+144fece 2026-07-09 v1.24: 修复比赛误判+更新token+支持chara_id
+
+============================================================
+六、用户上传的历史文件
+============================================================
+
+--- 文件: 6a3bc6cce7aaa24f9787ade3_1782302411636_winhttp_dll_分析报告.txt ---
+================================================================================
+                    Hachimi winhttp.dll 完整逆向分析报告
+================================================================================
+
+文件信息
+--------
+文件名: winhttp.dll
+格式: PE32+ executable (DLL) (GUI) x86-64, for MS Windows
+大小: 21 MB
+所属项目: Hachimi (https://github.com/Hachimi-Hachimi/Hachimi)
+版本: v0.26.3-c63a372-dirty
+开发者: LeadRDRK, kairusds and contributors
+许可证: GPL-3.0-only
+编译语言: Rust
+构建者账号: C:\Users\micro\
+
+================================================================================
+一、项目定位
+================================================================================
+
+Hachimi 是赛马娘(Umamusume)PC客户端的社区Mod注入器。winhttp.dll 是其核心组件，
+通过 Windows DLL 代理机制（替换系统 winhttp.dll）注入到游戏进程中，实现：
+
+1. IL2CPP 运行时 Hook（读取/修改游戏内存数据）
+2. 翻译系统（UI翻译 + 剧情自动翻译）
+3. 游戏内覆盖层 GUI（基于 egui 的配置编辑器）
+4. 资源替换与修改
+5. IPC 进程间通信（端口 4693）
+
+================================================================================
+二、源代码结构（从 strings 还原的 src/ 路径）
+================================================================================
+
+┌─ src/lib.rs                           ← DLL入口
+│
+├─ src/core/                            ← 核心模块
+│  ├─ captions.rs                       ← 字幕/语音文本显示
+│  ├─ ext.rs                            ← 扩展工具
+│  ├─ gui.rs                            ← GUI覆盖层主逻辑
+│  ├─ interceptor.rs                    ← IL2CPP方法拦截器（Hook核心）
+│  ├─ ipc.rs                            ← IPC进程间通信
+│  ├─ plugin_api.rs                     ← 插件API（供外部扩展）
+│  ├─ sugoi_client.rs                   ← Sugoi翻译服务器客户端
+│  ├─ template.rs                       ← 翻译模板引擎
+│  ├─ template_filters.rs               ← 模板过滤器
+│  ├─ tl_repo.rs                        ← 翻译仓库管理
+│  └─ updater.rs                        ← 自动更新器
+│
+├─ src/il2cpp/                          ← IL2CPP交互层
+│  ├─ sql.rs                            ← SQLite数据库查询
+│  ├─ symbols.rs                        ← 符号解析
+│  ├─ utils.rs                          ← 工具函数
+│  │
+│  └─ hook/                             ← IL2CPP Hook点（按Unity DLL分组）
+│     │
+│     ├─ umamusume/                     ← ★ 赛马娘游戏专属Hook（63个文件）
+│     │  ├─ ApplicationSettingSaveLoader.rs  ← 游戏设置读写
+│     │  ├─ AudioManager.rs                  ← 音频管理器
+│     │  ├─ ButtonCommon.rs                  ← 通用按钮
+│     │  ├─ CameraData.rs                    ← 摄像机数据
+│     │  ├─ CharacterNoteTopView.rs          ← 角色笔记页面
+│     │  ├─ DialogCommonBase.rs              ← 对话框基类
+│     │  ├─ DialogCommon/Data.rs             ← 对话框数据
+│     │  ├─ DialogManager.rs                 ← 对话框管理
+│     │  ├─ DialogMissionListItem.rs         ← 任务列表
+│     │  ├─ DialogObject.rs                  ← 对话框对象
+│     │  ├─ Director/LiveLoadSettings/       ← Live演出加载设置
+│     │  │  ├─ CharacterInfo.rs              ← 角色信息
+│     │  │  └─ RaceInfo.rs                  ← 比赛信息
+│     │  ├─ DownloadManager/                 ← 下载管理器
+│     │  │  ├─ BackgroundDownloadProgressUI.rs
+│     │  │  └─ DownloadProgressUIGame.rs
+│     │  ├─ FlashActionPlayer.rs             ← Flash动画播放器
+│     │  ├─ HomeViewController.rs            ← ★ 主页界面控制器
+│     │  ├─ HubViewControllerBase.rs         ← 主界面基类
+│     │  ├─ ImageCommon.rs                   ← 通用图片组件
+│     │  ├─ JukeboxBgmSelector.rs            ← 点唱机BGM选择
+│     │  ├─ JukeboxHomeTopUI.rs              ← 点唱机主页UI
+│     │  ├─ LiveTheaterInfo.rs               ← Live剧场信息
+│     │  ├─ LiveViewController.rs            ← ★ Live演出控制器
+│     │  ├─ MasterCharacterSystemText/       ← 角色系统文本
+│     │  ├─ MasterDataUtil.rs                ← ★ 主数据工具（全局数据查询）
+│     │  ├─ MasterJukeboxSetlistMusicData/   ← 点唱机歌单
+│     │  ├─ MasterSingleModeTurn/            ← ★ 育成回合数据
+│     │  ├─ Notification.rs                  ← 通知系统
+│     │  ├─ PartsCharaMessageBase.rs         ← 角色消息组件
+│     │  ├─ PartsCommonHeaderTitle/          ← 通用标题头
+│     │  ├─ PartsNickNameListItem.rs         ← 昵称列表
+│     │  ├─ PartsNickNameRibbon.rs           ← 昵称缎带
+│     │  ├─ PartsRaceAnalyzeRaceEventListItem.rs  ← ★ 比赛分析事件
+│     │  ├─ PartsSupportCardImproveDetail.rs ← 支援卡强化详情
+│     │  ├─ RaceInfo.rs                      ← ★ 比赛信息
+│     │  ├─ SaveDataManager.rs               ← 存档管理
+│     │  ├─ SceneManager.rs                  ← ★ 场景管理（页面切换）
+│     │  ├─ StoryParamChangeEffect.rs        ← 剧情特效
+│     │  ├─ StoryRaceTextAsset.rs            ← 剧情比赛文本
+│     │  ├─ StoryTimelineBlockData.rs        ← 剧情时间轴块
+│     │  ├─ StoryTimelineCharaTrackData.rs   ← 角色轨道数据
+│     │  ├─ StoryTimelineClipData.rs         ← 时间轴剪辑
+│     │  ├─ StoryTimelineTextClipData/       ← 文本剪辑
+...
+
+--- 文件: 6a4fc87a8afe057011d0874e_1783613561888_transfer ---
+...
+
+--- 文件: dock_text_20260710000151.txt ---
+...
+
+--- 文件: 6a4fc87a8e37857fdf9ebe47_1783613561901_心情验证工作总结_20260710.txt ---
+============================================
+  心情验证工作总结
+  日期：2026年7月10日
+============================================
+
+一、背景与目标
+──────────────────────────────
+找到赛马娘IL2CPP代码中硬编码的训练心情加成倍率（やる気系数），
+确认每个心情等级对应的浮点系数：
+  绝不调 Min=1    → 0.8
+  不调   Low=2    → 0.9
+  普通   Middle=3 → 1.0
+  好调   High=4   → 1.1
+  绝好调 Max=5    → 1.2
+（Random=0 不参与训练）
+
+核心要求：不能猜测，必须从反编译代码中找到。
+
+二、已尝试的搜索路线
+──────────────────────────────
+
+【Phase 1】关键词搜索 — 全部失败
+  - Motivation / GainParameter / CalcTraining / TrainingGain / CalcGain / CalcParam
+  - 结论：方法名不以任何可猜测的关键词命名
+
+【Phase 2】反汇编追踪 — 死胡同
+  - ExecTraining 是调度方法，63个BL调用，0个数学运算
+  - 子函数0x7336296890是数据提取函数，不做计算
+  - 结论：计算逻辑在更深的调用链中，无法通过追踪定位
+
+【Phase 3】暴力全扫 — 被放弃
+  - v3.22.87新增 dump_all_methods + disassemble_addr 端点
+  - S字母就2525类/20308方法，数据量过大不可行
+
+【Phase 4】浮点常量搜索 — 进行中
+  - 使用 /il2cpp/search_float 搜索0.6/0.8/0.9/1.1/1.2的f32编码
+  - 1.2 → 0命中（可能由1.0+0.2计算得出）
+  - 其余命中地址均被排除为CriWare音频引擎数据
+
+三、浮点搜索详细结果
+──────────────────────────────
+
+搜索值  | 命中地址            | 验证结果
+0.6     | 0x6bd8055494        | ❌ CriWare音频（连续数组中含采样率60.0）
+0.6     | 0x6bd8088a9c        | ❓ read_mem失败，未验证
+0.8     | 0x6bd8055498        | ❌ CriWare音频（与0.6差4字节，同一数组）
+0.8     | 0x6bd807aedc        | ❌ CriWare音频
+0.9     | 0x6bd807adf0        | ❌ CriWare音频
+1.1     | 0x6bd8068074        | ❓ read_mem失败，未验证
+1.2     | 无                  | 0 hits
+
+四、当前卡点
+──────────────────────────────
+两个未验证地址（0x6bd8088a9c、0x6bd8068074）read_mem均失败，
+可能落在不可读的代码段页面。
+
+五、已提出的下一步方案
+──────────────────────────────
+1. 对 0x6bd8068074 用 /il2cpp/disassemble_addr 反编译看周围代码
+2. 换整数搜索：用 /il2cpp/search_int 搜 60/80/90/100/110
+   （系数×100，看是否连续出现在同一结构体/数组中）
+3. 如果整数也失败，可能需要搜索 0.6/0.8/0.9/1.0/1.1 的 f64 编码
+
+六、工具端点
+──────────────────────────────
+插件基础URL：http://127.0.0.1:18765
+关键端点：
+  /il2cpp/search_float   — 浮点常量搜索
+  /il2cpp/search_int     — 整数常量搜索
+  /il2cpp/read_mem       — 内存读取
+  /il2cpp/disassemble_addr — 按地址反汇编
+  /il2cpp/search_methods — 方法名搜索
+  /il2cpp/dump_all_methods — 暴力dump类方法
+
+七、关键结论
+──────────────────────────────
+1. 心情系数计算方法不以任何可猜测关键词命名
+2. 1.2（绝好调）可能不是独立常量，由1.0+0.2计算得出
+3. 浮点搜索命中率高但需排除音频/图形等非游戏逻辑数据
+4. 如果整数搜索也失败，系数可能来自MasterData配置表而非硬编码...
+
+--- 文件: 6a4fc87a8e37857fdf9ebe48_1783613561818_完整开发叙述_20260710.txt ---
+================================================================================
+        赛马娘AI助手 完整开发叙述
+        日期：2026年7月10日
+================================================================================
+
+本文档以"做了什么、怎么做的、遇到什么错、怎么修的"为主线，
+按时间顺序叙述，不省略步骤。
+
+================================================================================
+第一章：插件基础架构确立
+================================================================================
+
+一、端口18765和18766的由来
+──────────────────────────────────
+
+【问题】插件（游戏进程内）和浮窗App之间需要通信，怎么通信？
+
+【决策过程】
+1. Hachimi框架的插件API（hachimi_init_v3）允许插件注册自己的逻辑
+2. 插件用Rust的tiny_http库在游戏进程内启动HTTP Server
+3. 端口选择18765：随意选的高位端口，避免冲突；如果被占用就换
+4. 浮窗App（uma-juece）同样启动HTTP Server在18766端口
+5. 两个端口都是127.0.0.1本地回环，不暴露到外网，安全性OK
+
+【确认方式】
+- 手机浏览器访问 http://127.0.0.1:18765/health → 返回 {"status":"ok"} 证明插件HTTP服务正常
+- 手机浏览器访问 http://127.0.0.1:18766/health → 同样验证App服务正常
+- 两个端口互不冲突，各自独立运行
+
+二、推送架构演进
+──────────────────────────────────
+
+【v1.0 轮询时代】
+- App每2秒向插件18765端口发GET请求拉数据
+- 问题：轮询间隔固定，数据更新不及时；空轮询浪费CPU
+
+【v1.7 推送重构】
+- 插件端加后台线程，每1秒读一次游戏内存
+- 生成summary hash比对，只有数据变化时才POST到App 18766端口
+- App端完全移除轮询代码，改为被动接收推送
+- 新增配置文件 /data/local/tmp/uma_hook_config.json 允许用户自定义推送地址和间隔
+
+【推送线程闪退问题】
+- 原因：推送线程在游戏进程内，大量调用il2cpp_runtime_invoke（~130次/周期）
+  从非游戏主线程调用会导致SIGSEGV崩溃
+- 治疗过程见第二章
+
+【兜底轮询】
+- App端加5秒兜底：如果5秒内没收到推送，自动每2秒向18765/summary拉取
+- 防止推送链路断连导致浮窗卡死在"等待数据"
+
+================================================================================
+第二章：闪退问题全记录
+================================================================================
+
+一、ObscuredInt加密的发现
+──────────────────────────────────
+
+【问题】读取角色属性时，所有字段都返回奇怪的大数字（如444444）
+
+【排查过程】
+1. 用 /fields 端点dump出WorkSingleModeCharaData的字段列表
+2. 发现 _speed、_stamina、_hp、_motivation 等字段类型全是 ObscuredInt
+3. ObscuredInt是Cygames的反作弊加密：存储的是加密后的key，不是真实值
+4. 直接读内存拿到的是key（444444），必须调C# getter方法（如get_Speed()）才能解密
+
+【解决方案】v3.7.0
+- 改用 il2cpp_runtime_invoke 调用C# getter方法，让游戏自己解密
+- 代价：每次读取都要走il2cpp_runtime_invoke，性能开销大但数据正确
+
+二、il2cpp_runtime_invoke累积崩溃
+──────────────────────────────────
+
+【问题】访问 /summary 或 /training/predict 端点时游戏闪退
+        拉面杯（scenario 14）剧本下必崩
+
+【排查过程】v3.22.14 → v3.22.18
+1. v3.22.14：跳过拉面杯的getter调用 → 还在step47崩溃（"got ramen_ds"）
+2. v3.22.15：彻底跳过read_training_predict的ramen段 → 还在step47崩溃
+3. v3.22.16：跳过read_summary_inner的ramen段 → 更严重，闪退到桌面
+4. 加step日志追踪：发现崩溃点不在ramen段，而在buffs段
+
+【根因确认】
+- read_summary_inner() 到达buffs段前已累积约130次il2cpp_runtime_invoke调用
+- 从非游戏主线程大量调用il2cpp_runtime_invoke导致SIGSEGV崩溃
+- /debug/rameninfo 单独调用4次il2cpp_runtime_invoke不崩，因为次数少
+
+【调用统计】
+  Phase 1 (stats读取)     = 16次
+  Phase 1b (skills读取)   = ~31次
+  Phase 2 (training读取)  = ~81次
+  Phase 3-5 (支援卡等)     = 0-4次
+  到达buffs段前总计        = ~128-131次
+
