@@ -1,0 +1,6647 @@
+Android
+11394342
+__cxa_finalize
+__cxa_atexit
+__register_atfork
+malloc
+memcpy
+memcmp
+posix_memalign
+memset
+__errno
+sigsetjmp
+strlen
+syscall
+memmove
+opendir
+readdir
+system
+mprotect
+signal
+siglongjmp
+clock_nanosleep
+pthread_detach
+setsockopt
+pthread_getspecific
+pthread_setspecific
+realloc
+calloc
+hachimi_init_v3
+pthread_mutex_lock
+pthread_mutex_unlock
+getauxval
+pthread_key_create
+pthread_key_delete
+gettid
+getcwd
+lseek64
+dl_iterate_phdr
+munmap
+realpath
+readlink
+writev
+getenv
+clock_gettime
+strerror_r
+getsockname
+socket
+connect
+getsockopt
+pthread_attr_init
+pthread_attr_setstacksize
+sysconf
+pthread_attr_destroy
+pthread_create
+closedir
+unlink
+rename
+getrandom
+listen
+getaddrinfo
+gai_strerror
+freeaddrinfo
+getpeername
+__system_property_get
+strcmp
+getpid
+dlopen
+dlerror
+dlclose
+nanosleep
+gettimeofday
+strncmp
+strcspn
+strspn
+pthread_mutexattr_init
+pthread_mutexattr_settype
+pthread_mutex_init
+pthread_mutexattr_destroy
+pthread_mutex_destroy
+pthread_mutex_trylock
+utimes
+strrchr
+localtime_r
+memchr
+access
+ftruncate
+pwrite
+fchmod
+fchown
+geteuid
+mremap
+fprintf
+fflush
+pthread_rwlock_wrlock
+pthread_rwlock_unlock
+pthread_rwlock_rdlock
+fwrite
+libdl.so
+libm.so
+libc.so
+get_SkillIdArrayget_IsBurstReadyRSA_PKCS1_SHA512
+get_ScenarioFreeS:after_sm_classOwnedRevokedCert
+skill_data_arrayget_PlayingState
+il2cpp_get_class
+InvalidComponentNewSessionTicketPeerIncompatible
+get_ScenarioCook
+TsIllegalParameterRuA
+{invalid syntax}CertificateTypes
+CommandInfoArrayh
+_u/-invalid argument
+get_FeelingIndexGetRelationPoint.debug_macro.dwo
+]xEc7@{
+{"error":"null"}0123456789abcdef
+gui_ui_separatorcontent-encoding
+application/jsonJ
+@InvalidCrlNumber
+URA: Game ready!RSA_PKCS1_SHA256             at InvalidKeyUpdateEmptyTicketValue
+Game initializedAlertDescription.debug_types.dwocannot_be_a_baseIllegalEmptyList
+Game: Waiting...MissingExtensionProtocolVersions
+modnarodsetybdet
+get_HomeInfoDataget_CheckPointPt
+"?,?,?,?,?,?,?,?,
+FeelingInfoArraysignature_alg_idServerExtensions	
+DecryptionFailed
+ClientExtensions
+expand 32-byte k
+UnknownExtension
+interceptor_hookget_ScenarioLive
+uespemosarenegyl
+CapacityOverflowChangeCipherSpec
+RSA_PKCS1_SHA384KeyUpdateRequestm]
+SQLITE_AUTH_USERverification_alg
+0123456789ABCDEF
+UnrecognisedName
+HandshakeFailure
+hachimi_instanceinvalid dns name
+InconsistentKeys
+TrainedCharaDatastoryInfoListDic
+got_type
+min_bitsNoKeyLog
+Borrowed
+get_Halfrequired
+TooSmallexporterfragmenta header}
+Finished
+Bget_LiveEffectIdpassword
+?Ipv6Addr
+get_NameStorySetlocationexpected
+activate
+Ipv4Addr|
+KeyShare
+get_Fanstraining,
+get_FreeTooLargeMLKEM768finished
+Bget_TypeHpkeAead 
+tag_nameusername
+DUnknown6F
+contentsUnixTime
+SetStoryAllocErrMLKEM512
+get_Listget_Cook
+get_Gutsd
+NulError
+?S:skills"name":"
+get_Rankrelationcategory+
+scenarioextern "
+Z U-Kdi
+&&&&&&&&&#&&&&&&&&&
+7?0GC4M;,
+	D03?<
+5F%FFFAFFFFFFF/FFFFF+9;7-3)1?=
+,:H04DL 
+RPV3/5J^\1N
+qGN^7hqqq5qqqn9KqqqqqqqqqI"q
+acqqqqqqqqq
+,8D.2BF 
+)))))))))))))
+)))))))))))))))))))))))))))))))))))))))))))
+<:@0,24JH.8$"LFN>6(*&
+PBDR +
+&* .2,6$4
+&(",.*0$
+:>.JP@V4T,2N(<&DR`HL\d86l"fhXBZ*$
+:>.JP@V4T,2N(<&DR`HL\d86l"fhXBZ*$
+_k<}$w
+qqqq"qqqqq?qqqq7q
+(qFqLhb
+qqqqqqq/
+qqqq"qqqqq?qqqq7q
+(qFqLhb
+qqqqqqq/
+mmmmm;mmmm3m
+$mBmHd^
+mmmmmmm+
+Tf<x$r
+<$86<<<
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ (<@*<<
+:<<<<<
+CC)-!C+?=CCC#IK
+C	E%CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC	CC
+'/CG1CC
+ACCCCC
+Qt;Op5Y1hr
+fz7/)+
+#{"error":"class_not_found","name":"
+POST /data HTTP/1.1
+Host: 
+Content-Type: application/json
+Content-Length: 
+Connection: close
+{"field":"
+","count":
+,"sample_classes":[
+{"version":"3.22.91","arrays":[
+ /hall: List null or empty, size=
+*{"error":"skill_prepare_failed","detail":"
+{"requested":"
+","found":"
+","fields":
+,"methods":
+{"id":
+,"gid":
+,"sid":
+	,"ctype":
+,"cs1":
+,"gs1":
+,"si1":
+,"cs2":
+,"gs2":
+,"si2":
+{"type_1":
+	,"count":
+{"idx":
+,"cmd_id":
+,"cmd_type":
+,"params_ptr":"0x
+,"raw":{
+({"ok":true,"version":"3.22.91","table":"
+","columns":[
+],"row_count":
+	,"limit":
+,"offset":
+	,"rows":[
+"command_feeling_info":[
+ Scenario 
+	 getter '
+' found at 
+{"idx":
+,"key":
+,"val":
+	{"name":"
+	","ptr":"
+","count":
+,"hex":{
+*API sniff: DecompressResponse hooked at 0x
+'{"error":"github_api_failed","detail":"
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/idna-1.1.0/src/punycode.rs
++received unexpected handshake message: got 
+ when expecting 
+ (os error 
+invalid header '
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-0.23.42/src/conn.rs
+(subquery-%u)
+getcwd
+mremap
+API called with finalized prepared statement
+IsType
+SeekRowid
+Explain
+pragma_list
+origin
+no entry point [%s] in shared library [%s]
+sub-select returns %d columns - expected %d
+FILTER clause may only be used with aggregate window functions
+UNION ALL
+too many terms in ORDER BY clause
+table "%s" has more than one primary key
+views may not be indexed
+SCAN CONSTANT ROW
+UPDATE
+non-%s value in %s.%s
+RESTRICT
+temporary trigger may not have qualified name
+UPDATE "%w".sqlite_sequence set name = %Q WHERE name = %Q
+after rename
+implies_nonnull_row
+likely
+sqlite_version
+SQL logic error
+database is locked
+datatype mismatch
+porter
+SELECT (SELECT max(idx) FROM %Q.'%q_segdir' WHERE level = ?) + 1
+REPLACE INTO %Q.'%q_docsize' VALUES(?,?)
+SELECT level, count(*) AS cnt FROM %Q.'%q_segdir'   GROUP BY level HAVING cnt>=?  ORDER BY (level %% 1024) ASC, 2 DESC LIMIT 1
+SELECT 1 FROM %Q.'%q_segments' WHERE blockid=? AND block IS NULL
+%s_segments
+CREATE TABLE %Q.'%q_segments'(blockid INTEGER PRIMARY KEY, block BLOB);
+SELECT %s ORDER BY rowid %s
+fts3cursor
+unrecognized column option: %s
+DELETE FROM '%q'.'%q_idx' WHERE segid=?
+'rebuild' may not be used with a contentless fts5 table
+Found (%lld -> %lld) in %s table, expected (%lld -> %lld)
+Wrong number of entries in %%%s table - expected %lld, actual %lld
+In RTree %s.%s:
+DEFAULT_WORKER_THREADS=0
+ENABLE_MEMORY_MANAGEMENT
+MAX_COMPOUND_SELECT=500
+MAX_VARIABLE_NUMBER=32766
+SOUNDEX
+CIE version is not 1 or 3
+_Unwind_GetTextRelBase
++{"error":"member_prepare_failed","detail":"
+){"error":"prog_prepare_failed","detail":"
+{"id":
+,"program_group":
+,"race_instance_id":
+	,"month":
+,"half":
+&{"error":"no_valid_integers","input":"
+2: interceptor failed, fallback to write_hook_bytes
+{"eid":
+,"lv":
+,"t0":
+,"v0":
+,"v0_1":
+,"v0_2":
+,"v0_3":
+,"v0_4":
+,"t1":
+,"v1":
+,"v1_1":
+,"v1_2":
+,"v1_3":
+,"v1_4":
+,"idle":
+	,"sc_id":
+	,"chara":
+{"rank":
+,"min":
+,"max":
+'{"error":"scenario_class_null","name":"
+	{"name":"
+","addr":"0x
+","params":
+,"return_type":"
+","static":
+,API sniff: WWWRequest.Post hook FAILED at 0x
+	{"index":
+,"command_id":
+,"command_ptr":"0x
+","command_class":"
+","command_raw_hex":"
+","training_partners":
+,"tips_event_partners":
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ring-0.17.14/src/ec/suite_b/ops.rs
+!received corrupt message of type 
+%failed to parse Ed25519 private key: 
+-certificate not valid yet: verification time 
+- (UNIX), but certificate is not valid before 
+ seconds in future)
+certificate not valid for name 
+; certificate 
+unknown scheme '
+Error encountered in 
+SQLITE_TMPDIR
+:memory:
+API called with NULL prepared statement
+%.18s-%s
+InitCoroutine
+IncrVacuum
+ReadCookie
+BitNot
+NullRow
+VColumn
+sqlite_master
+Page %u: never used
+2nd reference to page %u
+Failed to read ptrmap key=%u
+btreeInitPage() returns error code %d
+Extends off end of page
+zeroblob(%d)
+cache_spill
+optimize
+unique
+the INDEXED BY clause is not allowed on UPDATE or DELETE statements within triggers
+USING ROWID SEARCH ON TABLE %s FOR IN-OPERATOR
+PRIMARY KEY missing on table %s
+misuse of aliased window function %s
+no such table: %s
+cannot join using column %s - column not present in both tables
+INTERSECT
+%r ORDER BY term does not match any column in the result set
+%s %T cannot reference objects in database %s
+SCAN %s%s%s
+foreign key mismatch - "%w" referencing "%w"
+rows updated
+too many arguments on function %T
+DELETE FROM %Q.sqlite_master WHERE name=%Q AND type='index'
+wrong # of entries in index 
+sqlite\_%
+printf
+json_type
+not an error
+SELECT idx, start_block, leaves_end_block, end_block, root FROM %Q.'%q_segdir' WHERE level = ? ORDER BY idx ASC
+malformed contentless_delete=... directive
+SELECT %s FROM %s AS T
+SELECT count(*) FROM %Q.'%q%s'
+MAX_PAGE_COUNT=0xfffffffe
+truncated uleb128 expression
+FDE has zero length
+{"idx":
+,"error":"null"}
+SELECT * FROM [
+] LIMIT 
+{"chara_id":
+	,"name":"
+{"cond_set_id":
+,"entries":[
+{"type":
+	,"count":
+Config updated: push_host=
+"params_len":
+	{"value":
+,"addr":"0x
+","offset":"0x
+-/data/data/jp.pokemon.pokeuma/files/uma_logs/
+	{"name":"
+","type":"
+,{"ok":false,"error":"read_failed","detail":"
+{"collection_class":"
+","storage":"
+","length":
+,"error":"invalid_count"}
++{"error":"invalid_addr_format","received":"
+%","hint":"use hex like 0x7336296890"}
+ramen arrays: regions=
+	 effects=
+ feelings=
+ gains_map=
+ gauge_gains=
+,"team_data":
+	"Unknown_
+{"ok":true,"requested":"
+","found":"
+","field_count":
+,"fields":[
+	{"name":"
+","offset":
+,"type":
+	,"value":
+,"enum":true}
+&{"error":"write_all_failed","detail":"
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/core/src/net/socket_addr.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/miniz_oxide-0.8.9/src/inflate/core.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ring-0.17.14/src/ec/suite_b/ecdsa/digest_scalar.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ring-0.17.14/src/aead/aes_gcm/aarch64.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ring-0.17.14/src/signature.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-0.23.42/src/vecbuf.rs
+/rust/deps/gimli-0.32.3/src/read/index.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ureq-2.12.1/src/testserver.rs
+IpAddress(
+munmap
+/usr/tmp
+%!.15g
+IfNotOpen
+BeginSubrtn
+SorterCompare
+DeferredSeek
+SqlExec
+SetSubtype
+%s constraint failed
+unordered*
+ATTACH %Q AS vacuum_db
+busy_timeout
+temp_store
+on_update
+RAISE() may only be used within a trigger-program
+no such function: %#T
+too many columns in result set
+number of columns in foreign key does not match the number of columns in the referenced table
+ANY(%s)
+sqlite_returning_%p
+index associated with UNIQUE or PRIMARY KEY constraint cannot be dropped
+ of index 
+SET DEFAULT
+invalid uri authority: %.*s
+ifnull
+integer overflow
+SELECT NOT EXISTS(SELECT docid FROM %Q.'%q_content' WHERE rowid!=?)
+fts3tokenize disabled
+fts3tokenize
+%z%s%Q
+PRAGMA %Q.data_version
+unknown special query: %.*s
+fts5: syntax error near "%.1s"
+DELETE FROM %Q.'%q_docsize';
+%z%.*s
+wrong number of vtable arguments
+DELETE FROM '%q'.'%q_rowid' WHERE rowid = ?1
+json_tree
+DW_EH_PE_textrel pointer encoding not supported
+Can't binary search on variable length encoded data.
+{"error":"not_ramen","sid":
+{"race_id":
+	,"name":"
+{"id":
+,"display_id":
+,"ev0":
+,"ev1":
+,"ev2":
+{"id":
+,"disp_type":
+,"evt0":
+,"evt1":
+,"evt2":
+{"getter":"
+","length":
+,"elem_class":"
+","fields":
+,"hex":{
+{"team_members":[
+],"team_rank":
+,"having_dp":
+,"dream_left":
+,"dream_max":
+,"dream_overflow":
+,"dream_activated":
+,"enhance_groups":[
+],"member_count":
+,"member_class":"
+	{"name":"
+","found":
+{"CommandType":
+,"CommandId":
+{"ns":"
+","name":"
+{"requested":"
+","found":"
+","instance":"null","fields":[
+{"requested":"
+","found":"
+","instance":"0x
+","field_count":
+,"fields":[
+	{"name":"
+","offset":
+,"type":
+{"collection_class":"
+","storage":"
+","length":
+,"element_class":"
+","element_is_value_type":
+,"element_size":
+,"items":[
+,API sniff: CompressRequest hook FAILED at 0x
+{"ok":true,"total_races":
+,"win_count":
+,"saddle_count":
+,"win_saddles":[
+],"parent_saddles":[
+],"mdb_saddle_map":[
+],"relation_groups":[
+.{"message":"crash log auto-upload","content":"
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rusqlite-0.31.0/src/cache.rs
+/dev/random
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ring-0.17.14/src/ec/curve25519/scalar.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ring-0.17.14/src/ec/suite_b/private_key.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ring-0.17.14/src/pkcs8.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ring-0.17.14/src/digest/dynstate.rs
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/alloc/src/sync.rs
+readonly_shm
+recovered %d pages from %s
+FOREIGN KEY constraint failed
+Program
+ElseEq
+VRename
+cannot change %s wal mode from within a transaction
+add column
+default_cache_size
+partial
+use DROP VIEW to delete view %s
+DISTINCT
+DELETE
+SELECT*FROM"%w"
+ANALYZE "%w"."%w"
+utf16be
+BEFORE
+no such vfs: %s
+stat_init
+expr_implies_expr
+affinity
+%.*s%s
+40f-21a-21d
+20c:20e
+json_array_length
+json_extract
+jsonb_patch
+database or disk is full
+authorization denied
+simple
+SELECT %s WHERE rowid=?
+SELECT coalesce((SELECT max(blockid) FROM %Q.'%q_segments') + 1, 1)
+REPLACE INTO %Q.'%q_segdir' VALUES(?,?,?,?,?,?)
+DELETE FROM %Q.'%q_segdir' WHERE level = ?
+CREATE TABLE IF NOT EXISTS %Q.'%q_stat'(id INTEGER PRIMARY KEY, value BLOB);
+SELECT %s WHERE rowid BETWEEN %lld AND %lld ORDER BY rowid %s
+malformed inverted index for FTS%d table %s.%s
+contentless_delete=1 requires a contentless table
+multiple tokenize=... directives
+malformed columnsize=... directive
+case_sensitive
+REPLACE INTO %Q.'%q_docsize' VALUES(?,?%s)
+fts5: column queries are not supported (detail=none)
+."%.*s"
+DEFAULT_RECURSIVE_TRIGGERS
+SYSTEM_MALLOC
+evaluateExpression
+CIE ID is not zero
+{"sequence":
+,"raw_command_id":
+,"normalized_command_id":
+,"action":"
+","result_type":
+,"source":"training_hook"}
+{"id":
+,"url":"
+","headers":
+,"size":
+,"hex":"
+","text":"
+{"ok":true,"prefix":"
+","table_count":
+,"total_rows_queried":
+,"max_rows_per_table":
+,"tables":{
+{"cmd_len":
+,"elem0_class":"
+","elem1_class":"
+","fields":
+,"methods":
+,"hex":{
+{"crash":true,"signal":
+,"step":
+addr: 0x
+size: 
+bytes_read: 
+/uma_push_
+1{"version":"3.22.91","parents":{"first_chara_id":
+,"second_chara_id":
+},"factor_count":
+,"relations":[
+],"relation_members":[
+],"relation_ranks":[
+],"target_races":[
+],"route_races":[
+SELECT * FROM [
+] LIMIT 
+ OFFSET 
+3{"ok":false,"error":"append_open_failed","detail":"
+,"CommandName":"
+{"FeelingIndex":
+,"FeelingId":
+	{"total":
+,"fields":[
+: read 
+	 elements
+{"position":
+,"support_card_id":
+,"limit_break_count":
+,"training_partner_state":
+,"chara_id":
+,"kizuna":
+,"exp":
+,"rental_type":
+	{"name":"
+","offset":
+,"type":
+$,"value":null,"instance_field":true}
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/core/src/str/lossy.rs
+invalid utf-8 sequence of 
+ bytes from index 
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-0.23.42/src/crypto/ring/tls12.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-0.23.42/src/msgs/message/outbound.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-0.23.42/src/msgs/deframer/handshake.rs
+unexpected error: 
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/std/src/thread/scoped.rs
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/std/src/../../backtrace/src/symbolize/gimli/stash.rs
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/std/src/sys/net/connection/socket/mod.rs
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/std_detect/src/detect/os/linux/auxvec.rs
+No ip address for 
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ureq-2.12.1/src/stream.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-webpki-0.103.13/src/subject_name/dns_name.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-webpki-0.103.13/src/time.rs
+cannot fstat db file %s
+readlink
+(blob)
+Savepoint
+Checkpoint
+IntCopy
+AddImm
+SequenceTest
+Delete
+Tree %u page %u right child: 
+data_version
+defer_foreign_keys
+set list
+unknown database %T
+misuse of %s function %#T()
+unsupported use of NULLS %s
+name='%q' AND type='index'
+%s.rowid
+iissssss
+INSERT INTO %Q.sqlite_master VALUES('trigger',%Q,%Q,0,'CREATE TRIGGER %q')
+database %s is locked
+after drop column
+rename columns of
+UPDATE "%w".sqlite_master SET sql = sqlite_rename_column(sql, type, name, %Q, %Q, %d, %Q, %d, %d) WHERE name NOT LIKE 'sqliteX_%%' ESCAPE 'X'  AND (type != 'index' OR tbl_name = %Q)
+sqlite_source_id
+strftime
+subsec
+localtime
+jsonb_insert
+offsets
+SELECT max(level) FROM %Q.'%q_segdir' WHERE level BETWEEN ? AND ?
+SELECT idx, start_block, leaves_end_block, end_block, root FROM %Q.'%q_segdir' WHERE level = ? AND idx = ?
+SELECT idx FROM %Q.'%q_segdir' WHERE level=? ORDER BY 1 ASC
+CREATE TABLE %Q.'%q_docsize'(docid INTEGER PRIMARY KEY, size BLOB);
+FTS expression tree is too large (maximum depth %d)
+Index optimized
+reserved fts5 table name: %s
+DELETE FROM %Q.'%q_data';DELETE FROM %Q.'%q_idx';
+SELECT count(*) FROM %Q.'%q_%s'
+categories
+tokenchars
+%z%s%z
+Node %lld is too small (%d bytes)
+ ORDER BY name
+MAX_VDBE_OP=250000000
+MAX_WORKER_THREADS=0
+unsupported arm64 register
+dHTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="
+Content-Length: 
+Connection: close
+3SELECT [index], text FROM text_data WHERE category=
+ ORDER BY [index]
+*{"error":"sigsegv_cooldown","retry_after":
+{"ok":true,"class":"
+","method":"
+"","return_type":"string","value":"
+"ramen_bools":{
+&{"error":"addr_not_aligned","addr":"0x
+::ffff:
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/once_cell-1.21.4/src/imp_std.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-0.23.42/src/crypto/ring/quic.rs
+panicked at 
+thread panicked while processing panic. aborting.
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/base64-0.22.1/src/encode.rs
+full_fsync
+%.4c%s%.16c
+Return
+ReopenIdx
+Multiply
+OpenPseudo
+Sequence
+FOREIGN KEY
+attached databases must use the same text encoding as main database
+%z - %s
+noskipscan*
+sqlite_stat4
+failed to get page %u
+function_list
+legacy_alter_table
+threads
+the NOT INDEXED clause is not allowed on UPDATE or DELETE statements within triggers
+%sLIST SUBQUERY %d
+missing datatype for %s.%s
+CREATE %s %.*s
+ambiguous column name
+sqlite_schema
+no query solution
+frame starting offset must be a non-negative number
+RIGHT-JOIN %s
+%s RETURNING is not available on virtual tables
+ values differ from index 
+no such %s mode: %s
+CREATE TABLE %Q.%s(%s)
+incomplete input
+soundex
+sqlite_compileoption_get
+concat_ws
+an index
+%c%04d-%02d-%02d %02d:%02d:%06.3f
+malformed JSON
+SELECT max( level %% 1024 ) FROM %Q.'%q_segdir'
+uncompress
+missing %s parameter in fts4 constructor
+,%s(x.'c%d%q')
+CREATE TABLE %Q.'%q_segdir'(level INTEGER,idx INTEGER,start_block INTEGER,leaves_end_block INTEGER,end_block INTEGER,root BLOB,PRIMARY KEY(level, idx));
+REPLACE INTO %Q.'%q_content' VALUES(%s)
+DROP TABLE IF EXISTS %Q.'%q_content';
+unterminated string
+cannot UPDATE a subset of columns on fts5 contentless-delete table: %s
+fts5vocab
+Rtree depth out of range (%d)
+DEFAULT_MMAP_SIZE=0
+DEFAULT_WAL_SYNCHRONOUS=2
+ENABLE_FTS3_PARENTHESIS
+_Unwind_Resume
+{"hooked":
+,"addr":"0x
+","last_seed_before":
+,"last_seed_after":
+,"log":
+{"result_type":
+,"sub_id":
+,"hooked":
+,"result_name":"
+AHTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 
+Connection: close
+{"chara_id":
+,"program_group":
+,"program_group_2":
+"chara_obj":"0x
+find_method_addr: 
+ NOT FOUND in class
+"ramen_values":{
+	Scenario 
+ getter: all attempts failed
+{"ok":true,"total_classes":
+,"matched":
+,"keyword":"
+","classes":[
+{"ok":true,"total_classes":
+,"filtered_classes":
+,"total_methods":
+,"letter":"
+","classes":[
+/API sniff: DecompressResponse hook FAILED at 0x
+	{"name":"
+","offset":
+,"type":
+	,"value":
+,"enum":true,"inferred":true}
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/std/src/sys/thread/unix.rs
+pwrite64
+getpagesize
+/var/tmp
+nolock
+recovered %d frames from WAL file %s
+MJ delete: %s
+Function
+OpenEphemeral
+AggInverse
+malformed database schema (%s)
+statement too long
+'%.*q'
+timeout
+unrecognized token: "%T"
+second argument to %#T() must be a constant between 0.0 and 1.0
+excluded
+access to view "%s" prohibited
+no tables specified
+there is already a table named %s
+sqlite_autoindex_%s_%d
+UPDATE %Q.sqlite_master SET rootpage=%d WHERE #%d AND rootpage=#%d
+SCAN %d CONSTANT ROW%s
+unknown join type: %T%s%T%s%T
+not a writable directory
+non-unique entry in index 
+unsupported encoding: %s
+SELECT 1 FROM temp.sqlite_master WHERE name NOT LIKE 'sqliteX_%%' ESCAPE 'X' AND sql NOT LIKE 'create virtual%%' AND sqlite_rename_test(%Q, sql, type, name, 1, %Q, %d)=NULL 
+Cannot add a REFERENCES column with non-NULL default value
+cannot drop %s column: "%s"
+UPDATE "%w".sqlite_master SET sql = sqlite_drop_column(%d, sql, %d) WHERE (type=='table' AND tbl_name=%Q COLLATE nocase)
+total_changes
+zeroblob
+substring
+start of 
+jsonb_replace
+failed to allocate %u bytes of memory
+DELETE FROM %Q.'%q_docsize'
+content
+ALTER TABLE %Q.'%q_content'  RENAME TO '%q_content';
+INSERT INTO "%w"."%w"("%w") VALUES('integrity-check');
+content_rowid
+%s_data
+id INTEGER PRIMARY KEY, block BLOB
+SELECT rowid, rank FROM %Q.%Q ORDER BY %s("%w"%s%s) %s
+wrong number of arguments to function rtreecheck()
+Auxiliary rtree columns must be last
+a%d=?%d
+DEFAULT_SYNCHRONOUS=2
+DEFAULT_WAL_AUTOCHECKPOINT=1000
+DIRECT_OVERFLOW_READ
+MAX_TRIGGER_DEPTH=1000
+{"error":"no_tables","prefix":"
+'{"error":"table_list_failed","detail":"
+{"uploaded":
+,"files":[
+({"ok":true,"version":"3.22.91","table":"
+","total_rows":
+,"offset":
+,"rows_queried":
+,"next_offset":
+,"complete":false}
+{"ts":
+,"s0":
+,"s1_before":
+,"s1_after":
+,"s1_delta":
+,"s2":
+,"s3":
+,"motivation":
+,"failure_rate":
+,"result":
+,"result_name":"
+Classes: WDM=
+ Chara=
+{"id":
+,"lv":
+,"t0":
+,"v0":
+,"v0_1":
+,"v0_2":
+,"v0_3":
+,"v0_4":
+,"t1":
+,"v1":
+,"v1_1":
+,"v1_2":
+,"v1_3":
+,"v1_4":
+,"idle":
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Search Methods</title><style>body{font-family:system-ui;max-width:600px;margin:12px auto;padding:0 8px;background:#1a1a2e;color:#e0e0e0}h1{color:#4fc3f7;font-size:1.2em;margin:8px 0}.g{display:inline-block;margin:4px 2px;padding:8px 12px;background:#16213e;border:1px solid #333;border-radius:4px;color:#fff;cursor:pointer;font-size:14px;min-width:36px;text-align:center}.g:disabled{background:#555;color:#333;cursor:default}.g.ok{background:#2e7d32;border-color:#4caf50}.g.run{background:#e65100;border-color:#ff9800}input{width:100%;padding:8px;background:#16213e;border:1px solid #333;border-radius:4px;color:#fff;box-sizing:border-box;font-size:16px}.p{margin:8px 0;font-size:0.95em}.ok{color:#4caf50}.err{color:#ff5252}#lst{margin:8px 0;font-size:0.8em;color:#aaa;max-height:300px;overflow-y:auto}</style></head><body><h1>IL2CPP Method Search</h1><input id="kw" placeholder="keyword (e.g. Motivation)" value="Motivation"><div style="margin:8px 0">
+</div><div class="p">Click a letter to search classes starting with that letter, or click ALL for all classes. Results download as JSON.</div><div class="p" id="pg">Ready</div><div id="lst"></div><script>function goLetter(ch){var kw=document.getElementById("kw").value;if(!kw){document.getElementById("pg").innerHTML='<span class="err">Enter a keyword first</span>';return;}var btn=event.target;btn.disabled=true;btn.className="g run";var url="/il2cpp/search_methods_dl?keyword="+encodeURIComponent(kw)+"&letter="+ch;document.getElementById("pg").innerHTML='<span class="ok">Searching '+ch+'...</span>';fetch(url).then(r=>{if(!r.ok)throw new Error("HTTP "+r.status);return r.blob();}).then(blob=>{var url2=URL.createObjectURL(blob);var a=document.createElement("a");a.href=url2;a.download="search_methods_"+ch+"_"+kw+".json";a.click();URL.revokeObjectURL(url2);btn.className="g ok";btn.disabled=false;document.getElementById("pg").innerHTML='<span class="ok">'+ch+': downloaded!</span>';}).catch(e=>{btn.className="g ok";btn.disabled=false;document.getElementById("pg").innerHTML='<span class="err">Error: '+e+'</span>';});}</script></body></html>
+ "uraf_effect":{"UrafEffectType":
+,"UrafEffectState":
+{"ok":true,"total_tables":
+,"key_table_count":
+,"tables":[
+],"turn_race_entry_dist":[
+	{"name":"
+	","ptr":"
+","count":
+,"entries":[
+ramen gains: cmd_id=
+ gains=
+sc: reused shining array ptr=
+1{"error":"WorkSingleModeData_class_null","month":
+,"half":
+read_array_elements: 
+ elements, 
+ getters
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/core/src/panicking.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/smallvec-1.15.2/src/lib.rs
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/std/src/../../backtrace/src/symbolize/mod.rs
+byte index 
+ is not an OsStr boundary
+ro.arch
+CONNECT 
+ HTTP/1.1
+Host: 
+User-Agent: 
+Proxy-Connection: Keep-Alive
+!Header field didn't end with \n: 
+file unlinked while open: %s
+ftruncate
+fallocate
+database corruption
+-mj%06X9%02X
+Transaction
+SorterSort
+IsNull
+String
+DropTrigger
+CursorLock
+case_sensitive_like
+PRAGMA 
+SEARCH
+cannot UPSERT a view
+shadow
+restart
+%!.20e
+a generated column
+weekday 
+json_valid
+attempt to write a readonly database
+interrupted
+column index out of range
+,%s(?)
+docid INTEGER PRIMARY KEY
+rebuild
+ WITHOUT ROWID
+instance
+CREATE TABLE "%w"."%w_parent"(nodeno INTEGER PRIMARY KEY,parentnode);
+json_each
+DEFAULT_PCACHE_INITSZ=20
+HAVE_ISNAN
+THREADSAFE=1
+libunwind: malformed DW_CFA_def_cfa_register DWARF unwind, reg too big
+libunwind: malformed DW_CFA_offset_extended_sf DWARF unwind, reg too big
+Unknown DWARF encoding for search table.
+unknown register
+{"ok":true,"table":"
+","row_count":
+,"columns":[
+],"indexes":[
+	read_mem_
+eHTTP/1.1 200 OK
+Content-Type: text/plain; charset=utf-8
+Content-Disposition: attachment; filename="
+Content-Length: 
+Connection: close
+{"field":"
+","status":"null"}
+.{"error":"race_name_prepare_failed","detail":"
+	{"count":
+,"entries":[
+{"target_type":
+	,"value":
+/{"error":"insufficient_code_bytes","available":
+,"method_addr":"0x
+{"class":"
+","singleton":
+,"instance":"
+0{"ok":false,"error":"row_iter_failed","detail":"
+"scenario_class":"
+	{"name":"
+","class":"
+	{"total":
+,"methods":[
+,"last_action":{"sequence":
+,"raw_command_id":
+,"normalized_command_id":
+,"action":"
+","source":"training_hook"}
+"{"error":"Character_null","month":
+,"half":
+,"playingState":
+,"isPlaying":
+{"id":
+,"rel_group":
+,"cond":
+,"type":
+	,"race1":
+	,"race2":
+	{"name":"
+","offset":
+,"type":
+&,"value":null,"error":"no_field_info"}
+"summary":
+*{"error":"read_download_failed","detail":"
+","attempts":3}
+%{"error":"download_failed","detail":"
+","attempts":3}
+/dev/urandom
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ring-0.17.14/src/rsa/padding/pkcs1.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ring-0.17.14/src/hkdf.rs
+Integer 
+ out of range at index 
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-0.23.42/src/crypto/tls13.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-0.23.42/src/crypto/tls12.rs
+2certificate does not allow extended key usage for 
+	, allows 
+/rust/deps/gimli-0.32.3/src/read/line.rs
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/std/src/sys/io/error/unix.rs
+	parsing '
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ureq-2.12.1/src/header.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/once_cell-1.21.4/src/lib.rs
+explain
+unknown database %s
+NotNull
+IfNotZero
+SetCookie
+Insert
+output file already exists
+cache_size
+foreign_keys
+reverse_unordered_selects
+near "%T": syntax error
+REUSE LIST SUBQUERY %d
+sqlite_sequence
+parameters
+index %s already exists
+target object/alias may not appear in FROM clause: %s
+USE TEMP B-TREE FOR %s(DISTINCT)
+%s clause should come after %s not before
+table %S has %d columns but %d values were supplied
+jsonb_remove
+unicode61
+SELECT count(*) FROM %Q.'%q_segdir' WHERE level = ?
+DELETE FROM %Q.'%q_docsize' WHERE docid = ?
+DELETE FROM %Q.'%q_segdir' WHERE level = ? AND idx = ?
+prefix
+%z%Q, 
+segments
+contentless_delete=1 is incompatible with columnsize=0
+too many prefix indexes (max %d)
+id INTEGER PRIMARY KEY, sz BLOB
+SELECT sz%s FROM %Q.'%q_docsize' WHERE id=?
+SELECT pgno FROM '%q'.'%q_idx' WHERE segid=? AND term<=? ORDER BY term DESC LIMIT 1
+delete-all
+ATOMIC_INTRINSICS=1
+COMPILER=clang-17.0.2
+libunwind: %s - %s
+getRegister
+truncated sleb128 expression
+{"ok":true,"config":
+{"type_0":
+	,"count":
+Month 
+ | Half 
+ | PS:
+{"ds_ptr":"0x
+","ds_class":"0x
+","class_name":"
+","hex_dump":"
+"cmd_list_ptr":"0x
+{"id":
+,"race_id":
+	,"grade":
+hSELECT id, story_id, card_id, support_card_id, event_category FROM single_mode_story_data WHERE card_id=
+ ORDER BY id
+{"ok":true,"class":"
+","field":"
+","type":"ptr","value":"0x
+","obj_class":"
+	{"name":"
+","offset":
+,"type":
+	,"value":
+,"note":"f64_as_f32"}
+{"class":"
+","args":0}
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/alloc/src/fmt.rs
+slice index starts at 
+ but ends at 
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/miniz_oxide-0.8.9/src/inflate/output_buffer.rs
+invalid peer certificate: 
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-0.23.42/src/msgs/deframer/buffers.rs
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/core/src/cell/once.rs
+memory allocation of 
+G bytes failed
+skipping backtrace printing to avoid potential recursion
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/std/src/thread/thread.rs
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/std/src/thread/local.rs
+ATTACH x AS %Q
+cannot open view: %s
+geteuid
+%s-shm
+RowSetTest
+OffsetLimit
+GetSubtype
+no such savepoint: %s
+cannot rollback - no transaction is active
+SELECT*FROM"%w".%s WHERE %s ORDER BY rowid
+statement aborts at %d: [%s] %s
+Freelist: 
+empty_result_callbacks
+table_xinfo
+CREATE TABLE x
+notnull
+not authorized
+%s %T already exists
+CREATE TABLE %Q.sqlite_sequence(name,seq)
+coalesce
+table %s has %d values for %d columns
+INSERT INTO %Q.sqlite_master VALUES('index',%Q,%Q,#%d,%Q);
+error in generated column "%s"
+automatic index on %s(%s)
+rowid not at end-of-record for row 
+UTF-16le
+CASCADE
+NO ACTION
+duplicate WITH table name: %s
+random
+a CHECK constraint
+jsonb_extract
+0123456789abcdef
+locking protocol
+fts3_tokenizer
+DELETE FROM %Q.'%q_segments'
+UPDATE OR FAIL %Q.'%q_segdir' SET level=? WHERE level=-1
+compress
+unrecognized matchinfo: %s
+malformed MATCH expression: [%s]
+%lld %lld
+wrong number of arguments to function snippet()
+%Q.'%q_%s'
+multiple content=... directives
+remove_diacritics
+CREATE TABLE x(key,value,type,atom,id,parent,fullkey,path,json HIDDEN,root HIDDEN)
+DW_EH_PE_funcrel pointer encoding not supported
+DW_OP_deref_size with bad size
+{"version":"3.22.91","count":
+,"elements":[
+disassemble_addr_
+,{"error":"program_prepare_failed","detail":"
+{"id":
+,"partner":
+,"scenario":
+	,"chara":
+,"period":
+,"train_place":
+,"gain_flag":
+,"featured":
+,"gain_role":
+-{"ok":false,"error":"write_failed","detail":"
+{"requested":"
+","found":"
+","instance":"0x
+","max_depth":
+,"tree":
+({"error":"story_query_failed","detail":"
+{"chara_id":
+	,"level":
+,"dream_gauge":
+,"burst_ready":
+,"exp":
+	{"name":"
+","found":false}
+'{"error":"not_supported","scenario_id":
+{"id":
+,"story_id":
+,"card_id":
+,"support_card_id":
+,"event_category":
+"feeling_info":[
+{"class":"
+","ns":"
+","method":"
+","params":
+,"return_type":"
+","static":
+	{"index":
+4,"storage":"reference","ptr":"null","status":"null"}
+ObscuredInt 
+	: hidden=
+ decrypted=
+${"error":"field_not_found","class":"
+","field":"
+Push: 
+! consecutive errors, backing off 
+end byte index 
+' is out of bounds for string of length 
+start byte index 
+' is out of bounds for string of length 
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/core/src/slice/sort/shared/smallsort.rs
+Conversion error from type 
+ at index: 
+%invalid certificate revocation list: 
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/alloc/src/collections/btree/node.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-0.23.42/src/crypto/ring/sign.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-0.23.42/src/compress.rs
+5fatal runtime error: failed to initiate panic, error 
+, aborting
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/std/src/sys/pal/unix/time.rs
+Cannot open file at 
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ureq-2.12.1/src/body.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-webpki-0.103.13/src/subject_name/ip_address.rs
+fchown
+cannot limit WAL size: %s
+NoConflict
+OpenWrite
+OpenDup
+IdxInsert
+cannot store %s value in %s column %s.%s
+database table is locked: %s
+invalid rootpage
+sqlite_stat1
+SELECT idx,neq,nlt,ndlt,sample FROM %Q.sqlite_stat4
+Page %u: pointer map referenced
+Tree %u page %u: 
+no such module: %s
+vtable constructor failed: %s
+no such table
+%s: %s.%s
+automatic_index
+max_page_count
+module_list
+short_column_names
+row value misused
+REUSE SUBQUERY %d
+CREATE TABLE 
+generated
+regexp
+rows deleted
+variable number must be between ?1 and ?%d
+NULL value in %s.%s
+TEXT value in %s.%s
+incremental
+SELECT 1 FROM "%w".sqlite_master WHERE name NOT LIKE 'sqliteX_%%' ESCAPE 'X' AND sql NOT LIKE 'create virtual%%' AND sqlite_rename_test(%Q, sql, type, name, %d, %Q, %d)=NULL 
+frame specification
+unsupported frame specification
+sqlite_drop_column
+error parsing prefix parameter: %s
+unrecognized matchinfo request: %c
+columnsize
+tokendata
+automerge
+no such function: %s
+recursive definition for %s.%s
+INSERT OR REPLACE INTO '%q'.'%q_node' VALUES(?1, ?2)
+SELECT nodeno FROM '%q'.'%q_rowid' WHERE rowid = ?1
+UNIQUE constraint failed: %s.%s
+_Unwind_Resume() can't return
+libunwind: malformed DW_CFA_offset_extended DWARF unwind, reg too big
+libunwind: malformed DW_CFA_restore_extended DWARF unwind, reg too big
+{"enabled":
+,"requests":[
+],"responses":[
+":{"rows":
+,"queried":
+,"columns":[
+],"data":[
+URA Assistant v
+"commands":[
+"home_info_obj":"0x
+"home_cmd_arr":"0x
+*{"error":"single_mode_null","wdm_addr":"0x
+!","hint":"not_in_training_scene"}
+%<button class="g" onclick="goLetter('
+</button> 
+({"ok":true,"version":"3.22.91","table":"
+","total_rows":
+,"file_size":
+,"file_path":"
+O","hint":"file too large for HTTP response, use push_table batch mode instead"}
+SELECT * FROM [
+] LIMIT 20
+{"story_info_list_dic":
+,"event_choice_reward_dict":
+,"story_event_bonus_dict":
+/{"error":"addr_outside_code_section","addr":"0x
+","code_start":"0x
+","code_end":"0x
+	{"name":"
+","offset":
+,"type":
++,"value":null,"error":"no_static_field_fn"}
+ Push: waiting for game... round=
+`at` split index (is 
+) should be <= len (is 
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/core/src/net/parser.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rusqlite-0.31.0/src/statement.rs
+7certificate revocation list expired: verification time 
+$ (UNIX), but CRL is not valid after 
+ seconds ago)
+aborting due to panic at 
+#testserver: pre-connect with error 
+more than 
+ header fields in response
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/flate2-1.1.9/src/gz/mod.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-webpki-0.103.13/src/verify_cert.rs
+thstndrd
+cannot open virtual table: %s
+INTEGER
+IfSmaller
+Affinity
+RowData
+max rootpage (%u) disagrees with header (%u)
+shrink_memory
+temp_store_directory
+,arg HIDDEN
+USING INDEX %s FOR IN-OPERATOR
+too many FROM clause terms, max: %d
+INDEX %d
+RIGHT PART OF 
+cannot use RETURNING in a trigger
+cannot UPDATE generated column "%s"
+trigger "%s" may not write to shadow table "%s"
+SELECT raise(ABORT,%Q) FROM "%w"."%w"
+cannot %s %s "%s"
+CREATE VIRTUAL TABLE %T
+UPDATE %Q.sqlite_master SET type='table', name=%Q, tbl_name=%Q, rootpage=0, sql=%Q WHERE rowid=#%d
+subtype
+julianday
+current_time
+%04d-%02d-%02d
+warning message
+matchinfo
+INSERT INTO %Q.'%q_content' VALUES(%s)
+DELETE FROM %Q.'%q_segdir' WHERE level BETWEEN ? AND ?
+unknown tokenizer
+integrity-check
+SAVEPOINT fts3
+prefix length out of range (max 999)
+DELETE FROM '%q'.'%q_data' WHERE id>=? AND id<=?
+CREATE TABlE vocab(term, doc, cnt)
+UPDATE "%w"."%w_rowid"SET 
+ALTER TABLE %Q.'%q_node'   RENAME TO "%w_node";ALTER TABLE %Q.'%q_parent' RENAME TO "%w_parent";ALTER TABLE %Q.'%q_rowid'  RENAME TO "%w_rowid";
+DEFAULT_CACHE_SIZE=-2000
+ENABLE_LOAD_EXTENSION
+libunwind: malformed DW_CFA_undefined DWARF unwind, reg too big
+DW_OP_piece not implemented
+,{"ok":false,"error":"open_failed","detail":"
+disassemble_
+{"id":
+,"race_id":
+	,"grade":
+,"course_set":
+,"race_track_id":
+,"distance":
+,"ground":
+.SELECT id, text FROM text_data WHERE category=
+ ORDER BY id
+"scenario_obj":"
+/data/local/tmp/uma_predict.log
+{"id":
+,"title":"
+"feeling_reduce_turn_info":[
+	{"name":"
+","type":"
+","notnull":
+SM Data: month=
+ half=
+ playingState=
+ isPlaying=
+'{"status":"updated_to_fallback","old":"
+	","new":"
+","so_path":"
+!","hint":"restart_game_to_apply"}
+/rust/deps/hashbrown-0.16.1/src/raw/mod.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ring-0.17.14/src/arithmetic/montgomery.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ring-0.17.14/src/arithmetic/bigint.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ring-0.17.14/src/digest.rs
+Invalid path: 
+Query changed 
+"unexpected error during closedir: 
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/std/src/sys/io/io_slice/iovec.rs
+header field longer than 
+ bytes
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/url-2.5.8/src/parser.rs
+cannot open file
+program
+SeekLE
+TypeCheck
+RowSetAdd
+NOT NULL
+drop column
+database_list
+soft_heap_limit
+no such collation sequence: %s
+unknown function: %#T()
+ORDER BY may not be used with non-aggregate %#T()
+AUTOINCREMENT is only allowed on an INTEGER PRIMARY KEY
+virtual tables cannot use computed columns
+ USING 
+-- TRIGGER %s
+too many SQL variables
+issisi
+no such trigger: %S
+private
+UPDATE %Q.sqlite_master SET tbl_name = %Q, name = CASE WHEN type='table' THEN %Q WHEN name LIKE 'sqliteX_autoindex%%' ESCAPE 'X'      AND type='index' THEN 'sqlite_autoindex_' || %Q || substr(name,%d+18) ELSE name END WHERE tbl_name=%Q COLLATE nocase AND (type='table' OR type='index' OR type='trigger');
+Cannot add a column with non-constant default
+unixepoch
+subsecond
+%02d:%02d
+disk I/O error
+REPLACE INTO %Q.'%q_segments'(blockid, block) VALUES(?, ?)
+ FROM '%q'.'%q%s' AS x
+%z, 'c%d%q'
+__langid
+%s_stat
+CREATE TABLE x(input, token, start, end, position)
+parse error in tokenize directive
+contentless_delete
+columns
+CREATE TABLE x(
+secure-delete
+%_rowid
+);CREATE TABLE "%w"."%w_node"(nodeno INTEGER PRIMARY KEY,data);
+MALLOC_SOFT_LIMIT=1024
+unwind_phase2
+{"cid":
+	,"name":"
+","type":"
+","notnull":
+,"pk":
+/{"error":"chara_name_prepare_failed","detail":"
+3{"ok":false,"error":"forbidden_keyword","keyword":"
+{"version":"
+","current":{"month":
+,"half":
+,"scenario_id":
+,"stats":{"speed":
+,"stamina":
+	,"power":
+,"guts":
+,"wiz":
+},"vital":
+,"max_vital":
+,"motivation":
+,"skill_point":
+,"fan":
+},"training_levels":
+,"turn_config":[
+],"history":
+&{"ok":true,"version":"3.22.91","mdb":"
+","skill_count":
+,"name_count":
+,"point_count":
+,"skills":[
+],"names":[
+],"need_points":[
+"home_cmd_count":
+"uraf_effect":{"class":"
+","fields":
+,"hex":{
+8{"error":"member_arr_null","scenario_id":13,"team_rank":
+,"having_dp":
+,"dream_left":
+,"dream_max":
+,"enhance_groups":[
+!{"error":"unknown_scenario","id":
+class_
+{"type":"object","class":"
+","ptr":"0x
+","field_count":
+,"fields":[
+{"type":"limit","ptr":"0x
+{"type":"ref","class":"
+","ptr":"0x
+{"target_id":
+,"partner_id":
+,"evaluation":
+,"current_bond":
+	{"name":"
+","offset":
+,"type":
+,"value":null}
+{"method":"
+","found":
+,"results":[
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ring-0.17.14/src/hmac.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-0.23.42/src/client/tls13.rs
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/alloc/src/collections/btree/map.rs
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/std/src/panicking.rs
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/std/src/../../backtrace/src/symbolize/gimli.rs
+foreign key
+SQLITE_
+%s(%d)
+AutoCommit
+DecrJumpZero
+FinishSeek
+ResetSorter
+cannot commit - no transaction is active
+index corruption
+rename
+no such view
+fullfsync
+read_uncommitted
+strict
+qualified table names are not allowed on INSERT, UPDATE, and DELETE statements within triggers
+subqueries
+generated columns
+double-quoted string literal: "%w"
+access to %z is prohibited
+too many terms in %s BY clause
+MERGE (%s)
+ VIRTUAL TABLE INDEX %d:%s
+no such column: %s
+current_timestamp
+infinity
+PRAGMA table_list
+argument type mismatch
+unknown tokenizer: %s
+Index already optimal
+unable to validate the inverted index for FTS%d table %s.%s: %s
+multiple content_rowid=... directives
+malformed tokendata=... directive
+no such cursor: %lld
+fts5: 2024-01-15 17:01:13 1066602b2b1976fe58b5150777cced894af17c803e068f5918390d6915b46e1d
+Schema corrupt or not an rtree
+_parent
+ WHERE rowid=?1
+getULEB128
+/{"ok":false,"error":"table_not_found","table":"
+search_methods_
+search_float_
+dump_all_methods_
+{"sniff_enabled":
+,"compress_hooked":
+,"decompress_hooked":
+,"post_hooked":
+,"compress_addr":"0x
+","decompress_addr":"0x
+","post_addr":"0x
+","interceptor_available":
+,"get_method_addr_available":
++{"error":"effect_prepare_failed","detail":"
+ LIMIT 1000
+{"id":
+,"turn":
+,"year":
+	,"month":
+,"half":
+,"period":
+,"unique_cmd":
+,"training_set":
+,"race_entry":
+/hall: List has 
+ entries
+{"idx":
+,"card_id":
+	,"speed":
+,"stamina":
+	,"power":
+,"guts":
+,"wiz":
+,"rank_score":
+,"rank":
+,"scenario_id":
+,"fans":
+,"rarity":
+%{"error":"addr_not_mapped","addr":"0x
+	","size":
+!{"error":"invalid_addr","input":"
+"scenario_id":
+{"dataset_class":"
+","arrays":[
+{"version":"3.22.91","cmd_len":
+	,"cmds":[
+],"IsGaugeGained":
+{"idx":
+,"cmd_type":
+,"cmd_id":
+,"params_count":
+,"params":[
+9{"error":"pointer_outside_code_section","method_addr":"0x
+","code_start":"0x
+","code_end":"0x
+.{"ok":true,"version":"3.22.91","total_tables":
+,"all_tables":[
+],"cond_keyword_tables":
+,"cond_table_schemas":[
+0{"version":"3.22.91","current_state":{"card_id":
+,"scenario_id":
+	,"month":
+,"half":
+,"stats":{"speed":
+,"stamina":
+	,"power":
+,"guts":
+,"wiz":
+},"vital":
+,"max_vital":
+,"skill_point":
+},"support_card_ids":[
+],"eval_chara_ids":[
+],"total_events":
+,"matching_events":
+,"events":[
+],"choice_rewards":[
++{"type":"string","class":"String","value":"
+{"type":"cycle","ptr":"0x
+{"class":"
+","ns":"
+","is_enum":
+,"method_count":
+,"methods":[
+sc: offset=
+"rameninfo":
+({"status":"downloaded_to_sdcard","old":"
+	","new":"
+","path":"
+)","hint":"install_manually_then_restart"}
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/core/src/unicode/unicode_data.rs
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/core/src/num/imp/flt2dec/mod.rs
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/core/src/num/imp/dec2flt/decimal_seq.rs
+*incomplete utf-8 byte sequence from index 
+/rust/deps/rustc-demangle-0.1.27/src/legacy.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-0.23.42/src/crypto/hmac.rs
+Basic 
+failed to parse URL: 
+922337203685477580
+Permutation
+VCreate
+Pagecount
+no such rowid: %lld
+index_info
+%s in "%s"
+unsafe use of %#T()
+there is already an index named %s
+USE TEMP B-TREE FOR %s
+%s USING TEMP B-TREE
+%d values for %d columns
+Safety level may not be changed inside a transaction
+sssiii
+utf16le
+cannot create triggers on shadow tables
+tbl,idx,neq,nlt,ndlt,sample
+view %s may not be altered
+format
+last_insert_rowid
+json_array
+json_patch
+jsonb_group_array
+json_group_object
+json_%s() needs an odd number of arguments
+unable to delete/modify user-function due to active statements
+unrecognized parameter: %s
+id INTEGER PRIMARY KEY, sz BLOB, origin INTEGER
+invalid fts5 file format (found %d, expected %d or %d) - run 'rebuild'
+recursively defined fts5 content table
+rtreecheck
+rtree_i32
+_rowid
+SELECT data FROM %Q.'%q_node' WHERE nodeno=?
+DELETE FROM '%q'.'%q_node' WHERE nodeno = ?1
+DROP TABLE '%q'.'%q_node';DROP TABLE '%q'.'%q_rowid';DROP TABLE '%q'.'%q_parent';
+unable to delete/modify collation sequence due to active statements
+	0123456789
+DEFAULT_PAGE_SIZE=4096
+ENABLE_STAT4
+MAX_EXPR_DEPTH=1000
+libunwind: malformed DW_CFA_register DWARF unwind, reg2 too big
+getSLEB128
+{"ok":true,"keyword":"
+","matched_tables":
+,"matched_columns":
+,"tables":[
+],"columns":[
+2{"ok":false,"error":"table_list_failed","detail":"
+{"story_id":
+,"chara_id":
+,"selected_idx":
+,"choices":[
+{"status":"ok","version":"
+","endpoints":["/summary","/data","/scenario","/debug/rameninfo","/debug/laststep","/event/recommend","/inherit/compat","/saddle-analysis","/log/turn","/debug/params","/debug/breeders","/debug/cmdinfo","/debug/training_partners","/debug/crashlog","/debug/upload","/debug/dumpclass","/debug/storydata","/debug/ramenfields","/debug/gauge","/debug/gauge2","/debug/ramengains","/debug/paramsincdec","/debug/training_seed","/debug/training_log","/debug/training_log_dl","/update","/update/status","/debug/all","/debug/unique_skills","/debug/mdb_all_tables","/debug/mdb_schema_dump","/debug/hint_gain","/debug/sc_effect","/debug/unique_detail","/debug/table","/debug/push_table","/debug/download_table","/mdb","/carddb","/skilldata","/hall","/saddles","/saddles-dl","/log","/status","/health","/mdb/schema","/mdb/search","/mdb/raw","/mdb/dl_batch","/il2cpp/dump","/il2cpp/call","/il2cpp/tree","/il2cpp/field","/il2cpp/classes","/il2cpp/static","/il2cpp/methods","/il2cpp/disassemble","/il2cpp/disassemble_dl","/il2cpp/disassemble_addr","/il2cpp/disassemble_addr_dl","/il2cpp/dump_all_methods","/il2cpp/dump_all_methods_dl","/il2cpp/search_float","/il2cpp/search_float_dl","/il2cpp/search_int","/il2cpp/search_int_dl","/il2cpp/search_methods","/il2cpp/search_methods_dl","/il2cpp/read_mem","/il2cpp/read_mem_dl","/training/result","/api/sniff","/api/sniff/toggle","/api/sniff/clear","/api/sniff/diag","/api/event/choices","/api/event/clear","/action/latest"]}
+Config updated: push_port=
+(curl -s -X PUT -H 'Authorization: token 
+*' -H 'Content-Type: application/json' -d @
+7 'https://api.github.com/repos/xf8410/hlpatch/contents/
+' > /dev/null 2>&1
+"wdm_class":
+failure_rate_hook: panic: 
+{"idx":
+,"cmd_type":
+,"cmd_id":
+,"params":[]}
+{"group_type":
+	,"level":
+{"id":
+	,"chara":
+,"rarity":
+,"cmd":
+,"ueid":
+,"sct":
+	{"name":"
+","params":
+,"return_type":"
+","static":
+,"own":
+{"TargetType":
+,"TargetTypeName":"
+","Value":
+{"total_classes":
+,"matched":
+,"search":"
+","classes":[
+{"ok":true,"addr":"0x
+","bytes_read":
+,"code_section":"0x
+","hex_dump":
+,"ret_offsets":[
+],"found_constants":[
+],"bl_targets":[
+],"float_ops":[
+	{"name":"
+	","type":
+*{"error":"read_api_body_failed","detail":"
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/core/src/num/imp/dec2flt/parse.rs
+/rust/deps/gimli-0.32.3/src/read/abbrev.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ring-0.17.14/src/arithmetic/bigint/modulus.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-0.23.42/src/client/ech.rs
+failed printing to 
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/std/src/../../backtrace/src/symbolize/gimli/lru.rs
+(NULL)
+immutable
+Concat
+SorterOpen
+MemMax
+out of
+database schema is locked: %s
+persist
+vtable constructor called recursively: %s
+bind on a busy prepared statement: [%s]
+cannot open value of type %s
+collation_list
+ignore_check_constraints
+recursive_triggers
+error during initialization: %s
+SELECT*FROM"%w"."%w"
+%s.%s.%s
+column%d
+DISTINCT aggregates must have exactly one argument
+no such index: %S
+SET NULL
+cannot create INSTEAD OF trigger on table: %S
+%s mode not allowed: %s
+ORDER BY clause
+randomblob
+replace
+sqlite_rename_test
+local time unavailable
+unknown error
+another row available
+languageid
+ALTER TABLE %Q.'%q_segdir'   RENAME TO '%q_segdir';
+SELECT %s FROM %s T WHERE T.%Q=?
+REPLACE INTO %Q.'%q_config' VALUES(?,?)
+parse error in rank function: %s
+SELECT * FROM %Q.'%q_rowid'
+,%.*s REAL
+DEFAULT_FILE_FORMAT=4
+DEFAULT_SECTOR_SIZE=4096
+USE_URI
+setRegister
+	dict:ptr(
+{"idx":
+,"class":"
+","dict_info":"
+{"step":
+,"last_step":"
+{"push_host":"
+","push_port":
+,"http_port":
+,"push_interval_secs":
+,"push_enabled":
+,"http_enabled":
+{"id":
+,"priority":
+,"group_id":
+,"relation_group_id":
+,"condition":
+,"race_ids":[
+'{"error":"pt_prepare_failed","detail":"
+-{"ok":false,"error":"query_failed","detail":"
+"sm_obj":"0x
+"dataset_obj":"0x
+	{"name":"
+","type":"f64","offset":
+,"hex":"
+{"ptr":"
+","class":"
+	","hex":{
+	{"index":
+',"storage":"inline_value","address":"0x
+	","size":
+,"raw_hex":"
+.Event hook: StoryManager.SetStory hooked at 0x
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rusqlite-0.31.0/src/lib.rs
+18446744073709551616
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/icu_normalizer-2.2.0/src/lib.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ring-0.17.14/src/rsa/public_modulus.rs
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/core/src/ops/function.rs
+received fatal alert: 
+ roots)
+thread '
+) panicked at 
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/std/src/sys/sync/rwlock/futex.rs
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/std/src/../../backtrace/src/backtrace/libunwind.rs
+trigger
+attempt to open "%s" as file descriptor %d
+TMPDIR
+destination database is in use
+EndCoroutine
+IsTrue
+ShiftRight
+IntegrityCk
+ReleaseReg
+sz=[0-9]*
+SELECT sql FROM "%w".sqlite_schema WHERE type='table'AND name<>'sqlite_sequence' AND coalesce(rootpage,1)>0
+wal_autocheckpoint
+dflt_value
+numeric
+tbl_name='%q' AND type!='trigger'
+%s prohibited in %s
+aggregate functions are not allowed in the GROUP BY clause
+Expression tree is too large (maximum depth %d)
+default value of column [%s] is not constant
+index '%q'
+virtual
+DELETE FROM %Q.sqlite_master WHERE name=%Q AND type='trigger'
+NOCASE
+ USING INTEGER PRIMARY KEY (%s
+row not in PRIMARY KEY order for %s
+CREATE 
+%06.3f
+jsonb_set
+access permission denied
+no more rows available
+invalid
+CREATE TABLE x(term, col, documents, occurrences, languageid HIDDEN)
+SELECT %s
+CREATE TABLE %Q.'%q_%q'(%s)%s
+SELECT pgno FROM '%q'.'%q_idx' WHERE segid=? AND term>? ORDER BY term ASC LIMIT 1
+cannot %s contentless fts5 table: %s
+Invalid argument to rtreedepth()
+%_parent
+Wrong number of columns for an rtree table
+Too few columns for an rtree table
+Too many columns for an rtree table
+internal
+corrupted
+during phase1 personality function said it would stop here, but now in phase2 it did not stop here
+libunwind: malformed DW_CFA_def_cfa_sf DWARF unwind, reg too big
+libunwind: malformed DW_CFA_val_offset DWARF unwind, reg (%lu) out of range
+unsupported restore location for float register
+&{"ok":true,"version":"3.22.91","mdb":"
+","card_count":
+,"effect_count":
+,"cards":[
+],"effects":[
+/data/data/
+/files/master/master.mdb
+WorkSingleModeCharaData: 
+{"getter":"
+%","status":"empty_or_too_long","len":
+{"ok":true,"class":"
+","method":"
+","return_type":"
+","int_value":
+,"float_value":
+/{"ok":false,"error":"db_open_failed","detail":"
+{"scenario_id":
+<,"error":"scenario_obj_null","hint":"getter_name_not_found"}
+"enhance_groups":[
+"command_info":[
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/core/src/unicode/printable.rs
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/core/src/num/imp/flt2dec/strategy/grisu.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ring-0.17.14/src/rsa/padding/pss.rs
+9internal error: entered unreachable code: str::from_utf8(
+" was expected to have 1 char, but 
+ chars were found
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-0.23.42/src/client/hs.rs
+TLS 1.3, client CertificateVerify
+/rust/deps/addr2line-0.25.1/src/unit.rs
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/std/src/path.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/base64-0.22.1/src/engine/mod.rs
+source and destination must be distinct
+access
+IfNoHope
+MakeRecord
+FkCounter
+sqlite_temp_master
+CREATE TABLE x(type text,name text,tbl_name text,rootpage int,sql text)
+SELECT idx,count(*) FROM %Q.sqlite_stat4 GROUP BY idx COLLATE nocase
+Offset %u out of range %u..%u
+SELECT'INSERT INTO vacuum_db.'||quote(name)||' SELECT*FROM"%w".'||quote(name)FROM vacuum_db.sqlite_schema WHERE type='table'AND coalesce(rootpage,1)>0
+notused
+schema
+builtin
+checkpointed
+parser stack overflow
+hex literal too big: %s%#T
+no such column
+recursive reference in a subquery: %s
+'%s' is not a function
+SELECTs to the left and right of %s do not have the same number of result columns
+RECURSIVE STEP
+frame starting offset must be a non-negative integer
+UTF16le
+ESCAPE expression must be a single character
+unable to open database: %s
+shared
+virtual table
+UPDATE temp.sqlite_master SET sql = sqlite_rename_column(sql, type, name, %Q, %Q, %d, %Q, %d, 1) WHERE type IN ('trigger', 'view')
+load_extension
+datetime
+20b:20e
+json_replace
+json_object() requires an even number of arguments
+FLAGS parameter to json_valid() must be between 1 and 15
+file is not a database
+abort due to ROLLBACK
+DELETE FROM %Q.'%q_segments' WHERE blockid BETWEEN ? AND ?
+REPLACE INTO %Q.'%q_stat' VALUES(?,?)
+tokenize
+INSERT INTO %Q.%Q(%Q) VALUES('flush')
+docsize
+REPLACE INTO '%q'.'%q_data'(id, block) VALUES(?,?)
+crisismerge
+DROP TABLE IF EXISTS %Q.'%q_docsize';
+INSERT INTO '%q'.'%q_idx'(segid,term,pgno) VALUES(?,?,?)
+undersize RTree blobs in "%q_node"
+DEFAULT_AUTOVACUUM
+MAX_SQL_LENGTH=1000000000
+libunwind: malformed DW_CFA_register DWARF unwind, reg too big
+getTableEntrySize
+.{"error":"race_inst_prepare_failed","detail":"
+-{"error":"relation_prepare_failed","detail":"
+find_method_addr: 
+ via get_pointer -> 0x
+{"ok":true,"class":"
+","method":"
+","return_type":"
+","ptr":"0x
+","fields":[
+!,"member_class_runtime":{"name":"
+!","found_but_cannot_locate":true}
+{"id":
+,"type":
+,"chara_id":
+4{"ok":false,"error":"header_write_failed","detail":"
+J{"version":"3.22.91","error":"mdb_open_failed","current_state":{"card_id":
+,"scenario_id":
+{"RemainTurn":
+,"FeelingId":
+{"category":
+,"id":
+	,"value":
+	{"name":"
+","offset":
+,"type":
+,"value":"
+	{"index":
+,"error":"null_command"}
+"scenario":
+*internal error: entered unreachable code: 
+/rust/deps/miniz_oxide-0.8.9/src/inflate/core.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ring-0.17.14/src/ec/keys.rs
+Invalid column type 
+ at index: 
+, name: 
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rusqlite-0.31.0/src/column.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-0.23.42/src/crypto/ring/tls13.rs
+ encrypted client hello failure: 
+peer misbehaved: 
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/alloc/src/str.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-0.23.42/src/client/client_conn.rs
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/alloc/src/collections/btree/navigate.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ureq-2.12.1/src/pool.rs
+unable to parse status as u16 (
+temporary
+multiple links to file: %s
+unable to open a temporary database file for storing temporary tables
+MustBeInt
+SeekGT
+Variable
+Column
+AggValue
+%z: %s
+journal_mode
+locking_mode
+page_count
+user_version
+PRAGMA "%w".integrity_check(%Q)
+non-deterministic functions
+window
+FILTER may not be used with non-aggregate %#T()
+corrupt schema
+misuse of aggregate: %s()
+USE TEMP B-TREE FOR %s(ORDER BY)
+USE TEMP B-TREE FOR %sORDER BY
+issisii
+no such column: "%T"
+UPDATE temp.sqlite_master SET sql = sqlite_rename_quotefix('temp', sql)WHERE name NOT LIKE 'sqliteX_%%' ESCAPE 'X' AND sql NOT LIKE 'create virtual%%'
+virtual tables may not be altered
+Cannot add a column to a view
+non-deterministic use of %s() in %s
+jsonb_array
+json_error_position
+\u0000
+query aborted
+CREATE TABLE %Q.'%q_content'(%s)
+ALTER TABLE %Q.'%q_stat'  RENAME TO '%q_stat';
+,origin
+DROP TABLE IF EXISTS %Q.'%q_data';DROP TABLE IF EXISTS %Q.'%q_idx';DROP TABLE IF EXISTS %Q.'%q_config';
+fts5: %s queries are not supported (detail!=full)
+phrase
+malformed inverted index for FTS5 table %s.%s
+SELECT parentnode FROM %Q.'%q_parent' WHERE nodeno=?1
+INSERT OR REPLACE INTO '%q'.'%q_parent' VALUES(?1, ?2)
+INSERT INTO"%w"."%w_rowid"(rowid,nodeno)VALUES(?1,?2)ON CONFLICT(rowid)DO UPDATE SET nodeno=excluded.nodeno
+RtreeMatchArg
+overflow
+ENABLE_DBSTAT_VTAB
+_Unwind_GetDataRelBase
+{"error":"not_found","path":"
+","available":["/scan","/data","/status","/health","/scenario","/debug/upload","/debug/rameninfo","/debug/laststep","/event/recommend","/inherit/compat","/saddle-analysis","/log/turn","/log","/debug/params","/fields","/methods","/singletons","/find_method","/classes","/carddb","/skilldata","/hall","/debug/breeders","/debug/cmdinfo","/debug/training_partners","/debug/ramengains","/debug/paramsincdec","/debug/training_seed","/debug/training_log","/debug/training_log_dl","/update","/update/status","/debug/dumpclass","/debug/storydata","/debug/ramenfields","/debug/all","/mdb","/debug/push_table","/debug/download_table","/classes/search/keyword","/mdb/schema","/mdb/search","/mdb/raw","/mdb/dl_batch","/il2cpp/dump","/il2cpp/call","/il2cpp/tree","/il2cpp/field","/il2cpp/classes","/il2cpp/static","/il2cpp/methods","/il2cpp/search_float","/il2cpp/search_float_dl","/il2cpp/search_int","/il2cpp/search_int_dl","/il2cpp/search_methods","/il2cpp/search_methods_dl","/il2cpp/search_methods_page","/il2cpp/read_mem","/il2cpp/read_mem_dl","/training/result","/api/sniff","/api/sniff/toggle","/api/sniff/clear","/api/sniff/diag","/api/event/choices","/api/event/clear"]}
+	{"name":"
+	","rows":
+{"message":"upload 
+","content":"
+({"ok":true,"version":"3.22.91","table":"
+","total_rows":
+,"offset":
+,"rows_queried":
+<,"complete":true,"download_url":"/debug/download_table?name=
+"home_elem0_params_len":
+find_method_addr: 
+ manual offset -> 0x
+{"entries":
+,"log":[
+'{"error":"gain_query_failed","detail":"
+{"getter":"
+","status":"null_first_elem"}
+{"seg_start":"0x
+","seg_end":"0x
+	","size":
+,"perms":"
+","mapping":"
+	","hits":
+,"matches":[
+/data/data/jp.pokemon.pokeuma/files/training_log.jsonl
+0{"ok":true,"version":"3.22.91","matched_tables":
+,"table_details":[
+],"support_card_data_columns":[
+	{"total":
+,"classes":[
+{"found_classes":["
+"],"singletons":["
+"],"total":
+compress_hook panic: 
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/core/src/slice/memchr.rs
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/core/src/net/ip_addr.rs
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/alloc/src/collections/btree/map/entry.rs
+ at offset 
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ring-0.17.14/src/agreement.rs
+peer is incompatible: 
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-0.23.42/src/crypto/hash.rs
+&failed to lookup address information: 
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/std/src/thread/functions.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ureq-2.12.1/src/rtls.rs
+file renamed while open: %s
+NotFound
+PureFunc
+ResultRow
+BitAnd
+Remainder
+OpenRead
+String8
+ParseSchema
+CursorUnlock
+cannot commit transaction - SQL statements in progress
+database schema has changed
+SELECT*FROM"%w".%s ORDER BY rowid
+free space corruption
+Fragmentation of %u bytes reported as %u on page %u
+cannot VACUUM from within a transaction
+INSERT INTO vacuum_db.sqlite_schema SELECT*FROM "%w".sqlite_schema WHERE type IN('view','trigger') OR(type='table'AND rootpage=0)
+comment
+auto_vacuum
+query_only
+wal_checkpoint
+status
+sqlite3_get_table() called with two or more incompatible queries
+a NATURAL join may not have an ON or USING clause
+virtual tables may not be indexed
+expected %d columns for '%s' but got %d
+LEFT-MOST SUBQUERY
+abbreviated query algorithm search
+rowid=?
+AUTOMATIC PARTIAL COVERING INDEX
+table %s may not be modified
+%sON CONFLICT clause does not match any PRIMARY KEY or UNIQUE constraint
+*** in database %s ***
+UTF16be
+cannot create triggers on virtual tables
+cannot create %s trigger on view: %S
+there is already another table or index with this name: %s
+octet_length
+sqlite_rename_table
+sqlite_rename_quotefix
+json_insert
+UPDATE OR FAIL %Q.'%q_segdir' SET level=-1,idx=? WHERE level=? AND idx=?
+PRAGMA %Q.page_size
+ALTER TABLE %Q.'%q_docsize'  RENAME TO '%q_docsize';
+, T.c%d
+segid, term, pgno, PRIMARY KEY(segid, term)
+config
+%z, %Q HIDDEN, %s HIDDEN)
+usermerge
+L* N* Co
+CREATE TABlE vocab(term, doc, col, offset)
+Mapping (%lld -> %lld) missing from %s table
+ENABLE_FTS5
+MAX_LENGTH=1000000000
+libunwind: malformed DW_CFA_GNU_negative_offset_extended DWARF unwind, reg too big
+.{"ok":false,"error":"schema_failed","detail":"
+not_tfe(
+{"sniff_enabled":
+,"compress_hooked":
+,"decompress_hooked":
+,"post_hooked":
+HTTP/1.1 200 OK
+Content-Type: 
+Content-Length: 
+Connection: close
+"{"error":"query_failed","detail":"
+{"id":
+,"need_pt":
+,"status_type":
+,"status_value":
+	SkillPt: 
+ | Fan: 
+find_field_offset: '
+' not found
+: hooked at 0x
+ (interceptor)
+%{"error":"method_not_found","class":"
+","method":"
+({"error":"method_pointer_null","class":"
+","method":"
+&{"error":"not_breeders","scenario_id":
+{"offset":"0x
+","abs_addr":"0x
+hSELECT id, story_id, card_id, support_card_id, event_category FROM single_mode_story_data WHERE card_id=
+ OR support_card_id IN (
+) ORDER BY id
+"feeling_turn_info":[
+/{"error":"insufficient_code_bytes","available":
+,"addr":"0x
+{"partner_id":
+,"support_position":
+,"support_card_id":
+,"current_bond":
+,"is_shining":
+,"is_unique_active":
+,"bond_threshold":
+,"support_card_type":
+,"is_tips_event":
+,"partner_type":
+	,"name":"
+","bond_gain":null}
+{"label":"
+","chara_id":
+,"saddle_count":
+,"saddles":[
+	{"name":"
+","offset":
+,"type":
+,"raw":
+-nul byte found in provided data at position: 
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/core/src/num/imp/diy_float.rs
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/core/src/fmt/mod.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rusqlite-0.31.0/src/raw_statement.rs
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/alloc/src/slice.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/flate2-1.1.9/src/crc.rs
+cannot open %s column for writing
+vtab:%p
+IfNullRow
+Integer
+CreateBtree
+DropIndex
+Child page depth differs
+truncate
+memory
+SELECT sql FROM "%w".sqlite_schema WHERE type='index'
+schema_version
+database
+%sSCALAR SUBQUERY %d
+authorizer malfunction
+COMMIT
+temporary table name must be unqualified
+unknown datatype for %s.%s: "%s"
+unsafe use of virtual table "%s"
+cannot create a TEMP index on non-TEMP table "%s"
+CREATE%s INDEX %.*s
+recursive aggregate queries not supported
+a JOIN clause is required before %s
+IN(...) element has %d term%s - expected %d
+UTF-16be
+UPDATE "%w".sqlite_master SET sql = sqlite_rename_table(%Q, type, name, sql, %Q, %Q, %d) WHERE (type!='index' OR tbl_name=%Q COLLATE nocase)AND   name NOT LIKE 'sqliteX_%%' ESCAPE 'X'
+typeof
+SELECT ? UNION SELECT level / (1024 * ?) FROM %Q.'%q_segdir'
+UPDATE %Q.'%q_segdir' SET idx = ? WHERE level=? AND idx=?
+illegal first argument to %s
+no such tokenizer: %s
+, T.%Q
+CREATE TABlE vocab(term, col, doc, cnt)
+Dimension %d of cell %d on node %lld is corrupt relative to parent
+SELECT length(data) FROM '%q'.'%q_node' WHERE nodeno = 1
+ENABLE_COLUMN_METADATA
+MAX_DEFAULT_PAGE_SIZE=8192
+MAX_LIKE_PATTERN_LENGTH=50000
+MAX_PAGE_SIZE=65536
+){"error":"name_prepare_failed","detail":"
+HTTP: Running :
+!{"ok":true,"single_mode_tables":[
+],"event_tables":[
+HTTP bind failed: 
+${"error":"member_arr_empty","count":
+,"team_rank":
+,"having_dp":
+,"dream_left":
+,"dream_max":
+,"enhance_groups":[
+"selected_region_ids":[
+{"name":"Effect#
+5","level":0,"desc":"unknown effect","type":"Unknown"}
+{"ok":true,"total_classes":
+,"keyword":"
+","classes_with_hits":
+,"method_hits":
+,"methods":[
+{"collection_class":"
+","storage":"
+","length":
+,"error":"null_array"}
+	{"index":
+ ,"storage":"reference","ptr":"0x
+","runtime_class":"
+","raw_hex":"
+'API sniff: CompressRequest hooked at 0x
+	{"name":"
+","level":
+	,"desc":"
+","type":"Breeders"}
+{"ok":true,"requested":"
+","found":"
+","field_count":
+!,"is_enum":true,"values_source":"
+","fields":[
+/libhachimi_ura.so
+"hachimi_init_v3 done, api_version=
+start byte index 
+& is not a char boundary; it is inside 
+ (bytes 
+ of string)
+byte range starts at 
+ but ends at 
+range start index 
+" out of range for slice of length 
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ring-0.17.14/src/aead/algorithm.rs
+!received unexpected message: got 
+ when expecting 
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/core/src/num/wrapping.rs
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/std/src/io/stdio.rs
+      [... omitted 
+ frame
+/rust/deps/addr2line-0.25.1/src/function.rs
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/std/src/thread/current.rs
+127.0.0.1:
+ (redirected from 
+Response[status: 
+, status_text: 
+, url: 
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/core/src/slice/index.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/untrusted-0.9.0/src/reader.rs
+cannot open table without rowid: %s
+%s/etilqs_%llx%c
+SeekEnd
+VInitIn
+MaxPgcnt
+Abortable
+object name reserved for internal use: %s
+wrong number of arguments to function %#T()
+index expressions
+multiple recursive references: %s
+no such index: %s
+cannot use DEFAULT on a generated column
+auto-index
+INDEX %s
+too many columns in %s
+UPDATE "%w".sqlite_master SET sql = printf('%%.%ds, ',sql) || %Q || substr(sql,1+length(printf('%%.%ds',sql))) WHERE type = 'table' AND name = %Q
+name=%Q AND sql=%Q
+error in %s %s%s%s: %s
+object
+failed memory resize %u to %u bytes
+unknown operation
+DELETE FROM %Q.'%q_segdir'
+SELECT idx, start_block, leaves_end_block, end_block, root FROM %Q.'%q_segdir' WHERE level BETWEEN ? AND ?ORDER BY level DESC, idx ASC
+Node %lld is too small for cell count of %d (%d bytes)
+rtree constraint failed: %s.(%s<=%s)
+MAX_ATTACHED=10
+TEMP_STORE=3
+DW_EH_PE_datarel is invalid with a datarelBase of 0
+{"id":
+,"chara_id":
+,"rarity":
+,"command_id":
+,"effect_table_id":
+,"unique_effect_id":
+,"support_card_type":
+,"outing_max":
+3{"ok":true,"version":"3.22.91","hint_gain_sample":[
+],"hint_gain_with_cond":[
+],"hint_gain_type_dist":[
+],"condition_set_resolved":[
+],"unique_chara_sample":[
+!{"error":"read_failed","addr":"0x
+	","size":
+,"bytes_read":0}
+ Chara: SPD=
+ SKPT=
+ SCID=
+	 EFFECTS=
+ SPROG=
+{"tt":
+,"vv":
+#{"error":"singleton_null","class":"
+{"ok":true,"class":"
+","real_class":"
+","method":"
+","method_addr":"0x
+","bytes_read":
+,"code_section":"0x
+","hex_dump":
+,"ret_offsets":[
+],"found_constants":[
+!,"member_class_runtime":{"name":"
+","found":true,"methods":
+,"fields":
+{"target_id":
+,"evaluation":
+{"type":
+	,"point":
+	{"name":"
+	","rows":
+,"key":
+,"schema":
+,"sample":
+	{"name":"
+","level":0,"desc":"
+","type":"
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/alloc/src/raw_vec/mod.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/base64-0.22.1/src/engine/general_purpose/mod.rs
+ (1 << 
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/percent-encoding-2.3.2/src/lib.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-0.23.42/src/client/handy.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-0.23.42/src/common_state.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-0.23.42/src/crypto/cipher.rs
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/core/src/slice/sort/stable/quicksort.rs
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/std/src/sys/fs/unix.rs
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/std/src/thread/id.rs
+: status code 
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/url-2.5.8/src/lib.rs
+2024-01-15 17:01:13 1066602b2b1976fe58b5150777cced894af17c803e068f5918390d6915b46e1d
+modeof
+VUpdate
+Rewind
+FkCheck
+RealAffinity
+ShiftLeft
+Subtract
+ResetCount
+AggStep1
+AggFinal
+VCheck
+UNIQUE
+orphan index
+invalid page number %u
+parent
+%s: %s
+mmap_size
+page_size
+CORRELATED 
+ROLLBACK
+partial index WHERE clauses
+CHECK constraints
+generated columns cannot be part of the PRIMARY KEY
+MULTI-INDEX OR
+ USING COVERING INDEX 
+ORDER BY
+NUMERIC value in %s.%s
+database %s is already in use
+table %s may not be altered
+unicode
+nullif
+sqlite_rename_column
+jsonb_object
+SELECT size FROM %Q.'%q_docsize' WHERE docid=?
+automerge=
+DELETE FROM %Q.'%q_content' WHERE id=?
+trigram
+automatic extension loading failed: %s
+misuse
+libunwind: malformed DW_CFA_def_cfa DWARF unwind, reg too big
+getEncodedP
+FDE is really a CIE
+_Unwind_GetTextRelBase() not implemented
+{"id":
+,"type":
+,"init":
+,"lv5":
+,"lv10":
+,"lv15":
+,"lv20":
+,"lv25":
+,"lv30":
+,"lv35":
+,"lv40":
+,"lv45":
+,"lv50":
+{"field":"
+","status":"bad_len","len":
+{"ok":true,"chara":{"speed":
+,"stamina":
+	,"power":
+,"guts":
+,"wiz":
+	,"vital":
+,"max_vital":
+,"motivation":
+,"skill_point":
+,"scenario_id":
+,"fan_count":
+,"chara_effect_ids":[
+],"scenario_progress":
+},"month":
+,"half":
+,"playing_state":
+,"is_playing":
+A,"via":"WorkDataManager->get_SingleMode->get_Character->getters"}
+"wdm_inst":"0x
+{"idx":
+,"null":true}
+{"idx":
+,"cmd_type":
+,"cmd_id":
+,"params_error":"bad_len"}
+	{"name":"
+","found":true,"methods":
+,"fields":
+{"type":
+,"grp":
+,"sort":
+{"table":"
+","columns":[
+H{"version":"3.22.91","error":"mdb_not_found","current_state":{"card_id":
+,"scenario_id":
+" cards found, partner_evaluation: 
+ entries
+end byte index 
+& is not a char boundary; it is inside 
+ (bytes 
+ of string)
+range end index 
+" out of range for slice of length 
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/core/src/bstr/mod.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ring-0.17.14/src/rsa/padding.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ring-0.17.14/src/aead/aes_gcm.rs
+Invalid column index: 
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-0.23.42/src/tls12/mod.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-0.23.42/src/tls13/key_schedule.rs
+memory allocation of 
+ bytes failed
+!Error while reading from file at 
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/core/src/io/borrowed_buf.rs
+Bad redirection: 
+Proxy-Authorization: basic 
+error dropping testserver: 
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/core/src/str/pattern.rs
+0123456789ABCDEF0123456789abcdef
+(join-%u)
+unix-dotfile
+PRAGMA "%w".page_count
+indexed
+%s at line %d of [%.10s]
+VDestroy
+too many levels of trigger recursion
+Tree %u page %u cell %u: 
+quick_check
+on_delete
+unable to open shared library [%.*s]
+not authorized to use function: %#T
+ambiguous reference to %s in USING()
+unknown column "%s" in foreign key definition
+sqlite_stat%d
+DELETE FROM %Q.sqlite_sequence WHERE name=%Q
+too many arguments on %s() - max %d
+ON clause references tables to its right
+rows inserted
+exclusive
+stat_push
+stat_get
+length
+50f-20a-20d
+json_object
+json_remove
+bad JSON path: %Q
+unable to close due to unfinalized statements or unfinished backups
+database table is locked
+unable to open database file
+bad parameter or other API misuse
+SELECT value FROM %Q.'%q_stat' WHERE id=?
+CREATE TABLE x(%s %Q HIDDEN, docid HIDDEN, %Q HIDDEN)
+DROP TABLE IF EXISTS %Q.'%q_segments';DROP TABLE IF EXISTS %Q.'%q_segdir';DROP TABLE IF EXISTS %Q.'%q_docsize';DROP TABLE IF EXISTS %Q.'%q_stat';%s DROP TABLE IF EXISTS %Q.'%q_content';
+SELECT %s WHERE rowid = ?
+merge=
+ROLLBACK TO fts3
+malformed detail=... directive
+reserved fts5 column name: %s
+id INTEGER PRIMARY KEY
+hashsize
+deletemerge
+DEFAULT_FOREIGN_KEYS
+PRAGMA table_info([
+{"table":"
+	","rows":
+{"table":"
+","column":"
+","type":"
+{"game_initialized":
+,"http_running":
+%{"error":"mdb_read_failed","detail":"
+{"id":
+,"size":
+,"hex":"
+","text":"
+{"relation_type":
+,"relation_point":
+{"id":
+,"hint_id":
+	,"sc_id":
+,"hint_grp":
+,"gain_type":
+,"hv1":
+,"hv2":
+,"grp_id":
+,"cond_set_id":
+,"pri":
+{"error":"invalid_size","size":
+,"max":65536}
+"scenario_obj":"0x
+"cmd_count":
+"params_len":
+,"items":[
+4{"ok":true,"version":"3.22.91","cards_with_unique":[
+],"all_effects":[
+],"combo_dist":[
+],"effect_filter":[
+],"t101_samples":[
+],"t116_samples":[
+{"ok":true,"requested":"
+","found":"
+","method_count":
+,"methods":[
+{"ok":true,"requested":"
+","found":"
+=","method_count":0,"methods":[],"error":"missing_il2cpp_api"}
+4{"ok":false,"error":"append_write_failed","detail":"
+Training hook installed at 0x
+ (interceptor)
+{"type":"unknown(
+	)","raw":
+ {"name":"
+","state":"
+","UrafEffectState":
+,"type":"Ramen"}
+ Loaded!
+insertion index (is 
+) should be <= len (is 
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/core/src/num/imp/flt2dec/strategy/dragon.rs
+Integer 
+ out of range
+Invalid parameter name: 
+%illegal write_vectored return value (
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ureq-2.12.1/src/unit.rs
+fchmod
+memdb(%p,%lld)
+out of memory
+JournalMode
+Compare
+SeekScan
+SorterData
+Destroy
+Expire
+VBegin
+ClrSubtype
+FilterAdd
+CursorHint
+error in %s %s after %s: %s
+overflow list length
+delete
+opcode
+full_column_names
+incremental_vacuum
+generated column loop on "%s"
+the "." operator
+%.*z:%u
+duplicate column name: %s
+conflicting ON CONFLICT clauses specified
+foreign key on %s should reference only one column of table %T
+table %s may not be dropped
+CO-ROUTINE %!S
+syntax error after column name "%.*s"
+too many attached databases - max %d
+database is already attached
+sqlite_stat3
+Cannot add a NOT NULL column with default value NULL
+SELECT CASE WHEN quick_check GLOB 'CHECK*' THEN raise(ABORT,'CHECK constraint failed') WHEN quick_check GLOB 'non-* value in*' THEN raise(ABORT,'type mismatch on DEFAULT') ELSE raise(ABORT,'NOT NULL constraint failed') END  FROM pragma_quick_check(%Q,%Q) WHERE quick_check GLOB 'CHECK*' OR quick_check GLOB 'NULL*' OR quick_check GLOB 'non-* value in*'
+sqlite_compileoption_used
+jsonb_group_object
+json_object() labels must be TEXT
+, x.%Q
+, x.'%q'
+fts5_source_id
+k PRIMARY KEY, v
+DELETE FROM %Q.'%q_docsize' WHERE id=?
+Node %lld missing from database
+SELECT parentnode FROM '%q'.'%q_parent' WHERE nodeno = ?1
+ENABLE_RTREE
+MAX_MMAP_SIZE=0x7fff0000
+DW_OP_fbreg not implemented
+_Unwind_GetDataRelBase() not implemented
+SELECT COUNT(*) FROM [
+{"id":
+	,"name":"
+"home_elem0_params":"0x
+{"ok":true,"search_values":[
+],"total_segments":
+,"total_scanned":
+,"segments_with_hits":
+,"segments":[
+{"t0":
+,"t1":
+	,"count":
+{"table":"
+","columns":[
+],"rows":[
+"dataset_class":"
+"dataset_values":{
+{"CommandType":
+,"CommandId":
+,"FeelingId":
+{"EffectCategory":
+,"EffectId":
+,"EffectValue":
+S:stats sid=
+{"version":"
+	","year":
+,"turn":
+	,"month":
+,"half":
+,"scenario":"
+","chara_id":
+,"stats":{"speed":
+,"stamina":
+	,"power":
+,"guts":
+,"wiz":
+	,"vital":
+,"max_vital":
+,"motivation":"
+","skill_point":
+,"fan":
+},"max_stats":{"speed":
+,"stamina":
+	,"power":
+,"guts":
+,"wiz":
+},"proper":{"dist_short":
+,"dist_mile":
+,"dist_mid":
+,"dist_long":
+,"ground_turf":
+,"ground_dirt":
+},"running_style":
+,"scenario_progress":
+,"training_event_type":
+,"talent_level":
+,"chara_grade":
+,"difficulty":
+,"rng_seed":
+,"trainings":
+,"support_cards":
+,"evaluation":
+,"training_levels":
+	,"buffs":
+,"chara_effect_ids":[
+],"skills":{"eval":
+	,"count":
+,"list":
+},"ai":
+{"class":"
+","args":1}
+Event choice added: label='
+' gain=
+ next=
+ loop_exit=
+"storydata":
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/core/src/fmt/builders.rs
+&copy_from_slice: source slice length (
++) does not match destination slice length (
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ring-0.17.14/src/ec/suite_b/ops/p384.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rusqlite-0.31.0/src/inner_connection.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-0.23.42/src/record_layer.rs
+'certificate expired: verification time 
+, (UNIX), but certificate is not valid after 
+ seconds ago)
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-pki-types-1.15.0/src/lib.rs
+unknown scheme 
+resolve dns name '
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ureq-2.12.1/src/response.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-webpki-0.103.13/src/crl/mod.rs
+no such column: "%s"
+pread64
+MJ collide: %s
+SeekLT
+FkIfZero
+IdxDelete
+cannot open savepoint - SQL statements in progress
+%s is %u but should be %u
+index_list
+index_xinfo
+unknown table option: %.*s
+flexnum
+AUTOINCREMENT not allowed on WITHOUT ROWID tables
+%s: %s.%s.%s
+RANGE with offset PRECEDING/FOLLOWING requires one ORDER BY expression
+DELETE FROM %Q.%s WHERE %s=%Q
+at most %d tables in a join
+AUTOMATIC COVERING INDEX
+RETURNING may not use "TABLE.*" wildcards
+LIKE or GLOB pattern too complex
+cannot add a STORED column
+cannot override %s of window: %s
+likelihood
+sqlite_log
+DELETE FROM %Q.'%q_content' WHERE rowid = ?
+parse error in "%s"
+unrecognized option: "%.*s"
+fts5: error creating shadow table %q_%s: %s
+version
+fts5 expression tree is too large (maximum depth %d)
+rtreedepth
+CREATE TABLE x(%.*s INT
+INSERT INTO "%w"."%w_node"VALUES(1,zeroblob(%d))
+%s%.3x+%.6x
+[%lld]
+unsupported restore location for register
+src/lib.rs
+{"error":"bad_len","len":
+SELECT * FROM [
+	] LIMIT 1
+Vital: 
+find_method_addr: 
+ offset0=0, offset48=0x
+{"id":
+	,"name":"
+","gv":
+,"lv":
+,"ev":
+0{"error":"pointer_not_aligned","method_addr":"0x
+"dataset_objects":{
+call_getter: '
+' threw exception
+	{"index":
+ ,"storage":"reference","ptr":"0x
+","status":"unreadable_target"}
+"evaluation_list unavailable: size=
+, items_null=
+	{"name":"
+","offset":
+,"type":
+*,"value":null,"enum":true,"internal":true}
+removal index (is 
+) should be < len (is 
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/core/src/num/imp/bignum.rs
+ index out of bounds: the len is 
+ but the index is 
+Error code 
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/miniz_oxide-0.8.9/src/inflate/stream.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ring-0.17.14/src/ec/curve25519/ed25519/signing.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ring-0.17.14/src/io/writer.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-0.23.42/src/msgs/handshake.rs
+TLS 1.3, server CertificateVerify
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-0.23.42/src/webpki/verify.rs
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/std/src/ffi/os_str.rs
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/std/src/sync/reentrant_lock.rs
+reached max redirects (
+localhost:
+NotExists
+CollSeq
+Divide
+SeekHit
+vtable constructor did not declare schema: %s
+pragma_
+foreign_key_check
+table_info
+sqlite_
+HAVING clause on a non-aggregate query
+%r %s BY term out of range - should be between 1 and %d
+EXCEPT
+always
+expressions prohibited in PRIMARY KEY and UNIQUE constraints
+MATERIALIZE %!S
+cannot use window functions in recursive queries
+<expr>
+>? AND %s
+too many terms in compound SELECT
+normal
+sqlite_detach
+expr_compare
+current_date
+-9e999
+fts4aux
+notindexed
+SELECT %s FROM %s T WHERE T.%Q <= ? AND T.%Q >= ? ORDER BY T.%Q DESC
+fts5: parser stack overflow
+ALTER TABLE %Q.'%q_%s' RENAME TO '%q_%s';
+rtreenode
+SELECT nodeno FROM %Q.'%q_rowid' WHERE rowid=?1
+SELECT * FROM (SELECT 'sqlite_schema' AS name,1 AS rootpage,'table' AS type UNION ALL SELECT name,rootpage,type FROM "%w".sqlite_schema WHERE rootpage!=0)
+libunwind: malformed DW_CFA_expression DWARF unwind, reg too big
+DW_EH_PE_aligned pointer encoding not supported
+malformed uleb128 expression
+{"ok":true,"sql":"
+","columns":[
+],"row_count":
+	,"rows":[
+/hall: 
+ valid entries
+"{"error":"empty_list","list_size":
+SELECT 
+ FROM [
+] LIMIT 
+ OFFSET 
+/data/data/jp.pokemon.pokeuma/files/uma_predict.log
+%v3.22.51 precache_metadata: done 
+ classes, 
+ field offsets cached
+SELECT COUNT(*) FROM 
+-{"ok":false,"error":"count_failed","detail":"
+"dataset_arrays":{
+,"params_inc_dec":[
+],"team_member_len":
+"all_selected_region_ids":[
+{"ns":"
+","name":"
+","fields":
+,"singleton":
+ramen scalar: cp=
+ uraf_t=
+ uraf_s=
+	{"name":"
+","EffectId":
+,"EffectValue":
+	,"desc":"
+","type":"Ramen"}
+	{"index":
+	,"name":"
+	","type":
+,"is_relation_bonus":
+,"relation_point":
+"cmdinfo":
+"{"error":"no_so_asset_url","tag":"
+{"status":"updated","old":"
+	","new":"
+","so_path":"
+!","hint":"restart_game_to_apply"}
+/rust/deps/addr2line-0.25.1/src/line.rs
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/core/src/char/methods.rs
+assertion `left 
+ right` failed
+  left: 
+ right: 
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ring-0.17.14/src/rsa/public_key.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ring-0.17.14/src/limb.rs
+/rust/deps/rustc-demangle-0.1.27/src/lib.rs
+is only valid for 
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-pki-types-1.15.0/src/server_name.rs
+Hcannot access a Thread Local Storage value during or after destruction: 
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/std/src/sys/random/linux.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/url-2.5.8/src/host.rs
+string or blob too big
+no such table column: %s.%s
+openDirectory
+,%s%s%s
+SorterNext
+RowSetRead
+ZeroOrNull
+DropTable
+abort at %d in [%s]: %s
+cannot VACUUM - SQL statements in progress
+non-text filename
+journal_size_limit
+too many columns on %s
+sqlite3_extension_init
+aggregate
+sqlite_temp_schema
+table %S has no column named %s
+UTF-16
+sqlite_attach
+tbl,idx,stat
+Cannot add a PRIMARY KEY column
+PARTITION clause
+substr
+\u0009
+%!0.15g
+DELETE FROM %Q.'%q_content'
+DELETE FROM %Q.'%q_stat'
+_content
+expected integer, got "%.*s"
+DELETE FROM '%q'.'%q_idx' WHERE (segid, (pgno/2)) = (?1, ?2)
+SELECT segid, term, (pgno>>1), (pgno&1) FROM %Q.'%q_idx' WHERE segid=%d ORDER BY 1, 2
+wrong number of arguments to function highlight()
+separators
+DELETE FROM '%q'.'%q_parent' WHERE nodeno = ?1
+SELECT stat FROM %Q.sqlite_stat1 WHERE tbl = '%q_rowid'
+dbstat
+getSavedFloatRegister
+Config updated: 
+{"label":"
+","gain_id":
+,"next_block_idx":
+,"loop_exit_gain_id":
+{"ts":
+,"src":"
+	","data":
+{"command_id":
+	,"level":
+{"table":"
+","columns":[
+],"row_count":
+	,"rows":[
+-{"ok":true,"version":"3.22.91","story_count":
+,"choice_count":
+,"gain_count":
+,"title_count":
+,"stories":[
+],"choices":[
+],"gains":[
+],"titles":[
+.SELECT id, text FROM text_data WHERE category=
+{"error":"cmd_bad_len","len":
+"{"error":"invalid_float","input":"
+{"cmd_idx":
+,"param_idx":
+,"actual_class":"
+","elem_is_info_type":
+,"auto_tt":
+,"auto_val":
+,"plain_tt":
+,"plain_val":
+,"field_tt_xor":
+,"field_val_xor":
+,"raw":"
+	":{"len":
+,"ptr":"
+"active_effects":[
+call_getter: '
+' not found
+{"offset":
+,"target":"0x
+{"ok":true,"class":"
+","field":"
+","offset":
+,"type":
+	,"value":
+,{"error":"rename_fallback_failed","detail":"
+/rust/deps/miniz_oxide-0.8.9/src/inflate/output_buffer.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ring-0.17.14/src/aead/quic.rs
+/rust/deps/rustc-demangle-0.1.27/src/v0.rs
+!failed to parse RSA private key: 
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/core/src/time.rs
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/std/src/io/mod.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/flate2-1.1.9/src/bufreader.rs
+unix-none
+unix-excl
+os_unix.c:%d: (%d) %s(%s) - %s
+incremental_vacuum enabled with a max rootpage of zero
+freelist leaf count too big on page %u
+unable to get the page. error code=%d
+hidden
+analysis_limit
+cell_size_check
+foreign_key_list
+trusted_schema
+RELEASE
+corrupt database
+must have at least one non-generated column
+misuse of aliased aggregate %s
+multiple references to recursive table: %s
+view %s is circularly defined
+_ROWID_
+ UNIQUE
+GROUP BY
+COMPOUND QUERY
+PRIMARY KEY
+UPSERT not implemented for virtual table "%s"
+DISTINCT is not supported for window functions
+sissii
+type='trigger' AND name='%q'
+cannot create trigger on system table
+no such database: %s
+cannot detach database %s
+unable to identify the object to be reindexed
+timediff
+40f-20a-20d
+json_set
+json_group_array
+database disk image is malformed
+constraint failed
+invalid arguments to fts4aux constructor
+SELECT * FROM %Q.%Q
+RELEASE fts3
+segdir
+SELECT k, v FROM %Q.'%q_config'
+unable to validate the inverted index for FTS5 table %s.%s: %s
+,%.*s INT
+DEFAULT_JOURNAL_SIZE_LIMIT=-1
+MAX_COLUMN=2000
+MAX_FUNCTION_ARG=127
+){"error":"card_prepare_failed","detail":"
+&{"ok":true,"version":"3.22.91","mdb":"
+","saddle_count":
+,"program_chara_count":
+,"program_count":
+,"race_name_count":
+,"chara_name_count":
+,"relation_count":
+,"member_count":
+,"race_instance_count":
+,"saddles":[
+],"chara_programs":[
+],"programs":[
+],"race_names":[
+],"chara_names":[
+],"relations":[
+],"relation_members":[
+],"race_instances":[
+{"id":
+,"relation_type":
+,"chara_id":
+{"id":
+,"rarity":
+,"grade_value":
+,"skill_category":
+,"condition":"
+","ability_type":
+,"ability_value":
+,"icon_id":
+,"disable_sm":
+SELECT 
+ FROM [
+] LIMIT 
+({"ok":true,"version":"3.22.91","table":"
+","total_rows":
+,"offset":
+M,"rows_queried":0,"complete":true,"download_url":"/debug/download_table?name=
+){"error":"choice_query_failed","detail":"
++precache_metadata: WDM singleton cached at 
+{"ok":false,"class":"
+","method":"
+","error":"call_returned_null"}
+{"ok":true,"wdm_addr":"0x
+","single_mode_addr":"0x
+","seed_addr":"0x
+","seed_s0":
+,"seed_s1":
+,"seed_s2":
+,"seed_s3":
+,"seed_hex":"
+{"table":"
+","total_rows":
+	,"rows":[
+,{"ok":false,"error":"stat_failed","detail":"
+DataSet
+"dataset_obj":"
+training_hook: panic caught: 
+skill_eval=
+ count=
+{"name":"
+","UrafEffectType":
+,"type":"Ramen"}
+	{"name":"
+","command_id":
+,"is_enable":
+,"failure_rate":
+	,"heads":
+,"shining":
+,"partner_ids":[
+],"partners":[
+],"gains":{
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/core/src/net/display_buffer.rs
+keys may not be consistent: 
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-0.23.42/src/crypto/mod.rs
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/alloc/src/string.rs
+pwrite
+%s.lock
+Vacuum
+VFilter
+Filter
+SoftNull
+Offset
+RowCell
+cannot start a transaction within a transaction
+Multiple uses for byte %u of page %u
+integer
+hard_heap_limit
+integrity_check
+%c"%s"
+,schema HIDDEN
+misuse of aggregate: %#T()
+%#T() may not be used as a window function
+use DROP TABLE to delete table %s
+frame ending offset must be a non-negative integer
+frame ending offset must be a non-negative number
+cannot INSERT into generated column "%s"
+temporary storage cannot be changed from within a transaction
+trigger %T already exists
+notification message
+snippet
+SELECT level, idx, end_block FROM %Q.'%q_segdir' WHERE level BETWEEN ? AND ? ORDER BY level DESC, idx ASC
+langid
+%z, langid
+ALTER TABLE %Q.'%q_segments' RENAME TO '%q_segments';
+malformed prefix=... directive
+unindexed
+fts5vocab: unknown table type: %Q
+SELECT t.%Q FROM %Q.%Q AS t WHERE t.%Q MATCH '*id'
+fts5_api_ptr
+%s%.3x/
+unknown pointer encoding
+DWARF opcode not implemented
+getSavedRegister
+__MDB_BINARY__
+:{"ok":true,"version":"3.22.91","effect_table":{"columns":[
+],"sample":[
+],"unique_match":[
+]},"effect_filter":{"columns":[
+],"rows":[
+%]},"effect_filter_group":{"columns":[
+],"rows":[
+]},"unique_effect":{"columns":[
+],"type_0_dist":[
+],"type_1_dist":[
+],"cond_rows":[
+2{"ok":false,"error":"invalid_table_name","table":"
+	{"name":"
+","offset":
+,"type":
+	,"value":
+{"idx":
+,"chara_id":
+	,"level":
+	,"gauge":
+,"burst_ready":
+,"exp":
+,"klass_name":"
+	","raw":"
+SELECT * FROM [
+	] LIMIT 3
+'API sniff: WWWRequest.Post hooked at 0x
+,"ramen":{"checkpoint_pt":
+,"moriagari_level":
+,"special_feeling_num":
+,"recommend_type":
+,"sozai":[
+],"feeling_info":[
+],"selected_region_ids":[
+],"active_effects":[
+],"gauge_gains":[
+Event choice: index=
+ choices_count=
+Invalid column name: 
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-0.23.42/src/msgs/codec.rs
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/std/src/../../backtrace/src/symbolize/gimli/elf.rs
+*extension cannot contain path separators: 
+	DnsName("
+UniformResourceIdentifier("
+unknown database: %s
+API call with %s database connection pointer
+/dev/null
+ColumnsUsed
+NewRowid
+SorterInsert
+IdxRowid
+ValueList
+unsupported file format
+Bad ptr map entry key=%u expected=(%u,%u) got=(%u,%u)
+compile_options
+freelist_count
+synchronous
+table_list
+writable_schema
+UPDATE %Q.sqlite_master SET type='%s', name=%Q, tbl_name=%Q, rootpage=#%d, sql=%Q WHERE rowid=#%d
+circular reference: %s
+table %s may not be indexed
+%s cannot use variables
+DELETE FROM %Q.sqlite_master WHERE tbl_name=%Q and type!='trigger'
+parameters are not allowed in views
+COVERING INDEX %s
+ LEFT-JOIN
+second argument to nth_value must be a positive integer
+ missing from index 
+Cannot add a UNIQUE column
+cannot drop column "%s": no other columns exist
+drop column from
+sqlite_altertab_%s
+group_concat
+string_agg
+json_quote
+9.0e999
+JSON cannot hold BLOB values
+"\/bfnrt
+insert
+unable to use function %s in the requested context
+UPDATE %Q.'%q_segdir' SET start_block = ?, root = ?WHERE level = ? AND idx = ?
+unrecognized order: %s
+%s: table does not support scanning
+'delete' may not be used with a contentless_delete=1 table
+DELETE from
+'delete-all' may only be used with a contentless or external content fts5 table
+highlight
+no such fts5 table: %s.%s
+CREATE TABLE "%w"."%w_rowid"(rowid INTEGER PRIMARY KEY,nodeno
+ENABLE_FTS3
+libunwind: malformed DW_CFA_val_offset_sf DWARF unwind, reg too big
+libunwind: unsupported .eh_frame_hdr version: %u at %lx
+PRAGMA index_list([
+	{"name":"
+","unique":
+search_int_
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>URA Plugin Config</title><style>body{font-family:system-ui;max-width:500px;margin:20px auto;padding:0 16px;background:#1a1a2e;color:#e0e0e0}h1{color:#4fc3f7;font-size:1.3em}label{display:block;margin:12px 0 4px;color:#aaa;font-size:0.85em}input{width:100%;padding:8px;background:#16213e;border:1px solid #333;border-radius:4px;color:#fff;box-sizing:border-box}button{margin-top:16px;padding:10px 24px;background:#4fc3f7;border:none;border-radius:4px;color:#000;font-weight:bold;cursor:pointer}.ok{color:#4caf50;margin-top:8px}</style></head><body><h1>URA Plugin Config</h1><form id="f"><label>Push Host</label><input id="push_host" value="
+E"><label>Push Port</label><input id="push_port" type="number" value="
+E"><label>HTTP Port</label><input id="http_port" type="number" value="
+X"><label>Push Interval (sec)</label><input id="push_interval_secs" type="number" value="
+N" min="1"><label>Push Enabled</label><input id="push_enabled" type="checkbox" 
+E><label>HTTP Enabled</label><input id="http_enabled" type="checkbox" 
+><button type="submit">Save</button></form><div id="r"></div><script>document.getElementById('f').onsubmit=async(e)=>{e.preventDefault();const d={push_host:push_host.value,push_port:+push_port.value,http_port:+http_port.value,push_interval_secs:+push_interval_secs.value,push_enabled:push_enabled.checked,http_enabled:http_enabled.checked};const r=await fetch('/config',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)});const j=await r.json();document.getElementById('r').innerHTML=j.ok?'<p class="ok">Saved!</p>':'<p style="color:red">Error: '+j.error+'</p>';};</script></body></html>
+!{"error":"open_failed","detail":"
++{"error":"saddle_prepare_failed","detail":"
+/data/user/0/
+/files/master/master.mdb
+{"ok":false,"chara":{"speed":
+,"stamina":
+	,"power":
+,"guts":
+,"wiz":
+	,"vital":
+,"max_vital":
+,"motivation":
+,"skill_point":
+,"scenario_id":
+,"fan_count":
+,"chara_effect_ids":[
+],"scenario_progress":
+},"month":
+,"half":
+),"warning":"all_fields_negative_or_zero",
+A,"via":"WorkDataManager->get_SingleMode->get_Character->getters"}
+	{"score":
+,"skill_eval":
+,"skill_count":
+,"total_stats":
+	,"best":"
+","best_v":
+,"train":{
+	},"rest":
+,"outgoing":
+{"getter":"
+","status":"null"}
+PANIC: 
+{"scenario_id":
+,"team_data":
+,"class_details":[
+],"chara_getters":[
+3{"ok":false,"error":"file_create_failed","detail":"
+&{"error":"dataset_class_null","name":"
+{"scenario_id":
+,"actual_elem_class":"
+","elem_is_info_type":
+,"items":[
+	{"name":"
+","ptr":"null"}
+	{"name":"
+","offset":
+,"class":"
+{"command_id":
+	,"name":"
+","gauge":
+evaluation_list: size=
+, decoded=
+ entries
+&{"status":"already_latest","current":"
+","latest":"
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/idna-1.1.0/src/uts46.rs
+/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ring-0.17.14/src/ec/suite_b/ecdsa/signing.rs
+0Wrong number of parameters passed to query. Got 
+	, needed 
+other error: 
+/rustc/31fca3adb283cc9dfd56b49cdee9a96eb9c96ffd/library/std/src/sync/once.rs
++testserver: handling just-accepted stream: 
+create
+unopened
+unlink
+SeekGE
+HaltIfNull
+OpenAutoindex
+LoadAnalysis
+AggStep
+TableLock
+cannot release savepoint - SQL statements in progress
+SELECT tbl,idx,stat FROM %Q.sqlite_stat1
+Rowid %lld out of order
+detail
+application_id
+checkpoint_fullfsync
+count_changes
+encoding
+secure_delete
+%d columns assigned %d values
+no such window: %s
+too many references to "%s": max 65535
+no such index: "%s"
+all VALUES must have the same number of terms
+%s.xBestIndex malfunction
+BLOOM FILTER ON %S (
+cannot modify %s because it is a view
+CHECK constraint failed in %s
+UPDATE sqlite_temp_schema SET sql = sqlite_rename_table(%Q, type, name, sql, %Q, %Q, 1), tbl_name = CASE WHEN tbl_name=%Q COLLATE nocase AND   sqlite_rename_test(%Q, sql, type, name, 1, 'after rename', 0) THEN %Q ELSE tbl_name END WHERE type IN ('view', 'trigger')
+UPDATE "%w".sqlite_master SET sql = sqlite_rename_quotefix(%Q, sql)WHERE name NOT LIKE 'sqliteX_%%' ESCAPE 'X' AND sql NOT LIKE 'create virtual%%'
+unlikely
+concat
+changes
+argument of ntile must be a positive integer
+%02d:%02d:%02d
+SELECT 2 * total(1 + leaves_end_block - start_block)   FROM (SELECT * FROM %Q.'%q_segdir'         WHERE level = ? ORDER BY idx ASC LIMIT ?  )
+<b>...</b>
+%d %d %d %d 
+error in tokenizer constructor
+SELECT %s FROM %s T WHERE T.%Q >= ? AND T.%Q <= ? ORDER BY T.%Q ASC
+fts5: syntax error near "%.*s"
+Dimension %d of cell %d on node %lld is corrupt
+INSERT OR REPLACE INTO '%q'.'%q_rowid' VALUES(?1, ?2)
+SELECT * FROM "%w"."%w_rowid" WHERE rowid=?1
+WHERE name=%Q
+ENABLE_API_ARMOR
+MUTEX_PTHREADS
+libunwind: malformed DW_CFA_same_value DWARF unwind, reg too big
+libunwind: malformed DW_CFA_val_expression DWARF unwind, reg too big
+CIE start does not match
+{"ok":false,"error":"missing ?name= parameter"}{"ok":false,"error":"mdb_not_found"}{"ok":false,"error":"invalid_table_name"}{"ok":false,"error":"missing ?keyword= parameter"}SELECT name FROM sqlite_master WHERE type='table' ORDER BY name{"error":"api_null"}{"error":"image_null"}GallopWorkDataManager{"error":"no_wdm"}{"error":"no_wdm_inst"}WorkSingleModeDataget_SingleMode{"error":"no_sm"}WorkSingleModeCharaDataget_Character{"error":"no_chara"}get_ScenarioId{"error":"no_ramen_sc_obj"}get_DataSet{"error":"no_ds"}CommandFeelingInfoArray{"error":"list_null"}dict:null{"error":"no_CommandFeelingInfoArray_field"}
+gzipraceSDIV -> 1.15turndyn char
+rank    sizePostHostSome
+DROPFDIVFMULu128RestGuts
+mut name0.75goaltrueX448timedata 
+nullEnum
+hintcard90.0for<filepeerkindDenyUDIVcodebondport
+crlslist80.0pathcondr-xp is gaini128addr1.05	
+ as testRingKindhttp
+boolhostNone
+SpeedStaminaPowerWisdomKakushimi{"error":"mdb_not_found"}keywordletteroutputvaluevaluesclassmethodfielddepthALLprefixchecked<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dump</title><style>body{font-family:system-ui;max-width:600px;margin:12px auto;padding:0 8px;background:#1a1a2e;color:#e0e0e0}h1{color:#4fc3f7;font-size:1.2em;margin:8px 0}.g{display:inline-block;margin:4px 2px;padding:8px 12px;background:#16213e;border:1px solid #333;border-radius:4px;color:#fff;cursor:pointer;font-size:14px;min-width:36px;text-align:center}.g:disabled{background:#555;color:#333;cursor:default}.g.ok{background:#2e7d32;border-color:#4caf50}.g.err{background:#b71c1c;border-color:#ff5252}.g.run{background:#e65100;border-color:#ff9800}select{padding:8px;background:#16213e;border:1px solid #333;border-radius:4px;color:#fff;font-size:16px;width:100%}button{padding:12px 24px;border:none;border-radius:4px;color:#000;font-weight:bold;cursor:pointer;font-size:16px;margin:4px}#btn{background:#4fc3f7}#btn:disabled{background:#555;color:#333}.p{margin:8px 0;font-size:0.95em}.ok{color:#4caf50}.err{color:#ff5252}progress{width:100%;height:20px;margin:8px 0}#lst{margin:8px 0;font-size:0.8em;color:#aaa;max-height:300px;overflow-y:auto}</style></head><body><h1>MDB Dump Tool</h1><div class="p" id="pg2">Loading table list...</div><div id="groups"></div><hr><select id="tn"><option value="">-- loading --</option></select><button id="btn" onclick="goOne()" disabled>Dump 1 Table</button><div class="p" id="pg">Press a letter group to dump all tables in that group as one file</div><progress id="pb" value="0" max="100"></progress><div id="lst"></div><script>function safeJson(t){try{return JSON.parse(t)}catch(e){return JSON.parse(t.replace(/[\x00-\x1f]/g,function(c){return"\\u"+("0000"+c.charCodeAt(0).toString(16)).slice(-4)}))}}var tables=[];var groups={};async function loadTables(){try{var r=await fetch("/debug/mdb_all_tables");var j=safeJson(await r.text());if(!j.ok){document.getElementById("pg2").innerHTML=`<span class="err">Error: ${j.error||"unknown"}</span>`;return;}tables=j.all_tables||[];var sel=document.getElementById("tn");sel.innerHTML="";groups={};for(var i=0;i<tables.length;i++){var t=tables[i];var o=document.createElement("option");o.value=t.name;o.textContent=t.name+" ("+t.rows+")";sel.appendChild(o);var fl=t.name[0].toUpperCase();if(!groups[fl])groups[fl]=[];groups[fl].push(t);}document.getElementById("btn").disabled=false;document.getElementById("pg2").innerHTML=`<span class="ok">${tables.length} tables in ${Object.keys(groups).length} groups</span>`;renderGroups();}catch(e){document.getElementById("pg2").innerHTML=`<span class="err">Fetch error: ${e}</span>`;}}function renderGroups(){var div=document.getElementById("groups");div.innerHTML="";var keys=Object.keys(groups).sort();for(var k=0;k<keys.length;k++){var key=keys[k];var btn=document.createElement("button");btn.className="g";btn.textContent=key+" ("+groups[key].length+")";btn.setAttribute("data-key",key);btn.onclick=function(){goGroup(this.getAttribute("data-key"),this);};div.appendChild(btn);}}async function dumpTable(n,onProgress){var allRows=[];var off=0;var total=0;var batch=100;var done=false;while(!done){try{var r=await fetch("/debug/table?name="+n+"&limit="+batch+"&offset="+off);var j=safeJson(await r.text());if(!j.ok){return{ok:false,error:j.error||"unknown"};}total=j.row_count||total;var nr=j.rows?j.rows.length:0;if(nr===0){done=true;break;}allRows=allRows.concat(j.rows);off+=nr;if(onProgress)onProgress(off,total);done=off>=total||nr<batch;}catch(e){return{ok:false,error:""+e};}}return{ok:true,table:n,row_count:total,rows_merged:allRows.length,rows:allRows};}function downloadJson(data,filename){var result=JSON.stringify(data);var blob=new Blob([result],{type:"application/json"});var url=URL.createObjectURL(blob);var a=document.createElement("a");a.href=url;a.download=filename;a.click();URL.revokeObjectURL(url);}async function goGroup(key,btn){btn.disabled=true;btn.className="g run";var tbls=groups[key];var result={group:key,tables:{}};var log=document.getElementById("lst");log.innerHTML="";var ok=0,fail=0;for(var i=0;i<tbls.length;i++){var t=tbls[i];document.getElementById("pg").innerHTML=`<span class="ok">[${key}] ${(i+1)}/${tbls.length} ${t.name} (${t.rows} rows)...</span>`;document.getElementById("pb").value=Math.round((i+1)/tbls.length*100);if(t.rows===0){result.tables[t.name]={ok:true,rows:0,data:[]};log.innerHTML+=t.name+": skip (0)<br>";ok++;continue;}var res=await dumpTable(t.name);if(res.ok&&res.rows_merged>0){result.tables[t.name]={ok:true,row_count:res.row_count,rows_merged:res.rows_merged,rows:res.rows};log.innerHTML+=t.name+`: <span class="ok">${res.rows_merged}</span><br>`;ok++;}else{result.tables[t.name]={ok:false,error:res.error||"no rows"};log.innerHTML+=t.name+`: <span class="err">${res.error||"no rows"}</span><br>`;fail++;}}var fname="mdb_"+key.toLowerCase()+".json";downloadJson(result,fname);btn.className=ok>0&&fail===0?"g ok":"g err";btn.disabled=false;document.getElementById("pg").innerHTML=`<span class="ok">${key}: ${ok} OK, ${fail} fail -> ${fname}</span>`;document.getElementById("pb").value=0;}async function goOne(){var b=document.getElementById("btn");var n=document.getElementById("tn").value;if(!n)return;b.disabled=true;document.getElementById("pg").innerHTML=`<span class="ok">Dumping ${n}...</span>`;var res=await dumpTable(n,function(off,total){var pct=total>0?Math.round(off/total*100):0;document.getElementById("pb").value=pct;document.getElementById("pg").innerHTML="Dumping "+n+": "+off+"/"+total+" ("+pct+"%)";});if(res.ok&&res.rows_merged>0){downloadJson(res,n+".json");document.getElementById("pg").innerHTML=`<span class="ok">Done! ${res.rows_merged}/${res.row_count} -> ${n}.json</span>`;}else{document.getElementById("pg").innerHTML=`<span class="err">${res.error?"Error: "+res.error:"No rows found"}</span>`;}document.getElementById("pb").value=0;b.disabled=false;}loadTables();</script></body></html>{"ok":false,"error":"invalid_json"}?name=batch=500offset=limit=100{"status":"pending","hint":"auto_update_check_not_started_yet"}{"status":"error","detail":"lock_failed"}{"error":"sigsegv_recovered","hint":"/debug/training_seed hit native crash, game protected"}{"error":"sigsegv_recovered","hint":"/debug/paramsincdec hit native crash, game protected"}{"error":"sigsegv_recovered"}{"error":"sigsegv_recovered","hint":"/debug/gauge2 hit native crash, game protected"}{"error":"sigsegv_recovered","hint":"/debug/gauge hit native crash, game protected"}/data/data/jp.pokemon.pokeuma/files/training_log.jsonlWiz{"ok":true}GreatSuccessSuccessFailure3.24.16text/html; charset=utf-8
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="saddles.json"
+Content-Length: 
+Connection: close
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="master.mdb"
+Content-Length: 
+Connection: close
+{"error":"storydata_panic"}\\\"{"error":"paramsincdec_panic"}{"error":"gauge2_panic"}{"error":"gauge_panic"}{"error":"ramengains_panic"}{"error":"rameninfo_panic"}{"error":"training_seed_panic"}{"error":"ramenfields_panic"}{"error":"mdb_not_found","hint":"MasterDB file not found on device"}SELECT id, chara_id, rarity, command_id, effect_table_id, unique_effect_id, support_card_type, outing_max FROM support_card_data ORDER BY idSELECT id, type, init, limit_lv5, limit_lv10, limit_lv15, limit_lv20, limit_lv25, limit_lv30, limit_lv35, limit_lv40, limit_lv45, limit_lv50 FROM support_card_effect_table ORDER BY id, typegui_show_notificationgui_register_menu_itemgui_register_menu_sectionhachimi_register_on_game_initializedgui_ui_headinggui_ui_labelgui_ui_colored_labelgui_ui_text_edit_singlelineil2cpp_get_assembly_imageil2cpp_get_field_from_nameil2cpp_get_field_valueil2cpp_get_static_field_valueil2cpp_resolve_symbolil2cpp_get_singleton_like_instanceil2cpp_string_charsil2cpp_string_lengthhachimi_get_interceptorinterceptor_get_trampoline_addril2cpp_get_method_addr127.0.0.1FeelingReduceTurnInfoArrayFeelingTurnInfoArrayTrainingExecInfoArrayCheckPointInfoArraySELECT id, priority, group_id, relation_group_id, condition, win_saddle_type, race_instance_id_1, race_instance_id_2, race_instance_id_3, race_instance_id_4, race_instance_id_5, race_instance_id_6, race_instance_id_7, race_instance_id_8 FROM single_mode_wins_saddle WHERE win_saddle_type=3 ORDER BY idSELECT chara_id, program_group, program_group_2 FROM single_mode_chara_program ORDER BY program_group, chara_idSELECT id, program_group, race_instance_id, month, half FROM single_mode_program ORDER BY program_group, month, halfSELECT relation_type, relation_point FROM succession_relation ORDER BY relation_type, relation_pointSELECT id, relation_type, chara_id FROM succession_relation_member ORDER BY relation_type, chara_idSELECT ri.id, ri.race_id, r.grade, r.course_set, cs.race_track_id, cs.distance, cs.ground FROM race_instance ri JOIN race r ON ri.race_id=r.id JOIN race_course_set cs ON r.course_set=cs.id WHERE r.grade=100 ORDER BY ri.id
+ SIGSEGV recovered in read_summary 
+ skipping for 60s{"error":"sigsegv_recovered","hint":"read_summary hit native crash, cooling down"}{"error":"panic_caught","hint":"read_summary panicked, game protected"}ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+P:wdm{"error":"no_home_info"}got home_infoWorkSingleModeHomeInfoData{"error":"no_home_info_class"}{"error":"no_cmd_arr"}{"error":"empty_cmd_arr"}{"error":"null_elem"}/data/data/jp.pokemon.pokeuma/files/master/master.mdb/data/user/0/jp.pokemon.pokeuma/files/master/master.mdb/data/data/jp.pokemon.pokeuma/files/master/master (1).mdb/data/user/0/jp.pokemon.pokeuma/files/master/master (1).mdb/storage/emulated/0/Android/data/jp.pokemon.pokeuma/files/master/master.mdb/proc/self/cmdline{"ok":false,"error":"missing ?sql= parameter"}{"ok":false,"error":"only_select_allowed"}INSERTUPDATEALTERATTACHDETACHPRAGMALIMIT{"ok":false,"error":"query_failed"}get_Monthget_Speedget_Staminaget_Powerget_Wizget_Hpget_MaxHpget_Motivationget_SkillPointget_FanCountSELECT id, turn, year, month, half, period, unique_command, training_set_id, race_entry_type FROM single_mode_turn ORDER BY idget_TrainingLevelInfoArray/data/data/jp.pokemon.pokeuma/files/uma_predict.log/data/local/tmp/uma_predict.log{"error":"no_crash_log"}get_TrainedCharaData/hall: get_TrainedCharaData returned null{"error":"no_trained_chara_data"}/hall: got WorkTrainedCharaData instanceWorkTrainedCharaData/hall: get_List returned null{"error":"no_list"}/hall: TrainedCharaData class not found{"error":"no_tcd_class"}{"error":"no_valid_entries"}get_CardIdget_RankScoreget_RaritySELECT id, rarity, grade_value, skill_category, condition_1, ability_type_1_1, float_ability_value_1_1, icon_id, disable_singlemode FROM skill_data ORDER BY idSELECT id, need_skill_point, status_type, status_value FROM single_mode_skill_need_point ORDER BY id{"error":"missing ?name= parameter"}il2cpp_class_get_nameSELECT id, hint_id, support_card_id, hint_group, hint_gain_type,          hint_value_1, hint_value_2, group_id, condition_set_id, priority          FROM single_mode_hint_gain ORDER BY id LIMIT 20SELECT hint_gain_type, COUNT(*) as cnt FROM single_mode_hint_gain GROUP BY hint_gain_type ORDER BY cnt DESCSELECT id, hint_id, support_card_id, hint_group, hint_gain_type, hint_value_1, hint_value_2, group_id, condition_set_id, priority FROM single_mode_hint_gain WHERE condition_set_id > 0 ORDER BY id LIMIT 30SELECT DISTINCT condition_set_id FROM single_mode_hint_gain WHERE condition_set_id > 0 ORDER BY condition_set_id LIMIT 50SELECT id, group_id, story_id, condition_type, condition_story_id_1, gain_select_1, select_index_1, condition_story_id_2, gain_select_2, select_index_2 FROM single_mode_story_condition_set WHERE group_id = ?SELECT id, partner_id, scenario_id, chara_id, period, training_placement, gain_flag_id, is_support_featured_stock, gain_role_id FROM single_mode_unique_chara LIMIT 10support_card_effect_tableSELECT * FROM support_card_effect_table WHERE effect_table_id IN (SELECT unique_effect_id FROM support_card_data WHERE unique_effect_id > 0 LIMIT 5) LIMIT 20support_card_effect_filter
+assertion failed: idx < CAPACITY	
+support_card_effect_filter_groupFormatting argument out of range
+{"error":"cannot_find_own_path"}333333
+-70%SingleModeBreedersMemberInfoData
+$@SingleModeBreedersTeamMemberInfoNotifications from sqlite3_log()response too big for into_string
+CertificateCompressionAlgorithms
+RefCell already mutably borrowedassertion failed: new_cap >= lenUnable to open the database fileUnsupportedCrlSignatureAlgorithm
+SingleModeTrainingCommandService
+-40%support_card_unique_effectSELECT type_0, COUNT(*) as cnt FROM support_card_unique_effect GROUP BY type_0 ORDER BY cnt DESCSELECT type_1, COUNT(*) as cnt FROM support_card_unique_effect GROUP BY type_1 ORDER BY cnt DESCSELECT * FROM support_card_unique_effect WHERE type_0 IN (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20) OR type_1 IN (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20) LIMIT 30{"error":"sigsegv_recovered_in_storydata"}umamusume
+{"error":"pipe_failed"}{"error":"cannot_read_maps"}Game: ConnectedHTTP: FailedData: WDM->SingleMode->Chara (getters)No training data yetStart a training run firstMotivation: Best!!!Motivation: GoodMotivation: NormalMotivation: BadMotivation: WorstMotivation: ???Push Host:Push Port:{"error":"WorkSingleModeCharaData_class_null"}get_CharaEffectIdArrayget_ScenarioProgress"scenario_obj":"null"SELECT name FROM sqlite_master WHERE type='table' AND name LIKE '%single_mode%' ORDER BY nameSELECT name FROM sqlite_master WHERE type='table' AND (name LIKE '%event%' OR name LIKE '%story%' OR name LIKE '%choice%' OR name LIKE '%gain%' OR name LIKE '%condition%') ORDER BY nameWorkSingleModeScenarioRamen{"error":"no_ramen_sc_class"}{"error":"no_ramen_ds"}/data/data/jp.pokemon.pokeuma/files/uma_logs/data/data/jp.pokemon.pokeuma/files/uma_upload_tmp.json{"error":"no_logs_dir"}{"ok":false,"error":"missing_name"}/data/data/jp.pokemon.pokeuma/files{"ok":false,"error":"no_tmp_file","message":"restart from offset=0"}]}ok"error":"scenario_obj_null""error":"dataset_obj_null""error":"cmd_list_null""params_ptr":"null"il2cpp_class_get_methodsil2cpp_method_get_nameil2cpp_method_get_pointerlibhachimi_{"entries":0,"log":[]}PRAGMA table_info(single_mode_story_data)SELECT * FROM single_mode_story_data ORDER BY idSELECT id, disp_type, effect_value_type0, effect_value_type1, effect_value_type2 FROM single_mode_event_choice_reward ORDER BY idSELECT id, display_id, effect_value0, effect_value1, effect_value2 FROM event_choice_reward_gain_param ORDER BY idget_ActiveEffectArrayget_FeelingInfoArrayget_FeelingTurnInfoArrayget_CommandFeelingInfoArrayget_FeelingReduceTurnInfoArrayget_UrafEffectInfo"uraf_effect":{"status":"null"}failure_rate_hook: trampoline not foundil2cpp_class_get_fieldsil2cpp_class_get_parent{"error":"cannot_find_umamusume_mapping"}{"error":"too_many_values","max":20}v3.22.51 precache_metadata: startingprecache_metadata: image nullWorkSingleModeScenarioURAWorkSingleModeScenarioTeamRaceWorkSingleModeScenarioLiveWorkSingleModeScenarioFreeWorkSingleModeScenarioVenusWorkSingleModeScenarioArcWorkSingleModeScenarioSportWorkSingleModeScenarioCookWorkSingleModeScenarioMechaWorkSingleModeScenarioLegendWorkSingleModeScenarioPioneerWorkSingleModeScenarioOnsenWorkSingleModeScenarioBreedersSingleModeSkillDataSingleModeCommandInfoDataSingleModeParamsIncDecInfoDataObscuredSingleModeBreedersEnhanceGroupObscuredSingleModeBreedersCommandInfoWorkSingleModeScenarioRamenDataSetObscuredSingleModeRamenFeelingObscuredSingleModeRamenFeelingTurnInfoObscuredSingleModeRamenCommandFeelingInfoObscuredSingleModeRamenFeelingReduceTurnInfoObscuredSingleModeRamenUrafEffectInfoObscuredSingleModeRamenActiveEffectInfoSuccessionCharaInfoWorkSingleModeScenarioURADataSetWorkSingleModeScenarioTeamRaceDataSetWorkSingleModeScenarioLiveDataSetWorkSingleModeScenarioFreeDataSetWorkSingleModeScenarioVenusDataSetWorkSingleModeScenarioArcDataSetWorkSingleModeScenarioSportDataSetWorkSingleModeScenarioCookDataSetWorkSingleModeScenarioMechaDataSetWorkSingleModeScenarioLegendDataSetWorkSingleModeScenarioPioneerDataSetWorkSingleModeScenarioOnsenDataSetWorkSingleModeScenarioBreedersDataSetget_SkillDataArrayget_PossessSkillIdArrayget_SkillIdget_Level/data/data/jp.pokemon.pokeuma/files/uma_github_token.txt{"error":"server_side_data","hint":"
+ data is fetched from game server, not stored locally"}HTTP starting on 0.0.0.0:187650.0.0.0:18765HTTP listening on :18765URA HTTP :18765 ONvaluetypearraygenericinst
+Pt+20% 
+Pt+25% 
+Pt+30% 
+Pt+35% 
+Pt+40% 
+Pt+50% 
+-100% 
++25 Pt
+-100% 
++35 Pt
+-100% 
++40 Pt
+-100% 
++45 Pt
+-100% 
++50 Pt
+-100% 
++60 Pt
+il2cpp_class_get_method_from_nameSELECT id, grade_value FROM skill_data{"error":"cmd_list_null"}{"error":"cmd_empty"}get_IsGaugeGained{"target_type":null,"value":null}exec_training_hook: trampoline not found{"error":"missing ?class= or ?method= parameter"}IntBooleanSingle{"error":"missing class or method parameter"}0.60.80.91.01.11.21.31.41.50.52.00.7	{"name":"
+","type":"f32","offset":
+,"hex":"
+{"error":"read_failed"}{"error":"missing_il2cpp_api"}URA menu item clicked{"error":"wdm_class_null"}{"error":"wdm_no_singleton"}{"error":"sm_data_null"}{"error":"chara_null"}{"error":"scenario_obj_null"}{"error":"sc_class_null"}{"error":"dataset_null"}{"error":"ds_class_null"}get_TeamRankget_HavingEnhancePointget_EnhanceGroupArrayget_TeamSpTrainingInfoObscuredSingleModeBreedersTeamSpTrainingInfoget_StockNumget_StockMaxget_ActivatedStateget_TeamMemberInfoArrayget_Gradeget_RankLevelget_CharaIdget_CharacterIdget_Expget_Experienceget_RankExpget_DreamExpget_BurstReadyget_IsBurstget_CanBurstget_GroupTypeReading training data v3.7.8...{"error":"WorkDataManager_no_singleton","hint":"start_a_training_run"}<SingleMode>k__BackingField{"error":"SingleMode_null","step":"get_SingleMode"}{"error":"WorkDataManager_class_not_found"}il2cpp_object_get_classObscuredSingleModeBreedersMemberInfoSingleModeBreedersMemberInfoObscuredSingleModeBreedersUnitInfoSingleModeBreedersUnitInfoWorkSingleModeChangeParameterInfoScenarioBreedersSingleModeBreedersPartnerInfoObscuredSingleModeBreedersTeamMemberInfoObscuredSingleModeRamenMemberInfoObscuredSingleModeRamenCommandInfoWorkSingleModeChangeParameterInfoScenarioRamenget_ScenarioBreedersget_WorkScenarioBreedersget_Breedersget_ScenarioRamenget_WorkScenarioRamenget_Ramen{"skip":"not_breeders"}{"error":"wdm_class_not_found"}{"error":"wdm_null","hint":"game_not_loaded"}SELECT id, chara_id, rarity, command_id, unique_effect_id, support_card_type FROM support_card_data WHERE unique_effect_id > 0 ORDER BY idSELECT id, lv, type_0, value_0, value_0_1, value_0_2, value_0_3, value_0_4, type_1, value_1, value_1_1, value_1_2, value_1_3, value_1_4, idle_mode_sub_rate FROM support_card_unique_effect ORDER BY id, lvSELECT type_0, type_1, COUNT(*) as cnt FROM support_card_unique_effect GROUP BY type_0, type_1 ORDER BY cnt DESCSELECT type, group_id, sort_id FROM support_card_effect_filter ORDER BY typeSELECT ue.id, ue.lv, ue.type_0, ue.value_0, ue.value_0_1, ue.value_0_2, ue.value_0_3, ue.value_0_4, ue.type_1, ue.value_1, ue.value_1_1, ue.value_1_2, ue.value_1_3, ue.value_1_4, ue.idle_mode_sub_rate, sc.id as sc_id, sc.chara_id FROM support_card_unique_effect ue JOIN support_card_data sc ON ue.id = sc.unique_effect_id WHERE ue.type_0 = 101 ORDER BY sc.id LIMIT 10SELECT ue.id, ue.lv, ue.type_0, ue.value_0, ue.value_0_1, ue.value_0_2, ue.value_0_3, ue.value_0_4, ue.type_1, ue.value_1, ue.value_1_1, ue.value_1_2, ue.value_1_3, ue.value_1_4, ue.idle_mode_sub_rate, sc.id as sc_id, sc.chara_id FROM support_card_unique_effect ue JOIN support_card_data sc ON ue.id = sc.unique_effect_id WHERE ue.type_0 = 116 ORDER BY sc.id LIMIT 10uniqueacquisitionskill_condskill_unlocksupport_card_skillskill_learnunique_effectPRAGMA table_info(support_card_data)|WorkSingleModeHomeInfoGameSystemHomeSceneSingleModeSceneRaceSceneSingleModeSceneControlleril2cpp_method_get_param_countil2cpp_method_get_return_typeil2cpp_method_get_flagsil2cpp_method_get_class{"error":"cannot_find_umamusume_text_section"}
+{"ok":true,"search_value":
+,"f32_encoded":"0x
+","f64_encoded":"0x
+","base_addr":"0x
+","text_size":
+,"f32_hits":
+,"f64_hits":
+,"f32_matches":[
+],"f64_matches":[
+get_SuccessionTrainedCharaInfoFirstget_SuccessionTrainedCharaInfoSecondget_TrainedCharaIdget_SuccessionFactorSELECT relation_type, relation_point FROM succession_relation ORDER BY relation_typeSELECT id, relation_type, chara_id FROM succession_relation_member ORDER BY idSELECT relation_rank, rank_value_min, rank_value_max FROM succession_relation_rank ORDER BY relation_rankget_TargetRaceArraySELECT id, race_id, race_grade FROM single_mode_route_race ORDER BY id LIMIT 200","ABCDEFGHIJKLMNOPQRSTUVWXYZCRASH at step  RECOVEREDacquireunlockrequirethresholdprerequisitetriggerlearnskill_setskill_dataskill_effecttalent{"error":"cmd_elem_class_null"}get_CommandInfoArray{"error":"cmd_arr_null"}{"error":"cmd_arr_empty"}get_ParamsIncDecInfoArraysupport_card_arrayget_SupportCardArrayget_EvaluationListEvaluationSELECT COUNT(*) FROM single_mode_story_dataget_TargetId{"error":"no_wdm_class"}{"error":"no_wdm_singleton"}{"error":"no_single_mode"}"dataset_obj":"null"UnknownDataSetget_PredictEnhancePointget_BcRaceTrackIdget_DeckIdget_TeamSpLevelLimitget_TeamUnionProgressget_TeamReviewResultArrayget_BcRaceResultArrayget_CommandGainExpArrayget_CommandTypeget_CommandIdget_RankUpPredict"CommandId":HPMotivationSkillPtget_ExpectedCheckPointPtget_SpecialFeelingNumget_RecommendTypeget_IsUrafEffectSelectEventCheckedget_IsNotGainSpecialFeelingget_UrafEffectTypeget_UrafEffectStateget_SelectedRegionIdArrayget_AllSelectedRegionIdArrayget_FeelingIdget_RemainTurnget_EffectCategoryget_EffectIdget_EffectValueget_NotUpParameterInfoget_ScenarioDressSettingget_TeamUnionEventget_WorkScenarioURAget_ScenarioURAget_Uraget_TeamRaceget_ScenarioTeamRaceget_WorkScenarioFreeget_ScenarioVenusget_Venusget_ScenarioArcget_Arcget_ScenarioSportget_Sportget_ScenarioMechaget_Mechaget_ScenarioLegendget_Legendget_ScenarioPioneerget_Pioneerget_ScenarioOnsenget_Onsentargetfancareerprogramconditionsaddlestoryeventchoicerewardskillcharasupportsuccessioninheritfactorgaugesingle_modetext_datagradepointSELECT race_entry_type, COUNT(*) FROM single_mode_turn GROUP BY race_entry_type ORDER BY race_entry_type"key":trueeventChoiceRewardDictstoryEventBonusDict{"ptr":"null"}
+Specialil2cpp_image_get_class_countil2cpp_image_get_class{"error":"class_enum_api_not_found"}il2cpp_class_get_namespaceInt32{"error":"missing ?keyword= parameter"}{"error":"method_enum_api_not_found"}SingleModeMainTrainingCuttControllerOnSuccessSendCommandTraining hook: interceptor_hook failed, falling back to write_hook_bytestraining_hook: trampoline not found{"error":"null_class"}{"error":"no_il2cpp_class_get_fields"}story_set_hook: trampoline not foundil2cpp_runtime_invokeList`1il2cpp_class_get_element_classil2cpp_class_is_valuetypeil2cpp_class_value_size{"error":"sigsegv_recovered","hint":"training partner diagnostic hit an invalid runtime pointer; game was protected"}{"error":"panic_caught"}{"error":"no_il2cpp_class_get_methods"}{"error":"addr_zero"}100.0110.0120.0SCVTF
+{"offset":
+	,"type":"
+	","hex":"
+il2cpp_class_is_enumAPI sniff: interceptor not availableAPI sniff: get_assembly_image not availableAPI sniff: get_class not availableAPI sniff: get_method_addr not availableumamusume.dllAPI sniff: umamusume.dll image not foundHttpHelperAPI sniff: HttpHelper class not foundAPI sniff: HttpHelper class foundCompressRequestAPI sniff: CompressRequest NOT FOUNDDecompressResponseAPI sniff: DecompressResponse NOT FOUNDCute.Http.Assembly.dllAPI sniff: Cute.Http.Assembly.dll image not foundCute.HttpWWWRequestAPI sniff: Cute.Http.WWWRequest class not foundAPI sniff: WWWRequest.Post NOT FOUND
+ read_summary phase1: chara statsS:wdmS:before_sm_class{"error":"no_sm_class"}S:before_get_single_modeS:after_get_single_modeS:before_chara_classS:after_chara_class{"error":"no_chara_class"}S:before_get_characterS:after_get_characterS:before_read_speedS:after_read_speed
+ read_summary phase1b: skill evalBestNormalWorstURATeamRaceLiveFreeVenusArcSportCookMechaLegendPioneerOnsenBreedersRamenv3.22.51 ramen: direct memory readS:ramen startS:ramen dataset before scenarioramen: scenario_obj nullS:ramen sc_objS:ramen dataset before getterS:ramen dataset after getterramen: dataset_obj nullS:ramen dsS:ramen dataset scalars doneSelectedRegionIdArrayS:ramen regions doneActiveEffectArrayEffectCategoryEffectValueS:ramen effects doneFeelingIndexFeelingIdS:ramen feelings doneS:ramen commands doneS:ramen arraysGaugeevaluation_list is nullS:support equip before getterget_EquipSupportCardArrayS:support equip after getterS:support mdb beforeSELECT sc.id, sc.command_id, sc.support_card_type, COALESCE(ue.value_0, 999999) AS threshold FROM support_card_data sc LEFT JOIN support_card_unique_effect ue ON sc.unique_effect_id = ue.id AND ue.type_0 = 101 WHERE sc.id = ?1S:support mdb doneS:ramen end
+ read_summary phase2: training dataS:p2 trainingS:homeinfo before getterS:homeinfo after getterS:homeinfo commands beforeS:homeinfo commands afterS:training partners doneS:p2 done
+ read_summary phase3: support cardsS:p3 cardsEquipSupportCardArrayS:p3 done
+ read_summary phase4: partner evaluationS:p4 evalS:p4 done
+ read_summary phase5: training_levelsS:p5 levelstraining_level_info_arrayS:p5 done
+ read_summary phase6: buffsS:p6 buffs},{
+S:buffs done"team_members"S:json
+idEffOutingOuting2Outing3Outing4"url":"{"error":"missing ?class= or ?field= parameter"}get_IsPlaying<Character>k__BackingFieldCheckPointPtSpecialFeelingNumRecommendTypeUrafEffectInfoUrafEffectTypeUrafEffectState{"error":"no_singleton_fn"}{"error":"wdm_null"}{"error":"wsm_class_null"}get_WorkSingleModeData{"error":"wsm_null"}get_TotalRaceCountget_WinCountget_WinSaddleArraySingleModeWinsSaddleget_WorkSingleModeCharaDataparent1parent2SELECT id, relation_group_id, condition, win_saddle_type, race_instance_id_1, race_instance_id_2 FROM single_mode_wins_saddle WHERE win_saddle_type=3 AND relation_group_id > 0 ORDER BY relation_group_idSELECT relation_type, relation_point FROM succession_relation WHERE relation_type BETWEEN 1 AND 200 ORDER BY relation_typeIsRelationBonusWinSaddleevent_choice_hook: trampoline not foundil2cpp_field_get_flagsvalue__enumSeperatorCharArrayenumSeperatorGetValuesil2cpp_type_get_objectil2cpp_class_get_typecsharp_spec_inferenceruntime_invokeil2cpp_type_get_typeStoryChoiceControllerEvent hook: StoryChoiceController class not foundAddChoiceButtonEvent hook: AddChoiceButton NOT FOUNDEventAddBtnChoiceEvent hook: Choice NOT FOUNDEventChoiceStoryManagerEvent hook: StoryManager class NOT FOUNDEvent hook: StoryManager.SetStory NOT FOUNDSingleModeTrainingFailureRateServiceFailureRate hook: class not foundGetTrainingFailureRateIgnoreCharaEffectFailureRate hook: method not foundFailureRate/data/data/jp.pokemon.pokeuma/files/uma_upload.json(curl -s -X PUT -H 'Authorization: token 
+' -H 'Content-Type: application/json' -d @/data/data/jp.pokemon.pokeuma/files/uma_upload.json https://api.github.com/repos/xf8410/hlpatch/contents/crash_log.txt >/dev/null 2>&1
+{"error":"no_class_get_method_from_name"}ExecTraining hook: class not foundExecTrainingExecTraining hook: method not found{"_null":true}{"error":"sm_null"}
+{"ok":true,"diagnostic_version":1,"read_only":true,"notes":["No partner identity or bond gain is inferred in this stage","shining is not inferred from TipsEventPartnerArray"],"commands_collection":
+,"commands":[
+],"support_cards":
+,"evaluation_list":
+get_LabelTextget_GainIdget_GetNextBlockIndexget_LoopExitGainIdadd_choice_hook: trampoline not found{"error":"sigsegv_recovered_in_debug_all"}{"error":"cmdinfo_panic"}{"error":"summary_panic"}{"error":"scenario_panic"}get_image: no get_assembly_image_fnget_image: umamusume.dll image = null"error"Push: game detected via probe (no callback)Push: initial data pushedPush: data changed, pushing to appsigsegvPush: SIGSEGV recovered, cooling 60s for game state transitionhttps://api.github.com/repos/xf8410/hlpatch/releases/latestURA-Plugin-Updaterapplication/octet-stream/data/local/tmp/sdcard/Download/libhachimi_ura.socalled `Result::unwrap_err()` on an `Ok` valueURA plugin v3.24.9 loaded (Interceptor API hooks)URA Assistant
++NaNinf0.assertion failed: buf.len() >= maxlen
+!$'+.158; {
+attempted to begin a new map entry without completing the previous one { .. }attempted to finish a map with a partial entry
+to_digit: invalid radix -- radix must be in the range 2 to 36 inclusiveassertion failed: other > 0assertion failed: noborrowassertion failed: digits < 400000000000000000000000000000000000000000000000000000000000000000called `Option::unwrap()` on a `None` valuepanic in a destructor during cleanup==panic in a function that cannot unwind00010203040506070809101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899
+)14:EFIJNOde
+ #%&(38:HJLPSUVXZ\^`cefksx}
+./?\]_
+)147:;=IJ]
+)14:;EFIJ^de
+):;EIW[^_de
+INOWY^_
+FGNOXZ\^~
+no7=?BESgu
+attempt to divide by zeroattempt to calculate the remainder with a divisor of zeroassertion failed: !buf.is_empty()assertion failed: buf[0] > b'0'
+ !|, /
+e@m!fOo
+TUUUUUU
+UUUUUU
+{UUUUUU
+lUUUUUU
+UU(EUU}_UUUUUUUUU
+*UUUUUU
+TUUUUU+
+UUUUUUU
+#,,,,,,,,,,
+,,,,,,,,,,,,,,,(,,,,,
+',,,,	
+-,,,,,,,,,,,,,%
+C,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9,,,,,,,,,,,,1?,,,,,,,,,,,,,,A@,
+,,,,2,,,,,,,,,,,,,5,,
+,,,,,,,,,,,,6.,,,,,,,,,,,,3,	/,*!,,,,,,,,,4
+0,,,,,,,,,,4&
+,,,,,,,,,,,,:
+$ + 3 < F(P([(g0s0
+I)I>QSQiQ
+b4jPjmj
+{+{M{p
+L|]C5;
+{[o>Z[
+ih0sUr
+_R?Z}5
+'sv]U&
+8>G#g$
+?/"=~Fr
+7Cxl2i5n
+g&yR?V
+_p&&<Y.
+wqBv/?
+Wuser-provided comparison function does not correctly implement a total order
+assertion failed: d.mant > 0assertion failed: d.minus > 0assertion failed: d.plus > 0assertion failed: d.mant + d.plus < (1 << 61)assertion failed: d.mant.checked_sub(d.minus).is_some()assertion failed: d.mant.checked_add(d.plus).is_some()
+smsRefCell already borrowed
+Qkkbal
+[-&LMb#{'
+w+OQvr
+)\ZEo^m/
+H*0"ZOW
+l!;b	F
+W/q#IX
+Dx,2$E
+Ho*[8'
+4JpI?=
+=dn"M,
+:~dm1	
+AA40J6
+Jjw[Sc
+s1Y3JrMH]
+vARr5U)e
+~Yf,=M
+K=#R2&
+UNhkk%
+o~,|zE
+k*WBjL
+.DZP(7'
+%-y5DQ
+TM$	1;
+invalid gzip headercorrupt gzip stream does not have a matching checksumHash table capacity overflowLayoutalignPunycode overflows should not be possible due to PUNYCODE_ENCODE_MAX_INPUT_LENGTH
+0{0K0D
+l'Yck-f
++"+"+"+"(
+."."."0
+2 2 2 2 !
+5 5 5  
+	&	4	D	T	d	s	
++ 8 H X h x 
+!-!=!M!]!m!}!
+M"\"k"{"
+#+#;#K#[#j#y#
+$$$4$D$
+T$d$t$
+8%H%X%
+?'L'X'}
+$(3(B(H(
++*+:+J+Z+A
+,,4,B,R,b,r,
+9-I-Y-i-w-
+6.F.V.f.v.
+/&/6/F/V/f/v/
+0&060F0V0f0v0
+	+	>	^	~	
+	%	5	D	T	d	t	
+R b r 
+-!<!K!S!
+'&7&E&
+('3'B'
+](j(x(
+)%)4)`
+C$C$C$C$C$C$
+		)	I	i	
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+																
+										
+										
+										
+										
+										
+										
+										
+										
+	)	?	_	z	
+	"	2	8	H	X	h	O	_	o	
+											
+	%	/	?	O	_	i	y	
+explicit paniclayoutcapacity overflowassertion failed: end <= lenassertion failed: index < lenSuccessful resultSQL error or missing databaseInternal logic error in SQLiteAccess permission deniedCallback routine requested an abortThe database file is lockedA table in the database is lockedA malloc() failedAttempt to write a readonly databaseOperation terminated by sqlite3_interrupt()Some kind of disk I/O error occurredThe database disk image is malformedUnknown opcode in sqlite3_file_control()Insertion failed because database is fullDatabase lock protocol errorDatabase is emptyThe database schema changedString or BLOB exceeds size limitAbort due to constraint violationData type mismatchLibrary used incorrectlyUses OS features not supported on hostAuthorization deniedAuxiliary database format error2nd parameter to sqlite3_bind out of rangeFile opened that is not a database fileWarnings from sqlite3_log()sqlite3_step() has another row readysqlite3_step() has finished executingSQLITE_ERROR_MISSING_COLLSEQSQLITE_ERROR_RETRYSQLITE_ERROR_SNAPSHOTError reading from diskUnable to obtain number of requested bytes (file truncated?)Error writing to diskError flushing data to persistent storage (fsync)Error calling fsync on a directoryError attempting to truncate fileError invoking fstat to get file metadataI/O error within xUnlock of a VFS objectI/O error within xLock of a VFS object (trying to obtain a read lock)I/O error within xDelete of a VFS objectSQLITE_IOERR_BLOCKEDOut of memory in I/O layerI/O error within xAccess of a VFS objectI/O error within then xCheckReservedLock methodI/O error in the advisory file locking layerI/O error within the xClose methodSQLITE_IOERR_DIR_CLOSEI/O error within the xShmMap method (trying to open a new shared-memory segment)I/O error within the xShmMap method (trying to resize an existing shared-memory segment)SQLITE_IOERR_SHMLOCKI/O error within the xShmMap method (trying to map a shared-memory segment into process address space)I/O error within the xRead or xWrite (trying to seek within a file)File being deleted does not existI/O error while trying to map or unmap part of the database file into process address spaceVFS is unable to determine a suitable directory for temporary filescygwin_conv_path() system call failedSQLITE_IOERR_VNODESQLITE_IOERR_AUTHSQLITE_IOERR_BEGIN_ATOMICSQLITE_IOERR_COMMIT_ATOMICSQLITE_IOERR_ROLLBACK_ATOMICSQLITE_IOERR_DATASQLITE_IOERR_CORRUPTFSSQLITE_IOERR_IN_PAGELocking conflict due to another connection with a shared cacheSQLITE_LOCKED_VTABAnother process is recovering a WAL mode database fileCannot promote read transaction to write transaction because of writes by another connectionSQLITE_BUSY_TIMEOUTSQLITE_CANTOPEN_NOTEMPDIRAttempted to open directory as fileUnable to convert filename into full pathnameSQLITE_CANTOPEN_SYMLINKContent in the virtual table is corruptSQLITE_CORRUPT_SEQUENCESQLITE_CORRUPT_INDEXWAL mode database file needs recovery (requires write access)Shared-memory file associated with WAL mode database is read-onlyDatabase has hot journal that must be rolled back (requires write access)Database cannot be modified because database file has movedSQLITE_READONLY_CANTINITSQLITE_READONLY_DIRECTORYTransaction was rolled backA CHECK constraint failedCommit hook caused rollbackForeign key constraint failedError returned from extension functionA NOT NULL constraint failedA PRIMARY KEY constraint failedA RAISE function within a trigger firedA UNIQUE constraint failedAn application-defined virtual table error occurredA non-unique rowid occurredSQLITE_CONSTRAINT_PINNEDSQLITE_CONSTRAINT_DATATYPEA WAL mode database file was recoveredHot journal was rolled backAutomatic indexing used - database might benefit from additional indexesUnknown error code
+`assertion failed: out_pos + 3 < out_slice.len()assertion failed: (source_pos + 3) & out_buf_size_mask < out_slice.len()assertion failed: out_pos + 1 < out_slice.len()assertion failed: (source_pos + 1) & out_buf_size_mask < out_slice.len()assertion failed: out_pos + 2 < out_slice.len()assertion failed: (source_pos + 2) & out_buf_size_mask < out_slice.len()%00%01%02%03%04%05%06%07%08%09%0A%0B%0C%0D%0E%0F%10%11%12%13%14%15%16%17%18%19%1A%1B%1C%1D%1E%1F%20%21%22%23%24%25%26%27%28%29%2A%2B%2C%2D%2E%2F%30%31%32%33%34%35%36%37%38%39%3A%3B%3C%3D%3E%3F%40%41%42%43%44%45%46%47%48%49%4A%4B%4C%4D%4E%4F%50%51%52%53%54%55%56%57%58%59%5A%5B%5C%5D%5E%5F%60%61%62%63%64%65%66%67%68%69%6A%6B%6C%6D%6E%6F%70%71%72%73%74%75%76%77%78%79%7A%7B%7C%7D%7E%7F%80%81%82%83%84%85%86%87%88%89%8A%8B%8C%8D%8E%8F%90%91%92%93%94%95%96%97%98%99%9A%9B%9C%9D%9E%9F%A0%A1%A2%A3%A4%A5%A6%A7%A8%A9%AA%AB%AC%AD%AE%AF%B0%B1%B2%B3%B4%B5%B6%B7%B8%B9%BA%BB%BC%BD%BE%BF%C0%C1%C2%C3%C4%C5%C6%C7%C8%C9%CA%CB%CC%CD%CE%CF%D0%D1%D2%D3%D4%D5%D6%D7%D8%D9%DA%DB%DC%DD%DE%DF%E0%E1%E2%E3%E4%E5%E6%E7%E8%E9%EA%EB%EC%ED%EE%EF%F0%F1%F2%F3%F4%F5%F6%F7%F8%F9%FA%FB%FC%FD%FE%FF010
+@TryFromIntErrorECDSA_P256_SHA256_ASN1ECDSA_P256_SHA256_FIXEDECDSA_P256_SHA384_ASN1ECDSA_P384_SHA256_ASN1ECDSA_P384_SHA384_ASN1ECDSA_P384_SHA384_FIXEDUnexpectedErrorInvalidEncodingInconsistentComponentsassertion failed: q.elem_verify_is_not_zero(&z).is_ok()WrongAlgorithmVersionNotSupportedassertion failed: !self.scalar_ops.common.is_zero(a)
+x+RNG failed0
+assertion failed: padding.iter().all(|&b| b == 0)assertion failed: min_bits >= MIN_BITSPrivateModulusLenNotMultipleOf512Bitsassertion failed: em.len() >= digest_len + 11PublicKeyIsMissingSHA1SHA256SHA384SHA512SHA512_256ring::signature::ED25519assertion failed: key.len() <= digest_alg.block_len() / 2assertion failed: rand.len() >= dest.len()IntegerRealTextBlobSqliteFailureSqliteSingleThreadedModeFromSqlConversionFailureIntegralValueOutOfRangeInvalidParameterNameInvalidPathExecuteReturnedResultsQueryReturnedNoRowsInvalidColumnIndexInvalidColumnNameInvalidColumnTypeStatementChangedRowsToSqlConversionFailureInvalidQueryMultipleStatementInvalidParameterCountSqlInputErrormsgsqloffsetSQLite was compiled or configured for single-threaded use onlyExecute returned results - did you mean to call query?Query returned no rowsQuery is not read-onlyMultiple statements providedextended_codeInternalMalfunctionOperationAbortedDatabaseBusyDatabaseLockedReadOnlyOperationInterruptedSystemIoFailureDatabaseCorruptDiskFullCannotOpenFileLockingProtocolFailedSchemaChangedTooBigConstraintViolationTypeMismatchApiMisuseNoLargeFileSupportAuthorizationForStatementDeniedParameterOutOfRangeNotADatabaseNull pointer from sqlite3_column_name: Out of memory?Bug: Somehow interrupt_lock was cleared before the DB was closedCould not ensure safe initialization of SQLite.
+To fix this, either:
+* Upgrade SQLite to at least version 3.7.0
+* Ensure that SQLite has been initialized in Multi-thread or Serialized mode and call
+rusqlite::bypass_sqlite_initialization() prior to your first connection attempt.Invalid UTF-8 sequence in column nameColumn out of boundsunexpected SQLITE_TEXT column type with NULL dataunexpected negative return from sqlite3_column_bytesunexpected SQLITE_BLOB column type with NULL datainternal error: entered unreachable code: sqlite3_column_type returned invalid value{recursion limit reached}?`fmt::Error`s should be impossible without a `fmt::Formatter`> Cunsafe " -fn( + : punycode{}.llvm.0::{closure#<>& *const ; (,_false{ {  = '..= | !nullstri8i16i32i64isizeu64usizef32f64!...@{size limit reached}`fmt::Error` from `SizeLimitedFmtAdapter` was discardedSizeLimitExhaustedParseIntErrorInvalidDigitPosOverflowNegOverflowZeroTryFromSliceError()
+CLIENT_RANDOM
+u8dest is out of boundsu16u32Emptypeer sent no certificatespresented server name type wasn't supportedcannot decrypt peer's messagecannot encrypt messagefailed to get current timefailed to get random byteshandshake not completepeer sent excess record sizepeer doesn't support any known protocolthe supplied max_fragment_size was too small or largeassertion failed: edge.height == self.height - 1assertion failed: src.len() == dst.len()attempt to join into collection with len > usize::MAXSystemRandomRsaParameterspadding_alg\n\r
+TLS_NULL_WITH_NULL_NULLTLS_PSK_WITH_AES_128_GCM_SHA256TLS_PSK_WITH_AES_256_GCM_SHA384TLS_EMPTY_RENEGOTIATION_INFO_SCSVTLS13_AES_128_GCM_SHA256TLS13_AES_256_GCM_SHA384TLS13_CHACHA20_POLY1305_SHA256TLS13_AES_128_CCM_SHA256TLS13_AES_128_CCM_8_SHA256TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHATLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHATLS_ECDHE_RSA_WITH_AES_128_CBC_SHATLS_ECDHE_RSA_WITH_AES_256_CBC_SHATLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256
+CipherSuite(0x
+AlertHandshakeApplicationDataHeartbeat
+ContentType(0x
+PSSdigest_algHelloRequestClientHelloServerHelloHelloVerifyRequestEndOfEarlyDataHelloRetryRequestEncryptedExtensionsServerKeyExchangeCertificateRequestServerHelloDoneCertificateVerifyClientKeyExchangeCertificateURLCertificateStatusKeyUpdateCompressedCertificateMessageHash
+HandshakeType(0x
+HKDF_SHA256HKDF_SHA384HKDF_SHA512
+HpkeKdf(0x
+DHKEM_P256_HKDF_SHA256DHKEM_P384_HKDF_SHA384DHKEM_P521_HKDF_SHA512DHKEM_X25519_HKDF_SHA256DHKEM_X448_HKDF_SHA512
+HpkeKem(0x
+AES_128_GCMAES_256_GCMCHACHA20_POLY_1305EXPORT_ONLY
+HpkeAead(0x
+BitLengthRSA_PKCS1_SHA1ECDSA_SHA1_LegacyECDSA_NISTP256_SHA256ECDSA_NISTP384_SHA384ECDSA_NISTP521_SHA512RSA_PSS_SHA256RSA_PSS_SHA384RSA_PSS_SHA512ED25519ED448ML_DSA_44ML_DSA_65ML_DSA_87
+SignatureScheme(0x
+BadRecordMacRecordOverflowDecompressionFailureNoCertificateBadCertificateUnsupportedCertificateCertificateRevokedCertificateExpiredCertificateUnknownUnknownCAAccessDeniedDecodeErrorExportRestrictionProtocolVersionInsufficientSecurityInternalErrorInappropriateFallbackUserCanceledNoRenegotiationUnsupportedExtensionCertificateUnobtainableBadCertificateStatusResponseBadCertificateHashValueUnknownPSKIdentityCertificateRequiredEncryptedClientHelloRequired
+AlertDescription(0x
+EchVersion(0x
+secp256r1secp384r1secp521r1X25519FFDHE2048FFDHE3072FFDHE4096FFDHE6144FFDHE8192MLKEM1024secp256r1MLKEM768X25519MLKEM768
+NamedGroup(0x
+PKCS1digestinfo_prefixNullRingAlgorithmpublic_key_alg_idassertion failed: self.next_pre_encrypt_action() != PreEncryptAction::Refusepeer closed connection without sending TLS close_notify: https://docs.rs/rustls/latest/rustls/manual/_03_howto/index.html#unexpected-eofTLS 1.2 session tickets may not be sent once the handshake has completedProtocolNamesHpkeSymmetricCipherSuitesPskIdentitiesPskBindersClientCertificateTypesCompressionsECPointFormatsCipherSuitesPskKeyExchangeModesNamedGroupsExtensionTypes8
+message buffer fullHandshakeMessagePayload
+NewSessionTicketExtensionsHelloRetryRequestExtensionsCertificateRequestExtensionskey expansionmaster secretextended master secretclient finishedserver finishedassertion failed: context.len() <= 0xffffCLIENT_EARLY_TRAFFIC_SECRETCLIENT_HANDSHAKE_TRAFFIC_SECRETSERVER_HANDSHAKE_TRAFFIC_SECRETCLIENT_TRAFFIC_SECRET_0SERVER_TRAFFIC_SECRET_0EXPORTER_SECRETres binderc e trafficc hs traffics hs trafficc ap traffics ap trafficexp masterres masterderivedech accept confirmationhrr ech accept confirmationkeyivtraffic updresumptionexporting too muchtls13 bad EarlyData stateassertion failed: supported_versions.any(|_| true)internal error: entered unreachable code: Caught by `PeerMisbehaved::UnsolicitedEncryptedExtension`internal error: entered unreachable code: ECH state should only be set when TLS 1.3 was negotiatedfillerinternal error: entered unreachable code: ECH config version mismatchExpected transcriptNo kx groups configuredinternal error: entered unreachable code: ServerHello is a handshake message"
+internal error: entered unreachable code: only called if `hybrid_component()` implemented
+packet number too longsample of invalid lengthfailed to parse RSA private key as either PKCS#1 or PKCS#8failed to parse ECDSA private key as PKCS#8 or SEC1
+"failed to parse private key as RSA, ECDSA, or EdDSAchunk size must be non-zeroexpand type parameter T is too largeassertion failed: len <= self.usedAnonymousRSADSAECDSA
+SignatureAlgorithm(0x
+is not valid for any names (according to its subjectAltName extension)is only valid for u24ServerNameMaxFragmentLengthClientCertificateUrlTrustedCAKeysTruncatedHMACStatusRequestUserMappingClientAuthzServerAuthzCertificateTypeEllipticCurvesSRPSignatureAlgorithmsUseSRTPALProtocolNegotiationSCTClientCertificateTypeServerCertificateTypePaddingExtendedMasterSecretCompressCertificateSessionTicketPreSharedKeyEarlyDataSupportedVersionsPSKKeyExchangeModesTicketEarlyDataInfoCertificateAuthoritiesOIDFiltersPostHandshakeAuthSignatureAlgorithmsCertTransportParametersTicketRequestNextProtocolNegotiationChannelIdRenegotiationInfoTransportParametersDraftEncryptedClientHelloEncryptedClientHelloOuterExtensions
+ExtensionType(0x
+client authenticationserver authenticationCipherSuiteRsaSignerAcceptedHandshakeTypeHpkeKdfHpkeKemRootCertStoreEcdsaSignerOutputLengthErrorSignatureSchemeAlertMessagePayloadEd25519SignerRsaSigningKeyAlertLevelEchVersionNamedGroupRandomChangeCipherSpecPayloadCompressionECCurveTypeDefaultTimeProviderDisabledReadyAcceptedFinishedRejectedEcdsaSigningKeyEchClientHelloTypeClientHelloPayloadServerHelloPayloadSingleProtocolNameFailResolveClientCertExtensionTypeSessionIDEd25519SigningKeyWebPkiSupportedAlgorithms { all: [ .. ], mapping:  }operation not supportedsigning failed
+CertificateStatusTypeServerNamesTLS 1.2 connections do not support traffic secret updatesClientSessionMemoryCacheCertificateCompressionAlgorithmKeyUpdate is not supported for QUIC connectionsSystemTimeErrorV4V6IpAddressreentrant initfatal runtime error: initialization or cleanup bug, aborting
+file name contained an unexpected NUL byte<unnamed>__rust_end_short_backtrace__rust_begin_short_backtraces.debug_abbrev.dwo.debug_cu_index.debug_info.dwo.debug_line.dwo.debug_loc.dwo.debug_loclists.dwo.debug_macinfo.dwo.debug_rnglists.dwo.debug_str.dwo.debug_str_offsets.dwo.debug_tu_indexnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+/dev/urandomfatal runtime error: Rust panics must be rethrown, aborting
+fatal runtime error: Rust cannot catch foreign exceptions, aborting
+overflow in Duration::newmid > lentoo many running threads in thread scopefatal runtime error: current thread handle already set during thread spawn, aborting
+fatal runtime error: assertion failed: key as usize != KEY_SENTVAL, aborting
+invalid timestamptoo many active read locks on RwLockassertion failed: is_unlocked(state)cannot set a 0 duration timeoutoverflow when subtracting durationsno error set after POLLHUPconnection timed outinvalid stack sizeOnce instance has previously been poisonedRUST_BACKTRACEentity not foundpermission deniedconnection refusedconnection resethost unreachablenetwork unreachableconnection abortednot connectedaddress in useaddress not availablenetwork downbroken pipeentity already existsoperation would blocknot a directoryis a directorydirectory not emptyread-only filesystem or storage mediumfilesystem loop or indirection limit (e.g. symlink loop)stale network file handleinvalid input parameterinvalid datatimed outwrite zerono storage spaceseek on unseekable filequota exceededfile too largeresource busyexecutable file busydeadlockcross-device link or renametoo many linksinvalid filenameargument list too longoperation interruptedunsupportedunexpected end of fileout of memoryin progressother erroruncategorized error.debug_abbrev.debug_addr.debug_aranges.debug_info.debug_line.debug_line_str.debug_loc.debug_loclists.debug_macinfo.debug_macro.debug_ranges.debug_rnglists.debug_str.debug_str_offsets.debug_typeslock count overflow in reentrant mutex
+      <unknown>
+.gnu_debuglink.gnu_debugaltlinkmust specify at least one of read, write, or append accesscreating or truncating a file requires write or append accessBox<dyn Any>thread caused non-unwinding panic. aborting.
+cannot modify the panic hook from a panicking thread
+stderrstack backtrace:
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+use of std::thread::current() is not possible after the thread's local data has been destroyedfatal runtime error: init_current() was re-entrant, which indicates a bug in the Rust threading implementation, aborting
+fdinvalid port valueinvalid socket address/proc/self/exeno /proc/self/exe available. Is /proc mounted?failed to generate random data/proc/self/mapsfatal runtime error: out of TLS keys, aborting
+strerror_r failureassertion failed: len >= size_of::<c::sockaddr_in>()assertion failed: len >= size_of::<c::sockaddr_in6>()failed to generate unique thread ID: bitspace exhaustedWouldBlockfatal runtime error: an irrecoverable error occurred while synchronizing threads, aborting
+thread name may not contain interior null bytesfatal runtime error: thread local panicked on drop, aborting
+cannot panic during the backtrace functionOsCustomTcpStreampanicked at :
+AccessErrorNotFoundPermissionDeniedConnectionRefusedConnectionResetHostUnreachableNetworkUnreachableConnectionAbortedNotConnectedAddrInUseAddrNotAvailableNetworkDownBrokenPipeAlreadyExistsNotADirectoryIsADirectoryDirectoryNotEmptyReadOnlyFilesystemFilesystemLoopStaleNetworkFileHandleInvalidInputInvalidDataTimedOutWriteZeroStorageFullNotSeekableQuotaExceededFileTooLargeResourceBusyExecutableFileBusyDeadlockCrossesDevicesTooManyLinksInvalidFilenameArgumentListTooLongInterruptedUnsupportedUnexpectedEofOutOfMemoryInProgressUncategorizedhwcap not found/proc/self/auxvInputadvancing io slices beyond their lengthadvancing IoSlice beyond its length
+Arc counter overflowfailed to fill whole bufferFromUtf8ErrorbyteserrorUtf8Errorvalid_up_toerror_lenIpIpv4Ipv6SocketSocketV4SocketV6AddrParseErrorstream did not contain valid UTF-8assertion failed: n <= init_unfilleda formatting trait implementation returned an error when the underlying stream did notfailed to write whole buffercould not resolve to any addressesRUST_MIN_STACKUrlschemequerya Display implementation returned an error unexpectedlydescription() is deprecated; use Display127.0.0.1:0failed to spawn threadassertion failed: header.len() <= CHUNK_HEADER_MAX_SIZEtried to remove oldest but no entries found!invariant failed: key existed in recycle but no streams availableinvariant failed: key existed in lru but not in recycleremove_oldest called on Pool with max of 0empty streams listinvariant failed: key in recycle but not in lruinvariant failed: empty VecDeque in `recycle`1
+DigiCert, Inc.1&0$
+DigiCert TLS ECC P384 Root G50
+D-Trust GmbH1"0 
+D-TRUST BR Root CA 2 20230
+TkcQoI3
+)RkNwl
+C$^KkMg
+8ZO#tt
+CN1%0#
+TrustAsia Technologies, Inc.1"0 
+TrustAsia TLS RSA Root CA0
+(!eS`z
+D-Trust GmbH1"0 
+D-TRUST EV Root CA 1 20200
+ueI*0g
+emSign PKI1
+eMudhra Inc1
+emSign Root CA - C10
+VB*9%p
+Greater Manchester1
+Salford1
+COMODO CA Limited1+0)
+"COMODO ECC Certification Authority0
+n?l//	Y[
+GlobalSign ECC Root CA - R51
+GlobalSign1
+GlobalSign0
+Amazon1
+Amazon Root CA 30
+hbEW}DX
+SwissSign AG1+0)
+"SwissSign RSA TLS Root CA 2022 - 10
+Amazon1
+Amazon Root CA 20
+j6QF'a[
+!dz _ld
+Texas1
+Houston1
+SSL Corporation1402
++SSL.com EV Root Certification Authority ECC0
+Telia Finland Oyj1
+Telia Root CA v20
+IZENPE S.A.1
+Izenpe.com0
+GlobalSign Root CA - R61
+GlobalSign1
+GlobalSign0
+PmBf/M
+'YLv9[
+Arizona1
+Scottsdale1%0#
+Starfield Technologies, Inc.1200
+)Starfield Root Certificate Authority - G20
+TN1705
+.Agence Nationale de Certification Electronique1
+TunTrust Root CA0
+Texas1
+Houston1
+SSL Corporation1705
+.SSL.com EV Root Certification Authority RSA R20
+	IdenTrust1*0(
+!IdenTrust Public Sector Root CA 10
+;zJ,1*
+iTrusChina Co.,Ltd.1
+vTrus ECC Root CA0
+DigiCert Inc1
+www.digicert.com1 0
+DigiCert Global Root G30
+Texas1
+Houston1
+SSL Corporation110/
+(SSL.com Root Certification Authority ECC0
+k1RcA;
+US1"0 
+Google Trust Services LLC1
+GTS Root R40
+US1"0 
+Google Trust Services LLC1
+GTS Root R30
+Microsoft Corporation1604
+-Microsoft ECC Root Certificate Authority 20170
+DigiCert, Inc.1%0#
+DigiCert TLS RSA4096 Root G50
+Budapest1
+Microsec Ltd.1'0%
+Microsec e-Szigno Root CA 20091
+info@e-szigno.hu0
+	TAIWAN-CA1
+Root CA1
+TWCA CYBER Root CA0
+#.D	Y7[
+vkBZXv4
+GR1705
+.Hellenic Academic and Research Institutions CA1$0"
+HARICA TLS ECC Root CA 20210
+emSign PKI1%0#
+eMudhra Technologies Limited1
+emSign Root CA - G10
+Athens1D0B
+;Hellenic Academic and Research Institutions Cert. Authority1D0B
+;Hellenic Academic and Research Institutions ECC RootCA 20150
+,HoL%)
+Arizona1
+Scottsdale1
+GoDaddy.com, Inc.110/
+(Go Daddy Root Certificate Authority - G20
+Gebze - Kocaeli1B0@
+9Turkiye Bilimsel ve Teknolojik Arastirma Kurumu - TUBITAK1-0+
+$Kamu Sertifikasyon Merkezi - Kamu SM1604
+-TUBITAK Kamu SM SSL Kok Sertifikasi - Surum 10
+D-Trust GmbH1'0%
+D-TRUST Root Class 3 CA 2 20090
+JP1#0!
+Cybertrust Japan Co., Ltd.1
+SecureSign Root CA140
+GlobalSign nv-sa1
+GlobalSign Root R460
+_)c1Yq
+New Jersey1
+Jersey City1
+The USERTRUST Network1.0,
+%USERTrust ECC Certification Authority0
+JP1%0#
+SECOM Trust Systems CO.,LTD.1'0%
+Security Communication RootCA20
+Greater Manchester1
+Salford1
+COMODO CA Limited1+0)
+"COMODO RSA Certification Authority0
+HCgNr*
+DigiCert Inc1
+www.digicert.com1!0
+DigiCert Trusted Root G40
+]J<0"0i3
+v=Y]Bv
+FNMT-RCM1
+Ceres1
+VATES-Q2826004J1,0*
+#AC RAIZ FNMT-RCM SERVIDORES SEGUROS0
+Milan1#0!
+Actalis S.p.A./033585209671'0%
+Actalis Authentication Root CA0
+Arizona1
+Scottsdale1%0#
+Starfield Technologies, Inc.1;09
+2Starfield Services Root Certificate Authority - G20
+CN1&0$
+BEIJING CERTIFICATE AUTHORITY1
+BJCA Global Root CA20
+DE1'0%
+Deutsche Telekom Security GmbH1+0)
+"Telekom Security TLS ECC Root 20200
+ES1B0@
+9Autoridad de Certificacion Firmaprofesional CIF A626340680
+	TAIWAN-CA1
+Root CA1
+TWCA Global Root CA0
+G`/+295R:(
+tS*=S'i
+	Hong Kong1
+	Hong Kong1
+Hongkong Post1 0
+Hongkong Post Root CA 30
+PL1"0 
+Unizeto Technologies S.A.1'0%
+Certum Certification Authority1"0 
+Certum Trusted Network CA0
+CN100.
+'China Financial Certification Authority1
+CFCA EV ROOT0
+"`jc`Nv
+TS.x2g=
+	IdenTrust1'0%
+IdenTrust Commercial Root CA 10
+CERTSIGN SA1
+certSIGN ROOT CA G20
+m76+xf
+US1)0'
+ Internet Security Research Group1
+ISRG Root X20
+Asseco Data Systems S.A.1'0%
+Certum Certification Authority1
+Certum EC-384 CA0
+WISeKey1"0 
+OISTE Foundation Endorsed1(0&
+OISTE WISeKey Global Root GB CA0
+fC7~#Cy
+Budapest1
+NetLock Kft.1705
+nykiad
+k (Certification Services)1503
+,NetLock Arany (Class Gold) F
+	Certainly1
+Certainly Root R10
+Rv;-0@
+Sectigo Limited1604
+-Sectigo Public Server Authentication Root R460
+DigiCert Inc1
+www.digicert.com1$0"
+DigiCert Assured ID Root G20
+(/R?6rI
+rZVq;?
+DigiCert Inc1
+www.digicert.com1$0"
+DigiCert Assured ID Root G30
+l)91.0,
+%Atos TrustedRoot Root CA RSA TLS 20211
+{??|G8
+WISeKey1"0 
+OISTE Foundation Endorsed1(0&
+OISTE WISeKey Global Root GC CA0
+Texas1
+Houston1
+SSL Corporation110/
+(SSL.com Root Certification Authority RSA0
+emSign PKI1%0#
+eMudhra Technologies Limited1 0
+emSign ECC Root CA - G30
+QuoVadis Limited1
+QuoVadis Root CA 3 G30
+raE)HYhow
+@b-;Hi
+w#4Iu|
+KR1&0$
+NAVER BUSINESS PLATFORM Corp.1200
+)NAVER Global Root Certification Authority0
+iTrusChina Co.,Ltd.1
+vTrus Root CA0
+gjY+%b
+QuoVadis Limited1
+QuoVadis Root CA 1 G30
+D-Trust GmbH1"0 
+D-TRUST EV Root CA 2 20230
+7dux)h
+Amazon1
+Amazon Root CA 10
+0-}-tp5
+SSL Corporation1%0#
+SSL.com TLS RSA Root CA 20220
+QuoVadis Limited1
+QuoVadis Root CA 2 G30
+DE1+0)
+"T-Systems Enterprise Services GmbH1
+T-Systems Trust Center1%0#
+T-TeleSec GlobalRoot Class 20
+On7H(8
+US1)0'
+ Internet Security Research Group1
+ISRG Root X10
+qiJffl
+	dwnG7
+Buypass AS-9831633271 0
+Buypass Class 2 Root CA0
+	ACCVRAIZ11
+PKIACCV1
+-)*Zqzdj
+OISTE Foundation1!0
+OISTE Server Root RSA G10
+UniTrust1
+UCA Global G2 Root0
+Athens1D0B
+;Hellenic Academic and Research Institutions Cert. Authority1@0>
+7Hellenic Academic and Research Institutions RootCA 20150
+:Ye9Xz
+PL1(0&
+Krajowa Izba Rozliczeniowa S.A.1
+SZAFIR ROOT CA20
+GlobalSign ECC Root CA - R41
+GlobalSign1
+GlobalSign0
+%Atos TrustedRoot Root CA ECC TLS 20211
+	Certainly1
+Certainly Root E10
+Budapest1
+Microsec Ltd.1
+VATHU-235844971"0 
+e-Szigno TLS Root CA 20230
+PL1"0 
+Unizeto Technologies S.A.1'0%
+Certum Certification Authority1$0"
+Certum Trusted Network CA 20
+cyD~Kc$
+.4?)LR
+emSign PKI1
+eMudhra Inc1 0
+emSign ECC Root CA - C30
+CN1%0#
+TrustAsia Technologies, Inc.1$0"
+TrustAsia Global Root CA G40
+Budapest1
+Microsec Ltd.1
+VATHU-235844971
+e-Szigno Root CA 20170
+	TAIWAN-CA1
+Root CA1*0(
+!TWCA Root Certification Authority0
+CN1200
+)GUANG DONG CERTIFICATE AUTHORITY CO.,LTD.1
+GDCA TrustAUTH R5 ROOT0
+S0F^KT
+\e}<mYW
+CN1%0#
+TrustAsia Technologies, Inc.1"0 
+TrustAsia TLS ECC Root CA0
+SSL Corporation1%0#
+SSL.com TLS ECC Root CA 20220
+Microsoft Corporation1604
+-Microsoft RSA Root Certificate Authority 20170
+RaQp(?
+Sectigo Limited1604
+-Sectigo Public Server Authentication Root E460
+DigiCert Inc1
+www.digicert.com1 0
+DigiCert Global Root G20
+GlobalSign Root CA - R31
+GlobalSign1
+GlobalSign0
+GlobalSign nv-sa1
+GlobalSign Root E460
+UniTrust1%0#
+UCA Extended Validation Root0
+[aXo6P
+	Dhimyotis1
+0002 481463081000361
+Certigna Root CA0
+UvP|%z
+60A{v3"
+US1"0 
+Google Trust Services LLC1
+GTS Root R10
+GR1705
+.Hellenic Academic and Research Institutions CA1$0"
+HARICA TLS RSA Root CA 20210
+CN1%0#
+TrustAsia Technologies, Inc.1$0"
+TrustAsia Global Root CA G30
+Bratislava1
+Disig a.s.1
+CA Disig Root R20
+Oe@x\GP
+Amazon1
+Amazon Root CA 40
+D-Trust GmbH1"0 
+D-TRUST BR Root CA 1 20200
+JP1%0#
+SECOM Trust Systems CO.,LTD.1+0)
+"Security Communication ECC RootCA10
+JP1#0!
+Cybertrust Japan Co., Ltd.1
+SecureSign Root CA150
+New Jersey1
+Jersey City1
+The USERTRUST Network1.0,
+%USERTrust RSA Certification Authority0
+ M	-d	
+FNMT-RCM1
+AC RAIZ FNMT-RCM0
+o03Xq\
+Buypass AS-9831633271 0
+Buypass Class 3 Root CA0
+D-Trust GmbH1*0(
+!D-TRUST Root Class 3 CA 2 EV 20090
+OISTE Foundation1!0
+OISTE Server Root ECC G10
+DE1'0%
+Deutsche Telekom Security GmbH1+0)
+"Telekom Security TLS RSA Root 20230
+TW1#0!
+Chunghwa Telecom Co., Ltd.1
+HiPKI Root CA - G10
+_}Bd9z&6
+Atos TrustedRoot 20111
++atqlC
+CN1&0$
+BEIJING CERTIFICATE AUTHORITY1
+BJCA Global Root CA10
+	G632875101
+ES1'0%
+ANF Autoridad de Certificacion1
+ANF CA Raiz1"0 
+ANF Secure Server Root CA0
+DE1+0)
+"T-Systems Enterprise Services GmbH1
+T-Systems Trust Center1%0#
+T-TeleSec GlobalRoot Class 30
+Asseco Data Systems S.A.1'0%
+Certum Certification Authority1
+Certum Trusted Root CA0
+tls connection creation failedtls connection init failedCloseNotify
+user-agentUser-AgentacceptAccept*/* HTTP/1.1
+can't perform non https request with https_only setAuthorizationCookieDELETEtransfer-encodingcontent-lengthTransfer-EncodingchunkedContent-Lengthauthorization
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+?456789:;<=
+ !"#$%&'()*+,-./0123
+cookieureq/2.12.1ALL_PROXYall_proxyHTTPS_PROXYhttps_proxyHTTP_PROXYhttp_proxy
+Invalid char (
+) while looking for ':'
+Legal chars in header nameConnect errorshouldn't happen: failed to connect to all IPs, but no errorSOCKS feature disabled.timed out reading responseaccept-encodingRequest deadline overflowedUnexpected EOFStatus line not ASCIIHTTP version did not start with HTTP/HTTP version did not match formatStatus code was wrong lengthHTTP version was wrong lengthWrong number of tokens in status linethe status lineconnectionreturning stream to poolfailed to read exact buffer length from streamStatusTransportHTTPnumber of read bytes exceeds limitInappropriateMessageexpect_typesInappropriateHandshakeMessageInvalidEncryptedClientHelloInvalidMessageNoCertificatesPresentedDecryptErrorEncryptErrorPeerMisbehavedAlertReceivedInvalidCertificateInvalidCertRevocationListGeneralFailedToGetCurrentTimeFailedToGetRandomBytesHandshakeNotCompletePeerSentOversizedRecordNoApplicationProtocolBadMaxFragmentSizeOtherUnknownInvalidUrlUnknownSchemeDnsInsecureRequestHttpsOnlyConnectionFailedTooManyRedirectsBadStatusBadHeaderIoInvalidProxyUrlProxyConnectProxyUnauthorizedmessageurlsourceEmptyHostIdnaErrorInvalidPortInvalidIpv4AddressInvalidIpv6AddressInvalidDomainCharacterRelativeUrlWithoutBaseRelativeUrlWithCannotBeABaseBaseSetHostOnCannotBeABaseUrlOverflowBad URLUnknown SchemeDns FailedInsecure request attempted with https_only setConnection FailedToo Many RedirectsBad StatusBad HeaderNetwork ErrorMalformed proxyProxy failed to connectProvided proxy credentials are incorrectHTTP status errorRustlsStreamDomainCertificatePayloadTooLargeHandshakePayloadTooLargeInvalidCcsInvalidContentTypeInvalidCertificateStatusTypeInvalidCertRequestInvalidDhParamsInvalidEmptyPayloadInvalidServerNameMessageTooLargeMessageTooShortMissingDataMissingKeyExchangeNoSignatureSchemesUnexpectedMessageUnknownProtocolVersionUnsupportedCompressionUnsupportedCurveTypeUnsupportedKeyExchangeAlgorithmIllegalEmptyValueDuplicateExtensionPreSharedKeyIsNotFinalExtensionUnknownHelloRetryRequestExtensionUnknownCertificateExtensionAttemptedDowngradeToTls12WhenTls13IsSupportedBadCertChainExtensionsDisallowedEncryptedExtensionDuplicateClientHelloExtensionsDuplicateEncryptedExtensionsDuplicateHelloRetryRequestExtensionsDuplicateNewSessionTicketExtensionsDuplicateServerHelloExtensionsDuplicateServerNameTypesEarlyDataAttemptedInSecondClientHelloEarlyDataExtensionWithoutResumptionEarlyDataOfferedWithVariedCipherSuiteHandshakeHashVariedAfterRetryIllegalHelloRetryRequestWithEmptyCookieIllegalHelloRetryRequestWithNoChangesIllegalHelloRetryRequestWithOfferedGroupIllegalHelloRetryRequestWithUnofferedCipherSuiteIllegalHelloRetryRequestWithUnofferedNamedGroupIllegalHelloRetryRequestWithUnsupportedVersionIllegalHelloRetryRequestWithWrongSessionIdIllegalHelloRetryRequestWithInvalidEchIllegalMiddleboxChangeCipherSpecIllegalTlsInnerPlaintextIncorrectBinderInvalidCertCompressionInvalidMaxEarlyDataSizeInvalidKeyShareKeyEpochWithPendingFragmentKeyUpdateReceivedInQuicConnectionMessageInterleavedWithHandshakeMessageMissingBinderInPskExtensionMissingKeyShareMissingPskModesExtensionMissingQuicTransportParametersOfferedDuplicateCertificateCompressionsOfferedDuplicateKeySharesOfferedEarlyDataWithOldProtocolVersionOfferedEmptyApplicationProtocolOfferedIncorrectCompressionsPskExtensionMustBeLastPskExtensionWithMismatchedIdsAndBindersRefusedToFollowHelloRetryRequestRejectedEarlyDataInterleavedWithHandshakeMessageResumptionAttemptedWithVariedEmsResumptionOfferedWithVariedCipherSuiteResumptionOfferedWithVariedEmsResumptionOfferedWithIncompatibleCipherSuiteSelectedDifferentCipherSuiteAfterRetrySelectedInvalidPskSelectedTls12UsingTls13VersionExtensionSelectedUnofferedApplicationProtocolSelectedUnofferedCertCompressionSelectedUnofferedCipherSuiteSelectedUnofferedCompressionSelectedUnofferedKxGroupSelectedUnofferedPskSelectedUnusableCipherSuiteForVersionServerEchoedCompatibilitySessionIdServerHelloMustOfferUncompressedEcPointsServerNameDifferedOnRetryServerNameMustContainOneHostNameSignedKxWithWrongAlgorithmSignedHandshakeWithUnadvertisedSigSchemeTooManyEmptyFragmentsTooManyKeyUpdateRequestsTooManyRenegotiationRequestsTooManyWarningAlertsReceivedTooMuchEarlyDataReceivedUnexpectedCleartextExtensionUnsolicitedCertExtensionUnsolicitedEncryptedExtensionUnsolicitedSctListUnsolicitedServerHelloExtensionWrongGroupForKeyShareUnsolicitedEchExtensionEnforceIgnoreBadEncodingExpiredExpiredContextNotValidYetNotValidYetContextRevokedUnhandledCriticalExtensionExpiredRevocationListExpiredRevocationListContextBadSignatureNotValidForNameNotValidForNameContextInvalidPurposeInvalidPurposeContextInvalidOcspResponseApplicationVerificationFailureKeyMismatchEcPointsExtensionRequiredExtendedMasterSecretExtensionRequiredIncorrectCertificateTypeExtensionKeyShareExtensionRequiredNamedGroupsExtensionRequiredNoCertificateRequestSignatureSchemesInCommonNoCipherSuitesInCommonNoEcPointFormatsInCommonNoKxGroupsInCommonNoSignatureSchemesInCommonNullCompressionRequiredServerDoesNotSupportTls12Or13ServerSentHelloRetryRequestWithUnknownExtensionServerTlsVersionIsDisabledByOurConfigSignatureAlgorithmsExtensionRequiredSupportedVersionsExtensionRequiredTls12NotOfferedTls12NotOfferedOrEnabledTls13RequiredForQuicUncompressedEcPointsRequiredUnsolicitedCertificateTypeExtensionServerRejectedEncryptedClientHelloalgorithmsignatureAllowInvalid UTF8gzip header field too long
+corrupt deflate streamreceived plaintext buffer fullno usable cipher suites configuredno kx groups configured
+Ciphersuite 
+ requires 
+ key exchange, but no 
+T-compatible key exchange groups were present in `CryptoProvider`'s `kx_groups` field
+ClientAuthServerAuthresponse body closed before all bytes were readEndEntityChainDecoderErrorserial_numberrevocation_datereason_codeinvalidity_dateUnspecifiedKeyCompromiseCaCompromiseAffiliationChangedSupersededCessationOfOperationCertificateHoldRemoveFromCrlPrivilegeWithdrawnAaCompromiseOwnedSignedDataInvalidRevokedCertSerialNumberIssuerInvalidForCrlParseErrorOtherErrorHpkeKeyConfigconfig_idkem_idpublic_keysymmetric_cipher_suitesDnsNameError while decoding chunksOwnedPoisonErrorInvalidConfigListNoCompatibleConfigSniRequiredV18versiontyppayloadEchConfigContentskey_configmaximum_name_lengthpublic_nameextensionsOwnedCertRevocationListrevoked_certsissuerissuing_distribution_pointsigned_datafatal runtime error: thread result panicked on drop, aborting
+DHEECDHEBorrowedCertRevocationListHpkeSymmetricCipherSuitekdf_idaead_idInvalidDnsNameErrorrootsrevocation_check_depthunknown_revocation_policyrevocation_expiration_policysupportedWebPkiServerVerifierLazy instance has previously been poisonedassertion failed: self.is_char_boundary(idx)assertion failed: self.is_char_boundary(new_len)assertion failed: self.is_char_boundary(at)/..Error:////a non-empty list of numbers0x0Xftphttpsassertion failed: !self.serialization[scheme_end_as_usize..].starts_with("://")Programming error. parse_query_and_fragment() called without ? or #start of range should be a character boundaryassertion failed: self.is_char_boundary(start)assertion failed: self.is_char_boundary(end)empty hostinvalid international domain nameinvalid port numberinvalid IPv4 addressinvalid IPv6 addressinvalid domain characterrelative URL without a baserelative URL with a cannot-be-a-base basea cannot-be-a-base URL doesn
+t have a host to setURLs more than 4 GB are not supported
+TTTTTTTTTTTTTTTT
+UnsupportedSignatureAlgorithmForPublicKeyContextsignature_algorithm_idpublic_key_algorithm_idcalled `Result::unwrap()` on an `Err` valueBadDerBadDerTimeCaUsedAsEndEntityCertExpirednot_afterCertNotValidForNameCertNotValidYetnot_beforeCertRevokedCrlExpirednext_updateEmptyEkuExtensionEndEntityUsedAsCaExtensionValueInvalidInvalidCertValidityInvalidNetworkMaskConstraintInvalidSerialNumberInvalidCrlSignatureForPublicKeyInvalidSignatureForPublicKeyIssuerNotCrlSignerMalformedDnsIdentifierMalformedExtensionsMalformedNameConstraintMaximumNameConstraintComparisonsExceededMaximumPathBuildCallsExceededMaximumPathDepthExceededMaximumSignatureChecksExceededNameConstraintViolationPathLenConstraintViolatedRequiredEkuNotFoundRequiredEkuNotFoundContextSignatureAlgorithmMismatchTrailingDataUnknownIssuerUnknownRevocationStatusUnsupportedCertVersionUnsupportedCriticalExtensionUnsupportedCrlIssuingDistributionPointUnsupportedCrlVersionUnsupportedDeltaCrlUnsupportedIndirectCrlUnsupportedNameTypeUnsupportedRevocationReasonUnsupportedRevocationReasonsPartitioningUnsupportedCrlSignatureAlgorithmContextUnsupportedSignatureAlgorithmUnsupportedSignatureAlgorithmContextUnsupportedCrlSignatureAlgorithmForPublicKeyUnsupportedCrlSignatureAlgorithmForPublicKeyContextUnsupportedSignatureAlgorithmForPublicKeyinternal error: entered unreachable codeBitStringBoolCertificateCertificateExtensionsCertificateTbsCertificateCertRevocationListCertRevocationListExtensionCrlDistributionPointCommonNameInnerCommonNameOuterDistributionPointNameExtensionGeneralNameRevocationReasonSignatureSignatureAlgorithmSignedDataSubjectPublicKeyInfoTimeTrustAnchorV1TrustAnchorV1TbsCertificateU8RevokedCertificateRevokedCertificateExtensionRevokedCertEntryIssuingDistributionPointEndOfInputassertion failed: public_values_eq(path.cert.issuer, issuer_subject)InvalidNameContextpresentedDirectoryName
+Unsupported(0x
+.:::[invalid: , ][KeyPurposeId()presentsupported_algorithms
+:5ptI.T(
+e\Gg77
+RoVZcz
+-#i<X8
+f|YL#~
+/":lnv 
+46$a8&-
+F8IaiS/8,
+8(0PFJ
+Z:hluv
+^CuYh7{j
+3,IE),W
+G3oMLp
+CB4cJQl
+:O "#-
+AOZs\!yA4
+S_gOW$N
+&kgG+[
+	47Cd1z
+V8zc5\e
+Xe7H&e
+n<!TH+9
+W%0Qv4AV
+ZF]:Ba?
+"ICEqn.s
+DIq*	W
+&OzJK*7
+gZFySTan
+#]hK Ed
+3HLhx 
+Rs$c~B
+dZK<),F8
+N6/~n.
+O=4_}gL:
+IGY=&?S$
+Qg$ZO4Z
+=++&!63
+9c,Y0x
+>'\*xZ
+GzV%E$;
+v]k"%x
+T5w?30d
+; zp%J
+A;DC0b
+yu]4if
+'s~h9g
+{\6r^>
+=^/p=.
+}5bIqLk
+|	*%Xn
+~"}+)8
+M_{h7"
+/wo4:O2
+UcI{TrEX
+fsS'?/ 
+T*|?i|~
+},Q$"'
+sJfw>7G9@>
+s6!TYK
+t0;?ZlP*m
+hJxRX@_
+2Uiwp"9
+ctl=`|
+.I`Mb"(
+Wmn|CH
+*D]WO"#y&
+)_+b~F
+UHz4Z}
+$>Mm/JhA
+9:dzGN
+\l:ArR
+Y93a=7c@
+/A#i!&
+#oy=i~
+#k+ka\T
+{5`q@roz?
+ ^LXjt
+K5!n^n
+$f;Zv9l
+]1h=bfz
+tM(ie-V
+?_15]>
+KMBo8[
+N'L&R/l
+bh.b|C
+rZ1VwGf5
+R=1C&b
+M}8vhJ
+SQ8_d`\
+Z"T-47
+Uz_G3=
+jcn,T,>
+J_R=I)
+BvVlZ\
+uJ4CA2
+fdxfv%
+f%wyLmX:
+Nz3I#B
+VY5[;o
+_ee/?P
+CD1mB"
+<3AC|[sqb
+g>	k?~
+[`|bJj
+>o}-XH
+uC<[rR
+q2'<Kv
+-<nre!
+X!}}p|u
+GBd<}v
+2:3maJ
+WL6e}:
+=O?AqP
+uE*q#<
+1f	3Qg^y
+`	).0n
+..uR5&m
+[!		|87
+tLY^m`6
+62$|S)6f
+`-I	=S'\
+^.om5r
+:gN(dq
+G2xVo\?
+,kj8	e
+l`>,l}
+U?Y5qX}	f
+VIgq qC:
+1\`T=h
+aGw	4*
+[f<>28
+jLTKTz
+[f7@7F
+S<hN-AO
+PAGN_4
+,kXKlQT
+BY_Lq)
+aS&v&*
+ _$7*xq?"
+3Ej%Tb
+;uC#h/
+6r-m_v
+`Ch.	(,R
+c2\f?C	
+xg-9Ja
+]&@+fk:
+zF):O4
+RM~]qY
+YWQa:B
+F#bgn?MwN|%
+EN2 s/
+hloav\	
+=#N"u#
+ia7@	 H9
+D.Hog^
+p!PcA1|
+O1NzNfj'fGv
+eyj5yR
+$g#8lu#
+_Ek6b]
+][LK~lO
+>'SMN{
+.dx_LV9
+<~{Su;u
+kp3/y*U
+sKu{~X
+6#RDP#
+L0fO*'
+#AL#~\
+]FhSD}
+WD%g"0Q-)
+yRnkB	
+,ZFDGn
+*,vJEd
+<YVtV&
+if.F<h
+C	r9rW
+g u}DE
+7?XEAVn
+PmR"H?
+|c~=;F
+oBFX}k6U
+8SIffK5W
+TE@[=-
+k/.fG"
+oB4Do4
+,9(}ZA
+>; xs:
+r~s-v7
+!!'c)Q,
+L4uGv~;6
+Go^ldg
+Y;C;8V
+2\fWQx
+Dd g4X3
+wOUigi<
+z1_|'B
+NXfT>o
+N5dIn9
+d[kHy 
+Hq,r/f
+EhQ,[3
+U).ovc
+ _GDK	Z
+wfA'@7
+"l7ql`R2lWf
+oad2:,
+ZXF,`i
+6K;L#k;{
+Jy;B`]A
+K{"Kb,p
+2cb:RO
+g{syW*
+	}BzJ88
+bPb:L7X)
+%2H/h'
+@h!Aq8
+w_5&#R4
+`]Bo2'
+_=1<<@b
+rFur`7	
+w,Q)#I
+iFFp}A
+s=%(nh0
+HU>mA$_E*
+VM%G]f
+`28)fk
+qTm_fC=
+ps(crh
+PHhn}Y
+#P0_?G0
+/\U ?J
+gXC.nT
+so=H*m
+1:uV+T
+~R65Fu
+$HypYkf
+;>4>se=
+TXJw^{
+wn)*T$4?5z
+V<h+5*
+o*:TJ&
+4zj@1;IJ
+!|IjK&
+P A@~t
+ai`UJ4
+D.]ppM
+oG)e5L
+U7{8+S
+.Wqb^?
+f4%B.&
+H0+G+R
+jV*d9O
+.6<A>Y
+nmvos^
+J#}QU^u
+%)(*$J
+K[C7W+
+e	cCPtH
+>fN46R^
+F|w)a]c
+g'L0X7b
+Dc&6\<H:
+6+?R6_
+_{j!g>
+}=\x]y1
+I"9|OxTex
+9Y@nJM
+8TZvrv<
+YedcCH}
+L5^x|S
+LqH!)8
+V<"+u~
+N]#8f'
+0tU+xc:
+W>peSp>9
+}"6M:Q
+&q6}A,
+e$ChX f~&]
+")c	i5
+>4|6eXg_e
+!#QRFt
+!UMU`*
+'pSN.F
+6c&0|vvX
+-,O'-U	ND
+zxNIjo
+XLuC'4
+B.z\85p
+'A,6y-
+X @l(&
+'4\&Q{
+m>FC*a7H
+ T;6P/Arc
+@#i4$N
+N=JR_"
+3w2URu
+5'0v2ZP
+v'A>M6
+Ew`)9Q
+.r&I|C
+XNU`{3
+8q-S*]X
+f	rixZ
+ &Y&_|
+,ShfPQ
+VbfOc,p
+#t9;@Z
+eN.d	A
+I{i3|G
+}9]Jn+LhyK
+/`P*d#
+9dYeiJ
+qF{qc	
+%IW;"!*
+z/B,9d
+y#y&Jb
+C!OFtq74
+p-6\D 
+-LTY/:]
+od?;7y
+!3mmXs
+t``4*O
+tA`KO/3G!
+Iw,e=2-b[
+G0Tv~:
+Tu	(OR
+z+4/\M
+Ye80D=
+,ARu@y6
+!D]#t^;Gc
+0M2~@p
+.yAu[7
++A*Z<Z
+CGP%AI
+(1O\,n
+3M5cWAK
+expand 32-byte k
+ChaCha20 for ARMv8, CRYPTOGAMS by <appro@openssl.org>
+expand 32-byte k
+GHASH for ARMv8, derived from ARMv4 version by <appro@openssl.org>
+A(Vector Permutation AES for ARMv8, Mike Hamburg (Stanford University)
+ECP_NISTZ256 for ARMv8, CRYPTOGAMS by <appro@openssl.org>
+D7q/;M
+SHA512 block transform for ARMv8, CRYPTOGAMS by <appro@openssl.org>
+SHA256 block transform for ARMv8, CRYPTOGAMS by <appro@openssl.org>
+)-6?MQ
+![:<>@BDFHJLNPRTVXZ
+\	a	i	
+SSSZSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+(((((((((((
+(((((((((
+(0((	(((
+((+(:(
+(((((((((( 			
+:<<<<<<<<<<<<<<'<<<<<<<<<<
+<</<<<:<<:
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+1<<<<<
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%'%
+%%%*%%%
+%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%)%#
+%%%%%%%%%
++++++++++
+JY222I
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqq"+?qqqqqqqqqqqH
+FFFFFFFFFFFFFFFFFFFF4FFFF4FFFFFFF4kFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF4FFFFFIFFFsFFFFFFFuFFFKFMOwFz%2?
+;CC;KK
+m&/mmm4;D
+nnnnnnnn
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!5
+mDGJMP
+9HK?BP[Bbglt?
+'1''''B
+"'/7?GQ]
+3.45.0
+ !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+******""""""""""""""""""""
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+REINDEXEDESCAPEACHECKEYBEFOREIGNOREGEXPLAINSTEADDATABASELECTABLEFTHENDEFERRABLELSEXCLUDELETEMPORARYISNULLSAVEPOINTERSECTIESNOTNULLIKEXCEPTRANSACTIONATURALTERAISEXCLUSIVEXISTSCONSTRAINTOFFSETRIGGERANGENERATEDETACHAVINGLOBEGINNEREFERENCESUNIQUERYWITHOUTERELEASEATTACHBETWEENOTHINGROUPSCASCADEFAULTCASECOLLATECREATECURRENT_DATEIMMEDIATEJOINSERTMATCHPLANALYZEPRAGMATERIALIZEDEFERREDISTINCTUPDATEVALUESVIRTUALWAYSWHENWHERECURSIVEABORTAFTERENAMEANDROPARTITIONAUTOINCREMENTCASTCOLUMNCOMMITCONFLICTCROSSCURRENT_TIMESTAMPRECEDINGFAILASTFILTEREPLACEFIRSTFOLLOWINGFROMFULLIMITIFORDERESTRICTOTHERSOVERETURNINGRIGHTROLLBACKROWSUNBOUNDEDUNIONUSINGVACUUMVIEWINDOWBYINITIALLYPRIMARY
+SQLite format 3
+BINARY
+  !!""##$$%%&&''(())**++,,--..//00112233445566778899
+':)|C!
+%vddUX*T
+IIIIIIA
+AAAAA&&A#
+@&&&&&&&&&&@
+row_number
+dense_rank
+percent_rank
+cume_dist
+CADDEB
+nth_value
+first_value
+naturaleftouterightfullinnercross
+last_value
+second
+minute
+,,,,,,3M+
+GJNQV[
+55<@D5W\5]
+PPPPPP_PPiPnnPnnPPPPP[PPPedPPZgPPhPQ
+69KNN59
+	:	;	<	=	>	A	I	M	N	P	Q	X	b	d	f	p	q	r	y	
+   ( ) * / 0 9 : ; ? A D E F G R S T U _ ` j p q t z } ~ 
+!$!%!&!'!(!)!*!.!/!0!4!5!9!:!<!>!@!E!G!J!K!L!N!O!P!`!
+# #"#)#*#+#|#}#
+'h'i'j'k'l'm'n'o'p'q'r's't'u'v'
++0+E+G+P+
+,0,`,c,e,g,n,q,r,t,u,w,|,~,
+-'---0-o-p-
+. .!.".#.$.%.&.'.(.).*./.0.:.
+0 0!0*0.000106080;0<0=0>0A0
+2 2*2H2P2Q2`2
+aceinouyyacdeeghijklnorstuuwyzouaiou
+aeiorusthae
+vwwxyzhtwya
+CREATE TABLE x( name       TEXT, path       TEXT, pageno     INTEGER, pagetype   TEXT, ncell      INTEGER, payload    INTEGER, unused     INTEGER, mx_payload INTEGER, pgoffset   INTEGER, pgsize     INTEGER, schema     TEXT HIDDEN, aggregate  BOOLEAN HIDDEN)
+@9Ii68I
+@9Ii68i
+Lim8li(8
+Lim8li(8
+@9(i+8
+Tdic8Ehc8
+Tbi`8Iii8_
+Tci`8$i`8
+Tci`8Iii8
+q )JzB
+q )Jz#
+7(aD9(
+TK	@9?
+q )JzB
+q )JzB
+	hh8?)
+q )JzB
+q )Jz#
+q )JzB
+q )Jz#
+Tl	@9_
+	kh8?)
++ih8J	
+	kh8?)
+J	@9_}
+R+i(8JC
+&@x*9@Q_
+)}	Skp
+R+i48)
+h~	Sip
+q )JzB
+q )Jz#
+R+i(8Jw
++ih8J	
+6i&@x9
+6j&@x9
+6t&@xy
+TL	@9?
+Lih8k	
+*hw8_%
+@9Ii68i
+@9Ii68
+	kh8?)
+J	@9_}
+@8+-@8L]
+T?l	q 
+T?p	q`
+T?t	qa
+T?q	q`
+Tl	@9_
++@9hZG
+6)'@x4
+6*'@x4
+6	'@x4
+Lim8li(8
+Lim8li(8
+@9(i+8
+ic8Ehc8
+i`8jij8_
+i`8Di`8
+i`8jij8
+ic8Ehc8
+i`8jij8_
+i`8Di`8
+i`8jij8
+hh8Ihi8?
+Lim8li)8,
++yhxJ	
+7hJ@9H
+7hJ@9(,87
+7hJ@9H
+Tdic8Ehc8
+Tbi`8Qiq8_
+_8Ei`8B
+7hJ@9h
+q )Jzc
+q )Jzc
+q )JzB
+q )JzB
+q )JzB
+=Yk)8b
+	*_CDqa
+	*_CDq
+Z n5Z nZZ nvX n
+#X nDX n!
++il8Ki(8
++il8Ki(8
+@9(i*8
+Lim8li)8,
+Lim8li)8,
+@9(i+8
+9jij8iii8lil8
+2jij8)
+@NBX nA(a
+TLil8)	
+Tmim8J	
+1rT9!pT9?
+@9(i*8H
+@y_!!kH
+T+	@9K
+@y?!!ka
+3IAI*H
+T+hj8i
+Tuj!8!
+@9ji,8J
+@9Ii(8i
+Ti	@9_
+Iil8ii(8	
+@9ji,8
+Iil8ii(8	
+Iil8ii(8	
+*il8ji(8
+*il8ji(8
+@9(i*8
+Iil8ii(8	
+Iil8ii(8	
+@9(i+8
+T+	@9_
+J6x@98t@9
+J7|@99p@9
+<`@9>\@99
+J58@99<@9:4@9x
+J;0@9<,@9
+3$@9zxz
+J9T@9 Z`
+J7H@9syz
+jgJylc
+8gJyvcJy
+T	ybx?
+T	ybx*
+yjxk=@
+xhxI)	
+xhx	xix@
+xhx	xix`
+-4	SLylx
+SLylxJymxk	
+@9?aHkB
+_aKkl"
+_aKkm"
+_aLkm"
+_aKkl"
+S?bPk$1
+?`@knE
+@9?bPk%1
+-4	SLylx
+SLylxJymxk	
+,4	S+ykx
+T)ykx*
+S+ykx)ylxJ	
+T,kk8k
+JJADQ_
+@ih8H#
+T?@DqA
+#8A)/pB)1lC)"
+D)'TE)
+7`F)6dG)J
+@yJA	*_ADq
+'@9iJ@9I
+&@xi6@
+jyhx)	
+7l}	Sk!
+R 	Hzi
+)ih8Jyhx
+Q)ij8|yjx
+9	hi8		
+K{ixJ	
+7k}	Sk
+7l}	Sk!
+`ymx1"
+)ih8Jyhx
+7K}	SJ!
+7i}	S)
+7j}	SJ
+7+}	S)!
+ih8;zhx
+9	hi8		
+4l	@9l
+T,ij8J
+T,ij8J
+THii8)
+aA9"yh
+eA9A	A
+Iii8)!
+TH	@9(
+X n!X n`
+X n!X n`
+Lim8li(8
+Lim8li(8
++yhxJ	
+7hJ@9H
+7hJ@9(,87
+7hJ@9H
+7hJ@9h
++yhxJ	
++ih8J	
+Tqi`8Iii8?
+Tbi`8$i`8_
+Tbi`8Iii8_
+T,	@9_
+T*ih8_}
+T)ik8?
+T)ik8?
+T,	@9_
+k|8`"@
+2Hih8)
+9Lim8-
+T)ih8?
+T)ij8?
+T)ih8?%
+T)ih8?
+T+	@9_
+H1	*`&@
+k$)@z@
+Tlij8J
+Lii8k	
+*il8ji(8
++il8Ki(8
+@9(i*8
+6@@98D@9
+H97(@y
+JAVJkaVJ(
+9@@9	 B
+7D@98$@y6(@y?
+	JJ!IJ
+	Jk!IJ.
+	JJ!IJ
+	JJ!IJ-
++ih8J	
++ih8J	
+(ihx		
+T_! q@
++ih8J	
+@9.	@9(
+@9J	@91^
+^xIA	*
++i`xk	
++i`xk	
+jih8)	
+(ihx		
++ih8J	
++ih8J	
++yhxJ	
+7hJ@9(
+7hJ@9(
+7hJ@9h
+Lim8li(8
+Lim8li(8
+@9(i+8
++iv8J	
+Lii8k	
+RYihx+
+(ihx		
+Ki`xk	
+T(k{xv
+@9)	@9k]
+*ia	*+	
+@9J	@9k]
+@9)	@9J]
+*Ia	*:	
++ki8J	
++yhxJ	
+Ki`xl	
+sT8jQ@xk
+sY8jQExk
+RjQExk
+*iwxI	
++i`xk	
+TKim8.
+jih8)	
+=&HDy(
+"@9i#@9
+&@9i'@99
+*@9i+@99
+.@9i/@9*
++ih8J	
++iw8J	
+Liv8k	
++ih8J	
++ih8J	
++ih8J	
++ih8J	
+Lii8k	
+8;i(xh
+8;i(xh
++yhxJ	
+R9i(xj
+8Yi)x	
+R9i(xa
+R9i(xa
++ih8J	
+q5i78a
+@y3i(x
+jyhx)	
+R	i!x!
+@y`F@x
+R	i6x	
++ih8J	
+T) @).7@)K0@)
+9@)/ya
+=@)0ym
+=@)QA@)
+4@)k2@)
+7k&A9h
+Lii8k	
+*il8ji(8
+*il8ji(8
+@9Ii(8i
+Lii8k	
++yhxJ	
+G@9iJ@9
+G87`&@
+7hJ@9H187
+7hJ@9h087
+G@9iJ@9
+/87`&@
+7hJ@9H,87
+7hJ@9h(87
++ih8J	
++yhxJ	
+7hJ@9h
++ih8J	
+7hJ@9h
+7hJ@9h
++ih8J	
+7hJ@9h
++yhxJ	
+7hJ@9h
+*il8ji(8
++il8Ki(8
+@9(i*8
+Lii8k	
+)iAy?)
+Ri%A9*
+Ri%A9*
+R	$A9<
+fAy@#C
+)iSA9hWA9
+hc@9x~
+@y?! k
+T		@y?! k
+@y?! k 
+@y?! k
+@y_!!k
+E@x_! k`
+Lii8k	
+9	!@9?	
+@y?!4k!
+c	9h&G9
+TI	@y?1
+c	yH'A9
+jyhx)	
++ih8J	
+@9(i+8
+T		@9)
++ih8J	
++ih8J	
+7hJ@9h
+aA9"yh
+X n!X n
+'@9iJ@9I
+Iil8ii(8	
+9nzk nSk`n
+'n0j n
++ih8J	
+	ky8?)
+R*i;8{
+R*i!8!
+RIi;8{
+Lim8li)8,
+J @9I$@9
+RI4@9J,@9
+RJ,@9I4@9_
+RJ,@9I4@9_
++eJy-a
+@9IA	*j
+T4!@)3!
+@9*	@y3A
+T*	@9_
+@9IA	*j
+IQ@x(A
+IQ@x(A
+!@9		@
+*!@9+	@
+@x,-@9)
++ih8J	
++%@9))
+,ih8J	
+,ih8J	
++ih8J	
+@9*	@y+
+R)@D9k
+*,%A9.
+@9IA	*j
+@9IA	*j
+@9IA	*j
+RLeJyNa
+@9IA	*j
+@9IA	*j
+@9IA	*j
+@9IA	*j
+@9IA	*j
+@9IA	*j
+@9IA	*j
+@9IA	*j
+@9IA	*j
+neJypa
+MeJyOa
+@yJAD9k
+@9IA	*j
+@9IA	*j
+(0@y	&
++yhxJ	
++yhxJ	
+x$A9j4C
+LeJyNa
+!@9?@@
+	%@x((
+*%A9_!
+,yjxk	
+T,	@9+5@xJ
+T+%@xM	
+jii8J"
+T+)@9,
+q0jp8`
++ih8J	
+Tdic8Ehc8
+Tbi`8Iii8_
+Tci`8$i`8
+Tci`8Iii8
+@9.	@9
+*il8ji(8
+*il8ji(8
+@9Ii(8i
++il8Ki(8
++il8Ki(8
++ih8J	
+CA@9DE@9
+7hJ@9H&87`"@
++il8Ki(8
++il8Ki(8
+7hJ@9h
+SJ%s**0
+@9(i*8
++ih8J	
+J@9(	87A
++yhxJ	
+G@9iJ@9iD87`&@
+7hJ@9H/87A
+G@9iJ@9
+-87`&@
+7hJ@9h*87A
+7hJ@9('87A
++ih8J	
++yhxJ	
+7hJ@9h
++ih8J	
+7hJ@9h
++yhxJ	
++ih8J	
+R,	@yjl
+TL	@9?
+T($A9?
+R* A9+$
+L99QFy
+xi&A9H
+IQ@x(A
+is8(i78
++ih8J	
+Lyixk	
++ysxJ	
+@9)PBx3
+WC@yPG@y
+Vc@yWg@y
+Lyixk	
+7hJ@9h
+@yk	@9_
+T	hh8?%
+Rhk9x9
+TI	@9(
+Th"C9h
+T(iu8(
+T(`@98
+mim8-	
+9lil8,
+T		@9*
+T		@9*
+T	!@9*
+T	%@9*
+T	)@9*
+T	-@9*
+T	1@9*
+T	5@9*
+3_ADq@
+R*i(8k
+Tm	@9_
+_@@qv5
+=JA@9@
+TK	@9?
+R_ADq`
+R*i(8k
+R_ADq`
+=iAA9H
+3_ADq`
+R_ADq`
+T kz8b
+T kz8b
+T?ADq@
+yLy(x@	
+T1hp8?
+*il8ji(8
+*il8ji(8
+@9Ii(8i
+@y)	@9_
+@y)	@9_
++ih8J	
++ih8J	
+Jiz8I!	
++ih8J	
++yhxJ	
+7hJ@9H
+TJki8 
+@9Ii(8i
+T	il8/
+T	ip8)
+T	ii8.
+T	ij8*
+T	il8)
+T	il8,
+T	im8)
+T	im8-
+T	in8)
+@9kih8
+Thhh8h
+ihi8;!
+ihi8jhj8
+Thhh8H
+jij8U!	
+kj8J!	
+ij8J!	
+J	@9_U
+TJki8(
+)(@9+T@9
+.<@9-yl
+#$@9jeB
+04@9N`f
+]8)}@9
+8Kii8h
+/@<@9A
+ /Q8@9
+ oMT@9c
+@9I0@9
+nP4@9Cl@9u
+nDP@9Fh@9 `f
+1i(8?i.8
+T.ih8N
+T/i(8?i-8
+/i(8Oin8
+T1i(8?i.8
+/i(8oin8o
+T1i(8?i.8
+T/i(8/in8/
+T1i(8?i.8
+T/i(8/in8o
+T1i(8?i.8
+T/i(8/in8o
+T/i(8/in8
+1i(8?i.8
+T.ih8N
+T/i(8?i-8
+/i(8Oin8
+T1i(8?i.8
+/i(8oin8o
+T1i(8?i.8
+T/i(8/in8/
+T1i(8?i.8
+T/i(8/in8o
+T1i(8?i.8
+T/i(8/in8o
+T/i(8/in8
+'L@9)!
+*T8@9i~
+3ncTAO
+!N5VBO'
+#nsVBO
+2n5VBOtVBO
+#N1V`O
+TLOh&@
+ NeTPO
+"NeTDO
+PoBTPO
+`o1V`Ot
+PosVPO1
+po!TpOb
+`ocT`O
+)kix(%
+Ao!TAO
+AoBTAOc@
+nkhd8t
+,o(U,o
+'o	U'o
+V'o)!	n
+,o%U,o
+V'o)a	n
+,o(U,o
+'o	U'o
+V'o)!	n
+,o%U,o
+V'o)a	n
+,o(U,o
+'o	U'o
+V'o)!	n
+,o%U,o
+V'o)a	n
+%n!T	Oc
+Tax@Lf
+%n!T	Oc
+%n!T	Oc
+J(N!h(N
+J(NRj(N
+h(N!J(N!h(N2J(NRj(N
+J(N%h(N
+J(NRj(N
+h(N%J(N
+2J(NQj(N
+J(N1j(Nc
+J(N1j(N
+J(N1j(N
+J(N!h(N
+h(N!J(N!h(N
+J(N!h(N J(N
+h(N!J(N!h(N
+J(N!h(N
+J(N!h(NB
+J(N!h(Nc
+AJ(N!h(N
+=BJ(NBh(N
+=aJ(N!h(N
+nCJ(Nch(NbJ(NBh(N
+J(N!h(N
+ncJ(Nch(N
+J(NBh(N
+J(N!h(N
+J(Nch(N
+J(NBh(N
+J(Nch(Nkp@LkA
+J(NBh(N
+J(N!h(N
+J(Nch(N?2
+J(N!h(N
+J(Nch(N
+J(NBh(N
+K(N!h(N
+K(Nch(N
+K(NBh(N
+=!K(N!h(N
+h(N"K(NBh(N#K(Nch(N
+NAK(N!h(NBK(NBh(NCK(Nch(N@K(N
+TaK(N!h(NbK(NBh(NcK(Nch(N`K(N
+K(N!h(N
+K(NBh(N
+K(Nch(N
+K(N!h(N
+K(NBh(N
+K(Nch(N
+K(N!h(N
+K(NBh(N
+K(Nch(N
+ NAJ(N!h(NC
+BJ(NBh(NkA
+aJ(N!h(N
+bJ(NBh(N
+J(N!h(NCJ(Nch(N
+^cJ(Nch(N
+J(NBh(N
+J(N!h(N
+J(Nch(Nk
+J(NBh(N
+J(N!h(N
+J(Nch(N
+J(NBh(N
+J(Nch(N
+J(Nch(N
+J(N!h(N@K(N
+J(NBh(N
+K(N!h(NJ
+!K(N!h(N
+K(Nch(N
+AK(N!h(N
+K(NBh(Nk
+'."K(NBh(Ns
+BK(NBh(NJ
+(n#K(Nch(N
+CK(Nch(NH
+TaK(N!h(N`K(N
+h(NbK(NBh(NcK(Nch(N
+K(N!h(N
+K(NBh(N
+K(Nch(N 
+K(N!h(N
+K(NBh(N
+K(Nch(N
+K(N!h(N
+K(NBh(N
+K(Nch(N
+TAJ(N!h(N
+ NBJ(NBh(NC
+nbJ(NBh(N`J(N
+J(NBh(NCJ(Nch(N*
+^aJ(N!h(N
+J(NBh(N
+J(N!h(N
+h(NcJ(Nch(N
+J(N!h(N
+J(Nch(N)
+J(Nch(N
+J(Nch(N
+J(Nch(N
+J(NBh(NJ
+J(NBh(N)
+J(N!h(N
+J(N!h(N
+K(N!h(N
+K(NBh(N
+K(Nch(N!K(N!h(N)
+%n K(N
+h(N#K(Nch(N
+Ux_AK(N!h(NJ
+CK(Nch(N?2
+&n"K(NBh(NJ
+)nBK(NBh(N$
+TaK(N!h(NcK(Nch(N`K(N
+h(NbK(NBh(N
+K(Nch(N
+K(N!h(N
+K(NBh(N 
+K(N!h(N
+K(Nch(N
+K(NBh(N
+K(N!h(N
+K(Nch(N
+K(NBh(NJ
+nCJ(Nch(N
+nAJ(N!h(N
+nBJ(NBh(N
+h(NaJ(N!h(Nkp@LkA
+nk	 NbJ(NBh(N
+=cJ(Nch(N
+J(NBh(N
+J(Nch(N
+J(N!h(N
+J(Nch(N
+J(NBh(N
+J(N!h(N
+J(Nch(N
+J(NBh(N
+J(N!h(N
+J(Nch(N
+J(N!h(N
+J(NBh(N
+K(Nch(N?2
+K(N!h(N
+K(NBh(N K(N
+h(N!K(N!h(N#K(Nch(N@K(N
+h(N"K(NBh(NCK(Nch(NAK(N!h(N
+=BK(NBh(NK
+h(NaK(N!h(NcK(Nch(NbK(NBh(N
+K(N!h(N
+K(Nch(N
+K(NBh(N 
+K(Nch(N
+K(N!h(N
+K(NBh(N
+K(N!h(N
+K(NBh(N
+K(Nch(N
+#n@J(N
+NAJ(N!h(NB
+NaJ(N!h(Nw<
+BJ(NBh(N#
+J(N!h(N
+bJ(NBh(N*
+J(N!h(N
+ NCJ(Nch(N
+J(NBh(NUX
+J(NBh(N
+J(NBh(NcJ(Nch(N
+J(NBh(N
+J(Nch(N
+J(N!h(N
+J(Nch(N
+J(N!h(N
+K(N!h(N
+J(Nch(N!K(N!h(NJ
+$n K(N
+J(Nch(N
+K(Nch(N
+'.AK(N!h(N
+K(NBh(N)
+"K(NBh(Nk
+$n#K(Nch(N
+Ux_BK(NBh(NJ
+&nCK(Nch(NK
+h(NbK(NBh(NaK(N!h(NcK(Nch(N
+K(N!h(N
+K(NBh(N
+K(Nch(N 
+K(N!h(N
+K(NBh(N
+K(Nch(N
+K(N!h(N
+K(NBh(N
+K(Nch(N'
+K(N)A	nJ
+#n@J(N
+NAJ(N!h(NB
+NaJ(N!h(Nx<
+BJ(NBh(N*
+NbJ(NBh(N
+ NCJ(Nch(N
+cJ(Nch(N
+J(N!h(Nk
+J(NBh(N
+J(Nch(N
+J(Nch(N
+J(Nch(N
+J(Nch(N
+J(NBh(N
+J(N!h(N)
+J(NBh(N
+J(N!h(N
+J(NBh(N
+J(N!h(N
+K(Nch(NJ
+K(NBh(N
+K(N!h(Nk
+#K(Nch(N?2
+%n!K(N!h(N K(N
+&nCK(Nch(N"K(NBh(Nf
+)nAK(N!h(N@K(N
+Ux_BK(NBh(NK
+TaK(N!h(NbK(NBh(NcK(Nch(N`K(N
+K(NBh(N
+K(Nch(N
+K(N!h(N 
+K(NBh(N
+K(N!h(N
+K(NBh(N
+K(Nch(N
+K(N!h(N
+K(Nch(NJ
+OsVyO#B
+0NcTAORB
+OsVyO#B
+0NcTAORB
+@LsVyO1
+GHASH for ARMv8, CRYPTOGAMS by <appro@openssl.org>
+LH}@Li}@L
+Montgomery Multiplication for ARMv8, CRYPTOGAMS by <appro@openssl.org>
++ih8J	
+mkm8nkn8
+Tmkm8nkn8
+Tmkm8nkn8
+Tmkm8nkn8
+Tmkm8nkn8
+mkm8nkn8
+mkm8nkn8
+mkm8nkn8
+mkm8nkn8
+jio8)	
+T	X@9?
+T	X@9?
+T	X@9?
+TLik8s
+lkl8lk+8
+@9Jih8(
+T	<Cy_
+4hv@9(
+(ih8*ij8
+!@q 	@
+jih8)	
+RIi(8;
+T	X@9?
+Mim8Nin8
+Lil8Mim8
+5iB@9?
+4hF@9h
+TiZ@9?
+T	X@9?
+T	X@9?	
+T	X@9?
+T	X@9?	
+5i*@y(y
+j*@yk"@
+Th*@y	
+9h*@ytZ
+Rh*@y	
+TiZ@9?
+(8h*@y
+6	X@9?
+6	X@9?
+T	X@9?
+T	X@9?	
+Lii8k	
+@@y)@@y
+RIi(x1
+RIi(8A
+4i*@yh
+@9i/87
+,kl8-km8
+?)Lil8,
+$	@z,<
+Kz$"Lz
+Kz$ Lz
+Kz$ Lz
+Kzd Lz
+Kzd Lz
+Kz$"Lz
+Yz$!Zzh
+T	X@9?
+@8hjh8
+@8hjh8
+	(@yJ@
+T)	@9I
+TMil8M
+6lil8-
+T+%@8k
+**yhxi=@
+Lii8k	
+*)yhxI
+h*@yI@
+TiZ@9?
++ih8J	
+	A@9?	
+Lii8k	
+nin8oio8
+nin8oio8
+)ij8jij8K
+rMKj8j
+Mkm8Nkn8
+RHkh8h
+Kkk8Lkl8
+T	X@9?	
+T	X@9?	
+Th>Cyh:
+h*@yI@
+TiZ@9?
+H#@9	y
+TicA9?
+Mim8Nin8
+/io80ip8
+T*ij8+ik8_
+@9(ih8
+0ip81iq8
+T,il8-im8
+T+ik8,il8
+@9(ih8
+@9(ih8
+@9(ih8
+@9(ih8
+@9(ih8
+@9(ih8
+@9(ih8
+@9(ih8
+@9(ih8
+@9(ih8
+@9(ih8
+@9(ih8
+@9(ih8
+T-im8.in8
+T-im8.in8
+T,il8-im8
+T+ik8,il8
+/io80ip8
+yhF@9(
++yhxJ	
+,yjxk	
+JA@9I%
+k>@y)}@
+k>@y)}@
+Ri>@y*
++ih8J	
+7i>@yh
++@y	'@y(
+5HC@9(
+6i+Ei+|@
+6)+Ei+|@
+6ufAy`&@
+9ij@yj
+z@yj>@9
+z@yj>@9
+5hj@yZ
+ThF@9(
+9h.@9(
+*i@yJy
+Th2@9(
+P7a:@9
+P7h:@9
+4znL)i"
+i.@9h"
+Ti&@9?
+5h2@9h
+4a:@9!
+Ti"@9	
+5h.@9h
+b6@9ar@
+9hB@9h^
+	i@y)u
+5h.@9H
+in@9hV
+in@9hB
+X6h&@9
+9hB@9h^
+hB@9h^
+iB@9h"
+JA@9I%
+4h.@9h
+*iF@9I
+9hB@9h^
+ @yk9@
+*I	87i
+ @yk9@
+ @yk9@
+ @y)9@
+T*Q@yj
+T*1@9_
+THC@9\
+TiF@9i
+TiF@9i
+4hJ@9h
+9hB@9h^
+i*@9w&
+iV@9?	
+kA@9k%
+5i2@9v2@
+*i2@9v2@
+@9I!	*)
+@yI3@y
+TIHh8i
+@9+	@9)
+(C@9:8@
+4Ik@yH
+THk@y)
+y(C@9(
+R	h@y(
+?@y+9@
++ih8J	
+TH'@9('
+THG@9(
+*A@9_	
+*hF@9t
+A9?(0q
+ 7iZ@9
+6h"@9H
+6h*@yI
+Ki*@y*
+Ki*@yK@
+TiZ@9?
+Th*@yI
+TH!P6i
+Rh*@yJ@
+Lyixk	
+HOAxJ)@yK
+R	MAx?
+	)@y)%
+MAxaii
+R	MAx?
+J)@y*{
+)@yiii
++yhxJ	
+T	X@9?
+R	MAx?
+MAx!]@9	
+)ij8(%
+Y%A))}@
+.In8/6
+y(cA9H
+	!D)"	
+.in8/io8
+Th*@y(
+Lii8k	
+i*@yhx
+5h*@yI@
+TiZ@9?
+(8h*@y
+	(@y((@y
++ih8J	
+I58h*@y
+9 1@y_
+@y	1@y_
+@y	1@y_
+@9	1@y
+*hF@9h
+R8'@9U
+@9*)@y
+!	*	/@9
+@9K	@9J
+@9jVA9?
+RxK68F
+		@9		
+Th:@yZ
+5h:@yZ
+4hF@9v
+*	i@yI
+6*%Eik
+5h>Cy'
+Tjf@yJ9
+9hB@9h^
+7i"@9)
+TiF@9	
+9hB@9h^
+6*%EiK
+6	)Ei+
+T	(@9)
+*	H@9U
+T	Q@yI
+T*1@9_
+RhF@9(
+9hF@9(
+Ti>Cy_
+(@y+(@y
+4h*@y	
+@9jVA9?
+Th2@yy&@9H
+j6@yk*@
+!	*i"@9
+H,@y	,@
+@9)	@9
+@9+	@9
+"@9?!5k
+9hb@9(
+i&@9j*@9
+Th:@yi2@y
+@9U%@9
+I# KUy9
+&@9HS@y
+Sh^@xI
+9hc@9(
+xie@9	
+Rh&@98
+h2@yi2@
+9h2@yi&@9
+@6h&@9
+4hF@9H
+T	1@9?
+*ij8+ik8_
+jh8+hh8_
+@9)ij8
+1@xI!	*;
+*kF@9	=
+9hF@9(
+RhF@9(
+	Q@y)y
+K-@8ky
+K=@8ky
+KM@8ky
+K]@8ky
+@9jkj8
+@9jkj8
+@9jkj8
+@9jkj8
+@9jkj8
+@9mkm8
+@9mkm8
+@9mkm8
+@9mkm8
+@9mkm8
+@9(ih8
+R)il8?
+_8Hih8JIi8
+*(Ih8H
+T	X@9?
+,ij8k	
+Pip8Qiq8
+nin8oio8
+Aia8Cic8?
+Tqiq8`i`8?
+Tqiq8`i`8?
+Toio8pip8
+Tqiq8`i`8?
+Tqiq8`i`8?
+Toio8pip8
+TAia8Cic8?
+TOio8Pip8
+4#Hc8T
++ih8J	
+4CHc8i 	*?
+@y(0Fx
+iz8(i:8Z
++yhxJ	
+xKQDxk
++ih8J	
+*)E@9j
+	*ljj8
+j@y(=H
+Tnii8)
+jii8iil8_
+@9jij8iii8_
+@9jii8iih8_
+*)ih8_
+jij8lil8_
+@9jil8lim8_
+@9jil8lim8_
+@9jil8lim8_
+@9jil8lim8_
+@9jil8lim8_
+@9jij8lii8_
+iii8jij8?
+@9iij8jil8?
+@9iij8jil8?
+@9iii8jih8?
+iii8jij8?
+@9iij8jil8?
+@9iij8jil8?
+@9iii8jih8?
+*JIh8?
+kl8nil8
+j88hZA
+Mim8Nin8
+Lil8Mim8
+T	1Fx)
+	3Fx)y
+/6	3Fx)
+R	Y*x)
+/io80ip8
+	*Lkj8
+	*ljj8
+I-@8)y
+I=@8)y
+IM@8)y
+I]@8)y
+T	m@8)y
+I-@8)y
+I=@8)y
+IM@8)y
+T	]@8)y
+@9	ii8_
+@9	ii8
+@9	ii8_
+@9	ii8
+@9	ii8_
+@9	ii8
+@9	ii8_
+@9	ii8
+@9	ii8_
+@9	ii8
+@9	ii8_
+@9	ii8
+@9	ii8_
+TI$@9		
+TI(@9i
+TI4@9)
+TI@@9I
+@9	ii8
+_8*ij8
+RhND8v
+A9J!07
+aha8bhb8?
+@9I+ 7
+	*ljj8
+,il8-im8
+,il8-im8
+RHo@y4
+,il8-im8
+Bib8Did8_
+pho8qio8
+TPip8Qiq8
+TQiq8@i`8?
+Qiq8@i`8?
+5Hky8H
+#@)J}@
+jl8nil8
++yhxJ	
+ki8Lii8
+ki8Lii8
+hh8+ih8_
+hi8+ki8_
+@9h0(7
+ki8Lii8
+ki8Lii8
+ki8Lii8
+ki8Lii8
+Lii8kii8
+#ix8Dyx
+Lii8kii8
+,il8-im8
+J(8H?A
+T*ij8*
+	*Lkj8
+Mim8Nin8
+kkk8lkl8
+ji8Lii8
+Kii8lhi8
+jzhx)	
+J	@9_)
+8FNtU~
+0:PNfF
++ih8J	
+"R))}@
+T		@9?)
+T		@9?)
+T		@9*e
+T		@9*e
+4i~@9?
+Th~@9(	
+4i~@9?
++ih8J	
+4i~@9?
+4i~@9?
+T	[@9?
+T*ij8+ik8_
+T*ij8+ik8_
+b@yjb@y?
+a@9+a@9_
+S_ADqB	
+8FNtU~
+0:PNfF
+	H@y?	
+nin8oio8
+mim8nin8
+*kh8)	
+6iN@yi
+Lii8k	
+T		@9?)
+T		@9?)
+i"R))}@
+hRDxa*@
+a@9+a@9_
++ih8J	
+4i~@9?
+4i~@9?
+Kik8Lil8
+Kik8Lil8
+J(8h*@
+Mim8Nin8
+Lil8Mim8
+@9Mil8Lin8
+mih8mi,8-
+@i`8Aia8
+qkq8`k`8?
+pkp8qkq8
+4*3FxJ
+xhn@y	=
++yhxJ	
+T		@9?)
+T*	@9_)
+T*	@9_)
+6i{@9	
+Kii8lhi8
+kh8+ih8_
+T		@9*e
+@9I*(7	!@
+M (6?=
+0:PNfF
+0:PNfF
+1@9		@
+*ij8+ik8_
+R	H@y(
+T	<Cy_
+T	9@y	
+lkl8mkm8
+y@9)1@
+Wo@y\o
+kkk8lkl8
+nkn8oko8
+kkk8lkl8
+Tnkn8oko8
+@9nkm8mko8
+Tnkn8oko8
+Tnkn8oko8
+mkm8nkn8
+T*QJxJ
+oko8pkp8
+oko8pkp8
+nkn8oko8
+ijh8jih8?
+T,ik8j
+*IKj8?
+Ki8Ikj8J
+h>Cyh:
+Jm8i!	*K
+TH=Cy_
+T",@9_
+T!.@9?
+*QDx!)@
+*QDx!)@
+,il8-im8
+)ihxHihx?
+RIi(xY
+/io80ip8
+T-K@9-
+/io80ip8
+TKik8Lil8
+T	3FxJ
+x*i@y_!(ka
++yhxJ	
+~@93	@
+86S?@y
+*R)h9@
+4I#@9H	
+I#@9H	
+)A#@9?
+)A#@9?
+*R)"	@
+"R)33@
+*R)#uC
+xpx? /k
+T,il8-im8
++ik8,il8
+T		@9*e
+B@9`z8
+$R)#4@
+7h&R)?
+*h&R)J
+i"R))}@
+*h&R)J
+i"R))}@
+~@99	@
+T*	@9_
+Jm8i!	*K
+T	<Cy_
++ih8J	
+`@ykb@y_
++a@yJyxx
+Iy(x*>
+qP @y#
+RJ-@y	
+T)+@y?
+y)x+#@
+TpE@)n
+*C((7Y
+P7j3@y
+w3@y|o@y
+'6b;@y
+h7j%07
+.R)Aih8)}@
+T		@9?)
+J)@y_5
+Jyvxlyhx
+	(R))}@
+Th&@yh
+(Y@9*!@yk
+k#@yl'@yj[@9+!
+T*	@9_)
+ 7)C@9?
+*Y@9+!@y
+T(	@9j
+,il8-im8
+K!@yM%@yLY@9+!
+IY@9K!@y
+i[@9j#@y
+T-im8.in8
+T-im8.in8
+T,il8-im8
+9iim8L
+L!@yIY@9m
+yL!@y)	
+Kik8Lil8k
+H'@yi'@y(
+?7H+@y	
+4i+@y*
+T*%@y<
+Th&@yh
+I+@))}@
+IY@9K!@y
+@96	@9
+T	X@9?
+TIku8I
+4h~@9(
+bx(i@y_
+THa@ykF)
+*kj8+kk8_
+*Hq@9_%
+T()@yI
+!\@9?(
+H6jB@9
+To1@yp2@y
+Tom@yo
+4oi@yqm@ypj@yan@y
+To2@yp1@y
+Ton@yo
+4oj@yqn@ypi@yam@y
+hj@yH!
+RjB@9)
+E@9lF@9
+06kn@y
+T)D@9jF@9?
+06in@y	
+P6ir@9i
+yh.@y?
+31)+i@y
+T		@9?)
+2@yhq@
+`@y)ylx
+*il8)iv8_
+@7h2Fxi
+yh2Fxi
+Ti2Fx)
+@y$	@z
+J)a@9+
+@9*i(8
+@9*i(8h
+@9hT(7
+@9hN(7t
+T		@9?)
+*	)R))}@
+T		@9*e
+8FN4V~
+0:PNfF
+*R)!Yt
+B@9`{6
+h&R)C	C)
++R)b[@
+,R)J}@
+T*)@y_	@q
+Lii8k	
+@ykb@y_
+4('R)c[@
+Kik8Lil8
+/io80ip8
+Tqjq8`j`8?
+Tpkp8qkq8
+*%@xK=
+/io80ip8
+jjj8kjk8_
+*R))}@
+*R))}@
+njn8ojo8
++R)$kix
+/io80ip8
+Kik8Lil8
+TPip8Qiq8
+TQiq8@i`8?
+*i*R)B
+*i*R)"
+(6kq@yL
+0:PNfF
+8FNtU~
+0:PNfF
+)%@9k.
+87h&R)
+Th&R)d
+jih8)	
++ih8J	
+ij@yH=
++R))}@
+(Hh6i.@
+Jytxlyhx
+*R))}@
+4(3Fx	
+/io80ip8
+R	H@y(
+Jysxlyhx
+%@9)%@9
+86h2Fx
+-km8.kn8
+iixIiix
+iu8)iu8
+hi8Lii8
+hi8Lii8
+hi8Lii8
+,Il8-im8
+(Ih8,il8
+	-@8)y
+	-@8)y
+	-@8)y
+	=@8)y
+	M@8)y
+	-@8)y
+	=@8)y
+I-@8)y
+I-@8)y
+I=@8)y
+T	X@9?
+T	X@9?
+T	X@9?
+@9HIh8*
+	*Lkj8
+@8jki8
+T	X@9?
+T	X@9?
+Nin8Oio8
+Nin8Oio8
+*Q@yJu
+H'R)_a
+T"kc8D!
+"kc8D!
+T"kc8D!
+"kc8D!
+"kc8D!
+	)@yJ@
+oio8pip8
+oio8pip8
+Jytxlyhx
+6	X@9?
+R	(@y?
+T(<Cy(8
+	)@yJ@
+2Lil8-
+	)@yJ@
+T	X@9?
+R	(@y?
+	)@yJ%
+6	X@9?
+T	X@9?
+	)@yI%
+	)@yI%
+((@yH'
+R	(@y?
+R	(@y?
+R	(@y?
+R	(@y?
+R	(@y?
+6*Y@9_
+T	X@9?
+T	X@9?
+T	X@9?
+T(<Cy(8
+@9HIh8*
+R	(@y?
+T	X@9?
+6	X@9?
+T	X@9?
+6	X@9?
+9+ih8H	
+T	X@9?
+6	X@9?
+T	X@9?
+6	X@9?
+Jz$"Kz
+	)@yJ@
+*	)@yJ@
+	)@yJ@
+*	)@yJ@
+T	X@9?
+,ij8k	
+lil8L%
+T(<Cy(8
+R	(@y?
+T	X@9?
+6	X@9?
+T	X@9?
+6	X@9?
+T	X@9?
+6	X@9?
+	)@yJ%
+J)@yj%
+T	X@9?
+6	X@9?
+T	X@9?
+6	X@9?
+T	X@9?
+6	X@9?
+T	X@9?
+6	X@9?
+6	X@9?
+T	X@9?
+T	X@9?
+T	X@9?
+T	X@9?
+T	X@9?
+Oko8Pkp8
+in80kn8
+Oko8Pkp8
+in80kn8
+ip8 kp8?
+T	X@9?
+T	X@9?
+T	X@9?
+T	X@9?
+lil8mim8
+kj8-ij8
+lil8mim8
+T	X@9?
+T	X@9?
+T	X@9?
+T	X@9?
+T	X@9?
+T	X@9?
+@9	ii8_
+@9	ii8
+@9	ii8_
+@9	ii8
+@9	ii8_
+@9	ii8
+@9	ii8_
+@9	ii8
+@9	ii8_
+@9	ii8
+@9	ii8_
+@9	ii8
+@9	ii8_
+@9	ii8
+in8phn8
+nin8oio8
+im8ohm8
+H(@yI@
+TIX@9?
+a^h*@y
+T	X@9?
+T	X@9?
+jh8+ih8_
+R	)@y_
+@9hKu8
+jyhx)	
+kKu8jkj8
+kKu8jkj8
+kKu8jkj8
+kKk8lkl8
+kKu8jkj8
+@8Hkh8
+RhKh8?
+RhKh8?
+RhKh8?
+RhKh8?
+@9iki8
+@9iki8
+TkKk8lkl8
+kKu8jkj8
+Tkkk8lkl8
+Tkkk8lkl8
+jkj8kkk8_
+T	X@9?
+T	X@9?
+T	X@9?
+T	X@9?
+T	X@9?
+q`	@z@	@z
+T	X@9?
+pKu8QIp8Q
+pKq8@Ip8
+pKq8@Ip8
+iKv8	ii8IA
+TiKi8)
+*iKi8)
+TiKi8)
+hKv8(ih8
+hKv8(ih8
+hKv8(ih8
+iKv8	ii8
+jKv8jij8_
+Lyixk	
+iKv8	ii8
+	Kh&A)J
+iKv8Iii8?
+Lyixk	
+@9	ii8
+@9	ii8
+@9	ii8i
+@9	ii8i
++ih8J	
+@y*i(xh
+@y*i(xh
+@9mil8M
+*zky8:
+RIi(8h
+Lii8k	
++iz8J	
+T*Kt8_
+4)Kt8?
+**kh8J
+T)Kt8?
+,kh8lil8
+T*kt8+Ij8K
+T*Kt8K
++ih8J	
+T	X@9?
+jih8)	
+6I[@9?
+H+@yI@
+TI[@9?
+6I[@9?
+*H+@yI@
+TH+@y(
+6I[@9?
+*H+@yI@
+TI[@9?
+6I[@9?
+TI[@9?
+X6H_@9
+I!8v6@
+.A)h&@
+@9,ik8+im8
+T	X@9?
+T	X@9?
++ih8J	
+R	(@y?
+)@yAii
+R	(@y?
+?G9	!@
++=G9j:
+jyhx)	
+jyhx)	
+jyhx)	
+jyhx)	
+jyhx)	
+jyhx)	
+jyhx)	
+jyhx)	
+jyhx)	
+jyhx)	
+h?@8h6
+jih8)	
+Rhk)8{
+T	X@9?
+5i2A9h
+9i2A9h
+R	)@y?
+T	[@9?
+	(@yJ%
+((@y(%
+6	[@9?
+T	X@9?
+@9(ih8_
+@9(ih8
+@9(ih8_
+@9(ih8
+@9(ih8_
+@9(ih8
+@9(ih8_
+@9(ih8
+@9(ih8_
+@9(ih8
+@9(ih8_
+@9(ih8
+@9(ih8_
+@9(ih8
+@9(ih8_
+@9(ih8
+@9(ih8_
+@9(ih8
+@9(ih8_
+@9(ih8
+jyhx)	
+Th"@9H
+Th&@9h
+Th"@9h
+Th&@9(
+@9Iii8
+@9Iii8
+@9Iii8
+Th"@9(
+@9Iii8
+@9Iii8
+@9Iii8
+@9Iii8
+@9Iii8
+@9Iii8
+@9Iii8
+@9Iii8
+@9Iii8
+@9Iii8
+@9Iii8
+@9Iii8
+@9Iii8
+@9Iii8
+(ih8(Y
+@9Iii8
+@9Iii8
+@9Iii8
+@9Iii8
+ki8lkk8kkm8
+R*i98	
+R*i98	
+87Ikj8i
+87Iki8
+hj{8	"
+TIIi8?y
+Tijh8?
+jJi8_y
++ih8J	
+H3A9 >G9
++ih8J	
+I(@y	%
+R	(@y?
+*iv8kkv8_
+R	(@y?
+:i(8i#@
+R		Ay?
+R	yAy?
+*iw8Kkw8_
+Lii8Mki8
++)@9)-
+R		Ay?
+R	yAy?
+R		Ay?
++ih8J	
+T	X@9?
+T	X@9?
+T	X@9?
+)@y!7@
+T	X@9?
++I)J}@
+'Ii(}(
+)@y!7@
+2A9J#D
+T	X@9?
+6	X@9?
++ih8J	
+jih8)	
+T	X@9?
+T	X@9?
+*hki8I
+Z n1Z n
+).BX .B
+@9 k08
+*hki8I
+,il8-im8
+	(@yJ%
+Kik8Lil8
++ih8,hh8
+,il8-im8
+,il8-im8
+kh8jih8?
+kh8jih8?
+*k#@9]
+?7HIh8h
+Tjkl8_
+*m7@96
+*h'@9,
+Tk#@9my
+Tk'@9my
+*k+@9g
+*lj)8)
+*jj)8)
+I-@8)y
+T	<@8)y
+,il8-im8
+q$	@zi!
+Jkj8Kkk8_
+jih8)	
+Jkh8)	
++ih8J	
+Mim8Nin8
+[kixYkhxs
+T)ih8)
+T	kh8J
++ih8J	
+h*A)c:@
+Jy8JKj8_
+*h*C):
+Th*C)	
+j(8h>@
+H+C)	%
+H+C)	%
+H+G)	%
+(8H+C)
+H+C)	%
+H+C)	%
+(8H+G)
+H+G)	%
+*I+G)(
+y((A9(
+4h&A9(
+4h*C)v
+Tj&J)_
+R		Ay?
+SI9	*)
+h,A))x@
+h'B)x#
++ih8J	
+r	)@yJ%
+T	X@9?
+6	X@9?
+6	X@9?
+ri9	*)
+T	X@9?
+6	X@9?
+*)ih8)
+	(@yJ@
+6	X@9?
+R		Ay?
+T	X@9?
+T	X@9?
+T	X@9?
+(ia8*i!8
+T	X@9?
+T	X@9?
+q(k!8u
+TKkk8Lkl8
+TKkk8Lkl8
+TKkk8Lkl8
+Jkj8Kkk8_
+ijjx*hjx+
+jjkx+hkxL
+Tqiq8`i`8?
+pip8qiq8
+Tz$!Uz
+Uz$!Yz`
+Uz$!Yz`
+Tz$!Szy
+87tJ<8
+I[hxJ[jx_
+I[hxJ[jx_
+ikjxjijx+
+7)yhx*	
++yhxJ	
+Lyixk	
+@y)	@9_
++ih8J	
+@y)	@9_
+T	[@9?
+6	[@9?
+R	(@y?
+)@y!y@
+Tjkl8_
+kki8Lii8
+kki8Lii8
+kki8Lii8
+@9M	@9k
+	)@yJ%
+T	X@9?
+T	X@9?
+@9	/@9
+R	(@y?
+,)@9ka
+)-@9jA
+R	)@y?
+%@9	)@9
+T)A@9?
+TJC@9_
+KC@9Ju
+THK@98
+YK@9IC@9(
+RIC@9(
+B@9kA@9
+A@9kA@9
+G}-1:2
+K|-R:3
+G{-1:3
+Gz-1:2
+Ss-R:3
+O)@9)a
+K-@90A
+T	X@9?
+nin8oio8
+nin8oio8
+T	X@9?
+*hF@9y
+ojF@9 
+R	1@xm
+	k@#Uz
+T	X@9?
++ih8J	
+D@9	)@y
+T	X@9?
+T	X@9?
+**i(8h*@
+Tkf@9K
+T	<Cy_
+yb@9z"
++ih8J	
+(@y!ih
+*I`8_m
++ih8J	
++ih8J	
+Lii8k	
+Lii8k	
+Lii8k	
++ih8J	
++ih8J	
+Lyixk	
+Lyixk	
++ih8J	
+rustc version 1.96.1 (31fca3adb 2026-06-26)
+Android (11349228, +pgo, +bolt, +lto, -mlgo, based on r487747e) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)
+Linker: LLD 17.0.2
+.note.android.ident
+.dynsym
+.gnu.version
+.gnu.version_r
+.gnu.hash
+.dynstr
+.rela.dyn
+.rela.plt
+.gcc_except_table
+.rodata
+.eh_frame_hdr
+.eh_frame
+.data.rel.ro
+.fini_array
+.dynamic
+.got.plt
+.comment
+.shstrtab
