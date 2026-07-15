@@ -1,0 +1,820 @@
+{
+  "binary": "libil2cpp.so",
+  "section": "il2cpp",
+  "vaddr_start": "0x406f960",
+  "vaddr_end": "0x99bce3c",
+  "size": 93639900,
+  "total_chunks": 90,
+  "chunks": [
+    {
+      "idx": 0,
+      "start": "0x406f960",
+      "end": "0x416f960",
+      "file": "chunk_000.asm",
+      "func": 6505,
+      "calls": 36058,
+      "float": 4
+    },
+    {
+      "idx": 1,
+      "start": "0x416f960",
+      "end": "0x426f960",
+      "file": "chunk_001.asm",
+      "func": 6320,
+      "calls": 36768,
+      "float": 134
+    },
+    {
+      "idx": 2,
+      "start": "0x426f960",
+      "end": "0x436f960",
+      "file": "chunk_002.asm",
+      "func": 10486,
+      "calls": 30408,
+      "float": 6886
+    },
+    {
+      "idx": 3,
+      "start": "0x436f960",
+      "end": "0x446f960",
+      "file": "chunk_003.asm",
+      "func": 9927,
+      "calls": 33102,
+      "float": 5837
+    },
+    {
+      "idx": 4,
+      "start": "0x446f960",
+      "end": "0x456f960",
+      "file": "chunk_004.asm",
+      "func": 13540,
+      "calls": 43274,
+      "float": 0
+    },
+    {
+      "idx": 5,
+      "start": "0x456f960",
+      "end": "0x466f960",
+      "file": "chunk_005.asm",
+      "func": 19799,
+      "calls": 39521,
+      "float": 35
+    },
+    {
+      "idx": 6,
+      "start": "0x466f960",
+      "end": "0x476f960",
+      "file": "chunk_006.asm",
+      "func": 18341,
+      "calls": 45093,
+      "float": 19
+    },
+    {
+      "idx": 7,
+      "start": "0x476f960",
+      "end": "0x486f960",
+      "file": "chunk_007.asm",
+      "func": 11837,
+      "calls": 42533,
+      "float": 10
+    },
+    {
+      "idx": 8,
+      "start": "0x486f960",
+      "end": "0x496f960",
+      "file": "chunk_008.asm",
+      "func": 9791,
+      "calls": 35122,
+      "float": 151
+    },
+    {
+      "idx": 9,
+      "start": "0x496f960",
+      "end": "0x4a6f960",
+      "file": "chunk_009.asm",
+      "func": 7943,
+      "calls": 31295,
+      "float": 354
+    },
+    {
+      "idx": 10,
+      "start": "0x4a6f960",
+      "end": "0x4b6f960",
+      "file": "chunk_010.asm",
+      "func": 11363,
+      "calls": 34204,
+      "float": 61
+    },
+    {
+      "idx": 11,
+      "start": "0x4b6f960",
+      "end": "0x4c6f960",
+      "file": "chunk_011.asm",
+      "func": 11415,
+      "calls": 30181,
+      "float": 130
+    },
+    {
+      "idx": 12,
+      "start": "0x4c6f960",
+      "end": "0x4d6f960",
+      "file": "chunk_012.asm",
+      "func": 11711,
+      "calls": 35208,
+      "float": 0
+    },
+    {
+      "idx": 13,
+      "start": "0x4d6f960",
+      "end": "0x4e6f960",
+      "file": "chunk_013.asm",
+      "func": 10289,
+      "calls": 28458,
+      "float": 272
+    },
+    {
+      "idx": 14,
+      "start": "0x4e6f960",
+      "end": "0x4f6f960",
+      "file": "chunk_014.asm",
+      "func": 10503,
+      "calls": 28373,
+      "float": 356
+    },
+    {
+      "idx": 15,
+      "start": "0x4f6f960",
+      "end": "0x506f960",
+      "file": "chunk_015.asm",
+      "func": 10800,
+      "calls": 27494,
+      "float": 384
+    },
+    {
+      "idx": 16,
+      "start": "0x506f960",
+      "end": "0x516f960",
+      "file": "chunk_016.asm",
+      "func": 13249,
+      "calls": 28171,
+      "float": 202
+    },
+    {
+      "idx": 17,
+      "start": "0x516f960",
+      "end": "0x526f960",
+      "file": "chunk_017.asm",
+      "func": 16362,
+      "calls": 25435,
+      "float": 266
+    },
+    {
+      "idx": 18,
+      "start": "0x526f960",
+      "end": "0x536f960",
+      "file": "chunk_018.asm",
+      "func": 10099,
+      "calls": 28911,
+      "float": 1
+    },
+    {
+      "idx": 19,
+      "start": "0x536f960",
+      "end": "0x546f960",
+      "file": "chunk_019.asm",
+      "func": 10223,
+      "calls": 30860,
+      "float": 378
+    },
+    {
+      "idx": 20,
+      "start": "0x546f960",
+      "end": "0x556f960",
+      "file": "chunk_020.asm",
+      "func": 9266,
+      "calls": 33150,
+      "float": 144
+    },
+    {
+      "idx": 21,
+      "start": "0x556f960",
+      "end": "0x566f960",
+      "file": "chunk_021.asm",
+      "func": 6902,
+      "calls": 32533,
+      "float": 1076
+    },
+    {
+      "idx": 22,
+      "start": "0x566f960",
+      "end": "0x576f960",
+      "file": "chunk_022.asm",
+      "func": 14466,
+      "calls": 20212,
+      "float": 134
+    },
+    {
+      "idx": 23,
+      "start": "0x576f960",
+      "end": "0x586f960",
+      "file": "chunk_023.asm",
+      "func": 10263,
+      "calls": 17916,
+      "float": 364
+    },
+    {
+      "idx": 24,
+      "start": "0x586f960",
+      "end": "0x596f960",
+      "file": "chunk_024.asm",
+      "func": 15430,
+      "calls": 20169,
+      "float": 263
+    },
+    {
+      "idx": 25,
+      "start": "0x596f960",
+      "end": "0x5a6f960",
+      "file": "chunk_025.asm",
+      "func": 8329,
+      "calls": 31723,
+      "float": 54
+    },
+    {
+      "idx": 26,
+      "start": "0x5a6f960",
+      "end": "0x5b6f960",
+      "file": "chunk_026.asm",
+      "func": 9505,
+      "calls": 29164,
+      "float": 31
+    },
+    {
+      "idx": 27,
+      "start": "0x5b6f960",
+      "end": "0x5c6f960",
+      "file": "chunk_027.asm",
+      "func": 9468,
+      "calls": 29327,
+      "float": 96
+    },
+    {
+      "idx": 28,
+      "start": "0x5c6f960",
+      "end": "0x5d6f960",
+      "file": "chunk_028.asm",
+      "func": 9566,
+      "calls": 28413,
+      "float": 92
+    },
+    {
+      "idx": 29,
+      "start": "0x5d6f960",
+      "end": "0x5e6f960",
+      "file": "chunk_029.asm",
+      "func": 9669,
+      "calls": 35783,
+      "float": 144
+    },
+    {
+      "idx": 30,
+      "start": "0x5e6f960",
+      "end": "0x5f6f960",
+      "file": "chunk_030.asm",
+      "func": 10514,
+      "calls": 31467,
+      "float": 0
+    },
+    {
+      "idx": 31,
+      "start": "0x5f6f960",
+      "end": "0x606f960",
+      "file": "chunk_031.asm",
+      "func": 8936,
+      "calls": 33810,
+      "float": 151
+    },
+    {
+      "idx": 32,
+      "start": "0x606f960",
+      "end": "0x616f960",
+      "file": "chunk_032.asm",
+      "func": 4982,
+      "calls": 38086,
+      "float": 38
+    },
+    {
+      "idx": 33,
+      "start": "0x616f960",
+      "end": "0x626f960",
+      "file": "chunk_033.asm",
+      "func": 7555,
+      "calls": 34489,
+      "float": 200
+    },
+    {
+      "idx": 34,
+      "start": "0x626f960",
+      "end": "0x636f960",
+      "file": "chunk_034.asm",
+      "func": 8089,
+      "calls": 35150,
+      "float": 113
+    },
+    {
+      "idx": 35,
+      "start": "0x636f960",
+      "end": "0x646f960",
+      "file": "chunk_035.asm",
+      "func": 8749,
+      "calls": 32724,
+      "float": 3540
+    },
+    {
+      "idx": 36,
+      "start": "0x646f960",
+      "end": "0x656f960",
+      "file": "chunk_036.asm",
+      "func": 8727,
+      "calls": 31671,
+      "float": 4359
+    },
+    {
+      "idx": 37,
+      "start": "0x656f960",
+      "end": "0x666f960",
+      "file": "chunk_037.asm",
+      "func": 8060,
+      "calls": 31601,
+      "float": 302
+    },
+    {
+      "idx": 38,
+      "start": "0x666f960",
+      "end": "0x676f960",
+      "file": "chunk_038.asm",
+      "func": 8886,
+      "calls": 37776,
+      "float": 621
+    },
+    {
+      "idx": 39,
+      "start": "0x676f960",
+      "end": "0x686f960",
+      "file": "chunk_039.asm",
+      "func": 6721,
+      "calls": 26539,
+      "float": 0
+    },
+    {
+      "idx": 40,
+      "start": "0x686f960",
+      "end": "0x696f960",
+      "file": "chunk_040.asm",
+      "func": 6493,
+      "calls": 26221,
+      "float": 0
+    },
+    {
+      "idx": 41,
+      "start": "0x696f960",
+      "end": "0x6a6f960",
+      "file": "chunk_041.asm",
+      "func": 6866,
+      "calls": 27328,
+      "float": 0
+    },
+    {
+      "idx": 42,
+      "start": "0x6a6f960",
+      "end": "0x6b6f960",
+      "file": "chunk_042.asm",
+      "func": 6199,
+      "calls": 31411,
+      "float": 0
+    },
+    {
+      "idx": 43,
+      "start": "0x6b6f960",
+      "end": "0x6c6f960",
+      "file": "chunk_043.asm",
+      "func": 5245,
+      "calls": 37234,
+      "float": 0
+    },
+    {
+      "idx": 44,
+      "start": "0x6c6f960",
+      "end": "0x6d6f960",
+      "file": "chunk_044.asm",
+      "func": 6644,
+      "calls": 26931,
+      "float": 0
+    },
+    {
+      "idx": 45,
+      "start": "0x6d6f960",
+      "end": "0x6e6f960",
+      "file": "chunk_045.asm",
+      "func": 6976,
+      "calls": 27233,
+      "float": 6
+    },
+    {
+      "idx": 46,
+      "start": "0x6e6f960",
+      "end": "0x6f6f960",
+      "file": "chunk_046.asm",
+      "func": 6925,
+      "calls": 27325,
+      "float": 0
+    },
+    {
+      "idx": 47,
+      "start": "0x6f6f960",
+      "end": "0x706f960",
+      "file": "chunk_047.asm",
+      "func": 6658,
+      "calls": 27119,
+      "float": 2
+    },
+    {
+      "idx": 48,
+      "start": "0x706f960",
+      "end": "0x716f960",
+      "file": "chunk_048.asm",
+      "func": 6599,
+      "calls": 27169,
+      "float": 0
+    },
+    {
+      "idx": 49,
+      "start": "0x716f960",
+      "end": "0x726f960",
+      "file": "chunk_049.asm",
+      "func": 6450,
+      "calls": 26366,
+      "float": 0
+    },
+    {
+      "idx": 50,
+      "start": "0x726f960",
+      "end": "0x736f960",
+      "file": "chunk_050.asm",
+      "func": 6836,
+      "calls": 27058,
+      "float": 0
+    },
+    {
+      "idx": 51,
+      "start": "0x736f960",
+      "end": "0x746f960",
+      "file": "chunk_051.asm",
+      "func": 6774,
+      "calls": 26691,
+      "float": 0
+    },
+    {
+      "idx": 52,
+      "start": "0x746f960",
+      "end": "0x756f960",
+      "file": "chunk_052.asm",
+      "func": 8046,
+      "calls": 34728,
+      "float": 2005
+    },
+    {
+      "idx": 53,
+      "start": "0x756f960",
+      "end": "0x766f960",
+      "file": "chunk_053.asm",
+      "func": 8476,
+      "calls": 38025,
+      "float": 1656
+    },
+    {
+      "idx": 54,
+      "start": "0x766f960",
+      "end": "0x776f960",
+      "file": "chunk_054.asm",
+      "func": 8585,
+      "calls": 37916,
+      "float": 1398
+    },
+    {
+      "idx": 55,
+      "start": "0x776f960",
+      "end": "0x786f960",
+      "file": "chunk_055.asm",
+      "func": 8650,
+      "calls": 37958,
+      "float": 1532
+    },
+    {
+      "idx": 56,
+      "start": "0x786f960",
+      "end": "0x796f960",
+      "file": "chunk_056.asm",
+      "func": 8269,
+      "calls": 37328,
+      "float": 1146
+    },
+    {
+      "idx": 57,
+      "start": "0x796f960",
+      "end": "0x7a6f960",
+      "file": "chunk_057.asm",
+      "func": 8459,
+      "calls": 37662,
+      "float": 991
+    },
+    {
+      "idx": 58,
+      "start": "0x7a6f960",
+      "end": "0x7b6f960",
+      "file": "chunk_058.asm",
+      "func": 7974,
+      "calls": 30507,
+      "float": 6354
+    },
+    {
+      "idx": 59,
+      "start": "0x7b6f960",
+      "end": "0x7c6f960",
+      "file": "chunk_059.asm",
+      "func": 8537,
+      "calls": 34443,
+      "float": 2238
+    },
+    {
+      "idx": 60,
+      "start": "0x7c6f960",
+      "end": "0x7d6f960",
+      "file": "chunk_060.asm",
+      "func": 8438,
+      "calls": 35681,
+      "float": 1078
+    },
+    {
+      "idx": 61,
+      "start": "0x7d6f960",
+      "end": "0x7e6f960",
+      "file": "chunk_061.asm",
+      "func": 7877,
+      "calls": 36023,
+      "float": 2095
+    },
+    {
+      "idx": 62,
+      "start": "0x7e6f960",
+      "end": "0x7f6f960",
+      "file": "chunk_062.asm",
+      "func": 8198,
+      "calls": 37924,
+      "float": 1170
+    },
+    {
+      "idx": 63,
+      "start": "0x7f6f960",
+      "end": "0x806f960",
+      "file": "chunk_063.asm",
+      "func": 8606,
+      "calls": 36274,
+      "float": 1403
+    },
+    {
+      "idx": 64,
+      "start": "0x806f960",
+      "end": "0x816f960",
+      "file": "chunk_064.asm",
+      "func": 8490,
+      "calls": 35722,
+      "float": 1183
+    },
+    {
+      "idx": 65,
+      "start": "0x816f960",
+      "end": "0x826f960",
+      "file": "chunk_065.asm",
+      "func": 7944,
+      "calls": 38038,
+      "float": 1548
+    },
+    {
+      "idx": 66,
+      "start": "0x826f960",
+      "end": "0x836f960",
+      "file": "chunk_066.asm",
+      "func": 8298,
+      "calls": 37764,
+      "float": 1206
+    },
+    {
+      "idx": 67,
+      "start": "0x836f960",
+      "end": "0x846f960",
+      "file": "chunk_067.asm",
+      "func": 8652,
+      "calls": 36308,
+      "float": 1455
+    },
+    {
+      "idx": 68,
+      "start": "0x846f960",
+      "end": "0x856f960",
+      "file": "chunk_068.asm",
+      "func": 8173,
+      "calls": 37778,
+      "float": 1617
+    },
+    {
+      "idx": 69,
+      "start": "0x856f960",
+      "end": "0x866f960",
+      "file": "chunk_069.asm",
+      "func": 9986,
+      "calls": 36105,
+      "float": 2818
+    },
+    {
+      "idx": 70,
+      "start": "0x866f960",
+      "end": "0x876f960",
+      "file": "chunk_070.asm",
+      "func": 7000,
+      "calls": 40270,
+      "float": 2529
+    },
+    {
+      "idx": 71,
+      "start": "0x876f960",
+      "end": "0x886f960",
+      "file": "chunk_071.asm",
+      "func": 9414,
+      "calls": 34570,
+      "float": 2331
+    },
+    {
+      "idx": 72,
+      "start": "0x886f960",
+      "end": "0x896f960",
+      "file": "chunk_072.asm",
+      "func": 8639,
+      "calls": 34781,
+      "float": 2148
+    },
+    {
+      "idx": 73,
+      "start": "0x896f960",
+      "end": "0x8a6f960",
+      "file": "chunk_073.asm",
+      "func": 10051,
+      "calls": 32918,
+      "float": 3886
+    },
+    {
+      "idx": 74,
+      "start": "0x8a6f960",
+      "end": "0x8b6f960",
+      "file": "chunk_074.asm",
+      "func": 9422,
+      "calls": 32645,
+      "float": 4496
+    },
+    {
+      "idx": 75,
+      "start": "0x8b6f960",
+      "end": "0x8c6f960",
+      "file": "chunk_075.asm",
+      "func": 11642,
+      "calls": 32207,
+      "float": 4941
+    },
+    {
+      "idx": 76,
+      "start": "0x8c6f960",
+      "end": "0x8d6f960",
+      "file": "chunk_076.asm",
+      "func": 9778,
+      "calls": 32904,
+      "float": 378
+    },
+    {
+      "idx": 77,
+      "start": "0x8d6f960",
+      "end": "0x8e6f960",
+      "file": "chunk_077.asm",
+      "func": 9420,
+      "calls": 35578,
+      "float": 964
+    },
+    {
+      "idx": 78,
+      "start": "0x8e6f960",
+      "end": "0x8f6f960",
+      "file": "chunk_078.asm",
+      "func": 7540,
+      "calls": 36805,
+      "float": 1773
+    },
+    {
+      "idx": 79,
+      "start": "0x8f6f960",
+      "end": "0x906f960",
+      "file": "chunk_079.asm",
+      "func": 8308,
+      "calls": 37262,
+      "float": 2030
+    },
+    {
+      "idx": 80,
+      "start": "0x906f960",
+      "end": "0x916f960",
+      "file": "chunk_080.asm",
+      "func": 6358,
+      "calls": 33880,
+      "float": 1242
+    },
+    {
+      "idx": 81,
+      "start": "0x916f960",
+      "end": "0x926f960",
+      "file": "chunk_081.asm",
+      "func": 8735,
+      "calls": 36953,
+      "float": 1359
+    },
+    {
+      "idx": 82,
+      "start": "0x926f960",
+      "end": "0x936f960",
+      "file": "chunk_082.asm",
+      "func": 11097,
+      "calls": 42868,
+      "float": 1520
+    },
+    {
+      "idx": 83,
+      "start": "0x936f960",
+      "end": "0x946f960",
+      "file": "chunk_083.asm",
+      "func": 6263,
+      "calls": 19578,
+      "float": 16658
+    },
+    {
+      "idx": 84,
+      "start": "0x946f960",
+      "end": "0x956f960",
+      "file": "chunk_084.asm",
+      "func": 10198,
+      "calls": 29871,
+      "float": 10948
+    },
+    {
+      "idx": 85,
+      "start": "0x956f960",
+      "end": "0x966f960",
+      "file": "chunk_085.asm",
+      "func": 9812,
+      "calls": 29538,
+      "float": 7368
+    },
+    {
+      "idx": 86,
+      "start": "0x966f960",
+      "end": "0x976f960",
+      "file": "chunk_086.asm",
+      "func": 12543,
+      "calls": 27252,
+      "float": 5859
+    },
+    {
+      "idx": 87,
+      "start": "0x976f960",
+      "end": "0x986f960",
+      "file": "chunk_087.asm",
+      "func": 8690,
+      "calls": 31089,
+      "float": 4070
+    },
+    {
+      "idx": 88,
+      "start": "0x986f960",
+      "end": "0x996f960",
+      "file": "chunk_088.asm",
+      "func": 8573,
+      "calls": 30665,
+      "float": 2995
+    },
+    {
+      "idx": 89,
+      "start": "0x996f960",
+      "end": "0x99bce3c",
+      "file": "chunk_089.asm",
+      "func": 2515,
+      "calls": 9668,
+      "float": 499
+    }
+  ]
+}
