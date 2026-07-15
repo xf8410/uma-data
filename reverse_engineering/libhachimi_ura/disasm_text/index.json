@@ -1,0 +1,46 @@
+{
+  "binary": "libhachimi_ura.so",
+  "section": ".text",
+  "vaddr_start": "0x1092c0",
+  "vaddr_end": "0x40c260",
+  "size": 3157920,
+  "total_chunks": 4,
+  "chunks": [
+    {
+      "idx": 0,
+      "start": "0x1092c0",
+      "end": "0x2092c0",
+      "file": "chunk_000.asm",
+      "func": 7984,
+      "calls": 19544,
+      "float": 458
+    },
+    {
+      "idx": 1,
+      "start": "0x2092c0",
+      "end": "0x3092c0",
+      "file": "chunk_001.asm",
+      "func": 4360,
+      "calls": 7567,
+      "float": 181
+    },
+    {
+      "idx": 2,
+      "start": "0x3092c0",
+      "end": "0x4092c0",
+      "file": "chunk_002.asm",
+      "func": 4849,
+      "calls": 10097,
+      "float": 1049
+    },
+    {
+      "idx": 3,
+      "start": "0x4092c0",
+      "end": "0x40c260",
+      "file": "chunk_003.asm",
+      "func": 69,
+      "calls": 184,
+      "float": 0
+    }
+  ]
+}

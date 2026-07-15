@@ -1,0 +1,1 @@
+{"table": "single_mode_free_training_plate", "total_rows": 3, "exported": 3, "columns": ["id", "condition_type", "value_min", "value_max"], "data": [{"id": 1, "condition_type": 1, "value_min": 110, "value_max": 150}, {"id": 2, "condition_type": 1, "value_min": 151, "value_max": 200}, {"id": 3, "condition_type": 1, "value_min": 201, "value_max": 999}]}

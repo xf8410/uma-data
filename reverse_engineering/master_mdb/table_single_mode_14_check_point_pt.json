@@ -1,0 +1,1 @@
+{"table": "single_mode_14_check_point_pt", "total_rows": 3, "exported": 3, "columns": ["id", "check_point_type", "gain_pt"], "data": [{"id": 1, "check_point_type": 1, "gain_pt": 300}, {"id": 2, "check_point_type": 2, "gain_pt": 400}, {"id": 3, "check_point_type": 3, "gain_pt": 500}]}

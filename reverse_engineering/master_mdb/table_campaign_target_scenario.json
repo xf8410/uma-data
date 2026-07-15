@@ -1,0 +1,1 @@
+{"table": "campaign_target_scenario", "total_rows": 1, "exported": 1, "columns": ["id", "target_id", "single_mode_scenario_group_id"], "data": [{"id": 1, "target_id": 10001, "single_mode_scenario_group_id": 801}]}

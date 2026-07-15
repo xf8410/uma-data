@@ -1,0 +1,1 @@
+{"table": "single_mode_recommend_setting", "total_rows": 3, "exported": 3, "columns": ["id", "recommend_course_id", "header_font_color"], "data": [{"id": 1, "recommend_course_id": 1, "header_font_color": "F45389"}, {"id": 2, "recommend_course_id": 2, "header_font_color": "FF6C27"}, {"id": 3, "recommend_course_id": 3, "header_font_color": "31C1E1"}]}

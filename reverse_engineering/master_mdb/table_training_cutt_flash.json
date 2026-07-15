@@ -1,0 +1,1 @@
+{"table": "training_cutt_flash", "total_rows": 1, "exported": 1, "columns": ["command_id", "sub_folder", "file_format", "control_type"], "data": [{"command_id": 104055, "sub_folder": "Arc", "file_format": "pf_fl_singlemode_arc_speech_bubble{0:D2}", "control_type": 1}]}

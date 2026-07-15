@@ -1,0 +1,1 @@
+{"table": "champions_entry_reward", "total_rows": 2, "exported": 2, "columns": ["champions_id", "item_category", "item_id", "item_num"], "data": [{"champions_id": 0, "item_category": 20, "item_id": 32, "item_num": 3}, {"champions_id": 0, "item_category": 34, "item_id": 95, "item_num": 3}]}

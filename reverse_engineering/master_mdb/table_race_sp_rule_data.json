@@ -1,0 +1,1 @@
+{"table": "race_sp_rule_data", "total_rows": 2, "exported": 2, "columns": ["id", "race_sp_rule_type"], "data": [{"id": 1, "race_sp_rule_type": 0}, {"id": 2, "race_sp_rule_type": 1}]}

@@ -1,0 +1,1 @@
+{"table": "collect_raid_segment_cutt", "total_rows": 3, "exported": 3, "columns": ["id", "cut_id", "cut_sub_id"], "data": [{"id": 1, "cut_id": 2, "cut_sub_id": 11}, {"id": 2, "cut_id": 2, "cut_sub_id": 11}, {"id": 3, "cut_id": 2, "cut_sub_id": 11}]}

@@ -1,0 +1,168 @@
+{
+  "magic": "af1bb1fa",
+  "version": 31,
+  "sections": [
+    {
+      "index": 0,
+      "offset": 256,
+      "size": 388752,
+      "size_mb": 0.37
+    },
+    {
+      "index": 1,
+      "offset": 389008,
+      "size": 1834196,
+      "size_mb": 1.75
+    },
+    {
+      "index": 2,
+      "offset": 2223204,
+      "size": 7340344,
+      "size_mb": 7.0
+    },
+    {
+      "index": 3,
+      "offset": 9563548,
+      "size": 11208,
+      "size_mb": 0.01
+    },
+    {
+      "index": 4,
+      "offset": 9574756,
+      "size": 1184020,
+      "size_mb": 1.13
+    },
+    {
+      "index": 5,
+      "offset": 10758776,
+      "size": 12122244,
+      "size_mb": 11.56
+    },
+    {
+      "index": 6,
+      "offset": 22881020,
+      "size": 187620,
+      "size_mb": 0.18
+    },
+    {
+      "index": 7,
+      "offset": 23068640,
+      "size": 887724,
+      "size_mb": 0.85
+    },
+    {
+      "index": 8,
+      "offset": 23956368,
+      "size": 3871716,
+      "size_mb": 3.69
+    },
+    {
+      "index": 9,
+      "offset": 27828084,
+      "size": 199644,
+      "size_mb": 0.19
+    },
+    {
+      "index": 10,
+      "offset": 28027728,
+      "size": 3697104,
+      "size_mb": 3.53
+    },
+    {
+      "index": 11,
+      "offset": 31724832,
+      "size": 3143328,
+      "size_mb": 3.0
+    },
+    {
+      "index": 12,
+      "offset": 34868160,
+      "size": 81152,
+      "size_mb": 0.08
+    },
+    {
+      "index": 13,
+      "offset": 34949312,
+      "size": 5660,
+      "size_mb": 0.01
+    },
+    {
+      "index": 14,
+      "offset": 34954972,
+      "size": 48096,
+      "size_mb": 0.05
+    },
+    {
+      "index": 15,
+      "offset": 35003068,
+      "size": 98408,
+      "size_mb": 0.09
+    },
+    {
+      "index": 16,
+      "offset": 35101476,
+      "size": 91144,
+      "size_mb": 0.09
+    },
+    {
+      "index": 17,
+      "offset": 35192620,
+      "size": 1921292,
+      "size_mb": 1.83
+    },
+    {
+      "index": 18,
+      "offset": 37113912,
+      "size": 338608,
+      "size_mb": 0.32
+    },
+    {
+      "index": 19,
+      "offset": 37452520,
+      "size": 4724192,
+      "size_mb": 4.51
+    },
+    {
+      "index": 20,
+      "offset": 42176712,
+      "size": 4360,
+      "size_mb": 0.0
+    },
+    {
+      "index": 21,
+      "offset": 42181072,
+      "size": 6976,
+      "size_mb": 0.01
+    },
+    {
+      "index": 22,
+      "offset": 42188048,
+      "size": 14656,
+      "size_mb": 0.01
+    },
+    {
+      "index": 23,
+      "offset": 42202704,
+      "size": 2504,
+      "size_mb": 0.0
+    },
+    {
+      "index": 24,
+      "offset": 42205208,
+      "size": 1885652,
+      "size_mb": 1.8
+    },
+    {
+      "index": 25,
+      "offset": 44090860,
+      "size": 1013392,
+      "size_mb": 0.97
+    },
+    {
+      "index": 26,
+      "offset": 45104252,
+      "size": 78148,
+      "size_mb": 0.07
+    }
+  ]
+}

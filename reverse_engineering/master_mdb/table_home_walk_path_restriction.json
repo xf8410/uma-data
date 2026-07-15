@@ -1,0 +1,1 @@
+{"table": "home_walk_path_restriction", "total_rows": 3, "exported": 3, "columns": ["id", "chara_id", "route"], "data": [{"id": 1, "chara_id": 9005, "route": "home_walk_right"}, {"id": 2, "chara_id": 9005, "route": "home_walk_left"}, {"id": 3, "chara_id": 9045, "route": "home_walk_left"}]}

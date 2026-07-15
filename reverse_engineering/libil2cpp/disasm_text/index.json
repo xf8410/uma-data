@@ -1,0 +1,55 @@
+{
+  "binary": "libil2cpp.so",
+  "section": ".text",
+  "vaddr_start": "0x3b9ff4c",
+  "vaddr_end": "0x406f960",
+  "size": 5044756,
+  "total_chunks": 5,
+  "chunks": [
+    {
+      "idx": 0,
+      "start": "0x3b9ff4c",
+      "end": "0x3c9ff4c",
+      "file": "chunk_000.asm",
+      "func": 16499,
+      "calls": 9602,
+      "float": 322
+    },
+    {
+      "idx": 1,
+      "start": "0x3c9ff4c",
+      "end": "0x3d9ff4c",
+      "file": "chunk_001.asm",
+      "func": 22486,
+      "calls": 2111,
+      "float": 0
+    },
+    {
+      "idx": 2,
+      "start": "0x3d9ff4c",
+      "end": "0x3e9ff4c",
+      "file": "chunk_002.asm",
+      "func": 28667,
+      "calls": 2984,
+      "float": 0
+    },
+    {
+      "idx": 3,
+      "start": "0x3e9ff4c",
+      "end": "0x3f9ff4c",
+      "file": "chunk_003.asm",
+      "func": 15972,
+      "calls": 15359,
+      "float": 2461
+    },
+    {
+      "idx": 4,
+      "start": "0x3f9ff4c",
+      "end": "0x406f960",
+      "file": "chunk_004.asm",
+      "func": 6636,
+      "calls": 13212,
+      "float": 896
+    }
+  ]
+}

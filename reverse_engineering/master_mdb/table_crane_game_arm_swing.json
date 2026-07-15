@@ -1,0 +1,1 @@
+{"table": "crane_game_arm_swing", "total_rows": 3, "exported": 3, "columns": ["result_type", "odds_1", "odds_2", "odds_3"], "data": [{"result_type": 1, "odds_1": 70, "odds_2": 20, "odds_3": 10}, {"result_type": 2, "odds_1": 20, "odds_2": 60, "odds_3": 20}, {"result_type": 3, "odds_1": 10, "odds_2": 20, "odds_3": 70}]}

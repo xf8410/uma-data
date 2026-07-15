@@ -1,0 +1,1 @@
+{"table": "crane_game_define_param", "total_rows": 1, "exported": 1, "columns": ["id", "distance1", "distance2", "move_speed_1", "move_speed_2", "move_speed_3"], "data": [{"id": 1, "distance1": "0.025", "distance2": "0.005", "move_speed_1": "0.15", "move_speed_2": "0.3", "move_speed_3": "0.5"}]}

@@ -1,0 +1,1 @@
+{"table": "single_mode_10_sprace", "total_rows": 3, "exported": 3, "columns": ["id", "race_group_id", "turn_num"], "data": [{"id": 1, "race_group_id": 100001, "turn_num": 24}, {"id": 2, "race_group_id": 100002, "turn_num": 48}, {"id": 3, "race_group_id": 100003, "turn_num": 72}]}

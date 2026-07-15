@@ -1,0 +1,1 @@
+{"table": "race_motivation_rate", "total_rows": 5, "exported": 5, "columns": ["id", "motivation_rate"], "data": [{"id": 1, "motivation_rate": 9600}, {"id": 2, "motivation_rate": 9800}, {"id": 3, "motivation_rate": 10000}, {"id": 4, "motivation_rate": 10200}, {"id": 5, "motivation_rate": 10400}]}

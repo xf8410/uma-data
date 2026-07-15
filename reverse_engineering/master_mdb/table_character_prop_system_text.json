@@ -1,0 +1,1 @@
+{"table": "character_prop_system_text", "total_rows": 1, "exported": 1, "columns": ["id", "prop_id", "lip_sync_data"], "data": [{"id": 1, "prop_id": 700200, "lip_sync_data": "snd_voi_outgame_prop700200_0003"}]}

@@ -1,0 +1,1 @@
+{"table": "map_event_data", "total_rows": 1, "exported": 1, "columns": ["event_id", "gauge_max", "gauge_up_singlemode", "gauge_up_teamstadium", "gauge_up_login", "start_date", "end_date"], "data": [{"event_id": 1, "gauge_max": 3, "gauge_up_singlemode": 3, "gauge_up_teamstadium": 1, "gauge_up_login": 3, "start_date": 1680318000, "end_date": 1680836399}]}

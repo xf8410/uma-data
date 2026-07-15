@@ -1,0 +1,1 @@
+{"table": "daily_race_billing", "total_rows": 1, "exported": 1, "columns": ["id", "frequency", "pay_cost"], "data": [{"id": 1, "frequency": 1, "pay_cost": 30}]}

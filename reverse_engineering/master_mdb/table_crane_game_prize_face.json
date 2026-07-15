@@ -1,0 +1,1 @@
+{"table": "crane_game_prize_face", "total_rows": 3, "exported": 3, "columns": ["id", "face_type"], "data": [{"id": 1, "face_type": "WaraiB"}, {"id": 2, "face_type": "WaraiC"}, {"id": 3, "face_type": "WaraiD"}]}

@@ -1,0 +1,1 @@
+{"table": "support_card_effect_filter_group", "total_rows": 4, "exported": 4, "columns": ["group_id", "sort_id", "start_date"], "data": [{"group_id": 1, "sort_id": 10, "start_date": 1614092400}, {"group_id": 2, "sort_id": 20, "start_date": 1614092400}, {"group_id": 3, "sort_id": 30, "start_date": 1614092400}, {"group_id": 4, "sort_id": 40, "start_date": 1614092400}]}

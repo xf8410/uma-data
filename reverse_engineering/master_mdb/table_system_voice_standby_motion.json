@@ -1,0 +1,1 @@
+{"table": "system_voice_standby_motion", "total_rows": 1, "exported": 1, "columns": ["chara_id", "standby_motion_id_1", "standby_motion_id_2"], "data": [{"chara_id": 1118, "standby_motion_id_1": 18, "standby_motion_id_2": 8017}]}

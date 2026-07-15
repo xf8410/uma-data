@@ -1,0 +1,1 @@
+{"table": "single_mode_arc_schedule", "total_rows": 4, "exported": 4, "columns": ["id", "race_program_id", "turn_num"], "data": [{"id": 1, "race_program_id": 2901, "turn_num": 24}, {"id": 2, "race_program_id": 2902, "turn_num": 36}, {"id": 3, "race_program_id": 2903, "turn_num": 54}, {"id": 4, "race_program_id": 2904, "turn_num": 60}]}

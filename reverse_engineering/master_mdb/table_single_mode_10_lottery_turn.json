@@ -1,0 +1,1 @@
+{"table": "single_mode_10_lottery_turn", "total_rows": 11, "exported": 11, "columns": ["id", "turn"], "data": [{"id": 1, "turn": 6}, {"id": 2, "turn": 12}, {"id": 3, "turn": 18}, {"id": 4, "turn": 24}, {"id": 5, "turn": 30}, {"id": 6, "turn": 36}, {"id": 7, "turn": 42}, {"id": 8, "turn": 48}, {"id": 9, "turn": 54}, {"id": 10, "turn": 60}, {"id": 11, "turn": 66}]}

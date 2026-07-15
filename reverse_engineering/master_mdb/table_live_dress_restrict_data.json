@@ -1,0 +1,1 @@
+{"table": "live_dress_restrict_data", "total_rows": 2, "exported": 2, "columns": ["id", "music_id", "dress_id"], "data": [{"id": 1, "music_id": 1154, "dress_id": 25}, {"id": 2, "music_id": 1154, "dress_id": 50}]}

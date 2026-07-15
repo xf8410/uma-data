@@ -1,0 +1,1 @@
+{"table": "campaign_rental_support_data", "total_rows": 1, "exported": 1, "columns": ["id", "rental_limit", "start_date", "end_date"], "data": [{"id": 1, "rental_limit": 3, "start_date": 1709521200, "end_date": 1711915199}]}

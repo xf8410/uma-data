@@ -1,0 +1,1 @@
+{"table": "live_extra_data", "total_rows": 1, "exported": 1, "columns": ["id", "music_id", "group_id", "condition_type", "condition_value_1", "condition_value_2", "next_music_id"], "data": [{"id": 1, "music_id": 1051, "group_id": 1, "condition_type": 1, "condition_value_1": 1001, "condition_value_2": 1, "next_music_id": 9051}]}

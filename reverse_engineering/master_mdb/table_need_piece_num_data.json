@@ -1,0 +1,1 @@
+{"table": "need_piece_num_data", "total_rows": 3, "exported": 3, "columns": ["id", "rarity", "piece_num"], "data": [{"id": 1, "rarity": 1, "piece_num": 25}, {"id": 2, "rarity": 2, "piece_num": 50}, {"id": 3, "rarity": 3, "piece_num": 150}]}

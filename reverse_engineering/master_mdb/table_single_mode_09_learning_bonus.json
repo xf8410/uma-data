@@ -1,0 +1,1 @@
+{"table": "single_mode_09_learning_bonus", "total_rows": 2, "exported": 2, "columns": ["id", "point_min", "point_max", "base_value", "bonus_value"], "data": [{"id": 1, "point_min": 1, "point_max": 1, "base_value": 0, "bonus_value": 0}, {"id": 2, "point_min": 2, "point_max": 999, "base_value": 100, "bonus_value": 6}]}
