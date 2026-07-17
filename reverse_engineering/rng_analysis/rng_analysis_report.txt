@@ -1,0 +1,114 @@
+================================================================================
+赛马娘 RNG/PRNG 深度分析报告
+分析日期: 2026-07-17
+数据来源: libil2cpp.so 反汇编 + global-metadata.dat + master.mdb
+================================================================================
+
+一、从 global-metadata.dat 提取的 RNG 相关 IL2CPP 类/方法/字段
+============================================================
+
+1. IRaceRandomGenerator (行7051)
+   → 比赛随机数生成器接口
+
+2. RaceRandomProgramArray (行37455)
+   → 比赛随机程序数组
+   - get_RaceRandomProgramArray (行37404)
+   - set_RaceRandomProgramArray (行37405)
+   - <RaceRandomProgramArray>k__BackingField (行37432)
+
+3. FixedTurnCharaSeed (行39049)
+   → 固定回合角色种子
+   - get_FixedTurnCharaSeed (行38788)
+   - <FixedTurnCharaSeed>k__BackingField (行141196)
+
+4. SingleModeRaceRandomProgram (行224190)
+   → 单人模式比赛随机程序
+   - SingleModeRaceRandomProgramFormatter (行227202)
+   - singleModeRaceRandomProgramArray (行38867)
+
+5. randomGenerator / _randomGenerator (行114858/114866)
+   → 通用随机数生成器字段
+
+6. random_seed (行124799)
+   → 随机种子字段名
+
+7. RANDOM_SEED (行96388)
+   → 随机种子常量
+
+8. s_seed (行230149)
+   → 静态种子字段
+
+9. _seedArray (行230428)
+   → 种子数组字段
+
+10. get_Seed / set_Seed (行336680/336681)
+    → 种子属性访问器
+
+11. race_random_program_array
+    → 比赛随机程序数组（在请求/响应字段中）
+
+
+二、从 master.mdb 提取的 RNG 相关表
+============================================================
+
+1. single_mode_chara_program (225行)
+   列: id, chara_id, program_group, program_group_2, base_id
+   → 角色育成程序组定义
+
+2. single_mode_program (1118行)
+   列: id, base_program_id, program_group, race_instance_id, race_permission,
+       month, half, reserve_program_id, random_group_id, grade_rate_id,
+       entry_decrease, entry_decrease_flag, recommend_class_id, filly_only_flag,
+       need_fan_count, fan_set_id, reward_set_id
+   → 育成比赛程序定义，含 random_group_id
+
+3. single_mode_13_bc_program_flag (18行)
+   → BC杯程序标志
+
+4. collect_raid_top_random_chara_group (20行)
+   → 收集raid随机角色组
+
+5. random_ear_tail_motion (27行)
+   → 随机耳尾动作（非RNG核心，仅动画）
+
+
+三、从 libil2cpp.so 字符串提取的 RNG 相关内容
+============================================================
+
+SO 字符串中直接包含 seed/random 的条目:
+- last_seed_before / last_seed_after → hlpatch 插件的种子记录字段
+- /debug/training_seed → 种子调试端点
+- /training/result → 训练结果端点
+- race_random_program_array → 比赛随机程序数组字段名
+
+
+四、核心结论
+============================================================
+
+1. 客户端 RNG 结构:
+   - FixedTurnCharaSeed: 育成开始时固定的角色种子
+   - RaceRandomProgramArray: 服务器预计算的随机程序数组
+   - IRaceRandomGenerator: 比赛随机数生成器接口
+   - SingleModeRaceRandomProgram: 单人模式比赛随机程序
+   - _seedArray / s_seed: 内部种子数组
+
+2. 种子来源:
+   - 育成开始时服务器下发 FixedTurnCharaSeed
+   - 比赛结果通过 RaceRandomProgramArray 预计算
+   - 训练随机性由 _seedArray 驱动
+
+3. 已有 Hook:
+   - read_seed_inner(): 读取 [u32; 4] 种子
+   - exec_training_hook(): 训练前后记录种子变化
+   - /debug/training_seed: HTTP 端点暴露种子
+   - /summary 中的 rng_seed 字段
+
+4. 无法逆向:
+   - 服务器端随机算法（Xorshift/PCG 等）不在客户端
+   - RaceRandomProgramArray 由服务器预计算下发
+   - 训练结果由服务器计算后返回
+
+5. 最佳策略（已在用）:
+   - 内存读取种子 → 预测训练结果 → SL 过滤
+   - 不需要逆向服务器算法
+   - 透视方案是唯一可行路径
