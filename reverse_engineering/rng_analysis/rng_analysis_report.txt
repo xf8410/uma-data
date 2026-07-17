@@ -1,114 +1,111 @@
 ================================================================================
-赛马娘 RNG/PRNG 深度分析报告
-分析日期: 2026-07-17
-数据来源: libil2cpp.so 反汇编 + global-metadata.dat + master.mdb
+赛马娘 RNG/PRNG 证据分级分析报告（修订版）
+修订日期: 2026-07-18
+数据来源: global-metadata.dat 字符串、运行时方法转储、分块反汇编、master.mdb
 ================================================================================
 
-一、从 global-metadata.dat 提取的 RNG 相关 IL2CPP 类/方法/字段
-============================================================
+一、证据等级
+================================================================================
 
-1. IRaceRandomGenerator (行7051)
-   → 比赛随机数生成器接口
+CONFIRMED：由结构化 metadata、运行时方法枚举或 MDB 原始数据直接确认。
+OBSERVED：由当前插件运行时内存读取观察到，但字段身份或语义尚未完全确认。
+INFERRED：由名称、邻域或结构推断，尚缺调用链/字段类型/真实 payload。
+UNKNOWN：当前材料无法判断。
 
-2. RaceRandomProgramArray (行37455)
-   → 比赛随机程序数组
-   - get_RaceRandomProgramArray (行37404)
-   - set_RaceRandomProgramArray (行37405)
-   - <RaceRandomProgramArray>k__BackingField (行37432)
+二、已确认（CONFIRMED）
+================================================================================
 
-3. FixedTurnCharaSeed (行39049)
-   → 固定回合角色种子
-   - get_FixedTurnCharaSeed (行38788)
-   - <FixedTurnCharaSeed>k__BackingField (行141196)
+1. Gallop.WorkSingleModeData 存在 get_FixedTurnCharaSeed()。
+   - 运行时方法转储记录地址: 0x7339dc422c
+   - 参数数: 0
+   - 转储仅将返回类型粗分为 ptr，不能据此证明它是 [u32;4]。
 
-4. SingleModeRaceRandomProgram (行224190)
-   → 单人模式比赛随机程序
-   - SingleModeRaceRandomProgramFormatter (行227202)
-   - singleModeRaceRandomProgramArray (行38867)
+2. 不同类中存在同名但返回 i4 的 FixedTurnCharaSeed：
+   - TrainingBackupDataScenarioOnsenAssistantCommand.get_FixedTurnCharaSeed
+   - ITrainingBackupData.get_FixedTurnCharaSeed
+   - TrainingBackupDataDefault.get_FixedTurnCharaSeed
+   因此同名属性不能跨类混为一种结构。
 
-5. randomGenerator / _randomGenerator (行114858/114866)
-   → 通用随机数生成器字段
+3. StandaloneSimulator.IRaceRandomGenerator 有四个 GetRandom 重载：
+   - 1参数 -> i4
+   - 2参数 -> i4
+   - 1参数 -> r4
+   - 2参数 -> r4
 
-6. random_seed (行124799)
-   → 随机种子字段名
+4. 存在具体类 StandaloneSimulator.RaceRandom，并具有对应的四个 GetRandom 重载。
+   这证明客户端比赛模拟侧存在具体随机实现候选；“客户端没有任何 RNG/PRNG
+   实现”的旧结论不成立。
 
-7. RANDOM_SEED (行96388)
-   → 随机种子常量
+5. Gallop.ObscuredIdleSingleModeEndInfo 存在 RaceRandomProgramArray getter/setter。
+   getter 的粗返回分类为数组类结果，但元素类型仍需运行时字段类型或 formatter
+   反序列化顺序确认。
 
-8. s_seed (行230149)
-   → 静态种子字段
+6. metadata 中存在：
+   - Gallop.SingleModeRaceRandomProgram
+   - Gallop.MsgPack.Formatters.SingleModeRaceRandomProgramFormatter
+   - 对应 HTTP Model 与 MsgPack Formatter 源路径字符串
+   这支持它是服务器通信模型，但尚未恢复其字段。
 
-9. _seedArray (行230428)
-   → 种子数组字段
+7. MDB 原始数据：
+   - single_mode_chara_program：225行，角色与育成赛程组配置。
+   - single_mode_program：1118行，育成比赛赛程配置。
+   - random_group_id 仅12行非零；它是赛程随机组线索，不是训练 PRNG 状态。
 
-10. get_Seed / set_Seed (行336680/336681)
-    → 种子属性访问器
+三、运行时观测（OBSERVED）
+================================================================================
 
-11. race_random_program_array
-    → 比赛随机程序数组（在请求/响应字段中）
+1. 当前插件从 WorkSingleModeData 相关对象的 offset 0x198/408 读取四个 u32，
+   并在训练 Hook 前后观察其变化。
 
+2. 在字段类型、getter 返回类型和版本一致性完成验证前，该值应称为：
+   “客户端观测到的 RNG 相关四元组状态（observed rng_state）”。
 
-二、从 master.mdb 提取的 RNG 相关表
-============================================================
+3. 状态字的数值差只是原始特征。特别是：
+   s1_after - s1_before 不是已确认的 PRNG 调用次数。
 
-1. single_mode_chara_program (225行)
-   列: id, chara_id, program_group, program_group_2, base_id
-   → 角色育成程序组定义
+四、合理推断（INFERRED）
+================================================================================
 
-2. single_mode_program (1118行)
-   列: id, base_program_id, program_group, race_instance_id, race_permission,
-       month, half, reserve_program_id, random_group_id, grade_rate_id,
-       entry_decrease, entry_decrease_flag, recommend_class_id, filly_only_flag,
-       need_fan_count, fan_set_id, reward_set_id
-   → 育成比赛程序定义，含 random_group_id
+1. SingleModeRaceRandomProgram/RaceRandomProgramArray 很可能参与单人模式比赛的
+   确定性模拟或重放，但尚不清楚其内容是 seed、随机值数组、程序指令还是其他参数。
 
-3. single_mode_13_bc_program_flag (18行)
-   → BC杯程序标志
+2. RaceRandom 可能实现 IRaceRandomGenerator；仍需接口映射、字段、构造器及调用链确认。
 
-4. collect_raid_top_random_chara_group (20行)
-   → 收集raid随机角色组
+3. 服务器是联网育成状态的权威来源，但这不等于客户端完全没有随机计算，也不证明
+   服务器在开局时预计算整局所有训练、事件和彩圈结果。
 
-5. random_ear_tail_motion (27行)
-   → 随机耳尾动作（非RNG核心，仅动画）
+五、当前未知（UNKNOWN）
+================================================================================
 
+- WorkSingleModeData.get_FixedTurnCharaSeed 的准确返回类型与对应字段 offset。
+- offset 0x198 四元组是否就是该属性、完整 PRNG 状态或某个专用随机流。
+- SingleModeRaceRandomProgram 的字段、元素类型和 formatter 顺序。
+- RaceRandom 的内部字段、构造输入及算法。
+- 训练、事件、比赛是否共用同一随机流。
+- 点击训练前客户端是否已持有可直接解析的未来训练结果。
 
-三、从 libil2cpp.so 字符串提取的 RNG 相关内容
-============================================================
+六、明确排除的旧结论
+================================================================================
 
-SO 字符串中直接包含 seed/random 的条目:
-- last_seed_before / last_seed_after → hlpatch 插件的种子记录字段
-- /debug/training_seed → 种子调试端点
-- /training/result → 训练结果端点
-- race_random_program_array → 比赛随机程序数组字段名
+以下结论没有足够证据，不得用于实现或建模：
 
+- “客户端纯展示、零 RNG/PRNG 计算”。
+- “服务器开局预计算整局72回合所有随机事件”。
+- “训练随机性由 metadata 中的 _seedArray 驱动”。
+- “四元组形态可推出 Xorshift128/Xoshiro128”。
+- “s1 是随机消费计数器”或“状态字差等于随机步数”。
+- “已知 rng_state 即可确定性预测训练结果”。
+- “single_mode_program.random_group_id 是训练 RNG 参数”。
 
-四、核心结论
-============================================================
+其中 _seedArray/_inext/_inextp 位于典型 System.Random 运行库邻域；除非找到训练
+业务调用链，否则不能归属于训练 RNG。s_seed 同样必须先确认所属类型。
 
-1. 客户端 RNG 结构:
-   - FixedTurnCharaSeed: 育成开始时固定的角色种子
-   - RaceRandomProgramArray: 服务器预计算的随机程序数组
-   - IRaceRandomGenerator: 比赛随机数生成器接口
-   - SingleModeRaceRandomProgram: 单人模式比赛随机程序
-   - _seedArray / s_seed: 内部种子数组
+七、下一步
+================================================================================
 
-2. 种子来源:
-   - 育成开始时服务器下发 FixedTurnCharaSeed
-   - 比赛结果通过 RaceRandomProgramArray 预计算
-   - 训练随机性由 _seedArray 驱动
-
-3. 已有 Hook:
-   - read_seed_inner(): 读取 [u32; 4] 种子
-   - exec_training_hook(): 训练前后记录种子变化
-   - /debug/training_seed: HTTP 端点暴露种子
-   - /summary 中的 rng_seed 字段
-
-4. 无法逆向:
-   - 服务器端随机算法（Xorshift/PCG 等）不在客户端
-   - RaceRandomProgramArray 由服务器预计算下发
-   - 训练结果由服务器计算后返回
-
-5. 最佳策略（已在用）:
-   - 内存读取种子 → 预测训练结果 → SL 过滤
-   - 不需要逆向服务器算法
-   - 透视方案是唯一可行路径
+1. 用当前版本 SO 的运行时反射恢复 WorkSingleModeData 字段名、offset、字段类型，
+   并取得 get_FixedTurnCharaSeed 的真实返回类型名。
+2. 恢复 SingleModeRaceRandomProgram 字段和 MessagePack formatter 读取顺序。
+3. 恢复 StandaloneSimulator.RaceRandom 的字段、构造器、接口映射和调用方。
+4. 校验运行时方法转储与静态 libil2cpp 的版本/加载基址后，才做地址级调用链分析。
+5. 在手机完成状态稳定性与请求/响应时序实验前，不将 RNG 数据投入模型训练。

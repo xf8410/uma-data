@@ -1,203 +1,135 @@
 ============================================================
-  hlpatch 仓库 RNG/PRNG 深度调研总结
-  调研日期: 2026-07-17
+hlpatch RNG/PRNG 调研总结（证据校正版）
+修订日期：2026-07-18
 ============================================================
 
-【核心结论】
-赛马娘客户端没有PRNG算法实现，全部随机计算在Cygames服务器端完成。
-你的SO插件已通过"HTTP拦截+内存读取"实现了最佳替代方案——透视。
+【结论摘要】
 
-
-============================================================
-1. 你已有的功能（不需要重复添加）
-============================================================
-
-RNG种子提取 —— 已有完整实现
-  位置: hachimi_ura_plugin/src/lib.rs
-  核心函数:
-    - read_seed_inner()      @ L15144 — 直接内存读取 [u32; 4]
-    - debug_training_seed()  @ L14990 — HTTP端点实现
-    - exec_training_hook()   @ L15070 — 训练前后自动记录种子变化
-  端点:
-    - GET /debug/training_seed — 一键读取当前种子
-    - GET /training/result     — 返回种子前后对比
-    - GET /summary (含rng_seed字段)
-
-IL2CPP解密 —— 已有运行时反射绕过
-  位置: native/src/il2cpp_hook.cpp
-  核心: find_method_addr() 可查找任意C#方法内存地址
-  绕过: Hachimi API v3 (241个导出函数)
-
-HTTP数据透视 —— 已有3个Hook点
-  位置: native/src/game_hooks.cpp
-  - Gallop.HttpHelper.DecompressResponse (截获训练结果)
-  - Gallop.HttpHelper.CompressRequest   (截获请求)
-  - WWWRequest.Post                     (截获URL+Headers)
-
+当前能够采集客户端观测到的 RNG 相关状态转移，并将其与动作、回合和实际结果
+关联。当前证据不足以从该状态直接计算未来训练结果，也不足以断言客户端不存在
+PRNG、服务器预计算整局训练结果，或状态字差等于随机调用次数。
 
 ============================================================
-2. 赛马娘PRNG系统真相
+1. 已实现且可保留的能力
 ============================================================
 
-架构:
-  客户端(APP) --SendExecCommand--> Cygames服务器
-  客户端(APP) <--MessagePack结果-- Cygames服务器
-  
-  客户端: 纯数据展示，零RNG计算
-  服务器: 全部随机数生成+结果计算
+hlpatch SO：
+- 从 WorkSingleModeData 相关对象的 offset 0x198 读取四个 u32。
+- 记录训练前后完整 before/after 四元组。
+- 保存 Hook sequence、raw sub_id、回合、剧本、干劲、失败率、结果和毫秒时间。
+- 使用加锁有界队列供 Hook 写入和 HTTP 读取。
+- /summary 输出 rng_state，并可附带最新 rng_transition。
+- s1_numeric_delta 明确只是原始数值变化特征，不是 PRNG 调用次数。
 
-关键证据:
-  - ApplyExecCommand: 323个bl调用, 0个浮点操作 → 纯分发
-  - WorkSingleModeChangeParameterInfo: 120个getter/setter → 纯数据容器
-  - SingleModeTrainingCommandEntity: 15个getter/setter → 值从外部设置
+uma-juece：
+- 按 sequence 去重和关联 RNG transition。
+- 将状态、动作、实际属性变化写入育成局 JSON 并进入持久上传队列。
 
-种子结构:
-  _fixedTurnCharaSeed: [u32; 4] (16字节)
-  路径: WorkDataManager → offset 0x60 → WorkSingleModeData → offset 0x198
-  含义: s0, s1, s2, s3 — 4个32位状态向量
-  注意: s1是主要消费位(变化最明显)
-
-服务器端推测算法:
-  从4xu32状态推测: 最可能是 Xorshift128 或 Xoshiro128
-  但算法本身在服务器，客户端无法直接访问
-
-发现的相关类(客户端):
-  - StandaloneSimulator.RaceRandom — 比赛模拟随机数(训练时为null)
-  - IRaceRandomGenerator — 接口，4个GetRandom重载
-  - ObscuredIdleSingleModeEndInfo.RaceRandomProgramArray — 服务器预计算的整局随机序列
-
+这些能力用于“观测与验证”，不等于已经获得确定性预测器。
 
 ============================================================
-3. 种子系统工作原理
+2. FixedTurnCharaSeed：同名属性必须区分类
 ============================================================
 
-育成创建时(服务器端):
-  1. 服务器生成初始种子
-  2. 用种子预计算整局72回合的所有随机事件序列
-  3. 将结果存入 RaceRandomProgramArray
-  4. 客户端收到 _fixedTurnCharaSeed(只读)
+CONFIRMED：
 
-每回合训练时:
-  1. 客户端发送 SendExecCommand(训练指令)
-  2. 服务器从预计算数组中取出该回合结果
-  3. 返回 MessagePack 格式训练结果
-  4. 客户端 _fixedTurnCharaSeed 自动推进
+- Gallop.WorkSingleModeData 有 get_FixedTurnCharaSeed()；现有方法转储仅将返回类型
+  粗分为 ptr，准确类型尚未恢复。
+- 训练备份系统另有返回 i4 的同名 getter：
+  - TrainingBackupDataScenarioOnsenAssistantCommand
+  - ITrainingBackupData
+  - TrainingBackupDataDefault
 
-你的插件如何"透视":
-  1. 截获 DecompressResponse → 拿到服务器已算好的结果
-  2. 读取 _fixedTurnCharaSeed → 知道当前随机序列位置
-  3. exec_training_hook 记录训练前后种子变化 → 知道消费了多少步
+因此不能把所有 FixedTurnCharaSeed 都解释为同一个 [u32;4] 结构。
+当前 offset 0x198 的四元组应标记为 observed rng_state，直到运行时反射确认：
 
-
-============================================================
-4. 回答你的技术问题
-============================================================
-
-Q: 种子到底是什么?
-A: [u32; 4]，服务器生成的128位状态向量，不是单个数字。
-
-Q: 体力失败率/彩圈是否已算好?
-A: 是。服务器预计算整局，客户端只是展示结果。
-
-Q: 逐回合消费的RNG种子如何抓取?
-A: 你的exec_training_hook已自动记录。LAST_SEED_BEFORE/AFTER静态变量保存变化。
-
-Q: 开局随机数越大越好?
-A: 否。种子不是"越大越好"，是序列本身决定结果。需要大量数据建立映射。
-
-Q: 做步数匹配需要多大数据?
-A: 越多越准。建议至少100局同角色同卡组的训练数据。
-
-Q: 阈值是什么?
-A: 你定义的接受标准。如:训练成功率>90%的局才接受。
-
-Q: 可以堆量计算每回合最高种子出现概率?
-A: 可以。记录种子→结果映射，统计每个种子区间的期望收益。
-
-Q: 蒙特卡洛 vs RNG，哪个靠谱，是否合并?
-A: RNG提供确定性预测(已知种子时)。蒙特卡洛做期望估计(未知种子时)。建议合并使用。
-
-Q: 赛马娘有固定RNG种子?怎么获取?
-A: 有。_fixedTurnCharaSeed在育成开始时确定。通过你的/debug/training_seed端点可读取。
-
-Q: 可以直接看随机数生成本体找捷径?
-A: 否。算法在Cygames服务器，客户端没有随机数生成代码。
-
-Q: 算法在哪个文件?
-A: 不在你仓库里，在Cygames服务器上。你的仓库策略是"观测而非生成"。
-
-Q: 扒算法SO文件需要在育成中看?
-A: 不需要。服务器端算法无法通过客户端SO获取。
-
+- 字段准确名称；
+- 字段类型；
+- getter 返回类型；
+- offset；
+- 字段所属游戏版本。
 
 ============================================================
-5. 仓库文件清单与功能
+3. 客户端比赛随机系统
 ============================================================
 
-native/ 目录 (C++底层):
-  native/src/main.cpp           — JNI_OnLoad入口
-  native/src/il2cpp_hook.cpp    — IL2CPP钩子核心，dlopen拦截
-  native/src/il2cpp_hook.h      — 钩子接口声明
-  native/src/game_hooks.cpp     — HTTP通信钩子
-  native/src/game_hooks.h       — 游戏状态数据结构
-  native/src/http_server.cpp    — 内嵌HTTP服务器(3端点)
-  native/src/http_server.h      — HTTP服务器接口
-  native/include/il2cpp_api.h   — IL2CPP API类型定义
+CONFIRMED：
 
-hachimi_ura_plugin/src/lib.rs   — 完整业务逻辑(712KB, 17689行)
-  包含: 80+HTTP端点、种子提取、AI评估、自动推送
+- StandaloneSimulator.IRaceRandomGenerator 有四个 GetRandom 重载：
+  int/float 返回，各有一参数和二参数版本。
+- 存在具体类 StandaloneSimulator.RaceRandom，具有对应四个重载。
+- 存在 SingleModeRaceRandomProgram HTTP Model 和 MessagePack Formatter 名称。
+- ObscuredIdleSingleModeEndInfo 有 RaceRandomProgramArray getter/setter。
 
-src/lib.rs                      — 精简版(96KB)
-  包含: AI评估+HTTP核心
+结论：客户端比赛模拟侧存在具体随机实现候选，旧结论“客户端零 RNG 计算”错误。
 
-关键文档目录:
-  docs/rng-hunt/                — RNG搜索记录(8轮类搜索)
-  reverse/                      — 逆向分析文档(50+文件)
-  reverse/complete_call_chain.md — ApplyExecCommand完整调用链分析
+仍未知：
 
+- RaceRandom 是否正式实现该接口（需接口映射确认）；
+- 它是本地算法，还是按游标读取服务器下发程序；
+- SingleModeRaceRandomProgram 的字段和元素类型；
+- 比赛随机系统是否与育成训练使用同一随机流。
+
+比赛侧的证据不能直接推广为训练结果预测。
 
 ============================================================
-6. CI状态
+4. 服务器与未来结果
 ============================================================
 
-工作流: .github/workflows/build-ura.yml
-状态: 健康，最近2026-07-17有维护记录
-构建: Android ARM64, NDK r26c
-触发: push到main + 手动触发
-小问题: .cargo/config.toml硬编码ndk-r21e路径，与CI的r26c不一致
-        (可能导致本地构建失败，CI本身正常)
+联网育成的最终状态由服务器响应确认，但当前材料没有证明：
 
+- 育成开始时已预计算全部72回合训练、事件和彩圈；
+- RaceRandomProgramArray 包含训练未来结果；
+- offset 0x198 四元组足以独立决定所有结果；
+- 点击训练之前客户端已经持有该动作的实际结果。
 
-============================================================
-7. 还缺什么功能（建议添加）
-============================================================
-
-1. 种子历史查询端点
-   当前只记录最新一次训练的种子变化，没有历史查询API
-   
-2. 种子消费步数计算API
-   自动算出每回合训练消耗了多少步随机数
-   
-3. CI的NDK路径修复
-   .cargo/config.toml与CI使用的NDK版本不一致
-   
-4. 种子→结果映射数据库
-   记录大量训练数据，建立预测模型，用于SL过滤
-
+最值得验证的问题是：服务器响应或客户端内存中是否在点击前已经存在可直接解析的
+未来信息。如果存在，应解析 payload；如果不存在，继续做状态转移统计建模。
 
 ============================================================
-8. 最终建议
+5. 明确禁止的解释
 ============================================================
 
-不要尝试reverse服务器端算法（做不到）。
-你的"透视"方案已经是最佳策略。
+- 不把 rng_state 称为服务器原始 seed 或完整服务器 PRNG 状态。
+- 不猜测它必然是 Xorshift128、Xoshiro128、PCG 或 MT。
+- 不把 s1_after-s1_before 称为消费步数。
+- 不建立“种子越大越好”的规则。
+- 不用精确 seed 查表直接接受/拒绝育成局。
+- 不把 single_mode_program.random_group_id 当训练 RNG 参数。
+- 不因 metadata 出现 _seedArray 就断言训练使用 System.Random。
 
-下一步建议:
-  - 用你已有的/debug/training_seed端点收集大量种子+结果数据
-  - 在uma-juece层建立种子→期望收益的统计模型
-  - 基于模型实现SL过滤（只接受高收益种子的局）
+_seedArray/_inext/_inextp 属于典型 System.Random 运行库邻域；只有找到训练业务调用链
+后才能讨论其相关性。s_seed 也必须先确认所属类型。
 
-你的架构是对的:
-  hlpatch(SO层) —— 内存读取+种子提取+数据暴露 ✓
-  uma-juece(Java层) —— AI决策+SL过滤+UI ✓
-  uma-data —— 静态数据+事件奖励 ✓
+============================================================
+6. MDB 的正确用途
+============================================================
+
+- single_mode_chara_program：角色与育成比赛赛程组配置。
+- single_mode_program：比赛实例、月份、资格、奖励和少量随机赛程组配置。
+- random_group_id：1118行中仅12行非零，是特殊赛程随机组线索。
+
+MDB 可用于解释赛程和比赛 program，但不能直接解码四元组或计算训练失败、彩圈和
+育成事件结果。
+
+============================================================
+7. 当前正确路线
+============================================================
+
+第一阶段（结构恢复）：
+1. 运行时反射 WorkSingleModeData 的字段类型与 getter 真实返回类型。
+2. 恢复 SingleModeRaceRandomProgram 字段和 formatter 顺序。
+3. 恢复 RaceRandom 字段、构造器、接口映射和调用方。
+
+第二阶段（手机小样本验证）：
+- 同回合重复读取状态，确认稳定性；
+- 比较 summary、Hook before/after 和下一回合状态；
+- 覆盖训练、休息、外出、比赛；
+- 对齐请求/响应、sequence、turn 和实际属性变化。
+
+第三阶段（按证据分流）：
+- 若点击前已有未来结果：解析服务器下发数据；
+- 若没有：用上下文 + observed rng_state + 动作做统计模型；
+- 若仅比赛有 random program：比赛解析和训练建模分开处理。
+
+CI 绿色只证明编译。手机完成上述验证前，不将 RNG 数据正式投入模型训练。
