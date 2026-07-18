@@ -1,0 +1,179 @@
+================================================================================
+拉面杯 DataSet 路径诊断端点 — 实施报告
+日期: 2026-07-18
+仓库: xf8410/hlpatch
+版本: v3.24.18
+commit: 993ff61
+CI: Actions #440 — success
+================================================================================
+
+一、任务背景
+============================================================
+
+交接报告指出 /debug/ramen_planner_state 返回 {"error":"no_ramen_dataset"}，
+用户确认正在拉面杯育成中。
+
+失败点：从 scenario 对象调用 get_DataSet 返回 null。
+
+两种尝试均失败：
+1. 使用 scenario 对象头中的实际 class → no_ramen_dataset
+2. 使用声明类 Gallop.WorkSingleModeScenarioRamen → no_ramen_dataset
+
+需要新增安全诊断端点，不盲改生产端点。
+
+
+二、新增端点
+============================================================
+
+端点: GET /debug/ramen_dataset_path
+
+路由位置: lib.rs L6538
+函数位置: lib.rs L12853
+函数名: debug_ramen_dataset_path()
+
+安全保护: catch_unwind + AssertUnwindSafe
+
+
+三、端点行为
+============================================================
+
+步骤 1: 获取基础对象链
+  WorkDataManager (singleton) → get_SingleMode → WorkSingleModeData
+  → get_Character → WorkSingleModeCharaData
+
+步骤 2: 逐个尝试 3 个 scenario getter
+  - get_ScenarioRamen
+  - get_WorkScenarioRamen
+  - get_Ramen
+
+每个 getter 输出:
+  - method_found: bool (方法是否存在)
+  - method_ptr: hex (方法指针)
+  - invoke_called: bool
+  - exception: hex (异常指针, 0x0 = 无异常)
+  - result_ptr: hex (返回值指针)
+  - result_class: string (对象实际 class 名)
+  - result_namespace: string (对象实际 namespace)
+
+步骤 3: 对非空 result 遍历 class chain (最多 8 层)
+  每层输出:
+  - depth: int
+  - class: string
+  - namespace: string
+  - has_get_DataSet: bool
+  - dataset_field_found: bool (<DataSet>k__BackingField 或 DataSet)
+  - dataset_field_offset: int (字段偏移, -1 = 未找到)
+  - dataset_invoke_ptr: hex (get_DataSet 调用结果)
+  - dataset_invoke_exc: hex (异常指针)
+  - dataset_invoke_class: string (DataSet 对象 class 名)
+
+  如果 dataset_invoke_ptr 非空，停止遍历。
+
+步骤 4: 精确查询 DataSet class
+  - ns="" + "WorkSingleModeScenarioRamenDataSet"
+  - ns="Gallop" + "WorkSingleModeScenarioRamenDataSet"
+
+  输出: found bool + ptr hex
+
+  注: metadata 显示 WorkSingleModeScenarioRamenDataSet 的 namespace 是空字符串,
+  不是 "Gallop"。
+
+步骤 5: 精确查询 ScenarioRamen class
+  - ns="Gallop" + "WorkSingleModeScenarioRamen"
+  - ns="" + "WorkSingleModeScenarioRamen"
+
+
+四、输出 JSON Schema
+============================================================
+
+{
+  "ok": true,
+  "endpoint": "ramen_dataset_path",
+  "scenario_id": 14,
+  "chara_ptr": "0x...",
+  "chara_class": "WorkSingleModeCharaData",
+  "getters": [
+    {
+      "getter": "get_ScenarioRamen",
+      "method_found": true/false,
+      "method_ptr": "0x...",
+      "invoke_called": true/false,
+      "exception": "0x0",
+      "result_ptr": "0x...",
+      "result_class": "...",
+      "result_namespace": "...",
+      "class_chain": [
+        {
+          "depth": 0,
+          "class": "...",
+          "namespace": "...",
+          "has_get_DataSet": true/false,
+          "dataset_field_found": true/false,
+          "dataset_field_offset": N,
+          "dataset_invoke_ptr": "0x...",
+          "dataset_invoke_exc": "0x0",
+          "dataset_invoke_class": "..."
+        }
+      ]
+    }
+  ],
+  "dataset_class_empty_ns": {"found": true/false, "ptr": "0x..."},
+  "dataset_class_gallop_ns": {"found": true/false, "ptr": "0x..."},
+  "ramen_class_gallop": {"found": true/false, "ptr": "0x..."},
+  "ramen_class_empty": {"found": true/false, "ptr": "0x..."}
+}
+
+
+五、安全约束
+============================================================
+
+1. 不进行全局 class 枚举 (不调用 /il2cpp/classes)
+2. 不猜 offset
+3. 不在未验证类型时直接读取偏移
+4. 只输出小型结构化 JSON
+5. catch_unwind 保护，panic 时返回错误 JSON
+6. class chain 最多 8 层，不会无限遍历
+7. 不触碰 /home/agora/hlpatch
+
+
+六、用户下一步操作
+============================================================
+
+1. 等待 Release 自动构建完成 (Actions #440 success → Release 发布)
+
+2. 在手机上更新到 v3.24.18
+
+3. 在拉面杯育成中访问:
+   http://127.0.0.1:18765/debug/ramen_dataset_path
+
+4. 将返回的 JSON 发回
+
+5. 根据 JSON 中的诊断信息:
+   - 确认哪个 getter 返回了真实 scenario 对象
+   - 确认 get_DataSet 定义在哪一层 class
+   - 确认 get_DataSet 返回值是否为 null
+   - 如果 backing field 存在，确认 offset
+   - 确认 DataSet class 的正确 namespace
+
+6. 根据实证结果修复 /debug/ramen_planner_state
+
+
+七、RNG 防回归
+============================================================
+
+本端点不涉及 RNG 字段。
+WorkSingleModeData offset 0x198 是 ObscuredInt, 不是 [u32; 4]。
+不恢复 rng_state/rng_transition/rng_before/rng_after 等错误链路。
+fixed_turn_chara_seed = 541818363 (已验证)
+
+
+八、已绿基线
+============================================================
+
+#436 d7d9cc0 — RNG 错误四元组修复
+#437 aa71512 — 安全精确类型诊断
+#438 2f34417 — /debug/ramen_planner_state (初版)
+#439 7c4cd16 — 声明 class 修复
+#440 993ff61 — /debug/ramen_dataset_path 诊断端点 ← 本次
+
+================================================================================
