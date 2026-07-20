@@ -8,7 +8,7 @@ from __future__ import annotations
 import argparse, hashlib, json, math, os, random, statistics, time
 from pathlib import Path
 import numpy as np
-from simulator import CookSimulator
+from simulator import CookSimulator, DEFAULT_DECK
 
 DISH_N, MAIN_N, INPUT_N = 14, 8, 128
 
@@ -23,6 +23,7 @@ def heuristic(sim:CookSimulator, explore:float=0.0):
         if rng.random()<.45:dish=0
     legal=sim.legal_main()
     if sim.forced_race:main=7
+    elif sim.s.friend_stage>=2 and sim.s.friend_outings<5 and sim.s.vital<70:main=6
     elif sim.s.vital<28:main=5 if rng.random()<.75 else 6
     else:
         vals=[]
@@ -58,7 +59,7 @@ def generate(games:int,seed0:int):
     rows=[]; scores=[]
     for seed in range(seed0,seed0+games):
         score,h,_=rollout(seed,explore=.08,collect=True); scores.append(score)
-        value=score/20000.0
+        value=score/30000.0
         rows.extend((x,d,m,value) for x,d,m in h)
     x=np.stack([r[0] for r in rows]); d=np.asarray([r[1] for r in rows]); m=np.asarray([r[2] for r in rows]); v=np.asarray([r[3] for r in rows],dtype=np.float32)
     return x,d,m,v,scores
@@ -88,7 +89,7 @@ def train(args):
     random_scores=[rollout(s,policy='random',model=None,explore=1.0)[0] for s in val_seeds]
     rule_scores=[rollout(s)[0] for s in val_seeds]
     model_scores=[rollout(s,model=model)[0] for s in val_seeds]
-    report={'scenario_id':8,'card_id':101101,'seed':args.seed,'whole_run_split':True,'train_games':args.games,'train_samples':len(x),'train_score':stats(train_scores),'validation_seeds':[val_seeds.start,val_seeds.stop-1],'random_baseline':stats(random_scores),'rule_baseline':stats(rule_scores),'model':stats(model_scores),'event_model':'explicit statistical generic and Grass Wonder channels'}
+    report={'scenario_id':8,'card_id':101101,'support_deck':list(DEFAULT_DECK),'score_schema':'FiveStatusFinalScore + 2*skill_pt + 510','value_scale':30000.0,'seed':args.seed,'whole_run_split':True,'train_games':args.games,'train_samples':len(x),'train_score':stats(train_scores),'validation_seeds':[val_seeds.start,val_seeds.stop-1],'random_baseline':stats(random_scores),'rule_baseline':stats(rule_scores),'model':stats(model_scores),'event_model':'explicit statistical generic and Grass Wonder channels'}
     torch.save({'state_dict':model.state_dict(),'input_dim':INPUT_N,'dish_dim':DISH_N,'main_dim':MAIN_N},out/'cook_model_state_dict.pt')
     dummy=torch.zeros(1,INPUT_N)
     torch.onnx.export(model,dummy,out/'cook_model.onnx',input_names=['state'],output_names=['dish_logits','main_logits','value'],dynamic_axes={'state':{0:'batch'},'dish_logits':{0:'batch'},'main_logits':{0:'batch'},'value':{0:'batch'}},opset_version=17,external_data=False,dynamo=False)

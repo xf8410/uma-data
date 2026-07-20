@@ -1,0 +1,368 @@
+{
+  "source": {
+    "file": "uma_support_cards.json",
+    "semantics": "stamina=体力; stamina_up=耐力属性; repeated same-name stages are alternatives, not cumulative"
+  },
+  "profiles": {
+    "30242": {
+      "card_id": 30242,
+      "title": "世界を変える眼差し",
+      "chain_event_count": 3,
+      "chain_optimal_total": {
+        "speed": 65,
+        "stamina": 0,
+        "power": 0,
+        "guts": 0,
+        "wit": 0,
+        "skill_pt": 30,
+        "vital": 20,
+        "motivation": 2,
+        "bond": 20,
+        "skill_levels": 4
+      },
+      "random_event_optimal_mean": {
+        "speed": 10.0,
+        "stamina": 0.0,
+        "power": 0.0,
+        "guts": 0.0,
+        "wit": 0.0,
+        "skill_pt": 20.0,
+        "vital": 0.0,
+        "motivation": 0.0,
+        "bond": 5.0,
+        "skill_levels": 0.0
+      },
+      "random_event_count": 2
+    },
+    "30275": {
+      "card_id": 30275,
+      "title": "天才的ユートピア",
+      "chain_event_count": 3,
+      "chain_optimal_total": {
+        "speed": 30,
+        "stamina": 15,
+        "power": 0,
+        "guts": 0,
+        "wit": 0,
+        "skill_pt": 20,
+        "vital": 30,
+        "motivation": 1,
+        "bond": 15,
+        "skill_levels": 4
+      },
+      "random_event_optimal_mean": {
+        "speed": 0.0,
+        "stamina": 0.0,
+        "power": 0.0,
+        "guts": 5.0,
+        "wit": 0.0,
+        "skill_pt": 7.5,
+        "vital": 0.0,
+        "motivation": 1.0,
+        "bond": 5.0,
+        "skill_levels": 0.0
+      },
+      "random_event_count": 2
+    },
+    "30282": {
+      "card_id": 30282,
+      "title": "心覚えし、京の華",
+      "chain_event_count": 3,
+      "chain_optimal_total": {
+        "speed": 60,
+        "stamina": 0,
+        "power": 0,
+        "guts": 0,
+        "wit": 0,
+        "skill_pt": 35,
+        "vital": 0,
+        "motivation": 0,
+        "bond": 20,
+        "skill_levels": 5
+      },
+      "random_event_optimal_mean": {
+        "speed": 0.0,
+        "stamina": 0.0,
+        "power": 7.5,
+        "guts": 0.0,
+        "wit": 0.0,
+        "skill_pt": 0.0,
+        "vital": 0.0,
+        "motivation": 0.0,
+        "bond": 5.0,
+        "skill_levels": 0.5
+      },
+      "random_event_count": 2
+    },
+    "30302": {
+      "card_id": 30302,
+      "title": "永久の誓い、永久の輝き",
+      "chain_event_count": 3,
+      "chain_optimal_total": {
+        "speed": 35,
+        "stamina": 0,
+        "power": 0,
+        "guts": 0,
+        "wit": 0,
+        "skill_pt": 30,
+        "vital": 0,
+        "motivation": 3,
+        "bond": 15,
+        "skill_levels": 2
+      },
+      "random_event_optimal_mean": {
+        "speed": 0.0,
+        "stamina": 0.0,
+        "power": 0.0,
+        "guts": 10.0,
+        "wit": 0.0,
+        "skill_pt": 0.0,
+        "vital": 0.0,
+        "motivation": 0.0,
+        "bond": 5.0,
+        "skill_levels": 0.0
+      },
+      "random_event_count": 2
+    },
+    "30298": {
+      "card_id": 30298,
+      "title": "刀光散らしてClash！",
+      "chain_event_count": 3,
+      "chain_optimal_total": {
+        "speed": 50,
+        "stamina": 0,
+        "power": 0,
+        "guts": 0,
+        "wit": 0,
+        "skill_pt": 45,
+        "vital": 10,
+        "motivation": 2,
+        "bond": 20,
+        "skill_levels": 3
+      },
+      "random_event_optimal_mean": {
+        "speed": 0.0,
+        "stamina": 0.0,
+        "power": 0.0,
+        "guts": 7.5,
+        "wit": 0.0,
+        "skill_pt": 5.0,
+        "vital": 5.0,
+        "motivation": 0.0,
+        "bond": 5.0,
+        "skill_levels": 0.0
+      },
+      "random_event_count": 2
+    },
+    "30283": {
+      "card_id": 30283,
+      "title": "ゆかし、きらめきの旅路",
+      "chain_event_count": 3,
+      "chain_optimal_total": {
+        "speed": 0,
+        "stamina": 0,
+        "power": 40,
+        "guts": 0,
+        "wit": 0,
+        "skill_pt": 15,
+        "vital": 10,
+        "motivation": 0,
+        "bond": 20,
+        "skill_levels": 16
+      },
+      "random_event_optimal_mean": {
+        "speed": 0.0,
+        "stamina": 0.0,
+        "power": 0.0,
+        "guts": 7.5,
+        "wit": 0.0,
+        "skill_pt": 10.0,
+        "vital": -5.0,
+        "motivation": 0.0,
+        "bond": 5.0,
+        "skill_levels": 0.0
+      },
+      "random_event_count": 2
+    },
+    "30277": {
+      "card_id": 30277,
+      "title": "無機の闘志",
+      "chain_event_count": 3,
+      "chain_optimal_total": {
+        "speed": 0,
+        "stamina": 0,
+        "power": 65,
+        "guts": 0,
+        "wit": 0,
+        "skill_pt": 0,
+        "vital": 10,
+        "motivation": 0,
+        "bond": 15,
+        "skill_levels": 2
+      },
+      "random_event_optimal_mean": {
+        "speed": 5.0,
+        "stamina": 0.0,
+        "power": 7.5,
+        "guts": 0.0,
+        "wit": 0.0,
+        "skill_pt": 7.5,
+        "vital": -5.0,
+        "motivation": 0.0,
+        "bond": 5.0,
+        "skill_levels": 0.0
+      },
+      "random_event_count": 2
+    },
+    "30289": {
+      "card_id": 30289,
+      "title": "Innovator",
+      "chain_event_count": 3,
+      "chain_optimal_total": {
+        "speed": 0,
+        "stamina": 0,
+        "power": 0,
+        "guts": 0,
+        "wit": 0,
+        "skill_pt": 10,
+        "vital": 20,
+        "motivation": 1,
+        "bond": 15,
+        "skill_levels": 14
+      },
+      "random_event_optimal_mean": {
+        "speed": 0.0,
+        "stamina": 0.0,
+        "power": 0.0,
+        "guts": 0.0,
+        "wit": 0.0,
+        "skill_pt": 10.0,
+        "vital": 10.0,
+        "motivation": 0.0,
+        "bond": 5.0,
+        "skill_levels": 0.5
+      },
+      "random_event_count": 2
+    },
+    "30248": {
+      "card_id": 30248,
+      "title": "無垢の白妙",
+      "chain_event_count": 3,
+      "chain_optimal_total": {
+        "speed": 20,
+        "stamina": 0,
+        "power": 0,
+        "guts": 0,
+        "wit": 0,
+        "skill_pt": 15,
+        "vital": 10,
+        "motivation": 2,
+        "bond": 15,
+        "skill_levels": 3
+      },
+      "random_event_optimal_mean": {
+        "speed": 0.0,
+        "stamina": 0.0,
+        "power": 0.0,
+        "guts": 0.0,
+        "wit": 0.0,
+        "skill_pt": 15.0,
+        "vital": 0.0,
+        "motivation": 0.0,
+        "bond": 5.0,
+        "skill_levels": 0.5
+      },
+      "random_event_count": 2
+    },
+    "30264": {
+      "card_id": 30264,
+      "title": "気まぐれ渡り星",
+      "chain_event_count": 3,
+      "chain_optimal_total": {
+        "speed": 0,
+        "stamina": 0,
+        "power": 0,
+        "guts": 55,
+        "wit": 0,
+        "skill_pt": 15,
+        "vital": 10,
+        "motivation": 0,
+        "bond": 15,
+        "skill_levels": 4
+      },
+      "random_event_optimal_mean": {
+        "speed": 0.0,
+        "stamina": 0.0,
+        "power": 0.0,
+        "guts": 0.0,
+        "wit": 0.0,
+        "skill_pt": 20.0,
+        "vital": 10.0,
+        "motivation": 0.0,
+        "bond": 5.0,
+        "skill_levels": 0.0
+      },
+      "random_event_count": 2
+    },
+    "30293": {
+      "card_id": 30293,
+      "title": "白に至る純真",
+      "chain_event_count": 3,
+      "chain_optimal_total": {
+        "speed": 0,
+        "stamina": 0,
+        "power": 20,
+        "guts": 35,
+        "wit": 0,
+        "skill_pt": 10,
+        "vital": 0,
+        "motivation": 2,
+        "bond": 15,
+        "skill_levels": 2
+      },
+      "random_event_optimal_mean": {
+        "speed": 0.0,
+        "stamina": 0.0,
+        "power": 0.0,
+        "guts": 0.0,
+        "wit": 0.0,
+        "skill_pt": 15.0,
+        "vital": 0.0,
+        "motivation": 0.0,
+        "bond": 5.0,
+        "skill_levels": 0.5
+      },
+      "random_event_count": 2
+    },
+    "30294": {
+      "card_id": 30294,
+      "title": "白に至る覚悟",
+      "chain_event_count": 3,
+      "chain_optimal_total": {
+        "speed": 0,
+        "stamina": 0,
+        "power": 0,
+        "guts": 55,
+        "wit": 0,
+        "skill_pt": 10,
+        "vital": 0,
+        "motivation": 2,
+        "bond": 15,
+        "skill_levels": 2
+      },
+      "random_event_optimal_mean": {
+        "speed": 0.0,
+        "stamina": 0.0,
+        "power": 0.0,
+        "guts": 7.5,
+        "wit": 0.0,
+        "skill_pt": 5.0,
+        "vital": 0.0,
+        "motivation": 0.5,
+        "bond": 5.0,
+        "skill_levels": 0.0
+      },
+      "random_event_count": 2
+    }
+  }
+}

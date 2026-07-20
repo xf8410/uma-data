@@ -1,0 +1,1573 @@
+{
+  "source": {
+    "file": "master.mdb",
+    "sha256": "b387ffd16d0ee2c28ed9a1711049a3635c204fc72b652f616e7a199c698c51f0",
+    "tables": [
+      "single_mode_rank",
+      "text_data(category=415)"
+    ]
+  },
+  "rank_ranges": [
+    {
+      "id": 1,
+      "min_value": 0,
+      "max_value": 299
+    },
+    {
+      "id": 2,
+      "min_value": 300,
+      "max_value": 599
+    },
+    {
+      "id": 3,
+      "min_value": 600,
+      "max_value": 899
+    },
+    {
+      "id": 4,
+      "min_value": 900,
+      "max_value": 1299
+    },
+    {
+      "id": 5,
+      "min_value": 1300,
+      "max_value": 1799
+    },
+    {
+      "id": 6,
+      "min_value": 1800,
+      "max_value": 2299
+    },
+    {
+      "id": 7,
+      "min_value": 2300,
+      "max_value": 2899
+    },
+    {
+      "id": 8,
+      "min_value": 2900,
+      "max_value": 3499
+    },
+    {
+      "id": 9,
+      "min_value": 3500,
+      "max_value": 4899
+    },
+    {
+      "id": 10,
+      "min_value": 4900,
+      "max_value": 6499
+    },
+    {
+      "id": 11,
+      "min_value": 6500,
+      "max_value": 8199
+    },
+    {
+      "id": 12,
+      "min_value": 8200,
+      "max_value": 9999
+    },
+    {
+      "id": 13,
+      "min_value": 10000,
+      "max_value": 12099
+    },
+    {
+      "id": 14,
+      "min_value": 12100,
+      "max_value": 14499
+    },
+    {
+      "id": 15,
+      "min_value": 14500,
+      "max_value": 15899
+    },
+    {
+      "id": 16,
+      "min_value": 15900,
+      "max_value": 17499
+    },
+    {
+      "id": 17,
+      "min_value": 17500,
+      "max_value": 19199
+    },
+    {
+      "id": 18,
+      "min_value": 19200,
+      "max_value": 19599
+    },
+    {
+      "id": 19,
+      "min_value": 19600,
+      "max_value": 19999
+    },
+    {
+      "id": 20,
+      "min_value": 20000,
+      "max_value": 20399
+    },
+    {
+      "id": 21,
+      "min_value": 20400,
+      "max_value": 20799
+    },
+    {
+      "id": 22,
+      "min_value": 20800,
+      "max_value": 21199
+    },
+    {
+      "id": 23,
+      "min_value": 21200,
+      "max_value": 21599
+    },
+    {
+      "id": 24,
+      "min_value": 21600,
+      "max_value": 22099
+    },
+    {
+      "id": 25,
+      "min_value": 22100,
+      "max_value": 22499
+    },
+    {
+      "id": 26,
+      "min_value": 22500,
+      "max_value": 22999
+    },
+    {
+      "id": 27,
+      "min_value": 23000,
+      "max_value": 23399
+    },
+    {
+      "id": 28,
+      "min_value": 23400,
+      "max_value": 23899
+    },
+    {
+      "id": 29,
+      "min_value": 23900,
+      "max_value": 24299
+    },
+    {
+      "id": 30,
+      "min_value": 24300,
+      "max_value": 24799
+    },
+    {
+      "id": 31,
+      "min_value": 24800,
+      "max_value": 25299
+    },
+    {
+      "id": 32,
+      "min_value": 25300,
+      "max_value": 25799
+    },
+    {
+      "id": 33,
+      "min_value": 25800,
+      "max_value": 26299
+    },
+    {
+      "id": 34,
+      "min_value": 26300,
+      "max_value": 26799
+    },
+    {
+      "id": 35,
+      "min_value": 26800,
+      "max_value": 27299
+    },
+    {
+      "id": 36,
+      "min_value": 27300,
+      "max_value": 27799
+    },
+    {
+      "id": 37,
+      "min_value": 27800,
+      "max_value": 28299
+    },
+    {
+      "id": 38,
+      "min_value": 28300,
+      "max_value": 28799
+    },
+    {
+      "id": 39,
+      "min_value": 28800,
+      "max_value": 29399
+    },
+    {
+      "id": 40,
+      "min_value": 29400,
+      "max_value": 29899
+    },
+    {
+      "id": 41,
+      "min_value": 29900,
+      "max_value": 30399
+    },
+    {
+      "id": 42,
+      "min_value": 30400,
+      "max_value": 30999
+    },
+    {
+      "id": 43,
+      "min_value": 31000,
+      "max_value": 31499
+    },
+    {
+      "id": 44,
+      "min_value": 31500,
+      "max_value": 32099
+    },
+    {
+      "id": 45,
+      "min_value": 32100,
+      "max_value": 32699
+    },
+    {
+      "id": 46,
+      "min_value": 32700,
+      "max_value": 33199
+    },
+    {
+      "id": 47,
+      "min_value": 33200,
+      "max_value": 33799
+    },
+    {
+      "id": 48,
+      "min_value": 33800,
+      "max_value": 34399
+    },
+    {
+      "id": 49,
+      "min_value": 34400,
+      "max_value": 34999
+    },
+    {
+      "id": 50,
+      "min_value": 35000,
+      "max_value": 35599
+    },
+    {
+      "id": 51,
+      "min_value": 35600,
+      "max_value": 36199
+    },
+    {
+      "id": 52,
+      "min_value": 36200,
+      "max_value": 36799
+    },
+    {
+      "id": 53,
+      "min_value": 36800,
+      "max_value": 37499
+    },
+    {
+      "id": 54,
+      "min_value": 37500,
+      "max_value": 38099
+    },
+    {
+      "id": 55,
+      "min_value": 38100,
+      "max_value": 38699
+    },
+    {
+      "id": 56,
+      "min_value": 38700,
+      "max_value": 39399
+    },
+    {
+      "id": 57,
+      "min_value": 39400,
+      "max_value": 39999
+    },
+    {
+      "id": 58,
+      "min_value": 40000,
+      "max_value": 40699
+    },
+    {
+      "id": 59,
+      "min_value": 40700,
+      "max_value": 41299
+    },
+    {
+      "id": 60,
+      "min_value": 41300,
+      "max_value": 41999
+    },
+    {
+      "id": 61,
+      "min_value": 42000,
+      "max_value": 42699
+    },
+    {
+      "id": 62,
+      "min_value": 42700,
+      "max_value": 43399
+    },
+    {
+      "id": 63,
+      "min_value": 43400,
+      "max_value": 43999
+    },
+    {
+      "id": 64,
+      "min_value": 44000,
+      "max_value": 44699
+    },
+    {
+      "id": 65,
+      "min_value": 44700,
+      "max_value": 45399
+    },
+    {
+      "id": 66,
+      "min_value": 45400,
+      "max_value": 46199
+    },
+    {
+      "id": 67,
+      "min_value": 46200,
+      "max_value": 46899
+    },
+    {
+      "id": 68,
+      "min_value": 46900,
+      "max_value": 47599
+    },
+    {
+      "id": 69,
+      "min_value": 47600,
+      "max_value": 48299
+    },
+    {
+      "id": 70,
+      "min_value": 48300,
+      "max_value": 48999
+    },
+    {
+      "id": 71,
+      "min_value": 49000,
+      "max_value": 49799
+    },
+    {
+      "id": 72,
+      "min_value": 49800,
+      "max_value": 50499
+    },
+    {
+      "id": 73,
+      "min_value": 50500,
+      "max_value": 51299
+    },
+    {
+      "id": 74,
+      "min_value": 51300,
+      "max_value": 51999
+    },
+    {
+      "id": 75,
+      "min_value": 52000,
+      "max_value": 52799
+    },
+    {
+      "id": 76,
+      "min_value": 52800,
+      "max_value": 53599
+    },
+    {
+      "id": 77,
+      "min_value": 53600,
+      "max_value": 54399
+    },
+    {
+      "id": 78,
+      "min_value": 54400,
+      "max_value": 55199
+    },
+    {
+      "id": 79,
+      "min_value": 55200,
+      "max_value": 55899
+    },
+    {
+      "id": 80,
+      "min_value": 55900,
+      "max_value": 56699
+    },
+    {
+      "id": 81,
+      "min_value": 56700,
+      "max_value": 57499
+    },
+    {
+      "id": 82,
+      "min_value": 57500,
+      "max_value": 58399
+    },
+    {
+      "id": 83,
+      "min_value": 58400,
+      "max_value": 59199
+    },
+    {
+      "id": 84,
+      "min_value": 59200,
+      "max_value": 59999
+    },
+    {
+      "id": 85,
+      "min_value": 60000,
+      "max_value": 60799
+    },
+    {
+      "id": 86,
+      "min_value": 60800,
+      "max_value": 61699
+    },
+    {
+      "id": 87,
+      "min_value": 61700,
+      "max_value": 62499
+    },
+    {
+      "id": 88,
+      "min_value": 62500,
+      "max_value": 63399
+    },
+    {
+      "id": 89,
+      "min_value": 63400,
+      "max_value": 64199
+    },
+    {
+      "id": 90,
+      "min_value": 64200,
+      "max_value": 65099
+    },
+    {
+      "id": 91,
+      "min_value": 65100,
+      "max_value": 66399
+    },
+    {
+      "id": 92,
+      "min_value": 66400,
+      "max_value": 67699
+    },
+    {
+      "id": 93,
+      "min_value": 67700,
+      "max_value": 68999
+    },
+    {
+      "id": 94,
+      "min_value": 69000,
+      "max_value": 70299
+    },
+    {
+      "id": 95,
+      "min_value": 70300,
+      "max_value": 71599
+    },
+    {
+      "id": 96,
+      "min_value": 71600,
+      "max_value": 72899
+    },
+    {
+      "id": 97,
+      "min_value": 72900,
+      "max_value": 74399
+    },
+    {
+      "id": 98,
+      "min_value": 74400,
+      "max_value": 75999
+    },
+    {
+      "id": 99,
+      "min_value": 76000,
+      "max_value": 76599
+    },
+    {
+      "id": 100,
+      "min_value": 76600,
+      "max_value": 77199
+    },
+    {
+      "id": 101,
+      "min_value": 77200,
+      "max_value": 77799
+    },
+    {
+      "id": 102,
+      "min_value": 77800,
+      "max_value": 78499
+    },
+    {
+      "id": 103,
+      "min_value": 78500,
+      "max_value": 79099
+    },
+    {
+      "id": 104,
+      "min_value": 79100,
+      "max_value": 79699
+    },
+    {
+      "id": 105,
+      "min_value": 79700,
+      "max_value": 80399
+    },
+    {
+      "id": 106,
+      "min_value": 80400,
+      "max_value": 80999
+    },
+    {
+      "id": 107,
+      "min_value": 81000,
+      "max_value": 81699
+    },
+    {
+      "id": 108,
+      "min_value": 81700,
+      "max_value": 82299
+    },
+    {
+      "id": 109,
+      "min_value": 82300,
+      "max_value": 82999
+    },
+    {
+      "id": 110,
+      "min_value": 83000,
+      "max_value": 83599
+    },
+    {
+      "id": 111,
+      "min_value": 83600,
+      "max_value": 84299
+    },
+    {
+      "id": 112,
+      "min_value": 84300,
+      "max_value": 84899
+    },
+    {
+      "id": 113,
+      "min_value": 84900,
+      "max_value": 85599
+    },
+    {
+      "id": 114,
+      "min_value": 85600,
+      "max_value": 86199
+    },
+    {
+      "id": 115,
+      "min_value": 86200,
+      "max_value": 86699
+    },
+    {
+      "id": 116,
+      "min_value": 86700,
+      "max_value": 87299
+    },
+    {
+      "id": 117,
+      "min_value": 87300,
+      "max_value": 87899
+    },
+    {
+      "id": 118,
+      "min_value": 87900,
+      "max_value": 88499
+    },
+    {
+      "id": 119,
+      "min_value": 88500,
+      "max_value": 89099
+    },
+    {
+      "id": 120,
+      "min_value": 89100,
+      "max_value": 89699
+    },
+    {
+      "id": 121,
+      "min_value": 89700,
+      "max_value": 90299
+    },
+    {
+      "id": 122,
+      "min_value": 90300,
+      "max_value": 90899
+    },
+    {
+      "id": 123,
+      "min_value": 90900,
+      "max_value": 91399
+    },
+    {
+      "id": 124,
+      "min_value": 91400,
+      "max_value": 91999
+    },
+    {
+      "id": 125,
+      "min_value": 92000,
+      "max_value": 92599
+    },
+    {
+      "id": 126,
+      "min_value": 92600,
+      "max_value": 93199
+    },
+    {
+      "id": 127,
+      "min_value": 93200,
+      "max_value": 93799
+    },
+    {
+      "id": 128,
+      "min_value": 93800,
+      "max_value": 94399
+    },
+    {
+      "id": 129,
+      "min_value": 94400,
+      "max_value": 94999
+    },
+    {
+      "id": 130,
+      "min_value": 95000,
+      "max_value": 95599
+    },
+    {
+      "id": 131,
+      "min_value": 95600,
+      "max_value": 96299
+    },
+    {
+      "id": 132,
+      "min_value": 96300,
+      "max_value": 96899
+    },
+    {
+      "id": 133,
+      "min_value": 96900,
+      "max_value": 97499
+    },
+    {
+      "id": 134,
+      "min_value": 97500,
+      "max_value": 97999
+    },
+    {
+      "id": 135,
+      "min_value": 98000,
+      "max_value": 98499
+    },
+    {
+      "id": 136,
+      "min_value": 98500,
+      "max_value": 98999
+    },
+    {
+      "id": 137,
+      "min_value": 99000,
+      "max_value": 99599
+    },
+    {
+      "id": 138,
+      "min_value": 99600,
+      "max_value": 100099
+    },
+    {
+      "id": 139,
+      "min_value": 100100,
+      "max_value": 100599
+    },
+    {
+      "id": 140,
+      "min_value": 100600,
+      "max_value": 101099
+    },
+    {
+      "id": 141,
+      "min_value": 101100,
+      "max_value": 101699
+    },
+    {
+      "id": 142,
+      "min_value": 101700,
+      "max_value": 102199
+    },
+    {
+      "id": 143,
+      "min_value": 102200,
+      "max_value": 102699
+    },
+    {
+      "id": 144,
+      "min_value": 102700,
+      "max_value": 103199
+    },
+    {
+      "id": 145,
+      "min_value": 103200,
+      "max_value": 103799
+    },
+    {
+      "id": 146,
+      "min_value": 103800,
+      "max_value": 104299
+    },
+    {
+      "id": 147,
+      "min_value": 104300,
+      "max_value": 104799
+    },
+    {
+      "id": 148,
+      "min_value": 104800,
+      "max_value": 105399
+    },
+    {
+      "id": 149,
+      "min_value": 105400,
+      "max_value": 105899
+    },
+    {
+      "id": 150,
+      "min_value": 105900,
+      "max_value": 106399
+    },
+    {
+      "id": 151,
+      "min_value": 106400,
+      "max_value": 106899
+    },
+    {
+      "id": 152,
+      "min_value": 106900,
+      "max_value": 107499
+    },
+    {
+      "id": 153,
+      "min_value": 107500,
+      "max_value": 107999
+    },
+    {
+      "id": 154,
+      "min_value": 108000,
+      "max_value": 108499
+    },
+    {
+      "id": 155,
+      "min_value": 108500,
+      "max_value": 109099
+    },
+    {
+      "id": 156,
+      "min_value": 109100,
+      "max_value": 109599
+    },
+    {
+      "id": 157,
+      "min_value": 109600,
+      "max_value": 110099
+    },
+    {
+      "id": 158,
+      "min_value": 110100,
+      "max_value": 110699
+    },
+    {
+      "id": 159,
+      "min_value": 110700,
+      "max_value": 111199
+    },
+    {
+      "id": 160,
+      "min_value": 111200,
+      "max_value": 111799
+    },
+    {
+      "id": 161,
+      "min_value": 111800,
+      "max_value": 112299
+    },
+    {
+      "id": 162,
+      "min_value": 112300,
+      "max_value": 112799
+    },
+    {
+      "id": 163,
+      "min_value": 112800,
+      "max_value": 113399
+    },
+    {
+      "id": 164,
+      "min_value": 113400,
+      "max_value": 113899
+    },
+    {
+      "id": 165,
+      "min_value": 113900,
+      "max_value": 114399
+    },
+    {
+      "id": 166,
+      "min_value": 114400,
+      "max_value": 114999
+    },
+    {
+      "id": 167,
+      "min_value": 115000,
+      "max_value": 115499
+    },
+    {
+      "id": 168,
+      "min_value": 115500,
+      "max_value": 116099
+    },
+    {
+      "id": 169,
+      "min_value": 116100,
+      "max_value": 116599
+    },
+    {
+      "id": 170,
+      "min_value": 116600,
+      "max_value": 117099
+    },
+    {
+      "id": 171,
+      "min_value": 117100,
+      "max_value": 117699
+    },
+    {
+      "id": 172,
+      "min_value": 117700,
+      "max_value": 118199
+    },
+    {
+      "id": 173,
+      "min_value": 118200,
+      "max_value": 118799
+    },
+    {
+      "id": 174,
+      "min_value": 118800,
+      "max_value": 119299
+    },
+    {
+      "id": 175,
+      "min_value": 119300,
+      "max_value": 119899
+    },
+    {
+      "id": 176,
+      "min_value": 119900,
+      "max_value": 120399
+    },
+    {
+      "id": 177,
+      "min_value": 120400,
+      "max_value": 120999
+    },
+    {
+      "id": 178,
+      "min_value": 121000,
+      "max_value": 121499
+    },
+    {
+      "id": 179,
+      "min_value": 121500,
+      "max_value": 121999
+    },
+    {
+      "id": 180,
+      "min_value": 122000,
+      "max_value": 122599
+    },
+    {
+      "id": 181,
+      "min_value": 122600,
+      "max_value": 123099
+    },
+    {
+      "id": 182,
+      "min_value": 123100,
+      "max_value": 123699
+    },
+    {
+      "id": 183,
+      "min_value": 123700,
+      "max_value": 124199
+    },
+    {
+      "id": 184,
+      "min_value": 124200,
+      "max_value": 124799
+    },
+    {
+      "id": 185,
+      "min_value": 124800,
+      "max_value": 125299
+    },
+    {
+      "id": 186,
+      "min_value": 125300,
+      "max_value": 125899
+    },
+    {
+      "id": 187,
+      "min_value": 125900,
+      "max_value": 126399
+    },
+    {
+      "id": 188,
+      "min_value": 126400,
+      "max_value": 126999
+    },
+    {
+      "id": 189,
+      "min_value": 127000,
+      "max_value": 127499
+    },
+    {
+      "id": 190,
+      "min_value": 127500,
+      "max_value": 128099
+    },
+    {
+      "id": 191,
+      "min_value": 128100,
+      "max_value": 128699
+    },
+    {
+      "id": 192,
+      "min_value": 128700,
+      "max_value": 129199
+    },
+    {
+      "id": 193,
+      "min_value": 129200,
+      "max_value": 129799
+    },
+    {
+      "id": 194,
+      "min_value": 129800,
+      "max_value": 130299
+    },
+    {
+      "id": 195,
+      "min_value": 130300,
+      "max_value": 130899
+    },
+    {
+      "id": 196,
+      "min_value": 130900,
+      "max_value": 131399
+    },
+    {
+      "id": 197,
+      "min_value": 131400,
+      "max_value": 131999
+    },
+    {
+      "id": 198,
+      "min_value": 132000,
+      "max_value": 132499
+    },
+    {
+      "id": 199,
+      "min_value": 132500,
+      "max_value": 133099
+    },
+    {
+      "id": 200,
+      "min_value": 133100,
+      "max_value": 133699
+    },
+    {
+      "id": 201,
+      "min_value": 133700,
+      "max_value": 134199
+    },
+    {
+      "id": 202,
+      "min_value": 134200,
+      "max_value": 134799
+    },
+    {
+      "id": 203,
+      "min_value": 134800,
+      "max_value": 135299
+    },
+    {
+      "id": 204,
+      "min_value": 135300,
+      "max_value": 135899
+    },
+    {
+      "id": 205,
+      "min_value": 135900,
+      "max_value": 136499
+    },
+    {
+      "id": 206,
+      "min_value": 136500,
+      "max_value": 136999
+    },
+    {
+      "id": 207,
+      "min_value": 137000,
+      "max_value": 137599
+    },
+    {
+      "id": 208,
+      "min_value": 137600,
+      "max_value": 138099
+    },
+    {
+      "id": 209,
+      "min_value": 138100,
+      "max_value": 138699
+    },
+    {
+      "id": 210,
+      "min_value": 138700,
+      "max_value": 139299
+    },
+    {
+      "id": 211,
+      "min_value": 139300,
+      "max_value": 139799
+    },
+    {
+      "id": 212,
+      "min_value": 139800,
+      "max_value": 140399
+    },
+    {
+      "id": 213,
+      "min_value": 140400,
+      "max_value": 140999
+    },
+    {
+      "id": 214,
+      "min_value": 141000,
+      "max_value": 141499
+    },
+    {
+      "id": 215,
+      "min_value": 141500,
+      "max_value": 142099
+    },
+    {
+      "id": 216,
+      "min_value": 142100,
+      "max_value": 142699
+    },
+    {
+      "id": 217,
+      "min_value": 142700,
+      "max_value": 143199
+    },
+    {
+      "id": 218,
+      "min_value": 143200,
+      "max_value": 143799
+    },
+    {
+      "id": 219,
+      "min_value": 143800,
+      "max_value": 144399
+    },
+    {
+      "id": 220,
+      "min_value": 144400,
+      "max_value": 144899
+    },
+    {
+      "id": 221,
+      "min_value": 144900,
+      "max_value": 145499
+    },
+    {
+      "id": 222,
+      "min_value": 145500,
+      "max_value": 146099
+    },
+    {
+      "id": 223,
+      "min_value": 146100,
+      "max_value": 146599
+    },
+    {
+      "id": 224,
+      "min_value": 146600,
+      "max_value": 147199
+    },
+    {
+      "id": 225,
+      "min_value": 147200,
+      "max_value": 147799
+    },
+    {
+      "id": 226,
+      "min_value": 147800,
+      "max_value": 148399
+    },
+    {
+      "id": 227,
+      "min_value": 148400,
+      "max_value": 148899
+    },
+    {
+      "id": 228,
+      "min_value": 148900,
+      "max_value": 149499
+    },
+    {
+      "id": 229,
+      "min_value": 149500,
+      "max_value": 150099
+    },
+    {
+      "id": 230,
+      "min_value": 150100,
+      "max_value": 150699
+    },
+    {
+      "id": 231,
+      "min_value": 150700,
+      "max_value": 151199
+    },
+    {
+      "id": 232,
+      "min_value": 151200,
+      "max_value": 151799
+    },
+    {
+      "id": 233,
+      "min_value": 151800,
+      "max_value": 152399
+    },
+    {
+      "id": 234,
+      "min_value": 152400,
+      "max_value": 152999
+    },
+    {
+      "id": 235,
+      "min_value": 153000,
+      "max_value": 153499
+    },
+    {
+      "id": 236,
+      "min_value": 153500,
+      "max_value": 154099
+    },
+    {
+      "id": 237,
+      "min_value": 154100,
+      "max_value": 154699
+    },
+    {
+      "id": 238,
+      "min_value": 154700,
+      "max_value": 155299
+    },
+    {
+      "id": 239,
+      "min_value": 155300,
+      "max_value": 155899
+    },
+    {
+      "id": 240,
+      "min_value": 155900,
+      "max_value": 156399
+    },
+    {
+      "id": 241,
+      "min_value": 156400,
+      "max_value": 156999
+    },
+    {
+      "id": 242,
+      "min_value": 157000,
+      "max_value": 157599
+    },
+    {
+      "id": 243,
+      "min_value": 157600,
+      "max_value": 158199
+    },
+    {
+      "id": 244,
+      "min_value": 158200,
+      "max_value": 158799
+    },
+    {
+      "id": 245,
+      "min_value": 158800,
+      "max_value": 159299
+    },
+    {
+      "id": 246,
+      "min_value": 159300,
+      "max_value": 159899
+    },
+    {
+      "id": 247,
+      "min_value": 159900,
+      "max_value": 160499
+    },
+    {
+      "id": 248,
+      "min_value": 160500,
+      "max_value": 161099
+    },
+    {
+      "id": 249,
+      "min_value": 161100,
+      "max_value": 161699
+    },
+    {
+      "id": 250,
+      "min_value": 161700,
+      "max_value": 162299
+    },
+    {
+      "id": 251,
+      "min_value": 162300,
+      "max_value": 162899
+    },
+    {
+      "id": 252,
+      "min_value": 162900,
+      "max_value": 163399
+    },
+    {
+      "id": 253,
+      "min_value": 163400,
+      "max_value": 163999
+    },
+    {
+      "id": 254,
+      "min_value": 164000,
+      "max_value": 164599
+    },
+    {
+      "id": 255,
+      "min_value": 164600,
+      "max_value": 165199
+    },
+    {
+      "id": 256,
+      "min_value": 165200,
+      "max_value": 165799
+    },
+    {
+      "id": 257,
+      "min_value": 165800,
+      "max_value": 166399
+    },
+    {
+      "id": 258,
+      "min_value": 166400,
+      "max_value": 166999
+    },
+    {
+      "id": 259,
+      "min_value": 167000,
+      "max_value": 167599
+    },
+    {
+      "id": 260,
+      "min_value": 167600,
+      "max_value": 168199
+    },
+    {
+      "id": 261,
+      "min_value": 168200,
+      "max_value": 168699
+    },
+    {
+      "id": 262,
+      "min_value": 168700,
+      "max_value": 169299
+    },
+    {
+      "id": 263,
+      "min_value": 169300,
+      "max_value": 169899
+    },
+    {
+      "id": 264,
+      "min_value": 169900,
+      "max_value": 170499
+    },
+    {
+      "id": 265,
+      "min_value": 170500,
+      "max_value": 171099
+    },
+    {
+      "id": 266,
+      "min_value": 171100,
+      "max_value": 171699
+    },
+    {
+      "id": 267,
+      "min_value": 171700,
+      "max_value": 172299
+    },
+    {
+      "id": 268,
+      "min_value": 172300,
+      "max_value": 172899
+    },
+    {
+      "id": 269,
+      "min_value": 172900,
+      "max_value": 173499
+    },
+    {
+      "id": 270,
+      "min_value": 173500,
+      "max_value": 174099
+    },
+    {
+      "id": 271,
+      "min_value": 174100,
+      "max_value": 174699
+    },
+    {
+      "id": 272,
+      "min_value": 174700,
+      "max_value": 175299
+    },
+    {
+      "id": 273,
+      "min_value": 175300,
+      "max_value": 175899
+    },
+    {
+      "id": 274,
+      "min_value": 175900,
+      "max_value": 176499
+    },
+    {
+      "id": 275,
+      "min_value": 176500,
+      "max_value": 177099
+    },
+    {
+      "id": 276,
+      "min_value": 177100,
+      "max_value": 177699
+    },
+    {
+      "id": 277,
+      "min_value": 177700,
+      "max_value": 178299
+    },
+    {
+      "id": 278,
+      "min_value": 178300,
+      "max_value": 178899
+    },
+    {
+      "id": 279,
+      "min_value": 178900,
+      "max_value": 179499
+    },
+    {
+      "id": 280,
+      "min_value": 179500,
+      "max_value": 180099
+    },
+    {
+      "id": 281,
+      "min_value": 180100,
+      "max_value": 180699
+    },
+    {
+      "id": 282,
+      "min_value": 180700,
+      "max_value": 181299
+    },
+    {
+      "id": 283,
+      "min_value": 181300,
+      "max_value": 181899
+    },
+    {
+      "id": 284,
+      "min_value": 181900,
+      "max_value": 182499
+    },
+    {
+      "id": 285,
+      "min_value": 182500,
+      "max_value": 183099
+    },
+    {
+      "id": 286,
+      "min_value": 183100,
+      "max_value": 183699
+    },
+    {
+      "id": 287,
+      "min_value": 183700,
+      "max_value": 184299
+    },
+    {
+      "id": 288,
+      "min_value": 184300,
+      "max_value": 184899
+    },
+    {
+      "id": 289,
+      "min_value": 184900,
+      "max_value": 185499
+    },
+    {
+      "id": 290,
+      "min_value": 185500,
+      "max_value": 186199
+    },
+    {
+      "id": 291,
+      "min_value": 186200,
+      "max_value": 186799
+    },
+    {
+      "id": 292,
+      "min_value": 186800,
+      "max_value": 187399
+    },
+    {
+      "id": 293,
+      "min_value": 187400,
+      "max_value": 187999
+    },
+    {
+      "id": 294,
+      "min_value": 188000,
+      "max_value": 188599
+    },
+    {
+      "id": 295,
+      "min_value": 188600,
+      "max_value": 189199
+    },
+    {
+      "id": 296,
+      "min_value": 189200,
+      "max_value": 189799
+    },
+    {
+      "id": 297,
+      "min_value": 189800,
+      "max_value": 190399
+    },
+    {
+      "id": 298,
+      "min_value": 190400,
+      "max_value": 999999
+    }
+  ],
+  "base_labels": [
+    {
+      "id": 1,
+      "text": "G"
+    },
+    {
+      "id": 2,
+      "text": "F"
+    },
+    {
+      "id": 3,
+      "text": "E"
+    },
+    {
+      "id": 4,
+      "text": "D"
+    },
+    {
+      "id": 5,
+      "text": "C"
+    },
+    {
+      "id": 6,
+      "text": "B"
+    },
+    {
+      "id": 7,
+      "text": "A"
+    },
+    {
+      "id": 8,
+      "text": "S"
+    },
+    {
+      "id": 9,
+      "text": "SS"
+    },
+    {
+      "id": 10,
+      "text": "UG"
+    },
+    {
+      "id": 11,
+      "text": "UF"
+    },
+    {
+      "id": 12,
+      "text": "UE"
+    },
+    {
+      "id": 13,
+      "text": "UD"
+    },
+    {
+      "id": 14,
+      "text": "UC"
+    },
+    {
+      "id": 15,
+      "text": "UB"
+    },
+    {
+      "id": 16,
+      "text": "UA"
+    },
+    {
+      "id": 17,
+      "text": "US"
+    }
+  ],
+  "note": "Report raw evaluation and single_mode_rank id; do not infer decorated rank labels beyond MDB data."
+}
