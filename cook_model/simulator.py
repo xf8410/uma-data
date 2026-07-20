@@ -6,7 +6,8 @@ modelled separately from generic events so they cannot silently disappear.
 """
 from __future__ import annotations
 from dataclasses import dataclass, field
-import copy, random
+import copy, json, random
+from pathlib import Path
 from typing import List, Tuple
 
 SCENARIO_ID = 8
@@ -14,7 +15,17 @@ TOTAL_TURNS = 78
 CARD_ID = 101101
 INITIAL_STATUS = (118, 91, 129, 96, 116)
 GROWTH = (20, 0, 10, 0, 0)
-TARGET_RACES = frozenset((11, 22, 33, 45, 47, 59, 66, 71, 73, 75, 77))
+_MDB = json.loads(Path(__file__).with_name('cook_mdb_snapshot.json').read_text(encoding='utf-8'))
+_GRASS_TARGETS = tuple(_MDB['grass_wonder_route']['simulator_zero_based_turns'])
+TARGET_RACES = frozenset(_GRASS_TARGETS + (73, 75, 77))
+SUCCESS_ODDS = tuple(
+    (row['power_min'], row['power_max'], row['success_rate'] / 100.0)
+    for row in _MDB['tables']['single_mode_cook_success_odds']
+)
+MEETING_REQUIREMENTS = {
+    row['turn_num'] - 1: row['success_num']
+    for row in _MDB['tables']['single_mode_cook_power_data']
+}
 DISH_COST = (
  (0,0,0,0,0),(25,0,50,0,50),(25,50,0,50,0),(150,0,80,0,0),
  (0,150,0,80,0),(0,80,150,0,0),(40,0,40,150,0),(80,0,0,0,150),
@@ -91,8 +102,8 @@ class CookSimulator:
         if d==13 and self.s.dish_pt<10000: cost=[100]*5
         self.s.materials=[a-b for a,b in zip(self.s.materials,cost)]
         self.s.dish_pt+=DISH_PT[d]; self.s.active_dish=d
-        # Cook2 statistical success model.
-        rate=min(1.0, .15 + self.s.dish_pt/48000)
+        # Great-success odds are read from master.mdb's Cook table.
+        rate=next(rate for lo,hi,rate in SUCCESS_ODDS if lo<=self.s.dish_pt<=hi)
         if self.rng.random()<rate:
             self.s.vital=min(self.s.max_vital,self.s.vital+10)
             self.s.motivation=min(5,self.s.motivation+1)
@@ -137,9 +148,8 @@ class CookSimulator:
 
     def _fixed_events(self):
         t=self.s.turn
-        if t in (23,35,47,59,71):
-            thresholds={23:1000,35:2000,47:5000,59:7000,71:10000}
-            win=self.s.dish_pt>=thresholds[t]; add=10 if win else 5
+        if t in MEETING_REQUIREMENTS:
+            win=self.s.dish_pt>=MEETING_REQUIREMENTS[t]; add=10 if win else 5
             self.s.status=[min(2300,x+add) for x in self.s.status]; self.s.skill_pt+=50 if win else 35
             self.s.event_counts[0]+=1
         if t in (29,53):

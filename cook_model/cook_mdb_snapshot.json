@@ -1,0 +1,2226 @@
+{
+  "source": {
+    "repository": "xf8410/uma-data",
+    "file": "master.mdb",
+    "sha256": "b387ffd16d0ee2c28ed9a1711049a3635c204fc72b652f616e7a199c698c51f0",
+    "extraction": "read-only SQLite queries; selected Cook tables only"
+  },
+  "scenario_id": 8,
+  "grass_wonder_route": {
+    "route": {
+      "id": 10,
+      "scenario_id": 0,
+      "chara_id": 1011,
+      "race_set_id": 1011,
+      "condition_set_id": 0,
+      "priority": 0
+    },
+    "races": [
+      {
+        "id": 100,
+        "race_set_id": 1011,
+        "scenario_group_id": 100,
+        "target_type": 1,
+        "sort_id": 1,
+        "turn": 12,
+        "race_type": 0,
+        "condition_type": 1,
+        "condition_id": 685,
+        "condition_value_1": 0,
+        "condition_value_2": 0,
+        "determine_race": 0,
+        "determine_race_flag": 0,
+        "alt_determine_race": 0,
+        "alt_determine_race_flag": 0,
+        "determine_race_for_generate": 0
+      },
+      {
+        "id": 101,
+        "race_set_id": 1011,
+        "scenario_group_id": 100,
+        "target_type": 1,
+        "sort_id": 2,
+        "turn": 23,
+        "race_type": 0,
+        "condition_type": 1,
+        "condition_id": 624,
+        "condition_value_1": 5,
+        "condition_value_2": 0,
+        "determine_race": 0,
+        "determine_race_flag": 0,
+        "alt_determine_race": 0,
+        "alt_determine_race_flag": 0,
+        "determine_race_for_generate": 0
+      },
+      {
+        "id": 102,
+        "race_set_id": 1011,
+        "scenario_group_id": 100,
+        "target_type": 1,
+        "sort_id": 3,
+        "turn": 34,
+        "race_type": 0,
+        "condition_type": 1,
+        "condition_id": 166,
+        "condition_value_1": 5,
+        "condition_value_2": 0,
+        "determine_race": 0,
+        "determine_race_flag": 0,
+        "alt_determine_race": 0,
+        "alt_determine_race_flag": 0,
+        "determine_race_for_generate": 0
+      },
+      {
+        "id": 103,
+        "race_set_id": 1011,
+        "scenario_group_id": 100,
+        "target_type": 1,
+        "sort_id": 4,
+        "turn": 46,
+        "race_type": 0,
+        "condition_type": 1,
+        "condition_id": 79,
+        "condition_value_1": 5,
+        "condition_value_2": 0,
+        "determine_race": 0,
+        "determine_race_flag": 0,
+        "alt_determine_race": 0,
+        "alt_determine_race_flag": 0,
+        "determine_race_for_generate": 0
+      },
+      {
+        "id": 104,
+        "race_set_id": 1011,
+        "scenario_group_id": 100,
+        "target_type": 1,
+        "sort_id": 5,
+        "turn": 48,
+        "race_type": 0,
+        "condition_type": 1,
+        "condition_id": 81,
+        "condition_value_1": 3,
+        "condition_value_2": 0,
+        "determine_race": 0,
+        "determine_race_flag": 0,
+        "alt_determine_race": 0,
+        "alt_determine_race_flag": 0,
+        "determine_race_for_generate": 0
+      },
+      {
+        "id": 105,
+        "race_set_id": 1011,
+        "scenario_group_id": 100,
+        "target_type": 1,
+        "sort_id": 6,
+        "turn": 60,
+        "race_type": 0,
+        "condition_type": 1,
+        "condition_id": 74,
+        "condition_value_1": 3,
+        "condition_value_2": 0,
+        "determine_race": 0,
+        "determine_race_flag": 0,
+        "alt_determine_race": 0,
+        "alt_determine_race_flag": 0,
+        "determine_race_for_generate": 0
+      },
+      {
+        "id": 106,
+        "race_set_id": 1011,
+        "scenario_group_id": 100,
+        "target_type": 1,
+        "sort_id": 7,
+        "turn": 67,
+        "race_type": 0,
+        "condition_type": 1,
+        "condition_id": 86,
+        "condition_value_1": 1,
+        "condition_value_2": 0,
+        "determine_race": 0,
+        "determine_race_flag": 0,
+        "alt_determine_race": 0,
+        "alt_determine_race_flag": 0,
+        "determine_race_for_generate": 0
+      },
+      {
+        "id": 107,
+        "race_set_id": 1011,
+        "scenario_group_id": 100,
+        "target_type": 1,
+        "sort_id": 8,
+        "turn": 72,
+        "race_type": 0,
+        "condition_type": 1,
+        "condition_id": 81,
+        "condition_value_1": 1,
+        "condition_value_2": 0,
+        "determine_race": 0,
+        "determine_race_flag": 0,
+        "alt_determine_race": 0,
+        "alt_determine_race_flag": 0,
+        "determine_race_for_generate": 0
+      }
+    ],
+    "simulator_zero_based_turns": [
+      11,
+      22,
+      33,
+      45,
+      47,
+      59,
+      66,
+      71
+    ]
+  },
+  "tables": {
+    "single_mode_cook_dish": [
+      {
+        "id": 1,
+        "dish_set_id": 1,
+        "dish_group_id": 1,
+        "priority": 1,
+        "material_group_id": 100,
+        "effect_group_id": 100,
+        "success_effect_group_id": 1,
+        "gain_coin": 300,
+        "gain_power": 250,
+        "sort_order": 11,
+        "dish_type": 1
+      },
+      {
+        "id": 2,
+        "dish_set_id": 1,
+        "dish_group_id": 2,
+        "priority": 1,
+        "material_group_id": 200,
+        "effect_group_id": 200,
+        "success_effect_group_id": 1,
+        "gain_coin": 300,
+        "gain_power": 250,
+        "sort_order": 10,
+        "dish_type": 0
+      },
+      {
+        "id": 3,
+        "dish_set_id": 10,
+        "dish_group_id": 11,
+        "priority": 1,
+        "material_group_id": 101,
+        "effect_group_id": 101,
+        "success_effect_group_id": 2,
+        "gain_coin": 500,
+        "gain_power": 500,
+        "sort_order": 24,
+        "dish_type": 0
+      },
+      {
+        "id": 4,
+        "dish_set_id": 10,
+        "dish_group_id": 12,
+        "priority": 1,
+        "material_group_id": 201,
+        "effect_group_id": 201,
+        "success_effect_group_id": 2,
+        "gain_coin": 500,
+        "gain_power": 500,
+        "sort_order": 23,
+        "dish_type": 2
+      },
+      {
+        "id": 5,
+        "dish_set_id": 10,
+        "dish_group_id": 13,
+        "priority": 1,
+        "material_group_id": 301,
+        "effect_group_id": 301,
+        "success_effect_group_id": 2,
+        "gain_coin": 500,
+        "gain_power": 500,
+        "sort_order": 22,
+        "dish_type": 3
+      },
+      {
+        "id": 6,
+        "dish_set_id": 10,
+        "dish_group_id": 14,
+        "priority": 1,
+        "material_group_id": 401,
+        "effect_group_id": 401,
+        "success_effect_group_id": 2,
+        "gain_coin": 500,
+        "gain_power": 500,
+        "sort_order": 21,
+        "dish_type": 0
+      },
+      {
+        "id": 7,
+        "dish_set_id": 10,
+        "dish_group_id": 15,
+        "priority": 1,
+        "material_group_id": 501,
+        "effect_group_id": 501,
+        "success_effect_group_id": 2,
+        "gain_coin": 500,
+        "gain_power": 500,
+        "sort_order": 20,
+        "dish_type": 1
+      },
+      {
+        "id": 8,
+        "dish_set_id": 11,
+        "dish_group_id": 11,
+        "priority": 10,
+        "material_group_id": 101,
+        "effect_group_id": 111,
+        "success_effect_group_id": 2,
+        "gain_coin": 500,
+        "gain_power": 500,
+        "sort_order": 24,
+        "dish_type": 0
+      },
+      {
+        "id": 9,
+        "dish_set_id": 11,
+        "dish_group_id": 12,
+        "priority": 10,
+        "material_group_id": 201,
+        "effect_group_id": 211,
+        "success_effect_group_id": 2,
+        "gain_coin": 500,
+        "gain_power": 500,
+        "sort_order": 23,
+        "dish_type": 2
+      },
+      {
+        "id": 10,
+        "dish_set_id": 11,
+        "dish_group_id": 13,
+        "priority": 10,
+        "material_group_id": 301,
+        "effect_group_id": 311,
+        "success_effect_group_id": 2,
+        "gain_coin": 500,
+        "gain_power": 500,
+        "sort_order": 22,
+        "dish_type": 3
+      },
+      {
+        "id": 11,
+        "dish_set_id": 11,
+        "dish_group_id": 14,
+        "priority": 10,
+        "material_group_id": 401,
+        "effect_group_id": 411,
+        "success_effect_group_id": 2,
+        "gain_coin": 500,
+        "gain_power": 500,
+        "sort_order": 21,
+        "dish_type": 0
+      },
+      {
+        "id": 12,
+        "dish_set_id": 11,
+        "dish_group_id": 15,
+        "priority": 10,
+        "material_group_id": 501,
+        "effect_group_id": 511,
+        "success_effect_group_id": 2,
+        "gain_coin": 500,
+        "gain_power": 500,
+        "sort_order": 20,
+        "dish_type": 1
+      },
+      {
+        "id": 13,
+        "dish_set_id": 12,
+        "dish_group_id": 11,
+        "priority": 100,
+        "material_group_id": 101,
+        "effect_group_id": 121,
+        "success_effect_group_id": 2,
+        "gain_coin": 500,
+        "gain_power": 500,
+        "sort_order": 24,
+        "dish_type": 0
+      },
+      {
+        "id": 14,
+        "dish_set_id": 12,
+        "dish_group_id": 12,
+        "priority": 100,
+        "material_group_id": 201,
+        "effect_group_id": 221,
+        "success_effect_group_id": 2,
+        "gain_coin": 500,
+        "gain_power": 500,
+        "sort_order": 23,
+        "dish_type": 2
+      },
+      {
+        "id": 15,
+        "dish_set_id": 12,
+        "dish_group_id": 13,
+        "priority": 100,
+        "material_group_id": 301,
+        "effect_group_id": 321,
+        "success_effect_group_id": 2,
+        "gain_coin": 500,
+        "gain_power": 500,
+        "sort_order": 22,
+        "dish_type": 3
+      },
+      {
+        "id": 16,
+        "dish_set_id": 12,
+        "dish_group_id": 14,
+        "priority": 100,
+        "material_group_id": 401,
+        "effect_group_id": 421,
+        "success_effect_group_id": 2,
+        "gain_coin": 500,
+        "gain_power": 500,
+        "sort_order": 21,
+        "dish_type": 0
+      },
+      {
+        "id": 17,
+        "dish_set_id": 12,
+        "dish_group_id": 15,
+        "priority": 100,
+        "material_group_id": 501,
+        "effect_group_id": 521,
+        "success_effect_group_id": 2,
+        "gain_coin": 500,
+        "gain_power": 500,
+        "sort_order": 20,
+        "dish_type": 1
+      },
+      {
+        "id": 18,
+        "dish_set_id": 20,
+        "dish_group_id": 21,
+        "priority": 1,
+        "material_group_id": 102,
+        "effect_group_id": 102,
+        "success_effect_group_id": 3,
+        "gain_coin": 800,
+        "gain_power": 800,
+        "sort_order": 34,
+        "dish_type": 0
+      },
+      {
+        "id": 19,
+        "dish_set_id": 20,
+        "dish_group_id": 22,
+        "priority": 1,
+        "material_group_id": 202,
+        "effect_group_id": 202,
+        "success_effect_group_id": 3,
+        "gain_coin": 800,
+        "gain_power": 800,
+        "sort_order": 33,
+        "dish_type": 2
+      },
+      {
+        "id": 20,
+        "dish_set_id": 20,
+        "dish_group_id": 23,
+        "priority": 1,
+        "material_group_id": 302,
+        "effect_group_id": 302,
+        "success_effect_group_id": 3,
+        "gain_coin": 800,
+        "gain_power": 800,
+        "sort_order": 32,
+        "dish_type": 3
+      },
+      {
+        "id": 21,
+        "dish_set_id": 20,
+        "dish_group_id": 24,
+        "priority": 1,
+        "material_group_id": 402,
+        "effect_group_id": 402,
+        "success_effect_group_id": 3,
+        "gain_coin": 800,
+        "gain_power": 800,
+        "sort_order": 31,
+        "dish_type": 0
+      },
+      {
+        "id": 22,
+        "dish_set_id": 20,
+        "dish_group_id": 25,
+        "priority": 1,
+        "material_group_id": 502,
+        "effect_group_id": 502,
+        "success_effect_group_id": 3,
+        "gain_coin": 800,
+        "gain_power": 800,
+        "sort_order": 30,
+        "dish_type": 1
+      },
+      {
+        "id": 23,
+        "dish_set_id": 21,
+        "dish_group_id": 21,
+        "priority": 10,
+        "material_group_id": 102,
+        "effect_group_id": 112,
+        "success_effect_group_id": 3,
+        "gain_coin": 800,
+        "gain_power": 800,
+        "sort_order": 34,
+        "dish_type": 0
+      },
+      {
+        "id": 24,
+        "dish_set_id": 21,
+        "dish_group_id": 22,
+        "priority": 10,
+        "material_group_id": 202,
+        "effect_group_id": 212,
+        "success_effect_group_id": 3,
+        "gain_coin": 800,
+        "gain_power": 800,
+        "sort_order": 33,
+        "dish_type": 2
+      },
+      {
+        "id": 25,
+        "dish_set_id": 21,
+        "dish_group_id": 23,
+        "priority": 10,
+        "material_group_id": 302,
+        "effect_group_id": 312,
+        "success_effect_group_id": 3,
+        "gain_coin": 800,
+        "gain_power": 800,
+        "sort_order": 32,
+        "dish_type": 3
+      },
+      {
+        "id": 26,
+        "dish_set_id": 21,
+        "dish_group_id": 24,
+        "priority": 10,
+        "material_group_id": 402,
+        "effect_group_id": 412,
+        "success_effect_group_id": 3,
+        "gain_coin": 800,
+        "gain_power": 800,
+        "sort_order": 31,
+        "dish_type": 0
+      },
+      {
+        "id": 27,
+        "dish_set_id": 21,
+        "dish_group_id": 25,
+        "priority": 10,
+        "material_group_id": 502,
+        "effect_group_id": 512,
+        "success_effect_group_id": 3,
+        "gain_coin": 800,
+        "gain_power": 800,
+        "sort_order": 30,
+        "dish_type": 1
+      },
+      {
+        "id": 28,
+        "dish_set_id": 22,
+        "dish_group_id": 21,
+        "priority": 100,
+        "material_group_id": 102,
+        "effect_group_id": 122,
+        "success_effect_group_id": 3,
+        "gain_coin": 800,
+        "gain_power": 800,
+        "sort_order": 34,
+        "dish_type": 0
+      },
+      {
+        "id": 29,
+        "dish_set_id": 22,
+        "dish_group_id": 22,
+        "priority": 100,
+        "material_group_id": 202,
+        "effect_group_id": 222,
+        "success_effect_group_id": 3,
+        "gain_coin": 800,
+        "gain_power": 800,
+        "sort_order": 33,
+        "dish_type": 2
+      },
+      {
+        "id": 30,
+        "dish_set_id": 22,
+        "dish_group_id": 23,
+        "priority": 100,
+        "material_group_id": 302,
+        "effect_group_id": 322,
+        "success_effect_group_id": 3,
+        "gain_coin": 800,
+        "gain_power": 800,
+        "sort_order": 32,
+        "dish_type": 3
+      },
+      {
+        "id": 31,
+        "dish_set_id": 22,
+        "dish_group_id": 24,
+        "priority": 100,
+        "material_group_id": 402,
+        "effect_group_id": 422,
+        "success_effect_group_id": 3,
+        "gain_coin": 800,
+        "gain_power": 800,
+        "sort_order": 31,
+        "dish_type": 0
+      },
+      {
+        "id": 32,
+        "dish_set_id": 22,
+        "dish_group_id": 25,
+        "priority": 100,
+        "material_group_id": 502,
+        "effect_group_id": 522,
+        "success_effect_group_id": 3,
+        "gain_coin": 800,
+        "gain_power": 800,
+        "sort_order": 30,
+        "dish_type": 1
+      },
+      {
+        "id": 33,
+        "dish_set_id": 30,
+        "dish_group_id": 31,
+        "priority": 1,
+        "material_group_id": 900,
+        "effect_group_id": 900,
+        "success_effect_group_id": 4,
+        "gain_coin": 1000,
+        "gain_power": 1500,
+        "sort_order": 100,
+        "dish_type": 0
+      },
+      {
+        "id": 34,
+        "dish_set_id": 31,
+        "dish_group_id": 31,
+        "priority": 10,
+        "material_group_id": 900,
+        "effect_group_id": 901,
+        "success_effect_group_id": 4,
+        "gain_coin": 1000,
+        "gain_power": 1500,
+        "sort_order": 100,
+        "dish_type": 0
+      },
+      {
+        "id": 35,
+        "dish_set_id": 32,
+        "dish_group_id": 31,
+        "priority": 100,
+        "material_group_id": 901,
+        "effect_group_id": 901,
+        "success_effect_group_id": 4,
+        "gain_coin": 1000,
+        "gain_power": 1500,
+        "sort_order": 100,
+        "dish_type": 0
+      }
+    ],
+    "single_mode_cook_dish_material": [
+      {
+        "id": 1,
+        "material_group_id": 100,
+        "material_id": 100,
+        "material_num": 25
+      },
+      {
+        "id": 2,
+        "material_group_id": 100,
+        "material_id": 300,
+        "material_num": 50
+      },
+      {
+        "id": 3,
+        "material_group_id": 100,
+        "material_id": 500,
+        "material_num": 50
+      },
+      {
+        "id": 4,
+        "material_group_id": 200,
+        "material_id": 100,
+        "material_num": 25
+      },
+      {
+        "id": 5,
+        "material_group_id": 200,
+        "material_id": 200,
+        "material_num": 50
+      },
+      {
+        "id": 6,
+        "material_group_id": 200,
+        "material_id": 400,
+        "material_num": 50
+      },
+      {
+        "id": 7,
+        "material_group_id": 101,
+        "material_id": 100,
+        "material_num": 150
+      },
+      {
+        "id": 8,
+        "material_group_id": 101,
+        "material_id": 300,
+        "material_num": 80
+      },
+      {
+        "id": 9,
+        "material_group_id": 201,
+        "material_id": 200,
+        "material_num": 150
+      },
+      {
+        "id": 10,
+        "material_group_id": 201,
+        "material_id": 400,
+        "material_num": 80
+      },
+      {
+        "id": 11,
+        "material_group_id": 301,
+        "material_id": 300,
+        "material_num": 150
+      },
+      {
+        "id": 12,
+        "material_group_id": 301,
+        "material_id": 200,
+        "material_num": 80
+      },
+      {
+        "id": 13,
+        "material_group_id": 401,
+        "material_id": 400,
+        "material_num": 150
+      },
+      {
+        "id": 14,
+        "material_group_id": 401,
+        "material_id": 100,
+        "material_num": 40
+      },
+      {
+        "id": 15,
+        "material_group_id": 401,
+        "material_id": 300,
+        "material_num": 40
+      },
+      {
+        "id": 16,
+        "material_group_id": 501,
+        "material_id": 500,
+        "material_num": 150
+      },
+      {
+        "id": 17,
+        "material_group_id": 501,
+        "material_id": 100,
+        "material_num": 80
+      },
+      {
+        "id": 18,
+        "material_group_id": 102,
+        "material_id": 100,
+        "material_num": 250
+      },
+      {
+        "id": 19,
+        "material_group_id": 102,
+        "material_id": 300,
+        "material_num": 80
+      },
+      {
+        "id": 20,
+        "material_group_id": 202,
+        "material_id": 200,
+        "material_num": 250
+      },
+      {
+        "id": 21,
+        "material_group_id": 202,
+        "material_id": 400,
+        "material_num": 80
+      },
+      {
+        "id": 22,
+        "material_group_id": 302,
+        "material_id": 300,
+        "material_num": 250
+      },
+      {
+        "id": 23,
+        "material_group_id": 302,
+        "material_id": 200,
+        "material_num": 80
+      },
+      {
+        "id": 24,
+        "material_group_id": 402,
+        "material_id": 400,
+        "material_num": 250
+      },
+      {
+        "id": 25,
+        "material_group_id": 402,
+        "material_id": 100,
+        "material_num": 40
+      },
+      {
+        "id": 26,
+        "material_group_id": 402,
+        "material_id": 300,
+        "material_num": 40
+      },
+      {
+        "id": 27,
+        "material_group_id": 502,
+        "material_id": 500,
+        "material_num": 250
+      },
+      {
+        "id": 28,
+        "material_group_id": 502,
+        "material_id": 100,
+        "material_num": 80
+      },
+      {
+        "id": 29,
+        "material_group_id": 900,
+        "material_id": 100,
+        "material_num": 100
+      },
+      {
+        "id": 30,
+        "material_group_id": 900,
+        "material_id": 200,
+        "material_num": 100
+      },
+      {
+        "id": 31,
+        "material_group_id": 900,
+        "material_id": 300,
+        "material_num": 100
+      },
+      {
+        "id": 32,
+        "material_group_id": 900,
+        "material_id": 400,
+        "material_num": 100
+      },
+      {
+        "id": 33,
+        "material_group_id": 900,
+        "material_id": 500,
+        "material_num": 100
+      },
+      {
+        "id": 34,
+        "material_group_id": 901,
+        "material_id": 100,
+        "material_num": 80
+      },
+      {
+        "id": 35,
+        "material_group_id": 901,
+        "material_id": 200,
+        "material_num": 80
+      },
+      {
+        "id": 36,
+        "material_group_id": 901,
+        "material_id": 300,
+        "material_num": 80
+      },
+      {
+        "id": 37,
+        "material_group_id": 901,
+        "material_id": 400,
+        "material_num": 80
+      },
+      {
+        "id": 38,
+        "material_group_id": 901,
+        "material_id": 500,
+        "material_num": 80
+      }
+    ],
+    "single_mode_cook_garden_level": [
+      {
+        "id": 1,
+        "facility_id": 100,
+        "garden_lv": 1,
+        "facility_lv": 1,
+        "effect_group_id": 101,
+        "coin_num": 0
+      },
+      {
+        "id": 2,
+        "facility_id": 100,
+        "garden_lv": 1,
+        "facility_lv": 2,
+        "effect_group_id": 102,
+        "coin_num": 100
+      },
+      {
+        "id": 3,
+        "facility_id": 100,
+        "garden_lv": 2,
+        "facility_lv": 3,
+        "effect_group_id": 103,
+        "coin_num": 180
+      },
+      {
+        "id": 4,
+        "facility_id": 100,
+        "garden_lv": 3,
+        "facility_lv": 4,
+        "effect_group_id": 104,
+        "coin_num": 220
+      },
+      {
+        "id": 5,
+        "facility_id": 100,
+        "garden_lv": 3,
+        "facility_lv": 5,
+        "effect_group_id": 105,
+        "coin_num": 250
+      },
+      {
+        "id": 6,
+        "facility_id": 200,
+        "garden_lv": 1,
+        "facility_lv": 1,
+        "effect_group_id": 201,
+        "coin_num": 0
+      },
+      {
+        "id": 7,
+        "facility_id": 200,
+        "garden_lv": 1,
+        "facility_lv": 2,
+        "effect_group_id": 202,
+        "coin_num": 100
+      },
+      {
+        "id": 8,
+        "facility_id": 200,
+        "garden_lv": 2,
+        "facility_lv": 3,
+        "effect_group_id": 203,
+        "coin_num": 180
+      },
+      {
+        "id": 9,
+        "facility_id": 200,
+        "garden_lv": 3,
+        "facility_lv": 4,
+        "effect_group_id": 204,
+        "coin_num": 220
+      },
+      {
+        "id": 10,
+        "facility_id": 200,
+        "garden_lv": 3,
+        "facility_lv": 5,
+        "effect_group_id": 205,
+        "coin_num": 250
+      },
+      {
+        "id": 11,
+        "facility_id": 300,
+        "garden_lv": 1,
+        "facility_lv": 1,
+        "effect_group_id": 301,
+        "coin_num": 0
+      },
+      {
+        "id": 12,
+        "facility_id": 300,
+        "garden_lv": 1,
+        "facility_lv": 2,
+        "effect_group_id": 302,
+        "coin_num": 100
+      },
+      {
+        "id": 13,
+        "facility_id": 300,
+        "garden_lv": 2,
+        "facility_lv": 3,
+        "effect_group_id": 303,
+        "coin_num": 180
+      },
+      {
+        "id": 14,
+        "facility_id": 300,
+        "garden_lv": 3,
+        "facility_lv": 4,
+        "effect_group_id": 304,
+        "coin_num": 220
+      },
+      {
+        "id": 15,
+        "facility_id": 300,
+        "garden_lv": 3,
+        "facility_lv": 5,
+        "effect_group_id": 305,
+        "coin_num": 250
+      },
+      {
+        "id": 16,
+        "facility_id": 400,
+        "garden_lv": 1,
+        "facility_lv": 1,
+        "effect_group_id": 401,
+        "coin_num": 0
+      },
+      {
+        "id": 17,
+        "facility_id": 400,
+        "garden_lv": 1,
+        "facility_lv": 2,
+        "effect_group_id": 402,
+        "coin_num": 100
+      },
+      {
+        "id": 18,
+        "facility_id": 400,
+        "garden_lv": 2,
+        "facility_lv": 3,
+        "effect_group_id": 403,
+        "coin_num": 180
+      },
+      {
+        "id": 19,
+        "facility_id": 400,
+        "garden_lv": 3,
+        "facility_lv": 4,
+        "effect_group_id": 404,
+        "coin_num": 220
+      },
+      {
+        "id": 20,
+        "facility_id": 400,
+        "garden_lv": 3,
+        "facility_lv": 5,
+        "effect_group_id": 405,
+        "coin_num": 250
+      },
+      {
+        "id": 21,
+        "facility_id": 500,
+        "garden_lv": 1,
+        "facility_lv": 1,
+        "effect_group_id": 501,
+        "coin_num": 0
+      },
+      {
+        "id": 22,
+        "facility_id": 500,
+        "garden_lv": 1,
+        "facility_lv": 2,
+        "effect_group_id": 502,
+        "coin_num": 100
+      },
+      {
+        "id": 23,
+        "facility_id": 500,
+        "garden_lv": 2,
+        "facility_lv": 3,
+        "effect_group_id": 503,
+        "coin_num": 180
+      },
+      {
+        "id": 24,
+        "facility_id": 500,
+        "garden_lv": 3,
+        "facility_lv": 4,
+        "effect_group_id": 504,
+        "coin_num": 220
+      },
+      {
+        "id": 25,
+        "facility_id": 500,
+        "garden_lv": 3,
+        "facility_lv": 5,
+        "effect_group_id": 505,
+        "coin_num": 250
+      }
+    ],
+    "single_mode_cook_success_odds": [
+      {
+        "id": 1,
+        "power_min": 0,
+        "power_max": 299,
+        "success_rate": 0
+      },
+      {
+        "id": 2,
+        "power_min": 300,
+        "power_max": 1499,
+        "success_rate": 15
+      },
+      {
+        "id": 3,
+        "power_min": 1500,
+        "power_max": 2499,
+        "success_rate": 18
+      },
+      {
+        "id": 4,
+        "power_min": 2500,
+        "power_max": 4999,
+        "success_rate": 20
+      },
+      {
+        "id": 5,
+        "power_min": 5000,
+        "power_max": 6999,
+        "success_rate": 22
+      },
+      {
+        "id": 6,
+        "power_min": 7000,
+        "power_max": 9999,
+        "success_rate": 24
+      },
+      {
+        "id": 7,
+        "power_min": 10000,
+        "power_max": 11999,
+        "success_rate": 25
+      },
+      {
+        "id": 8,
+        "power_min": 12000,
+        "power_max": 99999999,
+        "success_rate": 100
+      }
+    ],
+    "single_mode_cook_power_data": [
+      {
+        "id": 1,
+        "cook_type": 1,
+        "turn_num": 24,
+        "success_num": 1000,
+        "great_success_num": 0,
+        "garden_lv": 2
+      },
+      {
+        "id": 2,
+        "cook_type": 2,
+        "turn_num": 36,
+        "success_num": 2500,
+        "great_success_num": 0,
+        "garden_lv": 2
+      },
+      {
+        "id": 3,
+        "cook_type": 3,
+        "turn_num": 48,
+        "success_num": 5000,
+        "great_success_num": 0,
+        "garden_lv": 3
+      },
+      {
+        "id": 4,
+        "cook_type": 4,
+        "turn_num": 60,
+        "success_num": 7000,
+        "great_success_num": 0,
+        "garden_lv": 3
+      },
+      {
+        "id": 5,
+        "cook_type": 5,
+        "turn_num": 72,
+        "success_num": 10000,
+        "great_success_num": 12000,
+        "garden_lv": 3
+      }
+    ],
+    "single_mode_cook_material_rate": [
+      {
+        "id": 1,
+        "boost_type": 2,
+        "material_count": 1,
+        "effect_type": 3,
+        "material_quantity_rate": 110
+      },
+      {
+        "id": 2,
+        "boost_type": 2,
+        "material_count": 2,
+        "effect_type": 3,
+        "material_quantity_rate": 120
+      },
+      {
+        "id": 3,
+        "boost_type": 2,
+        "material_count": 3,
+        "effect_type": 3,
+        "material_quantity_rate": 140
+      },
+      {
+        "id": 4,
+        "boost_type": 2,
+        "material_count": 4,
+        "effect_type": 3,
+        "material_quantity_rate": 160
+      },
+      {
+        "id": 5,
+        "boost_type": 3,
+        "material_count": 1,
+        "effect_type": 3,
+        "material_quantity_rate": 100
+      },
+      {
+        "id": 6,
+        "boost_type": 4,
+        "material_count": 1,
+        "effect_type": 3,
+        "material_quantity_rate": 150
+      },
+      {
+        "id": 7,
+        "boost_type": 5,
+        "material_count": 1,
+        "effect_type": 3,
+        "material_quantity_rate": 100
+      },
+      {
+        "id": 8,
+        "boost_type": 6,
+        "material_count": 1,
+        "effect_type": 3,
+        "material_quantity_rate": 150
+      }
+    ],
+    "single_mode_cook_cooking_rate": [
+      {
+        "id": 1,
+        "dish_type": 0,
+        "cooking_cutt_id": 1,
+        "cooking_num": 2,
+        "success_rate": 1000,
+        "great_success_rate": 0,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 2,
+        "dish_type": 0,
+        "cooking_cutt_id": 2,
+        "cooking_num": 2,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 3,
+        "dish_type": 0,
+        "cooking_cutt_id": 3,
+        "cooking_num": 2,
+        "success_rate": 1000,
+        "great_success_rate": 0,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 4,
+        "dish_type": 0,
+        "cooking_cutt_id": 4,
+        "cooking_num": 2,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 5,
+        "dish_type": 0,
+        "cooking_cutt_id": 5,
+        "cooking_num": 2,
+        "success_rate": 1000,
+        "great_success_rate": 0,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 6,
+        "dish_type": 0,
+        "cooking_cutt_id": 6,
+        "cooking_num": 2,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 9,
+        "dish_type": 0,
+        "cooking_cutt_id": 9,
+        "cooking_num": 2,
+        "success_rate": 1000,
+        "great_success_rate": 0,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 10,
+        "dish_type": 0,
+        "cooking_cutt_id": 10,
+        "cooking_num": 2,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 11,
+        "dish_type": 0,
+        "cooking_cutt_id": 11,
+        "cooking_num": 2,
+        "success_rate": 1000,
+        "great_success_rate": 0,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 12,
+        "dish_type": 0,
+        "cooking_cutt_id": 12,
+        "cooking_num": 2,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 15,
+        "dish_type": 0,
+        "cooking_cutt_id": 15,
+        "cooking_num": 2,
+        "success_rate": 1000,
+        "great_success_rate": 0,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 16,
+        "dish_type": 0,
+        "cooking_cutt_id": 16,
+        "cooking_num": 2,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 17,
+        "dish_type": 0,
+        "cooking_cutt_id": 17,
+        "cooking_num": 2,
+        "success_rate": 1000,
+        "great_success_rate": 0,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 18,
+        "dish_type": 0,
+        "cooking_cutt_id": 18,
+        "cooking_num": 2,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 21,
+        "dish_type": 0,
+        "cooking_cutt_id": 21,
+        "cooking_num": 2,
+        "success_rate": 1000,
+        "great_success_rate": 0,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 22,
+        "dish_type": 0,
+        "cooking_cutt_id": 22,
+        "cooking_num": 2,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 23,
+        "dish_type": 0,
+        "cooking_cutt_id": 23,
+        "cooking_num": 2,
+        "success_rate": 1000,
+        "great_success_rate": 0,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 24,
+        "dish_type": 0,
+        "cooking_cutt_id": 24,
+        "cooking_num": 2,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 27,
+        "dish_type": 0,
+        "cooking_cutt_id": 27,
+        "cooking_num": 2,
+        "success_rate": 1000,
+        "great_success_rate": 0,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 28,
+        "dish_type": 0,
+        "cooking_cutt_id": 28,
+        "cooking_num": 2,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 29,
+        "dish_type": 0,
+        "cooking_cutt_id": 29,
+        "cooking_num": 2,
+        "success_rate": 1000,
+        "great_success_rate": 0,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 30,
+        "dish_type": 0,
+        "cooking_cutt_id": 30,
+        "cooking_num": 2,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 31,
+        "dish_type": 1,
+        "cooking_cutt_id": 5,
+        "cooking_num": 2,
+        "success_rate": 1000,
+        "great_success_rate": 0,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 32,
+        "dish_type": 1,
+        "cooking_cutt_id": 6,
+        "cooking_num": 2,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 35,
+        "dish_type": 1,
+        "cooking_cutt_id": 21,
+        "cooking_num": 2,
+        "success_rate": 1000,
+        "great_success_rate": 0,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 36,
+        "dish_type": 1,
+        "cooking_cutt_id": 22,
+        "cooking_num": 2,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 37,
+        "dish_type": 1,
+        "cooking_cutt_id": 23,
+        "cooking_num": 2,
+        "success_rate": 1000,
+        "great_success_rate": 0,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 38,
+        "dish_type": 1,
+        "cooking_cutt_id": 24,
+        "cooking_num": 2,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 41,
+        "dish_type": 2,
+        "cooking_cutt_id": 9,
+        "cooking_num": 2,
+        "success_rate": 1000,
+        "great_success_rate": 0,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 42,
+        "dish_type": 2,
+        "cooking_cutt_id": 10,
+        "cooking_num": 2,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 43,
+        "dish_type": 2,
+        "cooking_cutt_id": 11,
+        "cooking_num": 2,
+        "success_rate": 1000,
+        "great_success_rate": 0,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 44,
+        "dish_type": 2,
+        "cooking_cutt_id": 12,
+        "cooking_num": 2,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 47,
+        "dish_type": 2,
+        "cooking_cutt_id": 15,
+        "cooking_num": 2,
+        "success_rate": 1000,
+        "great_success_rate": 0,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 48,
+        "dish_type": 2,
+        "cooking_cutt_id": 16,
+        "cooking_num": 2,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 49,
+        "dish_type": 2,
+        "cooking_cutt_id": 17,
+        "cooking_num": 2,
+        "success_rate": 1000,
+        "great_success_rate": 0,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 50,
+        "dish_type": 2,
+        "cooking_cutt_id": 18,
+        "cooking_num": 2,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 53,
+        "dish_type": 2,
+        "cooking_cutt_id": 23,
+        "cooking_num": 2,
+        "success_rate": 1000,
+        "great_success_rate": 0,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 54,
+        "dish_type": 2,
+        "cooking_cutt_id": 24,
+        "cooking_num": 2,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 55,
+        "dish_type": 2,
+        "cooking_cutt_id": 27,
+        "cooking_num": 2,
+        "success_rate": 1000,
+        "great_success_rate": 0,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 56,
+        "dish_type": 2,
+        "cooking_cutt_id": 28,
+        "cooking_num": 2,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 57,
+        "dish_type": 2,
+        "cooking_cutt_id": 29,
+        "cooking_num": 2,
+        "success_rate": 1000,
+        "great_success_rate": 0,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 58,
+        "dish_type": 2,
+        "cooking_cutt_id": 30,
+        "cooking_num": 2,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 59,
+        "dish_type": 3,
+        "cooking_cutt_id": 23,
+        "cooking_num": 2,
+        "success_rate": 1000,
+        "great_success_rate": 0,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 60,
+        "dish_type": 3,
+        "cooking_cutt_id": 24,
+        "cooking_num": 2,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 61,
+        "dish_type": 0,
+        "cooking_cutt_id": 31,
+        "cooking_num": 2,
+        "success_rate": 1000,
+        "great_success_rate": 0,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 62,
+        "dish_type": 0,
+        "cooking_cutt_id": 32,
+        "cooking_num": 2,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 63,
+        "dish_type": 0,
+        "cooking_cutt_id": 33,
+        "cooking_num": 3,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 64,
+        "dish_type": 0,
+        "cooking_cutt_id": 34,
+        "cooking_num": 3,
+        "success_rate": 0,
+        "great_success_rate": 1000,
+        "confirmed_great_success_rate": 1000
+      },
+      {
+        "id": 65,
+        "dish_type": 0,
+        "cooking_cutt_id": 35,
+        "cooking_num": 3,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 66,
+        "dish_type": 0,
+        "cooking_cutt_id": 36,
+        "cooking_num": 3,
+        "success_rate": 0,
+        "great_success_rate": 1000,
+        "confirmed_great_success_rate": 1000
+      },
+      {
+        "id": 67,
+        "dish_type": 0,
+        "cooking_cutt_id": 37,
+        "cooking_num": 3,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 68,
+        "dish_type": 0,
+        "cooking_cutt_id": 38,
+        "cooking_num": 3,
+        "success_rate": 0,
+        "great_success_rate": 1000,
+        "confirmed_great_success_rate": 1000
+      },
+      {
+        "id": 69,
+        "dish_type": 0,
+        "cooking_cutt_id": 39,
+        "cooking_num": 3,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 70,
+        "dish_type": 0,
+        "cooking_cutt_id": 40,
+        "cooking_num": 3,
+        "success_rate": 0,
+        "great_success_rate": 1000,
+        "confirmed_great_success_rate": 1000
+      },
+      {
+        "id": 71,
+        "dish_type": 0,
+        "cooking_cutt_id": 41,
+        "cooking_num": 3,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 72,
+        "dish_type": 0,
+        "cooking_cutt_id": 42,
+        "cooking_num": 3,
+        "success_rate": 0,
+        "great_success_rate": 1000,
+        "confirmed_great_success_rate": 1000
+      },
+      {
+        "id": 73,
+        "dish_type": 0,
+        "cooking_cutt_id": 43,
+        "cooking_num": 3,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 74,
+        "dish_type": 0,
+        "cooking_cutt_id": 44,
+        "cooking_num": 3,
+        "success_rate": 0,
+        "great_success_rate": 1000,
+        "confirmed_great_success_rate": 1000
+      },
+      {
+        "id": 75,
+        "dish_type": 0,
+        "cooking_cutt_id": 45,
+        "cooking_num": 3,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 76,
+        "dish_type": 0,
+        "cooking_cutt_id": 46,
+        "cooking_num": 3,
+        "success_rate": 0,
+        "great_success_rate": 1000,
+        "confirmed_great_success_rate": 1000
+      },
+      {
+        "id": 77,
+        "dish_type": 0,
+        "cooking_cutt_id": 47,
+        "cooking_num": 3,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 78,
+        "dish_type": 0,
+        "cooking_cutt_id": 48,
+        "cooking_num": 3,
+        "success_rate": 0,
+        "great_success_rate": 1000,
+        "confirmed_great_success_rate": 1000
+      },
+      {
+        "id": 79,
+        "dish_type": 0,
+        "cooking_cutt_id": 49,
+        "cooking_num": 3,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 80,
+        "dish_type": 0,
+        "cooking_cutt_id": 50,
+        "cooking_num": 3,
+        "success_rate": 0,
+        "great_success_rate": 1000,
+        "confirmed_great_success_rate": 1000
+      },
+      {
+        "id": 81,
+        "dish_type": 0,
+        "cooking_cutt_id": 51,
+        "cooking_num": 3,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 82,
+        "dish_type": 0,
+        "cooking_cutt_id": 52,
+        "cooking_num": 3,
+        "success_rate": 0,
+        "great_success_rate": 1000,
+        "confirmed_great_success_rate": 1000
+      },
+      {
+        "id": 83,
+        "dish_type": 0,
+        "cooking_cutt_id": 53,
+        "cooking_num": 3,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 84,
+        "dish_type": 0,
+        "cooking_cutt_id": 54,
+        "cooking_num": 3,
+        "success_rate": 0,
+        "great_success_rate": 1000,
+        "confirmed_great_success_rate": 1000
+      },
+      {
+        "id": 85,
+        "dish_type": 0,
+        "cooking_cutt_id": 55,
+        "cooking_num": 3,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 86,
+        "dish_type": 0,
+        "cooking_cutt_id": 56,
+        "cooking_num": 3,
+        "success_rate": 0,
+        "great_success_rate": 1000,
+        "confirmed_great_success_rate": 1000
+      },
+      {
+        "id": 87,
+        "dish_type": 0,
+        "cooking_cutt_id": 57,
+        "cooking_num": 3,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 88,
+        "dish_type": 0,
+        "cooking_cutt_id": 58,
+        "cooking_num": 3,
+        "success_rate": 0,
+        "great_success_rate": 1000,
+        "confirmed_great_success_rate": 1000
+      },
+      {
+        "id": 89,
+        "dish_type": 0,
+        "cooking_cutt_id": 59,
+        "cooking_num": 3,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 90,
+        "dish_type": 0,
+        "cooking_cutt_id": 60,
+        "cooking_num": 3,
+        "success_rate": 0,
+        "great_success_rate": 1000,
+        "confirmed_great_success_rate": 1000
+      },
+      {
+        "id": 91,
+        "dish_type": 0,
+        "cooking_cutt_id": 61,
+        "cooking_num": 3,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 92,
+        "dish_type": 0,
+        "cooking_cutt_id": 62,
+        "cooking_num": 3,
+        "success_rate": 0,
+        "great_success_rate": 1000,
+        "confirmed_great_success_rate": 1000
+      },
+      {
+        "id": 93,
+        "dish_type": 0,
+        "cooking_cutt_id": 63,
+        "cooking_num": 3,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 94,
+        "dish_type": 0,
+        "cooking_cutt_id": 64,
+        "cooking_num": 3,
+        "success_rate": 0,
+        "great_success_rate": 1000,
+        "confirmed_great_success_rate": 1000
+      },
+      {
+        "id": 95,
+        "dish_type": 1,
+        "cooking_cutt_id": 31,
+        "cooking_num": 2,
+        "success_rate": 1000,
+        "great_success_rate": 0,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 96,
+        "dish_type": 1,
+        "cooking_cutt_id": 32,
+        "cooking_num": 2,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 97,
+        "dish_type": 1,
+        "cooking_cutt_id": 37,
+        "cooking_num": 3,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 98,
+        "dish_type": 1,
+        "cooking_cutt_id": 38,
+        "cooking_num": 3,
+        "success_rate": 0,
+        "great_success_rate": 1000,
+        "confirmed_great_success_rate": 1000
+      },
+      {
+        "id": 99,
+        "dish_type": 1,
+        "cooking_cutt_id": 39,
+        "cooking_num": 3,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 100,
+        "dish_type": 1,
+        "cooking_cutt_id": 40,
+        "cooking_num": 3,
+        "success_rate": 0,
+        "great_success_rate": 1000,
+        "confirmed_great_success_rate": 1000
+      },
+      {
+        "id": 101,
+        "dish_type": 1,
+        "cooking_cutt_id": 53,
+        "cooking_num": 3,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 102,
+        "dish_type": 1,
+        "cooking_cutt_id": 54,
+        "cooking_num": 3,
+        "success_rate": 0,
+        "great_success_rate": 1000,
+        "confirmed_great_success_rate": 1000
+      },
+      {
+        "id": 103,
+        "dish_type": 1,
+        "cooking_cutt_id": 55,
+        "cooking_num": 3,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 104,
+        "dish_type": 1,
+        "cooking_cutt_id": 56,
+        "cooking_num": 3,
+        "success_rate": 0,
+        "great_success_rate": 1000,
+        "confirmed_great_success_rate": 1000
+      },
+      {
+        "id": 105,
+        "dish_type": 1,
+        "cooking_cutt_id": 57,
+        "cooking_num": 3,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 106,
+        "dish_type": 1,
+        "cooking_cutt_id": 58,
+        "cooking_num": 3,
+        "success_rate": 0,
+        "great_success_rate": 1000,
+        "confirmed_great_success_rate": 1000
+      },
+      {
+        "id": 107,
+        "dish_type": 1,
+        "cooking_cutt_id": 63,
+        "cooking_num": 3,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 108,
+        "dish_type": 1,
+        "cooking_cutt_id": 64,
+        "cooking_num": 3,
+        "success_rate": 0,
+        "great_success_rate": 1000,
+        "confirmed_great_success_rate": 1000
+      },
+      {
+        "id": 109,
+        "dish_type": 2,
+        "cooking_cutt_id": 31,
+        "cooking_num": 2,
+        "success_rate": 1000,
+        "great_success_rate": 0,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 110,
+        "dish_type": 2,
+        "cooking_cutt_id": 32,
+        "cooking_num": 2,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 111,
+        "dish_type": 2,
+        "cooking_cutt_id": 41,
+        "cooking_num": 3,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 112,
+        "dish_type": 2,
+        "cooking_cutt_id": 42,
+        "cooking_num": 3,
+        "success_rate": 0,
+        "great_success_rate": 1000,
+        "confirmed_great_success_rate": 1000
+      },
+      {
+        "id": 113,
+        "dish_type": 2,
+        "cooking_cutt_id": 47,
+        "cooking_num": 3,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 114,
+        "dish_type": 2,
+        "cooking_cutt_id": 48,
+        "cooking_num": 3,
+        "success_rate": 0,
+        "great_success_rate": 1000,
+        "confirmed_great_success_rate": 1000
+      },
+      {
+        "id": 115,
+        "dish_type": 2,
+        "cooking_cutt_id": 55,
+        "cooking_num": 3,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 116,
+        "dish_type": 2,
+        "cooking_cutt_id": 56,
+        "cooking_num": 3,
+        "success_rate": 0,
+        "great_success_rate": 1000,
+        "confirmed_great_success_rate": 1000
+      },
+      {
+        "id": 117,
+        "dish_type": 2,
+        "cooking_cutt_id": 59,
+        "cooking_num": 3,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 118,
+        "dish_type": 2,
+        "cooking_cutt_id": 60,
+        "cooking_num": 3,
+        "success_rate": 0,
+        "great_success_rate": 1000,
+        "confirmed_great_success_rate": 1000
+      },
+      {
+        "id": 119,
+        "dish_type": 2,
+        "cooking_cutt_id": 61,
+        "cooking_num": 3,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 120,
+        "dish_type": 2,
+        "cooking_cutt_id": 62,
+        "cooking_num": 3,
+        "success_rate": 0,
+        "great_success_rate": 1000,
+        "confirmed_great_success_rate": 1000
+      },
+      {
+        "id": 121,
+        "dish_type": 2,
+        "cooking_cutt_id": 63,
+        "cooking_num": 3,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 122,
+        "dish_type": 2,
+        "cooking_cutt_id": 64,
+        "cooking_num": 3,
+        "success_rate": 0,
+        "great_success_rate": 1000,
+        "confirmed_great_success_rate": 1000
+      },
+      {
+        "id": 123,
+        "dish_type": 3,
+        "cooking_cutt_id": 31,
+        "cooking_num": 2,
+        "success_rate": 1000,
+        "great_success_rate": 0,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 124,
+        "dish_type": 3,
+        "cooking_cutt_id": 32,
+        "cooking_num": 2,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 125,
+        "dish_type": 3,
+        "cooking_cutt_id": 55,
+        "cooking_num": 3,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 126,
+        "dish_type": 3,
+        "cooking_cutt_id": 56,
+        "cooking_num": 3,
+        "success_rate": 0,
+        "great_success_rate": 1000,
+        "confirmed_great_success_rate": 1000
+      },
+      {
+        "id": 127,
+        "dish_type": 3,
+        "cooking_cutt_id": 63,
+        "cooking_num": 3,
+        "success_rate": 500,
+        "great_success_rate": 500,
+        "confirmed_great_success_rate": 0
+      },
+      {
+        "id": 128,
+        "dish_type": 3,
+        "cooking_cutt_id": 64,
+        "cooking_num": 3,
+        "success_rate": 0,
+        "great_success_rate": 1000,
+        "confirmed_great_success_rate": 1000
+      }
+    ]
+  }
+}

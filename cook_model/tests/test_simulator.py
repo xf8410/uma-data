@@ -1,11 +1,14 @@
 import unittest
-from cook_model.simulator import CookSimulator, TARGET_RACES, TOTAL_TURNS, CARD_ID, SCENARIO_ID
+from cook_model.simulator import CookSimulator, TARGET_RACES, TOTAL_TURNS, CARD_ID, SCENARIO_ID, SUCCESS_ODDS, MEETING_REQUIREMENTS
 
 class SimulatorTest(unittest.TestCase):
     def test_fixed_identity_and_shape(self):
         g=CookSimulator(1)
         self.assertEqual((SCENARIO_ID,CARD_ID),(8,101101))
         self.assertEqual(len(g.features()),128)
+        self.assertEqual(tuple(sorted(TARGET_RACES))[:8],(11,22,33,45,47,59,66,71))
+        self.assertEqual(SUCCESS_ODDS[1],(300,1499,0.15))
+        self.assertEqual(MEETING_REQUIREMENTS[23],1000)
 
     def test_complete_run_advances_and_executes_targets_events(self):
         g=CookSimulator(20260720); seen=[]
