@@ -1,0 +1,4455 @@
+[
+  {
+    "card_id": 10001,
+    "card_name": "[根]特别周",
+    "chara_id": 1001,
+    "chara_name": "スペシャルウィーク",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801001001,
+      801001002,
+      801001003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801001001,
+        801001002,
+        801001003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801001001,
+        801001002,
+        801001003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10002,
+    "card_name": "[速]无声铃鹿",
+    "chara_id": 1002,
+    "chara_name": "サイレンススズカ",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801002001,
+      801002002,
+      801002003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801002001,
+        801002002,
+        801002003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801002001,
+        801002002,
+        801002003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10003,
+    "card_name": "[速]东海帝王",
+    "chara_id": 1003,
+    "chara_name": "トウカイテイオー",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801003001,
+      801003002,
+      801003003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801003001,
+        801003002,
+        801003003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801003001,
+        801003002,
+        801003003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10004,
+    "card_name": "[速]丸善斯基",
+    "chara_id": 1004,
+    "chara_name": "マルゼンスキー",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801004001,
+      801004002,
+      801004003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801004001,
+        801004002,
+        801004003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801004001,
+        801004002,
+        801004003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10005,
+    "card_name": "[力]小栗帽",
+    "chara_id": 1006,
+    "chara_name": "オグリキャップ",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801006001,
+      801006002,
+      801006003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801006001,
+        801006002,
+        801006003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801006001,
+        801006002,
+        801006003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10006,
+    "card_name": "[耐]黄金船",
+    "chara_id": 1007,
+    "chara_name": "ゴールドシップ",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801007001,
+      801007002,
+      801007003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801007001,
+        801007002,
+        801007003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801007001,
+        801007002,
+        801007003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10007,
+    "card_name": "[力]伏特加",
+    "chara_id": 1008,
+    "chara_name": "ウオッカ",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801008001,
+      801008002,
+      801008003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801008001,
+        801008002,
+        801008003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801008001,
+        801008002,
+        801008003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10008,
+    "card_name": "[速]大树快车",
+    "chara_id": 1010,
+    "chara_name": "タイキシャトル",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801010001,
+      801010002,
+      801010003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801010001,
+        801010002,
+        801010003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801010001,
+        801010002,
+        801010003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10009,
+    "card_name": "[根]草上飞",
+    "chara_id": 1011,
+    "chara_name": "グラスワンダー",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801011001,
+      801011002,
+      801011003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801011001,
+        801011002,
+        801011003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801011001,
+        801011002,
+        801011003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10010,
+    "card_name": "[耐]目白麦昆",
+    "chara_id": 1013,
+    "chara_name": "メジロマックイーン",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801013001,
+      801013002,
+      801013003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801013001,
+        801013002,
+        801013003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801013001,
+        801013002,
+        801013003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10011,
+    "card_name": "[力]神鹰",
+    "chara_id": 1014,
+    "chara_name": "エルコンドルパサー",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801014001,
+      801014002,
+      801014003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801014001,
+        801014002,
+        801014003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801014001,
+        801014002,
+        801014003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10012,
+    "card_name": "[耐]好歌剧",
+    "chara_id": 1015,
+    "chara_name": "テイエムオペラオー",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801015001,
+      801015002,
+      801015003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801015001,
+        801015002,
+        801015003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801015001,
+        801015002,
+        801015003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10013,
+    "card_name": "[智]鲁道夫象征",
+    "chara_id": 1017,
+    "chara_name": "シンボリルドルフ",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801017001,
+      801017002,
+      801017003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801017001,
+        801017002,
+        801017003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801017001,
+        801017002,
+        801017003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10014,
+    "card_name": "[耐]青云天空",
+    "chara_id": 1020,
+    "chara_name": "セイウンスカイ",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801020001,
+      801020002,
+      801020003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801020001,
+        801020002,
+        801020003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801020001,
+        801020002,
+        801020003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10015,
+    "card_name": "[耐]米浴",
+    "chara_id": 1030,
+    "chara_name": "ライスシャワー",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801030001,
+      801030002,
+      801030003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801030001,
+        801030002,
+        801030003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801030001,
+        801030002,
+        801030003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10016,
+    "card_name": "[根]胜利奖券",
+    "chara_id": 1035,
+    "chara_name": "ウイニングチケット",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801035001,
+      801035002,
+      801035003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801035001,
+        801035002,
+        801035003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801035001,
+        801035002,
+        801035003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10017,
+    "card_name": "[速]黄金城市",
+    "chara_id": 1040,
+    "chara_name": "ゴールドシチー",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801040001,
+      801040002,
+      801040003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801040001,
+        801040002,
+        801040003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801040001,
+        801040002,
+        801040003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10018,
+    "card_name": "[速]樱花进王",
+    "chara_id": 1041,
+    "chara_name": "サクラバクシンオー",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801041001,
+      801041002,
+      801041003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801041001,
+        801041002,
+        801041003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801041001,
+        801041002,
+        801041003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10019,
+    "card_name": "[耐]超级溪流",
+    "chara_id": 1045,
+    "chara_name": "スーパークリーク",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801045001,
+      801045002,
+      801045003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801045001,
+        801045002,
+        801045003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801045001,
+        801045002,
+        801045003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10020,
+    "card_name": "[根]春丽",
+    "chara_id": 1052,
+    "chara_name": "ハルウララ",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801052001,
+      801052002,
+      801052003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801052001,
+        801052002,
+        801052003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801052001,
+        801052002,
+        801052003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10023,
+    "card_name": "[智]大和赤骥",
+    "chara_id": 1009,
+    "chara_name": "ダイワスカーレット",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801009001,
+      801009002,
+      801009003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801009001,
+        801009002,
+        801009003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801009001,
+        801009002,
+        801009003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10024,
+    "card_name": "[力]菱亚马逊",
+    "chara_id": 1012,
+    "chara_name": "ヒシアマゾン",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801012001,
+      801012002,
+      801012003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801012001,
+        801012002,
+        801012003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801012001,
+        801012002,
+        801012003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10025,
+    "card_name": "[根]气槽",
+    "chara_id": 1018,
+    "chara_name": "エアグルーヴ",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801018001,
+      801018002,
+      801018003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801018001,
+        801018002,
+        801018003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801018001,
+        801018002,
+        801018003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10026,
+    "card_name": "[力]爱丽数码",
+    "chara_id": 1019,
+    "chara_name": "アグネスデジタル",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801019001,
+      801019002,
+      801019003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801019001,
+        801019002,
+        801019003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801019001,
+        801019002,
+        801019003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10027,
+    "card_name": "[耐]玉藻十字",
+    "chara_id": 1021,
+    "chara_name": "タマモクロス",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801021001,
+      801021002,
+      801021003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801021001,
+        801021002,
+        801021003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801021001,
+        801021002,
+        801021003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10028,
+    "card_name": "[智]美妙姿势",
+    "chara_id": 1022,
+    "chara_name": "ファインモーション",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801022001,
+      801022002,
+      801022003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801022001,
+        801022002,
+        801022003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801022001,
+        801022002,
+        801022003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10029,
+    "card_name": "[力]琵琶晨光",
+    "chara_id": 1023,
+    "chara_name": "ビワハヤヒデ",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801023001,
+      801023002,
+      801023003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801023001,
+        801023002,
+        801023003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801023001,
+        801023002,
+        801023003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10030,
+    "card_name": "[耐]摩耶重炮",
+    "chara_id": 1024,
+    "chara_name": "マヤノトップガン",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801024001,
+      801024002,
+      801024003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801024001,
+        801024002,
+        801024003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801024001,
+        801024002,
+        801024003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10031,
+    "card_name": "[耐]曼城茶座",
+    "chara_id": 1025,
+    "chara_name": "マンハッタンカフェ",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801025001,
+      801025002,
+      801025003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801025001,
+        801025002,
+        801025003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801025001,
+        801025002,
+        801025003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10032,
+    "card_name": "[力]美浦波旁",
+    "chara_id": 1026,
+    "chara_name": "ミホノブルボン",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801026001,
+      801026002,
+      801026003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801026001,
+        801026002,
+        801026003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801026001,
+        801026002,
+        801026003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10033,
+    "card_name": "[力]目白赖恩",
+    "chara_id": 1027,
+    "chara_name": "メジロライアン",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801027001,
+      801027002,
+      801027003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801027001,
+        801027002,
+        801027003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801027001,
+        801027002,
+        801027003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10034,
+    "card_name": "[根]雪之美人",
+    "chara_id": 1029,
+    "chara_name": "ユキノビジン",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801029001,
+      801029002,
+      801029003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801029001,
+        801029002,
+        801029003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801029001,
+        801029002,
+        801029003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10035,
+    "card_name": "[根]艾尼斯风神",
+    "chara_id": 1031,
+    "chara_name": "アイネスフウジン",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801031001,
+      801031002,
+      801031003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801031001,
+        801031002,
+        801031003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801031001,
+        801031002,
+        801031003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10036,
+    "card_name": "[智]爱丽速子",
+    "chara_id": 1032,
+    "chara_name": "アグネスタキオン",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801032001,
+      801032002,
+      801032003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801032001,
+        801032002,
+        801032003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801032001,
+        801032002,
+        801032003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10037,
+    "card_name": "[智]空中神宫",
+    "chara_id": 1036,
+    "chara_name": "エアシャカール",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801036001,
+      801036002,
+      801036003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801036001,
+        801036002,
+        801036003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801036001,
+        801036002,
+        801036003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10038,
+    "card_name": "[速]荣进闪耀",
+    "chara_id": 1037,
+    "chara_name": "エイシンフラッシュ",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801037001,
+      801037002,
+      801037003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801037001,
+        801037002,
+        801037003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801037001,
+        801037002,
+        801037003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10039,
+    "card_name": "[力]醒目飞鹰",
+    "chara_id": 1046,
+    "chara_name": "スマートファルコン",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801046001,
+      801046002,
+      801046003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801046001,
+        801046002,
+        801046003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801046001,
+        801046002,
+        801046003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10040,
+    "card_name": "[速]成田大进",
+    "chara_id": 1050,
+    "chara_name": "ナリタタイシン",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801050001,
+      801050002,
+      801050003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801050001,
+        801050002,
+        801050003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801050001,
+        801050002,
+        801050003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10041,
+    "card_name": "[速]西野花",
+    "chara_id": 1051,
+    "chara_name": "ニシノフラワー",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801051001,
+      801051002,
+      801051003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801051001,
+        801051002,
+        801051003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801051001,
+        801051002,
+        801051003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10042,
+    "card_name": "[速]微光飞驹",
+    "chara_id": 1054,
+    "chara_name": "ビコーペガサス",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801054001,
+      801054002,
+      801054003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801054001,
+        801054002,
+        801054003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801054001,
+        801054002,
+        801054003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10043,
+    "card_name": "[智]美丽周日",
+    "chara_id": 1055,
+    "chara_name": "マーベラスサンデー",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801055001,
+      801055002,
+      801055003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801055001,
+        801055002,
+        801055003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801055001,
+        801055002,
+        801055003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10044,
+    "card_name": "[智]待兼福来",
+    "chara_id": 1056,
+    "chara_name": "マチカネフクキタル",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801056001,
+      801056002,
+      801056003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801056001,
+        801056002,
+        801056003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801056001,
+        801056002,
+        801056003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10045,
+    "card_name": "[根]名将怒涛",
+    "chara_id": 1058,
+    "chara_name": "メイショウドトウ",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801058001,
+      801058002,
+      801058003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801058001,
+        801058002,
+        801058003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801058001,
+        801058002,
+        801058003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10046,
+    "card_name": "[智]目白多伯",
+    "chara_id": 1059,
+    "chara_name": "メジロドーベル",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801059001,
+      801059002,
+      801059003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801059001,
+        801059002,
+        801059003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801059001,
+        801059002,
+        801059003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10047,
+    "card_name": "[根]优秀素质",
+    "chara_id": 1060,
+    "chara_name": "ナイスネイチャ",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801060001,
+      801060002,
+      801060003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801060001,
+        801060002,
+        801060003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801060001,
+        801060002,
+        801060003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10048,
+    "card_name": "[速]圣王光环",
+    "chara_id": 1061,
+    "chara_name": "キングヘイロー",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801061001,
+      801061002,
+      801061003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801061001,
+        801061002,
+        801061003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801061001,
+        801061002,
+        801061003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10049,
+    "card_name": "[智]富士奇石",
+    "chara_id": 1005,
+    "chara_name": "フジキセキ",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801005001,
+      801005002,
+      801005003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801005001,
+        801005002,
+        801005003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801005001,
+        801005002,
+        801005003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10050,
+    "card_name": "[速]东商变革",
+    "chara_id": 1044,
+    "chara_name": "スイープトウショウ",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801044001,
+      801044002,
+      801044003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801044001,
+        801044002,
+        801044003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801044001,
+        801044002,
+        801044003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10051,
+    "card_name": "[速]双涡轮",
+    "chara_id": 1066,
+    "chara_name": "ツインターボ",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801066001,
+      801066002,
+      801066003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801066001,
+        801066002,
+        801066003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801066001,
+        801066002,
+        801066003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10052,
+    "card_name": "[力]大拓太阳神",
+    "chara_id": 1065,
+    "chara_name": "ダイタクヘリオス",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801065001,
+      801065002,
+      801065003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801065001,
+        801065002,
+        801065003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801065001,
+        801065002,
+        801065003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10053,
+    "card_name": "[智]生野狄杜斯",
+    "chara_id": 1063,
+    "chara_name": "イクノディクタス",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801063001,
+      801063002,
+      801063003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801063001,
+        801063002,
+        801063003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801063001,
+        801063002,
+        801063003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10054,
+    "card_name": "[根]目白善信",
+    "chara_id": 1064,
+    "chara_name": "メジロパーマー",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801064001,
+      801064002,
+      801064003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801064001,
+        801064002,
+        801064003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801064001,
+        801064002,
+        801064003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10055,
+    "card_name": "[速]北部玄驹",
+    "chara_id": 1068,
+    "chara_name": "キタサンブラック",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801068001,
+      801068002,
+      801068003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801068001,
+        801068002,
+        801068003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801068001,
+        801068002,
+        801068003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10056,
+    "card_name": "[耐]里见光钻",
+    "chara_id": 1067,
+    "chara_name": "サトノダイヤモンド",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801067001,
+      801067002,
+      801067003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801067001,
+        801067002,
+        801067003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801067001,
+        801067002,
+        801067003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10057,
+    "card_name": "[根]待兼诗歌剧",
+    "chara_id": 1062,
+    "chara_name": "マチカネタンホイザ",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801062001,
+      801062002,
+      801062003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801062001,
+        801062002,
+        801062003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801062001,
+        801062002,
+        801062003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10058,
+    "card_name": "[力]八重无敌",
+    "chara_id": 1072,
+    "chara_name": "ヤエノムテキ",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801072001,
+      801072002,
+      801072003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801072001,
+        801072002,
+        801072003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801072001,
+        801072002,
+        801072003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10059,
+    "card_name": "[耐]荒漠英雄",
+    "chara_id": 1047,
+    "chara_name": "ゼンノロブロイ",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801047001,
+      801047002,
+      801047003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801047001,
+        801047002,
+        801047003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801047001,
+        801047002,
+        801047003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10061,
+    "card_name": "[根]采珠",
+    "chara_id": 1042,
+    "chara_name": "シーキングザパール",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801042001,
+      801042002,
+      801042003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801042001,
+        801042002,
+        801042003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801042001,
+        801042002,
+        801042003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10062,
+    "card_name": "[耐]樱花千代王",
+    "chara_id": 1069,
+    "chara_name": "サクラチヨノオー",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801069001,
+      801069002,
+      801069003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801069001,
+        801069002,
+        801069003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801069001,
+        801069002,
+        801069003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10063,
+    "card_name": "[速]川上公主",
+    "chara_id": 1039,
+    "chara_name": "カワカミプリンセス",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801039001,
+      801039002,
+      801039003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801039001,
+        801039002,
+        801039003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801039001,
+        801039002,
+        801039003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10064,
+    "card_name": "[根]菱曙",
+    "chara_id": 1028,
+    "chara_name": "ヒシアケボノ",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801028001,
+      801028002,
+      801028003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801028001,
+        801028002,
+        801028003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801028001,
+        801028002,
+        801028003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10065,
+    "card_name": "[力]青竹回忆",
+    "chara_id": 1053,
+    "chara_name": "バンブーメモリー",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801053001,
+      801053002,
+      801053003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801053001,
+        801053002,
+        801053003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801053001,
+        801053002,
+        801053003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10066,
+    "card_name": "[速]新光风",
+    "chara_id": 1043,
+    "chara_name": "シンコウウインディ",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801043001,
+      801043002,
+      801043003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801043001,
+        801043002,
+        801043003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801043001,
+        801043002,
+        801043003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10067,
+    "card_name": "[耐]中山庆典",
+    "chara_id": 1049,
+    "chara_name": "ナカヤマフェスタ",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801049001,
+      801049002,
+      801049003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801049001,
+        801049002,
+        801049003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801049001,
+        801049002,
+        801049003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10068,
+    "card_name": "[力]稻荷一",
+    "chara_id": 1034,
+    "chara_name": "イナリワン",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801034001,
+      801034002,
+      801034003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801034001,
+        801034002,
+        801034003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801034001,
+        801034002,
+        801034003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10069,
+    "card_name": "[智]目白阿尔丹",
+    "chara_id": 1071,
+    "chara_name": "メジロアルダン",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801071001,
+      801071002,
+      801071003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801071001,
+        801071002,
+        801071003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801071001,
+        801071002,
+        801071003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10070,
+    "card_name": "[耐]东瀛佐敦",
+    "chara_id": 1048,
+    "chara_name": "トーセンジョーダン",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801048001,
+      801048002,
+      801048003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801048001,
+        801048002,
+        801048003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801048001,
+        801048002,
+        801048003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10071,
+    "card_name": "[根]天狼星象征",
+    "chara_id": 1070,
+    "chara_name": "シリウスシンボリ",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801070001,
+      801070002,
+      801070003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801070001,
+        801070002,
+        801070003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801070001,
+        801070002,
+        801070003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10072,
+    "card_name": "[速]成田白仁",
+    "chara_id": 1016,
+    "chara_name": "ナリタブライアン",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801016001,
+      801016002,
+      801016003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801016001,
+        801016002,
+        801016003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801016001,
+        801016002,
+        801016003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10073,
+    "card_name": "[智]真机伶",
+    "chara_id": 1038,
+    "chara_name": "カレンチャン",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801038001,
+      801038002,
+      801038003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801038001,
+        801038002,
+        801038003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801038001,
+        801038002,
+        801038003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10075,
+    "card_name": "[力]爱慕织姬",
+    "chara_id": 1033,
+    "chara_name": "アドマイヤベガ",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801033001,
+      801033002,
+      801033003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801033001,
+        801033002,
+        801033003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801033001,
+        801033002,
+        801033003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10076,
+    "card_name": "[耐]目白光明",
+    "chara_id": 1074,
+    "chara_name": "メジロブライト",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801074001,
+      801074002,
+      801074003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801074001,
+        801074002,
+        801074003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801074001,
+        801074002,
+        801074003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10077,
+    "card_name": "[速]成田路",
+    "chara_id": 1077,
+    "chara_name": "ナリタトップロード",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801077001,
+      801077002,
+      801077003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801077001,
+        801077002,
+        801077003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801077001,
+        801077002,
+        801077003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10078,
+    "card_name": "[智]千明代表",
+    "chara_id": 1057,
+    "chara_name": "ミスターシービー",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801057001,
+      801057002,
+      801057003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801057001,
+        801057002,
+        801057003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801057001,
+        801057002,
+        801057003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10079,
+    "card_name": "[力]第一红宝石",
+    "chara_id": 1085,
+    "chara_name": "ダイイチルビー",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801085001,
+      801085002,
+      801085003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801085001,
+        801085002,
+        801085003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801085001,
+        801085002,
+        801085003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10080,
+    "card_name": "[根]凯斯奇迹",
+    "chara_id": 1093,
+    "chara_name": "ケイエスミラクル",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801093001,
+      801093002,
+      801093003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801093001,
+        801093002,
+        801093003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801093001,
+        801093002,
+        801093003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10081,
+    "card_name": "[根]鹤丸刚志",
+    "chara_id": 1073,
+    "chara_name": "ツルマルツヨシ",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801073001,
+      801073002,
+      801073003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801073001,
+        801073002,
+        801073003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801073001,
+        801073002,
+        801073003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10082,
+    "card_name": "[耐]吉兆",
+    "chara_id": 1083,
+    "chara_name": "シンボリクリスエス",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801083001,
+      801083002,
+      801083003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801083001,
+        801083002,
+        801083003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801083001,
+        801083002,
+        801083003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10084,
+    "card_name": "[力]谷野美酒",
+    "chara_id": 1084,
+    "chara_name": "タニノギムレット",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801084001,
+      801084002,
+      801084003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801084001,
+        801084002,
+        801084003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801084001,
+        801084002,
+        801084003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10085,
+    "card_name": "[耐]樱花桂冠",
+    "chara_id": 1076,
+    "chara_name": "サクラローレル",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801076001,
+      801076002,
+      801076003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801076001,
+        801076002,
+        801076003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801076001,
+        801076002,
+        801076003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10086,
+    "card_name": "[根]也文摄辉",
+    "chara_id": 1078,
+    "chara_name": "ヤマニンゼファー",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801078001,
+      801078002,
+      801078003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801078001,
+        801078002,
+        801078003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801078001,
+        801078002,
+        801078003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10087,
+    "card_name": "[速]真弓快车",
+    "chara_id": 1087,
+    "chara_name": "アストンマーチャン",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801087001,
+      801087002,
+      801087003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801087001,
+        801087002,
+        801087003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801087001,
+        801087002,
+        801087003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10088,
+    "card_name": "[智]目白高峰",
+    "chara_id": 1086,
+    "chara_name": "メジロラモーヌ",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801086001,
+      801086002,
+      801086003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801086001,
+        801086002,
+        801086003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801086001,
+        801086002,
+        801086003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10089,
+    "card_name": "[速]森林宝穴",
+    "chara_id": 1094,
+    "chara_name": "ジャングルポケット",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801094001,
+      801094002,
+      801094003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801094001,
+        801094002,
+        801094003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801094001,
+        801094002,
+        801094003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10090,
+    "card_name": "[耐]北港火山",
+    "chara_id": 1099,
+    "chara_name": "ホッコータルマエ",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801099001,
+      801099002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801099001,
+        801099002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801099001,
+        801099002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10091,
+    "card_name": "[速]葛城王牌",
+    "chara_id": 1104,
+    "chara_name": "カツラギエース",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801104001,
+      801104002,
+      801104003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801104001,
+        801104002,
+        801104003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801104001,
+        801104002,
+        801104003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10092,
+    "card_name": "[根]小林历奇",
+    "chara_id": 1098,
+    "chara_name": "コパノリッキー",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801098001,
+      801098002,
+      801098003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801098001,
+        801098002,
+        801098003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801098001,
+        801098002,
+        801098003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10093,
+    "card_name": "[力]奇锐骏",
+    "chara_id": 1100,
+    "chara_name": "ワンダーアキュート",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 3,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801100001,
+      801100002,
+      801100003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801100001,
+        801100002,
+        801100003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801100001,
+        801100002,
+        801100003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10095,
+    "card_name": "[根]跳舞城",
+    "chara_id": 1107,
+    "chara_name": "タップダンスシチー",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801107001,
+      801107002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801107001,
+        801107002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801107001,
+        801107002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10096,
+    "card_name": "",
+    "chara_id": 1097,
+    "chara_name": "スティルインラブ",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801097001,
+      801097002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801097001,
+        801097002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801097001,
+        801097002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10097,
+    "card_name": "[根]极峰",
+    "chara_id": 1090,
+    "chara_name": "ヴィルシーナ",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801090001,
+      801090002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801090001,
+        801090002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801090001,
+        801090002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10098,
+    "card_name": "[耐]万籁争鸣",
+    "chara_id": 1102,
+    "chara_name": "サウンズオブアース",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801102001,
+      801102002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801102001,
+        801102002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801102001,
+        801102002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10099,
+    "card_name": "[根]强击",
+    "chara_id": 1091,
+    "chara_name": "ヴィブロス",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801091001,
+      801091002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801091001,
+        801091002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801091001,
+        801091002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10100,
+    "card_name": "[力]莱斯莱斯",
+    "chara_id": 1103,
+    "chara_name": "ロイスアンドロイス",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801103001,
+      801103002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801103001,
+        801103002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801103001,
+        801103002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10101,
+    "card_name": "[速]大鸣大放",
+    "chara_id": 1108,
+    "chara_name": "ドゥラメンテ",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801108001,
+      801108002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801108001,
+        801108002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801108001,
+        801108002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10102,
+    "card_name": "[智]北方飞翔",
+    "chara_id": 1082,
+    "chara_name": "ノースフライト",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801082001,
+      801082002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801082001,
+        801082002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801082001,
+        801082002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10103,
+    "card_name": "[根]黄金巨匠",
+    "chara_id": 1115,
+    "chara_name": "オルフェーヴル",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801115001,
+      801115002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801115001,
+        801115002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801115001,
+        801115002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10105,
+    "card_name": "[耐]高尚骏逸",
+    "chara_id": 1089,
+    "chara_name": "シュヴァルグラン",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801089001,
+      801089002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801089001,
+        801089002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801089001,
+        801089002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10106,
+    "card_name": "",
+    "chara_id": 1105,
+    "chara_name": "ネオユニヴァース",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801105001,
+      801105002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801105001,
+        801105002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801105001,
+        801105002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10107,
+    "card_name": "",
+    "chara_id": 1106,
+    "chara_name": "ヒシミラクル",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801106001,
+      801106002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801106001,
+        801106002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801106001,
+        801106002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10108,
+    "card_name": "",
+    "chara_id": 1092,
+    "chara_name": "ダンツフレーム",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801092001,
+      801092002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801092001,
+        801092002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801092001,
+        801092002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10110,
+    "card_name": "",
+    "chara_id": 1081,
+    "chara_name": "エスポワールシチー",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801081001,
+      801081002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801081001,
+        801081002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801081001,
+        801081002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10111,
+    "card_name": "",
+    "chara_id": 1124,
+    "chara_name": "バブルガムフェロー",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801124001,
+      801124002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801124001,
+        801124002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801124001,
+        801124002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10113,
+    "card_name": "[速]贵妇人",
+    "chara_id": 1116,
+    "chara_name": "ジェンティルドンナ",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801116001,
+      801116002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801116001,
+        801116002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801116001,
+        801116002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10114,
+    "card_name": "[根]莱茵力量",
+    "chara_id": 1109,
+    "chara_name": "ラインクラフト",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801109001,
+      801109002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801109001,
+        801109002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801109001,
+        801109002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10115,
+    "card_name": "",
+    "chara_id": 1110,
+    "chara_name": "シーザリオ",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801110001,
+      801110002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801110001,
+        801110002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801110001,
+        801110002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10116,
+    "card_name": "",
+    "chara_id": 1128,
+    "chara_name": "ブラストワンピース",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801128001,
+      801128002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801128001,
+        801128002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801128001,
+        801128002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10117,
+    "card_name": "",
+    "chara_id": 1096,
+    "chara_name": "ノーリーズン",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801096001,
+      801096002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801096001,
+        801096002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801096001,
+        801096002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10118,
+    "card_name": "",
+    "chara_id": 1114,
+    "chara_name": "ブエナビスタ",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801114001,
+      801114002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801114001,
+        801114002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801114001,
+        801114002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10119,
+    "card_name": "",
+    "chara_id": 1119,
+    "chara_name": "ドリームジャーニー",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801119001,
+      801119002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801119001,
+        801119002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801119001,
+        801119002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10120,
+    "card_name": "",
+    "chara_id": 1075,
+    "chara_name": "デアリングタクト",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801075001,
+      801075002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801075001,
+        801075002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801075001,
+        801075002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10121,
+    "card_name": "",
+    "chara_id": 1112,
+    "chara_name": "デアリングハート",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801112001,
+      801112002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801112001,
+        801112002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801112001,
+        801112002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10122,
+    "card_name": "",
+    "chara_id": 1129,
+    "chara_name": "アーモンドアイ",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801129001,
+      801129002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801129001,
+        801129002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801129001,
+        801129002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10123,
+    "card_name": "",
+    "chara_id": 1130,
+    "chara_name": "ラッキーライラック",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801130001,
+      801130002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801130001,
+        801130002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801130001,
+        801130002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10124,
+    "card_name": "",
+    "chara_id": 1131,
+    "chara_name": "グランアレグリア",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801131001,
+      801131002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801131001,
+        801131002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801131001,
+        801131002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10125,
+    "card_name": "",
+    "chara_id": 1080,
+    "chara_name": "トランセンド",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801080001,
+      801080002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801080001,
+        801080002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801080001,
+        801080002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10126,
+    "card_name": "",
+    "chara_id": 1134,
+    "chara_name": "カレンブーケドール",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801134001,
+      801134002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801134001,
+        801134002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801134001,
+        801134002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10127,
+    "card_name": "",
+    "chara_id": 1111,
+    "chara_name": "エアメサイア",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801111001,
+      801111002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801111001,
+        801111002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801111001,
+        801111002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10129,
+    "card_name": "",
+    "chara_id": 1113,
+    "chara_name": "フサイチパンドラ",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801113001,
+      801113002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801113001,
+        801113002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801113001,
+        801113002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10131,
+    "card_name": "",
+    "chara_id": 1117,
+    "chara_name": "ウインバリアシオン",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801117001,
+      801117002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801117001,
+        801117002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801117001,
+        801117002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10132,
+    "card_name": "",
+    "chara_id": 1135,
+    "chara_name": "ステイゴールド",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801135001,
+      801135002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801135001,
+        801135002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801135001,
+        801135002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10133,
+    "card_name": "",
+    "chara_id": 1118,
+    "chara_name": "アドマイヤグルーヴ",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801118001,
+      801118002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801118001,
+        801118002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801118001,
+        801118002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10134,
+    "card_name": "",
+    "chara_id": 1133,
+    "chara_name": "クロノジェネシス",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801133001,
+      801133002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801133001,
+        801133002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801133001,
+        801133002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10135,
+    "card_name": "",
+    "chara_id": 1120,
+    "chara_name": "カルストンライトオ",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801120001,
+      801120002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801120001,
+        801120002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801120001,
+        801120002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10136,
+    "card_name": "",
+    "chara_id": 1121,
+    "chara_name": "デュランダル",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801121001,
+      801121002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801121001,
+        801121002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801121001,
+        801121002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10137,
+    "card_name": "",
+    "chara_id": 1126,
+    "chara_name": "サクラチトセオー",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801126001,
+      801126002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801126001,
+        801126002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801126001,
+        801126002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10139,
+    "card_name": "",
+    "chara_id": 1127,
+    "chara_name": "フェノーメノ",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801127001,
+      801127002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801127001,
+        801127002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801127001,
+        801127002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10140,
+    "card_name": "",
+    "chara_id": 1138,
+    "chara_name": "フォーエバーヤング",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801138001,
+      801138002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801138001,
+        801138002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801138001,
+        801138002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10142,
+    "card_name": "",
+    "chara_id": 1136,
+    "chara_name": "レッドディザイア",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801136001,
+      801136002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801136001,
+        801136002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801136001,
+        801136002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10143,
+    "card_name": "",
+    "chara_id": 1143,
+    "chara_name": "ヴィクトワールピサ",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801143001,
+      801143002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801143001,
+        801143002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801143001,
+        801143002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 10144,
+    "card_name": "",
+    "chara_id": 1140,
+    "chara_name": "マルシュロレーヌ",
+    "rarity": 1,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 2,
+    "declared_stages": 0,
+    "max_stage": 0,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      801140001,
+      801140002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801140001,
+        801140002
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801140001,
+        801140002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  }
+]

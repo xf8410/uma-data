@@ -1,0 +1,139 @@
+================================================================================
+支援卡事件原始数据查找任务 — 完整报告
+日期: 2026-07-21
+================================================================================
+
+一、已完成的任务
+============================================================
+
+1. 全541张卡事件链目录 (MDB硬证据)
+   文件: all_cards_catalog.json (541张)
+   文件: card_chain_summary.txt (简明表)
+   
+   按段数分类:
+   - 0段(无事件/仅外出): 131张
+   - 1段: 7张
+   - 2段: 102张
+   - 3段: 280张
+   - 5段友人卡: 21张
+   
+   按挂载方式:
+   - card+chara_shared: 400张
+   - chara_shared: 139张
+   - card_direct: 2张
+
+2. 目标14个Story ID的MDB数据 + 标题
+   文件: target_stories/story_{story_id}.json (14个文件)
+   文件: target_stories/all_target_stories.json (汇总)
+   
+   全部14个标题已从text_data category=181直接提取:
+   830264001: "木漏れ日"をまとって
+   830264002: Over 17 Lights
+   830264003: 新しい旅へ
+   830277001: 火種：静かにくすぶる
+   830277002: 発火：熱を帯びて
+   830277003: 火炎：夢焦がれ
+   830289001: Young & Unstoppable
+   830289002: Only Thing That Matters
+   830289003: Dreams are Forever
+   809002005: 提案ッ！まずはご褒美を！
+   809002006: 堪能ッ！もふもふモーモー！
+   809002007: 記憶ッ！蘇るはあの日のこと
+   809002008: 邂逅ッ！同じ空の下で
+   830207001: 展望ッ！これからのわたしと君と
+
+3. 事件Schema + 证据级别
+   文件: event_schema_with_evidence.json
+
+4. 敏感性分析框架
+   文件: sensitivity_analysis_framework.json
+
+5. 一致性测试规则
+   文件: consistency_tests.json
+
+
+二、关键发现
+============================================================
+
+1. 选项奖励数据是服务端动态获取的
+   IL2CPP中存在14个剧本的 GetChoiceRewardResponse 类:
+   - SingleModeGetChoiceRewardResponse (通用)
+   - SingleModeCookGetChoiceRewardResponse (料理杯)
+   - SingleModeRamenGetChoiceRewardResponse (拉面杯)
+   - ... 每个剧本一个
+   
+   对应API端点:
+   - single_mode/get_choice_reward
+   - single_mode_cook/get_choice_reward
+   - single_mode_ramen/get_choice_reward
+   - ... 每个剧本一个
+   
+   结论: 选项奖励数据不在客户端本地资源中，
+         必须通过代理抓包或内存转储获取。
+
+2. MDB中的关联表
+   - single_mode_story_data: story_id ↔ support_card_id/support_chara_id
+   - single_mode_conclusion_set: story_id → conclusion_id
+   - single_mode_story_root: 事件前置条件(condition_story_id_1/2/3)
+   - single_mode_story_condition_set: 事件条件组
+   - single_mode_event_choice_reward: 奖励显示类型(仅58行，通用模板)
+   
+   MDB不包含: 选项文本、具体奖励值、成功概率
+
+3. Story AssetBundle
+   - 资源路径格式: 疑似 Story/{story_id}/  (从IL2CPP资源路径推断)
+   - 未在APK预装资源中找到
+   - 可能在游戏启动后下载的AssetBundle中
+   - 需要资源Manifest/哈希映射才能定位
+
+
+三、6个未知判定的当前状态
+============================================================
+
+全部6项: evidence = unknown
+
+1. 30277 美浦波旁 火種：静かにくすぶる 的高/低档判定
+   → 需要get_choice_reward响应或Story AssetBundle
+
+2. 30264 Stay Gold 新しい旅へ 两个选项的成功/大成功判定
+   → 需要get_choice_reward响应或Story AssetBundle
+
+3. 30289 青春永驻 Dreams are Forever 两条分支的成功/大成功判定
+   → 需要get_choice_reward响应或Story AssetBundle
+
+4. 30207 理事长 展望ッ！これからのわたしと君と 的高/低档判定
+   → 需要get_choice_reward响应或Story AssetBundle
+
+
+四、必须等外部输入的部分
+============================================================
+
+以下数据无法从MDB/IL2CPP/APK中获取:
+- 全541张卡的完整选项文本
+- 每张卡给什么事件技能
+- 主动断金/失败断链的真实脚本标记
+- 6项成功/大成功判定或概率
+- 服务端选择奖励响应的完整字段值
+
+至少需要以下一种输入:
+1. 下载后的Story AssetBundle
+2. 游戏资源Manifest及哈希映射
+3. get_choice_reward类接口响应(代理抓包)
+4. 包含目标事件的实际训练响应/内存转储
+
+
+五、证据来源边界
+============================================================
+
+本报告中的数据来源:
+- mdb_relation: story_id关联、段数、挂载方式、conclusion_set
+- direct_extract: 事件标题(text_data category=181)
+- binary_inference: API端点路径、Response类名(IL2CPP strings)
+- unknown: 选项文本、奖励值、概率、成功条件
+
+没有使用:
+- 攻略网页
+- 搜索引擎摘要
+- Wiki搬运
+- 经验猜概率
+================================================================================

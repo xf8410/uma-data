@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "description": "支援卡事件树Schema — 证据级别标注",
+  "evidence_levels": {
+    "direct_extract": "原始资源/响应直接证明",
+    "binary_inference": "客户端二进制推断",
+    "mdb_relation": "MDB只证明关联和阶段",
+    "legacy_web_unverified": "历史网页整理，未验证",
+    "unknown": "尚无硬证据"
+  },
+  "fields": {
+    "story_id": {
+      "evidence": "mdb_relation",
+      "source": "single_mode_story_data.story_id"
+    },
+    "title": {
+      "evidence": "direct_extract",
+      "source": "text_data category=181"
+    },
+    "current_stage": {
+      "evidence": "mdb_relation",
+      "source": "show_progress_1"
+    },
+    "total_stages": {
+      "evidence": "mdb_relation",
+      "source": "show_progress_2"
+    },
+    "support_card_id": {
+      "evidence": "mdb_relation",
+      "source": "single_mode_story_data.support_card_id"
+    },
+    "support_chara_id": {
+      "evidence": "mdb_relation",
+      "source": "single_mode_story_data.support_chara_id"
+    },
+    "conclusion_set": {
+      "evidence": "mdb_relation",
+      "source": "single_mode_conclusion_set"
+    },
+    "choices": {
+      "evidence": "unknown",
+      "source": "需要服务器响应或AssetBundle"
+    },
+    "choice_text": {
+      "evidence": "unknown",
+      "source": "需要Story AssetBundle"
+    },
+    "rewards": {
+      "evidence": "unknown",
+      "source": "需要get_choice_reward API响应"
+    },
+    "probability": {
+      "evidence": "unknown",
+      "source": "服务端抽选，客户端不可见"
+    },
+    "success_condition": {
+      "evidence": "unknown",
+      "source": "服务端判定"
+    },
+    "next_story_id": {
+      "evidence": "unknown",
+      "source": "服务端控制"
+    }
+  },
+  "server_api": {
+    "endpoint": "single_mode/get_choice_reward",
+    "all_scenarios": [
+      "single_mode/get_choice_reward",
+      "single_mode_arc/get_choice_reward",
+      "single_mode_breeders/get_choice_reward",
+      "single_mode_cook/get_choice_reward",
+      "single_mode_free/get_choice_reward",
+      "single_mode_legend/get_choice_reward",
+      "single_mode_live/get_choice_reward",
+      "single_mode_mecha/get_choice_reward",
+      "single_mode_onsen/get_choice_reward",
+      "single_mode_pioneer/get_choice_reward",
+      "single_mode_ramen/get_choice_reward",
+      "single_mode_sport/get_choice_reward",
+      "single_mode_team/get_choice_reward",
+      "single_mode_venus/get_choice_reward"
+    ],
+    "response_classes": [
+      "SingleModeGetChoiceRewardResponse",
+      "SingleModeCookGetChoiceRewardResponse",
+      "SingleModeRamenGetChoiceRewardResponse",
+      "SingleModeArcGetChoiceRewardResponse",
+      "SingleModeBreedersGetChoiceRewardResponse",
+      "SingleModeFreeGetChoiceRewardResponse",
+      "SingleModeLegendGetChoiceRewardResponse",
+      "SingleModeLiveGetChoiceRewardResponse",
+      "SingleModeMechaGetChoiceRewardResponse",
+      "SingleModeOnsenGetChoiceRewardResponse",
+      "SingleModePioneerGetChoiceRewardResponse",
+      "SingleModeSportGetChoiceRewardResponse",
+      "SingleModeTeamGetChoiceRewardResponse",
+      "SingleModeVenusGetChoiceRewardResponse"
+    ],
+    "client_classes": [
+      "SingleModeChoiceRewardInfo",
+      "MasterSingleModeEventChoiceReward",
+      "SingleModeStoryChoiceRewardUI",
+      "RecommendGainParameterVO"
+    ],
+    "note": "选项奖励数据通过服务器API动态获取，不在客户端本地资源中。需要代理抓包或内存转储才能获取。"
+  }
+}

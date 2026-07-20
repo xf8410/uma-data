@@ -1,0 +1,45 @@
+{
+  "description": "自动一致性测试规则",
+  "rules": [
+    {
+      "id": "chain_continuity",
+      "rule": "每条进度链必须从1连续到总段数",
+      "check": "progress 1,2,...,total_stages"
+    },
+    {
+      "id": "no_duplicate_story",
+      "rule": "同Story重复MDB行不算分支",
+      "check": "DISTINCT story_id"
+    },
+    {
+      "id": "multi_story_per_stage",
+      "rule": "同阶段多个不同Story必须保留为互斥/未知入口",
+      "check": "len(stories_by_stage[stage]) > 1"
+    },
+    {
+      "id": "friend_shared_no_repeat",
+      "rule": "友人共享链不能重复执行",
+      "check": "chara_shared stories deduplicated"
+    },
+    {
+      "id": "card_chara_no_merge",
+      "rule": "卡ID直连事件与角色共享事件不能错误合并",
+      "check": "card_direct + chara_shared = union, not intersection"
+    },
+    {
+      "id": "story_id_in_mdb",
+      "rule": "所有Story ID必须能反查MDB",
+      "check": "SELECT FROM single_mode_story_data WHERE story_id=?"
+    },
+    {
+      "id": "unknown_reward_blocks_sim",
+      "rule": "未知奖励和概率必须阻止真实模拟",
+      "check": "evidence_level == 'unknown' → skip in simulation"
+    },
+    {
+      "id": "unknown_prob_blocks_expected",
+      "rule": "未知概率必须阻止期望值计算",
+      "check": "evidence_level == 'unknown' → use sensitivity mode"
+    }
+  ]
+}

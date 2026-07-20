@@ -1,0 +1,213 @@
+[
+  {
+    "card_id": 30207,
+    "card_name": "",
+    "chara_id": 9002,
+    "chara_name": "秋川理事長",
+    "rarity": 3,
+    "command_type": 0,
+    "support_card_type": 2,
+    "outing_max": 5,
+    "story_count": 15,
+    "declared_stages": 5,
+    "max_stage": 5,
+    "mount_type": "chara_shared",
+    "story_ids": [
+      400006114,
+      400006115,
+      400006124,
+      809002001,
+      809002002,
+      809002003,
+      809002004,
+      809002009,
+      809002010,
+      809002011,
+      809002005,
+      809002006,
+      809002007,
+      809002008,
+      830207001
+    ],
+    "stories_by_stage": {
+      "0": [
+        400006114,
+        400006115,
+        400006124,
+        809002001,
+        809002002,
+        809002003,
+        809002004,
+        809002009,
+        809002010,
+        809002011
+      ],
+      "1": [
+        809002005
+      ],
+      "2": [
+        809002006
+      ],
+      "3": [
+        809002007
+      ],
+      "4": [
+        809002008
+      ],
+      "5": [
+        830207001
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        400006114,
+        400006115,
+        400006124,
+        809002001,
+        809002002,
+        809002003,
+        809002004,
+        809002009,
+        809002010,
+        809002011
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 30264,
+    "card_name": "",
+    "chara_id": 1135,
+    "chara_name": "ステイゴールド",
+    "rarity": 3,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 5,
+    "declared_stages": 3,
+    "max_stage": 3,
+    "mount_type": "card+chara_shared",
+    "story_ids": [
+      830264001,
+      830264002,
+      830264003,
+      801135001,
+      801135002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801135001,
+        801135002
+      ],
+      "1": [
+        830264001
+      ],
+      "2": [
+        830264002
+      ],
+      "3": [
+        830264003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801135001,
+        801135002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 30277,
+    "card_name": "",
+    "chara_id": 1026,
+    "chara_name": "ミホノブルボン",
+    "rarity": 3,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 6,
+    "declared_stages": 3,
+    "max_stage": 3,
+    "mount_type": "card+chara_shared",
+    "story_ids": [
+      830277001,
+      830277002,
+      830277003,
+      801026001,
+      801026002,
+      801026003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801026001,
+        801026002,
+        801026003
+      ],
+      "1": [
+        830277001
+      ],
+      "2": [
+        830277002
+      ],
+      "3": [
+        830277003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801026001,
+        801026002,
+        801026003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 30289,
+    "card_name": "",
+    "chara_id": 1138,
+    "chara_name": "フォーエバーヤング",
+    "rarity": 3,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 5,
+    "declared_stages": 3,
+    "max_stage": 3,
+    "mount_type": "card+chara_shared",
+    "story_ids": [
+      830289001,
+      830289002,
+      830289003,
+      801138001,
+      801138002
+    ],
+    "stories_by_stage": {
+      "0": [
+        801138001,
+        801138002
+      ],
+      "1": [
+        830289001
+      ],
+      "2": [
+        830289002
+      ],
+      "3": [
+        830289003
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801138001,
+        801138002
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  }
+]

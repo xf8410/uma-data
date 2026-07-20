@@ -1,0 +1,329 @@
+[
+  {
+    "card_id": 30081,
+    "card_name": "[团]团队＜天狼星＞",
+    "chara_id": 1001,
+    "chara_name": "スペシャルウィーク",
+    "rarity": 3,
+    "command_type": 0,
+    "support_card_type": 3,
+    "outing_max": 1,
+    "story_count": 21,
+    "declared_stages": 1,
+    "max_stage": 1,
+    "mount_type": "card+chara_shared",
+    "story_ids": [
+      400006114,
+      400006116,
+      830081001,
+      830081002,
+      830081002,
+      830081003,
+      830081003,
+      830081004,
+      830081021,
+      830081022,
+      830081023,
+      801001001,
+      801001002,
+      801001003,
+      830081005,
+      830081006,
+      830081007,
+      830081008,
+      830081009,
+      830081010,
+      830081020
+    ],
+    "stories_by_stage": {
+      "0": [
+        400006114,
+        400006116,
+        830081001,
+        830081002,
+        830081002,
+        830081003,
+        830081003,
+        830081004,
+        830081021,
+        830081022,
+        830081023,
+        801001001,
+        801001002,
+        801001003
+      ],
+      "1": [
+        830081005,
+        830081006,
+        830081007,
+        830081008,
+        830081009,
+        830081010,
+        830081020
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        400006114,
+        400006116,
+        830081001,
+        830081002,
+        830081002,
+        830081003,
+        830081003,
+        830081004,
+        830081021,
+        830081022,
+        830081023,
+        801001001,
+        801001002,
+        801001003
+      ],
+      "1": [
+        830081005,
+        830081006,
+        830081007,
+        830081008,
+        830081009,
+        830081010,
+        830081020
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 30244,
+    "card_name": "",
+    "chara_id": 1074,
+    "chara_name": "メジロブライト",
+    "rarity": 3,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 4,
+    "declared_stages": 1,
+    "max_stage": 1,
+    "mount_type": "card+chara_shared",
+    "story_ids": [
+      830244001,
+      801074001,
+      801074002,
+      801074003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801074001,
+        801074002,
+        801074003
+      ],
+      "1": [
+        830244001
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801074001,
+        801074002,
+        801074003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 30258,
+    "card_name": "",
+    "chara_id": 1027,
+    "chara_name": "メジロライアン",
+    "rarity": 3,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 4,
+    "declared_stages": 1,
+    "max_stage": 1,
+    "mount_type": "card+chara_shared",
+    "story_ids": [
+      830258001,
+      801027001,
+      801027002,
+      801027003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801027001,
+        801027002,
+        801027003
+      ],
+      "1": [
+        830258001
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801027001,
+        801027002,
+        801027003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 30270,
+    "card_name": "",
+    "chara_id": 1085,
+    "chara_name": "ダイイチルビー",
+    "rarity": 3,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 4,
+    "declared_stages": 1,
+    "max_stage": 1,
+    "mount_type": "card+chara_shared",
+    "story_ids": [
+      830270001,
+      801085001,
+      801085002,
+      801085003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801085001,
+        801085002,
+        801085003
+      ],
+      "1": [
+        830270001
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801085001,
+        801085002,
+        801085003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 30271,
+    "card_name": "",
+    "chara_id": 1005,
+    "chara_name": "フジキセキ",
+    "rarity": 3,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 4,
+    "declared_stages": 1,
+    "max_stage": 1,
+    "mount_type": "card+chara_shared",
+    "story_ids": [
+      830271001,
+      801005001,
+      801005002,
+      801005003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801005001,
+        801005002,
+        801005003
+      ],
+      "1": [
+        830271001
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801005001,
+        801005002,
+        801005003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 30286,
+    "card_name": "",
+    "chara_id": 1056,
+    "chara_name": "マチカネフクキタル",
+    "rarity": 3,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 4,
+    "declared_stages": 1,
+    "max_stage": 1,
+    "mount_type": "card+chara_shared",
+    "story_ids": [
+      830286001,
+      801056001,
+      801056002,
+      801056003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801056001,
+        801056002,
+        801056003
+      ],
+      "1": [
+        830286001
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801056001,
+        801056002,
+        801056003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  },
+  {
+    "card_id": 30300,
+    "card_name": "",
+    "chara_id": 1069,
+    "chara_name": "サクラチヨノオー",
+    "rarity": 3,
+    "command_type": 1,
+    "support_card_type": 1,
+    "outing_max": 0,
+    "story_count": 4,
+    "declared_stages": 1,
+    "max_stage": 1,
+    "mount_type": "card+chara_shared",
+    "story_ids": [
+      830300001,
+      801069001,
+      801069002,
+      801069003
+    ],
+    "stories_by_stage": {
+      "0": [
+        801069001,
+        801069002,
+        801069003
+      ],
+      "1": [
+        830300001
+      ]
+    },
+    "has_multi_story_per_stage": true,
+    "multi_story_stages": {
+      "0": [
+        801069001,
+        801069002,
+        801069003
+      ]
+    },
+    "evidence_level": "mdb_relation"
+  }
+]

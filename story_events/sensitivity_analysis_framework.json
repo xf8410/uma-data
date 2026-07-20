@@ -1,0 +1,65 @@
+{
+  "description": "未知概率敏感性分析框架 — 不猜概率，用显式参数",
+  "warning": "此框架输出必须标注'敏感性分析'，不能称实机期望",
+  "parameters": {
+    "p_bourbon_high": {
+      "card_id": 30277,
+      "story_id": 830277001,
+      "title": "火種：静かにくすぶる",
+      "description": "美浦波旁第1段 高/低档判定概率",
+      "default_low": 0.0,
+      "default_high": 1.0,
+      "evidence": "unknown"
+    },
+    "p_stay_gold_option1_great": {
+      "card_id": 30264,
+      "story_id": 830264003,
+      "title": "新しい旅へ",
+      "description": "Stay Gold第3段 选项1 大成功概率",
+      "default": 0.5,
+      "evidence": "unknown"
+    },
+    "p_stay_gold_option2_great": {
+      "card_id": 30264,
+      "story_id": 830264003,
+      "title": "新しい旅へ",
+      "description": "Stay Gold第3段 选项2 大成功概率",
+      "default": 0.5,
+      "evidence": "unknown"
+    },
+    "p_forever_young_innovation_great": {
+      "card_id": 30289,
+      "story_id": 830289003,
+      "title": "Dreams are Forever",
+      "description": "青春永驻第3段 Innovation分支 大成功概率",
+      "default": 0.5,
+      "evidence": "unknown"
+    },
+    "p_forever_young_roadmap_great": {
+      "card_id": 30289,
+      "story_id": 830289003,
+      "title": "Dreams are Forever",
+      "description": "青春永驻第3段 Roadmap分支 大成功概率",
+      "default": 0.5,
+      "evidence": "unknown"
+    },
+    "p_chairman_high": {
+      "card_id": 30207,
+      "story_id": 830207001,
+      "title": "展望ッ！これからのわたしと君と",
+      "description": "理事长第5段 高/低档判定概率",
+      "default_low": 0.0,
+      "default_high": 1.0,
+      "evidence": "unknown"
+    }
+  },
+  "analysis_modes": {
+    "all_low": "全低档下界 — 所有概率设为0",
+    "all_high": "全高档上界 — 所有概率设为1",
+    "single_sweep": "单参数0~1网格扫描，其余保持默认",
+    "scenario_combo": "多参数情景组合 — 指定每参数值",
+    "monte_carlo": "蒙特卡洛 — 每参数从分布采样"
+  },
+  "output_label": "敏感性分析结果 — 非实机期望值",
+  "blocked": "在模型机制完全通过前，不跑48×500"
+}
