@@ -91,7 +91,7 @@ def train(args):
     report={'scenario_id':8,'card_id':101101,'seed':args.seed,'whole_run_split':True,'train_games':args.games,'train_samples':len(x),'train_score':stats(train_scores),'validation_seeds':[val_seeds.start,val_seeds.stop-1],'random_baseline':stats(random_scores),'rule_baseline':stats(rule_scores),'model':stats(model_scores),'event_model':'explicit statistical generic and Grass Wonder channels'}
     torch.save({'state_dict':model.state_dict(),'input_dim':INPUT_N,'dish_dim':DISH_N,'main_dim':MAIN_N},out/'cook_model_state_dict.pt')
     dummy=torch.zeros(1,INPUT_N)
-    torch.onnx.export(model,dummy,out/'cook_model.onnx',input_names=['state'],output_names=['dish_logits','main_logits','value'],dynamic_axes={'state':{0:'batch'},'dish_logits':{0:'batch'},'main_logits':{0:'batch'},'value':{0:'batch'}},opset_version=17,external_data=False)
+    torch.onnx.export(model,dummy,out/'cook_model.onnx',input_names=['state'],output_names=['dish_logits','main_logits','value'],dynamic_axes={'state':{0:'batch'},'dish_logits':{0:'batch'},'main_logits':{0:'batch'},'value':{0:'batch'}},opset_version=17,external_data=False,dynamo=False)
     import onnxruntime as ort
     sess=ort.InferenceSession(str(out/'cook_model.onnx'),providers=['CPUExecutionProvider']); probe=np.random.default_rng(args.seed+9).normal(size=(7,INPUT_N)).astype('float32')
     with torch.no_grad():pt=[z.numpy() for z in model(torch.from_numpy(probe))]
