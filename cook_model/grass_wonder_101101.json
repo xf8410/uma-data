@@ -1,0 +1,16 @@
+{
+  "source": {
+    "repository": "https://github.com/xulai1001/UmaSimulator",
+    "branch": "cook",
+    "commit": "feac64066afc72916c1d2ac0286189331a7f36c8",
+    "path": "Scripts/export_uma/uma/101101-grass-wonder.json"
+  },
+  "scenario_id": 8,
+  "card_id": 101101,
+  "chara_id": 1011,
+  "name_zh": "[穿岩之蓝]草上飞",
+  "rarity": 5,
+  "initial_status": [118, 91, 129, 96, 116],
+  "growth_rate_percent": [20, 0, 10, 0, 0],
+  "target_race_turns": [11, 22, 33, 45, 47, 59, 66, 71]
+}

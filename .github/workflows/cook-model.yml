@@ -1,0 +1,69 @@
+name: Cook model rebuild
+
+on:
+  push:
+    paths:
+      - 'cook_model/**'
+      - '.github/workflows/cook-model.yml'
+  workflow_dispatch:
+    inputs:
+      train:
+        description: 'Run full model training and export'
+        required: false
+        default: true
+        type: boolean
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Simulator tests
+        run: python -m unittest discover -s cook_model/tests -v
+      - name: Syntax and config checks
+        run: |
+          python -m py_compile cook_model/simulator.py cook_model/train.py
+          python - <<'PY'
+          import json
+          d=json.load(open('cook_model/grass_wonder_101101.json',encoding='utf-8'))
+          assert d['scenario_id']==8 and d['card_id']==101101 and d['rarity']==5
+          PY
+
+  train:
+    if: github.event_name == 'workflow_dispatch' && inputs.train
+    needs: test
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - name: Install CPU training and validation dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install numpy onnx onnxruntime
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+      - name: Train on whole-run split and validate ONNX
+        run: python cook_model/train.py --games 2000 --validation-games 200 --epochs 20 --output cook_model/artifacts
+      - name: Enforce release gates
+        run: |
+          python - <<'PY'
+          import json
+          r=json.load(open('cook_model/artifacts/training_report.json'))
+          assert r['scenario_id']==8 and r['card_id']==101101
+          assert r['whole_run_split'] is True
+          assert r['model']['mean'] > r['random_baseline']['mean']
+          assert r['onnx_max_abs_error'] < 1e-4
+          assert r['onnx_bytes'] > 100000
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cook-model-rebuild-${{ github.sha }}
+          path: cook_model/artifacts/
+          if-no-files-found: error
+          retention-days: 30
