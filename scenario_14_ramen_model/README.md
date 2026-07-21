@@ -82,6 +82,18 @@
 目录刻意不伪造尚未证实的 Gauge 增长公式、年底体力换算公式及同回合事件先后顺序。
 
 
+## 普通诀窍 Gauge 获取目录
+
+[`acquisition_gauge_catalog.json`](acquisition_gauge_catalog.json) 保存已由严格运行时样本与 IL2CPP 命名接口确认的边界：
+
+- 三种诀窍独立计 Gauge；阈值为 7，满 Gauge 获得对应普通诀窍 1 个并重置，超出进度不结转；
+- 普通诀窍共享 10 槽 FIFO，库存满时新诀窍仍入库并顶掉最旧诀窍，不是停止获取；
+- `FeelingTurnInfoArray` 表示当前三种 Gauge 状态，`CommandFeelingInfoArray` 给出当前训练指令到诀窍类型的映射；
+- `FeelingReduceTurnInfoArray[].FeelingTurnArray` 是各指令最终 Gauge 向量，规划端应直接消费最终向量，不从尚未证实的自然增长、地区、合宿、场上角色或卡组公式重建；
+- 严格样本仅确认基础向量 `(3,3,4)`、速度训练向量 `(5,3,4)` 以及该样本中关联诀窍 `+2`；这不是通用公式；
+- 比赛也会推进 Gauge，但比赛结果依赖仍未测定；不得复用其他剧本的 `heroes_gauge`。
+
+
 ## 吃面动作效果目录
 
 [`ramen_action_catalog.json`](ramen_action_catalog.json) 将“吃面后当前回合效果”与 RMJ 检查点结算奖励严格分开。它由 `single_mode_14_basic_effect`、`single_mode_14_check_point_pt`、`text_data category=427` 和教程文本生成：
