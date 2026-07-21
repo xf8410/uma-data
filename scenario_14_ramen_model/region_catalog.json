@@ -1,0 +1,3623 @@
+{
+  "scenario_id": 14,
+  "evidence": {
+    "region_names": {
+      "table": "text_data",
+      "category": 426
+    },
+    "effect_templates": {
+      "table": "text_data",
+      "category": 428
+    },
+    "applied_effect_templates": {
+      "table": "text_data",
+      "category": 486
+    },
+    "base_effects": {
+      "table": "single_mode_14_region_effect"
+    },
+    "point_bonuses": {
+      "table": "single_mode_14_region_effect_bonus"
+    },
+    "feelings": {
+      "table": "single_mode_14_region_feeling"
+    },
+    "selection_turns": {
+      "table": "single_mode_14_region_select"
+    }
+  },
+  "notes": [
+    "Region IDs 1-10 and 11-20 repeat the same ten display names in different selection phases.",
+    "effect_value and add_value are retained separately; consumers must select the matching region/effect_type point tier before combining them.",
+    "Display text from category 428 is authoritative for user-facing effect wording and percent units where the template contains %."
+  ],
+  "selection_phases": [
+    {
+      "id": 1,
+      "region_select_type": 1,
+      "turn": 3
+    },
+    {
+      "id": 2,
+      "region_select_type": 2,
+      "turn": 24
+    },
+    {
+      "id": 3,
+      "region_select_type": 3,
+      "turn": 48
+    }
+  ],
+  "regions": [
+    {
+      "region_id": 1,
+      "name_ja": "札幌",
+      "region_select_type": 1,
+      "selection_turn": 3,
+      "feelings": [
+        {
+          "id": 1,
+          "region_id": 1,
+          "region_select_type": 1,
+          "feeling_id": 1,
+          "feeling_num": 2
+        },
+        {
+          "id": 2,
+          "region_id": 1,
+          "region_select_type": 1,
+          "feeling_id": 2,
+          "feeling_num": 2
+        },
+        {
+          "id": 3,
+          "region_id": 1,
+          "region_select_type": 1,
+          "feeling_id": 3,
+          "feeling_num": 1
+        }
+      ],
+      "point_bonus_tiers": [
+        {
+          "id": 1,
+          "region_id": 1,
+          "effect_type": 2,
+          "min_pt": 0,
+          "max_pt": 299,
+          "add_value": 0
+        },
+        {
+          "id": 2,
+          "region_id": 1,
+          "effect_type": 2,
+          "min_pt": 300,
+          "max_pt": 599,
+          "add_value": 3
+        },
+        {
+          "id": 3,
+          "region_id": 1,
+          "effect_type": 2,
+          "min_pt": 600,
+          "max_pt": 899,
+          "add_value": 5
+        },
+        {
+          "id": 4,
+          "region_id": 1,
+          "effect_type": 2,
+          "min_pt": 900,
+          "max_pt": 1199,
+          "add_value": 7
+        },
+        {
+          "id": 5,
+          "region_id": 1,
+          "effect_type": 2,
+          "min_pt": 1200,
+          "max_pt": 1499,
+          "add_value": 9
+        },
+        {
+          "id": 6,
+          "region_id": 1,
+          "effect_type": 2,
+          "min_pt": 1500,
+          "max_pt": 9999,
+          "add_value": 10
+        }
+      ],
+      "effects": [
+        {
+          "id": 1,
+          "region_id": 1,
+          "text_group_id": 1010,
+          "effect_type": 2,
+          "effect_value": 20,
+          "condition_type_1": 3,
+          "condition_value_1": 101,
+          "condition_type_2": 0,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピードのトレーニング効果アップ <color=#ff6d26>{0}%</color>",
+          "applied_template": "スピードのトレーニング効果が<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 2,
+          "region_id": 1,
+          "text_group_id": 1011,
+          "effect_type": 19,
+          "effect_value": 1,
+          "condition_type_1": 5,
+          "condition_value_1": 101,
+          "condition_type_2": 6,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピードタイプの編成サポートカードから\\nヒント獲得効果を1回発動する",
+          "applied_template": null
+        }
+      ]
+    },
+    {
+      "region_id": 2,
+      "name_ja": "函館",
+      "region_select_type": 1,
+      "selection_turn": 3,
+      "feelings": [
+        {
+          "id": 4,
+          "region_id": 2,
+          "region_select_type": 1,
+          "feeling_id": 1,
+          "feeling_num": 1
+        },
+        {
+          "id": 5,
+          "region_id": 2,
+          "region_select_type": 1,
+          "feeling_id": 2,
+          "feeling_num": 2
+        },
+        {
+          "id": 6,
+          "region_id": 2,
+          "region_select_type": 1,
+          "feeling_id": 3,
+          "feeling_num": 2
+        }
+      ],
+      "point_bonus_tiers": [
+        {
+          "id": 7,
+          "region_id": 2,
+          "effect_type": 2,
+          "min_pt": 0,
+          "max_pt": 299,
+          "add_value": 0
+        },
+        {
+          "id": 8,
+          "region_id": 2,
+          "effect_type": 2,
+          "min_pt": 300,
+          "max_pt": 599,
+          "add_value": 3
+        },
+        {
+          "id": 9,
+          "region_id": 2,
+          "effect_type": 2,
+          "min_pt": 600,
+          "max_pt": 899,
+          "add_value": 5
+        },
+        {
+          "id": 10,
+          "region_id": 2,
+          "effect_type": 2,
+          "min_pt": 900,
+          "max_pt": 1199,
+          "add_value": 7
+        },
+        {
+          "id": 11,
+          "region_id": 2,
+          "effect_type": 2,
+          "min_pt": 1200,
+          "max_pt": 1499,
+          "add_value": 9
+        },
+        {
+          "id": 12,
+          "region_id": 2,
+          "effect_type": 2,
+          "min_pt": 1500,
+          "max_pt": 9999,
+          "add_value": 10
+        }
+      ],
+      "effects": [
+        {
+          "id": 3,
+          "region_id": 2,
+          "text_group_id": 1020,
+          "effect_type": 2,
+          "effect_value": 20,
+          "condition_type_1": 3,
+          "condition_value_1": 105,
+          "condition_type_2": 0,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_01/>スタミナのトレーニング効果アップ <color=#ff6d26>{0}%</color>",
+          "applied_template": "スタミナのトレーニング効果が<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 4,
+          "region_id": 2,
+          "text_group_id": 1021,
+          "effect_type": 19,
+          "effect_value": 1,
+          "condition_type_1": 5,
+          "condition_value_1": 105,
+          "condition_type_2": 6,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_01/>スタミナタイプの編成サポートカードから\\nヒント獲得効果を1回発動する",
+          "applied_template": null
+        }
+      ]
+    },
+    {
+      "region_id": 3,
+      "name_ja": "新潟",
+      "region_select_type": 1,
+      "selection_turn": 3,
+      "feelings": [
+        {
+          "id": 7,
+          "region_id": 3,
+          "region_select_type": 1,
+          "feeling_id": 1,
+          "feeling_num": 3
+        },
+        {
+          "id": 8,
+          "region_id": 3,
+          "region_select_type": 1,
+          "feeling_id": 2,
+          "feeling_num": 1
+        },
+        {
+          "id": 9,
+          "region_id": 3,
+          "region_select_type": 1,
+          "feeling_id": 3,
+          "feeling_num": 1
+        }
+      ],
+      "point_bonus_tiers": [
+        {
+          "id": 13,
+          "region_id": 3,
+          "effect_type": 2,
+          "min_pt": 0,
+          "max_pt": 299,
+          "add_value": 0
+        },
+        {
+          "id": 14,
+          "region_id": 3,
+          "effect_type": 2,
+          "min_pt": 300,
+          "max_pt": 599,
+          "add_value": 3
+        },
+        {
+          "id": 15,
+          "region_id": 3,
+          "effect_type": 2,
+          "min_pt": 600,
+          "max_pt": 899,
+          "add_value": 5
+        },
+        {
+          "id": 16,
+          "region_id": 3,
+          "effect_type": 2,
+          "min_pt": 900,
+          "max_pt": 1199,
+          "add_value": 7
+        },
+        {
+          "id": 17,
+          "region_id": 3,
+          "effect_type": 2,
+          "min_pt": 1200,
+          "max_pt": 1499,
+          "add_value": 9
+        },
+        {
+          "id": 18,
+          "region_id": 3,
+          "effect_type": 2,
+          "min_pt": 1500,
+          "max_pt": 9999,
+          "add_value": 10
+        }
+      ],
+      "effects": [
+        {
+          "id": 5,
+          "region_id": 3,
+          "text_group_id": 1030,
+          "effect_type": 2,
+          "effect_value": 20,
+          "condition_type_1": 3,
+          "condition_value_1": 102,
+          "condition_type_2": 0,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_02/>パワーのトレーニング効果アップ <color=#ff6d26>{0}%</color>",
+          "applied_template": "パワーのトレーニング効果が<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 6,
+          "region_id": 3,
+          "text_group_id": 1031,
+          "effect_type": 19,
+          "effect_value": 1,
+          "condition_type_1": 5,
+          "condition_value_1": 102,
+          "condition_type_2": 6,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_02/>パワータイプの編成サポートカードから\\nヒント獲得効果を1回発動する",
+          "applied_template": null
+        }
+      ]
+    },
+    {
+      "region_id": 4,
+      "name_ja": "福島",
+      "region_select_type": 1,
+      "selection_turn": 3,
+      "feelings": [
+        {
+          "id": 10,
+          "region_id": 4,
+          "region_select_type": 1,
+          "feeling_id": 1,
+          "feeling_num": 2
+        },
+        {
+          "id": 11,
+          "region_id": 4,
+          "region_select_type": 1,
+          "feeling_id": 2,
+          "feeling_num": 3
+        },
+        {
+          "id": 12,
+          "region_id": 4,
+          "region_select_type": 1,
+          "feeling_id": 3,
+          "feeling_num": 0
+        }
+      ],
+      "point_bonus_tiers": [
+        {
+          "id": 19,
+          "region_id": 4,
+          "effect_type": 2,
+          "min_pt": 0,
+          "max_pt": 299,
+          "add_value": 0
+        },
+        {
+          "id": 20,
+          "region_id": 4,
+          "effect_type": 2,
+          "min_pt": 300,
+          "max_pt": 599,
+          "add_value": 3
+        },
+        {
+          "id": 21,
+          "region_id": 4,
+          "effect_type": 2,
+          "min_pt": 600,
+          "max_pt": 899,
+          "add_value": 5
+        },
+        {
+          "id": 22,
+          "region_id": 4,
+          "effect_type": 2,
+          "min_pt": 900,
+          "max_pt": 1199,
+          "add_value": 7
+        },
+        {
+          "id": 23,
+          "region_id": 4,
+          "effect_type": 2,
+          "min_pt": 1200,
+          "max_pt": 1499,
+          "add_value": 9
+        },
+        {
+          "id": 24,
+          "region_id": 4,
+          "effect_type": 2,
+          "min_pt": 1500,
+          "max_pt": 9999,
+          "add_value": 10
+        }
+      ],
+      "effects": [
+        {
+          "id": 7,
+          "region_id": 4,
+          "text_group_id": 1040,
+          "effect_type": 2,
+          "effect_value": 20,
+          "condition_type_1": 3,
+          "condition_value_1": 103,
+          "condition_type_2": 0,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_03/>根性のトレーニング効果アップ <color=#ff6d26>{0}%</color>",
+          "applied_template": "根性のトレーニング効果が<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 8,
+          "region_id": 4,
+          "text_group_id": 1041,
+          "effect_type": 19,
+          "effect_value": 1,
+          "condition_type_1": 5,
+          "condition_value_1": 103,
+          "condition_type_2": 6,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_03/>根性タイプの編成サポートカードから\\nヒント獲得効果を1回発動する",
+          "applied_template": null
+        }
+      ]
+    },
+    {
+      "region_id": 5,
+      "name_ja": "東京",
+      "region_select_type": 1,
+      "selection_turn": 3,
+      "feelings": [
+        {
+          "id": 13,
+          "region_id": 5,
+          "region_select_type": 1,
+          "feeling_id": 1,
+          "feeling_num": 1
+        },
+        {
+          "id": 14,
+          "region_id": 5,
+          "region_select_type": 1,
+          "feeling_id": 2,
+          "feeling_num": 1
+        },
+        {
+          "id": 15,
+          "region_id": 5,
+          "region_select_type": 1,
+          "feeling_id": 3,
+          "feeling_num": 3
+        }
+      ],
+      "point_bonus_tiers": [
+        {
+          "id": 25,
+          "region_id": 5,
+          "effect_type": 2,
+          "min_pt": 0,
+          "max_pt": 299,
+          "add_value": 0
+        },
+        {
+          "id": 26,
+          "region_id": 5,
+          "effect_type": 2,
+          "min_pt": 300,
+          "max_pt": 599,
+          "add_value": 3
+        },
+        {
+          "id": 27,
+          "region_id": 5,
+          "effect_type": 2,
+          "min_pt": 600,
+          "max_pt": 899,
+          "add_value": 5
+        },
+        {
+          "id": 28,
+          "region_id": 5,
+          "effect_type": 2,
+          "min_pt": 900,
+          "max_pt": 1199,
+          "add_value": 7
+        },
+        {
+          "id": 29,
+          "region_id": 5,
+          "effect_type": 2,
+          "min_pt": 1200,
+          "max_pt": 1499,
+          "add_value": 9
+        },
+        {
+          "id": 30,
+          "region_id": 5,
+          "effect_type": 2,
+          "min_pt": 1500,
+          "max_pt": 9999,
+          "add_value": 10
+        }
+      ],
+      "effects": [
+        {
+          "id": 9,
+          "region_id": 5,
+          "text_group_id": 1050,
+          "effect_type": 2,
+          "effect_value": 20,
+          "condition_type_1": 3,
+          "condition_value_1": 106,
+          "condition_type_2": 0,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_04/>賢さのトレーニング効果アップ <color=#ff6d26>{0}%</color>",
+          "applied_template": "賢さのトレーニング効果が<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 10,
+          "region_id": 5,
+          "text_group_id": 1051,
+          "effect_type": 19,
+          "effect_value": 1,
+          "condition_type_1": 5,
+          "condition_value_1": 106,
+          "condition_type_2": 6,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_04/>賢さタイプの編成サポートカードから\\nヒント獲得効果を1回発動する",
+          "applied_template": null
+        }
+      ]
+    },
+    {
+      "region_id": 6,
+      "name_ja": "中山",
+      "region_select_type": 2,
+      "selection_turn": 24,
+      "feelings": [
+        {
+          "id": 16,
+          "region_id": 6,
+          "region_select_type": 2,
+          "feeling_id": 1,
+          "feeling_num": 2
+        },
+        {
+          "id": 17,
+          "region_id": 6,
+          "region_select_type": 2,
+          "feeling_id": 2,
+          "feeling_num": 0
+        },
+        {
+          "id": 18,
+          "region_id": 6,
+          "region_select_type": 2,
+          "feeling_id": 3,
+          "feeling_num": 3
+        }
+      ],
+      "point_bonus_tiers": [
+        {
+          "id": 31,
+          "region_id": 6,
+          "effect_type": 4,
+          "min_pt": 0,
+          "max_pt": 599,
+          "add_value": 0
+        },
+        {
+          "id": 32,
+          "region_id": 6,
+          "effect_type": 4,
+          "min_pt": 600,
+          "max_pt": 1199,
+          "add_value": 3
+        },
+        {
+          "id": 33,
+          "region_id": 6,
+          "effect_type": 4,
+          "min_pt": 1200,
+          "max_pt": 1799,
+          "add_value": 5
+        },
+        {
+          "id": 34,
+          "region_id": 6,
+          "effect_type": 4,
+          "min_pt": 1800,
+          "max_pt": 2399,
+          "add_value": 7
+        },
+        {
+          "id": 35,
+          "region_id": 6,
+          "effect_type": 4,
+          "min_pt": 2400,
+          "max_pt": 2999,
+          "add_value": 9
+        },
+        {
+          "id": 36,
+          "region_id": 6,
+          "effect_type": 4,
+          "min_pt": 3000,
+          "max_pt": 9999,
+          "add_value": 10
+        }
+      ],
+      "effects": [
+        {
+          "id": 11,
+          "region_id": 6,
+          "text_group_id": 2060,
+          "effect_type": 4,
+          "effect_value": 10,
+          "condition_type_1": 3,
+          "condition_value_1": 0,
+          "condition_type_2": 0,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "友情ボーナス <color=#ff6d26>{0}%</color>",
+          "applied_template": "全てのトレーニングの友情ボーナスが<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 12,
+          "region_id": 6,
+          "text_group_id": 2061,
+          "effect_type": 19,
+          "effect_value": 2,
+          "condition_type_1": 5,
+          "condition_value_1": 101,
+          "condition_type_2": 6,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピードタイプの編成サポートカードから\\nヒント獲得効果を2回発動する",
+          "applied_template": null
+        },
+        {
+          "id": 13,
+          "region_id": 6,
+          "text_group_id": 2062,
+          "effect_type": 20,
+          "effect_value": 1,
+          "condition_type_1": 3,
+          "condition_value_1": 101,
+          "condition_type_2": 6,
+          "condition_value_2": 4,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "全てのトレーニングに\\n編成サポートカードから追加で1人ずつ現れる",
+          "applied_template": "一部のキャラが全てのトレーニングに<color=#ff6d26>追加で現れた</color>"
+        },
+        {
+          "id": 14,
+          "region_id": 6,
+          "text_group_id": 2062,
+          "effect_type": 20,
+          "effect_value": 1,
+          "condition_type_1": 3,
+          "condition_value_1": 102,
+          "condition_type_2": 6,
+          "condition_value_2": 4,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "全てのトレーニングに\\n編成サポートカードから追加で1人ずつ現れる",
+          "applied_template": "一部のキャラが全てのトレーニングに<color=#ff6d26>追加で現れた</color>"
+        },
+        {
+          "id": 15,
+          "region_id": 6,
+          "text_group_id": 2062,
+          "effect_type": 20,
+          "effect_value": 1,
+          "condition_type_1": 3,
+          "condition_value_1": 103,
+          "condition_type_2": 6,
+          "condition_value_2": 4,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "全てのトレーニングに\\n編成サポートカードから追加で1人ずつ現れる",
+          "applied_template": "一部のキャラが全てのトレーニングに<color=#ff6d26>追加で現れた</color>"
+        },
+        {
+          "id": 16,
+          "region_id": 6,
+          "text_group_id": 2062,
+          "effect_type": 20,
+          "effect_value": 1,
+          "condition_type_1": 3,
+          "condition_value_1": 105,
+          "condition_type_2": 6,
+          "condition_value_2": 4,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "全てのトレーニングに\\n編成サポートカードから追加で1人ずつ現れる",
+          "applied_template": "一部のキャラが全てのトレーニングに<color=#ff6d26>追加で現れた</color>"
+        },
+        {
+          "id": 17,
+          "region_id": 6,
+          "text_group_id": 2062,
+          "effect_type": 20,
+          "effect_value": 1,
+          "condition_type_1": 3,
+          "condition_value_1": 106,
+          "condition_type_2": 6,
+          "condition_value_2": 4,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "全てのトレーニングに\\n編成サポートカードから追加で1人ずつ現れる",
+          "applied_template": "一部のキャラが全てのトレーニングに<color=#ff6d26>追加で現れた</color>"
+        }
+      ]
+    },
+    {
+      "region_id": 7,
+      "name_ja": "中京",
+      "region_select_type": 2,
+      "selection_turn": 24,
+      "feelings": [
+        {
+          "id": 19,
+          "region_id": 7,
+          "region_select_type": 2,
+          "feeling_id": 1,
+          "feeling_num": 3
+        },
+        {
+          "id": 20,
+          "region_id": 7,
+          "region_select_type": 2,
+          "feeling_id": 2,
+          "feeling_num": 2
+        },
+        {
+          "id": 21,
+          "region_id": 7,
+          "region_select_type": 2,
+          "feeling_id": 3,
+          "feeling_num": 0
+        }
+      ],
+      "point_bonus_tiers": [
+        {
+          "id": 37,
+          "region_id": 7,
+          "effect_type": 4,
+          "min_pt": 0,
+          "max_pt": 599,
+          "add_value": 0
+        },
+        {
+          "id": 38,
+          "region_id": 7,
+          "effect_type": 4,
+          "min_pt": 600,
+          "max_pt": 1199,
+          "add_value": 3
+        },
+        {
+          "id": 39,
+          "region_id": 7,
+          "effect_type": 4,
+          "min_pt": 1200,
+          "max_pt": 1799,
+          "add_value": 5
+        },
+        {
+          "id": 40,
+          "region_id": 7,
+          "effect_type": 4,
+          "min_pt": 1800,
+          "max_pt": 2399,
+          "add_value": 7
+        },
+        {
+          "id": 41,
+          "region_id": 7,
+          "effect_type": 4,
+          "min_pt": 2400,
+          "max_pt": 2999,
+          "add_value": 9
+        },
+        {
+          "id": 42,
+          "region_id": 7,
+          "effect_type": 4,
+          "min_pt": 3000,
+          "max_pt": 9999,
+          "add_value": 10
+        }
+      ],
+      "effects": [
+        {
+          "id": 18,
+          "region_id": 7,
+          "text_group_id": 2070,
+          "effect_type": 4,
+          "effect_value": 50,
+          "condition_type_1": 3,
+          "condition_value_1": 102,
+          "condition_type_2": 0,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_02/>パワー <atlas=Common sprite=utx_ico_obtain_03/>根性の友情ボーナス <color=#ff6d26>{0}%</color>",
+          "applied_template": "パワーと根性の友情ボーナスが<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 19,
+          "region_id": 7,
+          "text_group_id": 2070,
+          "effect_type": 4,
+          "effect_value": 50,
+          "condition_type_1": 3,
+          "condition_value_1": 103,
+          "condition_type_2": 0,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_02/>パワー <atlas=Common sprite=utx_ico_obtain_03/>根性の友情ボーナス <color=#ff6d26>{0}%</color>",
+          "applied_template": "パワーと根性の友情ボーナスが<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 20,
+          "region_id": 7,
+          "text_group_id": 2071,
+          "effect_type": 19,
+          "effect_value": 0,
+          "condition_type_1": 5,
+          "condition_value_1": 102,
+          "condition_type_2": 6,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_02/>パワー <atlas=Common sprite=utx_ico_obtain_03/>根性タイプの\\n編成サポートカードからヒント獲得効果を2回発動する",
+          "applied_template": null
+        },
+        {
+          "id": 21,
+          "region_id": 7,
+          "text_group_id": 2071,
+          "effect_type": 19,
+          "effect_value": 2,
+          "condition_type_1": 5,
+          "condition_value_1": 103,
+          "condition_type_2": 6,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_02/>パワー <atlas=Common sprite=utx_ico_obtain_03/>根性タイプの\\n編成サポートカードからヒント獲得効果を2回発動する",
+          "applied_template": null
+        },
+        {
+          "id": 22,
+          "region_id": 7,
+          "text_group_id": 2072,
+          "effect_type": 20,
+          "effect_value": 1,
+          "condition_type_1": 3,
+          "condition_value_1": 102,
+          "condition_type_2": 6,
+          "condition_value_2": 4,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_02/>パワー <atlas=Common sprite=utx_ico_obtain_03/>根性トレーニングに\\n編成サポートカードから追加で1人ずつ現れる",
+          "applied_template": "一部のキャラがパワーと根性トレーニングに<color=#ff6d26>追加で現れた</color>"
+        },
+        {
+          "id": 23,
+          "region_id": 7,
+          "text_group_id": 2072,
+          "effect_type": 20,
+          "effect_value": 1,
+          "condition_type_1": 3,
+          "condition_value_1": 103,
+          "condition_type_2": 6,
+          "condition_value_2": 4,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_02/>パワー <atlas=Common sprite=utx_ico_obtain_03/>根性トレーニングに\\n編成サポートカードから追加で1人ずつ現れる",
+          "applied_template": "一部のキャラがパワーと根性トレーニングに<color=#ff6d26>追加で現れた</color>"
+        }
+      ]
+    },
+    {
+      "region_id": 8,
+      "name_ja": "京都",
+      "region_select_type": 2,
+      "selection_turn": 24,
+      "feelings": [
+        {
+          "id": 22,
+          "region_id": 8,
+          "region_select_type": 2,
+          "feeling_id": 1,
+          "feeling_num": 0
+        },
+        {
+          "id": 23,
+          "region_id": 8,
+          "region_select_type": 2,
+          "feeling_id": 2,
+          "feeling_num": 3
+        },
+        {
+          "id": 24,
+          "region_id": 8,
+          "region_select_type": 2,
+          "feeling_id": 3,
+          "feeling_num": 2
+        }
+      ],
+      "point_bonus_tiers": [
+        {
+          "id": 43,
+          "region_id": 8,
+          "effect_type": 4,
+          "min_pt": 0,
+          "max_pt": 599,
+          "add_value": 0
+        },
+        {
+          "id": 44,
+          "region_id": 8,
+          "effect_type": 4,
+          "min_pt": 600,
+          "max_pt": 1199,
+          "add_value": 3
+        },
+        {
+          "id": 45,
+          "region_id": 8,
+          "effect_type": 4,
+          "min_pt": 1200,
+          "max_pt": 1799,
+          "add_value": 5
+        },
+        {
+          "id": 46,
+          "region_id": 8,
+          "effect_type": 4,
+          "min_pt": 1800,
+          "max_pt": 2399,
+          "add_value": 7
+        },
+        {
+          "id": 47,
+          "region_id": 8,
+          "effect_type": 4,
+          "min_pt": 2400,
+          "max_pt": 2999,
+          "add_value": 9
+        },
+        {
+          "id": 48,
+          "region_id": 8,
+          "effect_type": 4,
+          "min_pt": 3000,
+          "max_pt": 9999,
+          "add_value": 10
+        }
+      ],
+      "effects": [
+        {
+          "id": 24,
+          "region_id": 8,
+          "text_group_id": 2080,
+          "effect_type": 4,
+          "effect_value": 50,
+          "condition_type_1": 3,
+          "condition_value_1": 105,
+          "condition_type_2": 0,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_01/>スタミナ <atlas=Common sprite=utx_ico_obtain_03/>根性の友情ボーナス <color=#ff6d26>{0}%</color>",
+          "applied_template": "スタミナと根性の友情ボーナスが<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 25,
+          "region_id": 8,
+          "text_group_id": 2080,
+          "effect_type": 4,
+          "effect_value": 50,
+          "condition_type_1": 3,
+          "condition_value_1": 103,
+          "condition_type_2": 0,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_01/>スタミナ <atlas=Common sprite=utx_ico_obtain_03/>根性の友情ボーナス <color=#ff6d26>{0}%</color>",
+          "applied_template": "スタミナと根性の友情ボーナスが<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 26,
+          "region_id": 8,
+          "text_group_id": 2081,
+          "effect_type": 19,
+          "effect_value": 0,
+          "condition_type_1": 5,
+          "condition_value_1": 105,
+          "condition_type_2": 6,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_01/>スタミナ <atlas=Common sprite=utx_ico_obtain_03/>根性タイプの\\n編成サポートカードからヒント獲得効果を2回発動する",
+          "applied_template": null
+        },
+        {
+          "id": 27,
+          "region_id": 8,
+          "text_group_id": 2081,
+          "effect_type": 19,
+          "effect_value": 2,
+          "condition_type_1": 5,
+          "condition_value_1": 103,
+          "condition_type_2": 6,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_01/>スタミナ <atlas=Common sprite=utx_ico_obtain_03/>根性タイプの\\n編成サポートカードからヒント獲得効果を2回発動する",
+          "applied_template": null
+        },
+        {
+          "id": 28,
+          "region_id": 8,
+          "text_group_id": 2082,
+          "effect_type": 20,
+          "effect_value": 1,
+          "condition_type_1": 3,
+          "condition_value_1": 105,
+          "condition_type_2": 6,
+          "condition_value_2": 4,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_01/>スタミナ <atlas=Common sprite=utx_ico_obtain_03/>根性トレーニングに\\n編成サポートカードから追加で1人ずつ現れる",
+          "applied_template": "一部のキャラがスタミナと根性トレーニングに<color=#ff6d26>追加で現れた</color>"
+        },
+        {
+          "id": 29,
+          "region_id": 8,
+          "text_group_id": 2082,
+          "effect_type": 20,
+          "effect_value": 1,
+          "condition_type_1": 3,
+          "condition_value_1": 103,
+          "condition_type_2": 6,
+          "condition_value_2": 4,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_01/>スタミナ <atlas=Common sprite=utx_ico_obtain_03/>根性トレーニングに\\n編成サポートカードから追加で1人ずつ現れる",
+          "applied_template": "一部のキャラがスタミナと根性トレーニングに<color=#ff6d26>追加で現れた</color>"
+        }
+      ]
+    },
+    {
+      "region_id": 9,
+      "name_ja": "阪神",
+      "region_select_type": 2,
+      "selection_turn": 24,
+      "feelings": [
+        {
+          "id": 25,
+          "region_id": 9,
+          "region_select_type": 2,
+          "feeling_id": 1,
+          "feeling_num": 2
+        },
+        {
+          "id": 26,
+          "region_id": 9,
+          "region_select_type": 2,
+          "feeling_id": 2,
+          "feeling_num": 1
+        },
+        {
+          "id": 27,
+          "region_id": 9,
+          "region_select_type": 2,
+          "feeling_id": 3,
+          "feeling_num": 2
+        }
+      ],
+      "point_bonus_tiers": [
+        {
+          "id": 49,
+          "region_id": 9,
+          "effect_type": 4,
+          "min_pt": 0,
+          "max_pt": 599,
+          "add_value": 0
+        },
+        {
+          "id": 50,
+          "region_id": 9,
+          "effect_type": 4,
+          "min_pt": 600,
+          "max_pt": 1199,
+          "add_value": 3
+        },
+        {
+          "id": 51,
+          "region_id": 9,
+          "effect_type": 4,
+          "min_pt": 1200,
+          "max_pt": 1799,
+          "add_value": 5
+        },
+        {
+          "id": 52,
+          "region_id": 9,
+          "effect_type": 4,
+          "min_pt": 1800,
+          "max_pt": 2399,
+          "add_value": 7
+        },
+        {
+          "id": 53,
+          "region_id": 9,
+          "effect_type": 4,
+          "min_pt": 2400,
+          "max_pt": 2999,
+          "add_value": 9
+        },
+        {
+          "id": 54,
+          "region_id": 9,
+          "effect_type": 4,
+          "min_pt": 3000,
+          "max_pt": 9999,
+          "add_value": 10
+        }
+      ],
+      "effects": [
+        {
+          "id": 30,
+          "region_id": 9,
+          "text_group_id": 2090,
+          "effect_type": 4,
+          "effect_value": 50,
+          "condition_type_1": 3,
+          "condition_value_1": 105,
+          "condition_type_2": 0,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_01/>スタミナ <atlas=Common sprite=utx_ico_obtain_02/>パワーの友情ボーナス <color=#ff6d26>{0}%</color>",
+          "applied_template": "スタミナとパワーの友情ボーナスが<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 31,
+          "region_id": 9,
+          "text_group_id": 2090,
+          "effect_type": 4,
+          "effect_value": 50,
+          "condition_type_1": 3,
+          "condition_value_1": 102,
+          "condition_type_2": 0,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_01/>スタミナ <atlas=Common sprite=utx_ico_obtain_02/>パワーの友情ボーナス <color=#ff6d26>{0}%</color>",
+          "applied_template": "スタミナとパワーの友情ボーナスが<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 32,
+          "region_id": 9,
+          "text_group_id": 2091,
+          "effect_type": 19,
+          "effect_value": 0,
+          "condition_type_1": 5,
+          "condition_value_1": 105,
+          "condition_type_2": 6,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_01/>スタミナ <atlas=Common sprite=utx_ico_obtain_02/>パワータイプの\\n編成サポートカードからヒント獲得効果を2回発動する",
+          "applied_template": null
+        },
+        {
+          "id": 33,
+          "region_id": 9,
+          "text_group_id": 2091,
+          "effect_type": 19,
+          "effect_value": 2,
+          "condition_type_1": 5,
+          "condition_value_1": 102,
+          "condition_type_2": 6,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_01/>スタミナ <atlas=Common sprite=utx_ico_obtain_02/>パワータイプの\\n編成サポートカードからヒント獲得効果を2回発動する",
+          "applied_template": null
+        },
+        {
+          "id": 34,
+          "region_id": 9,
+          "text_group_id": 2092,
+          "effect_type": 20,
+          "effect_value": 1,
+          "condition_type_1": 3,
+          "condition_value_1": 105,
+          "condition_type_2": 6,
+          "condition_value_2": 4,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_01/>スタミナ <atlas=Common sprite=utx_ico_obtain_02/>パワートレーニングに\\n編成サポートカードから追加で1人ずつ現れる",
+          "applied_template": "一部のキャラがスタミナとパワートレーニングに<color=#ff6d26>追加で現れた</color>"
+        },
+        {
+          "id": 35,
+          "region_id": 9,
+          "text_group_id": 2092,
+          "effect_type": 20,
+          "effect_value": 1,
+          "condition_type_1": 3,
+          "condition_value_1": 102,
+          "condition_type_2": 6,
+          "condition_value_2": 4,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_01/>スタミナ <atlas=Common sprite=utx_ico_obtain_02/>パワートレーニングに\\n編成サポートカードから追加で1人ずつ現れる",
+          "applied_template": "一部のキャラがスタミナとパワートレーニングに<color=#ff6d26>追加で現れた</color>"
+        }
+      ]
+    },
+    {
+      "region_id": 10,
+      "name_ja": "小倉",
+      "region_select_type": 2,
+      "selection_turn": 24,
+      "feelings": [
+        {
+          "id": 28,
+          "region_id": 10,
+          "region_select_type": 2,
+          "feeling_id": 1,
+          "feeling_num": 1
+        },
+        {
+          "id": 29,
+          "region_id": 10,
+          "region_select_type": 2,
+          "feeling_id": 2,
+          "feeling_num": 3
+        },
+        {
+          "id": 30,
+          "region_id": 10,
+          "region_select_type": 2,
+          "feeling_id": 3,
+          "feeling_num": 1
+        }
+      ],
+      "point_bonus_tiers": [
+        {
+          "id": 55,
+          "region_id": 10,
+          "effect_type": 4,
+          "min_pt": 0,
+          "max_pt": 599,
+          "add_value": 0
+        },
+        {
+          "id": 56,
+          "region_id": 10,
+          "effect_type": 4,
+          "min_pt": 600,
+          "max_pt": 1199,
+          "add_value": 3
+        },
+        {
+          "id": 57,
+          "region_id": 10,
+          "effect_type": 4,
+          "min_pt": 1200,
+          "max_pt": 1799,
+          "add_value": 5
+        },
+        {
+          "id": 58,
+          "region_id": 10,
+          "effect_type": 4,
+          "min_pt": 1800,
+          "max_pt": 2399,
+          "add_value": 7
+        },
+        {
+          "id": 59,
+          "region_id": 10,
+          "effect_type": 4,
+          "min_pt": 2400,
+          "max_pt": 2999,
+          "add_value": 9
+        },
+        {
+          "id": 60,
+          "region_id": 10,
+          "effect_type": 4,
+          "min_pt": 3000,
+          "max_pt": 9999,
+          "add_value": 10
+        }
+      ],
+      "effects": [
+        {
+          "id": 36,
+          "region_id": 10,
+          "text_group_id": 2100,
+          "effect_type": 4,
+          "effect_value": 50,
+          "condition_type_1": 3,
+          "condition_value_1": 106,
+          "condition_type_2": 0,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_04/>賢さの友情ボーナス <color=#ff6d26>{0}%</color>",
+          "applied_template": "賢さの友情ボーナスが<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 37,
+          "region_id": 10,
+          "text_group_id": 2101,
+          "effect_type": 19,
+          "effect_value": 2,
+          "condition_type_1": 5,
+          "condition_value_1": 106,
+          "condition_type_2": 6,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_04/>賢さタイプの編成サポートカードから\\nヒント獲得効果を2回発動する",
+          "applied_template": null
+        },
+        {
+          "id": 38,
+          "region_id": 10,
+          "text_group_id": 2102,
+          "effect_type": 20,
+          "effect_value": 1,
+          "condition_type_1": 3,
+          "condition_value_1": 106,
+          "condition_type_2": 6,
+          "condition_value_2": 4,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_04/>賢さトレーニングに\\n編成サポートカードから追加で1人ずつ現れる",
+          "applied_template": "一部のキャラが賢さトレーニングに<color=#ff6d26>追加で現れた</color>"
+        }
+      ]
+    },
+    {
+      "region_id": 11,
+      "name_ja": "札幌",
+      "region_select_type": 3,
+      "selection_turn": 48,
+      "feelings": [
+        {
+          "id": 31,
+          "region_id": 11,
+          "region_select_type": 3,
+          "feeling_id": 1,
+          "feeling_num": 2
+        },
+        {
+          "id": 32,
+          "region_id": 11,
+          "region_select_type": 3,
+          "feeling_id": 2,
+          "feeling_num": 2
+        },
+        {
+          "id": 33,
+          "region_id": 11,
+          "region_select_type": 3,
+          "feeling_id": 3,
+          "feeling_num": 1
+        }
+      ],
+      "point_bonus_tiers": [
+        {
+          "id": 61,
+          "region_id": 11,
+          "effect_type": 4,
+          "min_pt": 0,
+          "max_pt": 699,
+          "add_value": 0
+        },
+        {
+          "id": 62,
+          "region_id": 11,
+          "effect_type": 4,
+          "min_pt": 700,
+          "max_pt": 1399,
+          "add_value": 3
+        },
+        {
+          "id": 63,
+          "region_id": 11,
+          "effect_type": 4,
+          "min_pt": 1400,
+          "max_pt": 2099,
+          "add_value": 5
+        },
+        {
+          "id": 64,
+          "region_id": 11,
+          "effect_type": 4,
+          "min_pt": 2100,
+          "max_pt": 2799,
+          "add_value": 7
+        },
+        {
+          "id": 65,
+          "region_id": 11,
+          "effect_type": 4,
+          "min_pt": 2800,
+          "max_pt": 3499,
+          "add_value": 9
+        },
+        {
+          "id": 66,
+          "region_id": 11,
+          "effect_type": 4,
+          "min_pt": 3500,
+          "max_pt": 9999,
+          "add_value": 10
+        },
+        {
+          "id": 67,
+          "region_id": 11,
+          "effect_type": 21,
+          "min_pt": 0,
+          "max_pt": 699,
+          "add_value": 0
+        },
+        {
+          "id": 68,
+          "region_id": 11,
+          "effect_type": 21,
+          "min_pt": 700,
+          "max_pt": 1399,
+          "add_value": 3
+        },
+        {
+          "id": 69,
+          "region_id": 11,
+          "effect_type": 21,
+          "min_pt": 1400,
+          "max_pt": 2099,
+          "add_value": 5
+        },
+        {
+          "id": 70,
+          "region_id": 11,
+          "effect_type": 21,
+          "min_pt": 2100,
+          "max_pt": 2799,
+          "add_value": 7
+        },
+        {
+          "id": 71,
+          "region_id": 11,
+          "effect_type": 21,
+          "min_pt": 2800,
+          "max_pt": 3499,
+          "add_value": 9
+        },
+        {
+          "id": 72,
+          "region_id": 11,
+          "effect_type": 21,
+          "min_pt": 3500,
+          "max_pt": 9999,
+          "add_value": 10
+        }
+      ],
+      "effects": [
+        {
+          "id": 39,
+          "region_id": 11,
+          "text_group_id": 3110,
+          "effect_type": 4,
+          "effect_value": 50,
+          "condition_type_1": 3,
+          "condition_value_1": 101,
+          "condition_type_2": 0,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピードの友情ボーナス <color=#ff6d26>{0}%</color>",
+          "applied_template": "スピードの友情ボーナスが<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 40,
+          "region_id": 11,
+          "text_group_id": 3111,
+          "effect_type": 21,
+          "effect_value": 50,
+          "condition_type_1": 3,
+          "condition_value_1": 101,
+          "condition_type_2": 6,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピードトレーニングで\\nスキルPtのトレーニング効果アップ <color=#ff6d26>{0}%</color>",
+          "applied_template": "スピードトレーニングでスキルPtのトレーニング効果が<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 41,
+          "region_id": 11,
+          "text_group_id": 3112,
+          "effect_type": 20,
+          "effect_value": 1,
+          "condition_type_1": 3,
+          "condition_value_1": 101,
+          "condition_type_2": 6,
+          "condition_value_2": 4,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピードトレーニングに\\n編成サポートカードから追加で1人現れる",
+          "applied_template": "一部のキャラがスピードトレーニングに<color=#ff6d26>追加で現れた</color>"
+        }
+      ]
+    },
+    {
+      "region_id": 12,
+      "name_ja": "函館",
+      "region_select_type": 3,
+      "selection_turn": 48,
+      "feelings": [
+        {
+          "id": 34,
+          "region_id": 12,
+          "region_select_type": 3,
+          "feeling_id": 1,
+          "feeling_num": 1
+        },
+        {
+          "id": 35,
+          "region_id": 12,
+          "region_select_type": 3,
+          "feeling_id": 2,
+          "feeling_num": 2
+        },
+        {
+          "id": 36,
+          "region_id": 12,
+          "region_select_type": 3,
+          "feeling_id": 3,
+          "feeling_num": 2
+        }
+      ],
+      "point_bonus_tiers": [
+        {
+          "id": 73,
+          "region_id": 12,
+          "effect_type": 4,
+          "min_pt": 0,
+          "max_pt": 699,
+          "add_value": 0
+        },
+        {
+          "id": 74,
+          "region_id": 12,
+          "effect_type": 4,
+          "min_pt": 700,
+          "max_pt": 1399,
+          "add_value": 3
+        },
+        {
+          "id": 75,
+          "region_id": 12,
+          "effect_type": 4,
+          "min_pt": 1400,
+          "max_pt": 2099,
+          "add_value": 5
+        },
+        {
+          "id": 76,
+          "region_id": 12,
+          "effect_type": 4,
+          "min_pt": 2100,
+          "max_pt": 2799,
+          "add_value": 7
+        },
+        {
+          "id": 77,
+          "region_id": 12,
+          "effect_type": 4,
+          "min_pt": 2800,
+          "max_pt": 3499,
+          "add_value": 9
+        },
+        {
+          "id": 78,
+          "region_id": 12,
+          "effect_type": 4,
+          "min_pt": 3500,
+          "max_pt": 9999,
+          "add_value": 10
+        },
+        {
+          "id": 79,
+          "region_id": 12,
+          "effect_type": 21,
+          "min_pt": 0,
+          "max_pt": 699,
+          "add_value": 0
+        },
+        {
+          "id": 80,
+          "region_id": 12,
+          "effect_type": 21,
+          "min_pt": 700,
+          "max_pt": 1399,
+          "add_value": 3
+        },
+        {
+          "id": 81,
+          "region_id": 12,
+          "effect_type": 21,
+          "min_pt": 1400,
+          "max_pt": 2099,
+          "add_value": 5
+        },
+        {
+          "id": 82,
+          "region_id": 12,
+          "effect_type": 21,
+          "min_pt": 2100,
+          "max_pt": 2799,
+          "add_value": 7
+        },
+        {
+          "id": 83,
+          "region_id": 12,
+          "effect_type": 21,
+          "min_pt": 2800,
+          "max_pt": 3499,
+          "add_value": 9
+        },
+        {
+          "id": 84,
+          "region_id": 12,
+          "effect_type": 21,
+          "min_pt": 3500,
+          "max_pt": 9999,
+          "add_value": 10
+        }
+      ],
+      "effects": [
+        {
+          "id": 42,
+          "region_id": 12,
+          "text_group_id": 3120,
+          "effect_type": 4,
+          "effect_value": 60,
+          "condition_type_1": 3,
+          "condition_value_1": 105,
+          "condition_type_2": 0,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_01/>スタミナの友情ボーナス <color=#ff6d26>{0}%</color>",
+          "applied_template": "スタミナの友情ボーナスが<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 43,
+          "region_id": 12,
+          "text_group_id": 3121,
+          "effect_type": 21,
+          "effect_value": 50,
+          "condition_type_1": 3,
+          "condition_value_1": 105,
+          "condition_type_2": 6,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_01/>スタミナトレーニングで\\nスキルPtのトレーニング効果アップ <color=#ff6d26>{0}%</color>",
+          "applied_template": "スタミナトレーニングでスキルPtのトレーニング効果が<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 44,
+          "region_id": 12,
+          "text_group_id": 3122,
+          "effect_type": 20,
+          "effect_value": 1,
+          "condition_type_1": 3,
+          "condition_value_1": 105,
+          "condition_type_2": 6,
+          "condition_value_2": 4,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_01/>スタミナトレーニングに\\n編成サポートカードから追加で1人現れる",
+          "applied_template": "一部のキャラがスタミナトレーニングに<color=#ff6d26>追加で現れた</color>"
+        }
+      ]
+    },
+    {
+      "region_id": 13,
+      "name_ja": "新潟",
+      "region_select_type": 3,
+      "selection_turn": 48,
+      "feelings": [
+        {
+          "id": 37,
+          "region_id": 13,
+          "region_select_type": 3,
+          "feeling_id": 1,
+          "feeling_num": 3
+        },
+        {
+          "id": 38,
+          "region_id": 13,
+          "region_select_type": 3,
+          "feeling_id": 2,
+          "feeling_num": 1
+        },
+        {
+          "id": 39,
+          "region_id": 13,
+          "region_select_type": 3,
+          "feeling_id": 3,
+          "feeling_num": 1
+        }
+      ],
+      "point_bonus_tiers": [
+        {
+          "id": 85,
+          "region_id": 13,
+          "effect_type": 4,
+          "min_pt": 0,
+          "max_pt": 699,
+          "add_value": 0
+        },
+        {
+          "id": 86,
+          "region_id": 13,
+          "effect_type": 4,
+          "min_pt": 700,
+          "max_pt": 1399,
+          "add_value": 3
+        },
+        {
+          "id": 87,
+          "region_id": 13,
+          "effect_type": 4,
+          "min_pt": 1400,
+          "max_pt": 2099,
+          "add_value": 5
+        },
+        {
+          "id": 88,
+          "region_id": 13,
+          "effect_type": 4,
+          "min_pt": 2100,
+          "max_pt": 2799,
+          "add_value": 7
+        },
+        {
+          "id": 89,
+          "region_id": 13,
+          "effect_type": 4,
+          "min_pt": 2800,
+          "max_pt": 3499,
+          "add_value": 9
+        },
+        {
+          "id": 90,
+          "region_id": 13,
+          "effect_type": 4,
+          "min_pt": 3500,
+          "max_pt": 9999,
+          "add_value": 10
+        },
+        {
+          "id": 91,
+          "region_id": 13,
+          "effect_type": 21,
+          "min_pt": 0,
+          "max_pt": 699,
+          "add_value": 0
+        },
+        {
+          "id": 92,
+          "region_id": 13,
+          "effect_type": 21,
+          "min_pt": 700,
+          "max_pt": 1399,
+          "add_value": 3
+        },
+        {
+          "id": 93,
+          "region_id": 13,
+          "effect_type": 21,
+          "min_pt": 1400,
+          "max_pt": 2099,
+          "add_value": 5
+        },
+        {
+          "id": 94,
+          "region_id": 13,
+          "effect_type": 21,
+          "min_pt": 2100,
+          "max_pt": 2799,
+          "add_value": 7
+        },
+        {
+          "id": 95,
+          "region_id": 13,
+          "effect_type": 21,
+          "min_pt": 2800,
+          "max_pt": 3499,
+          "add_value": 9
+        },
+        {
+          "id": 96,
+          "region_id": 13,
+          "effect_type": 21,
+          "min_pt": 3500,
+          "max_pt": 9999,
+          "add_value": 10
+        }
+      ],
+      "effects": [
+        {
+          "id": 45,
+          "region_id": 13,
+          "text_group_id": 3130,
+          "effect_type": 4,
+          "effect_value": 60,
+          "condition_type_1": 3,
+          "condition_value_1": 102,
+          "condition_type_2": 0,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_02/>パワーの友情ボーナス <color=#ff6d26>{0}%</color>",
+          "applied_template": "パワーの友情ボーナスが<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 46,
+          "region_id": 13,
+          "text_group_id": 3131,
+          "effect_type": 21,
+          "effect_value": 50,
+          "condition_type_1": 3,
+          "condition_value_1": 102,
+          "condition_type_2": 6,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_02/>パワートレーニングで\\nスキルPtのトレーニング効果アップ <color=#ff6d26>{0}%</color>",
+          "applied_template": "パワートレーニングでスキルPtのトレーニング効果が<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 47,
+          "region_id": 13,
+          "text_group_id": 3132,
+          "effect_type": 20,
+          "effect_value": 1,
+          "condition_type_1": 3,
+          "condition_value_1": 102,
+          "condition_type_2": 6,
+          "condition_value_2": 4,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_02/>パワートレーニングに\\n編成サポートカードから追加で1人現れる",
+          "applied_template": "一部のキャラがパワートレーニングに<color=#ff6d26>追加で現れた</color>"
+        }
+      ]
+    },
+    {
+      "region_id": 14,
+      "name_ja": "福島",
+      "region_select_type": 3,
+      "selection_turn": 48,
+      "feelings": [
+        {
+          "id": 40,
+          "region_id": 14,
+          "region_select_type": 3,
+          "feeling_id": 1,
+          "feeling_num": 2
+        },
+        {
+          "id": 41,
+          "region_id": 14,
+          "region_select_type": 3,
+          "feeling_id": 2,
+          "feeling_num": 3
+        },
+        {
+          "id": 42,
+          "region_id": 14,
+          "region_select_type": 3,
+          "feeling_id": 3,
+          "feeling_num": 0
+        }
+      ],
+      "point_bonus_tiers": [
+        {
+          "id": 97,
+          "region_id": 14,
+          "effect_type": 4,
+          "min_pt": 0,
+          "max_pt": 699,
+          "add_value": 0
+        },
+        {
+          "id": 98,
+          "region_id": 14,
+          "effect_type": 4,
+          "min_pt": 700,
+          "max_pt": 1399,
+          "add_value": 3
+        },
+        {
+          "id": 99,
+          "region_id": 14,
+          "effect_type": 4,
+          "min_pt": 1400,
+          "max_pt": 2099,
+          "add_value": 5
+        },
+        {
+          "id": 100,
+          "region_id": 14,
+          "effect_type": 4,
+          "min_pt": 2100,
+          "max_pt": 2799,
+          "add_value": 7
+        },
+        {
+          "id": 101,
+          "region_id": 14,
+          "effect_type": 4,
+          "min_pt": 2800,
+          "max_pt": 3499,
+          "add_value": 9
+        },
+        {
+          "id": 102,
+          "region_id": 14,
+          "effect_type": 4,
+          "min_pt": 3500,
+          "max_pt": 9999,
+          "add_value": 10
+        },
+        {
+          "id": 103,
+          "region_id": 14,
+          "effect_type": 21,
+          "min_pt": 0,
+          "max_pt": 699,
+          "add_value": 0
+        },
+        {
+          "id": 104,
+          "region_id": 14,
+          "effect_type": 21,
+          "min_pt": 700,
+          "max_pt": 1399,
+          "add_value": 3
+        },
+        {
+          "id": 105,
+          "region_id": 14,
+          "effect_type": 21,
+          "min_pt": 1400,
+          "max_pt": 2099,
+          "add_value": 5
+        },
+        {
+          "id": 106,
+          "region_id": 14,
+          "effect_type": 21,
+          "min_pt": 2100,
+          "max_pt": 2799,
+          "add_value": 7
+        },
+        {
+          "id": 107,
+          "region_id": 14,
+          "effect_type": 21,
+          "min_pt": 2800,
+          "max_pt": 3499,
+          "add_value": 9
+        },
+        {
+          "id": 108,
+          "region_id": 14,
+          "effect_type": 21,
+          "min_pt": 3500,
+          "max_pt": 9999,
+          "add_value": 10
+        }
+      ],
+      "effects": [
+        {
+          "id": 48,
+          "region_id": 14,
+          "text_group_id": 3140,
+          "effect_type": 4,
+          "effect_value": 60,
+          "condition_type_1": 3,
+          "condition_value_1": 103,
+          "condition_type_2": 0,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_03/>根性の友情ボーナス <color=#ff6d26>{0}%</color>",
+          "applied_template": "根性の友情ボーナスが<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 49,
+          "region_id": 14,
+          "text_group_id": 3141,
+          "effect_type": 21,
+          "effect_value": 50,
+          "condition_type_1": 3,
+          "condition_value_1": 103,
+          "condition_type_2": 6,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_03/>根性トレーニングで\\nスキルPtのトレーニング効果アップ <color=#ff6d26>{0}%</color>",
+          "applied_template": "根性トレーニングでスキルPtのトレーニング効果が<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 50,
+          "region_id": 14,
+          "text_group_id": 3142,
+          "effect_type": 20,
+          "effect_value": 1,
+          "condition_type_1": 3,
+          "condition_value_1": 103,
+          "condition_type_2": 6,
+          "condition_value_2": 4,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_03/>根性トレーニングに\\n編成サポートカードから追加で1人現れる",
+          "applied_template": "一部のキャラが根性トレーニングに<color=#ff6d26>追加で現れた</color>"
+        }
+      ]
+    },
+    {
+      "region_id": 15,
+      "name_ja": "東京",
+      "region_select_type": 3,
+      "selection_turn": 48,
+      "feelings": [
+        {
+          "id": 43,
+          "region_id": 15,
+          "region_select_type": 3,
+          "feeling_id": 1,
+          "feeling_num": 1
+        },
+        {
+          "id": 44,
+          "region_id": 15,
+          "region_select_type": 3,
+          "feeling_id": 2,
+          "feeling_num": 1
+        },
+        {
+          "id": 45,
+          "region_id": 15,
+          "region_select_type": 3,
+          "feeling_id": 3,
+          "feeling_num": 3
+        }
+      ],
+      "point_bonus_tiers": [
+        {
+          "id": 109,
+          "region_id": 15,
+          "effect_type": 4,
+          "min_pt": 0,
+          "max_pt": 699,
+          "add_value": 0
+        },
+        {
+          "id": 110,
+          "region_id": 15,
+          "effect_type": 4,
+          "min_pt": 700,
+          "max_pt": 1399,
+          "add_value": 3
+        },
+        {
+          "id": 111,
+          "region_id": 15,
+          "effect_type": 4,
+          "min_pt": 1400,
+          "max_pt": 2099,
+          "add_value": 5
+        },
+        {
+          "id": 112,
+          "region_id": 15,
+          "effect_type": 4,
+          "min_pt": 2100,
+          "max_pt": 2799,
+          "add_value": 7
+        },
+        {
+          "id": 113,
+          "region_id": 15,
+          "effect_type": 4,
+          "min_pt": 2800,
+          "max_pt": 3499,
+          "add_value": 9
+        },
+        {
+          "id": 114,
+          "region_id": 15,
+          "effect_type": 4,
+          "min_pt": 3500,
+          "max_pt": 9999,
+          "add_value": 10
+        },
+        {
+          "id": 115,
+          "region_id": 15,
+          "effect_type": 21,
+          "min_pt": 0,
+          "max_pt": 699,
+          "add_value": 0
+        },
+        {
+          "id": 116,
+          "region_id": 15,
+          "effect_type": 21,
+          "min_pt": 700,
+          "max_pt": 1399,
+          "add_value": 3
+        },
+        {
+          "id": 117,
+          "region_id": 15,
+          "effect_type": 21,
+          "min_pt": 1400,
+          "max_pt": 2099,
+          "add_value": 5
+        },
+        {
+          "id": 118,
+          "region_id": 15,
+          "effect_type": 21,
+          "min_pt": 2100,
+          "max_pt": 2799,
+          "add_value": 7
+        },
+        {
+          "id": 119,
+          "region_id": 15,
+          "effect_type": 21,
+          "min_pt": 2800,
+          "max_pt": 3499,
+          "add_value": 9
+        },
+        {
+          "id": 120,
+          "region_id": 15,
+          "effect_type": 21,
+          "min_pt": 3500,
+          "max_pt": 9999,
+          "add_value": 10
+        }
+      ],
+      "effects": [
+        {
+          "id": 51,
+          "region_id": 15,
+          "text_group_id": 3150,
+          "effect_type": 4,
+          "effect_value": 60,
+          "condition_type_1": 3,
+          "condition_value_1": 106,
+          "condition_type_2": 0,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_04/>賢さの友情ボーナス <color=#ff6d26>{0}%</color>",
+          "applied_template": "賢さの友情ボーナスが<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 52,
+          "region_id": 15,
+          "text_group_id": 3151,
+          "effect_type": 21,
+          "effect_value": 50,
+          "condition_type_1": 3,
+          "condition_value_1": 106,
+          "condition_type_2": 6,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_04/>賢さトレーニングで\\nスキルPtのトレーニング効果アップ <color=#ff6d26>{0}%</color>",
+          "applied_template": "賢さトレーニングでスキルPtのトレーニング効果が<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 53,
+          "region_id": 15,
+          "text_group_id": 3152,
+          "effect_type": 20,
+          "effect_value": 1,
+          "condition_type_1": 3,
+          "condition_value_1": 106,
+          "condition_type_2": 6,
+          "condition_value_2": 4,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_04/>賢さトレーニングに\\n編成サポートカードから追加で1人現れる",
+          "applied_template": "一部のキャラが賢さトレーニングに<color=#ff6d26>追加で現れた</color>"
+        }
+      ]
+    },
+    {
+      "region_id": 16,
+      "name_ja": "中山",
+      "region_select_type": 3,
+      "selection_turn": 48,
+      "feelings": [
+        {
+          "id": 46,
+          "region_id": 16,
+          "region_select_type": 3,
+          "feeling_id": 1,
+          "feeling_num": 2
+        },
+        {
+          "id": 47,
+          "region_id": 16,
+          "region_select_type": 3,
+          "feeling_id": 2,
+          "feeling_num": 0
+        },
+        {
+          "id": 48,
+          "region_id": 16,
+          "region_select_type": 3,
+          "feeling_id": 3,
+          "feeling_num": 3
+        }
+      ],
+      "point_bonus_tiers": [
+        {
+          "id": 121,
+          "region_id": 16,
+          "effect_type": 4,
+          "min_pt": 0,
+          "max_pt": 699,
+          "add_value": 0
+        },
+        {
+          "id": 122,
+          "region_id": 16,
+          "effect_type": 4,
+          "min_pt": 700,
+          "max_pt": 1399,
+          "add_value": 3
+        },
+        {
+          "id": 123,
+          "region_id": 16,
+          "effect_type": 4,
+          "min_pt": 1400,
+          "max_pt": 2099,
+          "add_value": 5
+        },
+        {
+          "id": 124,
+          "region_id": 16,
+          "effect_type": 4,
+          "min_pt": 2100,
+          "max_pt": 2799,
+          "add_value": 7
+        },
+        {
+          "id": 125,
+          "region_id": 16,
+          "effect_type": 4,
+          "min_pt": 2800,
+          "max_pt": 3499,
+          "add_value": 9
+        },
+        {
+          "id": 126,
+          "region_id": 16,
+          "effect_type": 4,
+          "min_pt": 3500,
+          "max_pt": 9999,
+          "add_value": 10
+        },
+        {
+          "id": 127,
+          "region_id": 16,
+          "effect_type": 21,
+          "min_pt": 0,
+          "max_pt": 699,
+          "add_value": 0
+        },
+        {
+          "id": 128,
+          "region_id": 16,
+          "effect_type": 21,
+          "min_pt": 700,
+          "max_pt": 1399,
+          "add_value": 3
+        },
+        {
+          "id": 129,
+          "region_id": 16,
+          "effect_type": 21,
+          "min_pt": 1400,
+          "max_pt": 2099,
+          "add_value": 5
+        },
+        {
+          "id": 130,
+          "region_id": 16,
+          "effect_type": 21,
+          "min_pt": 2100,
+          "max_pt": 2799,
+          "add_value": 7
+        },
+        {
+          "id": 131,
+          "region_id": 16,
+          "effect_type": 21,
+          "min_pt": 2800,
+          "max_pt": 3499,
+          "add_value": 9
+        },
+        {
+          "id": 132,
+          "region_id": 16,
+          "effect_type": 21,
+          "min_pt": 3500,
+          "max_pt": 9999,
+          "add_value": 10
+        }
+      ],
+      "effects": [
+        {
+          "id": 54,
+          "region_id": 16,
+          "text_group_id": 3160,
+          "effect_type": 4,
+          "effect_value": 40,
+          "condition_type_1": 3,
+          "condition_value_1": 101,
+          "condition_type_2": 0,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_02/>パワー <atlas=Common sprite=utx_ico_obtain_04/>賢さの友情ボーナス <color=#ff6d26>{0}%</color>",
+          "applied_template": "スピードとパワーと賢さの友情ボーナスが<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 55,
+          "region_id": 16,
+          "text_group_id": 3160,
+          "effect_type": 4,
+          "effect_value": 40,
+          "condition_type_1": 3,
+          "condition_value_1": 102,
+          "condition_type_2": 0,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_02/>パワー <atlas=Common sprite=utx_ico_obtain_04/>賢さの友情ボーナス <color=#ff6d26>{0}%</color>",
+          "applied_template": "スピードとパワーと賢さの友情ボーナスが<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 56,
+          "region_id": 16,
+          "text_group_id": 3160,
+          "effect_type": 4,
+          "effect_value": 40,
+          "condition_type_1": 3,
+          "condition_value_1": 106,
+          "condition_type_2": 0,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_02/>パワー <atlas=Common sprite=utx_ico_obtain_04/>賢さの友情ボーナス <color=#ff6d26>{0}%</color>",
+          "applied_template": "スピードとパワーと賢さの友情ボーナスが<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 57,
+          "region_id": 16,
+          "text_group_id": 3161,
+          "effect_type": 21,
+          "effect_value": 50,
+          "condition_type_1": 3,
+          "condition_value_1": 101,
+          "condition_type_2": 6,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_02/>パワー <atlas=Common sprite=utx_ico_obtain_04/>賢さトレーニングで\\nスキルPtのトレーニング効果アップ <color=#ff6d26>{0}%</color>",
+          "applied_template": "スピードとパワーと賢さトレーニングでスキルPtのトレーニング効果が<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 58,
+          "region_id": 16,
+          "text_group_id": 3161,
+          "effect_type": 21,
+          "effect_value": 50,
+          "condition_type_1": 3,
+          "condition_value_1": 102,
+          "condition_type_2": 6,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_02/>パワー <atlas=Common sprite=utx_ico_obtain_04/>賢さトレーニングで\\nスキルPtのトレーニング効果アップ <color=#ff6d26>{0}%</color>",
+          "applied_template": "スピードとパワーと賢さトレーニングでスキルPtのトレーニング効果が<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 59,
+          "region_id": 16,
+          "text_group_id": 3161,
+          "effect_type": 21,
+          "effect_value": 50,
+          "condition_type_1": 3,
+          "condition_value_1": 106,
+          "condition_type_2": 6,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_02/>パワー <atlas=Common sprite=utx_ico_obtain_04/>賢さトレーニングで\\nスキルPtのトレーニング効果アップ <color=#ff6d26>{0}%</color>",
+          "applied_template": "スピードとパワーと賢さトレーニングでスキルPtのトレーニング効果が<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 60,
+          "region_id": 16,
+          "text_group_id": 3162,
+          "effect_type": 20,
+          "effect_value": 1,
+          "condition_type_1": 3,
+          "condition_value_1": 101,
+          "condition_type_2": 6,
+          "condition_value_2": 4,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_02/>パワー <atlas=Common sprite=utx_ico_obtain_04/>賢さトレーニングに\\n編成サポートカードから追加で1人ずつ現れる",
+          "applied_template": "一部のキャラがスピードとパワーと賢さトレーニングに<color=#ff6d26>追加で現れた</color>"
+        },
+        {
+          "id": 61,
+          "region_id": 16,
+          "text_group_id": 3162,
+          "effect_type": 20,
+          "effect_value": 1,
+          "condition_type_1": 3,
+          "condition_value_1": 102,
+          "condition_type_2": 6,
+          "condition_value_2": 4,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_02/>パワー <atlas=Common sprite=utx_ico_obtain_04/>賢さトレーニングに\\n編成サポートカードから追加で1人ずつ現れる",
+          "applied_template": "一部のキャラがスピードとパワーと賢さトレーニングに<color=#ff6d26>追加で現れた</color>"
+        },
+        {
+          "id": 62,
+          "region_id": 16,
+          "text_group_id": 3162,
+          "effect_type": 20,
+          "effect_value": 1,
+          "condition_type_1": 3,
+          "condition_value_1": 106,
+          "condition_type_2": 6,
+          "condition_value_2": 4,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_02/>パワー <atlas=Common sprite=utx_ico_obtain_04/>賢さトレーニングに\\n編成サポートカードから追加で1人ずつ現れる",
+          "applied_template": "一部のキャラがスピードとパワーと賢さトレーニングに<color=#ff6d26>追加で現れた</color>"
+        }
+      ]
+    },
+    {
+      "region_id": 17,
+      "name_ja": "中京",
+      "region_select_type": 3,
+      "selection_turn": 48,
+      "feelings": [
+        {
+          "id": 49,
+          "region_id": 17,
+          "region_select_type": 3,
+          "feeling_id": 1,
+          "feeling_num": 3
+        },
+        {
+          "id": 50,
+          "region_id": 17,
+          "region_select_type": 3,
+          "feeling_id": 2,
+          "feeling_num": 2
+        },
+        {
+          "id": 51,
+          "region_id": 17,
+          "region_select_type": 3,
+          "feeling_id": 3,
+          "feeling_num": 0
+        }
+      ],
+      "point_bonus_tiers": [
+        {
+          "id": 133,
+          "region_id": 17,
+          "effect_type": 4,
+          "min_pt": 0,
+          "max_pt": 699,
+          "add_value": 0
+        },
+        {
+          "id": 134,
+          "region_id": 17,
+          "effect_type": 4,
+          "min_pt": 700,
+          "max_pt": 1399,
+          "add_value": 3
+        },
+        {
+          "id": 135,
+          "region_id": 17,
+          "effect_type": 4,
+          "min_pt": 1400,
+          "max_pt": 2099,
+          "add_value": 5
+        },
+        {
+          "id": 136,
+          "region_id": 17,
+          "effect_type": 4,
+          "min_pt": 2100,
+          "max_pt": 2799,
+          "add_value": 7
+        },
+        {
+          "id": 137,
+          "region_id": 17,
+          "effect_type": 4,
+          "min_pt": 2800,
+          "max_pt": 3499,
+          "add_value": 9
+        },
+        {
+          "id": 138,
+          "region_id": 17,
+          "effect_type": 4,
+          "min_pt": 3500,
+          "max_pt": 9999,
+          "add_value": 10
+        },
+        {
+          "id": 139,
+          "region_id": 17,
+          "effect_type": 21,
+          "min_pt": 0,
+          "max_pt": 699,
+          "add_value": 0
+        },
+        {
+          "id": 140,
+          "region_id": 17,
+          "effect_type": 21,
+          "min_pt": 700,
+          "max_pt": 1399,
+          "add_value": 3
+        },
+        {
+          "id": 141,
+          "region_id": 17,
+          "effect_type": 21,
+          "min_pt": 1400,
+          "max_pt": 2099,
+          "add_value": 5
+        },
+        {
+          "id": 142,
+          "region_id": 17,
+          "effect_type": 21,
+          "min_pt": 2100,
+          "max_pt": 2799,
+          "add_value": 7
+        },
+        {
+          "id": 143,
+          "region_id": 17,
+          "effect_type": 21,
+          "min_pt": 2800,
+          "max_pt": 3499,
+          "add_value": 9
+        },
+        {
+          "id": 144,
+          "region_id": 17,
+          "effect_type": 21,
+          "min_pt": 3500,
+          "max_pt": 9999,
+          "add_value": 10
+        }
+      ],
+      "effects": [
+        {
+          "id": 63,
+          "region_id": 17,
+          "text_group_id": 3170,
+          "effect_type": 4,
+          "effect_value": 40,
+          "condition_type_1": 3,
+          "condition_value_1": 101,
+          "condition_type_2": 0,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_02/>パワー <atlas=Common sprite=utx_ico_obtain_03/>根性の友情ボーナス <color=#ff6d26>{0}%</color>",
+          "applied_template": "スピードとパワーと根性の友情ボーナスが<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 64,
+          "region_id": 17,
+          "text_group_id": 3170,
+          "effect_type": 4,
+          "effect_value": 40,
+          "condition_type_1": 3,
+          "condition_value_1": 102,
+          "condition_type_2": 0,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_02/>パワー <atlas=Common sprite=utx_ico_obtain_03/>根性の友情ボーナス <color=#ff6d26>{0}%</color>",
+          "applied_template": "スピードとパワーと根性の友情ボーナスが<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 65,
+          "region_id": 17,
+          "text_group_id": 3170,
+          "effect_type": 4,
+          "effect_value": 40,
+          "condition_type_1": 3,
+          "condition_value_1": 103,
+          "condition_type_2": 0,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_02/>パワー <atlas=Common sprite=utx_ico_obtain_03/>根性の友情ボーナス <color=#ff6d26>{0}%</color>",
+          "applied_template": "スピードとパワーと根性の友情ボーナスが<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 66,
+          "region_id": 17,
+          "text_group_id": 3171,
+          "effect_type": 21,
+          "effect_value": 50,
+          "condition_type_1": 3,
+          "condition_value_1": 101,
+          "condition_type_2": 6,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_02/>パワー <atlas=Common sprite=utx_ico_obtain_03/>根性トレーニングで\\nスキルPtのトレーニング効果アップ <color=#ff6d26>{0}%</color>",
+          "applied_template": "スピードとパワーと根性トレーニングでスキルPtのトレーニング効果が<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 67,
+          "region_id": 17,
+          "text_group_id": 3171,
+          "effect_type": 21,
+          "effect_value": 50,
+          "condition_type_1": 3,
+          "condition_value_1": 102,
+          "condition_type_2": 6,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_02/>パワー <atlas=Common sprite=utx_ico_obtain_03/>根性トレーニングで\\nスキルPtのトレーニング効果アップ <color=#ff6d26>{0}%</color>",
+          "applied_template": "スピードとパワーと根性トレーニングでスキルPtのトレーニング効果が<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 68,
+          "region_id": 17,
+          "text_group_id": 3171,
+          "effect_type": 21,
+          "effect_value": 50,
+          "condition_type_1": 3,
+          "condition_value_1": 103,
+          "condition_type_2": 6,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_02/>パワー <atlas=Common sprite=utx_ico_obtain_03/>根性トレーニングで\\nスキルPtのトレーニング効果アップ <color=#ff6d26>{0}%</color>",
+          "applied_template": "スピードとパワーと根性トレーニングでスキルPtのトレーニング効果が<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 69,
+          "region_id": 17,
+          "text_group_id": 3172,
+          "effect_type": 20,
+          "effect_value": 1,
+          "condition_type_1": 3,
+          "condition_value_1": 101,
+          "condition_type_2": 6,
+          "condition_value_2": 4,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_02/>パワー <atlas=Common sprite=utx_ico_obtain_03/>根性トレーニングに\\n編成サポートカードから追加で1人ずつ現れる",
+          "applied_template": "一部のキャラがスピードとパワーと根性トレーニングに<color=#ff6d26>追加で現れた</color>"
+        },
+        {
+          "id": 70,
+          "region_id": 17,
+          "text_group_id": 3172,
+          "effect_type": 20,
+          "effect_value": 1,
+          "condition_type_1": 3,
+          "condition_value_1": 102,
+          "condition_type_2": 6,
+          "condition_value_2": 4,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_02/>パワー <atlas=Common sprite=utx_ico_obtain_03/>根性トレーニングに\\n編成サポートカードから追加で1人ずつ現れる",
+          "applied_template": "一部のキャラがスピードとパワーと根性トレーニングに<color=#ff6d26>追加で現れた</color>"
+        },
+        {
+          "id": 71,
+          "region_id": 17,
+          "text_group_id": 3172,
+          "effect_type": 20,
+          "effect_value": 1,
+          "condition_type_1": 3,
+          "condition_value_1": 103,
+          "condition_type_2": 6,
+          "condition_value_2": 4,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_02/>パワー <atlas=Common sprite=utx_ico_obtain_03/>根性トレーニングに\\n編成サポートカードから追加で1人ずつ現れる",
+          "applied_template": "一部のキャラがスピードとパワーと根性トレーニングに<color=#ff6d26>追加で現れた</color>"
+        }
+      ]
+    },
+    {
+      "region_id": 18,
+      "name_ja": "京都",
+      "region_select_type": 3,
+      "selection_turn": 48,
+      "feelings": [
+        {
+          "id": 52,
+          "region_id": 18,
+          "region_select_type": 3,
+          "feeling_id": 1,
+          "feeling_num": 0
+        },
+        {
+          "id": 53,
+          "region_id": 18,
+          "region_select_type": 3,
+          "feeling_id": 2,
+          "feeling_num": 3
+        },
+        {
+          "id": 54,
+          "region_id": 18,
+          "region_select_type": 3,
+          "feeling_id": 3,
+          "feeling_num": 2
+        }
+      ],
+      "point_bonus_tiers": [
+        {
+          "id": 145,
+          "region_id": 18,
+          "effect_type": 4,
+          "min_pt": 0,
+          "max_pt": 699,
+          "add_value": 0
+        },
+        {
+          "id": 146,
+          "region_id": 18,
+          "effect_type": 4,
+          "min_pt": 700,
+          "max_pt": 1399,
+          "add_value": 3
+        },
+        {
+          "id": 147,
+          "region_id": 18,
+          "effect_type": 4,
+          "min_pt": 1400,
+          "max_pt": 2099,
+          "add_value": 5
+        },
+        {
+          "id": 148,
+          "region_id": 18,
+          "effect_type": 4,
+          "min_pt": 2100,
+          "max_pt": 2799,
+          "add_value": 7
+        },
+        {
+          "id": 149,
+          "region_id": 18,
+          "effect_type": 4,
+          "min_pt": 2800,
+          "max_pt": 3499,
+          "add_value": 9
+        },
+        {
+          "id": 150,
+          "region_id": 18,
+          "effect_type": 4,
+          "min_pt": 3500,
+          "max_pt": 9999,
+          "add_value": 10
+        },
+        {
+          "id": 151,
+          "region_id": 18,
+          "effect_type": 21,
+          "min_pt": 0,
+          "max_pt": 699,
+          "add_value": 0
+        },
+        {
+          "id": 152,
+          "region_id": 18,
+          "effect_type": 21,
+          "min_pt": 700,
+          "max_pt": 1399,
+          "add_value": 3
+        },
+        {
+          "id": 153,
+          "region_id": 18,
+          "effect_type": 21,
+          "min_pt": 1400,
+          "max_pt": 2099,
+          "add_value": 5
+        },
+        {
+          "id": 154,
+          "region_id": 18,
+          "effect_type": 21,
+          "min_pt": 2100,
+          "max_pt": 2799,
+          "add_value": 7
+        },
+        {
+          "id": 155,
+          "region_id": 18,
+          "effect_type": 21,
+          "min_pt": 2800,
+          "max_pt": 3499,
+          "add_value": 9
+        },
+        {
+          "id": 156,
+          "region_id": 18,
+          "effect_type": 21,
+          "min_pt": 3500,
+          "max_pt": 9999,
+          "add_value": 10
+        }
+      ],
+      "effects": [
+        {
+          "id": 72,
+          "region_id": 18,
+          "text_group_id": 3180,
+          "effect_type": 4,
+          "effect_value": 40,
+          "condition_type_1": 3,
+          "condition_value_1": 101,
+          "condition_type_2": 0,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_01/>スタミナ <atlas=Common sprite=utx_ico_obtain_04/>賢さの友情ボーナス <color=#ff6d26>{0}%</color>",
+          "applied_template": "スピードとスタミナと賢さの友情ボーナスが<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 73,
+          "region_id": 18,
+          "text_group_id": 3180,
+          "effect_type": 4,
+          "effect_value": 40,
+          "condition_type_1": 3,
+          "condition_value_1": 105,
+          "condition_type_2": 0,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_01/>スタミナ <atlas=Common sprite=utx_ico_obtain_04/>賢さの友情ボーナス <color=#ff6d26>{0}%</color>",
+          "applied_template": "スピードとスタミナと賢さの友情ボーナスが<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 74,
+          "region_id": 18,
+          "text_group_id": 3180,
+          "effect_type": 4,
+          "effect_value": 40,
+          "condition_type_1": 3,
+          "condition_value_1": 106,
+          "condition_type_2": 0,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_01/>スタミナ <atlas=Common sprite=utx_ico_obtain_04/>賢さの友情ボーナス <color=#ff6d26>{0}%</color>",
+          "applied_template": "スピードとスタミナと賢さの友情ボーナスが<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 75,
+          "region_id": 18,
+          "text_group_id": 3181,
+          "effect_type": 21,
+          "effect_value": 50,
+          "condition_type_1": 3,
+          "condition_value_1": 101,
+          "condition_type_2": 6,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_01/>スタミナ <atlas=Common sprite=utx_ico_obtain_04/>賢さトレーニングで\\nスキルPtのトレーニング効果アップ <color=#ff6d26>{0}%</color>",
+          "applied_template": "スピードとスタミナと賢さトレーニングでスキルPtのトレーニング効果が<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 76,
+          "region_id": 18,
+          "text_group_id": 3181,
+          "effect_type": 21,
+          "effect_value": 50,
+          "condition_type_1": 3,
+          "condition_value_1": 105,
+          "condition_type_2": 6,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_01/>スタミナ <atlas=Common sprite=utx_ico_obtain_04/>賢さトレーニングで\\nスキルPtのトレーニング効果アップ <color=#ff6d26>{0}%</color>",
+          "applied_template": "スピードとスタミナと賢さトレーニングでスキルPtのトレーニング効果が<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 77,
+          "region_id": 18,
+          "text_group_id": 3181,
+          "effect_type": 21,
+          "effect_value": 50,
+          "condition_type_1": 3,
+          "condition_value_1": 106,
+          "condition_type_2": 6,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_01/>スタミナ <atlas=Common sprite=utx_ico_obtain_04/>賢さトレーニングで\\nスキルPtのトレーニング効果アップ <color=#ff6d26>{0}%</color>",
+          "applied_template": "スピードとスタミナと賢さトレーニングでスキルPtのトレーニング効果が<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 78,
+          "region_id": 18,
+          "text_group_id": 3182,
+          "effect_type": 20,
+          "effect_value": 1,
+          "condition_type_1": 3,
+          "condition_value_1": 101,
+          "condition_type_2": 6,
+          "condition_value_2": 4,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_01/>スタミナ <atlas=Common sprite=utx_ico_obtain_04/>賢さトレーニングに\\n編成サポートカードから追加で1人ずつ現れる",
+          "applied_template": "一部のキャラがスピードとスタミナと賢さトレーニングに<color=#ff6d26>追加で現れた</color>"
+        },
+        {
+          "id": 79,
+          "region_id": 18,
+          "text_group_id": 3182,
+          "effect_type": 20,
+          "effect_value": 1,
+          "condition_type_1": 3,
+          "condition_value_1": 105,
+          "condition_type_2": 6,
+          "condition_value_2": 4,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_01/>スタミナ <atlas=Common sprite=utx_ico_obtain_04/>賢さトレーニングに\\n編成サポートカードから追加で1人ずつ現れる",
+          "applied_template": "一部のキャラがスピードとスタミナと賢さトレーニングに<color=#ff6d26>追加で現れた</color>"
+        },
+        {
+          "id": 80,
+          "region_id": 18,
+          "text_group_id": 3182,
+          "effect_type": 20,
+          "effect_value": 1,
+          "condition_type_1": 3,
+          "condition_value_1": 106,
+          "condition_type_2": 6,
+          "condition_value_2": 4,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_01/>スタミナ <atlas=Common sprite=utx_ico_obtain_04/>賢さトレーニングに\\n編成サポートカードから追加で1人ずつ現れる",
+          "applied_template": "一部のキャラがスピードとスタミナと賢さトレーニングに<color=#ff6d26>追加で現れた</color>"
+        }
+      ]
+    },
+    {
+      "region_id": 19,
+      "name_ja": "阪神",
+      "region_select_type": 3,
+      "selection_turn": 48,
+      "feelings": [
+        {
+          "id": 55,
+          "region_id": 19,
+          "region_select_type": 3,
+          "feeling_id": 1,
+          "feeling_num": 2
+        },
+        {
+          "id": 56,
+          "region_id": 19,
+          "region_select_type": 3,
+          "feeling_id": 2,
+          "feeling_num": 1
+        },
+        {
+          "id": 57,
+          "region_id": 19,
+          "region_select_type": 3,
+          "feeling_id": 3,
+          "feeling_num": 2
+        }
+      ],
+      "point_bonus_tiers": [
+        {
+          "id": 157,
+          "region_id": 19,
+          "effect_type": 4,
+          "min_pt": 0,
+          "max_pt": 699,
+          "add_value": 0
+        },
+        {
+          "id": 158,
+          "region_id": 19,
+          "effect_type": 4,
+          "min_pt": 700,
+          "max_pt": 1399,
+          "add_value": 3
+        },
+        {
+          "id": 159,
+          "region_id": 19,
+          "effect_type": 4,
+          "min_pt": 1400,
+          "max_pt": 2099,
+          "add_value": 5
+        },
+        {
+          "id": 160,
+          "region_id": 19,
+          "effect_type": 4,
+          "min_pt": 2100,
+          "max_pt": 2799,
+          "add_value": 7
+        },
+        {
+          "id": 161,
+          "region_id": 19,
+          "effect_type": 4,
+          "min_pt": 2800,
+          "max_pt": 3499,
+          "add_value": 9
+        },
+        {
+          "id": 162,
+          "region_id": 19,
+          "effect_type": 4,
+          "min_pt": 3500,
+          "max_pt": 9999,
+          "add_value": 10
+        },
+        {
+          "id": 163,
+          "region_id": 19,
+          "effect_type": 21,
+          "min_pt": 0,
+          "max_pt": 699,
+          "add_value": 0
+        },
+        {
+          "id": 164,
+          "region_id": 19,
+          "effect_type": 21,
+          "min_pt": 700,
+          "max_pt": 1399,
+          "add_value": 3
+        },
+        {
+          "id": 165,
+          "region_id": 19,
+          "effect_type": 21,
+          "min_pt": 1400,
+          "max_pt": 2099,
+          "add_value": 5
+        },
+        {
+          "id": 166,
+          "region_id": 19,
+          "effect_type": 21,
+          "min_pt": 2100,
+          "max_pt": 2799,
+          "add_value": 7
+        },
+        {
+          "id": 167,
+          "region_id": 19,
+          "effect_type": 21,
+          "min_pt": 2800,
+          "max_pt": 3499,
+          "add_value": 9
+        },
+        {
+          "id": 168,
+          "region_id": 19,
+          "effect_type": 21,
+          "min_pt": 3500,
+          "max_pt": 9999,
+          "add_value": 10
+        }
+      ],
+      "effects": [
+        {
+          "id": 81,
+          "region_id": 19,
+          "text_group_id": 3190,
+          "effect_type": 4,
+          "effect_value": 40,
+          "condition_type_1": 3,
+          "condition_value_1": 101,
+          "condition_type_2": 0,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_01/>スタミナ <atlas=Common sprite=utx_ico_obtain_02/>パワーの友情ボーナス <color=#ff6d26>{0}%</color>",
+          "applied_template": "スピードとスタミナとパワーの友情ボーナスが<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 82,
+          "region_id": 19,
+          "text_group_id": 3190,
+          "effect_type": 4,
+          "effect_value": 40,
+          "condition_type_1": 3,
+          "condition_value_1": 105,
+          "condition_type_2": 0,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_01/>スタミナ <atlas=Common sprite=utx_ico_obtain_02/>パワーの友情ボーナス <color=#ff6d26>{0}%</color>",
+          "applied_template": "スピードとスタミナとパワーの友情ボーナスが<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 83,
+          "region_id": 19,
+          "text_group_id": 3190,
+          "effect_type": 4,
+          "effect_value": 40,
+          "condition_type_1": 3,
+          "condition_value_1": 102,
+          "condition_type_2": 0,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_01/>スタミナ <atlas=Common sprite=utx_ico_obtain_02/>パワーの友情ボーナス <color=#ff6d26>{0}%</color>",
+          "applied_template": "スピードとスタミナとパワーの友情ボーナスが<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 84,
+          "region_id": 19,
+          "text_group_id": 3191,
+          "effect_type": 21,
+          "effect_value": 50,
+          "condition_type_1": 3,
+          "condition_value_1": 101,
+          "condition_type_2": 6,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_01/>スタミナ <atlas=Common sprite=utx_ico_obtain_02/>パワートレーニングで\\nスキルPtのトレーニング効果アップ <color=#ff6d26>{0}%</color>",
+          "applied_template": "スピードとスタミナとパワートレーニングでスキルPtのトレーニング効果が<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 85,
+          "region_id": 19,
+          "text_group_id": 3191,
+          "effect_type": 21,
+          "effect_value": 50,
+          "condition_type_1": 3,
+          "condition_value_1": 105,
+          "condition_type_2": 6,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_01/>スタミナ <atlas=Common sprite=utx_ico_obtain_02/>パワートレーニングで\\nスキルPtのトレーニング効果アップ <color=#ff6d26>{0}%</color>",
+          "applied_template": "スピードとスタミナとパワートレーニングでスキルPtのトレーニング効果が<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 86,
+          "region_id": 19,
+          "text_group_id": 3191,
+          "effect_type": 21,
+          "effect_value": 50,
+          "condition_type_1": 3,
+          "condition_value_1": 102,
+          "condition_type_2": 6,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_01/>スタミナ <atlas=Common sprite=utx_ico_obtain_02/>パワートレーニングで\\nスキルPtのトレーニング効果アップ <color=#ff6d26>{0}%</color>",
+          "applied_template": "スピードとスタミナとパワートレーニングでスキルPtのトレーニング効果が<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 87,
+          "region_id": 19,
+          "text_group_id": 3192,
+          "effect_type": 20,
+          "effect_value": 1,
+          "condition_type_1": 3,
+          "condition_value_1": 101,
+          "condition_type_2": 6,
+          "condition_value_2": 4,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_01/>スタミナ <atlas=Common sprite=utx_ico_obtain_02/>パワートレーニングに\\n編成サポートカードから追加で1人ずつ現れる",
+          "applied_template": "一部のキャラがスピードとスタミナとパワートレーニングに<color=#ff6d26>追加で現れた</color>"
+        },
+        {
+          "id": 88,
+          "region_id": 19,
+          "text_group_id": 3192,
+          "effect_type": 20,
+          "effect_value": 1,
+          "condition_type_1": 3,
+          "condition_value_1": 105,
+          "condition_type_2": 6,
+          "condition_value_2": 4,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_01/>スタミナ <atlas=Common sprite=utx_ico_obtain_02/>パワートレーニングに\\n編成サポートカードから追加で1人ずつ現れる",
+          "applied_template": "一部のキャラがスピードとスタミナとパワートレーニングに<color=#ff6d26>追加で現れた</color>"
+        },
+        {
+          "id": 89,
+          "region_id": 19,
+          "text_group_id": 3192,
+          "effect_type": 20,
+          "effect_value": 1,
+          "condition_type_1": 3,
+          "condition_value_1": 102,
+          "condition_type_2": 6,
+          "condition_value_2": 4,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_01/>スタミナ <atlas=Common sprite=utx_ico_obtain_02/>パワートレーニングに\\n編成サポートカードから追加で1人ずつ現れる",
+          "applied_template": "一部のキャラがスピードとスタミナとパワートレーニングに<color=#ff6d26>追加で現れた</color>"
+        }
+      ]
+    },
+    {
+      "region_id": 20,
+      "name_ja": "小倉",
+      "region_select_type": 3,
+      "selection_turn": 48,
+      "feelings": [
+        {
+          "id": 58,
+          "region_id": 20,
+          "region_select_type": 3,
+          "feeling_id": 1,
+          "feeling_num": 1
+        },
+        {
+          "id": 59,
+          "region_id": 20,
+          "region_select_type": 3,
+          "feeling_id": 2,
+          "feeling_num": 3
+        },
+        {
+          "id": 60,
+          "region_id": 20,
+          "region_select_type": 3,
+          "feeling_id": 3,
+          "feeling_num": 1
+        }
+      ],
+      "point_bonus_tiers": [
+        {
+          "id": 169,
+          "region_id": 20,
+          "effect_type": 4,
+          "min_pt": 0,
+          "max_pt": 699,
+          "add_value": 0
+        },
+        {
+          "id": 170,
+          "region_id": 20,
+          "effect_type": 4,
+          "min_pt": 700,
+          "max_pt": 1399,
+          "add_value": 3
+        },
+        {
+          "id": 171,
+          "region_id": 20,
+          "effect_type": 4,
+          "min_pt": 1400,
+          "max_pt": 2099,
+          "add_value": 5
+        },
+        {
+          "id": 172,
+          "region_id": 20,
+          "effect_type": 4,
+          "min_pt": 2100,
+          "max_pt": 2799,
+          "add_value": 7
+        },
+        {
+          "id": 173,
+          "region_id": 20,
+          "effect_type": 4,
+          "min_pt": 2800,
+          "max_pt": 3499,
+          "add_value": 9
+        },
+        {
+          "id": 174,
+          "region_id": 20,
+          "effect_type": 4,
+          "min_pt": 3500,
+          "max_pt": 9999,
+          "add_value": 10
+        },
+        {
+          "id": 175,
+          "region_id": 20,
+          "effect_type": 21,
+          "min_pt": 0,
+          "max_pt": 699,
+          "add_value": 0
+        },
+        {
+          "id": 176,
+          "region_id": 20,
+          "effect_type": 21,
+          "min_pt": 700,
+          "max_pt": 1399,
+          "add_value": 3
+        },
+        {
+          "id": 177,
+          "region_id": 20,
+          "effect_type": 21,
+          "min_pt": 1400,
+          "max_pt": 2099,
+          "add_value": 5
+        },
+        {
+          "id": 178,
+          "region_id": 20,
+          "effect_type": 21,
+          "min_pt": 2100,
+          "max_pt": 2799,
+          "add_value": 7
+        },
+        {
+          "id": 179,
+          "region_id": 20,
+          "effect_type": 21,
+          "min_pt": 2800,
+          "max_pt": 3499,
+          "add_value": 9
+        },
+        {
+          "id": 180,
+          "region_id": 20,
+          "effect_type": 21,
+          "min_pt": 3500,
+          "max_pt": 9999,
+          "add_value": 10
+        }
+      ],
+      "effects": [
+        {
+          "id": 90,
+          "region_id": 20,
+          "text_group_id": 3200,
+          "effect_type": 4,
+          "effect_value": 40,
+          "condition_type_1": 3,
+          "condition_value_1": 101,
+          "condition_type_2": 0,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_03/>根性 <atlas=Common sprite=utx_ico_obtain_04/>賢さの友情ボーナス <color=#ff6d26>{0}%</color>",
+          "applied_template": "スピードと根性と賢さの友情ボーナスが<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 91,
+          "region_id": 20,
+          "text_group_id": 3200,
+          "effect_type": 4,
+          "effect_value": 40,
+          "condition_type_1": 3,
+          "condition_value_1": 103,
+          "condition_type_2": 0,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_03/>根性 <atlas=Common sprite=utx_ico_obtain_04/>賢さの友情ボーナス <color=#ff6d26>{0}%</color>",
+          "applied_template": "スピードと根性と賢さの友情ボーナスが<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 92,
+          "region_id": 20,
+          "text_group_id": 3200,
+          "effect_type": 4,
+          "effect_value": 40,
+          "condition_type_1": 3,
+          "condition_value_1": 106,
+          "condition_type_2": 0,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_03/>根性 <atlas=Common sprite=utx_ico_obtain_04/>賢さの友情ボーナス <color=#ff6d26>{0}%</color>",
+          "applied_template": "スピードと根性と賢さの友情ボーナスが<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 93,
+          "region_id": 20,
+          "text_group_id": 3201,
+          "effect_type": 21,
+          "effect_value": 50,
+          "condition_type_1": 3,
+          "condition_value_1": 101,
+          "condition_type_2": 6,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_03/>根性 <atlas=Common sprite=utx_ico_obtain_04/>賢さトレーニングで\\nスキルPtのトレーニング効果アップ <color=#ff6d26>{0}%</color>",
+          "applied_template": "スピードと根性と賢さトレーニングでスキルPtのトレーニング効果が<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 94,
+          "region_id": 20,
+          "text_group_id": 3201,
+          "effect_type": 21,
+          "effect_value": 50,
+          "condition_type_1": 3,
+          "condition_value_1": 103,
+          "condition_type_2": 6,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_03/>根性 <atlas=Common sprite=utx_ico_obtain_04/>賢さトレーニングで\\nスキルPtのトレーニング効果アップ <color=#ff6d26>{0}%</color>",
+          "applied_template": "スピードと根性と賢さトレーニングでスキルPtのトレーニング効果が<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 95,
+          "region_id": 20,
+          "text_group_id": 3201,
+          "effect_type": 21,
+          "effect_value": 50,
+          "condition_type_1": 3,
+          "condition_value_1": 106,
+          "condition_type_2": 6,
+          "condition_value_2": 0,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_03/>根性 <atlas=Common sprite=utx_ico_obtain_04/>賢さトレーニングで\\nスキルPtのトレーニング効果アップ <color=#ff6d26>{0}%</color>",
+          "applied_template": "スピードと根性と賢さトレーニングでスキルPtのトレーニング効果が<color=#ff6d26>{0}％上がった</color>"
+        },
+        {
+          "id": 96,
+          "region_id": 20,
+          "text_group_id": 3202,
+          "effect_type": 20,
+          "effect_value": 1,
+          "condition_type_1": 3,
+          "condition_value_1": 101,
+          "condition_type_2": 6,
+          "condition_value_2": 4,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_03/>根性 <atlas=Common sprite=utx_ico_obtain_04/>賢さトレーニングに\\n編成サポートカードから追加で1人ずつ現れる",
+          "applied_template": "一部のキャラがスピードと根性と賢さトレーニングに<color=#ff6d26>追加で現れた</color>"
+        },
+        {
+          "id": 97,
+          "region_id": 20,
+          "text_group_id": 3202,
+          "effect_type": 20,
+          "effect_value": 1,
+          "condition_type_1": 3,
+          "condition_value_1": 103,
+          "condition_type_2": 6,
+          "condition_value_2": 4,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_03/>根性 <atlas=Common sprite=utx_ico_obtain_04/>賢さトレーニングに\\n編成サポートカードから追加で1人ずつ現れる",
+          "applied_template": "一部のキャラがスピードと根性と賢さトレーニングに<color=#ff6d26>追加で現れた</color>"
+        },
+        {
+          "id": 98,
+          "region_id": 20,
+          "text_group_id": 3202,
+          "effect_type": 20,
+          "effect_value": 1,
+          "condition_type_1": 3,
+          "condition_value_1": 106,
+          "condition_type_2": 6,
+          "condition_value_2": 4,
+          "condition_type_3": 0,
+          "condition_value_3": 0,
+          "display_template": "<atlas=Common sprite=utx_ico_obtain_00/>スピード <atlas=Common sprite=utx_ico_obtain_03/>根性 <atlas=Common sprite=utx_ico_obtain_04/>賢さトレーニングに\\n編成サポートカードから追加で1人ずつ現れる",
+          "applied_template": "一部のキャラがスピードと根性と賢さトレーニングに<color=#ff6d26>追加で現れた</color>"
+        }
+      ]
+    }
+  ]
+}
