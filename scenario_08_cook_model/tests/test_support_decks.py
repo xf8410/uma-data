@@ -1,5 +1,5 @@
 import unittest
-from cook_model.simulator import CookSimulator, validate_deck, STATUS_SCORE
+from scenario_08_cook_model.simulator import CookSimulator, validate_deck, STATUS_SCORE
 
 class SupportDeckTest(unittest.TestCase):
     def test_real_deck_shape_director_and_unique_characters(self):

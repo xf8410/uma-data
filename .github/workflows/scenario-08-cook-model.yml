@@ -1,10 +1,10 @@
-name: Cook model rebuild
+name: Scenario 8 Cook model rebuild
 
 on:
   push:
     paths:
-      - 'cook_model/**'
-      - '.github/workflows/cook-model.yml'
+      - 'scenario_08_cook_model/**'
+      - '.github/workflows/scenario-08-cook-model.yml'
   workflow_dispatch:
     inputs:
       train:
@@ -22,18 +22,18 @@ jobs:
         with:
           python-version: '3.11'
       - name: Simulator tests
-        run: python -m unittest discover -s cook_model/tests -v
+        run: python -m unittest discover -s scenario_08_cook_model/tests -v
       - name: Syntax and config checks
         run: |
-          python -m py_compile cook_model/simulator.py cook_model/benchmark_decks.py cook_model/train.py
+          python -m py_compile scenario_08_cook_model/simulator.py scenario_08_cook_model/benchmark_decks.py scenario_08_cook_model/train.py
           python - <<'PY'
           import json
-          d=json.load(open('cook_model/grass_wonder_101101.json',encoding='utf-8'))
+          d=json.load(open('scenario_08_cook_model/grass_wonder_101101.json',encoding='utf-8'))
           assert d['scenario_id']==8 and d['card_id']==101101 and d['rarity']==5
-          cards=json.load(open('cook_model/support_candidates.json',encoding='utf-8'))['cards']
+          cards=json.load(open('scenario_08_cook_model/support_candidates.json',encoding='utf-8'))['cards']
           assert cards['30298']['unique_effect_raw']['value_0_3']==33
           assert cards['30207']['is_cook_link'] is True
-          bench=json.load(open('cook_model/deck_benchmark.json',encoding='utf-8'))
+          bench=json.load(open('scenario_08_cook_model/deck_benchmark.json',encoding='utf-8'))
           assert bench['results'][0]['deck']==[30275,30277,30264,30293,30289,30207]
           PY
 
@@ -53,12 +53,12 @@ jobs:
           pip install numpy onnx onnxruntime
           pip install torch --index-url https://download.pytorch.org/whl/cpu
       - name: Train on whole-run split and validate ONNX
-        run: python cook_model/train.py --games 2000 --validation-games 200 --epochs 20 --output cook_model/artifacts
+        run: python scenario_08_cook_model/train.py --games 2000 --validation-games 200 --epochs 20 --output scenario_08_cook_model/artifacts
       - name: Enforce release gates
         run: |
           python - <<'PY'
           import json
-          r=json.load(open('cook_model/artifacts/training_report.json'))
+          r=json.load(open('scenario_08_cook_model/artifacts/training_report.json'))
           assert r['scenario_id']==8 and r['card_id']==101101
           assert r['support_deck']==[30275,30277,30264,30293,30289,30207]
           assert r['whole_run_split'] is True
@@ -69,6 +69,6 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: cook-model-rebuild-${{ github.sha }}
-          path: cook_model/artifacts/
+          path: scenario_08_cook_model/artifacts/
           if-no-files-found: error
           retention-days: 30

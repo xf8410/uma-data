@@ -1,5 +1,5 @@
 import unittest
-from cook_model.simulator import CookSimulator, TARGET_RACES, TOTAL_TURNS, CARD_ID, SCENARIO_ID, SUCCESS_ODDS, MEETING_REQUIREMENTS
+from scenario_08_cook_model.simulator import CookSimulator, TARGET_RACES, TOTAL_TURNS, CARD_ID, SCENARIO_ID, SUCCESS_ODDS, MEETING_REQUIREMENTS
 
 class SimulatorTest(unittest.TestCase):
     def test_fixed_identity_and_shape(self):
