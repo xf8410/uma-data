@@ -1,0 +1,505 @@
+{
+  "scenario_id": 14,
+  "schema_version": 1,
+  "normal_items": {
+    "shared_inventory_cap": 10,
+    "items": [
+      {
+        "feeling_id": 1,
+        "name_ja": "麺のコツ"
+      },
+      {
+        "feeling_id": 2,
+        "name_ja": "スープのコツ"
+      },
+      {
+        "feeling_id": 3,
+        "name_ja": "トッピングのコツ"
+      }
+    ],
+    "acquisition": "Each type has a separate acquisition gauge; a full gauge grants one matching item.",
+    "year_end_reset": {
+      "timing": "after December second-half turn ends",
+      "clears_all_normal_items": true,
+      "remaining_items_restore_vital": true,
+      "vital_formula_verified": false
+    }
+  },
+  "special_item": {
+    "name_ja": "隠し味の秘訣",
+    "inventory_cap": 4,
+    "shares_normal_inventory": false,
+    "can_substitute_any_normal_item": true,
+    "max_substitutions_per_ramen": 2,
+    "cleared_at_year_end": false,
+    "fixed_turn_gains": [
+      {
+        "id": 1,
+        "turn": 1,
+        "count": 2
+      },
+      {
+        "id": 2,
+        "turn": 24,
+        "count": 2
+      },
+      {
+        "id": 3,
+        "turn": 36,
+        "count": 2
+      },
+      {
+        "id": 4,
+        "turn": 37,
+        "count": 1
+      },
+      {
+        "id": 5,
+        "turn": 38,
+        "count": 1
+      },
+      {
+        "id": 6,
+        "turn": 39,
+        "count": 1
+      },
+      {
+        "id": 7,
+        "turn": 48,
+        "count": 2
+      },
+      {
+        "id": 8,
+        "turn": 60,
+        "count": 2
+      },
+      {
+        "id": 9,
+        "turn": 61,
+        "count": 1
+      },
+      {
+        "id": 10,
+        "turn": 62,
+        "count": 1
+      },
+      {
+        "id": 11,
+        "turn": 63,
+        "count": 1
+      }
+    ],
+    "outing_rewards": [
+      {
+        "id": 1,
+        "support_card_id": 10021,
+        "story_step": 1,
+        "special_feeling_num": 1,
+        "support_card_name_ja": "[トレセン学園]駿川たづな"
+      },
+      {
+        "id": 2,
+        "support_card_id": 10021,
+        "story_step": 2,
+        "special_feeling_num": 1,
+        "support_card_name_ja": "[トレセン学園]駿川たづな"
+      },
+      {
+        "id": 3,
+        "support_card_id": 10021,
+        "story_step": 3,
+        "special_feeling_num": 1,
+        "support_card_name_ja": "[トレセン学園]駿川たづな"
+      },
+      {
+        "id": 4,
+        "support_card_id": 10021,
+        "story_step": 4,
+        "special_feeling_num": 1,
+        "support_card_name_ja": "[トレセン学園]駿川たづな"
+      },
+      {
+        "id": 5,
+        "support_card_id": 10021,
+        "story_step": 5,
+        "special_feeling_num": 1,
+        "support_card_name_ja": "[トレセン学園]駿川たづな"
+      },
+      {
+        "id": 6,
+        "support_card_id": 30021,
+        "story_step": 1,
+        "special_feeling_num": 1,
+        "support_card_name_ja": "[ようこそ、トレセン学園へ！]駿川たづな"
+      },
+      {
+        "id": 7,
+        "support_card_id": 30021,
+        "story_step": 2,
+        "special_feeling_num": 1,
+        "support_card_name_ja": "[ようこそ、トレセン学園へ！]駿川たづな"
+      },
+      {
+        "id": 8,
+        "support_card_id": 30021,
+        "story_step": 3,
+        "special_feeling_num": 1,
+        "support_card_name_ja": "[ようこそ、トレセン学園へ！]駿川たづな"
+      },
+      {
+        "id": 9,
+        "support_card_id": 30021,
+        "story_step": 4,
+        "special_feeling_num": 1,
+        "support_card_name_ja": "[ようこそ、トレセン学園へ！]駿川たづな"
+      },
+      {
+        "id": 10,
+        "support_card_id": 30021,
+        "story_step": 5,
+        "special_feeling_num": 1,
+        "support_card_name_ja": "[ようこそ、トレセン学園へ！]駿川たづな"
+      },
+      {
+        "id": 11,
+        "support_card_id": 10083,
+        "story_step": 1,
+        "special_feeling_num": 1,
+        "support_card_name_ja": "[イベントプロデューサー]ライトハロー"
+      },
+      {
+        "id": 12,
+        "support_card_id": 10083,
+        "story_step": 2,
+        "special_feeling_num": 1,
+        "support_card_name_ja": "[イベントプロデューサー]ライトハロー"
+      },
+      {
+        "id": 13,
+        "support_card_id": 10083,
+        "story_step": 3,
+        "special_feeling_num": 1,
+        "support_card_name_ja": "[イベントプロデューサー]ライトハロー"
+      },
+      {
+        "id": 14,
+        "support_card_id": 10083,
+        "story_step": 4,
+        "special_feeling_num": 1,
+        "support_card_name_ja": "[イベントプロデューサー]ライトハロー"
+      },
+      {
+        "id": 15,
+        "support_card_id": 10083,
+        "story_step": 5,
+        "special_feeling_num": 1,
+        "support_card_name_ja": "[イベントプロデューサー]ライトハロー"
+      },
+      {
+        "id": 16,
+        "support_card_id": 30052,
+        "story_step": 1,
+        "special_feeling_num": 1,
+        "support_card_name_ja": "[from the GROUND UP]ライトハロー"
+      },
+      {
+        "id": 17,
+        "support_card_id": 30052,
+        "story_step": 2,
+        "special_feeling_num": 1,
+        "support_card_name_ja": "[from the GROUND UP]ライトハロー"
+      },
+      {
+        "id": 18,
+        "support_card_id": 30052,
+        "story_step": 3,
+        "special_feeling_num": 1,
+        "support_card_name_ja": "[from the GROUND UP]ライトハロー"
+      },
+      {
+        "id": 19,
+        "support_card_id": 30052,
+        "story_step": 4,
+        "special_feeling_num": 1,
+        "support_card_name_ja": "[from the GROUND UP]ライトハロー"
+      },
+      {
+        "id": 20,
+        "support_card_id": 30052,
+        "story_step": 5,
+        "special_feeling_num": 1,
+        "support_card_name_ja": "[from the GROUND UP]ライトハロー"
+      },
+      {
+        "id": 21,
+        "support_card_id": 30305,
+        "story_step": 1,
+        "special_feeling_num": 2,
+        "support_card_name_ja": "[一杯のノスタルジア]駿川たづな"
+      },
+      {
+        "id": 22,
+        "support_card_id": 30305,
+        "story_step": 2,
+        "special_feeling_num": 2,
+        "support_card_name_ja": "[一杯のノスタルジア]駿川たづな"
+      },
+      {
+        "id": 23,
+        "support_card_id": 30305,
+        "story_step": 3,
+        "special_feeling_num": 2,
+        "support_card_name_ja": "[一杯のノスタルジア]駿川たづな"
+      },
+      {
+        "id": 24,
+        "support_card_id": 30305,
+        "story_step": 4,
+        "special_feeling_num": 2,
+        "support_card_name_ja": "[一杯のノスタルジア]駿川たづな"
+      },
+      {
+        "id": 25,
+        "support_card_id": 30305,
+        "story_step": 5,
+        "special_feeling_num": 2,
+        "support_card_name_ja": "[一杯のノスタルジア]駿川たづな"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "region_id": 1,
+      "region_select_type": 1,
+      "cost": {
+        "1": 2,
+        "2": 2,
+        "3": 1
+      },
+      "normal_item_total": 5
+    },
+    {
+      "region_id": 2,
+      "region_select_type": 1,
+      "cost": {
+        "1": 1,
+        "2": 2,
+        "3": 2
+      },
+      "normal_item_total": 5
+    },
+    {
+      "region_id": 3,
+      "region_select_type": 1,
+      "cost": {
+        "1": 3,
+        "2": 1,
+        "3": 1
+      },
+      "normal_item_total": 5
+    },
+    {
+      "region_id": 4,
+      "region_select_type": 1,
+      "cost": {
+        "1": 2,
+        "2": 3,
+        "3": 0
+      },
+      "normal_item_total": 5
+    },
+    {
+      "region_id": 5,
+      "region_select_type": 1,
+      "cost": {
+        "1": 1,
+        "2": 1,
+        "3": 3
+      },
+      "normal_item_total": 5
+    },
+    {
+      "region_id": 6,
+      "region_select_type": 2,
+      "cost": {
+        "1": 2,
+        "2": 0,
+        "3": 3
+      },
+      "normal_item_total": 5
+    },
+    {
+      "region_id": 7,
+      "region_select_type": 2,
+      "cost": {
+        "1": 3,
+        "2": 2,
+        "3": 0
+      },
+      "normal_item_total": 5
+    },
+    {
+      "region_id": 8,
+      "region_select_type": 2,
+      "cost": {
+        "1": 0,
+        "2": 3,
+        "3": 2
+      },
+      "normal_item_total": 5
+    },
+    {
+      "region_id": 9,
+      "region_select_type": 2,
+      "cost": {
+        "1": 2,
+        "2": 1,
+        "3": 2
+      },
+      "normal_item_total": 5
+    },
+    {
+      "region_id": 10,
+      "region_select_type": 2,
+      "cost": {
+        "1": 1,
+        "2": 3,
+        "3": 1
+      },
+      "normal_item_total": 5
+    },
+    {
+      "region_id": 11,
+      "region_select_type": 3,
+      "cost": {
+        "1": 2,
+        "2": 2,
+        "3": 1
+      },
+      "normal_item_total": 5
+    },
+    {
+      "region_id": 12,
+      "region_select_type": 3,
+      "cost": {
+        "1": 1,
+        "2": 2,
+        "3": 2
+      },
+      "normal_item_total": 5
+    },
+    {
+      "region_id": 13,
+      "region_select_type": 3,
+      "cost": {
+        "1": 3,
+        "2": 1,
+        "3": 1
+      },
+      "normal_item_total": 5
+    },
+    {
+      "region_id": 14,
+      "region_select_type": 3,
+      "cost": {
+        "1": 2,
+        "2": 3,
+        "3": 0
+      },
+      "normal_item_total": 5
+    },
+    {
+      "region_id": 15,
+      "region_select_type": 3,
+      "cost": {
+        "1": 1,
+        "2": 1,
+        "3": 3
+      },
+      "normal_item_total": 5
+    },
+    {
+      "region_id": 16,
+      "region_select_type": 3,
+      "cost": {
+        "1": 2,
+        "2": 0,
+        "3": 3
+      },
+      "normal_item_total": 5
+    },
+    {
+      "region_id": 17,
+      "region_select_type": 3,
+      "cost": {
+        "1": 3,
+        "2": 2,
+        "3": 0
+      },
+      "normal_item_total": 5
+    },
+    {
+      "region_id": 18,
+      "region_select_type": 3,
+      "cost": {
+        "1": 0,
+        "2": 3,
+        "3": 2
+      },
+      "normal_item_total": 5
+    },
+    {
+      "region_id": 19,
+      "region_select_type": 3,
+      "cost": {
+        "1": 2,
+        "2": 1,
+        "3": 2
+      },
+      "normal_item_total": 5
+    },
+    {
+      "region_id": 20,
+      "region_select_type": 3,
+      "cost": {
+        "1": 1,
+        "2": 3,
+        "3": 1
+      },
+      "normal_item_total": 5
+    }
+  ],
+  "tutorial_evidence": [
+    {
+      "text_data_category": 63,
+      "index": 365,
+      "text_ja": "ラーメンを作るために、まずはラーメンのコツを学びましょう！\\nコツは全部で<color=#ff911c>3種類</color>あり、<color=#ff911c>合計で10個まで</color>所持できます。\\nラーメンのコツは<color=#ff911c>対応する習得ゲージを溜める</color>と獲得できます。\\n習得ゲージは<color=#ff911c>毎ターン一定量増加</color>し、<color=#ff911c>ゲージが最大</color>になると\\n<color=#ff911c>対応するコツが1つ獲得</color>できます。"
+    },
+    {
+      "text_data_category": 63,
+      "index": 370,
+      "text_ja": "試食会でラーメンを作る際、コツが足りない場合は<color=#ff911c>隠し味の秘訣</color>で\\n<color=#ff911c>足りないコツを代用</color>できます！\\n隠し味の秘訣は<color=#ff911c>特定のイベントで獲得</color>できますが、<color=#ff911c>4個までしか\\n所持できず</color>、また<color=#ff911c>1回の試食会で使える数も2個まで</color>なので、使い時\\nを見極めて使用しましょう！"
+    },
+    {
+      "text_data_category": 63,
+      "index": 371,
+      "text_ja": "<color=#ff911c>毎年12月後半のターン終了後</color>は、翌年のラーメン作りに向けて知識\\nをアップデートするため、<color=#ff911c>コツの所持数が全てリセット</color>されます！\\nその代わり、リセットされる<color=#ff911c>コツの数に応じて体力が回復</color>します！\\nなお、<color=#ff911c>隠し味の秘訣の所持数はリセットされない</color>ため、使いどころ\\nは吟味していきましょう！"
+    },
+    {
+      "text_data_category": 63,
+      "index": 373,
+      "text_ja": "夏合宿が開始すると、<color=#ff911c>隠し味の秘訣を2個</color>獲得します！\\nさらに、夏合宿期間中は<color=#ff911c>毎ターン1個ずつ</color>、追加で隠し味の秘訣を\\n獲得できるため、期間中は試食会をどんどん実行して、\\nトレーニングをより効率化しましょう！"
+    }
+  ],
+  "decision_constraints": [
+    "Never consume ramen only to avoid special-item overflow; jointly evaluate the following main action, vital, and training value.",
+    "Ramen training effects last for the current turn, so ramen followed by outing/rest usually wastes training-only effects.",
+    "Before the December second-half turn ends, compare using normal items with their verified year-end vital recovery value.",
+    "Special-item substitution should consider recipe deficits, future gauge gains, shared-cap overflow, and incoming fixed/outing gains."
+  ],
+  "unknowns": [
+    "Exact acquisition-gauge increment and threshold formula is not asserted by this MDB catalog.",
+    "Exact vital recovery per normal item at year-end is not asserted by the inspected tables/text.",
+    "Whether fixed turn 1/24/48 gains occur before or after region selection needs runtime ordering evidence."
+  ]
+}
