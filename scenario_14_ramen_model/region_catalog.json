@@ -27,7 +27,7 @@
     }
   },
   "notes": [
-    "Region IDs 1-10 and 11-20 repeat the same ten display names in different selection phases.",
+    "Region IDs 1-10 and 11-20 reuse the same ten display names, but each ID keeps its own phase-specific effects and point tiers.",
     "effect_value and add_value are retained separately; consumers must select the matching region/effect_type point tier before combining them.",
     "Display text from category 428 is authoritative for user-facing effect wording and percent units where the template contains %."
   ],

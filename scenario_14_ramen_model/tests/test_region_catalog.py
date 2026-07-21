@@ -16,6 +16,18 @@ class RegionCatalogTest(unittest.TestCase):
         self.assertEqual([(r['region_select_type'], r['turn']) for r in D['selection_phases']], [(1,3),(2,24),(3,48)])
         self.assertEqual([r['region_select_type'] for r in D['regions']], [1]*5 + [2]*5 + [3]*10)
 
+    def test_third_phase_reuses_names_not_effects(self):
+        for early, third in zip(D['regions'][:10], D['regions'][10:]):
+            self.assertEqual(early['name_ja'], third['name_ja'])
+            self.assertNotEqual(
+                [e['text_group_id'] for e in early['effects']],
+                [e['text_group_id'] for e in third['effects']],
+            )
+            self.assertNotEqual(
+                [(e['effect_type'], e['effect_value']) for e in early['effects']],
+                [(e['effect_type'], e['effect_value']) for e in third['effects']],
+            )
+
     def test_effect_and_feeling_counts(self):
         self.assertEqual(sum(len(r['effects']) for r in D['regions']), 98)
         self.assertEqual(sum(len(r['feelings']) for r in D['regions']), 60)
