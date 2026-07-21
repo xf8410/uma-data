@@ -1,0 +1,266 @@
+{
+  "schema_version": 1,
+  "scenario": 14,
+  "scenario_name": "ramen",
+  "build": {
+    "libil2cpp_sha256": "3e32f9792d85a79f4cead60fc7676e187ecada3bccf6aa4d28d809aa7918d5c0",
+    "libil2cpp_size": 218715344,
+    "metadata_sha256": "af653230aca9fba539348040d3718bbc265f64a2613083e11989dd36c6b224bf",
+    "metadata_size": 45244256,
+    "metadata_version": 31,
+    "load_base": "0x7330ef37c4",
+    "load_base_source": "ramen_planner_evidence.md documented historical conversion"
+  },
+  "tools_used": [
+    {"tool": "Il2CppDumper", "version": "v6.7.46", "result": "FAILED: binary protected, no symbols detected"},
+    {"tool": "Cpp2IL", "version": "2022.0.7", "result": "FAILED: metadata v31 not supported (supports 24-29)"},
+    {"tool": "capstone", "version": "python", "result": "SUCCESS: disassembled all target methods"},
+    {"tool": "existing_method_dump", "source": "/tmp/hlpatch-rng-stage1-20260718/data/il2cpp_dump/dump_all_methods_*.json", "total_classes": 29761, "total_methods": 160909}
+  ],
+  "methods": {
+    "ServingPracticeRegionEffectBonusVO.Apply": {
+      "full_name": "Gallop.SingleMode.ScenarioRamen.ServingPracticeRegionEffectBonusVO.Apply(System.Int32)",
+      "runtime_addr": "0x7339b12a0c",
+      "vaddr": "0x08c1f248",
+      "actual_start": "0x08c1f0f8",
+      "codegen_offset": "+0x150",
+      "params": 1,
+      "return_type": "i4",
+      "static": false,
+      "evidence_level": "direct_extract",
+      "disassembly_summary": {
+        "prologue": "sub sp, sp, #0x4c0",
+        "stack_size": "0x4c0 bytes",
+        "this_field_effect_data": "[x21+0xe8] -> [+0x150] = training effect struct (x27)",
+        "training_type_field": "[x27+0xac]",
+        "input_values": "ldp w10, w11, [x26+0xf0]",
+        "divisor_logic": {
+          "description": "divisor determined by training type",
+          "type_1": "divisor = 2",
+          "type_2": "divisor = 1",
+          "other": "divisor = 4",
+          "instructions": ["cmp w8, #2", "csinc w9, w9(=4), wzr, ne", "cmp w8, #1", "csel w8, w8(=2), w9, eq"]
+        },
+        "division": {
+          "instruction": "sdiv w24, w10, w8; sdiv w23, w11, w8",
+          "type": "truncating integer division (rounds toward zero)",
+          "note": "ARM64 sdiv truncates toward zero, matching C# integer division"
+        },
+        "post_division_call": "bl #0x8bdbbcc with w1=w24, w2=w23 — returns 3 values via sp+0x2b0/0x2b4/0x2b8",
+        "effect_additions": [
+          {"effect_id": "0x9f (159)", "src": "[x27+0xb4], [x8+0x1c]", "float_count": 4, "call": "0x96b5190"},
+          {"effect_id": "0xa0 (160)", "src": "[x21+0x108-0x110]", "float_count": 4, "call": "0x96b5190"},
+          {"effect_id": "0xa1 (161)", "src": "[x27+0xc8]", "float_count": 1, "call": "0x96b5094"},
+          {"effect_id": "0xa4 (164)", "src": "[x27+0xd0]", "float_count": 1, "call": "0x96b5094"},
+          {"effect_id": "0xa5 (165)", "src": "[x27+0xcc]", "float_count": 1, "call": "0x96b5094"},
+          {"effect_id": "0xa6 (166)", "src": "[x27+0xe0]", "float_count": 1, "call": "0x96b5094"},
+          {"effect_id": "0xa7 (167)", "src": "[x27+0xd4]", "float_count": 1, "call": "0x96b5094"},
+          {"effect_id": "0x147 (327)", "src": "[x27+0xe8]", "float_count": 1, "call": "0x96b5094"},
+          {"effect_id": "0x190 (400)", "src": "[x27+0xec]", "float_count": 1, "call": "0x96b5094"}
+        ]
+      },
+      "key_findings": [
+        "Integer division uses sdiv (truncating toward zero), not rounding",
+        "Divisor depends on training type: 1→2, 2→1, other→4",
+        "9 effect types added after division",
+        "Float values loaded from effect struct at fixed offsets",
+        "Two AddEffect variants: 4-float (0x96b5190) and 1-float (0x96b5094)"
+      ]
+    },
+    "ServingPracticeRegionEffectRepository.GetWithCheckPointPt": {
+      "full_name": "Gallop.SingleMode.ScenarioRamen.ServingPracticeRegionEffectRepository.GetWithCheckPointPt",
+      "runtime_addr": "0x7339b021dc",
+      "vaddr": "0x08c0ea18",
+      "actual_start": "unknown — codegen addr is mid-function",
+      "codegen_offset": "mid-function",
+      "evidence_level": "direct_extract",
+      "disassembly_summary": {
+        "visible_block": "0x08c0ea18 to 0x08c0ea94 (ret)",
+        "calls": {
+          "0x967e97c": "likely Add/Apply method — called with (x0, w1, w2, x3)",
+          "0x967d894": "likely Contains/Check method — called with (x0, w1, x2), returns bool in w0"
+        },
+        "logic": [
+          "call 0x967e97c with w1=w22, w2=??",
+          "call 0x967d894 with w1=w24 → if true, call 0x967e97c with w1=w24, w2=w21",
+          "call 0x967d894 with w1=w23 → if true, call 0x967e97c with w1=w23, w2=w19",
+          "return"
+        ],
+        "three_lists": "Function at 0x08c0ea98 iterates over [x0+0xf0], [x0+0xf8], [x0+0x100] calling 0x8c0e970"
+      },
+      "key_findings": [
+        "GetWithCheckPointPt calls Add and Contains methods on collections",
+        "Three internal lists at offsets 0xf0, 0xf8, 0x100",
+        "CheckPointPt likely modifies which effects are active",
+        "Exact arithmetic unknown — function start not found"
+      ]
+    },
+    "ServingPracticeEffectRepositoryUtil.GetTrainingMatchingObtain": {
+      "full_name": "Gallop.SingleMode.ScenarioRamen.ServingPracticeEffectRepositoryUtil.GetTrainingMatchingObtain",
+      "runtime_addr": "0x7339b01cd8",
+      "vaddr": "0x08c0e514",
+      "actual_start": "0x08c0e514 (codegen = actual start)",
+      "evidence_level": "direct_extract",
+      "disassembly_summary": {
+        "entry_function": "stp x30, x21, [sp, #-0x20]! — standard prologue at codegen addr",
+        "calls": ["0x9669aa4 (init)", "0x953376c (setup)", "0x8c0e5f0 (table init)"],
+        "table_init_function": {
+          "addr": "0x08c0e5f0",
+          "constant_0_1f": "0x3DCC0CCCD (IEEE 754 float32 0.1)",
+          "constant_1_0f": "fmov v1.2s, #1.00000000",
+          "entries": 8,
+          "entry_size": 12,
+          "structure": "each entry = {double(8 bytes), int32(4 bytes)}",
+          "int32_field": "always 0.1f bit pattern (0x3DCC0CCCD)",
+          "double_values": [
+            "entries 1-2: 0.0 (zero)",
+            "entries 3-4: loaded from rodata (unresolved)",
+            "entries 5-6: loaded from rodata (unresolved)",
+            "entries 7-8: 1.0"
+          ],
+          "count_check": "switch on count 1-8, each adds one entry"
+        }
+      },
+      "key_findings": [
+        "Table has 8 entries with {double, int32} pairs",
+        "int32 field always = 0.1f bit pattern",
+        "Double values: 0, 0, rodata_val1, rodata_val1, rodata_val2, rodata_val2, 1.0, 1.0",
+        "0.1f constant suggests 10% rate or weight",
+        "Function at codegen addr is a proper function start (no offset)"
+      ]
+    },
+    "ServingPracticeTransactionEntity.IsBonusEffectTraining": {
+      "full_name": "Gallop.SingleMode.ScenarioRamen.ServingPracticeTransactionEntity.IsBonusEffectTraining",
+      "runtime_addr": "0x7339af9514",
+      "vaddr": "0x08c05d50",
+      "actual_start": "0x08c05d54 (codegen = ret of previous function, +4 = actual start)",
+      "evidence_level": "direct_extract",
+      "disassembly_summary": {
+        "actual_function": "0x08c05dac to 0x08c05e48",
+        "logic": [
+          "load list from [x19] (first arg field)",
+          "check list count >= 1 (ldr w8, [x8, #0x18]; cmp w8, #1)",
+          "if count < 1: return false",
+          "call 0x8be1960 with w1=0xa7 (167) — training type check",
+          "if result bit 0 set: return true",
+          "else: return false"
+        ],
+        "training_type_id": "0xa7 (167)"
+      },
+      "key_findings": [
+        "IsBonusEffectTraining checks if any active effect matches training type 167",
+        "Returns boolean",
+        "Simple check — no arithmetic"
+      ]
+    },
+    "ServingPracticeEffectVO.CreateRegionEffect": {
+      "full_name": "Gallop.SingleMode.ScenarioRamen.ServingPracticeEffectVO.CreateRegionEffect",
+      "runtime_addr": "0x7339b11d0c",
+      "vaddr": "0x08c1e548",
+      "actual_start": "0x08c1e530 (codegen at +0x18)",
+      "evidence_level": "direct_extract",
+      "disassembly_summary": {
+        "prologue": "stp x30, x21, [sp, #-0x20]!",
+        "calls": ["0x9679ac0 (create instance)", "0x9543788 (init)", "0x8c1e60c (setup)"],
+        "field_stores": ["[x19+0x10] = w1 (parameter)", "[x19+0x150] = result of 0x8c1e60c"]
+      },
+      "key_findings": [
+        "CreateRegionEffect creates a new effect instance",
+        "Stores parameter to field +0x10",
+        "Calls setup function that initializes internal tables"
+      ]
+    }
+  },
+  "training_formula_chain": {
+    "evidence_level": "binary_inference",
+    "steps": [
+      {
+        "step": 1,
+        "name": "load_effect_data",
+        "source": "Apply disassembly",
+        "description": "Load training effect struct from ServingPracticeRegionEffectBonusVO"
+      },
+      {
+        "step": 2,
+        "name": "determine_divisor",
+        "source": "Apply disassembly 0x08c1f22c-0x08c1f240",
+        "description": "divisor = training_type==1 ? 2 : (training_type==2 ? 1 : 4)"
+      },
+      {
+        "step": 3,
+        "name": "integer_division",
+        "source": "Apply disassembly 0x08c1f244-0x08c1f248",
+        "description": "sdiv w24, w10, divisor; sdiv w23, w11, divisor — truncating toward zero",
+        "critical": "sdiv truncates toward zero, NOT rounding"
+      },
+      {
+        "step": 4,
+        "name": "post_division_calculation",
+        "source": "Apply disassembly 0x08c1f270",
+        "description": "bl #0x8bdbbcc — unknown calculation with divided values, returns 3 int32 results"
+      },
+      {
+        "step": 5,
+        "name": "add_effects",
+        "source": "Apply disassembly 0x08c1f2f0-0x08c1f444",
+        "description": "9 AddEffect calls with effect IDs 0x9f-0xa7, 0x147, 0x190",
+        "float_sources": "loaded from effect struct at offsets 0xb4-0xec"
+      }
+    ]
+  },
+  "unknowns": [
+    {
+      "id": "apply_full_arithmetic",
+      "description": "Apply function's complete arithmetic chain from input to output",
+      "reason": "codegen address is 0x150 bytes into function; full function likely 0x400+ bytes",
+      "evidence_level": "partial_direct_extract"
+    },
+    {
+      "id": "getwithcheckpointpt_start",
+      "description": "GetWithCheckPointPt actual function start and full logic",
+      "reason": "codegen address is mid-function; function start not found in 0x100 byte backward scan",
+      "evidence_level": "partial_direct_extract"
+    },
+    {
+      "id": "rodata_double_constants",
+      "description": "Double constants loaded from rodata in GetTrainingMatchingObtain table init",
+      "reason": "adrp target addresses resolved but offset calculation uncertain; loaded values appear as garbage doubles",
+      "evidence_level": "unknown"
+    },
+    {
+      "id": "region_effect_into_training",
+      "description": "How region effects enter the final training gain calculation",
+      "reason": "Apply adds effects to an effect list, but the connection to final training gain is through call chain 0x96b5190/0x96b5094 which are not yet resolved",
+      "evidence_level": "unknown"
+    },
+    {
+      "id": "checkpointpt_to_region_effect",
+      "description": "How CheckPointPt modifies region effects",
+      "reason": "GetWithCheckPointPt calls Add/Contains on collections but full function not visible",
+      "evidence_level": "partial_direct_extract"
+    },
+    {
+      "id": "rounding_positions",
+      "description": "Where rounding/truncation occurs in the full formula",
+      "reason": "sdiv truncation confirmed in Apply; other steps' rounding unknown",
+      "evidence_level": "partial_direct_extract"
+    }
+  ],
+  "evidence_summary": {
+    "confirmed": [
+      "Apply uses sdiv (truncating integer division) — NOT rounding",
+      "Divisor = {1: 2, 2: 1, other: 4} based on training type",
+      "9 effect types added in Apply with specific IDs",
+      "IsBonusEffectTraining checks training type 0xa7 (167)",
+      "GetTrainingMatchingObtain initializes 8-entry table with 0.1f constant",
+      "CreateRegionEffect creates instance and calls setup"
+    ],
+    "unknown": [
+      "Full Apply arithmetic chain (function is ~0x400 bytes, only ~0x200 disassembled)",
+      "GetWithCheckPointPt function start",
+      "How region effects connect to final training gain",
+      "Rounding positions beyond Apply's sdiv",
+      "Exact double constants in GetTrainingMatchingObtain table"
+    ]
+  }
+}
