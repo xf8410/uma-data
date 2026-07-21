@@ -19,7 +19,7 @@ jobs:
           python-version: '3.11'
       - name: Syntax and catalog tests
         run: |
-          python -m py_compile scenario_14_ramen_model/extract_region_catalog.py scenario_14_ramen_model/extract_resource_economy.py scenario_14_ramen_model/extract_ramen_action_catalog.py
+          python -m py_compile scenario_14_ramen_model/extract_region_catalog.py scenario_14_ramen_model/extract_resource_economy.py scenario_14_ramen_model/extract_ramen_action_catalog.py scenario_14_ramen_model/extract_checkpoint_catalog.py
           python -m unittest discover -s scenario_14_ramen_model/tests -v
       - name: Rebuild catalog from master.mdb
         run: |
@@ -29,3 +29,5 @@ jobs:
           cmp scenario_14_ramen_model/resource_economy.json /tmp/resource_economy.json
           python scenario_14_ramen_model/extract_ramen_action_catalog.py master.mdb -o /tmp/ramen_action_catalog.json
           cmp scenario_14_ramen_model/ramen_action_catalog.json /tmp/ramen_action_catalog.json
+          python scenario_14_ramen_model/extract_checkpoint_catalog.py master.mdb -o /tmp/checkpoint_catalog.json
+          cmp scenario_14_ramen_model/checkpoint_catalog.json /tmp/checkpoint_catalog.json
