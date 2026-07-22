@@ -18,6 +18,21 @@ python scenario_14_ramen_model/simulator.py snapshot.json --pretty
 
 尚不能模拟的部分会明确列入输出 `unknowns`，包括服务端训练收益拆分与舍入、比赛 Gauge、年底体力换算、同回合事件顺序和完整行动转移概率。测试位于 [`tests/test_simulator.py`](tests/test_simulator.py)。
 
+## 吃面训练效果候选对照器
+
+[`training_effect_candidates.py`](training_effect_candidates.py) 位于本项目内；外部 UmaAI 仅作为已对齐的普通训练、干劲、支援卡与友情公式参考，不会修改或依赖其仓库运行。对照器只比较 Scenario 14 尚未确认的插入方式：
+
+- 吃面训练效果 `+15%` 与支援训练/地区训练效果的加算或独立乘区；
+- 友情 `+30%/+45%` 是单个剧本乘区，还是加到每张友情卡；
+- `+20/+40` 单次属性/Pt 上限作用在何种封顶层；
+- 中间取整位置。
+
+```bash
+python scenario_14_ramen_model/training_effect_candidates.py sample.json --pretty
+```
+
+输出统一标记为 `candidate_only_not_for_production_scoring`。即使候选与一个样本完全吻合，也只报告匹配项，不自动写入 App 线上评分；必须再取得能区分候选的同构建对照样本。
+
 ## 数据范围
 
 只将以下数据视为 Scenario 14 的直接候选输入：

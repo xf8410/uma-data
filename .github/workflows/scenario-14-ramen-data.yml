@@ -19,7 +19,7 @@ jobs:
           python-version: '3.11'
       - name: Syntax and catalog tests
         run: |
-          python -m py_compile scenario_14_ramen_model/extract_region_catalog.py scenario_14_ramen_model/extract_resource_economy.py scenario_14_ramen_model/extract_ramen_action_catalog.py scenario_14_ramen_model/extract_checkpoint_catalog.py scenario_14_ramen_model/simulator.py scenario_14_ramen_model/tests/test_acquisition_gauge_catalog.py scenario_14_ramen_model/tests/test_simulator.py
+          python -m py_compile scenario_14_ramen_model/extract_region_catalog.py scenario_14_ramen_model/extract_resource_economy.py scenario_14_ramen_model/extract_ramen_action_catalog.py scenario_14_ramen_model/extract_checkpoint_catalog.py scenario_14_ramen_model/simulator.py scenario_14_ramen_model/training_effect_candidates.py scenario_14_ramen_model/tests/test_acquisition_gauge_catalog.py scenario_14_ramen_model/tests/test_simulator.py scenario_14_ramen_model/tests/test_training_effect_candidates.py
           python -m json.tool scenario_14_ramen_model/acquisition_gauge_catalog.json >/dev/null
           python -m unittest discover -s scenario_14_ramen_model/tests -v
       - name: Rebuild catalog from master.mdb
