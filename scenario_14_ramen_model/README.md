@@ -1,6 +1,22 @@
 # 拉面杯模型（Scenario 14，边界已建立）
 
-> **状态：尚未建立可训练或可用于 App 推理的模型。** 本目录先用于隔离拉面杯证据，防止误用 Scenario 8 的 Cook/种田杯规则。
+> **状态：已有可运行的“运行时快照重放模拟器”，但还不是服务端完整公式模拟器。** [`simulator.py`](simulator.py) 只重放已证实的地区档位、资源配方、最终 Gauge 向量、FIFO 和 RMJ 达线距离；训练收益原样消费运行时最终 gains，不重建未知的服务端叠加与舍入公式。本目录严格隔离拉面杯证据，防止误用 Scenario 8 的 Cook/种田杯规则。
+
+## 可运行模拟器
+
+```bash
+python scenario_14_ramen_model/simulator.py snapshot.json --pretty
+```
+
+输入为插件/App 已归一化的 Scenario 14 回合快照。当前输出包括：
+
+- 地区正式名称，以及按 `CheckPointPt` 和 `effect_type` 命中的 `base + add` 最终目录值；
+- 运行时最终训练 gains 的原样透传，不重复乘友情、地区、吃面或支援卡倍率；
+- 最终 Gauge 减槽向量重放、阈值 7 重置、10 格共享库存与 FIFO 顶旧；
+- 已选地区配方的普通诀窍/万能资源可制作性；
+- 下一 RMJ 检查点、达线缺口，以及指定未来吃面次数后的基础盛况 Pt 投影。
+
+尚不能模拟的部分会明确列入输出 `unknowns`，包括服务端训练收益拆分与舍入、比赛 Gauge、年底体力换算、同回合事件顺序和完整行动转移概率。测试位于 [`tests/test_simulator.py`](tests/test_simulator.py)。
 
 ## 数据范围
 
