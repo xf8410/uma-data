@@ -10,6 +10,11 @@ import sqlite3
 from pathlib import Path
 from typing import Any, Dict, Iterable, Mapping
 
+try:
+    from unique_effect_decoder import decode_unique_slot
+except ModuleNotFoundError:
+    from support_card_model.unique_effect_decoder import decode_unique_slot
+
 LEVEL_COLUMNS = [(1, "init"), (5, "limit_lv5"), (10, "limit_lv10"),
                  (15, "limit_lv15"), (20, "limit_lv20"), (25, "limit_lv25"),
                  (30, "limit_lv30"), (35, "limit_lv35"), (40, "limit_lv40"),
@@ -79,12 +84,10 @@ def unique_effect(row: Mapping[str, Any] | None) -> Dict[str, Any] | None:
         if effect_type == 0:
             continue
         values = [int(row[f"value_{index}"])] + [int(row[f"value_{index}_{n}"]) for n in range(1, 5)]
-        slot: Dict[str, Any] = {"type": effect_type, "values": values}
-        key = EFFECT_KEYS.get(effect_type)
-        if key is not None:
-            slot["effect_key"] = key
-        else:
-            slot["status"] = "condition_or_complex_effect_unresolved"
+        slot = decode_unique_slot(effect_type, values)
+        slot["type"] = effect_type
+        slot["values"] = values
+        if slot.get("status") not in ("decoded",):
             fully_resolved = False
         slots.append(slot)
     return {
@@ -156,7 +159,7 @@ def build_catalog(database: Path) -> Dict[str, Any]:
         "resolution_rules": {
             "normal_effect": "At a requested level, use the latest non-negative init/limit_lvN value whose N is not greater than the level.",
             "uncap_profile": "uncap 0..4 uses support_card_limit.limit_0..limit_4 as max_level.",
-            "unique_effect": "Types 1..32 use the same direct effect mapping; types >=101 remain raw until their condition semantics are independently verified."
+            "unique_effect": "Types 1..32 are direct effects. Complex types 101..122 are decoded into machine-readable conditions/formulas/actions; raw fields are always retained. Type 107 remains candidate_formula because the cross-checking implementation marks its data interpretation TODO."
         },
         "card_count": len(cards), "cards": cards,
     }

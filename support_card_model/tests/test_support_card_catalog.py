@@ -52,11 +52,14 @@ class SupportCardCatalogTest(unittest.TestCase):
         self.assertEqual(unique["slots"][0]["effect_key"], "guts_bonus")
         self.assertEqual(unique["slots"][1]["effect_key"], "initial_guts")
 
-    def test_complex_unique_effect_remains_raw(self):
+    def test_complex_unique_effect_is_decoded_and_keeps_raw(self):
         unique = self.by_id[30160]["unique_effect"]
-        self.assertFalse(unique["fully_resolved"])
-        self.assertEqual(unique["slots"][0]["type"], 118)
-        self.assertEqual(unique["slots"][0]["status"], "condition_or_complex_effect_unresolved")
+        self.assertTrue(unique["fully_resolved"])
+        slot = unique["slots"][0]
+        self.assertEqual(slot["type"], 118)
+        self.assertEqual(slot["key"], "second_training_position")
+        self.assertEqual(slot["condition"], {"bond_at_least": 60})
+        self.assertEqual(slot["max_positions"], 2)
         self.assertEqual(unique["raw"]["value_0_1"], 60)
 
     def test_effect_type_names_come_from_mdb(self):

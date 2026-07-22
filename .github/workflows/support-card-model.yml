@@ -18,7 +18,7 @@ jobs:
           python-version: '3.11'
       - name: Validate and reproduce catalog
         run: |
-          python -m py_compile support_card_model/extract_support_card_catalog.py support_card_model/tests/test_support_card_catalog.py
+          python -m py_compile support_card_model/extract_support_card_catalog.py support_card_model/unique_effect_decoder.py support_card_model/tests/test_support_card_catalog.py support_card_model/tests/test_unique_effect_decoder.py
           python -m json.tool support_card_model/support_card_catalog.json >/dev/null
           python -m unittest discover -s support_card_model/tests -v
           python support_card_model/extract_support_card_catalog.py master.mdb -o /tmp/support_card_catalog.json
