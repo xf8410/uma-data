@@ -74,7 +74,7 @@ def resolved_effects(effect_rows: list[Mapping[str, Any]], level: int) -> Dict[s
     return result
 
 
-def unique_effect(row: Mapping[str, Any] | None) -> Dict[str, Any] | None:
+def unique_effect(row: Mapping[str, Any] | None, description_ja: str = "") -> Dict[str, Any] | None:
     if row is None:
         return None
     slots = []
@@ -93,7 +93,7 @@ def unique_effect(row: Mapping[str, Any] | None) -> Dict[str, Any] | None:
     return {
         "id": int(row["id"]), "lv_raw": int(row["lv"]),
         "slots": slots, "idle_mode_sub_rate": int(row["idle_mode_sub_rate"]),
-        "fully_resolved": fully_resolved,
+        "fully_resolved": fully_resolved, "description_ja": description_ja,
         "raw": {key: int(value) for key, value in row.items()},
     }
 
@@ -113,6 +113,8 @@ def build_catalog(database: Path) -> Dict[str, Any]:
         'SELECT "index", text FROM text_data WHERE category=77')}
     unique_rows = {int(row["id"]): dict(row) for row in connection.execute(
         "SELECT * FROM support_card_unique_effect")}
+    unique_descriptions = {int(row["index"]): row["text"] for row in connection.execute(
+        'SELECT "index", text FROM text_data WHERE category=155')}
     effect_rows: Dict[int, list[Dict[str, Any]]] = {}
     for row in connection.execute("SELECT * FROM support_card_effect_table ORDER BY id, type"):
         effect_rows.setdefault(int(row["id"]), []).append(dict(row))
@@ -146,7 +148,8 @@ def build_catalog(database: Path) -> Dict[str, Any]:
             "effect_table_id": int(card["effect_table_id"]),
             "unique_effect_id": int(card["unique_effect_id"]),
             "uncap_profiles": profiles, "level_breakpoints": breakpoints,
-            "unique_effect": unique_effect(unique_rows.get(int(card["unique_effect_id"]))),
+            "unique_effect": unique_effect(unique_rows.get(int(card["unique_effect_id"])),
+                                           unique_descriptions.get(int(card["unique_effect_id"]), "")),
         })
     connection.close()
     return {

@@ -7,7 +7,13 @@
 ```bash
 python support_card_model/extract_support_card_catalog.py master.mdb \
   -o support_card_model/support_card_catalog.json
+python support_card_model/build_support_card_report.py \
+  support_card_model/support_card_catalog.json \
+  -o support_card_model/support_card_effect_report.json
 ```
+
+- `support_card_catalog.json`：模拟器直接消费的标准目录；
+- `support_card_effect_report.json`：逐卡审计报告，明确列出每张卡五档突破普通效果、等级断点、官方固有说明、解码条件/公式/状态动作以及保留的 raw。
 
 输入表：
 

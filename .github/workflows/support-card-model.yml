@@ -18,8 +18,11 @@ jobs:
           python-version: '3.11'
       - name: Validate and reproduce catalog
         run: |
-          python -m py_compile support_card_model/extract_support_card_catalog.py support_card_model/unique_effect_decoder.py support_card_model/tests/test_support_card_catalog.py support_card_model/tests/test_unique_effect_decoder.py
+          python -m py_compile support_card_model/extract_support_card_catalog.py support_card_model/unique_effect_decoder.py support_card_model/build_support_card_report.py support_card_model/tests/test_support_card_catalog.py support_card_model/tests/test_unique_effect_decoder.py support_card_model/tests/test_support_card_report.py
           python -m json.tool support_card_model/support_card_catalog.json >/dev/null
+          python -m json.tool support_card_model/support_card_effect_report.json >/dev/null
           python -m unittest discover -s support_card_model/tests -v
           python support_card_model/extract_support_card_catalog.py master.mdb -o /tmp/support_card_catalog.json
           cmp support_card_model/support_card_catalog.json /tmp/support_card_catalog.json
+          python support_card_model/build_support_card_report.py /tmp/support_card_catalog.json -o /tmp/support_card_effect_report.json
+          cmp support_card_model/support_card_effect_report.json /tmp/support_card_effect_report.json
