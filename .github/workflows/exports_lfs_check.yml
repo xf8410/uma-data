@@ -1,0 +1,33 @@
+name: exports LFS check
+on:
+  push:
+    paths: ['exports/**', '.github/workflows/exports_lfs_check.yml']
+  pull_request:
+    paths: ['exports/**']
+jobs:
+  lfs-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+      - name: Verify LFS pointers resolve to real content
+        run: |
+          set -e
+          cd exports
+          for f in *.json *.txt; do
+            case "$f" in SHA256SUMS.txt) continue;; esac
+            if head -c 60 "$f" | grep -q "git-lfs.github.com/spec"; then
+              echo "::error::$f is still an LFS pointer (content not pulled)"; exit 1
+            fi
+          done
+          echo "all 19 files have real content"
+          test "$(ls *.json *.txt | grep -v SHA256SUMS | wc -l)" -eq 19
+      - name: Validate JSON files parse
+        run: |
+          cd exports
+          for f in *.json; do python3 -c "import json,sys; json.load(open('$f'))" || exit 1; done
+          echo "all JSON valid"
+      - name: Verify SHA256 against migration baseline
+        run: |
+          cd exports && sha256sum -c SHA256SUMS.txt
