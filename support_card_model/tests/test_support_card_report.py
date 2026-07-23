@@ -30,10 +30,33 @@ class SupportCardReportTest(unittest.TestCase):
         self.assertTrue(all(card["unique_effect"]["description_ja"] for card in unique_cards))
         self.assertTrue(all(card["unique_effect"]["raw"] for card in unique_cards))
 
-    def test_only_explicit_candidate_remains(self):
-        self.assertEqual(self.report["coverage"]["non_confirmed_unique_slots"], [
-            {"support_card_id": 30094, "type": 107, "status": "candidate_formula"}
-        ])
+    def test_report_never_claims_fully_resolved(self):
+        raw = json.dumps(self.report, ensure_ascii=False)
+        self.assertNotIn("fully_resolved", raw)
+        evaluation = self.report["coverage"]["unique_slot_evaluation"]
+        self.assertEqual(evaluation["non_empty_slots"], 573)
+        self.assertEqual(evaluation["structurally_decoded_slots"], 532)
+        self.assertEqual(evaluation["numerically_evaluable_slots"], 530)
+        self.assertEqual(evaluation["action_only_not_numerically_evaluable_slots"], 2)
+        self.assertEqual(evaluation["action_only_type_distribution"], {"112": 1, "118": 1})
+        self.assertEqual(
+            evaluation["numerically_evaluable_slots"]
+            + evaluation["action_only_not_numerically_evaluable_slots"],
+            evaluation["structurally_decoded_slots"])
+        self.assertIn("unknown_formula", evaluation["definitions"])
+        self.assertEqual(evaluation["unknown_formula_slots"], 41)
+        self.assertEqual(evaluation["structurally_decoded_slots"] + evaluation["unknown_formula_slots"],
+                         evaluation["non_empty_slots"])
+        self.assertGreater(evaluation["unknown_formula_slots"], 0)
+        self.assertTrue(all(item["unresolved_reason"] for item in evaluation["unknown_detail"]))
+
+    def test_coverage_matrix_boundaries(self):
+        matrix = self.report["coverage"]["coverage_matrix"]
+        self.assertEqual(matrix["support_card_events"]["coverage"], "unknown")
+        self.assertEqual(matrix["support_card_group"]["coverage"], "raw_membership_only")
+        self.assertEqual(matrix["friend_and_group_card_behaviors"]["coverage"], "unknown")
+        self.assertEqual(matrix["support_card_team_score_bonus"]["coverage"], "raw_only")
+        self.assertEqual(matrix["scenario_specific_effects"]["coverage"], "excluded")
 
     def test_card_report_has_all_uncap_profiles_and_breakpoints(self):
         card = self.by_id[30001]
@@ -41,6 +64,12 @@ class SupportCardReportTest(unittest.TestCase):
         self.assertEqual(card["normal_effect_profiles"][-1]["effects"]["training_bonus"], 10)
         self.assertGreaterEqual(len(card["level_breakpoints"]), 10)
         self.assertIn("絆ゲージ", self.by_id[30160]["unique_effect"]["description_ja"])
+
+    def test_naming_blacklist(self):
+        raw = json.dumps(self.report, ensure_ascii=False)
+        for banned in ("基础加成", "属性直接+1", "B95", "probability_percent",
+                       "umasim", "UmaAI", "BWIKI", "candidate_formula"):
+            self.assertNotIn(banned, raw)
 
 
 if __name__ == "__main__":

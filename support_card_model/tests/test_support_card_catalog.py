@@ -48,23 +48,56 @@ class SupportCardCatalogTest(unittest.TestCase):
 
     def test_simple_unique_effect_is_mapped(self):
         unique = self.by_id[30001]["unique_effect"]
-        self.assertTrue(unique["fully_resolved"])
+        self.assertNotIn("fully_resolved", unique)
+        self.assertEqual(unique["slots"][0]["evaluation_status"], "numerically_evaluable")
         self.assertEqual(unique["slots"][0]["effect_key"], "guts_bonus")
         self.assertEqual(unique["slots"][1]["effect_key"], "initial_guts")
 
     def test_complex_unique_effect_is_decoded_and_keeps_raw(self):
         unique = self.by_id[30160]["unique_effect"]
-        self.assertTrue(unique["fully_resolved"])
         slot = unique["slots"][0]
         self.assertEqual(slot["type"], 118)
+        self.assertEqual(slot["evaluation_status"], "action_only_not_numerically_evaluable")
         self.assertEqual(slot["key"], "second_training_position")
         self.assertEqual(slot["condition"], {"bond_at_least": 60})
-        self.assertEqual(slot["max_positions"], 2)
+        self.assertEqual(slot["candidate_capability_when_condition_met"]["max_positions"], 2)
+        self.assertEqual(slot["runtime_result_status"], "unknown")
         self.assertEqual(unique["raw"]["value_0_1"], 60)
 
-    def test_effect_type_names_come_from_mdb(self):
-        self.assertEqual(self.catalog["effect_types"]["1"]["name_ja"], "友情ボーナス")
-        self.assertEqual(self.catalog["effect_types"]["31"]["key"], "wit_recovery")
+    def test_effect_type_metadata(self):
+        effect_types = self.catalog["effect_types"]
+        self.assertEqual(effect_types["1"]["name_ja"], "友情ボーナス")
+        self.assertEqual(effect_types["31"]["key"], "wit_recovery")
+        self.assertEqual(effect_types["3"]["effect_category"], "training_stat_bonus")
+        self.assertEqual(effect_types["3"]["target"], "speed")
+        self.assertEqual(effect_types["3"]["display_name_zh"], "速度加成")
+        self.assertEqual(effect_types["4"]["display_name_zh"], "耐力加成")
+        self.assertEqual(effect_types["5"]["display_name_zh"], "力量加成")
+        self.assertEqual(effect_types["6"]["display_name_zh"], "根性加成")
+        self.assertEqual(effect_types["7"]["display_name_zh"], "智力加成")
+        self.assertEqual(effect_types["30"]["display_name_zh"], "技能Pt加成")
+        self.assertEqual(effect_types["30"]["effect_category"], "skill_pt_bonus")
+        self.assertEqual(effect_types["41"]["display_name_zh"], "全属性加成")
+        self.assertEqual(effect_types["9"]["effect_category"], "initial_stat")
+        self.assertEqual(effect_types["33"]["display_name_zh"], "Hint获取数加成")
+
+    def test_hint_effects_sections_exist_and_are_isolated(self):
+        card = self.by_id[30001]
+        self.assertIn("hint_effects", card)
+        rewards = card["hint_effects"]["hint_event_parameter_rewards"]
+        self.assertIn("normal_parameter_reward_rows", rewards)
+        self.assertIn("conditional_parameter_reward_rows", rewards)
+        self.assertEqual(rewards["selection_semantics"], "unknown")
+
+    def test_group_members_and_effect_id_raw(self):
+        group = self.by_id[30241]
+        self.assertEqual(group["support_card_type_name"], "group")
+        self.assertEqual(group["card_specific_runtime"]["effect_id_raw"], 104)
+        self.assertEqual(group["card_specific_runtime"]["interpretation"], "unknown")
+        self.assertEqual([m["chara_id"] for m in group["group_members"]], [9047, 9046, 9048])
+        for cid in (30067, 30081, 30137, 30180):
+            self.assertIn("card_specific_runtime", self.by_id[cid])
+            self.assertIn("group_members", self.by_id[cid])
 
     def test_cook_verified_cards_match_generic_catalog(self):
         verified = json.loads((ROOT / "scenario_08_cook_model" / "support_candidates.json")
