@@ -2,6 +2,11 @@
 
 赛马娘AI助手静态数据仓库，供App远程加载 + IL2CPP运行时探查数据。
 
+> **2026-07-23 更新**
+> - `support_card_model/`：支援卡模型 v2（573 固有槽证据分级解码，43 测试）
+> - `scenario_14_ramen_model/`：拉面杯剧本模型与模拟器（接受插件 `/summary` 真实 schema，`ramen.checkpoint_pt` 与旧 `check_point_pt` 双写法兼容）
+> - `exports/`：19 个体积数据导出（MDB 全量导出、IL2CPP 类分类、相性/因子/事件等，共 211MB，**Git LFS 存储**，克隆需 `git lfs pull`；SHA256 基线见 `exports/SHA256SUMS.txt`，由 exports_lfs_check workflow 校验）
+
 ## 数据文件
 
 | 文件 | 记录数 | 大小 | 说明 |
