@@ -200,7 +200,17 @@ def checkpoint_projection(checkpoint_catalog: Mapping[str, Any], action_catalog:
 def simulate(snapshot: Mapping[str, Any], catalogs: Optional[Mapping[str, Mapping[str, Any]]] = None) -> Dict[str, Any]:
     catalogs = catalogs or load_catalogs()
     ramen = snapshot.get("ramen") or {}
-    checkpoint_pt = int(ramen.get("check_point_pt", snapshot.get("check_point_pt", 0)))
+    # Plugin /summary emits "checkpoint_pt"; older snapshots used
+    # "check_point_pt". Accept both spellings at both nesting levels.
+    checkpoint_pt = int(
+        ramen.get(
+            "checkpoint_pt",
+            ramen.get(
+                "check_point_pt",
+                snapshot.get("checkpoint_pt", snapshot.get("check_point_pt", 0)),
+            ),
+        )
+    )
     trainings = snapshot.get("trainings") or []
     return {
         "schema_version": 1,

@@ -88,6 +88,31 @@ class SimulatorTest(unittest.TestCase):
         self.assertEqual(result["training_gains"][0]["gains"], {"Speed": 42, "SkillPt": 7})
         self.assertEqual(result["training_gains"][0]["source"], "runtime_final_gains")
         self.assertIn("server-side training gain decomposition and rounding", result["unknowns"])
+    def test_accepts_plugin_checkpoint_pt(self):
+        # Real plugin /summary schema uses "checkpoint_pt" (no underscore).
+        snapshot = {
+            "turn": 24,
+            "ramen": {
+                "checkpoint_pt": 1600,
+                "selected_region_ids": [],
+            },
+        }
+        result = SIM.simulate(snapshot, self.catalogs)
+        self.assertEqual(result["checkpoint"]["current_pt"], 1600)
+
+    def test_checkpoint_pt_precedence_and_snapshot_fallback(self):
+        # ramen-level spelling wins over snapshot-level legacy spelling.
+        snapshot = {
+            "turn": 24,
+            "check_point_pt": 500,
+            "ramen": {"checkpoint_pt": 1600, "selected_region_ids": []},
+        }
+        result = SIM.simulate(snapshot, self.catalogs)
+        self.assertEqual(result["checkpoint"]["current_pt"], 1600)
+        # snapshot-level legacy spelling still works when ramen omits it.
+        snapshot2 = {"turn": 24, "check_point_pt": 500, "ramen": {}}
+        result2 = SIM.simulate(snapshot2, self.catalogs)
+        self.assertEqual(result2["checkpoint"]["current_pt"], 500)
 
 
 if __name__ == "__main__":
